@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
+import SwirlyLines from './SwirlyLines/Animation'
+
+import './style.css'
+
 class App extends Component {
   render () {
     return (
-      'Hello'
+      <SwirlyLines />
     )
   }
 }
