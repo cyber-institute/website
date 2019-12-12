@@ -2,6 +2,7 @@
 import React from 'react'
 
 import Canvas from './Canvas'
+import Box from './Box'
 
 let frame_number = 0
 const MAX_FRAME_NUMBER = 100000
@@ -12,6 +13,7 @@ const SIZE = 64
 const canvas_width = window.innerWidth
 const canvas_height = window.innerHeight
 
+// https://philna.sh/blog/2018/09/27/techniques-for-animating-on-the-canvas-in-react/
 export default class Animation extends React.Component {
   constructor (props) {
     super(props)
@@ -77,6 +79,7 @@ export default class Animation extends React.Component {
   render () {
     return (
       <div onMouseMove={this._onMouseMove.bind(this)}>
+        <Box x={this.state.x} y={this.state.y} />
         <Canvas lines={this.state.lines} />
       </div>
     )
