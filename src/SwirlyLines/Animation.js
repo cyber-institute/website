@@ -25,7 +25,7 @@ export default class Animation extends React.Component {
         lines_v[i][j] = 0
       }
     }
-    this.state = { angle: 0, x: 0, y: 0, lines, lines_v }
+    this.state = { x: 0, y: 0, lines, lines_v }
     this.updateAnimationState = this.updateAnimationState.bind(this)
   }
 
@@ -77,7 +77,7 @@ export default class Animation extends React.Component {
   render () {
     return (
       <div onMouseMove={this._onMouseMove.bind(this)}>
-        <Canvas lines={this.state.lines} lines_v={this.state.lines_v} />
+        <Canvas lines={this.state.lines} />
       </div>
     )
   }
