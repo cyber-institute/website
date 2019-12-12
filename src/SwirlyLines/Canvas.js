@@ -25,7 +25,7 @@ export default class Canvas extends Component {
     canvas.height = canvas_height * 2
     const ctx = canvas.getContext('2d')
     ctx.lineWidth = 1
-    ctx.strokeStyle = '#ccc'
+    ctx.strokeStyle = '#52317833'
     const pixel_depth = window.devicePixelRatio
 
     ctx.beginPath()

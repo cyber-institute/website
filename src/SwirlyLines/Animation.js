@@ -2,7 +2,7 @@
 import React from 'react'
 
 import Canvas from './Canvas'
-import Box from './Box'
+// import Box from './Box'
 
 let frame_number = 0
 const MAX_FRAME_NUMBER = 100000
@@ -78,8 +78,13 @@ export default class Animation extends React.Component {
 
   render () {
     return (
-      <div onMouseMove={this._onMouseMove.bind(this)}>
-        <Box x={this.state.x} y={this.state.y} />
+      <div
+        onMouseMove={this._onMouseMove.bind(this)} style={{
+          position: 'absolute',
+          zIndex: -1
+        }}
+      >
+        {/* <Box x={this.state.x} y={this.state.y} /> */}
         <Canvas lines={this.state.lines} />
       </div>
     )
