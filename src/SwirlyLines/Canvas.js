@@ -1,4 +1,10 @@
+/* eslint-disable camelcase */
 import React, { Component } from 'react'
+
+const SIZE = 64
+
+const canvas_width = window.innerWidth
+const canvas_height = window.innerHeight
 
 export default class Canvas extends Component {
   constructor (props) {
@@ -7,32 +13,35 @@ export default class Canvas extends Component {
   }
 
   componentDidMount () {
-    const canvas = this.canvasRef.current
-    const context = canvas.getContext('2d')
-    context.fillRect(0, 0, canvas.width, canvas.height)
+    // const canvas = this.canvasRef.current
+    // const context = canvas.getContext('2d')
+    // context.fillRect(0, 0, canvas.width, canvas.height)
   }
 
   componentDidUpdate () {
-    // Draws a square in the middle of the canvas rotated
-    // around the centre by this.props.angle
-    const { angle } = this.props
+    const { lines } = this.props
     const canvas = this.canvasRef.current
+    canvas.width = canvas_width * 2
+    canvas.height = canvas_height * 2
     const ctx = canvas.getContext('2d')
-    const width = canvas.width
-    const height = canvas.height
-    ctx.save()
+    ctx.lineWidth = 1
+    ctx.strokeStyle = '#ccc'
+    const pixel_depth = window.devicePixelRatio
+
     ctx.beginPath()
-    ctx.clearRect(0, 0, width, height)
-    ctx.translate(width / 2, height / 2)
-    ctx.rotate((angle * Math.PI) / 180)
-    ctx.fillStyle = '#4397AC'
-    ctx.fillRect(-width / 4, -height / 4, width / 2, height / 2)
-    ctx.restore()
+    for (let i = 0; i < lines.length; i++) {
+      for (let j = 0; j < lines[i].length - 1; j++) {
+        ctx.moveTo(pixel_depth * canvas_width / (SIZE - 1) * j, pixel_depth * (canvas_height * 0.5 + lines[i][j]))
+        ctx.lineTo(pixel_depth * canvas_width / (SIZE - 1) * (j + 1), pixel_depth * (canvas_height * 0.5 + lines[i][j + 1]))
+      }
+    }
+    ctx.clearRect(0, 0, canvas_width * 2, canvas_height * 2)
+    ctx.stroke()
   }
 
   render () {
     return (
-      <canvas width='300' height='300' ref={this.canvasRef} />
+      <canvas ref={this.canvasRef} />
     )
   }
 }
