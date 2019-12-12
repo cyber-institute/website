@@ -5,7 +5,7 @@ import Canvas from './Canvas'
 export default class Animation extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { angle: 0 }
+    this.state = { angle: 0, x: 0, y: 0 }
     this.updateAnimationState = this.updateAnimationState.bind(this)
   }
 
@@ -22,7 +22,15 @@ export default class Animation extends React.Component {
     cancelAnimationFrame(this.rAF)
   }
 
+  _onMouseMove (e) {
+    this.setState({ x: e.screenX, y: e.screenY })
+  }
+
   render () {
-    return <Canvas angle={this.state.angle} />
+    return (
+      <div onMouseMove={this._onMouseMove.bind(this)}>
+        <Canvas angle={this.state.angle} />
+      </div>
+    )
   }
 }
