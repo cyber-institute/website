@@ -1,2 +1,3 @@
 dist
+!dist/swirly_lines.js
 node_modules
