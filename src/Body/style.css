@@ -1,0 +1,13 @@
+.blockQuote {
+    font-size: 1.38889rem;
+    color: #523178;
+    padding: 0 0 0 50px;
+    border-left: 2px solid #523178;
+    margin: 52px 0 52px -104px;
+}
+
+.heading {
+    font-size: 1.38889rem;
+    line-height: 1.94444rem;
+    color: #523178;
+}
