@@ -29,7 +29,7 @@ export default () =>
         textAlign: 'center'
       }}
     >
-      <p class='Light'>Explore Cyber Institute</p>
+      <p className='Light'>Explore Cyber Institute</p>
       <ArrowDownwardIcon style={{ color: '#523178' }} />
     </div>
   </>
