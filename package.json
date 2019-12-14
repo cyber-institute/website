@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start-dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
-    "build": "webpack --env production"
+    "build": "rm -rf dist/*; webpack --env production"
   },
   "keywords": [],
   "author": "",
