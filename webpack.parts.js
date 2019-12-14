@@ -1,8 +1,15 @@
 const commonModules = {
   rules: [
     {
+      test: /swirly_lines\.js$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]',
+      },
+    },
+    {
       test: /\.(js|jsx)$/,
-      exclude: /node_modules/,
+      exclude: /node_modules|swirly_lines.js/,
       use: {
         loader: 'babel-loader'
       }

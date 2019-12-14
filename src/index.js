@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
 import AppBar from './AppBar/AppBar'
-import SwirlyLines from './SwirlyLines/Animation'
 import Heading from './Heading/Heading'
 import Body from './Body/Body'
 import Sine from './Sine/Canvas'
 import Fonts from './Heading/Fonts'
+
+import './swirly_lines.js'
 
 import './style.css'
 
@@ -15,10 +16,9 @@ class App extends Component {
     return (
       <>
         <AppBar />
-        <SwirlyLines />
         <Heading />
         <Body />
-        <Sine />
+      {/*<Sine />*/}
         <Fonts />
       </>
     )
