@@ -18,7 +18,7 @@ class App extends Component {
         <AppBar />
         <Heading />
         <Body />
-      {/*<Sine />*/}
+        <Sine />
         <Fonts />
       </>
     )
