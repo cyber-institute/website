@@ -5,7 +5,9 @@
   "main": "webpack.config.js",
   "scripts": {
     "start-dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
-    "build": "rm -rf dist/*; webpack --env production"
+    "build": "rm -rf dist/*; webpack --env production",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack --env production"
   },
   "keywords": [],
   "author": "",
