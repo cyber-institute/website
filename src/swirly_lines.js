@@ -25,7 +25,7 @@ const ctx = canvas.getContext('2d')
 ctx.lineWidth = 1
 ctx.strokeStyle = '#52317822'
 
-window.addEventListener('mousemove', (e) => {
+window.addEventListener('mousemove', function (e) {
   mouse_x = e.pageX
   mouse_y = e.pageY
 })
