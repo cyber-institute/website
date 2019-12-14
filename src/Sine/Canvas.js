@@ -23,7 +23,7 @@ export default class Canvas extends Component {
 
     const ctx = canvas.getContext('2d')
     ctx.lineWidth = 1
-    ctx.strokeStyle = 'rgba(82, 49, 120, 34)'
+    ctx.strokeStyle = 'rgba(82, 49, 120, 0.34)'
     const L = 2000
     const NUM_LINES = 50
 
