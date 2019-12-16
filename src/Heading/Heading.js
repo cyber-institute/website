@@ -8,12 +8,12 @@ export default () =>
   <>
     <div
       style={{
-        margin: '40vh auto 35vh auto',
+        margin: '25vh auto 35vh auto',
         textAlign: 'center'
       }}
     >
       <h1
-        className='BoldCondensed' style={{
+        className='Bold' style={{
           fontWeight: 'normal',
           fontSize: '80px',
           margin: 0,

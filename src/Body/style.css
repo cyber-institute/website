@@ -6,6 +6,11 @@
     margin: 52px 0 52px -104px;
 }
 
+.largeHeading {
+    font-size: 48px;
+    color: #523178;
+}
+
 .heading {
     font-size: 1.38889rem;
     line-height: 1.94444rem;

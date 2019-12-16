@@ -13,10 +13,10 @@ export default class Canvas extends Component {
     canvas.style.zIndex = -1
     canvas.style.left = '0px'
     canvas.style.width = '100%'
-    canvas.style.height = '100vh'
+    // canvas.style.height = '100vh'
 
     const display_width = canvas.offsetWidth
-    const display_height = window.innerHeight
+    const display_height = 900//window.innerHeight
 
     canvas.width = display_width * pixel_depth
     canvas.height = display_height * pixel_depth
@@ -44,7 +44,7 @@ export default class Canvas extends Component {
 
   render () {
     return (
-      <canvas ref={this.handleCanvasRef} />
+      <canvas style={{ position: 'absolute', top: 0 }} ref={this.handleCanvasRef} />
     )
   }
 }

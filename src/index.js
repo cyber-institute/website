@@ -7,6 +7,8 @@ import Body from './Body/Body'
 import Sine from './Sine/Canvas'
 import Fonts from './Heading/Fonts'
 
+import convergence from '../img/convergence.jpg'
+
 import './swirly_lines.js'
 
 import './style.css'
@@ -17,9 +19,12 @@ class App extends Component {
       <>
         <AppBar />
         <Heading />
-        <Body />
-        <Sine />
-        <Fonts />
+        <div style={{ position: 'relative' }}>
+          <Body />
+          {/* <Sine /> */}
+          <img src={convergence} />
+        </div>
+        {/* <Fonts /> */}
       </>
     )
   }
