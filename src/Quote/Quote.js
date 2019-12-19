@@ -1,13 +1,8 @@
 import React from 'react'
 
-import Button from '@material-ui/core/Button'
-import ArrowRightIcon from '@material-ui/icons/ArrowRight'
-
 import lesley from '../../img/dr_lesley_seebeck_03.jpg'
 
 // import './style.css'
-
-import laptop from '../../img/laptop.jpg'
 
 export default function Quote () {
   return (

@@ -7,6 +7,7 @@ import Body from './Body/Body'
 import Sine from './Sine/Canvas'
 import BodyMenuItem from './BodyMenuItem/BodyMenuItem'
 import Quote from './Quote/Quote'
+import BodyMenuItemSwapped from './BodyMenuItemSwapped/BodyMenuItemSwapped'
 
 import './swirly_lines.js'
 
@@ -26,6 +27,7 @@ class App extends Component {
         </div>
         <BodyMenuItem />
         <Quote />
+        <BodyMenuItemSwapped />
       </>
     )
   }
