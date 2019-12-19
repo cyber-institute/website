@@ -6,6 +6,7 @@ import Heading from './Heading/Heading'
 import Body from './Body/Body'
 import Sine from './Sine/Canvas'
 import BodyMenuItem from './BodyMenuItem/BodyMenuItem'
+import Quote from './Quote/Quote'
 
 import './swirly_lines.js'
 
@@ -24,7 +25,7 @@ class App extends Component {
           {/* <img src={convergence} /> */}
         </div>
         <BodyMenuItem />
-
+        <Quote />
       </>
     )
   }

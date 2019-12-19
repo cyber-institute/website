@@ -8,7 +8,6 @@ import './style.css'
 import laptop from '../../img/laptop.jpg'
 
 export default function BodyMenuItem () {
-
   return (
     <div style={{ marginTop: '20rem' }}>
       <div class='row'>
