@@ -11,8 +11,13 @@
     color: #523178;
 }
 
+.largerHeading {
+    font-size: 108px;
+    color: #523178;
+}
+
 .heading {
-    font-size: 1.38889rem;
+    font-size: 22px;
     line-height: 1.94444rem;
     color: #523178;
 }

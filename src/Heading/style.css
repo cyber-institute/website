@@ -215,3 +215,9 @@ src: local('Helvetica Neue LT Std 77 Bold Condensed'), url('HelveticaNeueLTStd-B
 .Bold {
     font-family: 'Helvetica Neue LT Std 75 Bold';
 }
+.Medium {
+    font-family: 'Helvetica Neue LT Std 65 Medium';
+}
+.MediumExtended {
+    font-family: 'Helvetica Neue LT Std 63 Medium Extended';
+}
