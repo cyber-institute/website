@@ -5,6 +5,7 @@ import AppBar from './AppBar/AppBar'
 import Heading from './Heading/Heading'
 import Body from './Body/Body'
 import Sine from './Sine/Canvas'
+import Square from './Sine/Square'
 import BodyMenuItem from './BodyMenuItem/BodyMenuItem'
 import Quote from './Quote/Quote'
 import BodyMenuItemSwapped from './BodyMenuItemSwapped/BodyMenuItemSwapped'
@@ -23,6 +24,7 @@ class App extends Component {
         <div style={{ position: 'relative' }}>
           <Sine />
           <Body />
+          <Square />
           {/* <img src={convergence} /> */}
         </div>
         <BodyMenuItem />

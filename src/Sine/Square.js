@@ -33,7 +33,8 @@ export default class Canvas extends Component {
 
     ctx.beginPath()
     for (let i = 0; i < canvas_width * length; i++) {
-      ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin((i / 160) + scrollTop / 100))
+      // ctx.lineTo(i, height / 2 + 200 * Math.sign(Math.sin((i / 160) - scrollTop / 200)))
+      ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin((i / 160) - scrollTop / 100))
     }
     ctx.stroke()
   }
@@ -61,8 +62,8 @@ export default class Canvas extends Component {
       <canvas
         style={{
           position: 'absolute',
-          bottom: '7rem'
-          // top: 0
+          // bottom: '7rem'
+          top: '8rem'
         }} ref={this.canvasRef}
       />
     )

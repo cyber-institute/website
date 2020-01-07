@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Lines from './Lines.js'
 import lesley from '../../img/dr_lesley_seebeck_03.jpg'
 
 // import './style.css'
@@ -12,12 +13,15 @@ export default function Quote () {
       }}
     >
       <div className='row'>
-        <div className='col-xs-offset-7 col-xs-4'>
+        <div className='col-xs-7'>
+          <Lines />
+        </div>
+        <div className='col-xs-4'>
           <div
             className='Italic' style={{
               paddingTop: '0.4em',
               marginBottom: '2.1rem',
-              fontSize: '2.7rem',
+              fontSize: '2.1rem',
               color: '#323232',
               borderTop: '4px solid #323232'
             }}
