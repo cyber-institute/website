@@ -4,7 +4,6 @@ import React, { Component } from 'react'
 const canvas_width = window.innerWidth
 const canvas_height = window.innerHeight
 
-
 export default class Canvas extends Component {
   constructor (props) {
     super(props)
@@ -33,7 +32,6 @@ export default class Canvas extends Component {
     ctx.stroke()
   }
 
-
   handleCanvasRef (element) {
     // const canvas = element
     // canvas.width = canvas_width * 2
@@ -41,7 +39,7 @@ export default class Canvas extends Component {
     // const context = canvas.getContext('2d')
     // this.plotSine(context)
 
-    const pixel_depth = window.devicePixelRatio;
+    const pixel_depth = window.devicePixelRatio
     const canvas = element
     canvas.style.zIndex = -1
     canvas.style.left = '0px'
@@ -51,11 +49,10 @@ export default class Canvas extends Component {
     // canvas.style.height = '100vh'
 
     const display_width = canvas.offsetWidth
-    const display_height = 900//window.innerHeight
+    const display_height = 900// window.innerHeight
 
     canvas.width = display_width * pixel_depth
     canvas.height = display_height * pixel_depth
-    
 
     const ctx = canvas.getContext('2d')
     ctx.lineWidth = 5
@@ -64,7 +61,7 @@ export default class Canvas extends Component {
     const NUM_LINES = 50
 
     function curve (k, i) {
-      return (display_height*0.5*pixel_depth)*(1 + Math.cos(k*Math.PI*2/NUM_LINES + (16*Math.PI*2*i+100)/L)*Math.exp(-(0.001*i*i)))
+      return (display_height * 0.5 * pixel_depth) * (1 + Math.cos(k * Math.PI * 2 / NUM_LINES + (16 * Math.PI * 2 * i + 100) / L) * Math.exp(-(0.001 * i * i)))
     }
 
     const height = ctx.canvas.height
@@ -72,7 +69,7 @@ export default class Canvas extends Component {
     const length = 2
 
     ctx.beginPath()
-    for (let i=0; i<canvas_width * length; i++) {
+    for (let i = 0; i < canvas_width * length; i++) {
       ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin(i / 160)
         // * Math.exp(-0.000001 * Math.pow(i, 2.5))
       )
@@ -109,7 +106,6 @@ export default class Canvas extends Component {
     // }
     // ctx.stroke()
 
-
     // for (let k=0; k<NUM_LINES; k++) {
     //   ctx.beginPath()
     //   // ctx.moveTo(0, curve(k, 0))
@@ -122,7 +118,13 @@ export default class Canvas extends Component {
 
   render () {
     return (
-      <canvas style={{ position: 'absolute', top: 0 }} ref={this.handleCanvasRef.bind(this)} />
+      <canvas
+        style={{
+          position: 'absolute',
+          bottom: '7rem'
+          // top: 0
+        }} ref={this.handleCanvasRef.bind(this)}
+      />
     )
   }
 }

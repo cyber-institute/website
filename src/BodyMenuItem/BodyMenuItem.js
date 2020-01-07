@@ -9,7 +9,10 @@ import laptop from '../../img/laptop.jpg'
 
 export default function BodyMenuItem () {
   return (
-    <div style={{ marginTop: '20rem' }}>
+    <div style={{
+      marginTop: '10rem'
+    }}
+    >
       <div class='row'>
         <div class='col-xs-offset-2 col-xs-4'>
           <div
@@ -51,8 +54,14 @@ export default function BodyMenuItem () {
             <ArrowRightIcon />
           </Button>
         </div>
-        <div class='col-xs-4'>
-          <img src={laptop} style={{ maxWidth: '100%' }} />
+        <div class='col-xs-4' style={{ overflow: 'hidden' }}>
+          <img
+            src={laptop} style={{
+              maxWidth: '100%',
+              transformOrigin: '50% 10%',
+              transform: 'scale(2)'
+            }}
+          />
         </div>
         <div class='col-xs-2' />
       </div>

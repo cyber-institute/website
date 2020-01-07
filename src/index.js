@@ -21,8 +21,8 @@ class App extends Component {
         <AppBar />
         <Heading />
         <div style={{ position: 'relative' }}>
-          <Body />
           <Sine />
+          <Body />
           {/* <img src={convergence} /> */}
         </div>
         <BodyMenuItem />

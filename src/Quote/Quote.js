@@ -8,7 +8,7 @@ export default function Quote () {
   return (
     <div
       style={{
-      // marginTop: '1rem'
+        marginTop: '10rem'
       }}
     >
       <div class='row'>
