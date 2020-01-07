@@ -13,8 +13,8 @@ export default function BodyMenuItem () {
       marginTop: '10rem'
     }}
     >
-      <div class='row'>
-        <div class='col-xs-offset-2 col-xs-4'>
+      <div className='row'>
+        <div className='col-xs-offset-2 col-xs-4'>
           <div
             style={{
               marginBottom: '1em',
@@ -22,12 +22,12 @@ export default function BodyMenuItem () {
               letterSpacing: '.05em',
               fontSize: '.72rem'
             }}
-            class='Medium'
+            className='Medium'
           >
             01 About
           </div>
           <div
-            class='largerHeading Bold' style={{
+            className='largerHeading Bold' style={{
               paddingTop: '0.4em',
               borderTop: '1px solid currentColor',
               marginBottom: '2.1rem'
@@ -35,13 +35,13 @@ export default function BodyMenuItem () {
           >
             Explore Cyber
           </div>
-          <div class='Light row'>
-            <div class='col-xs-9 Light' style={{ lineHeight: '1.87' }}>
+          <div className='Light row'>
+            <div className='col-xs-9 Light' style={{ lineHeight: '1.87' }}>
               Mission-driven. Exploratory. Interdisciplinary and inclusive in nature. Trusted adviser to decision makers.
             </div>
           </div>
           <Button
-            variant='outlined' color='#523178' style={{
+            variant='outlined' style={{
               margin: '3rem 0',
               color: '#523178',
               borderColor: '#523178',
@@ -54,7 +54,7 @@ export default function BodyMenuItem () {
             <ArrowRightIcon />
           </Button>
         </div>
-        <div class='col-xs-4' style={{ overflow: 'hidden' }}>
+        <div className='col-xs-4' style={{ overflow: 'hidden' }}>
           <img
             src={laptop} style={{
               maxWidth: '100%',
@@ -63,7 +63,7 @@ export default function BodyMenuItem () {
             }}
           />
         </div>
-        <div class='col-xs-2' />
+        <div className='col-xs-2' />
       </div>
     </div>
   )
