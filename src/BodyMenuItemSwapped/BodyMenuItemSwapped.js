@@ -3,7 +3,13 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight'
 
-import laptop from '../../img/laptop.jpg'
+import brian from '../../img/professor_brian_schmidt.jpg'
+import elanor from '../../img/professor_elanor_huntington.jpg'
+import rory from '../../img/professor_rory_medcalf.jpg'
+import marie from '../../img/marie_johnson.jpg'
+import hamish from '../../img/hamish_hawthorn.jpg'
+import deb from '../../img/deborah_anton.jpg'
+import mick from '../../img/mick_ryan.jpg'
 
 export default function BodyMenuItem () {
   return (
@@ -12,9 +18,78 @@ export default function BodyMenuItem () {
     }}
     >
       <div className='row'>
-        <div className='col-xs-4 col-xs-offset-2'>
-          <img src={laptop} style={{ maxWidth: '80%' }} />
+        <div className='col-xs-3 col-xs-offset-2'>
+          <div className='row' style={{ paddingBottom: '1rem' }}>
+            <div className='col-xs-4' style={{ height: '170px' }}>
+              <img
+                src={brian} style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div className='col-xs-4' style={{ height: '170px' }}>
+              <img
+                src={elanor} style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div className='col-xs-4' style={{ height: '170px' }}>
+              <img
+                src={rory} style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          </div>
+          <div className='row' style={{ paddingBottom: '1rem' }}>
+            <div className='col-xs-4' style={{ height: '170px' }}>
+              <img
+                src={marie} style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div className='col-xs-4' style={{ height: '170px' }}>
+              <img
+                src={hamish} style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div className='col-xs-4' style={{ height: '170px' }}>
+              <img
+                src={deb} style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          </div>
+          <div className='row'>
+            <div className='col-xs-4' style={{ height: '170px' }}>
+              <img
+                src={mick} style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+          </div>
         </div>
+        <div className='col-xs-offset-1' />
         <div className='col-xs-4'>
           <div
             style={{
