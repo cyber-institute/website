@@ -10,8 +10,7 @@ export default class Canvas extends Component {
     this.state = {}
   }
 
-  componentDidMount () {
-    window.addEventListener('scroll', this.handleScroll.bind(this))
+  drawSine (scrollTop) {
     const pixel_depth = window.devicePixelRatio
     const canvas = this.canvasRef.current
     canvas.style.zIndex = -1
@@ -34,22 +33,31 @@ export default class Canvas extends Component {
 
     ctx.beginPath()
     for (let i = 0; i < canvas_width * length; i++) {
-      ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin(i / 160))
+      ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin((i / 160) + scrollTop / 100))
     }
     ctx.stroke()
+  }
+
+  componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll.bind(this))
+    this.drawSine()
   }
 
   componentWillUnmount () {
     window.removeEventListener('scroll', this.handleScroll)
   }
 
+  // https://stackoverflow.com/questions/29725828/update-style-of-a-component-onscroll-in-react-js
+  // Parallax effect can be introduced from above link
   handleScroll (event) {
     const scrollTop = window.scrollY
     const itemTranslate = Math.min(0, scrollTop / 3 - 60)
 
-    this.setState({
-      transform: itemTranslate
-    })
+    this.drawSine(scrollTop)
+
+    // this.setState({
+    //   transform: itemTranslate
+    // })
   }
 
   render () {
