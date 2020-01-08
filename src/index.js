@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom'
 
 import AppBar from './AppBar/AppBar'
 import Heading from './Heading/Heading'
-import Body from './Body/Body'
 import Sine from './Sine/Canvas'
+import Body from './Body/Body'
 import Square from './Sine/Square'
 import BodyMenuItem from './BodyMenuItem/BodyMenuItem'
 import Quote from './Quote/Quote'
 import BodyMenuItemSwapped from './BodyMenuItemSwapped/BodyMenuItemSwapped'
+import Miniq from './Miniq/Miniq'
 
 import './swirly_lines.js'
 
@@ -30,6 +31,7 @@ class App extends Component {
         <BodyMenuItem />
         <Quote />
         <BodyMenuItemSwapped />
+        <Miniq />
       </>
     )
   }
