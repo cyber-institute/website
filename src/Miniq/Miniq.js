@@ -49,15 +49,16 @@ export default class Animation extends React.Component {
           let re = arr[i][j][0]
           let im = arr[i][j][1]
           if (
-            i >= SIZE / 2
-            // && i >= SIZE / 2
-          ) ctx.fillStyle = 'rgba(241, 241, 241, 1.0)'
-          else ctx.fillStyle = '#523178'
+            j - i <= SIZE / 64
+            // j % 2 === 0
+            // i >= SIZE / 2
+          ) ctx.fillStyle = '#523178'
+          else ctx.fillStyle = 'rgba(241, 241, 241, 1.0)'
           // ctx.fillStyle = '#faa'
-          ctx.fillStyle = 'rgba(241, 241, 241, 1.0)'
+          
           ctx.fillRect(i*16 + j*16, 300 - 2*re -i*6 + j*6, 2, 2)
           // ctx.fillStyle = '#0ff'
-          ctx.fillStyle = '#523178'
+          
           ctx.fillRect(i*16 + j*16, 300 - 2*im -i*6 + j*6, 2, 2)
         }
       }
