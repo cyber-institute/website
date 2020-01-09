@@ -13,6 +13,7 @@ import Miniq from './Miniq/Miniq'
 import PurpleBodyMenuItem from './PurpleBodyMenuItem/PurpleBodyMenuItem'
 
 import laptop from '../img/laptop.jpg'
+import blog from '../img/blogs.jpg'
 
 import './swirly_lines.js'
 
@@ -37,6 +38,7 @@ class App extends Component {
           text='Mission-driven. Exploratory. Interdisciplinary and inclusive in nature. Trusted adviser to decision makers.'
           buttonText='About Cyber Institute'
           img={laptop}
+          transforms
         />
         <Quote />
         <BodyMenuItemSwapped />
@@ -49,7 +51,7 @@ class App extends Component {
           heading='Blog & Insights'
           text='Here is some text to help with styling and whatnot. No real purpose for this text, except for the assistance in styling of the posts.'
           buttonText='Find out more'
-          img={laptop}
+          img={blog}
         />
         <BodyMenuItem
           top='05 Partnerships'

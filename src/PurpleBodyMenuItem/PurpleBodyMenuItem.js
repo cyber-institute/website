@@ -5,7 +5,7 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight'
 
 // import './style.css'
 
-import laptop from '../../img/laptop.jpg'
+import team from '../../img/team.jpg'
 
 export default function BodyMenuItem () {
   return (
@@ -60,10 +60,10 @@ export default function BodyMenuItem () {
         </div>
         <div className='col-xs-4' style={{ overflow: 'hidden' }}>
           <img
-            src={laptop} style={{
+            src={team} style={{
               maxWidth: '100%',
-              transformOrigin: '50% 10%',
-              transform: 'scale(2)'
+              transformOrigin: '45% 35%',
+              transform: 'scale(3.5)'
             }}
           />
         </div>
