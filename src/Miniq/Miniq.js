@@ -48,9 +48,16 @@ export default class Animation extends React.Component {
         for (let j=0; j<SIZE; j++) {
           let re = arr[i][j][0]
           let im = arr[i][j][1]
-          ctx.fillStyle = '#faa'
+          if (
+            i >= SIZE / 2
+            // && i >= SIZE / 2
+          ) ctx.fillStyle = 'rgba(241, 241, 241, 1.0)'
+          else ctx.fillStyle = '#523178'
+          // ctx.fillStyle = '#faa'
+          ctx.fillStyle = 'rgba(241, 241, 241, 1.0)'
           ctx.fillRect(i*16 + j*16, 300 - 2*re -i*6 + j*6, 2, 2)
-          ctx.fillStyle = '#0ff'
+          // ctx.fillStyle = '#0ff'
+          ctx.fillStyle = '#523178'
           ctx.fillRect(i*16 + j*16, 300 - 2*im -i*6 + j*6, 2, 2)
         }
       }
@@ -102,6 +109,16 @@ export default class Animation extends React.Component {
   }
 
   render () {
-    return <canvas ref={this.bindCanvas} width='830' height='500px' style={{'display': 'block'}}/>
+    return <canvas
+      ref={this.bindCanvas}
+      width='830'
+      height='500px'
+      style={{
+        'display': 'block',
+        position: 'absolute',
+        top: '-300px',
+        left: 'calc(50% - 415px)'
+      }}
+    />
   }
 }

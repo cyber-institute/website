@@ -40,8 +40,10 @@ class App extends Component {
         />
         <Quote />
         <BodyMenuItemSwapped />
-        <Miniq />
-        <PurpleBodyMenuItem />
+        <div style={{ position: 'relative' }}>
+          <Miniq />
+          <PurpleBodyMenuItem />
+        </div>
         <BodyMenuItem
           top='04 Blog'
           heading='Blog & Insights'

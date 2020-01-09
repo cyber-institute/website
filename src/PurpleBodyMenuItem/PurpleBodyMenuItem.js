@@ -10,7 +10,8 @@ import laptop from '../../img/laptop.jpg'
 export default function BodyMenuItem () {
   return (
     <div style={{
-      paddingTop: '10rem',
+      paddingTop: '20rem',
+      marginTop: '20rem',
       paddingBottom: '10rem',
       backgroundColor: '#523178'
     }}
