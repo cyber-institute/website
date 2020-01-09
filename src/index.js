@@ -9,7 +9,7 @@ import Square from './Sine/Square'
 import BodyMenuItem from './BodyMenuItem/BodyMenuItem'
 import Quote from './Quote/Quote'
 import BodyMenuItemSwapped from './BodyMenuItemSwapped/BodyMenuItemSwapped'
-import Miniq from './Miniq/Canvas'
+import Miniq from './Miniq/Miniq'
 import PurpleBodyMenuItem from './PurpleBodyMenuItem/PurpleBodyMenuItem'
 
 import laptop from '../img/laptop.jpg'
@@ -40,7 +40,7 @@ class App extends Component {
         />
         <Quote />
         <BodyMenuItemSwapped />
-        {/* <Miniq /> */}
+        <Miniq />
         <PurpleBodyMenuItem />
         <BodyMenuItem
           top='04 Blog'
