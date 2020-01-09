@@ -11,7 +11,7 @@ export default function BodyMenuItem () {
   return (
     <div style={{
       paddingTop: '20rem',
-      marginTop: '20rem',
+      marginTop: '15rem',
       paddingBottom: '10rem',
       backgroundColor: '#523178'
     }}
