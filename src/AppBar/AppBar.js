@@ -54,6 +54,7 @@ export default function CyberAppBar () {
           <Toolbar>
             <img src={CITwhite} style={{ width: '25px' }} />
             {/* <Typography variant='h6'>Scroll to Elevate App Bar</Typography> */}
+            <a class='Light'>Test</a>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
