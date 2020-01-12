@@ -54,7 +54,17 @@ export default function CyberAppBar () {
           <Toolbar>
             <img src={CITwhite} style={{ width: '25px' }} />
             {/* <Typography variant='h6'>Scroll to Elevate App Bar</Typography> */}
-            <a class='Light'>Test</a>
+            <ul style={{ width: '100%' }}>
+              <a class='Light' style={{ float: 'right', fontSize: '13px' }}>Case Studies</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Research</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Operations</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Education</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Partnerships</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Blog</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Team</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Governance</a>
+              <a class='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About</a>
+            </ul>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
