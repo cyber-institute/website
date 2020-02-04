@@ -12,7 +12,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
     }}
     >
       <div className='row'>
-        <div className='col-xs-offset-2 col-xs-4'>
+        <div className='col-md-offset-2 col-md-4'>
           <div
             style={{
               marginBottom: '1em',
@@ -52,7 +52,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
             <ArrowRightIcon />
           </Button>
         </div>
-        <div className='col-xs-4' style={{ overflow: 'hidden' }}>
+        <div className='col-md-4' style={{ overflow: 'hidden' }}>
           <img
             src={img} style={{
               maxWidth: '100%',
@@ -61,7 +61,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
             }}
           />
         </div>
-        <div className='col-xs-2' />
+        <div className='col-md-2' />
       </div>
     </div>
   )
