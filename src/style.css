@@ -18,13 +18,19 @@ body {
 }
 
 @media only screen and (max-width: 62em) {
-  .marginTop-xs {
+  .marginTop-sm {
     margin-top: 3rem;
   }
 }
 
 @media only screen and (max-width: 62em) {
-  .centerAlign-xs {
+  .centerAlign-sm {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .displayNone-sm {
+    display: none;
   }
 }

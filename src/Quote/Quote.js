@@ -14,10 +14,10 @@ export default function Quote () {
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-xs-7'>
+        <div className='col-md-7'>
           <Lines />
         </div>
-        <div className='col-xs-4'>
+        <div className='col-md-4'>
           <div
             className='Italic' style={{
               paddingTop: '0.4em',
@@ -31,7 +31,7 @@ export default function Quote () {
           </div>
           <div className='row'>
             <div className='col-xs-4'>
-              <img src={lesley} style={{ width: '136px' }} />
+              <img src={lesley} style={{ width: '100%' }} />
             </div>
             <div className='col-xs-8 Light' style={{ lineHeight: '1.87' }}>
             Prof. Lesley Seebeck, PhD<br /><br />

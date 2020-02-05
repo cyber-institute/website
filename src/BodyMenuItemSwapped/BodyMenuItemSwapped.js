@@ -96,7 +96,7 @@ export default function BodyMenuItem () {
           </div>
         </div>
         <div
-          className='col-lg-4 col-md-5 rightAlign-md marginTop-xs'
+          className='col-lg-4 col-md-5 rightAlign-md marginTop-sm'
         >
           <div
             style={{

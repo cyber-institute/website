@@ -9,7 +9,7 @@ export default () =>
       // maxWidth: '900px'
     // padding: '0 0 0 312px'
     }}
-    className='row centerAlign-xs'
+    className='row centerAlign-sm'
   >
     <div
       className='col-lg-offset-4 col-lg-4

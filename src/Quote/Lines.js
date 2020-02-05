@@ -124,7 +124,6 @@ export default class Canvas extends Component {
   }
 
   render () {
-    console.log(this.state.transform)
     return (
       <canvas
         style={{
@@ -133,6 +132,7 @@ export default class Canvas extends Component {
           top: '4rem',
           height: '100%'
         }} ref={this.canvasRef}
+        className='displayNone-sm'
       />
     )
   }
