@@ -52,7 +52,7 @@ class App extends Component {
           img={blog}
         />
         <Links />
-        {/* <Footer /> */}
+        <Footer />
       </>
     )
   }

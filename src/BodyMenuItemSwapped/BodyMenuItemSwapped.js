@@ -20,7 +20,11 @@ export default function BodyMenuItem () {
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-xs-3 col-xs-offset-2'>
+        <div
+        // className='col-lg-3 col-xs-offset-2'
+          className='col-lg-offset-2 col-lg-4
+                     col-md-offset-1 col-md-5'
+        >
           <div className='row' style={{ paddingBottom: '1rem' }}>
             <div className='col-xs-4' style={{ height: '170px' }}>
               <img
@@ -91,8 +95,9 @@ export default function BodyMenuItem () {
             </div>
           </div>
         </div>
-        <div className='col-xs-offset-1' />
-        <div className='col-xs-4'>
+        <div
+          className='col-lg-4 col-md-5 rightAlign-md marginTop-xs'
+        >
           <div
             style={{
               marginBottom: '1em',
@@ -114,7 +119,7 @@ export default function BodyMenuItem () {
             Advisory Board
           </div>
           <div className='Light row'>
-            <div className='col-xs-9 Light' style={{ lineHeight: '1.87' }}>
+            <div className='col-md-offset-3 col-xs-9 Light' style={{ lineHeight: '1.87' }}>
             The ANU Cyber Institute is led by eight-members of the Advisory Board, who set the strategic direction of the Institute.
             </div>
           </div>
@@ -132,7 +137,7 @@ export default function BodyMenuItem () {
             <ArrowRightIcon />
           </Button>
         </div>
-        <div className='col-xs-2' />
+        <div className='col-lg-2 col-md-1' />
       </div>
     </div>
   )

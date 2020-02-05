@@ -1,8 +1,24 @@
 body {
   margin: 0;
-  /* background: #f1f1f2; */
 }
 
-html {
-  /* font-size: 18px; */
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("//fonts.gstatic.com/s/roboto/v18/e7MeVAyvogMqFwwl61PKhPesZW2xOQ-xsNqO47m55DA.woff2") format("woff2");
+}
+
+.rightAlign-md {
+  text-align: right;
+}
+
+@media only screen and (max-width: 62em) {
+  .rightAlign-md {
+    text-align: inherit;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .marginTop-xs {
+    margin-top: 3rem;
+  }
 }
