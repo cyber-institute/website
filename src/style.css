@@ -22,3 +22,9 @@ body {
     margin-top: 3rem;
   }
 }
+
+@media only screen and (max-width: 62em) {
+  .centerAlign-xs {
+    text-align: center;
+  }
+}

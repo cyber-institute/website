@@ -20,7 +20,7 @@ export default () =>
           color: '#523178'
         }}
       >
-        Are you ready<br />to transform cyber
+        Are you ready<br />to transform cyber?
       </h1>
     </div>
     <div
