@@ -19,7 +19,10 @@ export default function BodyMenuItem () {
       className='container-fluid'
     >
       <div className='row'>
-        <div className='col-xs-offset-2 col-xs-4'>
+        <div
+          className='col-lg-offset-2 col-lg-4
+                     col-md-offset-1 col-md-5'
+        >
           <div
             style={{
               marginBottom: '1em',
@@ -60,7 +63,7 @@ export default function BodyMenuItem () {
             <ArrowRightIcon />
           </Button>
         </div>
-        <div className='col-xs-4' style={{ overflow: 'hidden' }}>
+        <div className='col-lg-4 col-md-5' style={{ overflow: 'hidden' }}>
           <img
             src={team} style={{
               maxWidth: '100%',
@@ -69,7 +72,7 @@ export default function BodyMenuItem () {
             }}
           />
         </div>
-        <div className='col-xs-2' />
+        <div className='col-lg-2 col-md-1' />
       </div>
     </div>
   )
