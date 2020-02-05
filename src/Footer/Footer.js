@@ -9,7 +9,7 @@ export default () =>
         marginTop: '10rem'
       }}
     >
-      <div className='container'>
+      <div className='container-fluid'>
         <div className='row'>
           <div className='col-lg-4 col-md-6 col-sm-6 mt-2 mb-4'>
             <h5 className='mb-4 font-weight-bold'>ABOUT US</h5>
@@ -100,7 +100,7 @@ export default () =>
     </footer>
 
     <section className='copyright'>
-      <div className='container'>
+      <div className='container-fluid'>
         <div className='row'>
           <div className='col-md-12 '>
             <div className='text-center text-white Light'>
