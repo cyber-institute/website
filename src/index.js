@@ -16,7 +16,8 @@ import Footer from './Footer/Footer'
 import laptop from '../img/laptop.jpg'
 import blog from '../img/blogs.jpg'
 
-import 'flexboxgrid/dist/flexboxgrid.min.css'
+// import 'flexboxgrid/dist/flexboxgrid.min.css'
+import './flexboxgrid.css'
 import './style.css'
 
 class App extends Component {
@@ -51,7 +52,7 @@ class App extends Component {
           img={blog}
         />
         <Links />
-        <Footer />
+        {/* <Footer /> */}
       </>
     )
   }
