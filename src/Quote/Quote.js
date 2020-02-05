@@ -11,6 +11,7 @@ export default function Quote () {
       style={{
         marginTop: '10rem'
       }}
+      className='container-fluid'
     >
       <div className='row'>
         <div className='col-xs-7'>

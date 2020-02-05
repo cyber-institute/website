@@ -7,9 +7,11 @@ import './style.css'
 
 export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms }) {
   return (
-    <div style={{
-      marginTop: '10rem'
-    }}
+    <div
+      style={{
+        marginTop: '10rem'
+      }}
+      className='container-fluid'
     >
       <div className='row'>
         <div className='col-md-offset-2 col-md-4'>

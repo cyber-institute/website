@@ -13,9 +13,11 @@ import mick from '../../img/mick_ryan.jpg'
 
 export default function BodyMenuItem () {
   return (
-    <div style={{
-      marginTop: '10rem'
-    }}
+    <div
+      style={{
+        marginTop: '10rem'
+      }}
+      className='container-fluid'
     >
       <div className='row'>
         <div className='col-xs-3 col-xs-offset-2'>
