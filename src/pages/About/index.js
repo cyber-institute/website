@@ -184,13 +184,13 @@ export default () =>
           marginTop: '12rem'
         }}
       >
-        <div className='col-xs-offset-2 col-xs-5'>
+        <div className='col-xs-offset-2 col-xs-4'>
           <p>
             People are core to what we do.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
           </p>
         </div>
         <div
-          className='col-xs-5' style={{
+          className='col-xs-5 col-xs-offset-1' style={{
             position: 'relative'
           }}
         >
@@ -208,11 +208,36 @@ export default () =>
       </div>
       <div
         className='row' style={{
-          marginTop: '12rem'
+          marginTop: '12rem',
+          position: 'relative'
         }}
       >
         <div className='col-md-offset-2 col-md-8'>
+          <div style={{
+            position: 'absolute',
+            width: '50%',
+            top: '5%',
+            left: 'calc(0% - 1rem)',
+            border: '1px solid',
+            color: 'rgb(82, 49, 120)',
+            zIndex: '-1'
+          }}
+          />
+          <div style={{
+            position: 'absolute',
+            width: '50%',
+            bottom: '5%',
+            right: 'calc(0% - 1rem)',
+            border: '1px solid',
+            color: 'rgb(82, 49, 120)',
+            zIndex: '-1'
+          }}
+          />
           <img src={traffic} className='width100' />
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col-md-offset-2 col-md-8'>
           <p
             className='textAlignCenter' style={{
               marginTop: '2rem'
