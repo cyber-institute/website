@@ -163,6 +163,37 @@ export default () =>
         <div className='col-md-6'>
           <img src={aus} className='width100' />
         </div>
+        <div
+          className='col-md-5' style={{
+            position: 'relative',
+            right: '8.333%',
+            zIndex: '-1'
+          }}
+        >
+          <div style={{
+            position: 'absolute',
+            top: '50%',
+            width: '50%',
+            height: '2px',
+            backgroundImage: 'linear-gradient(to right, rgb(82, 49, 120) 60%, rgba(255,255,255,0) 0%)',
+            backgroundPosition: 'bottom',
+            backgroundSize: '12px 2px',
+            backgroundRepeat: 'repeat-x'
+          }}
+          />
+          <div style={{
+            position: 'absolute',
+            top: '50%',
+            left: 'calc(50% + 1rem)',
+            height: 'calc(50% + 3rem)',
+            width: '2px',
+            backgroundImage: 'linear-gradient(rgb(82, 49, 120) 60%, rgba(255, 255, 255, 0) 0%)',
+            backgroundPosition: 'right',
+            backgroundSize: '2px 12px',
+            backgroundRepeat: 'repeat-y'
+          }}
+          />
+        </div>
       </div>
       <div className='row'>
         <div
