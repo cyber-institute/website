@@ -142,6 +142,24 @@ export default () =>
           marginTop: '12rem'
         }}
       >
+        <div style={{
+          width: '100%',
+          position: 'relative'
+        }}
+        >
+          <h2
+            className='Bold' style={{
+              position: 'absolute',
+              right: '-1rem',
+              top: '-15rem',
+              fontSize: '250px',
+              margin: '0',
+              opacity: '5%'
+            }}
+          >
+            humanity
+          </h2>
+        </div>
         <div className='col-xs-offset-5 col-xs-5'>
           <p>
             Cyber touches every facet of everyday life in the digital world.  It shapes world events and the future of our society and economy.  And so, it’s important that we partner with decision-makers, researchers and practitioners in industry, government and the broader community, and we build a broader awareness and discussion of the issues at hand.
