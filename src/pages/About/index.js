@@ -3,24 +3,20 @@ import React from 'react'
 import topBanner from './topBanner.jpg'
 import bottomBanner from './bottomBanner.jpg'
 import anu from './anu.jpg'
+import people from './Moving People.jpg'
+import traffic from './Traffic Long Exposure.jpg'
+import aus from './australia-satellite-imagery-map.jpg'
 
 export default () =>
   <div style={{
     marginTop: '64px'
   }}
   >
-    {/* <div style={{
-      backgroundImage: `url(${topBanner})`
-    }}
-    /> */}
     <img
-      src={topBanner} style={{
-        width: '100%'
-      }}
+      src={topBanner} className='width100'
     />
     <img
-      src={bottomBanner} style={{
-        width: '100%',
+      src={bottomBanner} className='width100' style={{
         clipPath: 'polygon(50% 100%, 0 0, 100% 0)'
       }}
     />
@@ -52,9 +48,7 @@ export default () =>
           className='col-xs-offset-1 col-xs-4'
         >
           <img
-            src={anu} style={{
-              width: '100%'
-            }}
+            src={anu} className='width100'
           />
           <span
             style={{
@@ -75,53 +69,109 @@ export default () =>
         >
           <p style={{
             position: 'absolute',
-            bottom: '0',
-            fontSize: '20px'
+            bottom: '0'
           }}
           >
             the Cyber Institute brings a new approach to the challenges presented by cyber and cyber security to people, communities, industries and governments.
           </p>
         </div>
       </div>
-      <div
-        className='row' style={{
-          marginTop: '8rem'
-        }}
+      <div style={{
+        position: 'relative'
+      }}
       >
-        <div className='col-xs-offset-2 col-xs-5'>
-          <p style={{
-            fontSize: '20px'
+        <div
+          className='row' style={{
+            marginTop: '8rem',
+            paddingTop: '4rem'
           }}
-          >
+        >
+          <div style={{
+            position: 'absolute',
+            left: '40%',
+            width: 'calc(60% - 2px + 2rem)',
+            top: '0',
+            border: '1px solid'
+          }}
+          />
+          <div className='col-xs-offset-2 col-xs-5'>
+            <p>
             We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where ideas and systems interact.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
-          </p>
+            </p>
+          </div>
         </div>
       </div>
       <div
         className='row' style={{
-          marginTop: '8rem'
+          marginTop: '12rem'
         }}
       >
         <div className='col-xs-offset-5 col-xs-5'>
-          <p style={{
-            fontSize: '20px'
-          }}
+          <p>
+            Cyber touches every facet of everyday life in the digital world.  It shapes world events and the future of our society and economy.  And so, it’s important that we partner with decision-makers, researchers and practitioners in industry, government and the broader community, and we build a broader awareness and discussion of the issues at hand.
+          </p>
+        </div>
+      </div>
+      <div style={{
+        position: 'relative'
+      }}
+      >
+        <div style={{
+          marginTop: '4rem',
+          position: 'absolute',
+          left: '-2rem',
+          width: '25%',
+          border: '1px solid'
+        }}
+        />
+      </div>
+      <div
+        className='row' style={{
+          marginTop: '12rem'
+        }}
+      >
+        <div className='col-xs-offset-2 col-xs-5'>
+          <p>
+            People are core to what we do.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
+          </p>
+        </div>
+        <div className='col-xs-5'>
+          <img src={people} className='width100' />
+        </div>
+      </div>
+      <div
+        className='row' style={{
+          marginTop: '12rem'
+        }}
+      >
+        <div className='col-md-offset-2 col-md-8'>
+          <img src={traffic} className='width100' />
+          <p
+            className='textAlignCenter' style={{
+              marginTop: '2rem'
+            }}
           >
-            We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where ideas and systems interact.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
+            Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a real-time security operations centre. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
           </p>
         </div>
       </div>
       <div
         className='row' style={{
-          marginTop: '8rem'
+          marginTop: '12rem'
         }}
       >
-        <div className='col-xs-offset-2 col-xs-5'>
-          <p style={{
-            fontSize: '20px'
+        <div className='col-md-6'>
+          <img src={aus} className='width100' />
+        </div>
+      </div>
+      <div className='row'>
+        <div
+          className='col-md-offset-5 col-md-5' style={{
+            marginTop: '4rem'
           }}
-          >
-            People are core to what we do.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
+        >
+          <p>
+            As part of the Australian National University—a resource of national significance helping to strengthen Australian democracy—we are committed to informing the national debate, building national capability, supporting Australia’s regional and geo-strategic position, and bettering the place of humanity in this technologically-shaped world.
           </p>
         </div>
       </div>
