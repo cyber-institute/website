@@ -16,6 +16,8 @@ import Footer from './Footer/Footer'
 import laptop from '../img/laptop.jpg'
 import blog from '../img/blogs.jpg'
 
+import './swirly_lines'
+
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './flexboxgrid.css'
 import './style.css'

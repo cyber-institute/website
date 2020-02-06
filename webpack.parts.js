@@ -4,8 +4,8 @@ const commonModules = {
       test: /swirly_lines\.js$/,
       loader: 'file-loader',
       options: {
-        name: '[name].[ext]',
-      },
+        name: '[name].[ext]'
+      }
     },
     {
       test: /\.(js|jsx)$/,
