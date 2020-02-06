@@ -16,6 +16,8 @@ import Footer from './Footer/Footer'
 import laptop from '../img/laptop.jpg'
 import blog from '../img/blogs.jpg'
 
+import About from './pages/About/index'
+
 import './swirly_lines'
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
@@ -27,33 +29,7 @@ class App extends Component {
     return (
       <>
         <AppBar />
-        <Heading />
-        <div style={{ position: 'relative' }}>
-          <Sine />
-          <Body />
-          <Square />
-        </div>
-        <BodyMenuItem
-          top='01 About'
-          heading='Explore Cyber'
-          text='Mission-driven. Exploratory. Interdisciplinary and inclusive in nature. Trusted adviser to decision makers.'
-          buttonText='About Cyber Institute'
-          img={laptop}
-          transforms
-        />
-        <Quote />
-        <BodyMenuItemSwapped />
-        <div style={{ position: 'relative' }}>
-          <PurpleBodyMenuItem />
-        </div>
-        <BodyMenuItem
-          top='04 Blog'
-          heading='Blog & Insights'
-          text='Here is some text to help with styling and whatnot. No real purpose for this text, except for the assistance in styling of the posts.'
-          buttonText='Find out more'
-          img={blog}
-        />
-        <Links />
+        <About />
         <Footer />
       </>
     )
