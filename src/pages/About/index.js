@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Banner from '../common/Banner'
+
 import topBanner from './topBanner.jpg'
 import bottomBanner from './bottomBanner.jpg'
 import anu from './anu.jpg'
@@ -8,34 +10,8 @@ import traffic from './Traffic Long Exposure.jpg'
 import aus from './australia-satellite-imagery-map.jpg'
 
 export default () =>
-  <div style={{
-    marginTop: '64px'
-  }}
-  >
-    <img
-      src={topBanner} className='width100'
-    />
-    <img
-      src={bottomBanner} className='width100' style={{
-        clipPath: 'polygon(50% 100%, 0 0, 100% 0)'
-      }}
-    />
-    <div style={{
-      position: 'relative',
-      height: '8rem'
-    }}
-    >
-      <div style={{
-        margin: 'auto',
-        position: 'absolute',
-        height: '100%',
-        width: '0px',
-        left: 'calc(50% - 1px)',
-        borderLeft: '2px solid',
-        color: '#523178'
-      }}
-      />
-    </div>
+  <>
+    <Banner {...{ topBanner, bottomBanner }} />
     <div className='container-fluid'>
       <div
         style={{
@@ -289,4 +265,4 @@ export default () =>
         </div>
       </div>
     </div>
-  </div>
+  </>

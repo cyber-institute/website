@@ -17,6 +17,7 @@ import laptop from '../img/laptop.jpg'
 import blog from '../img/blogs.jpg'
 
 import About from './pages/About/index'
+import Services from './pages/Services/index'
 
 import './swirly_lines'
 
