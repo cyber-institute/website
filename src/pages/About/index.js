@@ -61,6 +61,42 @@ export default () =>
           >
             As a strategic initiative of the Australian National University,
           </span>
+          <div style={{
+            position: 'relative',
+            left: '-4rem',
+            top: 'calc(-100% + 4rem)',
+            width: '100%',
+            height: '100%',
+            zIndex: '-1'
+          }}
+          >
+            <div
+              className='dottedLineHorizontal' style={{
+                position: 'absolute',
+                width: '100%'
+              }}
+            />
+            <div
+              className='dottedLineHorizontal' style={{
+                position: 'absolute',
+                top: '100%',
+                width: '100%'
+              }}
+            />
+            <div
+              className='dottedLineVertical' style={{
+                position: 'absolute',
+                height: '100%'
+              }}
+            />
+            <div
+              className='dottedLineVertical' style={{
+                position: 'absolute',
+                left: '100%',
+                height: '100%'
+              }}
+            />
+          </div>
         </div>
         <div
           className='col-xs-offset-1 col-xs-4' style={{
@@ -170,28 +206,20 @@ export default () =>
             zIndex: '-1'
           }}
         >
-          <div style={{
-            position: 'absolute',
-            top: '50%',
-            width: '50%',
-            height: '2px',
-            backgroundImage: 'linear-gradient(to right, rgb(82, 49, 120) 60%, rgba(255,255,255,0) 0%)',
-            backgroundPosition: 'bottom',
-            backgroundSize: '12px 2px',
-            backgroundRepeat: 'repeat-x'
-          }}
+          <div
+            className='dottedLineHorizontal' style={{
+              position: 'absolute',
+              top: '50%',
+              width: '50%'
+            }}
           />
-          <div style={{
-            position: 'absolute',
-            top: '50%',
-            left: 'calc(50% + 1rem)',
-            height: 'calc(50% + 3rem)',
-            width: '2px',
-            backgroundImage: 'linear-gradient(rgb(82, 49, 120) 60%, rgba(255, 255, 255, 0) 0%)',
-            backgroundPosition: 'right',
-            backgroundSize: '2px 12px',
-            backgroundRepeat: 'repeat-y'
-          }}
+          <div
+            className='dottedLineVertical' style={{
+              position: 'absolute',
+              top: '50%',
+              left: 'calc(50% + 1rem)',
+              height: 'calc(50% + 3rem)'
+            }}
           />
         </div>
       </div>
