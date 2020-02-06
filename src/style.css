@@ -29,17 +29,35 @@ body {
   }
 }
 
+@media only screen and (min-width: 62em) {
+  .centerAlign-lg {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 62em) {
   .displayNone-sm {
     display: none;
   }
 }
 
+@media only screen and (min-width: 62em) {
+  .marginTop4rem-md {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .marginTop2rem-xs {
+    margin-top: 2rem;
+  }
+}
+
+
 p {
   margin: 0;
   font-size: 20px;
   font-family: 'Helvetica Neue LT Std 45 Light';
-  text-align: justify;
 }
 
 .width100 {

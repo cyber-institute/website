@@ -45,7 +45,7 @@ export default () =>
         className='row'
       >
         <div
-          className='col-xs-offset-1 col-xs-4'
+          className='col-md-offset-1 col-md-4'
         >
           <img
             src={anu} className='width100'
@@ -99,7 +99,7 @@ export default () =>
           </div>
         </div>
         <div
-          className='col-xs-offset-1 col-xs-4' style={{
+          className='col-md-offset-1 col-md-4' style={{
             position: 'relative'
           }}
         >
@@ -130,7 +130,7 @@ export default () =>
             border: '1px solid'
           }}
           />
-          <div className='col-xs-offset-2 col-xs-5'>
+          <div className='col-md-offset-2 col-md-5'>
             <p>
             We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where ideas and systems interact.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
             </p>
@@ -160,7 +160,7 @@ export default () =>
             humanity
           </h2>
         </div>
-        <div className='col-xs-offset-5 col-xs-5'>
+        <div className='col-md-offset-5 col-md-5'>
           <p>
             Cyber touches every facet of everyday life in the digital world.  It shapes world events and the future of our society and economy.  And so, it’s important that we partner with decision-makers, researchers and practitioners in industry, government and the broader community, and we build a broader awareness and discussion of the issues at hand.
           </p>
@@ -184,13 +184,13 @@ export default () =>
           marginTop: '12rem'
         }}
       >
-        <div className='col-xs-offset-2 col-xs-4'>
+        <div className='col-md-offset-2 col-md-4'>
           <p>
             People are core to what we do.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
           </p>
         </div>
         <div
-          className='col-xs-5 col-xs-offset-1' style={{
+          className='col-md-5 col-md-offset-1 marginTop2rem-xs' style={{
             position: 'relative'
           }}
         >
@@ -239,7 +239,7 @@ export default () =>
       <div className='row'>
         <div className='col-md-offset-2 col-md-8'>
           <p
-            className='textAlignCenter' style={{
+            className='centerAlign-lg' style={{
               marginTop: '2rem'
             }}
           >
@@ -281,9 +281,7 @@ export default () =>
       </div>
       <div className='row'>
         <div
-          className='col-md-offset-5 col-md-5' style={{
-            marginTop: '4rem'
-          }}
+          className='col-md-offset-5 col-md-5 marginTop2rem-xs marginTop4rem-md'
         >
           <p>
             As part of the Australian National University—a resource of national significance helping to strengthen Australian democracy—we are committed to informing the national debate, building national capability, supporting Australia’s regional and geo-strategic position, and bettering the place of humanity in this technologically-shaped world.
