@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Banner from '../common/Banner'
+
+import banner from './banner.jpg'
+
 export default () =>
-  <div style={{
-    marginTop: '64px'
-  }}
-  >
-    Hello
-  </div>
+  <>
+    {/* <img src={banner} /> */}
+    <Banner {...{ banner }} />
+  </>
