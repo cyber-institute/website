@@ -89,3 +89,7 @@ p {
   background-size: 12px 2px;
   background-repeat: repeat-x;
 }
+
+.positionRelative {
+  position: relative;
+}
