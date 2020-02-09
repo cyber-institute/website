@@ -4,6 +4,8 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import PropTypes from 'prop-types'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import News from './../News/news'
 
 import CITwhite from '../../img/CITwhite.jpg'
 
@@ -52,9 +54,14 @@ export default function CyberAppBar () {
       <ElevationScroll>
         <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           <Toolbar>
+          <Router>
             <img src={CITwhite} style={{ width: '25px' }} />
+            <div>
+            <Route path="/news" component={News} />
+            </div>
             {/* <Typography variant='h6'>Scroll to Elevate App Bar</Typography> */}
             <ul style={{ width: '100%' }}>
+            <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link>
               <a className='Light' style={{ float: 'right', fontSize: '13px' }}>Case Studies</a>
               <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Research</a>
               <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Operations</a>
@@ -62,9 +69,10 @@ export default function CyberAppBar () {
               <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Partnerships</a>
               <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Blog</a>
               <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Team</a>
-              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Governance</a>
+              <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News</Link>
               <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About</a>
             </ul>
+            </Router>
           </Toolbar>
         </AppBar>
       </ElevationScroll>

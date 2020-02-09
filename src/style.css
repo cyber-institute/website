@@ -34,3 +34,8 @@ body {
     display: none;
   }
 }
+
+.NewsArticle:hover{
+  background-color: lightgrey;
+  opacity: 0.5;
+}

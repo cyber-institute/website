@@ -1,6 +1,6 @@
-const SIZE = 64
-const MAX_FRAME_NUMBER = 100000
-const CLOCKS = 50
+const SIZE = 30
+const MAX_FRAME_NUMBER = 10000
+const CLOCKS = 10
 const NUM_LINES = 128
 const OMEGA = Math.PI*2/MAX_FRAME_NUMBER
 const PHI = 3/4*Math.PI
@@ -40,11 +40,11 @@ const containerStyle = {
 let mouse_x = 0
 let mouse_y = 0
 
-const lines = new Array(NUM_LINES)
+const lines = new Array(NUM_LINES/2)
 for (let i = 0; i < NUM_LINES; i++) {
   lines[i] = new Float32Array(SIZE)
   for (let j = 0; j < SIZE; j++) {
-    lines[i][j] = 300 * Math.sin(j * 3 / 4 * Math.PI / (SIZE - 1) + i * Math.PI / NUM_LINES)
+    lines[i][j] = 200 * Math.sin(j * 3 / 4 * Math.PI / (SIZE - 1) + i * Math.PI / NUM_LINES)
   }
 }
 
@@ -72,8 +72,8 @@ function main_loop () {
         prev_point = curr_point;
       }
       const t = OMEGA*frame_number + i*NU
-      lines[i][0] = 300*Math.sin(t);
-      lines[i][SIZE-1] = 300*Math.sin(t + PHI);
+      lines[i][0] = 200*Math.sin(t);
+      lines[i][SIZE-1] = 200*Math.sin(t + PHI);
     }
     frame_number++;
     if (frame_number == MAX_FRAME_NUMBER) {

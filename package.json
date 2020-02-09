@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start-dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
+    "start-dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --host 0.0.0.0 --env development\"",
     "build": "rm -rf dist/*; webpack --env production",
     "start": "node server.js",
     "heroku-postbuild": "webpack --env production"
@@ -37,6 +37,9 @@
     "express": "^4.17.1",
     "flexboxgrid": "^6.3.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-router-dom": "5.1.2",
+    "react-spring": "8.0.27",
+    "styled-components": "5.0.1"
   }
 }
