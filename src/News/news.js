@@ -696,5 +696,3 @@ function Content ({ clickButton, isVisible, page }) {
   )
 }
 
-const wrapper = document.getElementById('container')
-ReactDOM.render(<App />, wrapper)
