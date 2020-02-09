@@ -6,3 +6,8 @@ body {
 html {
   font-size: 18px;
 }
+
+.NewsArticle:hover{
+  background-color: lightgrey;
+  opacity: 0.5;
+}
