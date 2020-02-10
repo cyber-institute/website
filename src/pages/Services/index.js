@@ -92,24 +92,32 @@ const Heading = ({ children }) =>
   </h2>
 
 const CourseInformationBlurb = ({ courseLength, enrolment, commencingCohort, includes }) =>
-  <div className='row'>
-    <div className='col-md-6'>
-      <div>
-Course Length: {courseLength}
+  <>
+    <div className='row'>
+      <div className='col-md-6 col-xs-12'>
+        <p>
+          <span className='Bold'>Course Length:</span> {courseLength}
+        </p>
       </div>
-      <div>
-Enrolment: {enrolment}
-      </div>
-    </div>
-    <div className='col-md-5'>
-      <div>
-Commencing cohort: {commencingCohort}
-      </div>
-      <div>
-Includes: {includes}
+      <div className='col-md-6 col-xs-12'>
+        <p>
+          <span className='Bold'>Commencing cohort:</span> {commencingCohort}
+        </p>
       </div>
     </div>
-  </div>
+    <div className='row marginTop1rem-md'>
+      <div className='col-md-6 col-xs-12'>
+        <p>
+          <span className='Bold'>Enrolment:</span> {enrolment}
+        </p>
+      </div>
+      <div className='col-md-6 col-xs-12'>
+        <p>
+          <span className='Bold'>Includes:</span> {includes}
+        </p>
+      </div>
+    </div>
+  </>
 
 const CyberMasteryContent = () =>
   <>
@@ -121,18 +129,34 @@ const CyberMasteryContent = () =>
           commencingCohort='2021 (with some modules available from mid-2020)'
           includes='Micro modules & Three capstone projects'
         />
-        <p>Its core principles are:</p>
+        <div style={{
+          marginTop: '2rem'
+        }}
+        >
+          <p>Its core principles are:</p>
+        </div>
       </div>
     </div>
     <div className='row'>
       <div className='col-md-offset-1 col-md-5'>
-        <h3>1. Interdisiplinarity</h3>
+        <h3
+          className='Light'
+          style={{
+            fontSize: '38px'
+          }}
+        >1. Interdisiplinarity
+        </h3>
         <p>The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks.</p>
       </div>
       <div
         className='col-md-5 marginTop8rem-md'
       >
-        <h3>2. Experiential learning</h3>
+        <h3
+          className='Light' style={{
+            fontSize: '38px'
+          }}
+        >2. Experiential learning
+        </h3>
         <p>We believe the best way to understand core insights and concepts is to apply them. That it is why we’ll be working closely with people across the University to offer you real-time experience as appropriate, as well using a range of tools to help your learning.</p>
       </div>
     </div>
@@ -140,13 +164,23 @@ const CyberMasteryContent = () =>
       <div
         className='col-md-offset-1 col-md-5'
       >
-        <h3>3. Conceptual thinking</h3>
+        <h3
+          className='Light' style={{
+            fontSize: '38px'
+          }}
+        >3. Conceptual thinking
+        </h3>
         <p>We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected.</p>
       </div>
       <div
         className='col-md-5 marginTop8rem-md'
       >
-        <h3>4. Individuals and teams</h3>
+        <h3
+          className='Light' style={{
+            fontSize: '38px'
+          }}
+        >4. Individuals and teams
+        </h3>
         <p>While it’s important that you learn as an individual, cyber is inherently a team effort. Through our program you’ll understand better your own strengths and weaknesses, and how to work well with a diverse range of stakeholders and skill sets; and,</p>
       </div>
     </div>
@@ -154,7 +188,12 @@ const CyberMasteryContent = () =>
       <div
         className='col-md-offset-1 col-md-5'
       >
-        <h3>5. Responsiveness</h3>
+        <h3
+          className='Light' style={{
+            fontSize: '38px'
+          }}
+        >5. Responsiveness
+        </h3>
         <p>We want to ensure that we cover what we consider to be the core craft of cyber and associated topics and offer it in a way that recognises the demanding schedules and needs of busy professionals. Moreover, we know that it is the network of friends you will build as you test yourselves together that will stay with you and help you in future roles. We see this as a core outcome of the program.</p>
       </div>
     </div>

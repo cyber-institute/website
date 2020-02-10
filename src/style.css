@@ -44,6 +44,12 @@ body {
 }
 
 @media only screen and (min-width: 62em) {
+  .marginTop1rem-md {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
   .marginTop4rem-md {
     margin-top: 4rem;
   }
@@ -73,11 +79,18 @@ body {
   }
 }
 
+h3 {
+  font-weight: 400;
+}
 
 p {
   margin: 0;
   font-size: 20px;
   font-family: 'Helvetica Neue LT Std 45 Light';
+}
+
+h1, h2, h3, h4, h5, p {
+  color: #333;
 }
 
 .width100 {

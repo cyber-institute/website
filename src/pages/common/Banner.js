@@ -46,7 +46,6 @@ export default ({ banner }) =>
         right: '0px',
         bottom: '50%',
         margin: 'auto',
-        color: '#fff',
         maxWidth: '800px',
         textAlign: 'center'
       }}
@@ -56,7 +55,8 @@ export default ({ banner }) =>
           style={{
             fontSize: '60px',
             margin: 0,
-            paddingBottom: '1rem'
+            paddingBottom: '1rem',
+            color: '#fff'
           }}
         >
         What we do
@@ -65,7 +65,8 @@ export default ({ banner }) =>
           className='Bold'
           style={{
             fontSize: '37px',
-            margin: 0
+            margin: 0,
+            color: '#fff'
           }}
         >
         Doing for cyber what the MBA did for management

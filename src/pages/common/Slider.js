@@ -9,20 +9,25 @@ export default ({ name, children }) => {
   const [isVisible, setIsVisible] = useState(true)
   return (
     <div style={{
-      marginBottom: '1rem'
+      marginBottom: '1rem',
+      width: '100%'
     }}
     >
-      <button
-        type='button'
-        style={{
-          border: 'none',
-          padding: 0
-        }}
-        onClick={() => setIsVisible(!isVisible)}
-      >
-        <Name {...{ name }} />
-        <Icons {...{ isVisible }} />
-      </button>
+      <div className='row'>
+        <div className='col-md-offset-1'>
+          <button
+            type='button'
+            style={{
+              border: 'none',
+              padding: 0
+            }}
+            onClick={() => setIsVisible(!isVisible)}
+          >
+            <Name {...{ name }} />
+            <Icons {...{ isVisible }} />
+          </button>
+        </div>
+      </div>
       <SlideToggleContent {...{ isVisible }}>
         <div style={{
           margin: '1rem 0'
