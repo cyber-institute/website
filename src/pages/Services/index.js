@@ -61,31 +61,34 @@ We call it building your Cyber Mastery.
             <CyberMasteryContent />
           </Slider>
           <Slider name='Graduate Diploma'>
-            <div className='row'>
-              <div className='col-md-offset-1 col-md-10'>
-                <CourseInformationBlurb
-                  courseLength='1 year full-time study'
-                  enrolment='Enrolment information coming in near future'
-                  commencingCohort='2021 (with some modules available from mid-2020)'
-                  includes='Micro modules'
-                />
-                <div style={{
-                  marginTop: '2rem'
-                }}
-                >
-                  <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
-                    <br /><br />
-As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <GraduateDiploma />
           </Slider>
         </div>
       </div>
       <ExecutiveEducation />
     </div>
   </>
+
+const GraduateDiploma = () =>
+  <div className='row'>
+    <div className='col-md-offset-1 col-md-10'>
+      <CourseInformationBlurb
+        courseLength='1 year full-time study'
+        enrolment='Enrolment information coming in near future'
+        commencingCohort='2021 (with some modules available from mid-2020)'
+        includes='Micro modules'
+      />
+      <div style={{
+        marginTop: '2rem'
+      }}
+      >
+        <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
+          <br /><br />
+As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
+        </p>
+      </div>
+    </div>
+  </div>
 
 const Heading = ({ children }) =>
   <h2
