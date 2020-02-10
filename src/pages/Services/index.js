@@ -125,43 +125,39 @@ const CyberMasteryContent = () =>
       </div>
     </div>
     <div className='row'>
-      <div className='col-md-6'>
-        a
+      <div className='col-md-offset-1 col-md-5'>
+        <h3>1. Interdisiplinarity</h3>
+        <p>The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks.</p>
       </div>
-      <div className='col-md-6'>
-          b
+      <div
+        className='col-md-5 marginTop8rem-md'
+      >
+        <h3>2. Experiential learning</h3>
+        <p>We believe the best way to understand core insights and concepts is to apply them. That it is why we’ll be working closely with people across the University to offer you real-time experience as appropriate, as well using a range of tools to help your learning.</p>
       </div>
     </div>
-    {
-      Object.entries(content).map(([title, content], index) => {
-        if (index % 2 === 0) {
-          return (
-            <div style={{
-              marginTop: `${index !== 0 && '8rem'}`
-            }}
-            >
-              <h3>{index + 1}. {title}</h3>
-              <p>{content}</p>
-            </div>
-          )
-        }
-      })
-    }
-    {
-      Object.entries(content).map(([title, content], index) => {
-        if (index % 2 !== 0) {
-          return (
-            <div style={{
-              marginTop: '8rem'
-            }}
-            >
-              <h3>{index + 1}. {title}</h3>
-              <p>{content}</p>
-            </div>
-          )
-        }
-      })
-    }
+    <div className='row'>
+      <div
+        className='col-md-offset-1 col-md-5'
+      >
+        <h3>3. Conceptual thinking</h3>
+        <p>We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected.</p>
+      </div>
+      <div
+        className='col-md-5 marginTop8rem-md'
+      >
+        <h3>4. Individuals and teams</h3>
+        <p>While it’s important that you learn as an individual, cyber is inherently a team effort. Through our program you’ll understand better your own strengths and weaknesses, and how to work well with a diverse range of stakeholders and skill sets; and,</p>
+      </div>
+    </div>
+    <div className='row'>
+      <div
+        className='col-md-offset-1 col-md-5'
+      >
+        <h3>5. Responsiveness</h3>
+        <p>We want to ensure that we cover what we consider to be the core craft of cyber and associated topics and offer it in a way that recognises the demanding schedules and needs of busy professionals. Moreover, we know that it is the network of friends you will build as you test yourselves together that will stay with you and help you in future roles. We see this as a core outcome of the program.</p>
+      </div>
+    </div>
     <div>
       <div
         className='row bottom-xs positionRelative' style={{
@@ -175,7 +171,7 @@ const CyberMasteryContent = () =>
             className='dottedLineHorizontal' style={{
               width: '5%',
               position: 'absolute',
-              left: '-1rem'
+              left: '-2rem'
             }}
           />
           <p>
@@ -203,7 +199,7 @@ const CyberMasteryContent = () =>
             className='dottedLineHorizontal' style={{
               width: '5%',
               position: 'absolute',
-              right: '-1rem'
+              right: '-2rem'
             }}
           />
           <p>
@@ -219,17 +215,6 @@ The full-time Cyber Masters will run across a year end-to-end, commencing in 202
       </div>
     </div>
   </>
-
-const content = {
-  Interdisiplinarity: 'The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks',
-  'Experiential learning': 'We believe the best way to understand core insights and concepts is to apply them. That it is why we’ll be working closely with people across the University to offer you real-time experience as appropriate, as well using a range of tools to help your learning',
-
-  'Conceptual thinking': 'We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected',
-
-  'Individuals and teams': 'While it’s important that you learn as an individual, cyber is inherently a team effort. Through our program you’ll understand better your own strengths and weaknesses, and how to work well with a diverse range of stakeholders and skill sets; and,',
-
-  Responsiveness: 'We want to ensure that we cover what we consider to be the core craft of cyber and associated topics and offer it in a way that recognises the demanding schedules and needs of busy professionals. Moreover, we know that it is the network of friends you will build as you test yourselves together that will stay with you and help you in future roles. We see this as a core outcome of the program.'
-}
 
 const PlaceHolderImage = () =>
   <img
