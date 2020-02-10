@@ -7,6 +7,8 @@ import PartnerWithUs from './PartnerWithUs'
 import Operations from './Operations'
 import Partnerships from './Partnerships'
 
+import PlaceHolderImage from './PlaceHolderImage'
+
 import Banner from '../common/Banner'
 import Slider from '../common/Slider'
 
@@ -53,12 +55,13 @@ That’s why the Cyber Institute is offering a different way of learning, which 
 We call it building your Cyber Mastery.
           </p>
         </div>
+        <div className='col-md-4 margin4RemAuto-sm'>
+          <PlaceHolderImage />
+        </div>
       </div>
       <div className='container-fluid'>
         <div
-          className='row' style={{
-            marginTop: '8rem'
-          }}
+          className='row marginTop4rem-md'
         >
           <Slider name='Cyber Mastery'>
             <CyberMasteryContent />

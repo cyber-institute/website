@@ -1,6 +1,5 @@
 import React from 'react'
 
-import PlaceHolderImage from './PlaceHolderImage'
 import { Heading } from './index'
 
 export default () =>
@@ -42,7 +41,7 @@ export default () =>
     </div>
     <div
       className='row' style={{
-        marginTop: '4rem'
+        marginTop: '2rem'
       }}
     >
       <div className='col-md-5 col-md-offset-1'>
@@ -50,7 +49,7 @@ export default () =>
         Partnerships are key to proactively addressing issues of issues of cyber trust, design, risk and resilience and so building a better future for people, organisation, the nation and humanity more generally.  That’s evident from the valuable analysis undertaken by the Australian Cyber Security Growth Network; it’s reflected, too, in the Australian Government’s domestic and international cyber strategies.
         </p>
       </div>
-      <div className='col-md-5 marginTop4rem-xs'>
+      <div className='col-md-5 marginTop2rem-xs'>
         <p>
         The Institute has a three-tiered partnership model—see below—accommodating a range of cyber stakeholders. Our goal is to find the best fit, and where possible enable permeability which is critical to seeding and amplifying activities across the broader ecosystem and growing the Australian cyber skills base at a rate required for the future.
         </p>
@@ -58,7 +57,7 @@ export default () =>
     </div>
     <div
       className='row' style={{
-        marginTop: '4rem'
+        marginTop: '2rem'
       }}
     >
       <div className='col-md-5 col-md-offset-1'>
@@ -66,7 +65,7 @@ export default () =>
         Our view is that cyber is a team sport.  Interaction, partnership and collaboration is embedded within the Cyber Institute’s DNA.   If you—or your organisation—are willing to engage, build capacity, mitigate risks and further take advantage of opportunities presented in the digital revolution, we are keen to talk further.
         </p>
       </div>
-      <div className='col-md-5 marginTop4rem-xs'>
+      <div className='col-md-5 marginTop2rem-xs'>
         <p>
         We know that true partnerships take time to develop and must be mutually valuable.  While our primary focus now is on our flagship education program, we have other activities and areas that may prove of interest.  Talk to us about your needs and together we can develop a collaboration that meet both our needs now but also allows scope to meet potential grow, should that suit.
         </p>

@@ -23,7 +23,11 @@ export default () =>
       </div>
     </div>
     <div className='container-fluid'>
-      <div className='row'>
+      <div
+        className='row' style={{
+          marginTop: '4rem'
+        }}
+      >
         <Slider name='Cyber Bootcamp Program'>
           <div className='row positionRelative'>
             <div className='col-md-offset-1 col-md-7'>

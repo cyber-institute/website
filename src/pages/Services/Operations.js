@@ -111,9 +111,7 @@ We want to find ways to overcome or offset the current arms race of attack-defen
         </div>
       </div>
       <div
-        className='row' style={{
-          marginTop: '4rem'
-        }}
+        className='row marginTop4rem-md'
       >
         <div className='col-md-offset-2 col-md-9'>
           <p>
