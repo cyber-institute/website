@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import SlideToggleContent from './SlideToggleContent'
 
 export default ({ name, children }) => {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
   return (
     <div style={{
       marginBottom: '1rem',

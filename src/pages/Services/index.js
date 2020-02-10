@@ -2,6 +2,7 @@ import React from 'react'
 
 import CyberMasteryContent from './CyberMasteryContent'
 import CourseInformationBlurb from './CourseInformationBlurb'
+import ExecutiveEducation from './ExecutiveEducation'
 
 import Banner from '../common/Banner'
 import Slider from '../common/Slider'
@@ -82,6 +83,7 @@ As with the Masters, it will run full-time, end-to-end from 2021. In the meantim
           </Slider>
         </div>
       </div>
+      <ExecutiveEducation />
     </div>
   </>
 
