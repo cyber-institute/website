@@ -48,14 +48,33 @@ We call it building your Cyber Mastery.
           </p>
         </div>
       </div>
-      <div
-        className='row' style={{
-          marginTop: '8rem'
-        }}
-      >
-        <Slider name='Cyber Mastery'>
-          <CyberMasteryContent />
-        </Slider>
+      <div className='container-fluid'>
+        <div
+          className='row' style={{
+            marginTop: '8rem'
+          }}
+        >
+          <Slider name='Cyber Mastery'>
+            <CyberMasteryContent />
+          </Slider>
+          <Slider name='Graduate Diploma'>
+            <div className='row'>
+              <div className='col-md-offset-1 col-md-10'>
+                <CourseInformationBlurb
+                  courseLength='1 year full-time study'
+                  enrolment='Enrolment information coming in near future'
+                  commencingCohort='2021 (with some modules available from mid-2020)'
+                  includes='Micro modules'
+                />
+                <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
+                  <br /><br />
+As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
+                </p>
+              </div>
+            </div>
+          </Slider>
+
+        </div>
       </div>
     </div>
   </>
@@ -72,63 +91,81 @@ const Heading = ({ children }) =>
     {children}
   </h2>
 
+const CourseInformationBlurb = ({ courseLength, enrolment, commencingCohort, includes }) =>
+  <div className='row'>
+    <div className='col-md-6'>
+      <div>
+Course Length: {courseLength}
+      </div>
+      <div>
+Enrolment: {enrolment}
+      </div>
+    </div>
+    <div className='col-md-5'>
+      <div>
+Commencing cohort: {commencingCohort}
+      </div>
+      <div>
+Includes: {includes}
+      </div>
+    </div>
+  </div>
+
 const CyberMasteryContent = () =>
-  <div className='container-fluid'>
+  <>
     <div className='row'>
       <div className='col-md-offset-1 col-md-10'>
-        <div className='row'>
-          <div className='col-md-offset-1 col-md-5'>
-            <div>
-      Course Length: 1 year full-time study
-            </div>
-            <div>
-        Enrolment information coming in near future
-            </div>
-            <p>Its core principles are:</p>
-            {
-              Object.entries(content).map(([title, content], index) => {
-                if (index % 2 === 0) {
-                  return (
-                    <div style={{
-                      marginTop: `${index !== 0 && '8rem'}`
-                    }}
-                    >
-                      <h3>{index + 1}. {title}</h3>
-                      <p>{content}</p>
-                    </div>
-                  )
-                }
-              })
-            }
-          </div>
-          <div className='col-md-5'>
-            <div>
-      Commencing cohort: 2021 (with some modules available from mid-2020)
-            </div>
-            <div>
-        Includes: Micro modules & Three capstone projects
-            </div>
-            {
-              Object.entries(content).map(([title, content], index) => {
-                if (index % 2 !== 0) {
-                  return (
-                    <div style={{
-                      marginTop: '8rem'
-                    }}
-                    >
-                      <h3>{index + 1}. {title}</h3>
-                      <p>{content}</p>
-                    </div>
-                  )
-                }
-              })
-            }
-          </div>
-        </div>
+        <CourseInformationBlurb
+          courseLength='1 year full-time study'
+          enrolment='Enrolment information coming in near future'
+          commencingCohort='2021 (with some modules available from mid-2020)'
+          includes='Micro modules & Three capstone projects'
+        />
+        <p>Its core principles are:</p>
       </div>
+    </div>
+    <div className='row'>
+      <div className='col-md-6'>
+        a
+      </div>
+      <div className='col-md-6'>
+          b
+      </div>
+    </div>
+    {
+      Object.entries(content).map(([title, content], index) => {
+        if (index % 2 === 0) {
+          return (
+            <div style={{
+              marginTop: `${index !== 0 && '8rem'}`
+            }}
+            >
+              <h3>{index + 1}. {title}</h3>
+              <p>{content}</p>
+            </div>
+          )
+        }
+      })
+    }
+    {
+      Object.entries(content).map(([title, content], index) => {
+        if (index % 2 !== 0) {
+          return (
+            <div style={{
+              marginTop: '8rem'
+            }}
+            >
+              <h3>{index + 1}. {title}</h3>
+              <p>{content}</p>
+            </div>
+          )
+        }
+      })
+    }
+    <div>
       <div
         className='row bottom-xs positionRelative' style={{
-          // marginTop: '8rem'
+        // marginTop: '8rem'
         }}
       >
         <div
@@ -181,7 +218,7 @@ The full-time Cyber Masters will run across a year end-to-end, commencing in 202
         </div>
       </div>
     </div>
-  </div>
+  </>
 
 const content = {
   Interdisiplinarity: 'The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks',
