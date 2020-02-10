@@ -5,8 +5,7 @@ import backgroundArt from './backgroundArt.png'
 export default () =>
   <div style={{
     position: 'relative',
-    height: '100vh',
-    backgroundColor: 'rgb(82, 49, 120)'
+    height: '100vh'
   }}
   >
     <div style={{
@@ -15,7 +14,8 @@ export default () =>
       position: 'relative',
       width: '100%',
       zIndex: '0',
-      height: '100%'
+      height: '100%',
+      backgroundColor: 'rgb(82, 49, 120)'
     }}
     >
       <picture
@@ -35,8 +35,88 @@ export default () =>
       />
     </div>
     <div
-      className='container-fluid'
+      className='container-fluid' style={{
+        position: 'absolute',
+        top: '0',
+        right: '0',
+        bottom: '0',
+        left: '0'
+      }}
     >
-      Hello
+      <div className='row'>
+        <div
+          className='col-md-offset-3 col-md-6' style={{
+            textAlign: 'center'
+          }}
+        >
+          <h2
+            className='Light' style={{
+              fontSize: '49px',
+              letterSpacing: '6px',
+              color: '#fff'
+            }}
+          >
+            <div
+              className='displayNone-sm' style={{
+                position: 'absolute',
+                left: 0,
+                width: '30%'
+              }}
+            >
+              <div
+                style={{
+                  position: 'relative',
+                  top: '1em',
+                  border: '1px solid #fff',
+                  opacity: '0.5'
+                }}
+              />
+            </div>
+            <div
+              className='displayNone-sm' style={{
+                position: 'absolute',
+                right: 0,
+                width: '30%'
+              }}
+            >
+              <div
+                style={{
+                  position: 'relative',
+                  top: '1em',
+                  border: '1px solid #fff',
+                  opacity: '0.5'
+                }}
+              />
+            </div>
+          Why not partner<br /> with us?
+          </h2>
+          <p
+            style={{
+              fontSize: '20px',
+              color: '#fff'
+            }}
+          >
+          If your organisation wants to be involved, contact us.  There are many opportunities to both contribute to, as well as benefit from, our education program.
+            <br />
+We are partnering with a diverse set of organisations and celebrate the diversity of our people and skills. We believe the best outcomes arise from collaboration between researchers and practitioners with a range of experiences, skills and insights.
+          </p>
+          <p
+            style={{
+              fontSize: '16px',
+              color: '#fff'
+            }}
+          >
+            <br />
+            <br />
+There are also opportunities to collaborate on content design. That gives the experience we offer immediacy and relevance
+            <br />
+            <br />
+In addition, you or your staff may wish to be part of our community of mentors. We see cyber mentors as intrinsic to our education program. They also help build capability through insights and opportunities, they offer a community of trust and support to our graduates.
+            <br />
+            <br />
+Some partners also sponsor students, however you may wish only for your own staff to gain the benefits of undertaking the program.  Because of our development and delivery mechanism, we have the flexibility to develop modules as Executive Education tailored to your organisational needs, or to address specific topics as identified by you.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
