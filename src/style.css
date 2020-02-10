@@ -55,6 +55,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 62em) {
+  .marginTop4rem-xs {
+    margin-top: 4rem;
+  }
+}
+
 @media only screen and (min-width: 62em) {
   .marginTop8rem-md {
     margin-top: 8rem;

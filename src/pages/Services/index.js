@@ -5,6 +5,7 @@ import CourseInformationBlurb from './CourseInformationBlurb'
 import ExecutiveEducation from './ExecutiveEducation'
 import PartnerWithUs from './PartnerWithUs'
 import Operations from './Operations'
+import Partnerships from './Partnerships'
 
 import Banner from '../common/Banner'
 import Slider from '../common/Slider'
@@ -71,6 +72,7 @@ We call it building your Cyber Mastery.
     </div>
     <PartnerWithUs />
     <Operations />
+    <Partnerships />
   </>
 
 const GraduateDiploma = () =>
