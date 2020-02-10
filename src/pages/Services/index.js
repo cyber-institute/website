@@ -160,15 +160,13 @@ const CyberMasteryContent = () =>
     </div>
     <div>
       <div
-        className='row bottom-xs positionRelative' style={{
-        // marginTop: '8rem'
-        }}
+        className='row bottom-xs positionRelative columnReverse-sm'
       >
         <div
           className='col-md-offset-1 col-md-8'
         >
           <div
-            className='dottedLineHorizontal' style={{
+            className='dottedLineHorizontal displayNone-sm' style={{
               width: '5%',
               position: 'absolute',
               left: '-2rem'
@@ -178,25 +176,21 @@ const CyberMasteryContent = () =>
     The Cyber Mastery program can be taken as stand-alone modules as available, in the form of Executive Education. Once assessment is completed successfully, you will receive a micro-credential from the Australian National University. Successfully complete enough micro-credentials, including from mandatory modules, and you will earn a Graduate Diploma in Cyber. Successfully complete the assessment for the three capstone modules after that, including an individual project and scenario, and you will be awarded a Master of Cyber.
           </p>
         </div>
-        <div className='col-md-3'>
+        <div className='col-md-3 margin4RemAuto-sm'>
           <PlaceHolderImage />
         </div>
       </div>
       <div
-        className='row positionRelative' style={{
-          marginTop: '4rem'
-        }}
+        className='row positionRelative marginTop4rem-md'
       >
-        <div className='col-md-3'>
+        <div className='col-md-3 margin4RemAuto-sm'>
           <PlaceHolderImage />
         </div>
         <div
-          className='col-md-8' style={{
-            textAlign: 'right'
-          }}
+          className='col-md-8 rightAlign-md'
         >
           <div
-            className='dottedLineHorizontal' style={{
+            className='dottedLineHorizontal displayNone-sm' style={{
               width: '5%',
               position: 'absolute',
               right: '-2rem'

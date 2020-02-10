@@ -7,13 +7,9 @@ body {
   src: url("//fonts.gstatic.com/s/roboto/v18/e7MeVAyvogMqFwwl61PKhPesZW2xOQ-xsNqO47m55DA.woff2") format("woff2");
 }
 
-.rightAlign-md {
-  text-align: right;
-}
-
-@media only screen and (max-width: 62em) {
+@media only screen and (min-width: 62em) {
   .rightAlign-md {
-    text-align: inherit;
+    text-align: right;
   }
 }
 
@@ -41,6 +37,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 62em) {
+  .columnReverse-sm {
+    flex-direction: column-reverse;
+  }
+}
+
 @media only screen and (min-width: 62em) {
   .marginTop4rem-md {
     margin-top: 4rem;
@@ -56,6 +58,12 @@ body {
 @media only screen and (max-width: 62em) {
   .marginTop2rem-xs {
     margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .margin4RemAuto-sm {
+    margin: 4rem auto;
   }
 }
 
