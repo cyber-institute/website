@@ -2,19 +2,11 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
 import AppBar from './AppBar/AppBar'
-import Heading from './Heading/Heading'
-import Sine from './Sine/Canvas'
-import Body from './Body/Body'
-import Square from './Sine/Square'
-import BodyMenuItem from './BodyMenuItem/BodyMenuItem'
-import Quote from './Quote/Quote'
-import BodyMenuItemSwapped from './BodyMenuItemSwapped/BodyMenuItemSwapped'
-import PurpleBodyMenuItem from './PurpleBodyMenuItem/PurpleBodyMenuItem'
-import Links from './Links/Links'
 import Footer from './Footer/Footer'
+import News from './News/news'
+import Home from './Home/home'
 
-import laptop from '../img/laptop.jpg'
-import blog from '../img/blogs.jpg'
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 import './swirly_lines'
 
@@ -26,35 +18,25 @@ class App extends Component {
   render () {
     return (
       <>
-        <AppBar />
-        <Heading />
-        <div style={{ position: 'relative' }}>
-          <Sine />
-          <Body />
-          <Square />
-        </div>
-        <BodyMenuItem
-          top='01 About'
-          heading='Explore Cyber'
-          text='Mission-driven. Exploratory. Interdisciplinary and inclusive in nature. Trusted adviser to decision makers.'
-          buttonText='About Cyber Institute'
-          img={laptop}
-          transforms
-        />
-        <Quote />
-        <BodyMenuItemSwapped />
-        <div style={{ position: 'relative' }}>
-          <PurpleBodyMenuItem />
-        </div>
-        <BodyMenuItem
-          top='04 Blog'
-          heading='Blog & Insights'
-          text='Here is some text to help with styling and whatnot. No real purpose for this text, except for the assistance in styling of the posts.'
-          buttonText='Find out more'
-          img={blog}
-        />
-        <Links />
-        <Footer />
+        <Router>
+            <div>
+            {/* <Typography variant='h6'>Scroll to Elevate App Bar</Typography> */}
+            <ul style={{ width: '100%' }}>
+            <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link>
+              <a className='Light' style={{ float: 'right', fontSize: '13px' }}>Case Studies</a>
+              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Research</a>
+              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Operations</a>
+              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Education</a>
+              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Partnerships</a>
+              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Blog</a>
+              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Team</a>
+              <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News</Link>
+              <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About</a>
+            </ul>
+            </div>
+            <Route path="/news" component={News} />
+            <Route path="/" component={Home} />
+            </Router>
       </>
     )
   }

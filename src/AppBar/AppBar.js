@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import News from './../News/news'
+import Home from './../Home/home'
 
 import CITwhite from '../../img/CITwhite.jpg'
 
@@ -58,6 +59,7 @@ export default function CyberAppBar () {
             <img src={CITwhite} style={{ width: '25px' }} />
             <div>
             <Route path="/news" component={News} />
+            <Route path="/" component={Home} />
             </div>
             {/* <Typography variant='h6'>Scroll to Elevate App Bar</Typography> */}
             <ul style={{ width: '100%' }}>

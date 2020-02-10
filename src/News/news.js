@@ -454,6 +454,21 @@ class News extends Component {
       this.setState((prevState) => ({ isVisibleEvent: !prevState.isVisibleEvent }))
   }
 
+  clickButtonMedia () {
+    // this.getClientHeight()
+      this.setState((prevState) => ({ isVisibleMedia: !prevState.isVisibleMedia }))
+  }
+
+  clickButtonBlog () {
+    // this.getClientHeight()
+      this.setState((prevState) => ({ isVisibleBlog: !prevState.isVisibleBlog }))
+  }
+
+  clickButtonPodcast () {
+    // this.getClientHeight()
+      this.setState((prevState) => ({ isVisiblePodcast: !prevState.isVisiblePodcast }))
+  }
+
   render () {
     return (
       <>
@@ -573,7 +588,7 @@ class News extends Component {
           position: 'relative'
         }}
       >
-          <SlideToggleContent isVisible={this.state.isVisible}>
+          <SlideToggleContent isVisible={this.state.isVisibleMedia}>
           <br />
         <br />
           <div class="col-xs-13">
@@ -585,7 +600,7 @@ class News extends Component {
           </div>
       </SlideToggleContent>
       <div class="col-xs-12">
-      <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
+      <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
       </div>
       </div>
       </div>
@@ -612,7 +627,7 @@ class News extends Component {
           position: 'relative'
         }}
       >
-          <SlideToggleContent isVisible={this.state.isVisible}>
+          <SlideToggleContent isVisible={this.state.isVisibleBlog}>
           <br />
         <br />
           <div class="col-xs-13">
@@ -624,7 +639,7 @@ class News extends Component {
           </div>
       </SlideToggleContent>
       <div class="col-xs-12">
-      <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
+      <ViewMoreButton isVisible={this.state.isVisibleBlog} clickButton={this.clickButtonBlog.bind(this)} alignRight />
       </div>
       </div>
       </div>
@@ -651,7 +666,7 @@ class News extends Component {
           position: 'relative'
         }}
       >
-          <SlideToggleContent isVisible={this.state.isVisible}>
+          <SlideToggleContent isVisible={this.state.isVisiblePodcast}>
           <br />
         <br />
           <div class="col-xs-13">
@@ -663,7 +678,7 @@ class News extends Component {
           </div>
       </SlideToggleContent>
       <div class="col-xs-12">
-      <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
+      <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
       </div>
       </div>
       </div>
