@@ -3,6 +3,7 @@ import React from 'react'
 import CyberMasteryContent from './CyberMasteryContent'
 import CourseInformationBlurb from './CourseInformationBlurb'
 import ExecutiveEducation from './ExecutiveEducation'
+import PartnerWithUs from './PartnerWithUs'
 
 import Banner from '../common/Banner'
 import Slider from '../common/Slider'
@@ -67,6 +68,7 @@ We call it building your Cyber Mastery.
       </div>
       <ExecutiveEducation />
     </div>
+    <PartnerWithUs />
   </>
 
 const GraduateDiploma = () =>
