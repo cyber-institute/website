@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Slider from '../common/Slider'
+import PlaceHolderImage from './PlaceHolderImage'
 
 export default () =>
   <>
@@ -95,15 +96,30 @@ export default () =>
                 Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. Participants will also implement a project which responds to a cyber challenge or opportunity relevant to their domestic roles that will contribute to shared goals of a cyber-resilient Indo-Pacific.
                 <br />
                 <br />
-More information can be found <a href='https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'>here</a>.
+More information can be found <a target='_blank' rel='noopener noreferrer' href='https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'>here</a>.
               </p>
             </div>
           </div>
         </Slider>
-        <Slider name='Cyber Bootcamp Program'>
+        <Slider name='ANU Ninian Stephen Cyber Law Program'>
           <div className='row'>
-            <div className='col-md-offset-1 col-md-11'>
-          Hello
+            <div className='col-md-offset-1 col-md-7'>
+              <p>
+            In partnership with the Sir Robert Menzies Memorial Foundation, the ANU Ninian Stephen Cyber Law Program, delivered by the Cyber Institute and the ANU College of Law, will provide a professional development program for, but not limited to, legal practitioners which delivers cutting edge, immersive training based on real-time, problem-centred cyber security legal challenges set in a global context.
+              </p>
+              <br />
+              <br />
+              <p>
+Through this Program the Institute will also undertake leading research in the areas of cyber law and transnational legal challenges, which will further inform the training platform.
+              </p>
+              <br />
+              <br />
+              <p>
+An associated Thought Leadership and Oration Series will encourage discourse across the legal and broader community about cyber and law, and the implications they have for Australia and the world.
+              </p>
+            </div>
+            <div className='col-md-3 margin4RemAuto-sm'>
+              <PlaceHolderImage />
             </div>
           </div>
         </Slider>
