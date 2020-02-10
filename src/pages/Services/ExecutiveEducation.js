@@ -35,7 +35,7 @@ export default () =>
             The Cyber Bootcamps provide practical expert advice and skills training to government officials from Southeast Asian and Pacific Island Countries. The Program aims to build participants’ knowledge and awareness across the full breath of cyber issues – from technology and threats to decision-making and the nature of cyber and beyond.
               </p>
             </div>
-            <div className='col-md-3'>
+            <div className='col-md-3 marginTop2rem-xs'>
               <p style={{
                 fontSize: '16px'
               }}
@@ -88,6 +88,15 @@ export default () =>
               <LineListElement>
               Identify incident response roles and responsibilities.
               </LineListElement>
+              <p style={{
+                marginTop: '2rem'
+              }}
+              >
+                Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. Participants will also implement a project which responds to a cyber challenge or opportunity relevant to their domestic roles that will contribute to shared goals of a cyber-resilient Indo-Pacific.
+                <br />
+                <br />
+More information can be found <a href='https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'>here</a>.
+              </p>
             </div>
           </div>
         </Slider>
