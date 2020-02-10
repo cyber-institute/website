@@ -61,6 +61,35 @@ export default () =>
               }}
             />
           </div>
+          <div className='row positionRelative'>
+            <div className='col-md-offset-1 col-md-11'>
+              <p style={{
+                marginTop: '2rem',
+                marginBottom: '2rem'
+              }}
+              >
+              The Program aims to:
+              </p>
+              <LineListElement>
+              Strengthen understanding of strategies for coordinating national cyber policy;
+              </LineListElement>
+              <LineListElement>
+              Strengthen understanding of cyber terminology, internet architecture, and security policies;
+              </LineListElement>
+              <LineListElement>
+              Increase awareness of cyber threats and challenges faced in both Australia and within our region;
+              </LineListElement>
+              <LineListElement>
+              Promote the application of international stability framework for cyber security;
+              </LineListElement>
+              <LineListElement>
+              Promote collaborative relationships between government, academia, civil society, and the private sector to address joint cyber challenges; and,
+              </LineListElement>
+              <LineListElement>
+              Identify incident response roles and responsibilities.
+              </LineListElement>
+            </div>
+          </div>
         </Slider>
         <Slider name='Cyber Bootcamp Program'>
           <div className='row'>
@@ -72,3 +101,27 @@ export default () =>
       </div>
     </div>
   </>
+
+const LineListElement = ({ children }) =>
+  <p
+    className='Bold' style={{
+      margin: '1rem 0 1rem 4rem'
+    }}
+  >
+    <div
+      className='LineListElement-md LineListElement-xs'style={{
+        position: 'absolute',
+        left: '-2rem'
+      }}
+    >
+      <div
+        style={{
+          position: 'relative',
+          top: 'calc(0.5em - 2px)',
+          border: '1px solid #333',
+          opacity: '0.3'
+        }}
+      />
+    </div>
+    {children}
+  </p>
