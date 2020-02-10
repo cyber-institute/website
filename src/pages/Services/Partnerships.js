@@ -72,4 +72,53 @@ export default () =>
         </p>
       </div>
     </div>
+    <div className='row center-xs'>
+      <div className='col-sm-4'>
+        <h3
+          className='Medium'
+          style={{
+            color: 'rgb(82, 49, 120)',
+            fontSize: '35px'
+          }}
+        >
+          Foundation Partners
+        </h3>
+        <ul>
+          <li>co-invest time, expertise and funding to develop relevant research, co-design core offerings for the Cyber Mastery program, and build the Cyber Edge in a real-world feedback loop;</li>
+          <li>build the core offering of the Institute with Institute staff and assuming greater risk than those partnering on specific project or program output and will share in appropriate levels of rewards;</li>
+          <li>invest against a series of milestones, while making in-kind contributions; and,</li>
+          <li>are representative of entities in a collaborative supply chain that can together articulate problems, develop solutions and test application.</li>
+        </ul>
+      </div>
+      <div className='col-sm-4'>
+        <h3
+          className='Medium'
+          style={{
+            color: 'rgb(82, 49, 120)',
+            fontSize: '35px'
+          }}
+        >
+        Program Partners
+        </h3>
+        <ul>
+          <li>partner on specific longer-term collaborative projects, involving research, education or operations centre sponsorship;</li>
+          <li>leverage investment against the achievement of specific program outputs, governed under a program agreement; and</li>
+          <li>may be more diffuse in focus and draw from extensive expertise across the ANU</li>
+        </ul>
+      </div>
+      <div className='col-sm-4'>
+        <h3
+          className='Medium'
+          style={{
+            color: 'rgb(82, 49, 120)',
+            fontSize: '35px'
+          }}
+        >
+        Project Partners
+        </h3>
+        <ul>
+          <li>transact on shorter-term projects for specific set outcomes</li>
+        </ul>
+      </div>
+    </div>
   </div>
