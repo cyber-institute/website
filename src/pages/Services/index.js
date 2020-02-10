@@ -4,6 +4,7 @@ import CyberMasteryContent from './CyberMasteryContent'
 import CourseInformationBlurb from './CourseInformationBlurb'
 import ExecutiveEducation from './ExecutiveEducation'
 import PartnerWithUs from './PartnerWithUs'
+import Operations from './Operations'
 
 import Banner from '../common/Banner'
 import Slider from '../common/Slider'
@@ -69,6 +70,7 @@ We call it building your Cyber Mastery.
       <ExecutiveEducation />
     </div>
     <PartnerWithUs />
+    <Operations />
   </>
 
 const GraduateDiploma = () =>
@@ -103,3 +105,5 @@ const Heading = ({ children }) =>
   >
     {children}
   </h2>
+
+export { Heading }
