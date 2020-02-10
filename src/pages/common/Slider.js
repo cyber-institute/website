@@ -14,7 +14,7 @@ export default ({ name, children }) => {
     }}
     >
       <div className='row'>
-        <div className='col-md-offset-1'>
+        <div className='col-md-offset-1 col-md-11'>
           <button
             type='button'
             style={{

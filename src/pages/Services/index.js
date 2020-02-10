@@ -66,10 +66,15 @@ We call it building your Cyber Mastery.
                   commencingCohort='2021 (with some modules available from mid-2020)'
                   includes='Micro modules'
                 />
-                <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
-                  <br /><br />
+                <div style={{
+                  marginTop: '2rem'
+                }}
+                >
+                  <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
+                    <br /><br />
 As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
-                </p>
+                  </p>
+                </div>
               </div>
             </div>
           </Slider>
@@ -149,7 +154,7 @@ const CyberMasteryContent = () =>
         <p>The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks.</p>
       </div>
       <div
-        className='col-md-5 marginTop8rem-md'
+        className='col-md-5 marginTop4rem-md'
       >
         <h3
           className='Light' style={{
@@ -173,7 +178,7 @@ const CyberMasteryContent = () =>
         <p>We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected.</p>
       </div>
       <div
-        className='col-md-5 marginTop8rem-md'
+        className='col-md-5 marginTop4rem-md'
       >
         <h3
           className='Light' style={{
