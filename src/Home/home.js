@@ -12,7 +12,7 @@ import Links from './../Links/Links'
 
 import laptop from '../../img/laptop.jpg'
 import blog from '../../img/blogs.jpg'
-import './swirly_lines.js'
+//import './swirly_lines.js'
 
 
 
@@ -21,23 +21,21 @@ import './../flexboxgrid.css'
 import './../style.css'
 
 
-
+/*        <div className="App" ref={el => (this.div = el)}>
+        {/* Script is inserted here *///}
+       // </div>
+//       componentDidMount() {
+//        const script = document.createElement("script");    
+ //       script.async = true;    
+  //      script.src = "./swirly_lines.js";    
+    //    this.div.appendChild(script);  }
 
 
 class Home extends Component {
-
-  componentDidMount() {
-    const script = document.createElement("script");    
-    script.async = true;    
-    script.src = "./swirly_lines.js";    
-    this.div.appendChild(script);  }
-
   render () {
     return (
       <>
-        <div className="App" ref={el => (this.div = el)}>
-        {/* Script is inserted here */}
-      </div>
+
         <Heading />
         <div style={{ position: 'relative' }}>
           <Sine />
