@@ -20,7 +20,7 @@ export default () =>
     <Banner {...{ banner }} />
     <div
       className='container-fluid' style={{
-        marginTop: '12rem'
+        // marginTop: '12rem'
       }}
     >
       <div className='row'>
