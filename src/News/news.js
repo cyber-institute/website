@@ -19,6 +19,7 @@ import CyberHowDoing from '../../img/cyber_how_doing.jpg'
 import PeopleNotProblem from '../../img/people_not_problem.jpg'
 import SecurityStrategy from '../../img/security_strategy.jpg'
 import TechDivide from '../../img/tech_divide.jpg'
+import BlackBoxArrow from '../../img/black box arrow.png'
 
 
 
@@ -111,14 +112,14 @@ const NewsArticle = (props) => (
     <div>
       <img src={props.imageSource} style={{"position": "relative", "top": "20px", "right": "65px", "max-width": "70%", "box-shadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", "margin": "0px 0px 0px 10%"}} />
     </div>
-    <div className="NewsArticle" style={{textAlign: "left", "border-style": "solid", borderColor: "black", borderWidth: "1px", width: "70%"}}>
+    <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid",padding: "1rem", borderColor: "black", borderWidth: "1px", width: "70%"}} onClick={() => props.link && window.open(props.link, '_blank')}>
     <br />
       <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 <br />
 <div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline}</div>
-<div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem'}} src="./img/black box arrow.png"/></div>
+<div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem'}} src={BlackBoxArrow}/></div>
     </div>
   </div>
 );
@@ -501,7 +502,7 @@ class News extends Component {
   render () {
     return (
       <>
-      <div style={{font:"arial"}}>
+      <div style={{'font-family': "Helvetica Neue LT Std 45 Light"}}>
         <div class="News">
         <div class="News">
           <div class="row">
@@ -518,6 +519,7 @@ class News extends Component {
           </div>
           </div>
         </div>
+        {
         <div
         style={{
           margin: 'auto',
@@ -539,6 +541,7 @@ class News extends Component {
       <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
       </div>
       </div>
+        }
       </div>
 
       <div class="Events">
@@ -611,7 +614,8 @@ class News extends Component {
           </div>
           </div>
         </div>
-        <div
+        {
+        media2 && <div
         style={{
           margin: 'auto',
           position: 'relative'
@@ -632,6 +636,7 @@ class News extends Component {
       <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
       </div>
       </div>
+        }
       </div>
       <div class="Blog">
         <div class="Blog">
