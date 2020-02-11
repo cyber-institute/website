@@ -13,6 +13,12 @@ import SingaporeCyber from '../../img/singapore_cyber.jpg'
 import CyberBootcamp from '../../img/cyber_bootcamp.jpg'
 import DataPodcast from '../../img/data_podcast.jpg'
 import GovCyberPodcast from '../../img/gov_cyber_podcast.jpg'
+import Globe from '../../img/globe.jpg'
+import FaceFuture from '../../img/face_future.jpg'
+import CyberHowDoing from '../../img/cyber_how_doing.jpg'
+import PeopleNotProblem from '../../img/people_not_problem.jpg'
+import SecurityStrategy from '../../img/security_strategy.jpg'
+import TechDivide from '../../img/tech_divide.jpg'
 
 
 
@@ -132,7 +138,8 @@ const news = {
       author: 'Graham',
       date: '29/01/2020',
       imageSource: CyberBootcamp,
-      sizeName: 'col-xs-3'
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx?fbclid=IwAR2mztupdFmWZC6kXPPvYKn57Oj9cXqDa9E9jzPw2qlmMa_KAUSAO1M2guE',
     }
   }, {
     id: '3',
@@ -143,7 +150,8 @@ const news = {
       author: 'Graham',
       date: '16/01/2020',
       imageSource: RaisinaDialogue,
-      sizeName: 'col-xs-3'
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.orfonline.org/raisina-dialogue/programme/',
     }
   },{
     id: '4',
@@ -154,7 +162,8 @@ const news = {
       author: 'Graham',
       date: '19/12/2019',
       imageSource: SingaporeCyber,
-      sizeName: 'col-xs-3'
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://twitter.com/AnuCyber/status/1203838456499232769',
     }
   }]
 };
@@ -164,34 +173,37 @@ const news2 = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 1',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-3'
+      head: 'Cybersecurity: people are not the problem',
+      byline: "A lot of thinking and commentary around cybersecurity put forward the idea that ‘people are the problem’. After all, most intrusions and attacks start with people being persuaded or misled into going onto disguised or infected sites, to handover details or otherwise compromise their own systems... If only people—users, clients, members of the community—didn’t do what people naturally do, we’d all have much more secure and efficient systems. That's muddled thinking.",
+      author: 'Professor Lesley Seebeck',
+      date: '4/11/2019',
+      imageSource: PeopleNotProblem,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/',
     }
   }, {
     id: '3',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-3'
+      head: 'Submission: 2020 Cyber Security Strategy',
+      byline: 'The number of questions in this paper illustrates the complex, contested, and changeable nature of cyber and cyber security... Given that cyber is a wicked problem, without a broader conceptual framework, the danger is that fragmented approach and point solutions are not likely to meet the challenge.',
+      author: 'Professor Lesley Seebeck',
+      date: '1/11/2019',
+      imageSource: SecurityStrategy,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf',
     }
   },{
     id: '4',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-3'
+      head: 'The new global technological divide',
+      byline: 'For the first time since the Cold War, technology is re-emerging as a strategic, and not merely a political, instrument. The difference this time is that it’s thoroughly civilian rather than military technologies and information that act both as enablers and sources of vulnerability. And there are key differences in how different Western political cultures understand the strategic significance of technology.',
+      author: 'Professor Lesley Seebeck',
+      date: '7/11/2019',
+      imageSource: TechDivide,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/',
     }
   }]
 };
@@ -212,7 +224,7 @@ const blogs = {
       author: 'Graham',
       date: '22/10/2020',
       imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-2'
+      sizeName: 'col-md-3 col-xs-12'
     }
   }, {
     id: '3',
@@ -223,7 +235,7 @@ const blogs = {
       author: 'Graham',
       date: '22/10/2020',
       imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-2'
+      sizeName: 'col-md-3 col-xs-12'
       
     }
   },{
@@ -235,13 +247,13 @@ const blogs = {
       author: 'Graham',
       date: '22/10/2020',
       imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-2'
+      sizeName: 'col-md-3 col-xs-12'
     }
   },{
     id: '5',
     component: 'SpacerColumn',
     props: {
-      sizeName: 'col-xs-3'
+      sizeName: 'col-md-3 col-xs-12'
     }
   }]
 };
@@ -251,7 +263,7 @@ const podcasts = {
     id: '1',
     component: 'SpacerColumn',
     props: {
-      sizeName: 'col-xs-3'
+      sizeName: 'col-md-3 col-xs-12'
     }
   },{
     id: '2',
@@ -262,18 +274,20 @@ const podcasts = {
       author: 'ABC AM',
       date: '18/06/2019',
       imageSource: GovCyberPodcast,
-      sizeName: 'col-xs-2'
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358',
     }
   }, {
     id: '3',
     component: 'NewsArticle',
     props: {
-      head: 'Data, cyber, and the social context',
+      head: 'Data, Cyber, and the Social Context',
       byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
       author: 'National Security Podcast',
       date: '27/01/2019',
       imageSource: DataPodcast,
-      sizeName: 'col-xs-2'
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/',
     }
   },{
     id: '4',
@@ -284,7 +298,7 @@ const podcasts = {
       author: 'Graham',
       date: '22/10/2020',
       imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-2'
+      sizeName: 'col-md-3 col-xs-12'
     }
   },{
     id: '5',
@@ -306,34 +320,37 @@ const media = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 1',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-2'
+      head: 'Surviving in a world of sharper technological competition',
+      byline: 'Technology is understood as something external, ‘done’ or given to Australia by others. There’s no real sense of initiation or ownership. We’ve allowed ourselves to think of Australia essentially as a spectator rather than a participant in technological innovation.',
+      author: 'Professor Lesley Seebeck',
+      date: '22/01/2020',
+      imageSource: Globe,
+      sizeName: 'col-md-3 col-xs-12',
+      link: "https://www.aspistrategist.org.au/surviving-in-a-world-of-sharper-technological-competition/",
     }
   }, {
     id: '3',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-2'
+      head: 'Cybersecurity: how are we doing?',
+      byline: 'Asking ourselves whether we’re doing things right merely asks us to measure our progress down a prescribed path. Judgements about whether we’re doing the right things are harder to make. It’s entirely possible we’re not even on the right path, regardless of how far along it we’ve come. A word of warning: this is a fairly dense and difficult topic.',
+      author: 'Professor Lesley Seebeck',
+      date: '11/12/19',
+      imageSource: CyberHowDoing,
+      sizeName: 'col-md-3 col-xs-12',
+      link: "https://www.aspistrategist.org.au/cybersecurity-how-are-we-doing/"
     }
   },{
     id: '4',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-xs-2'
+      head: 'Repositioning Australia to face its future',
+      byline: 'Good things come to those who are prepared to wait, invest, and appreciate the ‘adjacent possible’. Policymakers need to stop being drawn to the myth of the ‘quick fix’ and focus on long-term and sustained development of research and development as an ecosystem if they really want to solve those wicked problems.',
+      author: 'Professor Lesley Seebeck',
+      date: '13/11/2019',
+      imageSource: FaceFuture,
+      sizeName: 'col-md-3 col-xs-12',
+      link: "https://www.policyforum.net/repositioning-australia-to-face-its-future/",
     }
   },{
     id: '5',
