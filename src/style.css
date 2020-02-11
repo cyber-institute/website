@@ -7,13 +7,14 @@ body {
   src: url("//fonts.gstatic.com/s/roboto/v18/e7MeVAyvogMqFwwl61PKhPesZW2xOQ-xsNqO47m55DA.woff2") format("woff2");
 }
 
-.rightAlign-md {
-  text-align: right;
+.NewsArticle:hover {
+  background-color: lightgrey;
+  opacity: 0.5;
 }
 
-@media only screen and (max-width: 62em) {
+@media only screen and (min-width: 62em) {
   .rightAlign-md {
-    text-align: inherit;
+    text-align: right;
   }
 }
 
@@ -29,12 +30,19 @@ body {
   }
 }
 
+@media only screen and (min-width: 62em) {
+  .centerAlign-lg {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 62em) {
   .displayNone-sm {
     display: none;
   }
 }
 
+<<<<<<< HEAD
 .NewsArticle:hover{
   background-color: lightgrey;
   opacity: 0.5;
@@ -51,4 +59,116 @@ body {
     display: none;
 
  }
+=======
+@media only screen and (max-width: 62em) {
+  .columnReverse-sm {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .marginTop1rem-md {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .marginTop4rem-md {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .marginTop4rem-xs {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .marginTop2rem-xs {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .marginTop8rem-md {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .marginTop2rem-xs {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .margin4RemAuto-sm {
+    margin: 4rem auto;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .right2rem-md {
+    right: 2rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .LineListElement-md {
+    width: calc(8.3333% + 6.5rem);
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .LineListElement-xs {
+    width: 5.5rem;
+  }
+}
+
+h3 {
+  font-weight: 400;
+}
+
+p, li {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Helvetica Neue LT Std 45 Light';
+}
+
+ul > li {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, p {
+  color: #333;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.dottedLineVertical {
+  width: 2px;
+  background-image: linear-gradient(rgb(82, 49, 120) 60%, rgba(255, 255, 255, 0) 0%);
+  background-position: right;
+  background-size: 2px 12px;
+  background-repeat: repeat-y;
+}
+
+.dottedLineHorizontal {
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(82, 49, 120) 60%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 12px 2px;
+  background-repeat: repeat-x;
+}
+
+.positionRelative {
+  position: relative;
+>>>>>>> eba8b3080b84733c83437864c85d440ff440003d
 }
