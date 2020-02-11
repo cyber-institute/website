@@ -14,6 +14,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 import News from './News/news'
 import Home from './Home/home'
 import About from './pages/About/index'
+import Services from './pages/Services'
 import CITwhite from '../img/CITwhite.jpg'
 
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
@@ -122,6 +123,7 @@ class App extends Component {
       <Route path="/news" component={News} />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
+      <Route exact path="/services" component={Services} />
       </Router>
     </div>
     <Footer />

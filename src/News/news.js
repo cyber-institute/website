@@ -717,7 +717,7 @@ class News extends Component {
   }
 }
 export default News
-
+export { DynamicPage }
 
 function Content ({ clickButton, isVisible, page }) {
   return (
@@ -739,4 +739,3 @@ function Content ({ clickButton, isVisible, page }) {
     </div>
   )
 }
-
