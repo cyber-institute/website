@@ -29,13 +29,13 @@ class Home extends Component {
   componentDidMount() {
     const script = document.createElement("script");    
     script.async = true;    
-    script.src = "../swirly_lines.js";    
+    script.src = "./swirly_lines.js";    
     this.div.appendChild(script);  }
 
   render () {
     return (
       <>
-        <div className="App" ref={el => (this.div = el)}>        <h1>Hello react</h1>
+        <div className="App" ref={el => (this.div = el)}>
         {/* Script is inserted here */}
       </div>
         <Heading />
