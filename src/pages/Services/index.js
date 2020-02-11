@@ -15,9 +15,16 @@ import Slider from '../common/Slider'
 
 import banner from './banner.jpg'
 
+const headings = [
+  'Courses',
+  'Operations',
+  'Research & Innovation',
+  'Partnerships'
+]
+
 export default () =>
   <>
-    <Banner {...{ banner }} />
+    <Banner {...{ banner, headings }} title='What we do' subTitle='Doing for cyber what the MBA did for management' />
     <div
       className='container-fluid' style={{
         // marginTop: '12rem'

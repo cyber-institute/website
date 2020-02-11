@@ -2,14 +2,7 @@ import React from 'react'
 
 import { Link } from 'react-scroll'
 
-const headings = [
-  'Courses',
-  'Operations',
-  'Research & Innovation',
-  'Partnerships'
-]
-
-export default ({ banner }) =>
+export default ({ banner, title, subTitle, headings }) =>
   <>
     <div style={{
       marginTop: '64px',
@@ -68,7 +61,7 @@ export default ({ banner }) =>
               color: '#fff'
             }}
           >
-        What we do
+        {title}
           </h2>
           <h2
             className='Bold BannerSubtitleFontSize-md BannerSubtitleFontSize-xs'
@@ -77,7 +70,7 @@ export default ({ banner }) =>
               color: '#fff'
             }}
           >
-        Doing for cyber what the MBA did for management
+        {subTitle}
           </h2>
         </div>
       </div>
