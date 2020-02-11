@@ -8,6 +8,17 @@ import ViewMoreButton from './../ContentSlider/ViewMoreButton'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../style.css'
 
+import RaisinaDialogue from '../../img/raisina_dialogue.jpg'
+import SingaporeCyber from '../../img/singapore_cyber.jpg'
+import CyberBootcamp from '../../img/cyber_bootcamp.jpg'
+import DataPodcast from '../../img/data_podcast.jpg'
+import GovCyberPodcast from '../../img/gov_cyber_podcast.jpg'
+
+
+
+
+
+
 
 const CompLabel = (props) => (
   <div className="complabel-component">
@@ -94,7 +105,7 @@ const NewsArticle = (props) => (
     <div>
       <img src={props.imageSource} style={{"position": "relative", "top": "20px", "right": "65px", "max-width": "70%", "box-shadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", "margin": "0px 0px 0px 10%"}} />
     </div>
-    <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid", borderColor: "black", borderWidth: "1px", width: "70%"}} onClick={() => props.link && window.open(props.link, '_blank')}>
+    <div className="NewsArticle" style={{textAlign: "left", "border-style": "solid", borderColor: "black", borderWidth: "1px", width: "70%"}}>
     <br />
       <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
@@ -120,7 +131,7 @@ const news = {
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'Graham',
       date: '29/01/2020',
-      imageSource: './img/cyber_bootcamp.jpg',
+      imageSource: CyberBootcamp,
       sizeName: 'col-xs-3'
     }
   }, {
@@ -131,7 +142,7 @@ const news = {
       byline: 'The Raisina Dialogue is a multilateral conference where global leaders in policy, business, media and civil society are hosted in New Delhi, India, to discuss cooperation on a wide range of pertinent international policy matters. Our CEO, Professor Lesley Seebeck,  came back from sharing some insight through the "Digital Binaries: 5G and the new tech wars" panel on the final day of this conference.',
       author: 'Graham',
       date: '16/01/2020',
-      imageSource: './img/raisina_dialogue.jpg',
+      imageSource: RaisinaDialogue,
       sizeName: 'col-xs-3'
     }
   },{
@@ -142,7 +153,7 @@ const news = {
       byline: "A visit to Singapore and Malaysia for our Program Manager Liz West didn't just include great conversations and delicious food, but attending some cyber-security ventures. Both Republic Polytechnic-RSA Joint Security Operations Centre and Sunway University's Cyber Security Intelligence Laboratory were fantastic to visit, and the Cyber Institute was proud to send over one of our own.",
       author: 'Graham',
       date: '19/12/2019',
-      imageSource: './img/singapore_cyber.jpg',
+      imageSource: SingaporeCyber,
       sizeName: 'col-xs-3'
     }
   }]
@@ -213,6 +224,7 @@ const blogs = {
       date: '22/10/2020',
       imageSource: './img/ai1.jpg',
       sizeName: 'col-xs-2'
+      
     }
   },{
     id: '4',
@@ -249,7 +261,7 @@ const podcasts = {
       byline: "The Federal Government has been looking at whether the Australian Signals Directorate should have more of a role in fighting cybercrime across the country. It's a discussion that's been going on for more than a year now, but no decisions have been made. Home Affairs Minister Peter Dutton says he is to continue the conversation, and people in the cyber security sector want more details about what could change.",
       author: 'ABC AM',
       date: '18/06/2019',
-      imageSource: './img/gov_cyber_podcast.jpg',
+      imageSource: GovCyberPodcast,
       sizeName: 'col-xs-2'
     }
   }, {
@@ -260,7 +272,7 @@ const podcasts = {
       byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
       author: 'National Security Podcast',
       date: '27/01/2019',
-      imageSource: './img/data_podcast.jpg',
+      imageSource: DataPodcast,
       sizeName: 'col-xs-2'
     }
   },{
@@ -711,4 +723,3 @@ function Content ({ clickButton, isVisible, page }) {
   )
 }
 
-export { DynamicPage }
