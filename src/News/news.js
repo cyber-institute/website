@@ -105,7 +105,7 @@ const NewsArticle = (props) => (
     <div>
       <img src={props.imageSource} style={{"position": "relative", "top": "20px", "right": "65px", "max-width": "70%", "box-shadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", "margin": "0px 0px 0px 10%"}} />
     </div>
-    <div className="NewsArticle" style={{textAlign: "left", "border-style": "solid", borderColor: "black", borderWidth: "1px", width: "70%"}}>
+    <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid", borderColor: "black", borderWidth: "1px", width: "70%"}}>
     <br />
       <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
