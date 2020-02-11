@@ -12,7 +12,7 @@ import Links from './../Links/Links'
 
 import laptop from '../../img/laptop.jpg'
 import blog from '../../img/blogs.jpg'
-import './../swirly_lines.js'
+import './swirly_lines.js'
 
 
 
