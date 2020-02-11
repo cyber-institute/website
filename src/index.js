@@ -7,13 +7,13 @@ import { makeStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import MenuItem from '@material-ui/core/MenuItem';
-import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import Fade from '@material-ui/core/Fade';
 import PropTypes from 'prop-types'
 import useScrollTrigger from '@material-ui/core/useScrollTrigger'
 import News from './News/news'
 import Home from './Home/home'
+import About from './pages/About/index'
 import CITwhite from '../img/CITwhite.jpg'
 
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
@@ -121,6 +121,7 @@ class App extends Component {
       </ElevationScroll>
       <Route path="/news" component={News} />
       <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
       </Router>
     </div>
     <Footer />
