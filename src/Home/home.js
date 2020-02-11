@@ -13,16 +13,18 @@ import Links from './../Links/Links'
 import laptop from '../../img/laptop.jpg'
 import blog from '../../img/blogs.jpg'
 
-import './../swirly_lines'
+
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../flexboxgrid.css'
 import './../style.css'
 
+
 class Home extends Component {
   render () {
     return (
       <>
+      <script src='../swirly_lines.js'></script>
         <Heading />
         <div style={{ position: 'relative' }}>
           <Sine />
