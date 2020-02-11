@@ -17,6 +17,8 @@ import About from './pages/About/index'
 import Services from './pages/Services'
 import CITwhite from '../img/CITwhite.jpg'
 
+import ScrollUp from './pages/common/ScrollUp'
+
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
@@ -120,10 +122,12 @@ class App extends Component {
           </Toolbar>
         </AppBar>
       </ElevationScroll>
+      <ScrollUp>
       <Route path="/news" component={News} />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/services" component={Services} />
+      </ScrollUp>
       </Router>
     </div>
     <Footer />

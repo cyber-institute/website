@@ -83,7 +83,7 @@ export default ({ banner, title, subTitle, headings }) =>
     >
       <div className='row center-xs'>
         {
-          headings.map((heading, index) =>
+          headings && headings.map((heading, index) =>
             <div className='col-xs-12' key={index}>
               <div style={{
                 margin: 'auto',
