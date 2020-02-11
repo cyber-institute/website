@@ -5,6 +5,7 @@ import CourseInformationBlurb from './CourseInformationBlurb'
 import ExecutiveEducation from './ExecutiveEducation'
 import PartnerWithUs from './PartnerWithUs'
 import Operations from './Operations'
+import Articles from './Articles'
 import Partnerships from './Partnerships'
 
 import PlaceHolderImage from './PlaceHolderImage'
@@ -75,6 +76,7 @@ We call it building your Cyber Mastery.
     </div>
     <PartnerWithUs />
     <Operations />
+    <Articles />
     <Partnerships />
   </>
 
