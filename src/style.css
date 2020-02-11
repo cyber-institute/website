@@ -42,7 +42,6 @@ body {
   }
 }
 
-<<<<<<< HEAD
 .NewsArticle:hover{
   background-color: lightgrey;
   opacity: 0.5;
@@ -59,7 +58,6 @@ body {
     display: none;
 
  }
-=======
 @media only screen and (max-width: 62em) {
   .columnReverse-sm {
     flex-direction: column-reverse;
@@ -170,5 +168,4 @@ h1, h2, h3, h4, h5, p {
 
 .positionRelative {
   position: relative;
->>>>>>> eba8b3080b84733c83437864c85d440ff440003d
 }
