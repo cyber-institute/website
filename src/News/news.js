@@ -616,7 +616,7 @@ class News extends Component {
           <div class="col-xs-13">
             <div class="row">
             <div class="col-xs-2"></div>
-              <DynamicPage page={this.state.news} />
+              <DynamicPage page={this.state.blogs} />
               <div class="col-xs-2"></div>
           </div>
           </div>
@@ -655,7 +655,7 @@ class News extends Component {
           <div class="col-xs-13">
             <div class="row">
             <div class="col-xs-2"></div>
-              <DynamicPage page={this.state.news} />
+              <DynamicPage page={this.state.podcasts} />
               <div class="col-xs-2"></div>
           </div>
           </div>
