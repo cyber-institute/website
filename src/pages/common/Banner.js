@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { Link, animateScroll as scroll } from 'react-scroll'
+
 const headings = [
   'Courses',
   'Operations',
-  'Publications',
+  'Research & Innovation',
   'Partnerships'
 ]
 
@@ -82,10 +84,11 @@ export default ({ banner }) =>
         </div>
       </div>
     </div>
-    <div style={{
-      position: 'relative'
+    <div
+      className='container-fluid' style={{
+        position: 'relative'
       // height: '8rem'
-    }}
+      }}
     >
       <div className='row center-xs'>
         {
@@ -101,13 +104,24 @@ export default ({ banner }) =>
               }}
               />
               <a
-                className='Bold' style={{
-                  fontSize: '22px',
-                  letterSpacing: '3.3px',
-                  color: 'rgb(119, 119, 119)'
-                }}
+                className='Bold'
               >
-                {heading}
+                <Link
+                  activeClass='active'
+                  to={heading}
+                  spy
+                  smooth
+                  offset={-70}
+                  duration={500}
+                  style={{
+                    fontSize: '22px',
+                    letterSpacing: '3.3px',
+                    color: 'rgb(119, 119, 119)',
+                    cursor: 'pointer'
+                  }}
+                >
+                  {heading}
+                </Link>
               </a>
             </div>
           )

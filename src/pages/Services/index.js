@@ -108,6 +108,7 @@ const Heading = ({ children }) =>
       margin: 0,
       position: 'relative'
     }}
+    id={children}
   >
     {children}
   </h2>
