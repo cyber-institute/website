@@ -50,20 +50,19 @@ export default ({ banner }) =>
         height: '100%'
       }}
       >
-        <div style={{
-          position: 'absolute',
-          left: '0px',
-          right: '0px',
-          bottom: '50%',
-          margin: 'auto',
-          maxWidth: '800px',
-          textAlign: 'center'
-        }}
+        <div
+          className='BannerBottom-xs bottom50' style={{
+            position: 'absolute',
+            left: '0px',
+            right: '0px',
+            margin: 'auto',
+            maxWidth: '800px',
+            textAlign: 'center'
+          }}
         >
           <h2
-            className='Bold'
+            className='Bold HeadingFontSize-md HeadingFontSize-xs'
             style={{
-              fontSize: '60px',
               margin: 0,
               paddingBottom: '1rem',
               color: '#fff'
@@ -72,9 +71,8 @@ export default ({ banner }) =>
         What we do
           </h2>
           <h2
-            className='Bold'
+            className='Bold BannerSubtitleFontSize-md BannerSubtitleFontSize-xs'
             style={{
-              fontSize: '37px',
               margin: 0,
               color: '#fff'
             }}
