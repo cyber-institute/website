@@ -160,7 +160,7 @@ const news = {
     props: {
       head: 'To Singapore and Malaysia for Cyber Security',
       byline: "A visit to Singapore and Malaysia for our Program Manager Liz West didn't just include great conversations and delicious food, but attending some cyber-security ventures. Both Republic Polytechnic-RSA Joint Security Operations Centre and Sunway University's Cyber Security Intelligence Laboratory were fantastic to visit, and the Cyber Institute was proud to send over one of our own.",
-      author: 'Graham',
+      author: 'Liz West',
       date: '19/12/2019',
       imageSource: SingaporeCyber,
       sizeName: 'col-md-3 col-xs-12',
@@ -168,46 +168,8 @@ const news = {
     }
   }]
 };
-const news2 = {
-  title: 'News',
-  sections: [{
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'Cybersecurity: people are not the problem',
-      byline: "A lot of thinking and commentary around cybersecurity put forward the idea that ‘people are the problem’. After all, most intrusions and attacks start with people being persuaded or misled into going onto disguised or infected sites, to handover details or otherwise compromise their own systems... If only people—users, clients, members of the community—didn’t do what people naturally do, we’d all have much more secure and efficient systems. That's muddled thinking.",
-      author: 'Professor Lesley Seebeck',
-      date: '4/11/2019',
-      imageSource: PeopleNotProblem,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/',
-    }
-  }, {
-    id: '3',
-    component: 'NewsArticle',
-    props: {
-      head: 'Submission: 2020 Cyber Security Strategy',
-      byline: 'The number of questions in this paper illustrates the complex, contested, and changeable nature of cyber and cyber security... Given that cyber is a wicked problem, without a broader conceptual framework, the danger is that fragmented approach and point solutions are not likely to meet the challenge.',
-      author: 'Professor Lesley Seebeck',
-      date: '1/11/2019',
-      imageSource: SecurityStrategy,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf',
-    }
-  },{
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'The new global technological divide',
-      byline: 'For the first time since the Cold War, technology is re-emerging as a strategic, and not merely a political, instrument. The difference this time is that it’s thoroughly civilian rather than military technologies and information that act both as enablers and sources of vulnerability. And there are key differences in how different Western political cultures understand the strategic significance of technology.',
-      author: 'Professor Lesley Seebeck',
-      date: '7/11/2019',
-      imageSource: TechDivide,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/',
-    }
-  }]
-};
+const news2 ;
+
 const blogs = {
   title: 'Blogs',
   sections: [{
@@ -246,6 +208,9 @@ const blogs = {
     }
   }]
 };
+
+const blogs2;
+
 const podcasts = {
   title: 'Podcasts',
   sections: [{
@@ -285,6 +250,9 @@ const podcasts = {
     }
   }]
 };
+
+const podcasts2;
+
 const media = {
   title: 'News',
   sections: [{
@@ -325,6 +293,48 @@ const media = {
     }
   }]
 };
+
+const media2 = {
+  title: 'News',
+  sections: [{
+    id: '2',
+    component: 'NewsArticle',
+    props: {
+      head: 'Cybersecurity: people are not the problem',
+      byline: "A lot of thinking and commentary around cybersecurity put forward the idea that ‘people are the problem’. After all, most intrusions and attacks start with people being persuaded or misled into going onto disguised or infected sites, to handover details or otherwise compromise their own systems... If only people—users, clients, members of the community—didn’t do what people naturally do, we’d all have much more secure and efficient systems. That's muddled thinking.",
+      author: 'Professor Lesley Seebeck',
+      date: '4/11/2019',
+      imageSource: PeopleNotProblem,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/',
+    }
+  }, {
+    id: '3',
+    component: 'NewsArticle',
+    props: {
+      head: 'Submission: 2020 Cyber Security Strategy',
+      byline: 'The number of questions in this paper illustrates the complex, contested, and changeable nature of cyber and cyber security... Given that cyber is a wicked problem, without a broader conceptual framework, the danger is that fragmented approach and point solutions are not likely to meet the challenge.',
+      author: 'Professor Lesley Seebeck',
+      date: '1/11/2019',
+      imageSource: SecurityStrategy,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf',
+    }
+  },{
+    id: '4',
+    component: 'NewsArticle',
+    props: {
+      head: 'The new global technological divide',
+      byline: 'For the first time since the Cold War, technology is re-emerging as a strategic, and not merely a political, instrument. The difference this time is that it’s thoroughly civilian rather than military technologies and information that act both as enablers and sources of vulnerability. And there are key differences in how different Western political cultures understand the strategic significance of technology.',
+      author: 'Professor Lesley Seebeck',
+      date: '7/11/2019',
+      imageSource: TechDivide,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/',
+    }
+  }]
+};
+
 const events = {
   title: 'Events',
   sections: [{
@@ -356,6 +366,7 @@ const events = {
   }]
     };
 
+const events2;
 
 const stock = { 
   Channels,
@@ -483,8 +494,7 @@ class News extends Component {
           </div>
           </div>
         </div>
-        {
-        <div
+        {news2 && <div
         style={{
           margin: 'auto',
           position: 'relative'
@@ -619,7 +629,8 @@ class News extends Component {
           </div>
           </div>
         </div>
-        <div
+        {
+        blogs2 && <div
         style={{
           margin: 'auto',
           position: 'relative'
@@ -640,6 +651,7 @@ class News extends Component {
       <ViewMoreButton isVisible={this.state.isVisibleBlog} clickButton={this.clickButtonBlog.bind(this)} alignRight />
       </div>
       </div>
+        }
       </div>
       <div class="Podcasts">
         <div class="Podcasts">
@@ -658,7 +670,8 @@ class News extends Component {
           </div>
           </div>
         </div>
-        <div
+        {
+        podcasts2 && <div
         style={{
           margin: 'auto',
           position: 'relative'
@@ -679,6 +692,7 @@ class News extends Component {
       <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
       </div>
       </div>
+        }
       </div>
       </div>
       </>
