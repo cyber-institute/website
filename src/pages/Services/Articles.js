@@ -15,7 +15,8 @@ const news = {
       author: 'Graham',
       date: '22/10/2020',
       imageSource: './img/ai1.jpg',
-      sizeName: 'col-md-3 col-xs-12'
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.google.com.au'
     }
   }, {
     id: '3',
