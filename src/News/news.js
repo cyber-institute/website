@@ -211,12 +211,6 @@ const news2 = {
 const blogs = {
   title: 'Blogs',
   sections: [{
-    id: '1',
-    component: 'SpacerColumn',
-    props: {
-      sizeName: 'col-xs-3'
-    }
-  },{
     id: '2',
     component: 'NewsArticle',
     props: {
@@ -250,23 +244,11 @@ const blogs = {
       imageSource: './img/ai1.jpg',
       sizeName: 'col-md-3 col-xs-12'
     }
-  },{
-    id: '5',
-    component: 'SpacerColumn',
-    props: {
-      sizeName: 'col-md-3 col-xs-12'
-    }
   }]
 };
 const podcasts = {
   title: 'Podcasts',
   sections: [{
-    id: '1',
-    component: 'SpacerColumn',
-    props: {
-      sizeName: 'col-md-3 col-xs-12'
-    }
-  },{
     id: '2',
     component: 'NewsArticle',
     props: {
@@ -301,23 +283,11 @@ const podcasts = {
       imageSource: './img/ai1.jpg',
       sizeName: 'col-md-3 col-xs-12'
     }
-  },{
-    id: '5',
-    component: 'SpacerColumn',
-    props: {
-      sizeName: 'col-xs-3'
-    }
   }]
 };
 const media = {
   title: 'News',
   sections: [{
-    id: '1',
-    component: 'SpacerColumn',
-    props: {
-      sizeName: 'col-xs-3'
-    }
-  },{
     id: '2',
     component: 'NewsArticle',
     props: {
@@ -352,12 +322,6 @@ const media = {
       imageSource: FaceFuture,
       sizeName: 'col-md-3 col-xs-12',
       link: "https://www.policyforum.net/repositioning-australia-to-face-its-future/",
-    }
-  },{
-    id: '5',
-    component: 'SpacerColumn',
-    props: {
-      sizeName: 'col-xs-3'
     }
   }]
 };
@@ -609,7 +573,7 @@ class News extends Component {
           <div class="col-xs-13">
             <div class="row">
             <div class="col-xs-2"></div>
-              <DynamicPage page={this.state.news} />
+              <DynamicPage page={this.state.media} />
               <div class="col-xs-2"></div>
           </div>
           </div>
