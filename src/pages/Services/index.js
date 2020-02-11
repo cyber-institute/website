@@ -5,6 +5,7 @@ import CourseInformationBlurb from './CourseInformationBlurb'
 import ExecutiveEducation from './ExecutiveEducation'
 import PartnerWithUs from './PartnerWithUs'
 import Operations from './Operations'
+import Articles from './Articles'
 import Partnerships from './Partnerships'
 
 import PlaceHolderImage from './PlaceHolderImage'
@@ -75,6 +76,7 @@ We call it building your Cyber Mastery.
     </div>
     <PartnerWithUs />
     <Operations />
+    <Articles />
     <Partnerships />
   </>
 
@@ -101,8 +103,7 @@ As with the Masters, it will run full-time, end-to-end from 2021. In the meantim
 
 const Heading = ({ children }) =>
   <h2
-    className='Black right2rem-md' style={{
-      fontSize: '61px',
+    className='Black right2rem-md HeadingFontSize-md HeadingFontSize-xs' style={{
       color: 'rgb(82, 49, 120)',
       margin: 0,
       position: 'relative'
