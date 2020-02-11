@@ -20,11 +20,23 @@ import './../flexboxgrid.css'
 import './../style.css'
 
 
+
+
+
 class Home extends Component {
+
+  componentDidMount() {
+    const script = document.createElement("script");    
+    script.async = true;    
+    script.src = "../swirly_lines.js";    
+    this.div.appendChild(script);  }
+
   render () {
     return (
       <>
-      <script src='../swirly_lines.js'></script>
+        <div className="App" ref={el => (this.div = el)}>        <h1>Hello react</h1>
+        {/* Script is inserted here */}
+      </div>
         <Heading />
         <div style={{ position: 'relative' }}>
           <Sine />
