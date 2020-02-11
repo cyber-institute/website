@@ -58,8 +58,6 @@ export default function CyberAppBar () {
           <Router>
             <img src={CITwhite} style={{ width: '25px' }} />
             <div>
-            <Route path="/news" component={News} />
-            <Route path="/" component={Home} />
             </div>
             {/* <Typography variant='h6'>Scroll to Elevate App Bar</Typography> */}
             <ul style={{ width: '100%' }}>
@@ -74,6 +72,8 @@ export default function CyberAppBar () {
               <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News</Link>
               <a className='Light' style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About</a>
             </ul>
+            <Route path="/news" component={News} />
+            <Route exact path="/" component={Home} />
             </Router>
           </Toolbar>
         </AppBar>

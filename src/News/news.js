@@ -116,33 +116,33 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 1',
-      byline: 'Start of the article',
+      head: 'The January Cyber Bootcamp',
+      byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
+      date: '29/01/2020',
+      imageSource: './img/cyber_bootcamp.jpg',
       sizeName: 'col-xs-3'
     }
   }, {
     id: '3',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
+      head: 'Digital Binaries: 5G and the new tech wars (Raisina Dialogue)',
+      byline: 'The Raisina Dialogue is a multilateral conference where global leaders in policy, business, media and civil society are hosted in New Delhi, India, to discuss cooperation on a wide range of pertinent international policy matters. Our CEO, Professor Lesley Seebeck,  came back from sharing some insight through the "Digital Binaries: 5G and the new tech wars" panel on the final day of this conference.',
       author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
+      date: '16/01/2020',
+      imageSource: './img/raisina_dialogue.jpg',
       sizeName: 'col-xs-3'
     }
   },{
     id: '4',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
+      head: 'To Singapore and Malaysia for Cyber Security',
+      byline: "A visit to Singapore and Malaysia for our Program Manager Liz West didn't just include great conversations and delicious food, but attending some cyber-security ventures. Both Republic Polytechnic-RSA Joint Security Operations Centre and Sunway University's Cyber Security Intelligence Laboratory were fantastic to visit, and the Cyber Institute was proud to send over one of our own.",
       author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
+      date: '19/12/2019',
+      imageSource: './img/singapore_cyber.jpg',
       sizeName: 'col-xs-3'
     }
   }]
@@ -245,22 +245,22 @@ const podcasts = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 1',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
+      head: 'More details needed about potential changes to cyber powers',
+      byline: "The Federal Government has been looking at whether the Australian Signals Directorate should have more of a role in fighting cybercrime across the country. It's a discussion that's been going on for more than a year now, but no decisions have been made. Home Affairs Minister Peter Dutton says he is to continue the conversation, and people in the cyber security sector want more details about what could change.",
+      author: 'ABC AM',
+      date: '18/06/2019',
+      imageSource: './img/gov_cyber_podcast.jpg',
       sizeName: 'col-xs-2'
     }
   }, {
     id: '3',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
+      head: 'Data, cyber, and the social context',
+      byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
+      author: 'National Security Podcast',
+      date: '27/01/2019',
+      imageSource: './img/data_podcast.jpg',
       sizeName: 'col-xs-2'
     }
   },{
@@ -337,27 +337,27 @@ const events = {
     id: '2',
     component: DateBox,
     props: {
-      day : '19',
-      month: 'Jan',
-      title : 'CI: Cyber Bootcamp',
-      date : '19/01/2020',
+      day : '20',
+      month: 'Feb',
+      title : 'RSA Conference 2020',
+      date : '20/02/2020',
       time: '9:00am',
-      description: 'Digital technologies, in particular, are a key arena of an accelerating great-power competition...',
-      signupText: 'Sign up using this link by 10/01/2020:',
-      link: 'https://someregistrationlinkhere.com/signup=?/',
+      description: 'The Cyber Institute will be proud to see our CEO, Professor Lesley Seebeck, speak at the prestigious 2020 RSA Conference in San Francisco, United States, on the ripple effects of end-to-end encryption.',
+      signupText: 'Click the link for more information about her role in the event:',
+      link: 'https://www.rsaconference.com/experts/professor-lesley-seebeck',
     }
   }, {
     id: '3',
     component: DateBox,
     props: {
-      day : '31',
+      day : '20',
       month: 'Jan',
-      title : 'Another Thing',
-      date : '31/01/2020',
+      title : 'The Cyber Bootcamp',
+      date : '20/01/2020',
       time: '11:00am',
-      description: 'Digital technologies, in particular, are a key arena of an accelerating great-power competition...',
-      signupText: 'Sign up using this link by 10/01/2020:',
-      link: 'https://someregistrationlinkhere.com/signup=?/',
+      description: "The Department of Foreign Affairs and Trade launched the Cyber Bootcamp Project in November 2019, of which programs are delivered by ANU’s Cyber Institute and National Security College. It aims to help participants in ASEAN and Pacific countries pursue a cyber-resilience vision. Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. As part of the program participants will implement a project which responds to a cyber-challenge or opportunity relevant to their domestic roles that will contribute to a cyber-resilient Indo-Pacific.",
+      signupText: 'Find out more at:',
+      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx',
     }
   }]
     };

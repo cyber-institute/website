@@ -60,6 +60,23 @@ body {
   }
 }
 
+.NewsArticle:hover{
+  background-color: lightgrey;
+  opacity: 0.5;
+}
+
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+ }
+}
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none;
+  }
+
+ }
 @media only screen and (max-width: 62em) {
   .columnReverse-sm {
     flex-direction: column-reverse;

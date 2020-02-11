@@ -13,6 +13,8 @@ export default class Canvas extends Component {
   drawSine (scrollTop) {
     const pixel_depth = window.devicePixelRatio
     const canvas = this.canvasRef.current
+    if(canvas)
+    {
     canvas.style.zIndex = -1
     canvas.style.left = '0px'
     canvas.style.width = '100%'
@@ -37,6 +39,7 @@ export default class Canvas extends Component {
       ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin((i / 160) - scrollTop / 100))
     }
     ctx.stroke()
+  }
   }
 
   componentDidMount () {
