@@ -168,7 +168,7 @@ const news = {
     }
   }]
 };
-const news2 ;
+const news2 = null;
 
 const blogs = {
   title: 'Blogs',
@@ -209,7 +209,7 @@ const blogs = {
   }]
 };
 
-const blogs2;
+const blogs2 = null;
 
 const podcasts = {
   title: 'Podcasts',
@@ -251,7 +251,7 @@ const podcasts = {
   }]
 };
 
-const podcasts2;
+const podcasts2 = null;
 
 const media = {
   title: 'News',
@@ -295,7 +295,7 @@ const media = {
 };
 
 const media2 = {
-  title: 'News',
+  title: 'Media',
   sections: [{
     id: '2',
     component: 'NewsArticle',
@@ -366,7 +366,7 @@ const events = {
   }]
     };
 
-const events2;
+const events2 = null;
 
 const stock = { 
   Channels,
@@ -444,7 +444,8 @@ class News extends Component {
       podcasts: podcasts,
       media: media,
       blogs: blogs,
-      events: events
+      events: events,
+      media2: media2
 
     };
   }
@@ -601,7 +602,7 @@ class News extends Component {
           <div class="col-xs-13">
           <div class="row">
           <div class="col-xs-2"></div>
-            <DynamicPage page={this.state.news2} />
+            <DynamicPage page={this.state.media2} />
           <div class="col-xs-2"></div>
           </div>
           </div>
