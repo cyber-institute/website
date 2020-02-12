@@ -13,33 +13,32 @@ export default class Canvas extends Component {
   drawSine (scrollTop) {
     const pixel_depth = window.devicePixelRatio
     const canvas = this.canvasRef.current
-    if(canvas)
-    {
-    canvas.style.zIndex = -1
-    canvas.style.left = '0px'
-    canvas.style.width = '100%'
+    if (canvas) {
+      canvas.style.zIndex = -1
+      canvas.style.left = '0px'
+      canvas.style.width = '100%'
 
-    const display_width = canvas.offsetWidth
-    const display_height = 900
+      const display_width = canvas.offsetWidth
+      const display_height = 900
 
-    canvas.width = display_width * pixel_depth
-    canvas.height = display_height * pixel_depth
+      canvas.width = display_width * pixel_depth
+      canvas.height = display_height * pixel_depth
 
-    const ctx = canvas.getContext('2d')
-    ctx.lineWidth = 5
-    ctx.strokeStyle = 'rgba(82, 49, 120, 0.1)'
+      const ctx = canvas.getContext('2d')
+      ctx.lineWidth = 5
+      ctx.strokeStyle = 'rgba(82, 49, 120, 0.1)'
 
-    const height = ctx.canvas.height
+      const height = ctx.canvas.height
 
-    const length = 2
+      const length = 2
 
-    ctx.beginPath()
-    for (let i = 0; i < canvas_width * length; i++) {
+      ctx.beginPath()
+      for (let i = 0; i < canvas_width * length; i++) {
       // ctx.lineTo(i, height / 2 + 200 * Math.sign(Math.sin((i / 160) - scrollTop / 200)))
-      ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin((i / 160) - scrollTop / 100))
+        ctx.lineTo(i, height / 2 + -1 * 160 * Math.sin((i / 160) - scrollTop / 100))
+      }
+      ctx.stroke()
     }
-    ctx.stroke()
-  }
   }
 
   componentDidMount () {
@@ -60,7 +59,6 @@ export default class Canvas extends Component {
   }
 
   render () {
-    console.log(this.state.transform)
     return (
       <canvas
         style={{
