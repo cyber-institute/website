@@ -15,6 +15,7 @@ import News from './News/news'
 import Home from './Home/home'
 import About from './pages/About/index'
 import Services from './pages/Services'
+import People from './pages/People'
 import CITwhite from '../img/CITwhite.jpg'
 
 import ScrollUp from './pages/common/ScrollUp'
@@ -126,6 +127,7 @@ class App extends Component {
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/services" component={Services} />
+      <Route exact path="/people" component={People} />
       </ScrollUp>
       </Router>
     </div>
