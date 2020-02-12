@@ -25,7 +25,8 @@ const productionConfig = merge([
   {
     output: {
       filename: 'project-name.min.js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, "../js")
     }
   },
   parts.productionParts()
