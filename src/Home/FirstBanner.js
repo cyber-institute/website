@@ -4,7 +4,7 @@ import background from './background1.png'
 
 export default () =>
   <div
-    className='container-fluid' style={{
+    className='container-fluid homeItemMarginTop' style={{
       position: 'relative'
     }}
   >

@@ -7,6 +7,10 @@ body {
   src: url("//fonts.gstatic.com/s/roboto/v18/e7MeVAyvogMqFwwl61PKhPesZW2xOQ-xsNqO47m55DA.woff2") format("woff2");
 }
 
+.homeItemMarginTop {
+  margin-top: 13rem;
+}
+
 .NewsArticle:hover {
   background-color: lightgrey;
   opacity: 0.5;

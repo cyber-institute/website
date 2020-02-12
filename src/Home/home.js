@@ -13,6 +13,7 @@ import FirstBanner from './FirstBanner'
 
 import laptop from '../../img/laptop.jpg'
 import blog from '../../img/blogs.jpg'
+import team from '../../img/team.jpg'
 
 import './../flexboxgrid.css'
 import './../style.css'
@@ -38,7 +39,14 @@ class Home extends Component {
           transforms
         />
         <FirstBanner />
-        <BodyMenuItemSwapped />
+        <BodyMenuItemSwapped
+          top='02 Team'
+          heading='Meet the Team'
+          text='Want a career at the Cyber Institute?'
+          buttonText='Find out more'
+          img={team}
+          transforms
+        />
         <div style={{ position: 'relative' }}>
           <PurpleBodyMenuItem />
         </div>
