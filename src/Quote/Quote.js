@@ -1,9 +1,6 @@
 import React from 'react'
 
-import Lines from './Lines.js'
 import lesley from '../../img/dr_lesley_seebeck_03.jpg'
-
-// import './style.css'
 
 export default function Quote () {
   return (
@@ -13,8 +10,69 @@ export default function Quote () {
       }}
       className='container-fluid'
     >
-      <div className='row'>
-        <div className='col-md-7'>
+      <div
+        className='row'
+      >
+        <div className='col-md-offset-2 col-md-8'>
+          <div
+            className='container-fluid'
+          >
+            <div
+              className='row' style={{
+                padding: '2rem 0',
+                borderTop: '2px solid #eee',
+                borderBottom: '2px solid #eee',
+                position: 'relative'
+              }}
+            >
+              <div style={{
+                position: 'absolute',
+                top: '-2rem',
+                width: '100%',
+                borderTop: '2px solid rgb(238, 238, 238)'
+              }}
+              />
+              <div style={{
+                position: 'absolute',
+                bottom: '-2rem',
+                width: '100%',
+                borderTop: '2px solid rgb(238, 238, 238)'
+              }}
+              />
+              <div className='col-md-offset-2 col-md-8'>
+                <div
+                  className='Light' style={{
+                    paddingTop: '0.4em',
+                    marginBottom: '2.1rem',
+                    fontSize: '28px',
+                    color: '#323232',
+                    lineHeight: '42px',
+                    fontWeight: 'bold',
+                    textAlign: 'center'
+                  }}
+                >
+            "It gives me great pleasure to introduce the newly formed Cyber Institute to you. Creativity and curiosity encouraged, not just expected."
+                </div>
+                <div
+                  className='container-fluid'
+                >
+                  <div className='row'>
+                    <div className='col-xs-4'>
+                      <img src={lesley} style={{ width: '100%' }} />
+                    </div>
+                    <div className='col-xs-8 Light' style={{ lineHeight: '1.87' }}>
+            Prof. Lesley Seebeck, PhD<br /><br />
+
+Professor of Practice in Cyber Security
+Chief Executive Officer, Cyber Institute
+Australian National University
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className='col-md-7'>
           <Lines />
         </div>
         <div className='col-md-4'>
@@ -27,7 +85,7 @@ export default function Quote () {
               borderTop: '4px solid #323232'
             }}
           >
-            It gives me great pleasure to introduce the newly formed Cyber Institute to you. Creativity and curiosity encouraged, not just expected.
+            It gives mffe great pleasure to introduce the newly formed Cyber Institute to you. Creativity and curiosity encouraged, not just expected.
           </div>
           <div className='row'>
             <div className='col-xs-4'>
@@ -42,6 +100,7 @@ Australian National University
             </div>
           </div>
           <div className='col-xs-1' />
+        </div> */}
         </div>
       </div>
     </div>
