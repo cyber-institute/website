@@ -14,6 +14,7 @@ import Rory from '../../../img/professor_rory_medcalf.jpg'
 import Marie from '../../../img/marie_johnson.jpg'
 import Hamish from '../../../img/hamish_hawthorn.jpg'
 import Deb from '../../../img/deborah_anton.jpg'
+import Java from '../../../js/swirly_lines'
 
 
 
