@@ -10,7 +10,7 @@ import './../style.css'
 
 import RaisinaDialogue from '../../img/raisina_dialogue.jpg'
 import SingaporeCyber from '../../img/singapore_cyber.jpg'
-import CyberBootcamp from '../../img/cyber_bootcamp.jpg'
+import CyberBootcamp from '../../img/cyber_bootcamp.png'
 import DataPodcast from '../../img/data_podcast.jpg'
 import GovCyberPodcast from '../../img/gov_cyber_podcast.jpg'
 import Globe from '../../img/globe.jpg'
@@ -20,6 +20,7 @@ import PeopleNotProblem from '../../img/people_not_problem.jpg'
 import SecurityStrategy from '../../img/security_strategy.jpg'
 import TechDivide from '../../img/tech_divide.jpg'
 import BlackBoxArrow from '../../img/black box arrow.png'
+import { relative } from 'path';
 
 
 
@@ -118,7 +119,7 @@ const NewsArticle = (props) => (
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 <br />
-<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline}</div>
+<div style={{fontSize: "18px", letterSpacing :'0px', display: 'block', display: '-webkit-box', maxWidth: '100%', height: '145px', margin: '0 auto', lineHeight: '1', WebkitLineClamp: '8', WebkitBoxOrient: 'vertical', overflow: 'hidden', textOverflow: 'ellipsis'}}> {props.byline}</div>
 <div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem'}} src={BlackBoxArrow}/></div>
     </div>
   </div>
@@ -134,7 +135,7 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'The January Cyber Bootcamp',
+      head: 'The January Cyber Institute Bootcamp',
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'Graham',
       date: '29/01/2020',
@@ -146,7 +147,7 @@ const news = {
     id: '3',
     component: 'NewsArticle',
     props: {
-      head: 'Digital Binaries: 5G and the new tech wars (Raisina Dialogue)',
+      head: 'Digital Binaries: 5G and the new tech wars',
       byline: 'The Raisina Dialogue is a multilateral conference where global leaders in policy, business, media and civil society are hosted in New Delhi, India, to discuss cooperation on a wide range of pertinent international policy matters. Our CEO, Professor Lesley Seebeck,  came back from sharing some insight through the "Digital Binaries: 5G and the new tech wars" panel on the final day of this conference.',
       author: 'Graham',
       date: '16/01/2020',
@@ -478,7 +479,7 @@ class News extends Component {
   render () {
     return (
       <>
-      <div style={{'font-family': "Helvetica Neue LT Std 45 Light"}}>
+      <div style={{fontFamily: 'Roboto, Helvetica'}}>
         <div class="News">
         <div class="News">
           <div class="row">
@@ -540,6 +541,7 @@ class News extends Component {
             }
         </div>
         </div>
+        {events2 &&
         <div
         style={{
           margin: 'auto',
@@ -565,6 +567,7 @@ class News extends Component {
       <ViewMoreButton isVisible={this.state.isVisibleEvent} clickButton={this.clickButtonEvent.bind(this)} alignRight />
           
       </div>
+        }
       </div>
         <div class="Media">
         <div class="Media">
