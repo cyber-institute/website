@@ -23,7 +23,6 @@ class Home extends Component {
   render () {
     return (
       <>
-
         <Heading />
         <div style={{ position: 'relative' }}>
           <Sine />

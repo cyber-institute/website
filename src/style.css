@@ -38,6 +38,28 @@ body {
   }
 }
 
+.HomeHeadingFontSize {
+  color: #523178;
+}
+
+@media only screen and (min-width: 62em) {
+  .HomeBannerFontSize {
+    font-size: 55px;
+  }
+  .HomeHeadingFontSize {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .HomeBannerFontSize {
+    font-size: 30px;
+  }
+  .HomeHeadingFontSize {
+    font-size: 50px;
+  }
+}
+
 @media only screen and (min-width: 62em) {
   .HeadingFontSize-md {
     font-size: 61px;

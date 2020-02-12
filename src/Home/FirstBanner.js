@@ -40,14 +40,15 @@ export default () =>
     </div>
     <div className='row'>
       <div className='col-md-offset-1 col-md-10'>
-        <h2 style={{
-          fontSize: '60px',
-          color: 'white',
-          fontWeight: '900',
-          textAlign: 'center',
-          letterSpacing: '1.5px',
-          fontFamily: 'Roboto, sans-serif'
-        }}
+        <h2
+          className='HomeBannerFontSize' style={{
+          // fontSize: '60px',
+            color: 'white',
+            fontWeight: '900',
+            textAlign: 'center',
+            letterSpacing: '1.5px',
+            fontFamily: 'Roboto, sans-serif'
+          }}
         >
           Cyber is much more than security, it influences our society and connections at every level.
         </h2>

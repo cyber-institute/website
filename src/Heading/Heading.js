@@ -13,9 +13,9 @@ export default () =>
       }}
     >
       <h1
-        className='Bold' style={{
+        className='Bold HomeHeadingFontSize' style={{
           fontWeight: 'normal',
-          fontSize: '80px',
+          // fontSize: '80px',
           margin: 0,
           color: '#523178'
         }}
