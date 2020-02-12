@@ -20,12 +20,13 @@ const productionConfig = merge([
     ]
   },
   {
-    entry: ['../js/swirly_lines.js', './src/index.js']
+    entry: ['./js/swirly_lines.js', './src/index.js']
   },
   {
     output: {
       filename: 'project-name.min.js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, '../js')
     }
   },
   parts.productionParts()
