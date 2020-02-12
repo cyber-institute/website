@@ -8,10 +8,7 @@ import './style.css'
 export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms }) {
   return (
     <div
-      style={{
-        marginTop: '10rem'
-      }}
-      className='container-fluid'
+      className='container-fluid homeItemMarginTop'
     >
       <div className='row'>
         <div
@@ -30,7 +27,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
             {top}
           </div>
           <div
-            className='largerHeading Bold' style={{
+            className='HomeHeadingFontSize Bold' style={{
               paddingTop: '0.4em',
               borderTop: '1px solid currentColor',
               marginBottom: '2.1rem'

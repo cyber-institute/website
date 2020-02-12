@@ -8,40 +8,28 @@ import BodyMenuItem from './../BodyMenuItem/BodyMenuItem'
 import Quote from './../Quote/Quote'
 import BodyMenuItemSwapped from './../BodyMenuItemSwapped/BodyMenuItemSwapped'
 import PurpleBodyMenuItem from './../PurpleBodyMenuItem/PurpleBodyMenuItem'
-import Links from './../Links/Links'
+import FirstBanner from './FirstBanner'
+import SecondBanner from './SecondBanner'
+import ThirdBanner from './ThirdBanner'
 
 import laptop from '../../img/laptop.jpg'
-import blog from '../../img/blogs.jpg'
-//import './swirly_lines.js'
+import team from '../../img/team.jpg'
+import whatWeOffer from '../../img/whatWeOffer.jpg'
 
-
-
-// import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../flexboxgrid.css'
 import './../style.css'
-
-
-/*        <div className="App" ref={el => (this.div = el)}>
-        {/* Script is inserted here *///}
-       // </div>
-//       componentDidMount() {
-//        const script = document.createElement("script");    
- //       script.async = true;    
-  //      script.src = "./swirly_lines.js";    
-    //    this.div.appendChild(script);  }
-
 
 class Home extends Component {
   render () {
     return (
       <>
-
         <Heading />
         <div style={{ position: 'relative' }}>
           <Sine />
           <Body />
           <Square />
         </div>
+        <Quote />
         <BodyMenuItem
           top='01 About'
           heading='Explore Cyber'
@@ -50,24 +38,28 @@ class Home extends Component {
           img={laptop}
           transforms
         />
-        <Quote />
-        <BodyMenuItemSwapped />
-        <div style={{ position: 'relative' }}>
-          <PurpleBodyMenuItem />
-        </div>
-        <BodyMenuItem
-          top='04 Blog'
-          heading='Blog & Insights'
-          text='Here is some text to help with styling and whatnot. No real purpose for this text, except for the assistance in styling of the posts.'
+        <FirstBanner />
+        <BodyMenuItemSwapped
+          top='02 Team'
+          heading='Meet the Team'
+          text='Want a career at the Cyber Institute?'
           buttonText='Find out more'
-          img={blog}
+          img={team}
+          transforms
         />
-        <Links />
+        <SecondBanner />
+        <PurpleBodyMenuItem
+          top='03 Services'
+          heading='What we Offer'
+          text='Courses, operations, research and innovation, and partnerships.  The Cyber Institute is developing its research, analytical and communication capability to shape and occupy the space of a trusted adviser to decision-makers in government and industry.'
+          buttonText='Find out more'
+          img={whatWeOffer}
+          transforms
+        />
+        <ThirdBanner />
       </>
     )
   }
 }
 
 export default Home
-
-

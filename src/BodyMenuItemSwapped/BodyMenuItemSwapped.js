@@ -3,97 +3,24 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight'
 
-import brian from '../../img/professor_brian_schmidt.jpg'
-import elanor from '../../img/professor_elanor_huntington.jpg'
-import rory from '../../img/professor_rory_medcalf.jpg'
-import marie from '../../img/marie_johnson.jpg'
-import hamish from '../../img/hamish_hawthorn.jpg'
-import deb from '../../img/deborah_anton.jpg'
-import mick from '../../img/mick_ryan.jpg'
-
-export default function BodyMenuItem () {
+export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms }) {
   return (
     <div
-      style={{
-        marginTop: '10rem'
-      }}
-      className='container-fluid'
+      className='container-fluid homeItemMarginTop'
     >
       <div className='row'>
         <div
-        // className='col-lg-3 col-xs-offset-2'
           className='col-lg-offset-2 col-lg-4
                      col-md-offset-1 col-md-5'
+          style={{ overflow: 'hidden' }}
         >
-          <div className='row' style={{ paddingBottom: '1rem' }}>
-            <div className='col-xs-4' style={{ height: '170px' }}>
-              <img
-                src={brian} style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-            <div className='col-xs-4' style={{ height: '170px' }}>
-              <img
-                src={elanor} style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-            <div className='col-xs-4' style={{ height: '170px' }}>
-              <img
-                src={rory} style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-          </div>
-          <div className='row' style={{ paddingBottom: '1rem' }}>
-            <div className='col-xs-4' style={{ height: '170px' }}>
-              <img
-                src={marie} style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-            <div className='col-xs-4' style={{ height: '170px' }}>
-              <img
-                src={hamish} style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-            <div className='col-xs-4' style={{ height: '170px' }}>
-              <img
-                src={deb} style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-xs-4' style={{ height: '170px' }}>
-              <img
-                src={mick} style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover'
-                }}
-              />
-            </div>
-          </div>
+          <img
+            src={img} style={{
+              maxWidth: '100%',
+              transformOrigin: '50% 10%',
+              transform: transforms && 'scale(3.5)'
+            }}
+          />
         </div>
         <div
           className='col-lg-4 col-md-5 rightAlign-md marginTop-sm'
@@ -107,20 +34,20 @@ export default function BodyMenuItem () {
             }}
             className='Medium'
           >
-            02 Governance
+            {top}
           </div>
           <div
-            className='largerHeading Bold' style={{
+            className='HomeHeadingFontSize Bold' style={{
               paddingTop: '0.4em',
               borderTop: '1px solid currentColor',
               marginBottom: '2.1rem'
             }}
           >
-            Advisory Board
+            {heading}
           </div>
           <div className='Light row'>
             <div className='col-md-offset-3 col-xs-9 Light' style={{ lineHeight: '1.87' }}>
-            The ANU Cyber Institute is led by eight-members of the Advisory Board, who set the strategic direction of the Institute.
+              {text}
             </div>
           </div>
           <Button
@@ -133,7 +60,7 @@ export default function BodyMenuItem () {
               fontSize: '14px'
             }}
           >
-            See Board
+            {buttonText}
             <ArrowRightIcon />
           </Button>
         </div>
