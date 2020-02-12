@@ -10,6 +10,7 @@ import BodyMenuItemSwapped from './../BodyMenuItemSwapped/BodyMenuItemSwapped'
 import PurpleBodyMenuItem from './../PurpleBodyMenuItem/PurpleBodyMenuItem'
 import FirstBanner from './FirstBanner'
 import SecondBanner from './SecondBanner'
+import ThirdBanner from './ThirdBanner'
 
 import laptop from '../../img/laptop.jpg'
 import team from '../../img/team.jpg'
@@ -56,6 +57,7 @@ class Home extends Component {
           img={whatWeOffer}
           transforms
         />
+        <ThirdBanner />
       </>
     )
   }
