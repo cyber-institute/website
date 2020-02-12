@@ -114,7 +114,6 @@ class App extends Component {
               <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link>
               <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link>
               <Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link>
-              <Link className='Light' to="/ethos" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Ethos</Link>
               <Link className='Light' to="/about" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About Us</Link>
               <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link>
             </ul>
