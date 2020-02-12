@@ -9,7 +9,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
   return (
     <div
       style={{
-        marginTop: '10rem'
+        marginTop: '13rem'
       }}
       className='container-fluid'
     >

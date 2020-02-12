@@ -9,6 +9,7 @@ import Quote from './../Quote/Quote'
 import BodyMenuItemSwapped from './../BodyMenuItemSwapped/BodyMenuItemSwapped'
 import PurpleBodyMenuItem from './../PurpleBodyMenuItem/PurpleBodyMenuItem'
 import Links from './../Links/Links'
+import FirstBanner from './FirstBanner'
 
 import laptop from '../../img/laptop.jpg'
 import blog from '../../img/blogs.jpg'
@@ -27,6 +28,7 @@ class Home extends Component {
           <Body />
           <Square />
         </div>
+        <Quote />
         <BodyMenuItem
           top='01 About'
           heading='Explore Cyber'
@@ -35,7 +37,7 @@ class Home extends Component {
           img={laptop}
           transforms
         />
-        <Quote />
+        <FirstBanner />
         <BodyMenuItemSwapped />
         <div style={{ position: 'relative' }}>
           <PurpleBodyMenuItem />

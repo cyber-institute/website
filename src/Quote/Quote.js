@@ -6,7 +6,7 @@ export default function Quote () {
   return (
     <div
       style={{
-        marginTop: '10rem'
+        marginTop: '26rem'
       }}
       className='container-fluid'
     >
