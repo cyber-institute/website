@@ -8,12 +8,12 @@ import BodyMenuItem from './../BodyMenuItem/BodyMenuItem'
 import Quote from './../Quote/Quote'
 import BodyMenuItemSwapped from './../BodyMenuItemSwapped/BodyMenuItemSwapped'
 import PurpleBodyMenuItem from './../PurpleBodyMenuItem/PurpleBodyMenuItem'
-import Links from './../Links/Links'
 import FirstBanner from './FirstBanner'
+import SecondBanner from './SecondBanner'
 
 import laptop from '../../img/laptop.jpg'
-import blog from '../../img/blogs.jpg'
 import team from '../../img/team.jpg'
+import whatWeOffer from '../../img/whatWeOffer.jpg'
 
 import './../flexboxgrid.css'
 import './../style.css'
@@ -47,17 +47,15 @@ class Home extends Component {
           img={team}
           transforms
         />
-        <div style={{ position: 'relative' }}>
-          <PurpleBodyMenuItem />
-        </div>
-        <BodyMenuItem
-          top='04 Blog'
-          heading='Blog & Insights'
-          text='Here is some text to help with styling and whatnot. No real purpose for this text, except for the assistance in styling of the posts.'
+        <SecondBanner />
+        <PurpleBodyMenuItem
+          top='03 Services'
+          heading='What we Offer'
+          text='Courses, operations, research and innovation, and partnerships.  The Cyber Institute is developing its research, analytical and communication capability to shape and occupy the space of a trusted adviser to decision-makers in government and industry.'
           buttonText='Find out more'
-          img={blog}
+          img={whatWeOffer}
+          transforms
         />
-        <Links />
       </>
     )
   }

@@ -6,10 +6,7 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight'
 export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms }) {
   return (
     <div
-      style={{
-        marginTop: '10rem'
-      }}
-      className='container-fluid'
+      className='container-fluid homeItemMarginTop'
     >
       <div className='row'>
         <div
@@ -21,7 +18,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
             src={img} style={{
               maxWidth: '100%',
               transformOrigin: '50% 10%',
-              transform: transforms && 'scale(2)'
+              transform: transforms && 'scale(3.5)'
             }}
           />
         </div>

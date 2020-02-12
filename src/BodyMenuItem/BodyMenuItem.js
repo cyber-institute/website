@@ -8,10 +8,7 @@ import './style.css'
 export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms }) {
   return (
     <div
-      style={{
-        marginTop: '13rem'
-      }}
-      className='container-fluid'
+      className='container-fluid homeItemMarginTop'
     >
       <div className='row'>
         <div
