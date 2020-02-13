@@ -107,10 +107,10 @@ class App extends Component {
   render () {
     return (
       <>
- <div className={useStyles.root}>
- <Router history={history}>
-      <ElevationScroll>
-        <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
+  <div className={useStyles.root}>
+  <Router history={history}>
+       <ElevationScroll>
+         <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           
           <Toolbar>  
           <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ width: '25px' }} /></Link>

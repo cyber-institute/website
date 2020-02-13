@@ -11,6 +11,49 @@ body {
   margin-top: 13rem;
 }
 
+.advisoryImageText {
+  /* display: none; */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(82,49,120,0.4);
+}
+
+.personsContent {
+  padding: 2rem 6rem;
+  text-align: left;
+}
+
+.advisoryImageText > div {
+  position: absolute;
+  bottom: 0;
+  padding: 0 1rem 1rem;
+}
+
+.hover:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  left: calc(50% - 5px);
+  bottom: 0;
+}
+
+/* .advisoryImage:hover .advisoryImageText {
+  display: block;
+} */
+
+.advisoryImage {
+  height: 400px;
+}
+
 .NewsArticle:hover {
   background-color: lightgrey;
   opacity: 0.5;
@@ -69,6 +112,9 @@ body {
   .width50-md {
     width: 50%;
   }
+  .width100-md {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 62em) {
@@ -83,6 +129,12 @@ body {
   }
   .width100-xs {
     width: 100%;
+  }
+  .width300px-xs {
+    width: 300px;
+  }
+  .paddingBottom2rem-xs {
+    padding-bottom: 2rem;
   }
 }
 
