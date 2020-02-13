@@ -20,11 +20,13 @@ import CITwhite from '../img/CITwhite.jpg'
 
 import ScrollUp from './pages/common/ScrollUp'
 
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router, HashRouter } from 'react-router-dom'
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './flexboxgrid.css'
 import './style.css'
+import { Switch } from '@material-ui/core'
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -75,6 +77,8 @@ export default function FadeMenu() {
     setAnchorEl(null);
   };
 
+ 
+
   return (
     <div className="mobile-only" style={{"width": "100%", float: "right"}}>
       <img src="./../img/Hamburger_icon.png" style={{ width: '25px', float: 'right', paddingRight: '2rem'}} onClick={handleClick} aria-controls="fade-menu" aria-haspopup="true"/>
@@ -103,7 +107,7 @@ class App extends Component {
     return (
       <>
  <div className={useStyles.root}>
- <Router>
+ <Router history={history}>
       <ElevationScroll>
         <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           
