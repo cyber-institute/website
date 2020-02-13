@@ -8,29 +8,8 @@
     </head>
 
     <body>
-        <div id="container" onclick="checkURL()" style="display: inline-block; width: 100%;">
+        <div id="container" style="display: inline-block; width: 100%;">
         </div>
-        <script>
-            checkURL();
-            var path = window.location.pathname;
-             var href = document.URL
-             var body = document.getElementsByTagName('body')[0];
-            function checkURL(){
-             path = window.location.pathname;
-             href = document.URL
-             body = document.getElementsByTagName('body')[0];
-        if (path == "/")
-        {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            console.log(path);
-            console.log(href);
-            script.src = 'swirly_lines.js';
-        }
-        body.appendChild(script);
-        }
-
-        </script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
 crossorigin="anonymous"></script>
     </body>

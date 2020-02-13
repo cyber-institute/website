@@ -7,7 +7,7 @@
     "start-dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --host 0.0.0.0 --hot --inline --content-base=dist --history-api-fallback --env development\"",
     "build": "rm -rf dist/*; webpack --env production",
     "start": "node server.js",
-    "heroku-postbuild": "webpack --env production --history-api-fallback"
+    "heroku-postbuild": "webpack --env production"
   },
   "keywords": [],
   "author": "",

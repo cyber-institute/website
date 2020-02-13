@@ -16,6 +16,7 @@ import Home from './Home/home'
 import About from './pages/About/index'
 import Services from './pages/Services'
 import People from './pages/People'
+import FourOFour from './404/404'
 import CITwhite from '../img/CITwhite.jpg'
 
 import ScrollUp from './pages/common/ScrollUp'
@@ -105,39 +106,39 @@ export default function FadeMenu() {
 class App extends Component {
   render () {
     return (
-//       <>
-//  <div className={useStyles.root}>
-//  <Router history={history}>
-//       <ElevationScroll>
-//         <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
+      <>
+  <div className={useStyles.root}>
+  <Router history={history}>
+       <ElevationScroll>
+         <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           
-//           <Toolbar>  
-//           <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ width: '25px' }} /></Link>
-//             <div>
-//             </div>
-//             <ul className="desktop-only" style={{ width: '100%' }}>
-//               <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link>
-//               <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link>
-//               <Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link>
-//               <Link className='Light' to="/about" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About Us</Link>
-//               <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link>
-//             </ul>
-//           <FadeMenu />
-//           </Toolbar>
-//         </AppBar>
-//       </ElevationScroll>
-//       <ScrollUp>
-//       <Route path="/news" component={News} />
-//       <Route exact path="/" component={Home} />
-//       <Route exact path="/about" component={About} />
-//       <Route exact path="/services" component={Services} />
-//       <Route exact path="/people" component={People} />
-//       </ScrollUp>
-//       </Router>
-//     </div>
-//     <Footer />
-//       </>
-<People/>
+          <Toolbar>  
+          <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ width: '25px' }} /></Link>
+            <div>
+            </div>
+            <ul className="desktop-only" style={{ width: '100%' }}>
+              <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link>
+              <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link>
+              <Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link>
+              <Link className='Light' to="/about" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About Us</Link>
+              <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link>
+            </ul>
+          <FadeMenu />
+          </Toolbar>
+        </AppBar>
+      </ElevationScroll>
+      <ScrollUp>
+      <Route exact path="/news" component={News} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/services" component={Services} />
+      <Route exact path="/people" component={People} />
+      <Route component={FourOFour} />
+      </ScrollUp>
+      </Router>
+    </div>
+    <Footer />
+      </>
     )
   }
 }
