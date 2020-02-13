@@ -1,16 +1,23 @@
 import React, { Component } from 'react'
 
+import { withRouter } from 'react-router-dom'
 import { animateScroll as scroll, scrollSpy } from 'react-scroll'
 
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 
-export default class ScrollUp extends Component {
+class ScrollUp extends Component {
   componentDidMount () {
     scrollSpy.update()
   }
 
   handleScrollToTop () {
     scroll.scrollToTop()
+  }
+
+  componentDidUpdate (prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
   }
 
   render () {
@@ -43,3 +50,5 @@ export default class ScrollUp extends Component {
     )
   }
 }
+
+export default withRouter(ScrollUp)

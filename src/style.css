@@ -26,6 +26,12 @@ body {
   bottom: 50%
 }
 
+@media only screen and (max-width: 23em) {
+  .footerText p.fontSize16px-xs, .fontSize16px-xs {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (min-width: 23em) and (max-width: 62em) {
   .BannerBottom-xs {
     bottom: 65%;
@@ -237,6 +243,10 @@ h1, h2, h3, h4, h5, p {
 
 .width100 {
   width: 100%;
+}
+
+.maxWidth100 {
+  max-width: 100%;
 }
 
 .textAlignCenter {
