@@ -33,7 +33,7 @@ export default () =>
               left: '29%',
               fontSize: '40px',
               maxWidth: '50%',
-              'font-family': ''Roboto', sans-serif',
+              'font-family': 'Roboto, sans-serif',
               'font-weight': '900',                
               color: '#523178'
             }}
