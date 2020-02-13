@@ -31,9 +31,9 @@ export default () =>
             letterSpacing: '3px'
           }}
         >
-          Cyber means thinking ahead, finding the balance, understanding the risks, and developing
-          adaptive resilience, so we can confidently rely on the digital technologies in our lives,
-          our economy, our society and our liberal, democratic culture.
+          Cyber means thinking ahead, finding balance, understanding risk, and developing
+          adaptive resilience so we can confidently rely on the digital technologies in our lives,
+          our economy, our society, and our liberal, democratic culture.
         </p>
       </div>
     </div>
