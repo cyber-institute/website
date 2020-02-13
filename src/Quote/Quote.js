@@ -56,7 +56,7 @@ export default function Quote () {
                 <div
                   className='container-fluid'
                 >
-                  <div className='row'>
+                  <div className='row middle-xs'>
                     <div className='col-xs-4'>
                       <img src={lesley} style={{ width: '100%' }} />
                     </div>
