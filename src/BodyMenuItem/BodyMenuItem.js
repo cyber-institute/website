@@ -59,7 +59,8 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
             src={img} style={{
               maxWidth: '100%',
               transformOrigin: '50% 10%',
-              transform: transforms && 'scale(2)'
+              transform: transforms && 'scale(2)',
+              filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3))
             }}
           />
         </div>
