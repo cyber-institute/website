@@ -44,7 +44,7 @@ export default function Quote () {
                   className='Light' style={{
                     paddingTop: '0.4em',
                     marginBottom: '2.1rem',
-                    fontSize: '28px',
+                    fontSize: '35px',
                     color: '#323232',
                     lineHeight: '42px',
                     fontWeight: 'bold',
