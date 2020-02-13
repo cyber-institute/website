@@ -66,7 +66,7 @@ export default () =>
           </div>
         </div>
         <div
-          className='col-md-offset-1 col-md-4 col-xs-11' style={{
+          className='col-md-4 col-xs-11' style={{
             position: 'relative'
           }}
         >
