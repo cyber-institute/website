@@ -20,10 +20,10 @@ export default () =>
           position: 'relative',
           marginTop: '4rem'
         }}
-        className='row'
+        className='row around-xs'
       >
         <div
-          className='col-md-offset-1 col-md-4'
+          className='col-md-offset-1 col-md-4 col-xs-11'
         >
           <img
             src={anu} className='width100'
@@ -66,17 +66,15 @@ export default () =>
           </div>
         </div>
         <div
-          className='col-md-offset-1 col-md-4' style={{
+          className='col-md-offset-1 col-md-4 col-xs-11' style={{
             position: 'relative'
           }}
         >
           <span
             style={{
-              position: 'absolute',
+              position: 'relative',
               top: '3%',
-              left: '29%',
               fontSize: '40px',
-              maxWidth: '50%',
               'font-family': 'Roboto, sans-serif',
               'font-weight': '900',                
               color: '#523178',
@@ -86,7 +84,7 @@ export default () =>
             As a strategic initiative of the Australian National University,
           </span>
           <p style={{
-            position: 'absolute',
+            position: 'relative',
             bottom: '0'
           }}
           >
