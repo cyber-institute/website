@@ -12,7 +12,7 @@ import aus from './australia-satellite-imagery-map.jpg'
 export default () =>
   <>
     <Banner {...{ topBanner, bottomBanner }} />
-    <div className='container-fluid'>
+    <div className='container-fluid' style={{'font-family':'Roboto, sans-serif'}}>
       <div
         style={{
           position: 'relative',
