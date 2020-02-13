@@ -17,7 +17,7 @@ class Footer extends Component {
         +61 2 6125 7802
             </p>
             <p>
-              <a href='mailto:cyber@anu.edu.au' style={{'color':'D2ACF7','text-decoration':'underline'}}>cyber@anu.edu.au</a>
+              <a href='mailto:cyber@anu.edu.au' style={{color:'D2ACF7','text-decoration':'underline'}}>cyber@anu.edu.au</a>
             </p>
             <p>
         Level 2, 115 North Rd, Acton  ACT 2601
@@ -27,7 +27,7 @@ class Footer extends Component {
             </p>
           </div>
 
-          <img src=logo className='logo' alt="The Cyber Institute's Logo in White" />
+          <img src={logo} className='logo' alt="The Cyber Institute's Logo in White" />
 
         </div>
 
