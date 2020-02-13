@@ -78,14 +78,16 @@ export default () =>
               'font-family': 'Roboto, sans-serif',
               'font-weight': '900',                
               color: '#523178',
-              'padding-bottom':'15px'
+              'padding-bottom':'15px',
+              'padding-top':'15px'
             }}
           >
             As a strategic initiative of the Australian National University,
           </span>
           <p style={{
             position: 'relative',
-            bottom: '0'
+            bottom: '0',
+            'padding-top':'15px'
           }}
           >
             the Cyber Institute brings a new approach to the challenges presented by cyber and cyber security to people, communities, industries and governments.
