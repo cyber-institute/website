@@ -31,6 +31,6 @@ export default () =>
       }}
     >
       <p className='Light'>Explore Cyber Institute</p>
-      <ArrowDownwardIcon style={{ color: '#523178' }} />
+      <ArrowDownwardIcon style={{ color: '#523178', 'padding-top': '20px'}} />
     </div>
   </>
