@@ -11,6 +11,31 @@ body {
   margin-top: 13rem;
 }
 
+.advisoryImageText {
+  /* display: none; */
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(82,49,120,0.4);
+}
+
+.advisoryImageText > div {
+  position: absolute;
+  bottom: 0;
+  padding: 0 1rem 1rem;
+}
+
+/* .advisoryImage:hover .advisoryImageText {
+  display: block;
+} */
+
+.advisoryImage {
+  height: 400px;
+}
+
 .NewsArticle:hover {
   background-color: lightgrey;
   opacity: 0.5;
@@ -68,6 +93,9 @@ body {
   }
   .width50-md {
     width: 50%;
+  }
+  .width100-md {
+    width: 100%;
   }
 }
 
