@@ -139,7 +139,8 @@ h6 {
   }
   
   a {
-    color: #D2ACF7;
+    color: #fff;
+    text-decoration: none;
   }
   
   .purpleStrip {
