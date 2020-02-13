@@ -11,6 +11,7 @@ import PurpleBodyMenuItem from './../PurpleBodyMenuItem/PurpleBodyMenuItem'
 import FirstBanner from './FirstBanner'
 import SecondBanner from './SecondBanner'
 import ThirdBanner from './ThirdBanner'
+import Swirl from './swirl'
 
 import laptop from '../../img/laptop.jpg'
 import team from '../../img/meettheteam.jpg'
@@ -24,6 +25,7 @@ class Home extends Component {
     return (
       <>
         <Heading />
+        <Swirl />
         <div style={{ position: 'relative' }}>
           <Sine />
           <Body />
