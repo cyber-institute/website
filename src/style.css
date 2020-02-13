@@ -112,6 +112,12 @@ body {
   .width100-xs {
     width: 100%;
   }
+  .width300px-xs {
+    width: 300px;
+  }
+  .paddingBottom2rem-xs {
+    padding-bottom: 2rem;
+  }
 }
 
 @media only screen and (min-width: 62em) {
