@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import './style.css'
+import logo from '.../img/logo.png'
 
 class Footer extends Component {
   render () {
@@ -26,7 +27,7 @@ class Footer extends Component {
             </p>
           </div>
 
-          <img src='.../img/logo.png' className='logo' alt="The Cyber Institute's Logo in White" />
+          <img src=logo className='logo' alt="The Cyber Institute's Logo in White" />
 
         </div>
 
