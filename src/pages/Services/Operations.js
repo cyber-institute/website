@@ -28,9 +28,7 @@ export default ({ image1, image2, image3 }) =>
         </div>
       </div>
       <div
-        className='row' style={{
-          marginTop: '4rem'
-        }}
+        className='row marginTop4rem-md'
       >
         <div className='col-md-5 margin4RemAuto-sm'>
           <Image img={image1} />

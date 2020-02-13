@@ -40,12 +40,12 @@ export default ({ image1, image2 }) =>
             The Cyber Bootcamps provide practical expert advice and skills training to government officials from Southeast Asian and Pacific Island Countries. The Program aims to build participants’ knowledge and awareness across the full breath of cyber issues – from technology and threats to decision-making and the nature of cyber and beyond.
               </p>
             </div>
-            <div className='col-md-3 marginTop2rem-xs'>
+            <div className='col-md-3 marginTop4rem-xs positionRelative-xs'>
               <p style={{
                 fontSize: '16px'
               }}
               >
-            The Cyber Institute aims to transform cyber for the betterment of humanity. For the Cyber Bootcamps Program this means extending beyond simply developing cybersecurity specialists. It means a focus on developing skills in good people to conceive, construct and care for good, adaptable, human-centred, secure, resilient systems, which take into account the people who use or are supported by them.
+            "The Cyber Institute aims to transform cyber for the betterment of humanity. For the Cyber Bootcamps Program this means extending beyond simply developing cybersecurity specialists. It means a focus on developing skills in good people to conceive, construct and care for good, adaptable, human-centred, secure, resilient systems, which take into account the people who use or are supported by them."
                 <br />
                 <br />
               </p>
@@ -56,15 +56,14 @@ export default ({ image1, image2 }) =>
               >
                 - Prof. Lesley Seebeck, CEO Cyber Institute
               </p>
+              <div
+                className='dottedLineHorizontal lesleyQuoteDottedWidth-md lesleyQuoteDottedWidth-xs' style={{
+                  position: 'absolute',
+                  right: '-2rem',
+                  top: '-1rem'
+                }}
+              />
             </div>
-            <div
-              className='dottedLineHorizontal displayNone-sm' style={{
-                width: 'calc(33.3333% + 1rem)',
-                position: 'absolute',
-                right: '-2rem',
-                top: '-1rem'
-              }}
-            />
           </div>
           <div className='row positionRelative'>
             <div

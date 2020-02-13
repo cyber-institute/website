@@ -42,12 +42,26 @@ body {
   color: #523178;
 }
 
+.pageMenuLink {
+  color: rgb(119, 119, 119);
+}
+
+.pageMenuLink:hover {
+  color: #523178;
+}
+
 @media only screen and (min-width: 62em) {
   .HomeBannerFontSize {
     font-size: 55px;
   }
   .HomeHeadingFontSize {
     font-size: 100px;
+  }
+  .lesleyQuoteDottedWidth-md {
+    width: calc(33.3333% + 1rem);
+  }
+  .width50-md {
+    width: 50%;
   }
 }
 
@@ -57,6 +71,12 @@ body {
   }
   .HomeHeadingFontSize {
     font-size: 50px;
+  }
+  .lesleyQuoteDottedWidth-xs {
+    width: calc(100% + 2rem);
+  }
+  .width100-xs {
+    width: 100%;
   }
 }
 
@@ -69,6 +89,12 @@ body {
 @media only screen and (max-width: 62em) {
   .HeadingFontSize-xs {
     font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .positionRelative-xs {
+    position: relative;
   }
 }
 
@@ -126,7 +152,7 @@ body {
 
  }
 @media only screen and (max-width: 62em) {
-  .columnReverse-sm {
+  .row.columnReverse-sm {
     flex-direction: column-reverse;
   }
 }
@@ -162,8 +188,8 @@ body {
 }
 
 @media only screen and (max-width: 62em) {
-  .marginTop2rem-xs {
-    margin-top: 2rem;
+  .marginTop4rem-xs {
+    margin-top: 4rem;
   }
 }
 

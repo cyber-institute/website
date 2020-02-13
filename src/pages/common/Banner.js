@@ -61,7 +61,7 @@ export default ({ banner, title, subTitle, headings }) =>
               color: '#fff'
             }}
           >
-        {title}
+            {title}
           </h2>
           <h2
             className='Bold BannerSubtitleFontSize-md BannerSubtitleFontSize-xs'
@@ -70,7 +70,7 @@ export default ({ banner, title, subTitle, headings }) =>
               color: '#fff'
             }}
           >
-        {subTitle}
+            {subTitle}
           </h2>
         </div>
       </div>
@@ -98,6 +98,7 @@ export default ({ banner, title, subTitle, headings }) =>
                 className='Bold'
               >
                 <Link
+                  className='pageMenuLink'
                   activeClass='active'
                   to={heading}
                   spy
@@ -107,7 +108,6 @@ export default ({ banner, title, subTitle, headings }) =>
                   style={{
                     fontSize: '22px',
                     letterSpacing: '3.3px',
-                    color: 'rgb(119, 119, 119)',
                     cursor: 'pointer'
                   }}
                 >
