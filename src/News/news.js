@@ -115,7 +115,7 @@ const NewsArticle = (props) => (
     </div>
     <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid",padding: "1rem", borderColor: "black", borderWidth: "1px", width: "70%"}} onClick={() => props.link && window.open(props.link, '_blank')}>
     <br />
-      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
+      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000', display: 'block', display: '-webkit-box', maxWidth: '100%', height: '113px', margin: '0 auto', lineHeight: '1', WebkitLineClamp: '4', WebkitBoxOrient: 'vertical', overflow: 'hidden', textOverflow: 'ellipsis'}}>{props.head}</b><br />
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 <br />
@@ -137,8 +137,8 @@ const news = {
     props: {
       head: 'The January Cyber Institute Bootcamp',
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
-      author: 'Graham',
-      date: '29/01/2020',
+      author: 'DFAT',
+      date: '29/01/20',
       imageSource: CyberBootcamp,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx?fbclid=IwAR2mztupdFmWZC6kXPPvYKn57Oj9cXqDa9E9jzPw2qlmMa_KAUSAO1M2guE',
@@ -149,8 +149,8 @@ const news = {
     props: {
       head: 'Digital Binaries: 5G and the new tech wars',
       byline: 'The Raisina Dialogue is a multilateral conference where global leaders in policy, business, media and civil society are hosted in New Delhi, India, to discuss cooperation on a wide range of pertinent international policy matters. Our CEO, Professor Lesley Seebeck,  came back from sharing some insight through the "Digital Binaries: 5G and the new tech wars" panel on the final day of this conference.',
-      author: 'Graham',
-      date: '16/01/2020',
+      author: 'ORF',
+      date: '16/01/20',
       imageSource: RaisinaDialogue,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.orfonline.org/raisina-dialogue/programme/',
@@ -162,7 +162,7 @@ const news = {
       head: 'To Singapore and Malaysia for Cyber Security',
       byline: "A visit to Singapore and Malaysia for our Program Manager Liz West didn't just include great conversations and delicious food, but attending some cyber-security ventures. Both Republic Polytechnic-RSA Joint Security Operations Centre and Sunway University's Cyber Security Intelligence Laboratory were fantastic to visit, and the Cyber Institute was proud to send over one of our own.",
       author: 'Liz West',
-      date: '19/12/2019',
+      date: '19/12/19',
       imageSource: SingaporeCyber,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://twitter.com/AnuCyber/status/1203838456499232769',
@@ -221,7 +221,7 @@ const podcasts = {
       head: 'More details needed about potential changes to cyber powers',
       byline: "The Federal Government has been looking at whether the Australian Signals Directorate should have more of a role in fighting cybercrime across the country. It's a discussion that's been going on for more than a year now, but no decisions have been made. Home Affairs Minister Peter Dutton says he is to continue the conversation, and people in the cyber security sector want more details about what could change.",
       author: 'ABC AM',
-      date: '18/06/2019',
+      date: '18/06/19',
       imageSource: GovCyberPodcast,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358',
@@ -232,8 +232,8 @@ const podcasts = {
     props: {
       head: 'Data, Cyber, and the Social Context',
       byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
-      author: 'National Security Podcast',
-      date: '27/01/2019',
+      author: 'Nat. Security Podcast',
+      date: '27/01/19',
       imageSource: DataPodcast,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/',
@@ -245,7 +245,7 @@ const podcasts = {
       head: 'Generic Heading 2',
       byline: 'Start of the article',
       author: 'Graham',
-      date: '22/10/2020',
+      date: '22/10/20',
       imageSource: './img/ai1.jpg',
       sizeName: 'col-md-3 col-xs-12'
     }
@@ -262,8 +262,8 @@ const media = {
     props: {
       head: 'Surviving in a world of sharper technological competition',
       byline: 'Technology is understood as something external, ‘done’ or given to Australia by others. There’s no real sense of initiation or ownership. We’ve allowed ourselves to think of Australia essentially as a spectator rather than a participant in technological innovation.',
-      author: 'Professor Lesley Seebeck',
-      date: '22/01/2020',
+      author: 'Prof. Lesley Seebeck',
+      date: '22/01/20',
       imageSource: Globe,
       sizeName: 'col-md-3 col-xs-12',
       link: "https://www.aspistrategist.org.au/surviving-in-a-world-of-sharper-technological-competition/",
@@ -274,7 +274,7 @@ const media = {
     props: {
       head: 'Cybersecurity: how are we doing?',
       byline: 'Asking ourselves whether we’re doing things right merely asks us to measure our progress down a prescribed path. Judgements about whether we’re doing the right things are harder to make. It’s entirely possible we’re not even on the right path, regardless of how far along it we’ve come. A word of warning: this is a fairly dense and difficult topic.',
-      author: 'Professor Lesley Seebeck',
+      author: 'Prof. Lesley Seebeck',
       date: '11/12/19',
       imageSource: CyberHowDoing,
       sizeName: 'col-md-3 col-xs-12',
@@ -286,8 +286,8 @@ const media = {
     props: {
       head: 'Repositioning Australia to face its future',
       byline: 'Good things come to those who are prepared to wait, invest, and appreciate the ‘adjacent possible’. Policymakers need to stop being drawn to the myth of the ‘quick fix’ and focus on long-term and sustained development of research and development as an ecosystem if they really want to solve those wicked problems.',
-      author: 'Professor Lesley Seebeck',
-      date: '13/11/2019',
+      author: 'Prof. Lesley Seebeck',
+      date: '13/11/19',
       imageSource: FaceFuture,
       sizeName: 'col-md-3 col-xs-12',
       link: "https://www.policyforum.net/repositioning-australia-to-face-its-future/",
@@ -303,8 +303,8 @@ const media2 = {
     props: {
       head: 'Cybersecurity: people are not the problem',
       byline: "A lot of thinking and commentary around cybersecurity put forward the idea that ‘people are the problem’. After all, most intrusions and attacks start with people being persuaded or misled into going onto disguised or infected sites, to handover details or otherwise compromise their own systems... If only people—users, clients, members of the community—didn’t do what people naturally do, we’d all have much more secure and efficient systems. That's muddled thinking.",
-      author: 'Professor Lesley Seebeck',
-      date: '4/11/2019',
+      author: 'Prof. Lesley Seebeck',
+      date: '4/11/19',
       imageSource: PeopleNotProblem,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/',
@@ -315,8 +315,8 @@ const media2 = {
     props: {
       head: 'Submission: 2020 Cyber Security Strategy',
       byline: 'The number of questions in this paper illustrates the complex, contested, and changeable nature of cyber and cyber security... Given that cyber is a wicked problem, without a broader conceptual framework, the danger is that fragmented approach and point solutions are not likely to meet the challenge.',
-      author: 'Professor Lesley Seebeck',
-      date: '1/11/2019',
+      author: 'Prof. Lesley Seebeck',
+      date: '1/11/19',
       imageSource: SecurityStrategy,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf',
@@ -327,8 +327,8 @@ const media2 = {
     props: {
       head: 'The new global technological divide',
       byline: 'For the first time since the Cold War, technology is re-emerging as a strategic, and not merely a political, instrument. The difference this time is that it’s thoroughly civilian rather than military technologies and information that act both as enablers and sources of vulnerability. And there are key differences in how different Western political cultures understand the strategic significance of technology.',
-      author: 'Professor Lesley Seebeck',
-      date: '7/11/2019',
+      author: 'Prof. Lesley Seebeck',
+      date: '7/11/19',
       imageSource: TechDivide,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/',
@@ -345,7 +345,7 @@ const events = {
       day : '20',
       month: 'Feb',
       title : 'RSA Conference 2020',
-      date : '20/02/2020',
+      date : '20/02/20',
       time: '9:00am',
       description: 'The Cyber Institute will be proud to see our CEO, Professor Lesley Seebeck, speak at the prestigious 2020 RSA Conference in San Francisco, United States, on the ripple effects of end-to-end encryption.',
       signupText: 'Click the link for more information about her role in the event:',
@@ -358,7 +358,7 @@ const events = {
       day : '20',
       month: 'Jan',
       title : 'The Cyber Bootcamp',
-      date : '20/01/2020',
+      date : '20/01/20',
       time: '11:00am',
       description: "The Department of Foreign Affairs and Trade launched the Cyber Bootcamp Project in November 2019, of which programs are delivered by ANU’s Cyber Institute and National Security College. It aims to help participants in ASEAN and Pacific countries pursue a cyber-resilience vision. Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. As part of the program participants will implement a project which responds to a cyber-challenge or opportunity relevant to their domestic roles that will contribute to a cyber-resilient Indo-Pacific.",
       signupText: 'Find out more at:',
@@ -444,7 +444,7 @@ class News extends Component {
       news2: news2,
       podcasts: podcasts,
       media: media,
-      blogs: blogs,
+      // blogs: blogs,
       events: events,
       media2: media2
 
@@ -616,7 +616,7 @@ class News extends Component {
       </div>
         }
       </div>
-      <div class="Blog">
+      {/* <div class="Blog">
         <div class="Blog">
         <div class="row">
           <div class="col-xs-2"></div>
@@ -656,7 +656,7 @@ class News extends Component {
       </div>
       </div>
         }
-      </div>
+      </div> */}
       <div class="Podcasts">
         <div class="Podcasts">
         <div class="row">
