@@ -222,7 +222,7 @@ export default () =>
               marginTop: '2rem'
             }}
           >
-            Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', 'font-weight': '900'}} real-time security operations centre</span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
+            Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', 'font-weight': '900'}}> real-time security operations centre </span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@
     "start-dev": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --host 0.0.0.0 --hot --inline --content-base=dist --history-api-fallback --env development\"",
     "build": "rm -rf dist/*; webpack --env production",
     "start": "node server.js",
-    "heroku-postbuild": "webpack --env production"
+    "heroku-postbuild": "webpack --env production --history-api-fallback"
   },
   "keywords": [],
   "author": "",
@@ -43,6 +43,7 @@
     "react-scroll": "^1.7.16",
     "react-spring": "8.0.27",
     "styled-components": "5.0.1",
-    "react-load-script": "0.0.6"
+    "react-load-script": "0.0.6",
+    "connect-history-api-fallback": "1.6.0"
   }
 }
