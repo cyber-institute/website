@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import './style.css'
 import '../../flexboxgrid.css'
+
+import banner from './banner.jpg'
 import Lesley from '../../../img/lesley.JPG'
 import Puzzle1 from '../../../img/puzzle1.png'
 import Puzzle2 from '../../../img/puzzle2.png'
@@ -14,8 +16,6 @@ import Rory from '../../../img/professor_rory_medcalf.jpg'
 import Marie from '../../../img/marie_johnson.jpg'
 import Hamish from '../../../img/hamish_hawthorn.jpg'
 import Deb from '../../../img/deborah_anton.jpg'
-
-
 
 
 function Info(props) {
