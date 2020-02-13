@@ -32,7 +32,10 @@ export default () =>
               top: '3%',
               left: '29%',
               fontSize: '40px',
-              maxWidth: '50%'
+              maxWidth: '50%',
+              'font-family': 'Roboto',
+              'font-weight': '900',                
+              colour: '#523178'
             }}
           >
             As a strategic initiative of the Australian National University,
