@@ -14,7 +14,8 @@ export default () =>
     >
       <h1
         className='Bold HomeHeadingFontSize' style={{
-          fontWeight: 'normal',
+          'font-family': 'Roboto, sans-serif', 
+          fontWeight: '900',
           // fontSize: '80px',
           margin: 0,
           color: '#523178'
