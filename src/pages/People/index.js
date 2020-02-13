@@ -4,7 +4,6 @@ import './style.css'
 import '../../flexboxgrid.css'
 
 import Banner from '../common/Banner'
-import Slider from '../common/Slider'
 
 import banner from './banner.jpg'
 import Lesley from '../../../img/lesley.JPG'
