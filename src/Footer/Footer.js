@@ -26,7 +26,7 @@ class Footer extends Component {
             </p>
           </div>
 
-          <img src='../../img/logo.png' className='logo' alt="The Cyber Institute's Logo in White" />
+          <img src='.../img/logo.png' className='logo' alt="The Cyber Institute's Logo in White" />
 
         </div>
 
