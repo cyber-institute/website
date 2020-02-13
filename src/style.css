@@ -12,7 +12,7 @@ body {
 }
 
 .advisoryImageText {
-  /* display: none; */
+  display: none;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -33,7 +33,7 @@ body {
   padding: 0 1rem 1rem;
 }
 
-.hover:after {
+.selected .hover:after {
   display: block;
   content: '';
   width: 0;
@@ -46,12 +46,13 @@ body {
   bottom: 0;
 }
 
-/* .advisoryImage:hover .advisoryImageText {
+.advisoryImage:hover .advisoryImageText {
   display: block;
-} */
+}
 
 .advisoryImage {
   height: 400px;
+  cursor: pointer;
 }
 
 .NewsArticle:hover {
@@ -188,6 +189,12 @@ body {
 
 @media only screen and (max-width: 62em) {
   .displayNone-sm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .displayNone-md {
     display: none;
   }
 }

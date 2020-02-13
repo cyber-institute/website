@@ -89,7 +89,7 @@ class People extends Component {
                   Ree worked in business improvement and information technology transformation programs in state and
                   federal government agencies. Ree was also the Heritage Manager at Old Parliament House where she
                   led the successful nomination of the site for the National Heritage List.
-                    <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
+                  <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
                   of Canberra, and has a background in stakeholder engagement, business process improvement, workshop
                   facilitation, program delivery, governance and change management.  Ree is the Cyber Institute’s COO.
                   </p>
@@ -161,20 +161,20 @@ class People extends Component {
                   <p style={{ textAlign: 'center' }}>[Insert load more button here]</p>
                   <p>To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
                   betterment of humanity,
-                    <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                  <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
                       we are seeking those willing to tackle a challenge, go beyond traditional
                     boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
                     our democracy.
-                    <br />
-                    <br />
-                  </span>
+                      <br />
+                      <br />
+                    </span>
                   We are looking for people who are at ease with unconventionality, with finding and
                   working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
                   people who have scars from dealing with cyber and security issues firsthand, who have delved into the
                   data and generated insights into the consequences for people, society and the nation, who have a vision
                   for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
                   who are curious, and who can help build a great team environment.&nbsp;
-                    <br /><br />
+                  <br /><br />
                   We are passionate about placing people at the centre of our work, and are seeking to build a
                   high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
                   to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
@@ -212,7 +212,6 @@ export default People
 
 const PersonsGrid = () => {
   const [isVisible, setIsVisible] = useState(false)
-
   return (
     <>
       <div className='row center-xs'>{
@@ -226,7 +225,7 @@ const PersonsGrid = () => {
           {
             img: elanor,
             title: 'Professor Elanor Huntington',
-            subtitle: 'Dean, College of Engineering &amp; Computer Science, The Australian National University',
+            subtitle: 'Dean, College of Engineering & Computer Science, The Australian National University',
             id: 1
           },
           {
@@ -262,14 +261,67 @@ const PersonsGrid = () => {
             <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
             {
               (index === 3 || index === 6) && (
-                <SlideToggleContent isVisible={Number.isInteger(isVisible) && (index - 4 <= isVisible) && (isVisible <= index)}>
-                  <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} />
+                <SlideToggleContent isVisible={Number.isInteger(isVisible) &&
+                (([0, 1, 2, 3].includes(isVisible) && index === 3) ||
+                ([4, 5, 6].includes(isVisible) && index === 6))}
+                >
+                  <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-sm' />
                 </SlideToggleContent>
               )
+            }
+            {
+              <SlideToggleContent isVisible={Number.isInteger(isVisible) && isVisible === index}>
+                <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-md' />
+              </SlideToggleContent>
             }
           </>
         ))
       }
+      </div>
+    </>
+  )
+}
+
+const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
+  return (
+    <>
+      <div className={`${isVisible === id ? 'selected ' : ''}col-md-3 col-xs-12 advisoryImage paddingBottom2rem-xs`}>
+        <div
+          style={{
+            display: 'inline-block',
+            height: '100%',
+            position: 'relative'
+          }}
+          onClick={() => isVisible !== id ? setIsVisible(id) : setIsVisible(null)}
+        >
+          <img
+            src={img} className='width100-md width300px-xs' style={{
+              height: '100%',
+              objectFit: 'cover'
+            }}
+          />
+          <div className='hover advisoryImageText'>
+            <div>
+              <h3
+                className='name'
+                style={{
+                  color: '#fff',
+                  margin: 0
+                }}
+              >
+                {title}
+              </h3>
+              <p
+                className='title'
+                style={{
+                  color: '#fff'
+                }}
+              >
+                {subtitle}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
@@ -308,48 +360,3 @@ const personsContent = [
 <br/>
   Major General Ryan graduated from the Royal Military College, Duntroon, in 1989, has a Bachelor's degree in Asian Studies from the University of New England and is a graduate of the Australian Defence Force School of Languages. He is a Distinguished Graduate of the United States Marine Corps Command and Staff College, and a graduate of the USMC School of Advanced Warfighting. In 2012, he graduated with distinction from the Johns Hopkins University, School of Advanced International Studies, earning a Masters in International Public Policy.</p>`
 ]
-
-const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
-  return (
-    <>
-      <div className='col-md-3 col-xs-12 advisoryImage paddingBottom2rem-xs'>
-        <div
-          style={{
-            display: 'inline-block',
-            height: '100%',
-            position: 'relative'
-          }}
-          onClick={() => setIsVisible(id)}
-        >
-          <img
-            src={img} className='width100-md width300px-xs' style={{
-              height: '100%',
-              objectFit: 'cover'
-            }}
-          />
-          <div className='hover advisoryImageText'>
-            <div>
-              <h3
-                className='name'
-                style={{
-                  color: '#fff',
-                  margin: 0
-                }}
-              >
-                {title}
-              </h3>
-              <p
-                className='title'
-                style={{
-                  color: '#fff'
-                }}
-              >
-                {subtitle}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
