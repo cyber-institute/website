@@ -20,7 +20,7 @@ import CITwhite from '../img/CITwhite.jpg'
 
 import ScrollUp from './pages/common/ScrollUp'
 
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router, HashRouter } from 'react-router-dom'
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './flexboxgrid.css'
@@ -103,7 +103,7 @@ class App extends Component {
     return (
       <>
  <div className={useStyles.root}>
- <Router>
+ <Router history={history}>
       <ElevationScroll>
         <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           
