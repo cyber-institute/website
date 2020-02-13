@@ -53,7 +53,7 @@ class Home extends Component {
         <PurpleBodyMenuItem
           top='03 Services'
           heading='What we Offer'
-          text='Courses, operations, research and innovation, and partnerships.  The Cyber Institute is developing its research, analytical and communication capability to shape and occupy the space of a trusted adviser to decision-makers in government and industry.'
+          text='Courses, operations, research and innovation, and partnerships.  The Cyber Institute is developing its research, analysis, and communication capabilities to shape and occupy the space of a trusted adviser to decision-makers in government and industry.'
           buttonText='Find out more'
           img={whatWeOffer}
           transforms
