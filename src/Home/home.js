@@ -13,7 +13,7 @@ import SecondBanner from './SecondBanner'
 import ThirdBanner from './ThirdBanner'
 
 import laptop from '../../img/laptop.jpg'
-import team from '../../img/team.jpg'
+import team from '../../img/meettheteam.jpg'
 import whatWeOffer from '../../img/whatWeOffer.jpg'
 
 import './../flexboxgrid.css'

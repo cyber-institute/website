@@ -1,9 +1,9 @@
 import React from 'react'
 
+import { Image } from './index'
 import Slider from '../common/Slider'
-import PlaceHolderImage from './PlaceHolderImage'
 
-export default () =>
+export default ({ image1, image2 }) =>
   <>
     <div className='row'>
       <div className='col-md-offset-1 col-md-11'>
@@ -40,12 +40,12 @@ export default () =>
             The Cyber Bootcamps provide practical expert advice and skills training to government officials from Southeast Asian and Pacific Island Countries. The Program aims to build participants’ knowledge and awareness across the full breath of cyber issues – from technology and threats to decision-making and the nature of cyber and beyond.
               </p>
             </div>
-            <div className='col-md-3 marginTop2rem-xs'>
+            <div className='col-md-3 marginTop4rem-xs positionRelative-xs'>
               <p style={{
                 fontSize: '16px'
               }}
               >
-            The Cyber Institute aims to transform cyber for the betterment of humanity. For the Cyber Bootcamps Program this means extending beyond simply developing cybersecurity specialists. It means a focus on developing skills in good people to conceive, construct and care for good, adaptable, human-centred, secure, resilient systems, which take into account the people who use or are supported by them.
+            "The Cyber Institute aims to transform cyber for the betterment of humanity. For the Cyber Bootcamps Program this means extending beyond simply developing cybersecurity specialists. It means a focus on developing skills in good people to conceive, construct and care for good, adaptable, human-centred, secure, resilient systems, which take into account the people who use or are supported by them."
                 <br />
                 <br />
               </p>
@@ -56,18 +56,56 @@ export default () =>
               >
                 - Prof. Lesley Seebeck, CEO Cyber Institute
               </p>
+              <div
+                className='dottedLineHorizontal lesleyQuoteDottedWidth-md lesleyQuoteDottedWidth-xs' style={{
+                  position: 'absolute',
+                  right: '-2rem',
+                  top: '-1rem'
+                }}
+              />
             </div>
-            <div
-              className='dottedLineHorizontal displayNone-sm' style={{
-                width: 'calc(33.3333% + 1rem)',
-                position: 'absolute',
-                right: '-2rem',
-                top: '-1rem'
-              }}
-            />
           </div>
           <div className='row positionRelative'>
-            <div className='col-md-offset-1 col-md-11'>
+            <div
+              className='col-md-offset-1 col-md-11' style={{
+                // backgroundImage: `url(${image1})`,
+                // left: '0',
+                // height: 'auto',
+                // position: 'relative',
+                // backgroundSize: 'cover',
+                // backgroundPosition: 'center',
+                // backgroundRepeat: 'no-repeat'
+              }}
+            >
+              <div style={{
+                background: '0 0',
+                overflow: 'hidden',
+                position: 'absolute',
+                top: '0',
+                right: '0',
+                bottom: '0',
+                left: '0',
+                width: '100%',
+                zIndex: -1,
+                height: '100%',
+                backgroundColor: '#fff'
+              }}
+              >
+                <picture
+                  className='bannerImg'
+                  style={{
+                    height: '100%',
+                    position: 'absolute',
+                    display: 'block',
+                    marginRight: 'auto',
+                    width: '100%',
+                    backgroundRepeat: 'repeat-y',
+                    backgroundSize: 'cover',
+                    backgroundImage: `url(${image1})`,
+                    opacity: 0.3
+                  }}
+                />
+              </div>
               <p style={{
                 marginTop: '2rem',
                 marginBottom: '2rem'
@@ -123,7 +161,7 @@ An associated Thought Leadership and Oration Series will encourage discourse acr
               </p>
             </div>
             <div className='col-md-3 margin4RemAuto-sm'>
-              <PlaceHolderImage />
+              <Image img={image2} />
             </div>
           </div>
         </Slider>

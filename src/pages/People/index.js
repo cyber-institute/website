@@ -64,11 +64,11 @@ render () {
                 <hr className="greyLine" style={{position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: "-20"}} />
               </div> 
               <div className="col-xs-12 col-md-5" style={{paddingTop: '20px'}}>
-                <p><span className="bigEmphasis">Rarely do you have the opportunity to shape a national endeavor.</span>
+                <p><span className="bigEmphasis" style={{'font-weight':'700'}}>&quot Rarely do you have the opportunity to shape a national endeavor.</span>
                   <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
                   <br /><br />Dealing with cyber intrusions reinforced my conviction that cyber is fundamentally about the human;&nbsp;that it currently represents an existential challenge to liberal, democratic societies, and that we need new, interdisciplinary approaches to tackling the problems cyber can create.&nbsp;
                   <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
-                  <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.</p>
+                  <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot</p>
                 <h3>CEO, Professor Lesley Seebeck</h3>
               </div>
             </div>
@@ -114,10 +114,10 @@ render () {
                 <h4>Stephanie, Cyber Institute Research Fellow</h4>
                 <p>Meet Dr Stephanie Koorey who started with the Cyber Institute in January 2020. Dr Koorey was awarded her PhD 
                   from the ANU’s Strategic and Defence Studies Centre in 2009, for a thesis on small arms control and violent 
-                  non-state armed groups. <br /><br /> She subsequently spent eight years developing and delivering components of the curriculum 
+                  non-state armed groups. <br /><br />She subsequently spent eight years developing and delivering components of the curriculum 
                   for the senior course and short courses at the Centre for Defence and Strategic Studies, now the Australian War 
                   College.  Dr Koorey has worked as a researcher and campaigner for non-government organisations in Australia and 
-                  the United Kingdom, and is a member of the Campaign to Stop Killer Robots. <br /><br /> Her research interests are in 
+                  the United Kingdom, and is a member of the Campaign to Stop Killer Robots. <br /><br />Her research interests are in 
                   leaderless resistance, future conflict, and emerging security challenges in the Indo-Pacific. Her current projects 
                   with the Cyber Institute include the formation of the Menzies Cyber Law Executive Education module with the ANU 
                   College of Law and the development of modules for the micro-credentialed Cyber Masters.&nbsp;</p>

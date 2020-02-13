@@ -1,9 +1,36 @@
 import React from 'react'
 
-import PlaceHolderImage from './PlaceHolderImage'
+import { Image } from './index'
 import CourseInformationBlurb from './CourseInformationBlurb'
 
-export default () =>
+const CorePrinciple = ({ heading, paragraph, isLeft }) =>
+  <>
+    <h3
+      className='Light'
+      style={{
+        fontSize: '38px',
+        marginBottom: 0
+      }}
+    >
+      {heading}
+    </h3>
+    <div
+      className='width50-md width100-xs' style={{
+        position: 'absolute',
+        border: '1px solid #eee',
+        left: `${isLeft && '-2rem'}`,
+        right: `${!isLeft && '-2rem'}`
+      }}
+    />
+    <p style={{
+      marginTop: '1rem'
+    }}
+    >
+      {paragraph}
+    </p>
+  </>
+
+export default ({ image1, image2 }) =>
   <>
     <div className='row'>
       <div className='col-md-offset-1 col-md-10'>
@@ -21,64 +48,44 @@ export default () =>
         </div>
       </div>
     </div>
-    <div className='row'>
+    <div className='row positionRelative'>
       <div className='col-md-offset-1 col-md-5'>
-        <h3
-          className='Light'
-          style={{
-            fontSize: '38px'
-          }}
-        >1. Interdisiplinarity
-        </h3>
-        <p>The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks.</p>
+        <CorePrinciple isLeft heading='1. Interdisiplinarity' paragraph='The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks.' />
       </div>
       <div
         className='col-md-5 marginTop4rem-md'
       >
-        <h3
-          className='Light' style={{
-            fontSize: '38px'
-          }}
-        >2. Experiential learning
-        </h3>
-        <p>We believe the best way to understand core insights and concepts is to apply them. That it is why we’ll be working closely with people across the University to offer you real-time experience as appropriate, as well using a range of tools to help your learning.</p>
+        <CorePrinciple heading='2. Experiential learning' paragraph='We believe the best way to understand core insights and concepts is to apply them. That it is why we’ll be working closely with people across the University to offer you real-time experience as appropriate, as well using a range of tools to help your learning.' />
       </div>
     </div>
-    <div className='row'>
+    <div className='row positionRelative'>
       <div
         className='col-md-offset-1 col-md-5'
       >
-        <h3
-          className='Light' style={{
-            fontSize: '38px'
-          }}
-        >3. Conceptual thinking
-        </h3>
-        <p>We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected.</p>
+        <CorePrinciple
+          isLeft
+          heading='3. Conceptual thinking'
+          paragraph='We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected.'
+        />
       </div>
       <div
         className='col-md-5 marginTop4rem-md'
       >
-        <h3
-          className='Light' style={{
-            fontSize: '38px'
-          }}
-        >4. Individuals and teams
-        </h3>
-        <p>While it’s important that you learn as an individual, cyber is inherently a team effort. Through our program you’ll understand better your own strengths and weaknesses, and how to work well with a diverse range of stakeholders and skill sets; and,</p>
+        <CorePrinciple
+          heading='4. Individuals and teams'
+          paragraph='While it’s important that you learn as an individual, cyber is inherently a team effort. Through our program you’ll understand better your own strengths and weaknesses, and how to work well with a diverse range of stakeholders and skill sets; and,'
+        />
       </div>
     </div>
-    <div className='row'>
+    <div className='row positionRelative'>
       <div
         className='col-md-offset-1 col-md-5'
       >
-        <h3
-          className='Light' style={{
-            fontSize: '38px'
-          }}
-        >5. Responsiveness
-        </h3>
-        <p>We want to ensure that we cover what we consider to be the core craft of cyber and associated topics and offer it in a way that recognises the demanding schedules and needs of busy professionals. Moreover, we know that it is the network of friends you will build as you test yourselves together that will stay with you and help you in future roles. We see this as a core outcome of the program.</p>
+        <CorePrinciple
+          isLeft
+          heading='5. Responsiveness'
+          paragraph='We want to ensure that we cover what we consider to be the core craft of cyber and associated topics and offer it in a way that recognises the demanding schedules and needs of busy professionals. Moreover, we know that it is the network of friends you will build as you test yourselves together that will stay with you and help you in future roles. We see this as a core outcome of the program.'
+        />
       </div>
     </div>
     <div>
@@ -100,14 +107,14 @@ export default () =>
           </p>
         </div>
         <div className='col-md-3 margin4RemAuto-sm'>
-          <PlaceHolderImage />
+          <Image img={image1} />
         </div>
       </div>
       <div
         className='row positionRelative marginTop4rem-md'
       >
         <div className='col-md-3 margin4RemAuto-sm'>
-          <PlaceHolderImage />
+          <Image img={image2} />
         </div>
         <div
           className='col-md-8 rightAlign-md'
