@@ -60,7 +60,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
               maxWidth: '100%',
               transformOrigin: '50% 10%',
               transform: transforms && 'scale(2)',
-              filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3))
+              filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))'
             }}
           />
         </div>
