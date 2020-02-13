@@ -8,8 +8,6 @@ import Operations from './Operations'
 import Articles from './Articles'
 import Partnerships from './Partnerships'
 
-import PlaceHolderImage from './PlaceHolderImage'
-
 import Banner from '../common/Banner'
 import Slider from '../common/Slider'
 
@@ -24,9 +22,9 @@ import services8 from '../../../img/services8.jpg'
 import services9 from '../../../img/services9.jpg'
 import services10 from '../../../img/services10.jpg'
 
-const Image = ({ img }) =>
+const Image = ({ img, style }) =>
   <img
-    src={img} className='width100'
+    src={img} className='maxWidth100' style={style}
   />
 
 const headings = [

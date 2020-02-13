@@ -239,6 +239,10 @@ h1, h2, h3, h4, h5, p {
   width: 100%;
 }
 
+.maxWidth100 {
+  max-width: 100%;
+}
+
 .textAlignCenter {
   text-align: center;
 }
