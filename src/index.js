@@ -16,6 +16,7 @@ import Home from './Home/home'
 import About from './pages/About/index'
 import Services from './pages/Services'
 import People from './pages/People'
+import FourOFour from './404/404'
 import CITwhite from '../img/CITwhite.jpg'
 
 import ScrollUp from './pages/common/ScrollUp'
@@ -127,11 +128,12 @@ class App extends Component {
         </AppBar>
       </ElevationScroll>
       <ScrollUp>
-      <Route path="/news" component={News} />
+      <Route exact path="/news" component={News} />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/services" component={Services} />
       <Route exact path="/people" component={People} />
+      <Route component={FourOFour} />
       </ScrollUp>
       </Router>
     </div>
