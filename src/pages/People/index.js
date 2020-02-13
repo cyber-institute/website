@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 
 import './style.css'
 import '../../flexboxgrid.css'
+
+import Banner from '../common/Banner'
+import Slider from '../common/Slider'
+
+import banner from './banner.jpg'
 import Lesley from '../../../img/lesley.JPG'
 import Puzzle1 from '../../../img/puzzle1.png'
 import Puzzle2 from '../../../img/puzzle2.png'
@@ -15,7 +20,10 @@ import Marie from '../../../img/marie_johnson.jpg'
 import Hamish from '../../../img/hamish_hawthorn.jpg'
 import Deb from '../../../img/deborah_anton.jpg'
 
-
+const Image = ({ img }) =>
+  <img
+    src={img} className='width100'
+  />
 
 
 function Info(props) {
@@ -50,6 +58,7 @@ class People extends Component{
 render () {
   return (
   <>
+      <Banner {...{ banner, headings }} title='Who we are' subTitle='Cyber is a team effort' />
       <div>
         <hr className="purpleDash" style={{position: 'relative', top: '135px', marginRight: "0"}} />
         <div className="mainBody">
