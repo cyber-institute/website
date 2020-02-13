@@ -93,7 +93,6 @@ function main_loop () {
         }
         ctx.clearRect(0, 0, window_width*2, window_height*2);
         ctx.stroke();
-      console.log(window.location.pathname)
         if(window.location.pathname == "/")
         {
             requestId = requestAnimationFrame(main_loop);
