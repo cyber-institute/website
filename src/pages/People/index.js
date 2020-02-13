@@ -89,7 +89,7 @@ class People extends Component {
                   Ree worked in business improvement and information technology transformation programs in state and
                   federal government agencies. Ree was also the Heritage Manager at Old Parliament House where she
                   led the successful nomination of the site for the National Heritage List.
-                  <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
+                    <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
                   of Canberra, and has a background in stakeholder engagement, business process improvement, workshop
                   facilitation, program delivery, governance and change management.  Ree is the Cyber Institute’s COO.
                   </p>
@@ -161,20 +161,20 @@ class People extends Component {
                   <p style={{ textAlign: 'center' }}>[Insert load more button here]</p>
                   <p>To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
                   betterment of humanity,
-                  <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
                       we are seeking those willing to tackle a challenge, go beyond traditional
                     boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
                     our democracy.
-                      <br />
-                      <br />
-                    </span>
+                    <br />
+                    <br />
+                  </span>
                   We are looking for people who are at ease with unconventionality, with finding and
                   working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
                   people who have scars from dealing with cyber and security issues firsthand, who have delved into the
                   data and generated insights into the consequences for people, society and the nation, who have a vision
                   for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
                   who are curious, and who can help build a great team environment.&nbsp;
-                  <br /><br />
+                    <br /><br />
                   We are passionate about placing people at the centre of our work, and are seeking to build a
                   high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
                   to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
@@ -295,7 +295,7 @@ const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
           onClick={() => isVisible !== id ? setIsVisible(id) : setIsVisible(null)}
         >
           <img
-            src={img} className='width100-md width300px-xs' style={{
+            src={img} className='width100-md width300px-xs width250px-xxs' style={{
               height: '100%',
               objectFit: 'cover'
             }}
