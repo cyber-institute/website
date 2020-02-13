@@ -28,6 +28,19 @@ body {
   padding: 0 1rem 1rem;
 }
 
+.hover:after {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  left: calc(50% - 5px);
+  bottom: 0;
+}
+
 /* .advisoryImage:hover .advisoryImageText {
   display: block;
 } */

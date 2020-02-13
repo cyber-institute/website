@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import React, { useState, Component } from 'react'
 
 import './style.css'
 import '../../flexboxgrid.css'
 
 import Banner from '../common/Banner'
+import SlideToggleContent from '../common/SlideToggleContent'
 
 import banner from './banner.jpg'
 import Lesley from '../../../img/lesley.JPG'
@@ -199,47 +200,7 @@ class People extends Component {
               <br /><br />
           The Advisory Board is chaired by the Vice Chancellor, Nobel Laureate Professor Brian Schmidt.
             </p>
-            <div className='row center-xs'>
-              <Person
-                img={brian}
-                title='Professor Brian P. Schmidt AC FAA FRS'
-                subtitle='Vice-Chancellor and President, The Australian National University, 2011 Nobel Laureate Physics'
-              />
-              <Person
-                img={elanor}
-                title='Professor Elanor Huntington'
-                subtitle='Dean, College of Engineering &amp; Computer Science, The Australian National University'
-              />
-              <Person
-                img={rory}
-                title='Professor Rory Medcalf'
-                subtitle='Head of the National Security College, The Australian National University'
-              />
-            </div>
-            <div className='row center-xs'>
-              <Person
-                img={marie}
-                title='Ms. Marie Johnson'
-                subtitle='Managing Director and Chief Digital Officer, Centre for Digital Business'
-              />
-              <Person
-                img={hamish}
-                title='Mr. Hamish Hawthorn'
-                subtitle='COO, UpGuard'
-              />
-              <Person
-                img={deb}
-                title='Ms. Deborah Anton'
-                subtitle='Interim National Data Commissioner, Department of the Prime Minister and Cabinet'
-              />
-            </div>
-            <div className='row center-xs'>
-              <Person
-                img={mick}
-                title='MAJGEN Mick Ryan'
-                subtitle='Major General at Australian Army'
-              />
-            </div>
+            <PersonsGrid />
           </div>
         </div>
       </>
@@ -249,40 +210,140 @@ class People extends Component {
 
 export default People
 
-const Person = ({ img, title, subtitle }) =>
-  <div className='col-md-4 col-xs-12 advisoryImage paddingBottom2rem-xs'>
-    <div style={{
-      display: 'inline-block',
-      height: '100%',
-      position: 'relative'
-    }}
-    >
-      <img
-        src={img} className='width100-md width300px-xs' style={{
-          height: '100%',
-          objectFit: 'cover'
+const PersonsGrid = () => {
+  const [isVisible, setIsVisible] = useState(false)
+
+  return (
+    <>
+      <div className='row center-xs'>
+        <PersonsRow
+          {...{ setIsVisible, isVisible }} persons={[
+            {
+              img: brian,
+              title: 'Professor Brian P. Schmidt AC FAA FRS',
+              subtitle: 'Vice-Chancellor and President, The Australian National University, 2011 Nobel Laureate Physics',
+              id: 1
+            },
+            {
+              img: elanor,
+              title: 'Professor Elanor Huntington',
+              subtitle: 'Dean, College of Engineering &amp; Computer Science, The Australian National University',
+              id: 2
+            },
+            {
+              img: rory,
+              title: 'Professor Rory Medcalf',
+              subtitle: 'Head of the National Security College, The Australian National University',
+              id: 3
+            }
+          ]}
+        />
+      </div>
+      <div className='row center-xs'>
+        <PersonsRow
+          {...{ setIsVisible, isVisible }} persons={[
+            {
+              img: marie,
+              title: 'Ms. Marie Johnson',
+              subtitle: 'Managing Director and Chief Digital Officer, Centre for Digital Business',
+              id: 4
+            }, {
+              img: hamish,
+              title: 'Mr. Hamish Hawthorn',
+              subtitle: 'COO, UpGuard',
+              id: 5
+            }, {
+              img: deb,
+              title: 'Ms. Deborah Anton',
+              subtitle: 'Interim National Data Commissioner, Department of the Prime Minister and Cabinet',
+              id: 6
+            }]}
+        />
+      </div>
+      <div className='row center-xs'>
+        <PersonsRow
+          {...{ setIsVisible, isVisible }} persons={[
+            {
+              img: mick,
+              title: 'MAJGEN Mick Ryan',
+              subtitle: 'Major General at Australian Army',
+              id: 7
+            }
+          ]}
+        />
+      </div>
+    </>
+  )
+}
+
+const PersonsRow = ({ setIsVisible, isVisible, persons }) => {
+  return (
+    <>
+      {
+        persons.map((person, index) => (
+          <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
+        ))
+      }
+      <SlideToggleContent isVisible={isVisible}>
+        <p style={{
+          padding: '2rem 6rem',
+          textAlign: 'left'
         }}
-      />
-      <div className='hover advisoryImageText'>
-        <div>
-          <h3
-            className='name'
-            style={{
-              color: '#fff',
-              margin: 0
+        >
+        Professor Brian P. Schmidt was appointed Vice-Chancellor and President of The Australian National University (ANU) in January 2016.
+          <br />
+          <br />
+Professor Schmidt is the 12th Vice-Chancellor of The Australian National University (ANU). Winner of the 2011 Nobel Prize in Physics, Professor Schmidt was an astrophysicist at the ANU Mount Stromlo Observatory and Research School of Astronomy and Astrophysics before becoming Vice-Chancellor.
+          <br />
+          <br />
+Professor Schmidt received undergraduate degrees in Astronomy and Physics from the University of Arizona in 1989, and completed his Astronomy Master's degree (1992) and PhD (1993) from Harvard University. Under his leadership, in 1998, the High-Z Supernova Search team made the startling discovery that the expansion rate of the Universe is accelerating. Fellow of the Australian Academy of Science, The United States Academy of Science, and the Royal Society, he was made a Companion of the Order of Australia in 2013.
+        </p>
+      </SlideToggleContent>
+    </>
+  )
+}
+
+const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
+  return (
+    <>
+      <div className='col-md-4 col-xs-12 advisoryImage paddingBottom2rem-xs'>
+        <div
+          style={{
+            display: 'inline-block',
+            height: '100%',
+            position: 'relative'
+          }}
+          onClick={() => setIsVisible(id)}
+        >
+          <img
+            src={img} className='width100-md width300px-xs' style={{
+              height: '100%',
+              objectFit: 'cover'
             }}
-          >
-            {title}
-          </h3>
-          <p
-            className='title'
-            style={{
-              color: '#fff'
-            }}
-          >
-            {subtitle}
-          </p>
+          />
+          <div className='hover advisoryImageText'>
+            <div>
+              <h3
+                className='name'
+                style={{
+                  color: '#fff',
+                  margin: 0
+                }}
+              >
+                {title}
+              </h3>
+              <p
+                className='title'
+                style={{
+                  color: '#fff'
+                }}
+              >
+                {subtitle}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+    </>
+  )
+}
