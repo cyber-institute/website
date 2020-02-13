@@ -89,7 +89,7 @@ class People extends Component {
                   Ree worked in business improvement and information technology transformation programs in state and
                   federal government agencies. Ree was also the Heritage Manager at Old Parliament House where she
                   led the successful nomination of the site for the National Heritage List.
-                    <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
+                  <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
                   of Canberra, and has a background in stakeholder engagement, business process improvement, workshop
                   facilitation, program delivery, governance and change management.  Ree is the Cyber Institute’s COO.
                   </p>
@@ -161,20 +161,20 @@ class People extends Component {
                   <p style={{ textAlign: 'center' }}>[Insert load more button here]</p>
                   <p>To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
                   betterment of humanity,
-                    <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                  <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
                       we are seeking those willing to tackle a challenge, go beyond traditional
                     boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
                     our democracy.
-                    <br />
-                    <br />
-                  </span>
+                      <br />
+                      <br />
+                    </span>
                   We are looking for people who are at ease with unconventionality, with finding and
                   working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
                   people who have scars from dealing with cyber and security issues firsthand, who have delved into the
                   data and generated insights into the consequences for people, society and the nation, who have a vision
                   for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
                   who are curious, and who can help build a great team environment.&nbsp;
-                    <br /><br />
+                  <br /><br />
                   We are passionate about placing people at the centre of our work, and are seeking to build a
                   high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
                   to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
@@ -222,19 +222,19 @@ const PersonsGrid = () => {
               img: brian,
               title: 'Professor Brian P. Schmidt AC FAA FRS',
               subtitle: 'Vice-Chancellor and President, The Australian National University, 2011 Nobel Laureate Physics',
-              id: 1
+              id: 0
             },
             {
               img: elanor,
               title: 'Professor Elanor Huntington',
               subtitle: 'Dean, College of Engineering &amp; Computer Science, The Australian National University',
-              id: 2
+              id: 1
             },
             {
               img: rory,
               title: 'Professor Rory Medcalf',
               subtitle: 'Head of the National Security College, The Australian National University',
-              id: 3
+              id: 2
             }
           ]}
         />
@@ -246,17 +246,17 @@ const PersonsGrid = () => {
               img: marie,
               title: 'Ms. Marie Johnson',
               subtitle: 'Managing Director and Chief Digital Officer, Centre for Digital Business',
-              id: 4
+              id: 3
             }, {
               img: hamish,
               title: 'Mr. Hamish Hawthorn',
               subtitle: 'COO, UpGuard',
-              id: 5
+              id: 4
             }, {
               img: deb,
               title: 'Ms. Deborah Anton',
               subtitle: 'Interim National Data Commissioner, Department of the Prime Minister and Cabinet',
-              id: 6
+              id: 5
             }]}
         />
       </div>
@@ -267,7 +267,7 @@ const PersonsGrid = () => {
               img: mick,
               title: 'MAJGEN Mick Ryan',
               subtitle: 'Major General at Australian Army',
-              id: 7
+              id: 6
             }
           ]}
         />
@@ -284,24 +284,46 @@ const PersonsRow = ({ setIsVisible, isVisible, persons }) => {
           <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
         ))
       }
-      <SlideToggleContent isVisible={isVisible}>
-        <p style={{
-          padding: '2rem 6rem',
-          textAlign: 'left'
-        }}
-        >
-        Professor Brian P. Schmidt was appointed Vice-Chancellor and President of The Australian National University (ANU) in January 2016.
-          <br />
-          <br />
-Professor Schmidt is the 12th Vice-Chancellor of The Australian National University (ANU). Winner of the 2011 Nobel Prize in Physics, Professor Schmidt was an astrophysicist at the ANU Mount Stromlo Observatory and Research School of Astronomy and Astrophysics before becoming Vice-Chancellor.
-          <br />
-          <br />
-Professor Schmidt received undergraduate degrees in Astronomy and Physics from the University of Arizona in 1989, and completed his Astronomy Master's degree (1992) and PhD (1993) from Harvard University. Under his leadership, in 1998, the High-Z Supernova Search team made the startling discovery that the expansion rate of the Universe is accelerating. Fellow of the Australian Academy of Science, The United States Academy of Science, and the Royal Society, he was made a Companion of the Order of Australia in 2013.
-        </p>
+      <SlideToggleContent isVisible={Number.isInteger(isVisible)}>
+        <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} />
       </SlideToggleContent>
     </>
   )
 }
+
+const personsContent = [
+  `<p class='personsContent'>
+  Professor Brian P. Schmidt was appointed Vice-Chancellor and President of The Australian National University (ANU) in January 2016.
+<br/>
+<br/>
+  Professor Schmidt is the 12th Vice-Chancellor of The Australian National University (ANU). Winner of the 2011 Nobel Prize in Physics, Professor Schmidt was an astrophysicist at the ANU Mount Stromlo Observatory and Research School of Astronomy and Astrophysics before becoming Vice-Chancellor.
+<br/>
+<br/>
+  Professor Schmidt received undergraduate degrees in Astronomy and Physics from the University of Arizona in 1989, and completed his Astronomy Master's degree (1992) and PhD (1993) from Harvard University. Under his leadership, in 1998, the High-Z Supernova Search team made the startling discovery that the expansion rate of the Universe is accelerating. Fellow of the Australian Academy of Science, The United States Academy of Science, and the Royal Society, he was made a Companion of the Order of Australia in 2013.</p>`,
+  `<p class=personsContent>Professor Elanor Huntington is the first female Dean of Engineering and Computer Science at the Australian National University. Professor Huntington was previously the Head of School for the School of Engineering and Information Technology at UNSW Canberra. Additionally she has served as Chief Investigator on several Australian Research Council projects, Program Manager for the ARC Centre for Excellence in Quantum Computational Communication Technologies and is an Honorary Fellow for The Institution of Engineers Australia. Professor Huntington has a long history of council and board contributions including previous service on the ACT Accreditation and Registration Council as well as currently serving on the Board of Significant Capital Ventures.
+  <br/>
+  <br/>
+  Professor Huntington holds a PhD (2000) in experimental quantum optics from the ANU. Her current research includes the control of quantum systems, with a particular interest in the interface between theory and applications.
+  
+  </p>`,
+  '<p class=personsContent>Rory Medcalf is a Professor and the Head of the National Security College (NSC) at the Australian National University. His career spans diplomacy, intelligence analysis, journalism, think tanks and academia. Under his leadership, the NSC has extended its work beyond executive education, academic teaching and research into a think-tank oriented capacity for futures analysis and engagement with the national policy debate. He was founding director of the international security program at the Lowy Institute and a member of the independent expert panel on the 2016 Australian Defence White Paper. He was an early proponent of the Indo-Pacific concept of Australia\'s strategic environment, which remains one of his principal research interests.</p>',
+  `<p class=personsContent>Marie Johnson is the Managing Director of the Centre for Digital Business. Marie is an accessibility advocate, and a recognized global speaker and commentator on artificial intelligence; technology; digital services; ehealth; identity; and innovation. Her extensive experience covers the public and private sectors in Australia and internationally, in roles including large scale government service delivery operations; leading Microsoft's worldwide public services and egovernment business in Seattle; Chief Information Officer; Chief Technology Architect; Technology Authority; and board director. Marie is now leading R&D on the “Digital Human Cardiac Coach”.
+  <br/>
+  <br/>
+  Her achievements have been recognised globally: UN Public Services Award; Australian PM's Award for Excellence in Public Sector Management; Innovative CIO of the Year – Australia; 100 Women of Influence; named as one of Singularity University Exponential Medicine Global XMed Digital Vanguard; and recently joined the MIT Technology Review Global Insights Panel.</p>`,
+  '<p class=personsContent>Hamish Hawthorn is UpGuard\'s Chief Operating Officer, driving operations and corporate development activities, and overseeing partnerships with the cyber insurance sector. Hamish has been involved in the commercialisation of new technologies for over twenty 20 years, and his experience spans the software, biotechnology and advanced manufacturing sectors. UpGuard is the world\'s first cyber resilience platform, designed to proactively assess cyber risk for every organization. UpGuard monitors the digital footprints of millions of organizations, automates assessment questionnaires, and synthesizes those factors into the most accurate cyber risk score.</p>',
+  `<p class=personsContent>Over the past two decades, Ms Anton has worked in the Australian Public Service with wide ranging experience in legislation, regulation, policy and program delivery, including the establishment of the Government's Computer Emergency Response Team (CERT), which is the primary point of contact for Australian businesses to prevent and respond to malicious activity.
+  <br/>
+  <br/>
+  Ms Anton holds a Bachelor of Science with Honours and Master of Management from the Australian National University (ANU). She has also completed the Company Directors Course from the Australian Institute of Company Directors from the National Security College's Executive Development Program.</p>`,
+  `<p class=personsContent>Major General Ryan was appointed Commander, Australian Defence College in January 2018. Over his 30 year career he has commanded at all levels and served in East Timor with the 6RAR Battalion Group in 2000, in Iraq as the Deputy J3 for the Multi-National Security Transition Command, and in Afghanistan where he commanded Australia's 1st Reconstruction Task Force in southern Afghanistan from August 2006 to April 2007, for which he was awarded the Order of Australia.
+  <br/>
+  <br/>
+  Major General Ryan has deep experience the fields of strategy, interagency and joint operations, and command and leadership as well as professional military education. He was founding President of the Defence Entrepreneurs Forum (Australia), an undertaking to nurture innovation in the ADF's junior leaders. He is a Member of the Military Writers Guild.
+  <br/>
+<br/>
+  Major General Ryan graduated from the Royal Military College, Duntroon, in 1989, has a Bachelor's degree in Asian Studies from the University of New England and is a graduate of the Australian Defence Force School of Languages. He is a Distinguished Graduate of the United States Marine Corps Command and Staff College, and a graduate of the USMC School of Advanced Warfighting. In 2012, he graduated with distinction from the Johns Hopkins University, School of Advanced International Studies, earning a Masters in International Public Policy.</p>`
+]
 
 const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
   return (

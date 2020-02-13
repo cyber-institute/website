@@ -22,6 +22,11 @@ body {
   background-color: rgba(82,49,120,0.4);
 }
 
+.personsContent {
+  padding: 2rem 6rem;
+  text-align: left;
+}
+
 .advisoryImageText > div {
   position: absolute;
   bottom: 0;
