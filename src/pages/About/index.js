@@ -28,20 +28,6 @@ export default () =>
           <img
             src={anu} className='width100'
           />
-          <span
-            style={{
-              position: 'absolute',
-              top: '3%',
-              left: '29%',
-              fontSize: '40px',
-              maxWidth: '50%',
-              'font-family': 'Roboto, sans-serif',
-              'font-weight': '900',                
-              color: '#523178'
-            }}
-          >
-            As a strategic initiative of the Australian National University,
-          </span>
           <div style={{
             position: 'relative',
             left: '-4rem',
@@ -84,6 +70,21 @@ export default () =>
             position: 'relative'
           }}
         >
+          <span
+            style={{
+              position: 'absolute',
+              top: '3%',
+              left: '29%',
+              fontSize: '40px',
+              maxWidth: '50%',
+              'font-family': 'Roboto, sans-serif',
+              'font-weight': '900',                
+              color: '#523178',
+              'padding-bottom':'15px'
+            }}
+          >
+            As a strategic initiative of the Australian National University,
+          </span>
           <p style={{
             position: 'absolute',
             bottom: '0'
