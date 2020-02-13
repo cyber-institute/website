@@ -64,11 +64,11 @@ render () {
                 <hr className="greyLine" style={{position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: "-20"}} />
               </div> 
               <div className="col-xs-12 col-md-5" style={{paddingTop: '20px'}}>
-                <p><span className="bigEmphasis" style={{'font-weight':'700'}}>&quot Rarely do you have the opportunity to shape a national endeavor.</span>
+                <p><span className="bigEmphasis" style={{'font-weight':'700'}}>&quot; Rarely do you have the opportunity to shape a national endeavor.</span>
                   <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
                   <br /><br />Dealing with cyber intrusions reinforced my conviction that cyber is fundamentally about the human;&nbsp;that it currently represents an existential challenge to liberal, democratic societies, and that we need new, interdisciplinary approaches to tackling the problems cyber can create.&nbsp;
                   <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
-                  <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot</p>
+                  <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;</p>
                 <h3>CEO, Professor Lesley Seebeck</h3>
               </div>
             </div>
