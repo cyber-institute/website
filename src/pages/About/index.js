@@ -33,9 +33,9 @@ export default () =>
               left: '29%',
               fontSize: '40px',
               maxWidth: '50%',
-              'font-family': 'Roboto',
+              'font-family': ''Roboto', sans-serif',
               'font-weight': '900',                
-              colour: '#523178'
+              color: '#523178'
             }}
           >
             As a strategic initiative of the Australian National University,
