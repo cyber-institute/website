@@ -154,7 +154,7 @@ export default () =>
           position: 'absolute',
           left: '-2rem',
           width: '25%',
-          border: '1px solid'
+          border: '1px solid #523178'
         }}
         />
       </div>
@@ -165,7 +165,7 @@ export default () =>
       >
         <div className='col-md-offset-2 col-md-4'>
           <p>
-            People are core to what we do.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
+           <span style={{'font-weight':'900', 'font-size':'30px'}}><span style={{color:'#523178'}}People</span> are core to what we do</span>.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
           </p>
         </div>
         <div
