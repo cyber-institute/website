@@ -1,13 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic);
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700,900&display=swap');
 /*=-footer-=*/
  footer {
     color: #fff;
     background-attachment: fixed;
     background-color:#222;
-background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
+    background-image: url(https://s7.postimg.org/uyf0oioaz/footer-bg.png);
     background-size: cover;
     background-position: bottom;
-    font-family: 'Montserrat';
 }
 footer p {
     color: #ccc;				
@@ -129,11 +128,14 @@ h6 {
 }
 
 .footerText p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300px;
     color: #ffffff;
     padding: 1px;
     text-align: left;
     font-size: 22px;
+    padding-top:15px;
+    padding-bottom:15px;
   }
   
   a {
@@ -153,7 +155,8 @@ h6 {
   
   .purpleStrip p {
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
     letter-spacing: 3px;
     text-align: center;
     font-size: 18px;

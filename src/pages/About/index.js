@@ -2,16 +2,18 @@ import React from 'react'
 
 import Banner from '../common/Banner'
 
-import topBanner from './topBanner.jpg'
-import bottomBanner from './bottomBanner.jpg'
+import banner from './bannerabout.jpg'
 import anu from './anu.png'
 import people from './Moving People.jpg'
 import traffic from './Traffic Long Exposure.jpg'
 import aus from './australia-satellite-imagery-map.jpg'
 
+const headings = [
+]
+
 export default () =>
   <>
-    <Banner {...{ topBanner, bottomBanner }} />
+    <Banner {...{ banner, headings }} title='About us' subTitle='Transforming cyber for the betterment of humanity' />
     <div className='container-fluid' style={{'font-family':'Roboto, sans-serif'}}>
       <div
         style={{
