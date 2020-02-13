@@ -106,12 +106,12 @@ export default () =>
             left: '40%',
             width: 'calc(60% - 2px + 2rem)',
             top: '0',
-            border: '1px solid'
+            border: '1px solid #523178'
           }}
           />
           <div className='col-md-offset-2 col-md-5'>
             <p>
-            We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where <span style={{color:'#523178','font-weight':'700'}}>ideas and systems interact</span>.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
+            We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where <span style={{color:'#523178','font-weight':'900'}}>ideas and systems interact</span>.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
             </p>
           </div>
         </div>
