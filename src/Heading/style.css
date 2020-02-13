@@ -210,16 +210,20 @@ src: local('Helvetica Neue LT Std 77 Bold Condensed'), url('fonts/HelveticaNeueL
     font-family: 'Helvetica Neue LT Std 47 Light Condensed';
 }
 .Light {
-    font-family: 'Helvetica Neue LT Std 45 Light';
+    font-family: 'Roboto', 'sans-serif';
+    Font-weight: 300;
 }
 .Bold {
-    font-family: 'Helvetica Neue LT Std 75 Bold';
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 700;
 }
 .Black {
-    font-family: 'Helvetica Neue LT Std 95 Black';
+    font-family: 'Robobot', 'sans-serif';
+    font-weight: 900;
 }
 .Medium {
-    font-family: 'Helvetica Neue LT Std 65 Medium';
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 700;
 }
 .MediumExtended {
     font-family: 'Helvetica Neue LT Std 63 Medium Extended';
