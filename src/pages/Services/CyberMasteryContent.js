@@ -1,9 +1,9 @@
 import React from 'react'
 
-import PlaceHolderImage from './PlaceHolderImage'
+import { Image } from './index'
 import CourseInformationBlurb from './CourseInformationBlurb'
 
-export default () =>
+export default ({ image1, image2 }) =>
   <>
     <div className='row'>
       <div className='col-md-offset-1 col-md-10'>
@@ -100,14 +100,14 @@ export default () =>
           </p>
         </div>
         <div className='col-md-3 margin4RemAuto-sm'>
-          <PlaceHolderImage />
+          <Image img={image1} />
         </div>
       </div>
       <div
         className='row positionRelative marginTop4rem-md'
       >
         <div className='col-md-3 margin4RemAuto-sm'>
-          <PlaceHolderImage />
+          <Image img={image2} />
         </div>
         <div
           className='col-md-8 rightAlign-md'

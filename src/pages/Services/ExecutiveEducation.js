@@ -1,9 +1,9 @@
 import React from 'react'
 
+import { Image } from './index'
 import Slider from '../common/Slider'
-import PlaceHolderImage from './PlaceHolderImage'
 
-export default () =>
+export default ({ image1, image2 }) =>
   <>
     <div className='row'>
       <div className='col-md-offset-1 col-md-11'>
@@ -67,7 +67,46 @@ export default () =>
             />
           </div>
           <div className='row positionRelative'>
-            <div className='col-md-offset-1 col-md-11'>
+            <div
+              className='col-md-offset-1 col-md-11' style={{
+                // backgroundImage: `url(${image1})`,
+                // left: '0',
+                // height: 'auto',
+                // position: 'relative',
+                // backgroundSize: 'cover',
+                // backgroundPosition: 'center',
+                // backgroundRepeat: 'no-repeat'
+              }}
+            >
+              <div style={{
+                background: '0 0',
+                overflow: 'hidden',
+                position: 'absolute',
+                top: '0',
+                right: '0',
+                bottom: '0',
+                left: '0',
+                width: '100%',
+                zIndex: -1,
+                height: '100%',
+                backgroundColor: '#fff'
+              }}
+              >
+                <picture
+                  className='bannerImg'
+                  style={{
+                    height: '100%',
+                    position: 'absolute',
+                    display: 'block',
+                    marginRight: 'auto',
+                    width: '100%',
+                    backgroundRepeat: 'repeat-y',
+                    backgroundSize: 'cover',
+                    backgroundImage: `url(${image1})`,
+                    opacity: 0.3
+                  }}
+                />
+              </div>
               <p style={{
                 marginTop: '2rem',
                 marginBottom: '2rem'
@@ -123,7 +162,7 @@ An associated Thought Leadership and Oration Series will encourage discourse acr
               </p>
             </div>
             <div className='col-md-3 margin4RemAuto-sm'>
-              <PlaceHolderImage />
+              <Image img={image2} />
             </div>
           </div>
         </Slider>

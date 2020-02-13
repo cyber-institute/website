@@ -1,9 +1,8 @@
 import React from 'react'
 
-import PlaceHolderImage from './PlaceHolderImage'
-import { Heading } from './index'
+import { Image, Heading } from './index'
 
-export default () =>
+export default ({ image1, image2, image3 }) =>
   <>
     <div
       className='container-fluid positionRelative' style={{
@@ -34,7 +33,7 @@ export default () =>
         }}
       >
         <div className='col-md-5 margin4RemAuto-sm'>
-          <PlaceHolderImage />
+          <Image img={image1} />
         </div>
         <div className='col-md-6'>
           <p>
@@ -90,7 +89,7 @@ We aim to build a new system of knowledge to describe and shape the nature of th
           </p>
         </div>
         <div className='col-md-5 margin4RemAuto-sm'>
-          <PlaceHolderImage />
+          <Image img={image2} />
         </div>
       </div>
       <div
@@ -99,7 +98,7 @@ We aim to build a new system of knowledge to describe and shape the nature of th
         }}
       >
         <div className='col-md-offset-1 col-md-4 margin4RemAuto-sm'>
-          <PlaceHolderImage />
+          <Image img={image3} />
         </div>
         <div className='col-md-6'>
           <p>

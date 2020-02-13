@@ -93,8 +93,8 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
           <img
             src={img} style={{
               maxWidth: '100%',
-              transformOrigin: '93% 35%',
-              transform: transforms && 'scale(3)'
+              transformOrigin: '45% 35%',
+              transform: transforms && 'scale(1.2)'
             }}
           />
         </div>
