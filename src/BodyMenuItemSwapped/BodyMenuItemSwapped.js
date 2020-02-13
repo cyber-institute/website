@@ -12,13 +12,13 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
         <div
           className='col-lg-offset-2 col-lg-4
                      col-md-offset-1 col-md-5'
-          style={{ overflow: 'hidden' }}
+          style={{ overflow: 'hidden', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))' }}
         >
           <img
             src={img} style={{
               maxWidth: '100%',
-              transformOrigin: '50% 10%',
-              transform: transforms && 'scale(3.5)'
+              transformOrigin: '50% 0%',
+              transform: transforms && 'scale(1.5)'
             }}
           />
         </div>
