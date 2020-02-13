@@ -89,7 +89,7 @@ class People extends Component {
                   Ree worked in business improvement and information technology transformation programs in state and
                   federal government agencies. Ree was also the Heritage Manager at Old Parliament House where she
                   led the successful nomination of the site for the National Heritage List.
-                  <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
+                    <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
                   of Canberra, and has a background in stakeholder engagement, business process improvement, workshop
                   facilitation, program delivery, governance and change management.  Ree is the Cyber Institute’s COO.
                   </p>
@@ -161,20 +161,20 @@ class People extends Component {
                   <p style={{ textAlign: 'center' }}>[Insert load more button here]</p>
                   <p>To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
                   betterment of humanity,
-                  <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
                       we are seeking those willing to tackle a challenge, go beyond traditional
                     boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
                     our democracy.
-                      <br />
-                      <br />
-                    </span>
+                    <br />
+                    <br />
+                  </span>
                   We are looking for people who are at ease with unconventionality, with finding and
                   working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
                   people who have scars from dealing with cyber and security issues firsthand, who have delved into the
                   data and generated insights into the consequences for people, society and the nation, who have a vision
                   for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
                   who are curious, and who can help build a great team environment.&nbsp;
-                  <br /><br />
+                    <br /><br />
                   We are passionate about placing people at the centre of our work, and are seeking to build a
                   high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
                   to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
@@ -215,78 +215,62 @@ const PersonsGrid = () => {
 
   return (
     <>
-      <div className='row center-xs'>
-        <PersonsRow
-          {...{ setIsVisible, isVisible }} persons={[
+      <div className='row center-xs'>{
+        [
+          {
+            img: brian,
+            title: 'Professor Brian P. Schmidt AC FAA FRS',
+            subtitle: 'Vice-Chancellor and President, The Australian National University, 2011 Nobel Laureate Physics',
+            id: 0
+          },
+          {
+            img: elanor,
+            title: 'Professor Elanor Huntington',
+            subtitle: 'Dean, College of Engineering &amp; Computer Science, The Australian National University',
+            id: 1
+          },
+          {
+            img: rory,
+            title: 'Professor Rory Medcalf',
+            subtitle: 'Head of the National Security College, The Australian National University',
+            id: 2
+          },
+          {
+            img: marie,
+            title: 'Ms. Marie Johnson',
+            subtitle: 'Managing Director and Chief Digital Officer, Centre for Digital Business',
+            id: 3
+          }, {
+            img: hamish,
+            title: 'Mr. Hamish Hawthorn',
+            subtitle: 'COO, UpGuard',
+            id: 4
+          }, {
+            img: deb,
+            title: 'Ms. Deborah Anton',
+            subtitle: 'Interim National Data Commissioner, Department of the Prime Minister and Cabinet',
+            id: 5
+          },
+          {
+            img: mick,
+            title: 'MAJGEN Mick Ryan',
+            subtitle: 'Major General at Australian Army',
+            id: 6
+          }
+        ].map((person, index) => (
+          <>
+            <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
             {
-              img: brian,
-              title: 'Professor Brian P. Schmidt AC FAA FRS',
-              subtitle: 'Vice-Chancellor and President, The Australian National University, 2011 Nobel Laureate Physics',
-              id: 0
-            },
-            {
-              img: elanor,
-              title: 'Professor Elanor Huntington',
-              subtitle: 'Dean, College of Engineering &amp; Computer Science, The Australian National University',
-              id: 1
-            },
-            {
-              img: rory,
-              title: 'Professor Rory Medcalf',
-              subtitle: 'Head of the National Security College, The Australian National University',
-              id: 2
+              (index === 3 || index === 6) && (
+                <SlideToggleContent isVisible={Number.isInteger(isVisible)}>
+                  <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} />
+                </SlideToggleContent>
+              )
             }
-          ]}
-        />
-      </div>
-      <div className='row center-xs'>
-        <PersonsRow
-          {...{ setIsVisible, isVisible }} persons={[
-            {
-              img: marie,
-              title: 'Ms. Marie Johnson',
-              subtitle: 'Managing Director and Chief Digital Officer, Centre for Digital Business',
-              id: 3
-            }, {
-              img: hamish,
-              title: 'Mr. Hamish Hawthorn',
-              subtitle: 'COO, UpGuard',
-              id: 4
-            }, {
-              img: deb,
-              title: 'Ms. Deborah Anton',
-              subtitle: 'Interim National Data Commissioner, Department of the Prime Minister and Cabinet',
-              id: 5
-            }]}
-        />
-      </div>
-      <div className='row center-xs'>
-        <PersonsRow
-          {...{ setIsVisible, isVisible }} persons={[
-            {
-              img: mick,
-              title: 'MAJGEN Mick Ryan',
-              subtitle: 'Major General at Australian Army',
-              id: 6
-            }
-          ]}
-        />
-      </div>
-    </>
-  )
-}
-
-const PersonsRow = ({ setIsVisible, isVisible, persons }) => {
-  return (
-    <>
-      {
-        persons.map((person, index) => (
-          <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
+          </>
         ))
       }
-      <SlideToggleContent isVisible={Number.isInteger(isVisible)}>
-        <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} />
-      </SlideToggleContent>
+      </div>
     </>
   )
 }
@@ -328,7 +312,7 @@ const personsContent = [
 const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
   return (
     <>
-      <div className='col-md-4 col-xs-12 advisoryImage paddingBottom2rem-xs'>
+      <div className='col-md-3 col-xs-12 advisoryImage paddingBottom2rem-xs'>
         <div
           style={{
             display: 'inline-block',
