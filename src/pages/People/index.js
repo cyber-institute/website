@@ -262,7 +262,7 @@ const PersonsGrid = () => {
             <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
             {
               (index === 3 || index === 6) && (
-                <SlideToggleContent isVisible={Number.isInteger(isVisible)}>
+                <SlideToggleContent isVisible={Number.isInteger(isVisible) && (index - 4 <= isVisible) && (isVisible <= index)}>
                   <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} />
                 </SlideToggleContent>
               )
