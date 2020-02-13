@@ -20,11 +20,6 @@ import Marie from '../../../img/marie_johnson.jpg'
 import Hamish from '../../../img/hamish_hawthorn.jpg'
 import Deb from '../../../img/deborah_anton.jpg'
 
-const Image = ({ img }) =>
-  <img
-    src={img} className='width100'
-  />
-
 
 function Info(props) {
 
