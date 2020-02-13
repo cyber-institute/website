@@ -3,8 +3,6 @@ import React, { Component } from 'react'
 import './style.css'
 import '../../flexboxgrid.css'
 
-import Banner from '../common/Banner'
-
 import banner from './banner.jpg'
 import Lesley from '../../../img/lesley.JPG'
 import Puzzle1 from '../../../img/puzzle1.png'
@@ -52,7 +50,6 @@ class People extends Component{
 render () {
   return (
   <>
-      <Banner {...{ banner, headings }} title='Who we are' subTitle='Cyber is a team effort' />
       <div>
         <hr className="purpleDash" style={{position: 'relative', top: '135px', marginRight: "0"}} />
         <div className="mainBody">
