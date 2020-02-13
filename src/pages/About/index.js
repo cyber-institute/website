@@ -4,7 +4,7 @@ import Banner from '../common/Banner'
 
 import topBanner from './topBanner.jpg'
 import bottomBanner from './bottomBanner.jpg'
-import anu from './anu.jpg'
+import anu from './anu.png'
 import people from './Moving People.jpg'
 import traffic from './Traffic Long Exposure.jpg'
 import aus from './australia-satellite-imagery-map.jpg'
