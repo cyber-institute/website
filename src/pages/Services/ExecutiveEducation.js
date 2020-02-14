@@ -11,7 +11,8 @@ export default ({ image1, image2 }) =>
           className='Bold' style={{
             verticalAlign: 'middle',
             fontSize: '40px',
-            letterSpacing: '6px'
+            letterSpacing: '6px',
+            marginTop: '4rem'
           // color: 'rgb(82, 49, 120)'
           }}
         >
@@ -26,7 +27,8 @@ export default ({ image1, image2 }) =>
     <div className='container-fluid'>
       <div
         className='row' style={{
-          marginTop: '4rem'
+          marginTop: '2rem',
+          marginBottom: '4rem'
         }}
       >
         <Slider name='Cyber Bootcamp Program'>

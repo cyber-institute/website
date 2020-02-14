@@ -102,13 +102,13 @@ That’s why the Cyber Institute is offering a different way of learning, which 
             <span style={{ 'font-weight': '700', 'font-size': '25px' }}>We call it building your Cyber Mastery.</span>
           </p>
         </div>
-        <div className='col-md-4 margin4RemAuto-sm'>
+        <div className='col-md-4 margin2RemAuto-sm'>
           <Image img={services3} style={{ 'box-shadow': '5px 5px 10px grey' }} />
         </div>
       </div>
       <div className='container-fluid'>
         <div
-          className='row marginTop4rem-md'
+          className='row marginTop2rem-md'
         >
           <Slider name='Cyber Mastery'>
             <CyberMasteryContent image1={services4} image2={services5} />

@@ -254,6 +254,9 @@ body {
   .marginTop4rem-md {
     margin-top: 4rem;
   }
+  .marginTop2rem-md {
+    margin-top: 2rem;
+  }
 }
 
 @media only screen and (max-width: 62em) {
@@ -283,6 +286,9 @@ body {
 @media only screen and (max-width: 62em) {
   .margin4RemAuto-sm {
     margin: 4rem auto;
+  }
+  .margin2RemAuto-sm {
+    margin: 2rem auto;
   }
 }
 
