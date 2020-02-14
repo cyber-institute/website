@@ -77,9 +77,9 @@ class People extends Component {
                     <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
                     <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
                   </p>
-                  <h3 style={{'margin-top':'30px'}}>CEO, Professor Lesley Seebeck</h3>
+                  <h3 style={{'margin-top':'50px','margin-bottom':'5px'}}>CEO, Professor Lesley Seebeck</h3>
                   <p>Prof. Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.   Most recently, she was Chief Investment and Advisory Officer at the Digital Transformation Agency, arriving there from the Bureau of Meteorology where she served as Chief Information Officer from mid 2014 to late 2017.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Naval Shipbuilding Advisory Board.</p>
-                  <p>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia.   She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
+                  <p><br/>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia.   She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
                 </div>
               </div>
             </div>
