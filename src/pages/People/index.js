@@ -9,7 +9,7 @@ import ViewMoreButton from '../common/ViewMoreButton'
 
 import background from '../../../img/background1.png'
 import banner from './banner.jpg'
-import Lesley from '../../../img/lesley.JPG'
+import Lesley from '../../../img/lesley.jpg'
 import Puzzle1 from '../../../img/puzzle1.png'
 import Puzzle2 from '../../../img/puzzle2.png'
 import Puzzle3 from '../../../img/puzzle3.png'
@@ -265,8 +265,8 @@ const Careers = () => {
               <span style={{ fontWeight: 'bold', fontSize: '24px' }}> we are seeking those willing to tackle a challenge, go beyond traditional
               boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
               our democracy.
-                <br />
-                <br />
+              <br />
+              <br />
               </span>
             We are looking for people who are at ease with unconventionality, with finding and
             working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
