@@ -150,14 +150,14 @@ const DateBox = (props) => (
         <span style={{ fontSize: '35px', color: '#000', letterSpacing: '0px' }}><b>{props.title}</b></span>
         <p style={{ fontSize: '15px', margin: '0.5rem 0' }}>{props.date} {props.time}</p>
         <p style={{ fontSize: '18px' }}>{props.description}</p><br />
-        <span style={{ fontSize: '18px', color: '#000', letterSpacing: '0px' }}>{props.signupText} <a href src={props.link}>{props.link}</a></span>
+        <span style={{ fontSize: '18px', color: '#000', letterSpacing: '0px' }}>{props.signupText} <a href={props.link} style={{ color: '#523178'}}>{props.link}</a></span>
       </div>
     </div>
   </div>
 )
 
 const NewsArticle = (props) => (
-  <div style={{ textAlign: 'left' }}>
+  <div style={{ textAlign: 'left' , cursor: 'pointer'}}>
     <div>
       <img src={props.imageSource} style={{ position: 'relative', top: '20px', right: '65px', 'max-width': '70%', 'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px 0px 0px 10%' }} />
     </div>

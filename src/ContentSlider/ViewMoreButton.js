@@ -18,7 +18,8 @@ export default ({ clickButton, isVisible, alignRight }) =>
         'font-family': 'Roboto, sans-serif',
         'font-weight': '300',
         letterSpacing: '0.25px',
-        border: 'none'
+        border: 'none',
+        cursor: 'pointer'
       }}
       onClick={() => clickButton()}
     >
