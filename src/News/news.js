@@ -118,11 +118,11 @@ const NewsArticle = (props) => (
     <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid",padding: "1rem", borderColor: "black", borderWidth: "1px", width: "70%", height: '370px'}} onClick={() => props.link && window.open(props.link, '_blank')}>
     <br />
     <div style={{maxHeight: "285px", overflow: 'hidden'}}>
-      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
+      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head.length}</b><br />
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 
-<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline}</div>
+<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline.length}</div>
 </div>
 <div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
     </div>
