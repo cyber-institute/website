@@ -31,7 +31,15 @@ body {
 .advisoryImageText > div {
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
   padding: 0 1rem 1rem;
+}
+
+.advisoryImageText h3 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .selected .hover:after {
