@@ -25,6 +25,7 @@ class Home extends Component {
     return (
       <>
         <Heading />
+        <Swirl />
         <div style={{ position: 'relative' }}>
           <Sine />
           <Body />
