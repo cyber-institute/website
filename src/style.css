@@ -334,6 +334,14 @@ h1, h2, h3, h4, h5, p {
   background-repeat: repeat-x;
 }
 
+.dottedLineHorizontalWhite {
+  height: 2px;
+  background-image: linear-gradient(to right, #fff 60%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 12px 2px;
+  background-repeat: repeat-x;
+}
+
 .positionRelative {
   position: relative;
 }
