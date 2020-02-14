@@ -111,7 +111,7 @@ We have three broad areas we wish to address; within each there are a range of s
         className='row marginTop4rem-md'
       >
         <div className='col-md-offset-2 col-md-9'>
-          <p>
+          <p style={{'margin-left':'-3.5rem'}}>
       These areas reflect our commitment to the long-term. After all, it takes years to educate and train researchers. But they also capture a wide range of more immediate concerns and constrained research problems.
             <br />
             <br />
