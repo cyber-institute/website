@@ -9,7 +9,7 @@ class Footer extends Component {
       <>
         <style />
 
-        <div className='footerContainer' style={{'margin-top':'200px',filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))' }} />
+        <div className='footerContainer' style={{'margin-top':'200px'}} />
 
         <div className='textContainer' style={{'margin-top':'200px'}}>
           <div className='footerText'>
