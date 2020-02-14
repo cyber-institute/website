@@ -4,10 +4,11 @@ import ReactDOM from 'react-dom'
 import SlideToggleContent from './../ContentSlider/SlideToggleContent'
 import ViewMoreButton from './../ContentSlider/ViewMoreButton'
 
-
+import Banner from '../common/Banner'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../style.css'
 
+import banner from './bannernewsandevents.jpg'
 import RaisinaDialogue from '../../img/raisina_dialogue.jpg'
 import SingaporeCyber from '../../img/singapore_cyber.jpg'
 import CyberBootcamp from '../../img/cyber_bootcamp.png'
@@ -22,7 +23,8 @@ import TechDivide from '../../img/tech_divide.jpg'
 import BlackBoxArrow from '../../img/black box arrow.png'
 import { relative } from 'path';
 
-
+const headings = [
+]
 
 
 function getHeadingWidth(text) { 
@@ -528,6 +530,7 @@ class News extends Component {
   render () {
     return (
       <>
+      <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
       <div style={{fontFamily: 'Roboto, sans-serif'}}>
         <div class="News">
         <div class="News">
