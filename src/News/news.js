@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 import SlideToggleContent from './../ContentSlider/SlideToggleContent'
 import ViewMoreButton from './../ContentSlider/ViewMoreButton'
 
-import Banner from '../common/Banner'
+import Banner from './../common/Banner'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../style.css'
 
