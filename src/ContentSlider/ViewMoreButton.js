@@ -8,7 +8,8 @@ export default ({ clickButton, isVisible, alignRight }) =>
     marginTop: '2rem',
     textAlign: `${alignRight ? 'right' : 'left'}`,
     position: 'absolute',
-    right: '50%'
+    right: '50%',
+    zIndex: '1'
   }}
   >
     <button
