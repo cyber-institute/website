@@ -83,7 +83,7 @@ Cyber Institute community members will join the best of the best, capable of con
 We have three broad areas we wish to address; within each there are a range of smaller topics, often shorter-term, offering many opportunities for collaborations and partnerships.
             <br />
             <br />
-<span style={{'font-weight':'700', color:'#523178'}}>We aim to build a new system of knowledge to describe and shape the nature of the cyber world</span>.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now. It also means establishing better articulations of the effect of, for example, intrinsically broken systems and the effects those may have on governance, commerce, national security or the strategic calculus of war.  Doing so may assist decision-makers in building more resilient systems and structures.
+<span style={{'font-weight':'700', color:'#523178'}}>We aim to build a new system of knowledge to describe and shape the nature of the cyber world</span>. That means thinking long-term while understanding practice, behaviours and consequence in the here and now. It also means establishing better articulations of the effect of, for example, intrinsically broken systems and the effects those may have on governance, commerce, national security or the strategic calculus of war. Doing so may assist decision-makers in building more resilient systems and structures.
           </p>
         </div>
         <div className='col-md-5 margin4RemAuto-sm'>
@@ -100,10 +100,10 @@ We have three broad areas we wish to address; within each there are a range of s
         </div>
         <div className='col-md-6'>
           <p>
-          We are interested in the future state of a world shaped by technology—and how that world exhibits <span style={{'font-weight':'700', color:'#523178'}}>resilience and management of the problems posed by cyber</span>.  For example, what is the future of democracy and democratic norms in a world where the trust in core institutions no longer exist?  Or how do we assure the integrity of health systems in a world where individual genetic print may be bought and sold on the dark web?
+          We are interested in the future state of a world shaped by technology—and how that world exhibits <span style={{'font-weight':'700', color:'#523178'}}>resilience and management of the problems posed by cyber</span>. For example, what is the future of democracy and democratic norms in a world where the trust in core institutions no longer exist? Or how do we assure the integrity of health systems in a world where individual genetic print may be bought and sold on the dark web?
             <br />
             <br />
-<span style={{'font-weight':'700', color:'#523178'}}>We want to find ways to overcome or offset the current arms race of attack-defend-attack-defend in cyber security</span>.  Such races typically are not won, but lost through exhaustion, loss of will or being overwhelmed.  Are there frameworks, different technologies or ways of doing that help individuals, organisations and nations withstand the dark side of digital technologies?
+<span style={{'font-weight':'700', color:'#523178'}}>We want to find ways to overcome or offset the current arms race of attack-defend-attack-defend in cyber security</span>. Such races typically are not won, but lost through exhaustion, loss of will or being overwhelmed. Are there frameworks, different technologies or ways of doing that help individuals, organisations and nations withstand the dark side of digital technologies?
           </p>
         </div>
       </div>
@@ -112,7 +112,7 @@ We have three broad areas we wish to address; within each there are a range of s
       >
         <div className='col-md-offset-2 col-md-9'>
           <p>
-      These areas reflect our commitment to the long-term.  After all, it takes years to educate and train researchers.  But they also capture a wide range of more immediate concerns and constrained research problems.
+      These areas reflect our commitment to the long-term. After all, it takes years to educate and train researchers. But they also capture a wide range of more immediate concerns and constrained research problems.
             <br />
             <br />
 We welcome researchers and collaborators who are committed to rethinking cyber and establishing the underpinning of new domain of knowledge.
