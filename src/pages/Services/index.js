@@ -150,7 +150,7 @@ As with the Masters, it will run full-time, end-to-end from 2021. In the meantim
 
 const Heading = ({ children }) =>
   <h2
-    className='Black right2rem-md HeadingFontSize-md HeadingFontSize-xs' style={{
+    className='Black HeadingFontSize-md HeadingFontSize-xs' style={{
       color: 'rgb(82, 49, 120)',
       margin: 0,
       position: 'relative'

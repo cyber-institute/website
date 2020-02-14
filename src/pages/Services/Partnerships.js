@@ -5,7 +5,7 @@ import { Heading, Image } from './index'
 import partner11 from '../../../img/1. Foundation Partners_Indiana Uni.png'
 import partner12 from '../../../img/1. Foundation Partners_NG.png'
 import partner13 from '../../../img/1. Foundation Partners_NSC.png'
-import partner21 from '../../../img/2. Program Partners_Dfat.jpg'
+import partner21 from '../../../img/dfat.jpg'
 import partner22 from '../../../img/2.-Program-Partners_MENZIES.jpg'
 import partner23 from '../../../img/2.-Program-Partners_New-Intelligence.jpg'
 import partner24 from '../../../img/2.Cybermerc.jpg'
@@ -126,7 +126,7 @@ export default () =>
             }}
           />
         </OverflowHidden>
-        <OverflowHidden><Image img={partner22} style={{ height: '73px' }} /></OverflowHidden>
+        <OverflowHidden><Image img={partner22} style={{ height: '73px','padding-bottom':'10px' }} /></OverflowHidden>
         <OverflowHidden>
           <Image
             img={partner23} style={{

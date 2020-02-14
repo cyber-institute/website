@@ -9,7 +9,7 @@ class Footer extends Component {
       <>
         <style />
 
-        <div className='footerContainer' style={{'padding-top':'100px'}} />
+        <div className='footerContainer' style={{'margin-top':'500px'}} />
 
         <div className='textContainer'>
           <div className='footerText'>
