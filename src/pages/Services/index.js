@@ -100,7 +100,7 @@ We’ve had this problem before: the world shifts, and managers, leaders and dec
 
 That’s why the Cyber Institute is offering a different way of learning, which includes updating and building the ideas, knowledge and experiences needed to tackle this new world.<br /><br />
 
-We call it building your Cyber Mastery.
+<span style={{'font-weight':'700', 'font-size':'25px'}}>We call it building your Cyber Mastery.</span>
           </p>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
@@ -150,7 +150,7 @@ As with the Masters, it will run full-time, end-to-end from 2021. In the meantim
 
 const Heading = ({ children }) =>
   <h2
-    className='Black right2rem-md HeadingFontSize-md HeadingFontSize-xs' style={{
+    className='Black HeadingFontSize-md HeadingFontSize-xs' style={{
       color: 'rgb(82, 49, 120)',
       margin: 0,
       position: 'relative'

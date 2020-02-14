@@ -20,28 +20,14 @@ export default () =>
           position: 'relative',
           marginTop: '4rem'
         }}
-        className='row'
+        className='row center-xs middle-xs'
       >
         <div
-          className='col-md-offset-1 col-md-4'
+          className='col-md-offset-1 col-md-4 col-xs-11'
         >
           <img
             src={anu} className='width100'
           />
-          <span
-            style={{
-              position: 'absolute',
-              top: '3%',
-              left: '29%',
-              fontSize: '40px',
-              maxWidth: '50%',
-              'font-family': 'Roboto, sans-serif',
-              'font-weight': '900',                
-              color: '#523178'
-            }}
-          >
-            As a strategic initiative of the Australian National University,
-          </span>
           <div style={{
             position: 'relative',
             left: '-4rem',
@@ -80,13 +66,28 @@ export default () =>
           </div>
         </div>
         <div
-          className='col-md-offset-1 col-md-4' style={{
+          className='col-md-4 col-xs-11' style={{
             position: 'relative'
           }}
         >
+          <span
+            style={{
+              position: 'relative',
+              top: '3%',
+              fontSize: '40px',
+              'font-family': 'Roboto, sans-serif',
+              'font-weight': '900',                
+              color: '#523178',
+              'padding-bottom':'25px',
+              'padding-top':'35px'
+            }}
+          >
+            As a strategic initiative of the Australian National University,
+          </span>
           <p style={{
-            position: 'absolute',
-            bottom: '0'
+            position: 'relative',
+            bottom: '0',
+            'padding-top':'25px'
           }}
           >
             the Cyber Institute brings a new approach to the challenges presented by cyber and cyber security to people, communities, industries and governments.
@@ -113,7 +114,7 @@ export default () =>
           />
           <div className='col-md-offset-2 col-md-5'>
             <p>
-            We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where <span style={{color:'#523178','font-weight':'900'}}>ideas and systems interact</span>.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
+            We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where <span style={{color:'#523178','font-weight':'700'}}>ideas and systems interact</span>.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
             </p>
           </div>
         </div>
@@ -224,7 +225,7 @@ export default () =>
               marginTop: '2rem'
             }}
           >
-            Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', 'font-weight': '900'}}>real-time security operations centre</span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
+            Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', 'font-weight': '700'}}>real-time security operations centre</span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
           </p>
         </div>
       </div>

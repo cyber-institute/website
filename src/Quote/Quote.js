@@ -44,7 +44,7 @@ export default function Quote () {
                   className='Light' style={{
                     paddingTop: '0.4em',
                     marginBottom: '2.1rem',
-                    fontSize: '28px',
+                    fontSize: '35px',
                     color: '#323232',
                     lineHeight: '42px',
                     fontWeight: 'bold',
@@ -56,7 +56,7 @@ export default function Quote () {
                 <div
                   className='container-fluid'
                 >
-                  <div className='row'>
+                  <div className='row middle-xs'>
                     <div className='col-xs-4'>
                       <img src={lesley} style={{ width: '100%' }} />
                     </div>

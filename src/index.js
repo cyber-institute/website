@@ -133,7 +133,7 @@ class App extends Component {
       <Route exact path="/about" component={About} />
       <Route exact path="/services" component={Services} />
       <Route exact path="/people" component={People} />
-      <Route component={FourOFour} />
+      <Route path="/404" component={FourOFour} />
       </ScrollUp>
       </Router>
     </div>
