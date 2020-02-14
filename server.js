@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 3000
 const history = require('connect-history-api-fallback')
 // ^ middleware to redirect all URLs to index.html
 
@@ -16,7 +16,6 @@ app.get('/', function (req, res) {
   res.render(path.join(__dirname + '/index.html'))
 })
 
-
 app.listen(port, function () {
-  console.log( 'Express serving on 5000!' )
+  console.log('Express serving on 5000!')
 })
