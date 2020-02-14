@@ -60,7 +60,7 @@ export default function Quote () {
                     <div className='col-xs-4'>
                       <img src={lesley} style={{ width: '100%' }} />
                     </div>
-                    <div className='col-xs-8 Light' style={{ lineHeight: '1.87' }}>
+                    <div className='col-xs-8 Light' style={{ lineHeight: '1.87', 'font-size':'18px'}}>
             Prof. Lesley Seebeck, PhD<br /><br />
 
 Professor of Practice in Cyber Security
