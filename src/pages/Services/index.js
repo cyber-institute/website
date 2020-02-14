@@ -104,7 +104,7 @@ That’s why the Cyber Institute is offering a different way of learning, which 
           </p>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
-          <Image img={services3} />
+          <Image img={services3} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
       </div>
       <div className='container-fluid'>
