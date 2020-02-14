@@ -82,7 +82,7 @@ class People extends Component {
               <p>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia. She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
             </div>
           </div>
-          <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem' }}>
+          <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem', overflow: 'hidden' }}>
             <h2 style={{ left: '0%', top: '-200px' }}>COO</h2>
             <div className='col-xs-12 col-md-5 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
               <h3>Cyber Institute COO, Ree Kent</h3>
@@ -123,8 +123,8 @@ class People extends Component {
               education, innovation and delivery programs happen:&nbsp;
             </p>
           </div>
-          <div className='row around-xs' style={{ marginTop: '50px' }}>
-            <div className='col-xs-9 col-md-3' style={{ position: 'relative', right: '0' }}>
+          <div className='row' style={{ marginTop: '50px' }}>
+            <div className='col-xs-12 col-md-3 col-md-offset-1' style={{ position: 'relative', right: '0' }}>
               <img src={Puzzle2} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
               <hr className='greyLine' style={{ position: 'absolute', top: '25%', left: '-80%', width: '100%', zIndex: '-20' }} />
             </div>
@@ -142,8 +142,8 @@ class People extends Component {
               </p>
             </div>
           </div>
-          <div className='row around-xs' style={{ marginTop: '50px' }}>
-            <div className='col-xs-12 col-md-7 first-md' style={{ paddingTop: '20px', left: '0' }}>
+          <div className='row' style={{ marginTop: '50px' }}>
+            <div className='col-xs-12 col-md-7 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
               <h4 style={{ 'padding-bottom': '15px' }}>Brendan, Cyber Institute Research Assistant</h4>
               <p>Meet Brendan who started with the Cyber Institute in January of 2019.
                   Brendan is currently helping with delivery of the Cyber Bootcamp Project which aims to improve international cyber
@@ -151,7 +151,7 @@ class People extends Component {
                   the ANU, with a focus in human biology, Australian Indigenous studies and anthropology.
               </p>
             </div>
-            <div className='col-xs-9 col-md-3 first-xs' style={{ position: 'relative', right: '0' }}>
+            <div className='col-xs-12 col-md-3' style={{ position: 'relative', right: '0' }}>
               <img src={Puzzle1} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
               <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: '100%', zIndex: '-20' }} />
             </div>
@@ -200,7 +200,7 @@ class People extends Component {
 export default People
 
 const Careers = () => {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
   return (
     <div
       className='container-fluid positionRelative careersContainer'
@@ -237,17 +237,17 @@ const Careers = () => {
         />
       </div>
       <div
-        className='row around-xs' style={{
+        className='row positionRelative' style={{
           padding: '12rem 0'
         }}
       >
-        <div className='col-xs-12 col-md-5 first-md'>
+        <div className='col-xs-12 col-md-5 col-md-offset-1'>
           <h1 id='Careers'>Careers</h1>
           <div
             className='dottedLineHorizontalWhite' style={{
-              width: '100%',
+              width: '91.666%',
               position: 'absolute',
-              left: 0,
+              right: '-1rem',
               color: '#fff'
             }}
           />
@@ -265,8 +265,8 @@ const Careers = () => {
               <span style={{ fontWeight: 'bold', fontSize: '24px' }}> we are seeking those willing to tackle a challenge, go beyond traditional
               boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
               our democracy.
-              <br />
-              <br />
+                <br />
+                <br />
               </span>
             We are looking for people who are at ease with unconventionality, with finding and
             working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
@@ -284,7 +284,7 @@ const Careers = () => {
           </SlideToggleContent>
           <ViewMoreButton {...{ isVisible, setIsVisible }} />
         </div>
-        <div className='col-xs-12 col-md-5 first-xs'>
+        <div className='col-xs-12 col-md-5'>
           <img src={Fourstudents} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))', paddingTop: '60px' }} alt='Four Cyber Institute employees standing in front of glass building' />
         </div>
       </div>
@@ -295,72 +295,75 @@ const Careers = () => {
 const PersonsGrid = () => {
   const [isVisible, setIsVisible] = useState(false)
   return (
-    <>
-      <div className='row center-xs'>{
-        [
+    <div className='row'>
+      <div className='col-md-10 col-md-offset-1'>
+        <div className='row center-xs'>
           {
-            img: brian,
-            title: 'Professor Brian P. Schmidt AC FAA FRS',
-            subtitle: 'Vice-Chancellor and President, The Australian National University, 2011 Nobel Laureate Physics',
-            id: 0
-          },
-          {
-            img: elanor,
-            title: 'Professor Elanor Huntington',
-            subtitle: 'Dean, College of Engineering & Computer Science, The Australian National University',
-            id: 1
-          },
-          {
-            img: rory,
-            title: 'Professor Rory Medcalf',
-            subtitle: 'Head of the National Security College, The Australian National University',
-            id: 2
-          },
-          {
-            img: marie,
-            title: 'Ms. Marie Johnson',
-            subtitle: 'Managing Director and Chief Digital Officer, Centre for Digital Business',
-            id: 3
-          }, {
-            img: hamish,
-            title: 'Mr. Hamish Hawthorn',
-            subtitle: 'COO, UpGuard',
-            id: 4
-          }, {
-            img: deb,
-            title: 'Ms. Deborah Anton',
-            subtitle: 'Interim National Data Commissioner, Department of the Prime Minister and Cabinet',
-            id: 5
-          },
-          {
-            img: mick,
-            title: 'MAJGEN Mick Ryan',
-            subtitle: 'Major General at Australian Army',
-            id: 6
-          }
-        ].map((person, index) => (
-          <>
-            <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
-            {
-              (index === 3 || index === 6) && (
-                <SlideToggleContent isVisible={Number.isInteger(isVisible) &&
+            [
+              {
+                img: brian,
+                title: 'Professor Brian P. Schmidt AC FAA FRS',
+                subtitle: 'Vice-Chancellor and President, The Australian National University, 2011 Nobel Laureate Physics',
+                id: 0
+              },
+              {
+                img: elanor,
+                title: 'Professor Elanor Huntington',
+                subtitle: 'Dean, College of Engineering & Computer Science, The Australian National University',
+                id: 1
+              },
+              {
+                img: rory,
+                title: 'Professor Rory Medcalf',
+                subtitle: 'Head of the National Security College, The Australian National University',
+                id: 2
+              },
+              {
+                img: marie,
+                title: 'Ms. Marie Johnson',
+                subtitle: 'Managing Director and Chief Digital Officer, Centre for Digital Business',
+                id: 3
+              }, {
+                img: hamish,
+                title: 'Mr. Hamish Hawthorn',
+                subtitle: 'COO, UpGuard',
+                id: 4
+              }, {
+                img: deb,
+                title: 'Ms. Deborah Anton',
+                subtitle: 'Interim National Data Commissioner, Department of the Prime Minister and Cabinet',
+                id: 5
+              },
+              {
+                img: mick,
+                title: 'MAJGEN Mick Ryan',
+                subtitle: 'Major General at Australian Army',
+                id: 6
+              }
+            ].map((person, index) => (
+              <>
+                <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
+                {
+                  (index === 3 || index === 6) && (
+                    <SlideToggleContent isVisible={Number.isInteger(isVisible) &&
                 (([0, 1, 2, 3].includes(isVisible) && index === 3) ||
                 ([4, 5, 6].includes(isVisible) && index === 6))}
-                >
-                  <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-sm' />
-                </SlideToggleContent>
-              )
-            }
-            {
-              <SlideToggleContent isVisible={Number.isInteger(isVisible) && isVisible === index}>
-                <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-md' />
-              </SlideToggleContent>
-            }
-          </>
-        ))
-      }
+                    >
+                      <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-sm' />
+                    </SlideToggleContent>
+                  )
+                }
+                {
+                  <SlideToggleContent isVisible={Number.isInteger(isVisible) && isVisible === index}>
+                    <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-md' />
+                  </SlideToggleContent>
+                }
+              </>
+            ))
+          }
+        </div>
       </div>
-    </>
+    </div>
   )
 }
 
