@@ -100,10 +100,12 @@ const DateBox = (props) => (
       <br />
       <span style={{fontSize: "52px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.month}</span>
     </div>
+    <div style={{overflow: 'hidden'}}>
     <span style={{fontSize: "35px", color: "#000", letterSpacing: '0px'}}><b>{props.title}</b></span>
       <p style={{fontSize: "15px"}}>{props.date} {props.time}</p>
       {props.description}<br />
       <span style={{fontSize: "18px", color: "#000", letterSpacing: '0px'}}>{props.signupText} <a href src={props.link}>{props.link}</a></span>
+    </div>
   </div>
 );
 
@@ -113,14 +115,16 @@ const NewsArticle = (props) => (
     <div>
       <img src={props.imageSource} style={{"position": "relative", "top": "20px", "right": "65px", "max-width": "70%", "box-shadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", "margin": "0px 0px 0px 10%"}} />
     </div>
-    <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid",padding: "1rem", borderColor: "black", borderWidth: "1px", width: "70%"}} onClick={() => props.link && window.open(props.link, '_blank')}>
+    <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid",padding: "1rem", borderColor: "black", borderWidth: "1px", width: "70%", height: '370px'}} onClick={() => props.link && window.open(props.link, '_blank')}>
     <br />
-      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000', display: 'block', display: '-webkit-box', maxWidth: '100%', height: '113px', margin: '0 auto', lineHeight: '1', WebkitLineClamp: '4', WebkitBoxOrient: 'vertical', overflow: 'hidden', textOverflow: 'ellipsis'}}>{props.head}</b><br />
+    <div style={{maxHeight: "285px", overflow: 'hidden'}}>
+      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
-<br />
-<div style={{fontSize: "18px", letterSpacing :'0px', display: 'block', display: '-webkit-box', maxWidth: '100%', height: '145px', margin: '0 auto', lineHeight: '1', WebkitLineClamp: '8', WebkitBoxOrient: 'vertical', overflow: 'hidden', textOverflow: 'ellipsis'}}> {props.byline}</div>
-<div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem'}} src={BlackBoxArrow}/></div>
+
+<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline}</div>
+</div>
+<div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
     </div>
   </div>
 );
@@ -135,7 +139,7 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'The January Cyber Institute Bootcamp',
+      head: 'The January Cyber Bootcamp',
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'DFAT',
       date: '29/01/20',
@@ -479,14 +483,15 @@ class News extends Component {
   render () {
     return (
       <>
-      <div style={{fontFamily: 'Roboto, Helvetica'}}>
+      <div style={{fontFamily: 'Roboto, sans-serif'}}>
         <div class="News">
         <div class="News">
           <div class="row">
           <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>News</h1>
-            <p style={{borderBottom:"3px dashed darkgrey", marginLeft:"5%"}} />
-            </div>
+          <div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>News</h1></div>
+          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
+            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           <div class="col-xs-13">
             <div class="row">
@@ -525,11 +530,13 @@ class News extends Component {
           <br />
           <br />
           <div class="row">
-          <div class="col-xs-2"></div><div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Events</h1>
-            <p style={{borderBottom:"3px dashed darkgrey", marginLeft:"5%"}} />
-            </div>
+          <div class="col-xs-2"></div><div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Events</h1></div>
+          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
+            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
           </div>
-          <div class="col-xs-13">
+          </div>
+          <div class= 'row'>
+          <div class="col-xs-12">
             {
               this.state.events.sections.map(({component: EventComponent, props}) => (
                 <div class='row'>
@@ -539,6 +546,7 @@ class News extends Component {
                     </div>
               ))
             }
+        </div>
         </div>
         </div>
         {events2 &&
@@ -573,12 +581,10 @@ class News extends Component {
         <div class="Media">
           <div class="row">
           <div class="col-xs-2"></div>
-          <div class="col-xs-9" >
-          <br />
-          <br />
-            <h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Media</h1>
-            <p style={{borderBottom:"3px dashed darkgrey", marginLeft:"5%"}} />
-            </div>
+          <div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Media</h1></div>
+          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
+            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           <div class="row">
           <div class="col-xs-2"></div>
@@ -661,10 +667,10 @@ class News extends Component {
         <div class="Podcasts">
         <div class="row">
           <div class="col-xs-2"></div>
-          <div class="col-xs-9" >
-            <br />
-            <br />
-            <h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%"}}>Podcasts</h2></div>
+          <div class="col-xs-9" ><h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%"}}>Podcasts</h2></div>
+          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
+            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           <div class="col-xs-13">
             <div class="row">

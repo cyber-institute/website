@@ -2,11 +2,6 @@ body {
   margin: 0;
 }
 
-@font-face {
-  font-family: "Roboto-Thin";
-  src: url("//fonts.gstatic.com/s/roboto/v18/e7MeVAyvogMqFwwl61PKhPesZW2xOQ-xsNqO47m55DA.woff2") format("woff2");
-}
-
 .homeItemMarginTop {
   margin-top: 13rem;
 }
@@ -295,7 +290,7 @@ h3 {
 p, li {
   margin: 0;
   font-size: 18px;
-  font-family: 'Helvetica Neue LT Std 45 Light';
+  font-family: 'Roboto', 'sans-serif';
 }
 
 ul > li {

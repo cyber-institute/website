@@ -67,7 +67,7 @@ class People extends Component {
               <h2 style={{ right: '0%', top: '-200px' }}>CEO</h2>
               <div className='row around-xs' style={{ position: 'relative' }}>
                 <div className='col-xs-12 col-md-5' style={{ top: '200px' }}>
-                  <img src={Lesley} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
+                  <img src={Lesley} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: '-20' }} />
                 </div>
                 <div className='col-xs-12 col-md-5' style={{ paddingTop: '20px' }}>
@@ -102,7 +102,7 @@ class People extends Component {
                   </p>
                 </div>
                 <div className='col-xs-12 col-md-5 first-xs' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle3} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))' }} alt='Puzzle piece representing Ree Kent' />
+                  <img src={Puzzle3} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Ree Kent' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: 'calc(100% - 2rem)', zIndex: '-20' }} />
                 </div>
               </div>
@@ -126,7 +126,7 @@ class People extends Component {
               </p>
               <div className='row around-xs' style={{ marginTop: '50px' }}>
                 <div className='col-xs-9 col-md-3' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle2} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))' }} alt='Puzzle piece representing Stehpanie' />
+                  <img src={Puzzle2} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Stehpanie' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '25%', left: '-80%', width: '100%', zIndex: '-20' }} />
                 </div>
                 <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
@@ -153,7 +153,7 @@ class People extends Component {
                   </p>
                 </div>
                 <div className='col-xs-9 col-md-3 first-xs' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle1} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))' }} alt='Puzzle piece representing Stehpanie' />
+                  <img src={Puzzle1} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Stehpanie' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: '100%', zIndex: '-20' }} />
                 </div>
               </div>

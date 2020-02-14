@@ -14,7 +14,8 @@ export default () =>
     >
       <h1
         className='Bold HomeHeadingFontSize' style={{
-          fontWeight: 'normal',
+          'font-family': 'Roboto, sans-serif', 
+          fontWeight: '900',
           // fontSize: '80px',
           margin: 0,
           color: '#523178'
@@ -30,6 +31,6 @@ export default () =>
       }}
     >
       <p className='Light'>Explore Cyber Institute</p>
-      <ArrowDownwardIcon style={{ color: '#523178' }} />
+      <ArrowDownwardIcon style={{ color: '#523178', 'padding-top': '20px'}} />
     </div>
   </>

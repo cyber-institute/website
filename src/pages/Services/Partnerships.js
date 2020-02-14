@@ -5,7 +5,7 @@ import { Heading, Image } from './index'
 import partner11 from '../../../img/1. Foundation Partners_Indiana Uni.png'
 import partner12 from '../../../img/1. Foundation Partners_NG.png'
 import partner13 from '../../../img/1. Foundation Partners_NSC.png'
-import partner21 from '../../../img/2. Program Partners_Dfat.jpg'
+import partner21 from '../../../img/dfat.jpg'
 import partner22 from '../../../img/2.-Program-Partners_MENZIES.jpg'
 import partner23 from '../../../img/2.-Program-Partners_New-Intelligence.jpg'
 import partner24 from '../../../img/2.Cybermerc.jpg'
@@ -94,9 +94,9 @@ export default () =>
           Foundation Partners
         </h3>
         <ul>
-          <li>co-invest time, expertise and funding to develop relevant research, co-design core offerings for the Cyber Mastery program, and build the Cyber Edge in a real-world feedback loop.</li>
-          <li>build the core offering of the Institute with Institute staff and assuming greater risk than those partnering on specific project or program output and will share in appropriate levels of rewards.</li>
-          <li>invest against a series of milestones, while making in-kind contributions.</li>
+          <li>co-invest time, expertise and funding to develop relevant research, co-design core offerings for the Cyber Mastery program, and build the Cyber Edge in a real-world feedback loop;</li>
+          <li>build the core offering of the Institute with Institute staff and assuming greater risk than those partnering on specific project or program output and will share in appropriate levels of rewards;</li>
+          <li>invest against a series of milestones, while making in-kind contributions; and</li>
           <li>are representative of entities in a collaborative supply chain that can together articulate problems, develop solutions and test application.</li>
         </ul>
         <OverflowHidden><Image img={partner11} style={{ width: '268px' }} /></OverflowHidden>
@@ -115,7 +115,7 @@ export default () =>
         </h3>
         <ul>
           <li>partner on specific longer-term collaborative projects, involving research, education or operations centre sponsorship;</li>
-          <li>leverage investment against the achievement of specific program outputs, governed under a program agreement.</li>
+          <li>leverage investment against the achievement of specific program outputs, governed under a program agreement; and</li>
           <li>may be more diffuse in focus and draw from extensive expertise across the ANU.</li>
         </ul>
         <OverflowHidden>
@@ -126,7 +126,7 @@ export default () =>
             }}
           />
         </OverflowHidden>
-        <OverflowHidden><Image img={partner22} style={{ height: '73px' }} /></OverflowHidden>
+        <OverflowHidden><Image img={partner22} style={{ height: '73px','padding-bottom':'20px','padding-top':'20px' }} /></OverflowHidden>
         <OverflowHidden>
           <Image
             img={partner23} style={{

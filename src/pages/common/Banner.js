@@ -54,7 +54,7 @@ export default ({ banner, title, subTitle, headings }) =>
           }}
         >
           <h2
-            className='Bold HeadingFontSize-md HeadingFontSize-xs'
+            className='Black HeadingFontSize-md HeadingFontSize-xs'
             style={{
               margin: 0,
               paddingBottom: '1rem',
