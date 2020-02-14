@@ -4,9 +4,9 @@ import Banner from '../common/Banner'
 
 import banner from './bannerabout.jpg'
 import anu from './anu.png'
-import people from './Moving People.jpg'
-import traffic from './Traffic Long Exposure.jpg'
-import aus from './australia-satellite-imagery-map.jpg'
+import people from './about_people.jpg'
+import traffic from './about_lines.jpg'
+import aus from './about_australia.jpg'
 
 const headings = [
 ]
