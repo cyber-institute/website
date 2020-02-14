@@ -38,24 +38,24 @@ export default ({ image1, image2 }) =>
           courseLength='1 year full-time study'
           enrolment='Enrolment information coming in near future'
           commencingCohort='2021 (with some modules available from mid-2020)'
-          includes='Micro modules & Three capstone projects'
+          includes='Micro modules & Capstone projects'
         />
         <div style={{
           marginTop: '2rem'
         }}
         >
-          <p>Its core principles are:</p>
+          <p>Here are the core principles of our Cyber Mastery:</p>
         </div>
       </div>
     </div>
     <div className='row positionRelative'>
       <div className='col-md-offset-1 col-md-5'>
-        <CorePrinciple isLeft heading='1. Interdisiplinarity' paragraph='The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks.' />
+        <CorePrinciple isLeft heading='1. Interdisiplinarity' paragraph='The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks;' />
       </div>
       <div
         className='col-md-5 marginTop2rem-md'
       >
-        <CorePrinciple heading='2. Experiential learning' paragraph='We believe the best way to understand core insights and concepts is to apply them. That it is why we’ll be working closely with people across the University to offer you real-time experience as appropriate, as well using a range of tools to help your learning.' />
+        <CorePrinciple heading='2. Experiential learning' paragraph='We believe the best way to understand core insights and concepts is to apply them. That it is why we’ll be working closely with people across the University to offer you real-time experience as appropriate, as well using a range of tools to help your learning;' />
       </div>
     </div>
     <div className='row positionRelative'>
@@ -65,7 +65,7 @@ export default ({ image1, image2 }) =>
         <CorePrinciple
           isLeft
           heading='3. Conceptual thinking'
-          paragraph='We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected.'
+          paragraph='We could teach content and description, but that’s inflexible and would age quickly. It is much better to help you to understand and develop the conceptual frameworks you can adjust and apply to meet the unexpected;'
         />
       </div>
       <div
