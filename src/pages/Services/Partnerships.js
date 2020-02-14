@@ -15,11 +15,11 @@ const OverflowHidden = ({ children }) => <div style={{ overflow: 'hidden' }}>{ch
 
 export default () =>
   <div
-    className='container-fluid positionRelative' style={{
+    className='container-fluid' style={{
       marginTop: '2rem'
     }}
   >
-    <div className='row'>
+    <div className='row positionRelative'>
       <div
         className='col-md-11' style={{
           textAlign: 'right'
@@ -30,9 +30,9 @@ export default () =>
         </Heading>
         <div
           className='dottedLineHorizontal' style={{
-            width: '85%',
+            width: '91.666%',
             position: 'absolute',
-            left: 0
+            left: '-1rem'
           }}
         />
       </div>
@@ -126,7 +126,7 @@ export default () =>
             }}
           />
         </OverflowHidden>
-        <OverflowHidden><Image img={partner22} style={{ height: '73px','padding-bottom':'20px','padding-top':'20px' }} /></OverflowHidden>
+        <OverflowHidden><Image img={partner22} style={{ height: '73px', 'padding-bottom': '20px', 'padding-top': '20px' }} /></OverflowHidden>
         <OverflowHidden>
           <Image
             img={partner23} style={{
