@@ -149,7 +149,7 @@ const DateBox = (props) => (
       <div class='col-md-9 col-xs-12' style={{ overflow: 'hidden', marginLeft: '1rem', marginRight: '1rem' }}>
         <span style={{ fontSize: '35px', color: '#000', letterSpacing: '0px' }}><b>{props.title}</b></span>
         <p style={{ fontSize: '15px', margin: '0.5rem 0' }}>{props.date} {props.time}</p>
-        {props.description}<br />
+        <p style={{ fontSize: '18px' }}>{props.description}</p><br />
         <span style={{ fontSize: '18px', color: '#000', letterSpacing: '0px' }}>{props.signupText} <a href src={props.link}>{props.link}</a></span>
       </div>
     </div>
