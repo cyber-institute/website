@@ -51,6 +51,7 @@ for (let i = 0; i < NUM_LINES; i++) {
 }
 let requestId = undefined;
 
+
 function main_loop () {
     canvas.style.display="initial";
         for (let k=0; k<CLOCKS; k++) {
@@ -106,7 +107,14 @@ function main_loop () {
 class Swirl extends Component {
 
 
-  render () {   window.requestAnimationFrame(main_loop) 
+  render () {   
+    
+    if(!navigator.userAgent.includes("Android"))
+      if(!navigator.userAgent.includes("iPhone"))
+        {
+            window.requestAnimationFrame(main_loop) 
+        }
+        
     return (
       <>
        {}
