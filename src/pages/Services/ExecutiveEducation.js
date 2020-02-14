@@ -162,7 +162,7 @@ An associated Thought Leadership and Oration Series will encourage discourse acr
               </p>
             </div>
             <div className='col-md-3 margin4RemAuto-sm'>
-              <Image img={image2} />
+              <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
             </div>
           </div>
         </Slider>
