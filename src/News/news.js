@@ -25,7 +25,47 @@ import { relative } from 'path';
 
 
 
+function getHeadingWidth(text) { 
+  
+  text = document.createElement("span"); 
+  document.body.appendChild(text); 
 
+  text.style.font = "Roboto"; 
+  text.style.fontSize = 28 + "px"; 
+  text.style.height = 'auto'; 
+  text.style.width = 'auto'; 
+  text.style.position = 'absolute'; 
+  text.style.whiteSpace = 'no-wrap'; 
+  text.innerHTML = 'Hello World'; 
+
+  width = Math.ceil(text.clientWidth); 
+  formattedWidth = width + "px"; 
+
+  document.querySelector('.output').textContent 
+          = formattedWidth; 
+          return formattedWidth;
+} 
+
+function getBodyWidth(text) { 
+  
+  text = document.createElement("span"); 
+  document.body.appendChild(text); 
+
+  text.style.font = "Roboto"; 
+  text.style.fontSize = 18 + "px"; 
+  text.style.height = 'auto'; 
+  text.style.width = 'auto'; 
+  text.style.position = 'absolute'; 
+  text.style.whiteSpace = 'no-wrap'; 
+  text.innerHTML = 'Hello World'; 
+
+  width = Math.ceil(text.clientWidth); 
+  formattedWidth = width + "px"; 
+
+  document.querySelector('.output').textContent 
+          = formattedWidth; 
+          return formattedWidth;
+} 
 
 
 const CompLabel = (props) => (
@@ -97,13 +137,13 @@ const DateBox = (props) => (
   <div className="Datebox-component" style={{margin : '1rem'}}>
     <div class="row">
     <div class="col-md-2 col-xs-12">
-    <div style={{float: "left", width: "20%", height: "200px", marginRight: "3rem", border: "1px solid rgba(0, 0, 0, .2)", textAlign: "center", "text-transform": "uppercase"}}>
+    <div style={{float: "left", width: "90%", height: "200px", marginLeft:'1rem',  border: "1px solid rgba(0, 0, 0, .2)", textAlign: "center", "text-transform": "uppercase"}}>
       <span style={{fontSize: "84px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.day}</span>
       <br />
       <span style={{fontSize: "52px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.month}</span>
     </div>
     </div>
-    <div class="col-md-10 col-xs-12" style={{overflow: 'hidden'}}>
+    <div class="col-md-9 col-xs-12" style={{overflow: 'hidden', marginLeft: '1rem', marginRight:'1rem'}}>
     <span style={{fontSize: "35px", color: "#000", letterSpacing: '0px'}}><b>{props.title}</b></span>
       <p style={{fontSize: "15px"}}>{props.date} {props.time}</p>
       {props.description}<br />
@@ -122,11 +162,11 @@ const NewsArticle = (props) => (
     <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid",padding: "1rem", borderColor: "black", borderWidth: "1px", width: "70%", height: '370px'}} onClick={() => props.link && window.open(props.link, '_blank')}>
     <br />
     <div style={{maxHeight: "285px", overflow: 'hidden'}}>
-      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head.length}</b><br />
+      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 
-<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline.length}</div>
+<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline}</div>
 </div>
 <div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
     </div>
@@ -389,47 +429,7 @@ const stock = {
   DateBox
 };
 
-function getHeadingWidth(text) { 
-  
-  text = document.createElement("span"); 
-  document.body.appendChild(text); 
 
-  text.style.font = "times new roman"; 
-  text.style.fontSize = 16 + "px"; 
-  text.style.height = 'auto'; 
-  text.style.width = 'auto'; 
-  text.style.position = 'absolute'; 
-  text.style.whiteSpace = 'no-wrap'; 
-  text.innerHTML = 'Hello World'; 
-
-  width = Math.ceil(text.clientWidth); 
-  formattedWidth = width + "px"; 
-
-  document.querySelector('.output').textContent 
-          = formattedWidth; 
-          return formattedWidth;
-} 
-
-function getHeadingWidth(text) { 
-  
-  text = document.createElement("span"); 
-  document.body.appendChild(text); 
-
-  text.style.font = "times new roman"; 
-  text.style.fontSize = 16 + "px"; 
-  text.style.height = 'auto'; 
-  text.style.width = 'auto'; 
-  text.style.position = 'absolute'; 
-  text.style.whiteSpace = 'no-wrap'; 
-  text.innerHTML = 'Hello World'; 
-
-  width = Math.ceil(text.clientWidth); 
-  formattedWidth = width + "px"; 
-
-  document.querySelector('.output').textContent 
-          = formattedWidth; 
-          return formattedWidth;
-} 
 
 class Section1 extends React.Component {
   
