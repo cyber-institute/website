@@ -118,7 +118,7 @@ class People extends Component {
                   <hr className='greyLine' style={{ position: 'absolute', top: '25%', left: '-80%', width: '100%', zIndex: '-20' }} />
                 </div>
                 <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
-                  <h4>Stephanie, Cyber Institute Research Fellow</h4>
+                  <h4 style={{'padding-bottom':'15px'}}>Stephanie, Cyber Institute Research Fellow</h4>
                   <p>Meet Dr Stephanie Koorey who started with the Cyber Institute in January 2020. Dr Koorey was awarded her PhD
                   from the ANU’s Strategic and Defence Studies Centre in 2009, for a thesis on small arms control and violent
                   non-state armed groups. <br /><br />She subsequently spent eight years developing and delivering components of the curriculum
@@ -133,7 +133,7 @@ class People extends Component {
               </div>
               <div className='row around-xs' style={{ marginTop: '50px' }}>
                 <div className='col-xs-12 col-md-7 first-md' style={{ paddingTop: '20px', left: '0' }}>
-                  <h4>Brendan, Cyber Institute Research Assistant</h4>
+                  <h4 style={{'padding-bottom':'15px'}}>Brendan, Cyber Institute Research Assistant</h4>
                   <p>Meet Brendan who started with the Cyber Institute in January of 2019.
                   Brendan is currently helping with delivery of the Cyber Bootcamp Project which aims to improve international cyber
                   cooperation between Australia, ASEAN and the Pacific. Brendan is studying a Bachelor of Arts and a Bachelor of Science at
