@@ -174,24 +174,6 @@ h6 {
     clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 0 100%, 0 40%);
   }
   
-  .footerText {
-    position: absolute;
-    margin: auto;
-    z-index: 1;
-    left: 52%;
-    top: -23px;
-  }
-  
-  .logo {
-    position: absolute;
-    z-index: 2;
-    height: 90%;
-    width: auto;
-    margin: auto;
-    right: 52%;
-    top: 0;
-  }
-  
   .textContainer {
     margin-left: auto;
     margin-right: auto;
