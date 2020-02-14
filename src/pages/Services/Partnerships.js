@@ -126,7 +126,7 @@ export default () =>
             }}
           />
         </OverflowHidden>
-        <OverflowHidden><Image img={partner22} style={{ height: '73px' }} /></OverflowHidden>
+        <OverflowHidden><Image img={partner22} style={{ height: '73px','padding-bottom':'10px' }} /></OverflowHidden>
         <OverflowHidden>
           <Image
             img={partner23} style={{
