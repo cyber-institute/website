@@ -150,7 +150,7 @@ class People extends Component {
               </p>
             </div>
             <div className='col-xs-12 col-md-3' style={{ position: 'relative', right: '0' }}>
-              <img src={Puzzle1} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
+              <img src={Puzzle1} style={{ width: '100%','padding-bottom':'20px'}} alt='Puzzle piece representing Stehpanie' />
             </div>
           </div>
         </div>
