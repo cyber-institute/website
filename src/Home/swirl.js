@@ -17,7 +17,7 @@ canvas.style.left = '0px'
 canvas.style.width = '100%'
 canvas.style.height = '100vh'
 
-const window_width = document.documentElement.clientWidth
+const window_width = canvas.offsetWidth
 const window_height = window.innerHeight
 const pixel_depth = window.devicePixelRatio
 
