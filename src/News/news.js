@@ -530,7 +530,7 @@ class News extends Component {
   render () {
     return (
       <>
-      <Banner {...{ banner, headings }} title='News & Events' subTitle='What we're doing and other things you might like' />
+      <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
       <div style={{fontFamily: 'Roboto, sans-serif'}}>
         <div class="News">
         <div class="News">
