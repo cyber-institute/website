@@ -148,7 +148,7 @@ More information can be found <a target='_blank' rel='noopener noreferrer' href=
           <div className='row'>
             <div className='col-md-offset-1 col-md-7'>
               <p>
-            In partnership with the Sir Robert Menzies Memorial Foundation, the ANU Ninian Stephen Cyber Law Program, delivered by the Cyber Institute and the ANU College of Law, will provide a professional development program for, but not limited to, legal practitioners which delivers cutting edge, immersive training based on real-time, problem-centred cyber security legal challenges set in a global context.
+            In partnership with the <span style={{'font-weight':'700'}}>Sir Robert Menzies Memorial Foundation</span>, the <span style={{'font-weight':'700', color:'#523178'}}>ANU Ninian Stephen Cyber Law Program</span>, delivered by the <span style={{'font-weight':'700', color:'#523178'}}>Cyber Institute</span> and the <span style={{'font-weight':'700'}}>ANU College of Law</span>, will provide a professional development program for, but not limited to, legal practitioners which delivers cutting edge, immersive training based on real-time, problem-centred cyber security legal challenges set in a global context.
               </p>
               <br />
               <br />
