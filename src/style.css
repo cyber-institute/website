@@ -117,6 +117,12 @@ body {
   .width100-md {
     width: 100%;
   }
+  .marginLeftNegative-md {
+    margin-left: -3.5rem;
+  }
+  .marginRight-md {
+    margin-right: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 62em) {

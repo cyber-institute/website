@@ -76,7 +76,7 @@ Cyber Institute community members will join the best of the best, capable of con
         }}
       >
         <div className='col-md-5 col-md-offset-2'>
-          <p style={{ 'margin-left': '-3.5rem' }}>
+          <p className='marginLeftNegative'>
           Those problems at the intersection of the social and technological, between citizens and governments, and where ideas and systems interact are rich with research questions that need an interdisciplinary approach.
             <br />
             <br />
@@ -99,7 +99,7 @@ We have three broad areas we wish to address; within each there are a range of s
           <Image img={image3} style={{ 'box-shadow': '5px 5px 10px grey' }} />
         </div>
         <div className='col-md-6'>
-          <p style={{ 'margin-right': '3.5rem' }}>
+          <p className='marginRight-md'>
           We are interested in the future state of a world shaped by technology—and how that world exhibits <span style={{ 'font-weight': '700', color: '#523178' }}>resilience and management of the problems posed by cyber</span>. For example, what is the future of democracy and democratic norms in a world where the trust in core institutions no longer exist? Or how do we assure the integrity of health systems in a world where individual genetic print may be bought and sold on the dark web?
             <br />
             <br />
@@ -111,7 +111,7 @@ We have three broad areas we wish to address; within each there are a range of s
         className='row marginTop4rem-md'
       >
         <div className='col-md-offset-2 col-md-9'>
-          <p style={{ 'margin-left': '-3.5rem' }}>
+          <p className='marginLeftNegative-md'>
       These areas reflect our commitment to the long-term. After all, it takes years to educate and train researchers. But they also capture a wide range of more immediate concerns and constrained research problems.
             <br />
             <br />
