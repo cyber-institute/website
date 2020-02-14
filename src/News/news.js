@@ -523,21 +523,19 @@ class News extends Component {
     return (
       <>
         <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
-        <div style={{ fontFamily: 'Roboto, sans-serif' }}>
+        <div style={{ fontFamily: 'Roboto, sans-serif' }} className='container-fluid'>
           <div id='News' class='News'>
             <div class='News'>
-              <div class='container-fluid'>
-                <div class='row positionRelative'>
-                  <div class='col-md-offset-1 col-md-5'>
-                    <h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='News' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>News</h2>
-                    <div
-                      className='dottedLineHorizontal' style={{
-                        width: '91.666%',
-                        position: 'absolute',
-                        right: '-1rem'
-                      }}
-                    />
-                  </div>
+              <div class='row positionRelative'>
+                <div class='col-md-offset-1 col-md-5'>
+                  <h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='News' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>News</h2>
+                  <div
+                    className='dottedLineHorizontal' style={{
+                      width: '91.666%',
+                      position: 'absolute',
+                      right: '-1rem'
+                    }}
+                  />
                 </div>
               </div>
               <div class='col-xs-13'>
@@ -578,28 +576,26 @@ class News extends Component {
             <div class='Events'>
               <br />
               <br />
-              <div class='container-fluid'>
-                <div class='row positionRelative'>
-                  <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Events' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Events</h2>
-                    <div
-                      className='dottedLineHorizontal' style={{
-                        width: '91.666%',
-                        position: 'absolute',
-                        right: '-1rem'
-                      }}
-                    />
-                  </div>
+              <div class='row positionRelative'>
+                <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Events' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Events</h2>
+                  <div
+                    className='dottedLineHorizontal' style={{
+                      width: '91.666%',
+                      position: 'absolute',
+                      right: '-1rem'
+                    }}
+                  />
                 </div>
               </div>
-              <div class='row'>
+              <div
+                class='row' style={{
+                  marginTop: '2rem'
+                }}
+              >
                 <div class='col-xs-12'>
                   {
                     this.state.events.sections.map(({ component: EventComponent, props }, index) => (
-                      <div class='row' key={index}>
-                        <div class='col-xs-2' />
-                        <EventComponent {...props} />
-                        <div class='col-xs-2' />
-                      </div>
+                      <EventComponent {...props} key={index} />
                     ))
                   }
                 </div>
@@ -634,17 +630,15 @@ class News extends Component {
           </div>
           <div id='Media' class='Media'>
             <div class='Media'>
-              <div class='container-fluid'>
-                <div class='row positionRelative'>
-                  <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Media</h2>
-                    <div
-                      className='dottedLineHorizontal' style={{
-                        width: '91.666%',
-                        position: 'absolute',
-                        right: '-1rem'
-                      }}
-                    />
-                  </div>
+              <div class='row positionRelative'>
+                <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Media</h2>
+                  <div
+                    className='dottedLineHorizontal' style={{
+                      width: '91.666%',
+                      position: 'absolute',
+                      right: '-1rem'
+                    }}
+                  />
                 </div>
               </div>
               <div class='row'>
