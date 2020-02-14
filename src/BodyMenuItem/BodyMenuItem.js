@@ -36,7 +36,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
             {heading}
           </div>
           <div className='Light row'>
-            <div className='col-xs-9 Light' style={{ lineHeight: '1.87' }}>
+            <div className='col-xs-9 Light' style={{ lineHeight: '1.87','font-size':'18px' }}>
               {text}
             </div>
           </div>
