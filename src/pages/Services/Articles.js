@@ -62,7 +62,7 @@ export default () => {
           <h2
             className='Medium' style={{
               fontSize: '40px',
-              letterSpacing: '6px',
+              letterSpacing: '5px',
               color: 'rgb(82, 49, 120)',
               margin: '0 0 2rem'
             }}
