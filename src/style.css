@@ -7,7 +7,7 @@ body {
 }
 
 .advisoryImageText {
-  /* display: none; */
+  display: none;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -28,7 +28,7 @@ body {
   padding: 0 1rem 1rem;
 }
 
-.hover:after {
+.selected .hover:after {
   display: block;
   content: '';
   width: 0;
@@ -41,12 +41,13 @@ body {
   bottom: 0;
 }
 
-/* .advisoryImage:hover .advisoryImageText {
+.advisoryImage:hover .advisoryImageText {
   display: block;
-} */
+}
 
 .advisoryImage {
   height: 400px;
+  cursor: pointer;
 }
 
 .NewsArticle:hover {
@@ -133,6 +134,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 23em) {
+  .width250px-xxs {
+    width: 250px;
+  }
+}
+
 @media only screen and (min-width: 62em) {
   .HeadingFontSize-md {
     font-size: 61px;
@@ -183,6 +190,12 @@ body {
 
 @media only screen and (max-width: 62em) {
   .displayNone-sm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .displayNone-md {
     display: none;
   }
 }
@@ -311,6 +324,14 @@ h1, h2, h3, h4, h5, p {
 .dottedLineHorizontal {
   height: 2px;
   background-image: linear-gradient(to right, rgb(82, 49, 120) 60%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 12px 2px;
+  background-repeat: repeat-x;
+}
+
+.dottedLineHorizontalWhite {
+  height: 2px;
+  background-image: linear-gradient(to right, #fff 60%, rgba(255,255,255,0) 0%);
   background-position: bottom;
   background-size: 12px 2px;
   background-repeat: repeat-x;

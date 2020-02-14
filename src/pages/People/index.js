@@ -5,9 +5,11 @@ import '../../flexboxgrid.css'
 
 import Banner from '../common/Banner'
 import SlideToggleContent from '../common/SlideToggleContent'
+import ViewMoreButton from '../common/ViewMoreButton'
 
+import background from '../../../img/background1.png'
 import banner from './banner.jpg'
-import Lesley from '../../../img/lesley.JPG'
+import Lesley from '../../../img/lesley.jpg'
 import Puzzle1 from '../../../img/puzzle1.png'
 import Puzzle2 from '../../../img/puzzle2.png'
 import Puzzle3 from '../../../img/puzzle3.png'
@@ -20,15 +22,10 @@ import marie from '../../../img/marie_johnson.jpg'
 import hamish from '../../../img/hamish_hawthorn.jpg'
 import deb from '../../../img/deborah_anton.jpg'
 
-function Info (props) {
-  return (
-    <>
-      aaa
-    </>
-  )
-}
-
 const headings = [
+  'Meet the Team',
+  'Careers',
+  'Advisory Board'
 ]
 
 class People extends Component {
@@ -53,61 +50,78 @@ class People extends Component {
       <>
         <Banner {...{ banner, headings }} title='Our People' subTitle='Cyber is a team effort' />
         <div
-          className='container-fluid'
+          className='container-fluid positionRelative'
         >
-          <hr className='purpleDash' style={{ position: 'relative', top: '135px', marginRight: '0' }} />
-          <div>
-            <h1>Meet the Team</h1>
+          <div className='mainBody'>
+            <h1 id='Meet the Team'>Meet the Team</h1>
           </div>
-          <div style={{ width: '100%', position: 'relative', paddingTop: '0px' }}>
-            <div>
+          <div
+            className='dottedLineHorizontal' style={{
+              width: 'calc(100% - 2rem)',
+              position: 'absolute',
+              right: 0
+            }}
+          />
+          <div style={{ width: '100%', position: 'relative', paddingTop: '3rem' }}>
+            <div className='mainBody'>
               <h2 style={{ right: '0%', top: '-200px' }}>CEO</h2>
-              <div className='row around-xs' style={{ position: 'relative', top: '75px' }}>
+              <div className='row around-xs' style={{ position: 'relative' }}>
                 <div className='col-xs-12 col-md-5' style={{ top: '200px' }}>
                   <img src={Lesley} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: '-20' }} />
                 </div>
                 <div className='col-xs-12 col-md-5' style={{ paddingTop: '20px' }}>
-                  <p><span className='bigEmphasis' style={{ 'font-weight': '700' }}>&quot; Rarely do you have the opportunity to shape a national endeavor.</span>
+                  <p><span className='bigEmphasis' style={{ 'font-weight': '700' }}>"Rarely do you have the opportunity to shape a national endeavor.</span>
                     <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
                     <br /><br />Dealing with cyber intrusions reinforced my conviction that cyber is fundamentally about the human;&nbsp;that it currently represents an existential challenge to liberal, democratic societies, and that we need new, interdisciplinary approaches to tackling the problems cyber can create.&nbsp;
                     <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
                     <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
                   </p>
-                  <h3>CEO, Professor Lesley Seebeck</h3>
+                  <h3 style={{'margin-top':'30px'}}>CEO, Professor Lesley Seebeck</h3>
+                  <p>Prof. Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.   Most recently, she was Chief Investment and Advisory Officer at the Digital Transformation Agency, arriving there from the Bureau of Meteorology where she served as Chief Information Officer from mid 2014 to late 2017.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Naval Shipbuilding Advisory Board.</p>
+                  <p>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia.   She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
                 </div>
               </div>
             </div>
           </div>
           <div style={{ width: '100%', position: 'relative', paddingTop: '200px' }}>
-            <div>
+            <div className='mainBody'>
               <h2 style={{ left: '0%', top: '-200px' }}>COO</h2>
-              <div className='row around-xs' style={{ position: 'relative', top: '75px' }}>
+              <div className='row around-xs' style={{ position: 'relative' }}>
                 <div className='col-xs-12 col-md-5 first-md' style={{ paddingTop: '20px', left: '0' }}>
-                  <p>Ree joined the Cyber Institute in late 2018 from the Bureau of Meteorology (BoM) where she held a
+                  <h3>Cyber Institute COO, Ree Kent</h3>
+                  <p>
+                    Ree joined the Cyber Institute in late 2018 from the Bureau of Meteorology (BoM) where she held a
                   number of roles, including Head of the Office of the Chief Information Officer. Prior to the BoM,
                   Ree worked in business improvement and information technology transformation programs in state and
                   federal government agencies. Ree was also the Heritage Manager at Old Parliament House where she
                   led the successful nomination of the site for the National Heritage List.
-                    <br /><br />   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
+                    <br />
+                    <br />
+                  Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
                   of Canberra, and has a background in stakeholder engagement, business process improvement, workshop
                   facilitation, program delivery, governance and change management.  Ree is the Cyber Institute’s COO.
                   </p>
-                  <h3>COO, Ree Kent</h3>
                 </div>
                 <div className='col-xs-12 col-md-5 first-xs' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle3} style={{ width: '100%','box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Ree Kent' />
+                  <img src={Puzzle3} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Ree Kent' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: 'calc(100% - 2rem)', zIndex: '-20' }} />
                 </div>
               </div>
             </div>
           </div>
-          <hr className='purpleDash' style={{ position: 'relative', top: '195px', marginLeft: '0' }} />
-          <div style={{ top: '60px' }}>
+          <div className='mainBody'>
             <h1 style={{ textAlign: 'right' }}>Staff Showcase</h1>
           </div>
-          <div style={{ width: '100%', position: 'relative', paddingTop: '75px', marginTop: '10px' }}>
-            <div>
+          <div
+            className='dottedLineHorizontal' style={{
+              width: 'calc(100% - 2rem)',
+              position: 'absolute',
+              left: 0
+            }}
+          />
+          <div style={{ width: '100%', position: 'relative', paddingTop: '3rem' }}>
+            <div className='mainBody'>
               <p style={{ textAlign: 'center' }}><span className='bigEmphasis'>At the Cyber Institute, <span style={{ fontWeight: 'bolder', color: '#523178', fontSize: '50px' }}>people</span> are at the heart of what we do.</span></p>
               <p><br />Here are some of our fantastic team members this month, who make the Cyber Institute, its research,
               education, innovation and delivery programs happen:&nbsp;
@@ -123,7 +137,7 @@ class People extends Component {
                   from the ANU’s Strategic and Defence Studies Centre in 2009, for a thesis on small arms control and violent
                   non-state armed groups. <br /><br />She subsequently spent eight years developing and delivering components of the curriculum
                   for the senior course and short courses at the Centre for Defence and Strategic Studies, now the Australian War
-                  College.  Dr Koorey has worked as a researcher and campaigner for non-government organisations in Australia and
+                  College. Dr Koorey has worked as a researcher and campaigner for non-government organisations in Australia and
                   the United Kingdom, and is a member of the Campaign to Stop Killer Robots. <br /><br />Her research interests are in
                   leaderless resistance, future conflict, and emerging security challenges in the Indo-Pacific. Her current projects
                   with the Cyber Institute include the formation of the Menzies Cyber Law Executive Education module with the ANU
@@ -147,61 +161,41 @@ class People extends Component {
               </div>
             </div>
           </div>
-          <div className='careersContainer'>
-            <hr style={{ position: 'relative', top: '235px', marginLeft: 0, borderTop: '2px dashed white', borderBottom: 'transparent', width: '100%' }} />
-            <div style={{ paddingTop: '100px', paddingBottom: '175px' }}>
-              <div className='row around-xs'>
-                <div className='col-xs-12 col-md-5 first-md'>
-                  <h1>Careers</h1>
-                  <p style={{ paddingTop: '25px' }}><span className='bigEmphasis'>Imagine</span> a place where we think about cyber differently, where we bring together deep expertise
-                  in the technological with that of the social, where in tackling the issues of the day, we
-                  think about how we can build the future we want to live in, where we help people make the hard
-                  but informed decisions about systems and strategy, data and development, and culture and capability...
-                  </p>
-                  <p style={{ textAlign: 'center' }}>[Insert load more button here]</p>
-                  <p>To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
-                  betterment of humanity,
-                    <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
-                      we are seeking those willing to tackle a challenge, go beyond traditional
-                    boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
-                    our democracy.
-                    <br />
-                    <br />
-                  </span>
-                  We are looking for people who are at ease with unconventionality, with finding and
-                  working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
-                  people who have scars from dealing with cyber and security issues firsthand, who have delved into the
-                  data and generated insights into the consequences for people, society and the nation, who have a vision
-                  for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
-                  who are curious, and who can help build a great team environment.&nbsp;
-                    <br /><br />
-                  We are passionate about placing people at the centre of our work, and are seeking to build a
-                  high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
-                  to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
-                  in becoming part of out team, we invite you to send your CV to <a href='mailto:cyber@anu.edu.au' style={{ color: '#D2AcF7' }}>cyber@anu.edu.au</a>.
-                  </p>
-                </div>
-                <div className='col-xs-12 col-md-5 first-xs'>
-                  <img src={Fourstudents} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey', paddingTop: '60px' }} alt='Four Cyber Institute employees standing in front of glass building' />
-                </div>
+        </div>
+        <Careers />
+        <div
+          className='container-fluid positionRelative'
+        >
+          <div
+            className='row positionRelative'
+          >
+            <div className='col-md-offset-1 col-md-10'>
+              <div className='mainBody'>
+                <h1 id='Advisory Board'>Advisory Board</h1>
+              </div>
+              <div
+                className='dottedLineHorizontal' style={{
+                  width: '91.666%',
+                  position: 'absolute',
+                  right: '-1rem'
+                }}
+              />
+              <div style={{
+                padding: '3rem 0'
+              }}
+              >
+                <p>The Cyber Institute is governed under the Australian National University Act 1991 and the Public Governance, Performance &amp; Accountability Act 2013.&nbsp;&nbsp;
+                  <br /><br />
+          Organisationally, the Institute is an entity within the ANU College of Engineering and Computer Science.&nbsp; It also has a partnership with the ANU National Security College.&nbsp;&nbsp;
+                  <br /><br />
+          The Institute’s Advisory Board provides high quality objective advice to the CEO regarding the strategic intent and direction of the Institute, as well as its business plan and associated investment strategy.&nbsp;&nbsp;&nbsp;
+                  <br /><br />
+          The Advisory Board is chaired by the Vice Chancellor, Nobel Laureate Professor Brian Schmidt.
+                </p>
               </div>
             </div>
           </div>
-          <hr style={{ position: 'relative', top: '155px', marginRight: 0, borderTop: '2px dashed #523178', borderBottom: 'transparent', width: '85%' }} />
-          <div>
-            <h1>Advisory Board</h1>
-          </div>
-          <div>
-            <p>The Cyber Institute is governed under the Australian National University Act 1991 and the Public Governance, Performance &amp; Accountability Act 2013.&nbsp;&nbsp;
-              <br /><br />
-          Organisationally, the Institute is an entity within the ANU College of Engineering and Computer Science.&nbsp; It also has a partnership with the ANU National Security College.&nbsp;&nbsp;
-              <br /><br />
-          The Institute’s Advisory Board provides high quality objective advice to the CEO regarding the strategic intent and direction of the Institute, as well as its business plan and associated investment strategy.&nbsp;&nbsp;&nbsp;
-              <br /><br />
-          The Advisory Board is chaired by the Vice Chancellor, Nobel Laureate Professor Brian Schmidt.
-            </p>
-            <PersonsGrid />
-          </div>
+          <PersonsGrid />
         </div>
       </>
     )
@@ -210,9 +204,101 @@ class People extends Component {
 
 export default People
 
+const Careers = () => {
+  const [isVisible, setIsVisible] = useState(true)
+  return (
+    <div
+      className='container-fluid positionRelative careersContainer'
+    >
+      <div style={{
+        background: '0 0',
+        overflow: 'hidden',
+        position: 'absolute',
+        top: '0',
+        right: '0',
+        bottom: '0',
+        left: '0',
+        width: '100%',
+        zIndex: -1,
+        height: '100%',
+        backgroundColor: 'rgb(82, 49, 120)',
+        clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
+      }}
+      >
+        <picture
+          className='bannerImg'
+          style={{
+            height: '100%',
+            position: 'absolute',
+            display: 'block',
+            marginRight: 'auto',
+            width: '100%',
+            backgroundRepeat: 'repeat-y',
+            // backgroundSize: 'cover',
+            // backgroundPosition: '50% 0%',
+            backgroundImage: `url(${background})`,
+            opacity: 0.2
+          }}
+        />
+      </div>
+      <div
+        className='row around-xs' style={{
+          padding: '12rem 0'
+        }}
+      >
+        <div className='col-xs-12 col-md-5 first-md'>
+          <h1 id='Careers'>Careers</h1>
+          <div
+            className='dottedLineHorizontalWhite' style={{
+              width: '100%',
+              position: 'absolute',
+              left: 0,
+              color: '#fff'
+            }}
+          />
+          <p style={{ paddingTop: '25px' }}><span className='bigEmphasis'>Imagine</span> a place where we think about cyber differently, where we bring together deep expertise
+            in the technological with that of the social, where in tackling the issues of the day, we
+            think about how we can build the future we want to live in, where we help people make the hard
+            but informed decisions about systems and strategy, data and development, and culture and capability...
+          </p>
+          <SlideToggleContent isVisible={isVisible}>
+            <p>
+              <br />
+              <br />
+              To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
+            betterment of humanity,
+              <span style={{ fontWeight: 'bold', fontSize: '24px' }}> we are seeking those willing to tackle a challenge, go beyond traditional
+              boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
+              our democracy.
+              <br />
+              <br />
+              </span>
+            We are looking for people who are at ease with unconventionality, with finding and
+            working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
+            people who have scars from dealing with cyber and security issues firsthand, who have delved into the
+            data and generated insights into the consequences for people, society and the nation, who have a vision
+            for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
+            who are curious, and who can help build a great team environment.&nbsp;
+              <br />
+              <br />
+            We are passionate about placing people at the centre of our work, and are seeking to build a
+            high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
+            to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
+            in becoming part of out team, we invite you to send your CV to <a href='mailto:cyber@anu.edu.au' style={{ color: '#D2AcF7' }}>cyber@anu.edu.au</a>.
+            </p>
+          </SlideToggleContent>
+          <ViewMoreButton {...{ isVisible, setIsVisible }} />
+        </div>
+        <div className='col-xs-12 col-md-5 first-xs'>
+          <img src={Fourstudents} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))', paddingTop: '60px' }} alt='Four Cyber Institute employees standing in front of glass building' />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const PersonsGrid = () => {
   const [isVisible, setIsVisible] = useState(false)
-
   return (
     <>
       <div className='row center-xs'>{
@@ -226,7 +312,7 @@ const PersonsGrid = () => {
           {
             img: elanor,
             title: 'Professor Elanor Huntington',
-            subtitle: 'Dean, College of Engineering &amp; Computer Science, The Australian National University',
+            subtitle: 'Dean, College of Engineering & Computer Science, The Australian National University',
             id: 1
           },
           {
@@ -262,14 +348,67 @@ const PersonsGrid = () => {
             <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
             {
               (index === 3 || index === 6) && (
-                <SlideToggleContent isVisible={Number.isInteger(isVisible) && (index - 4 <= isVisible) && (isVisible <= index)}>
-                  <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} />
+                <SlideToggleContent isVisible={Number.isInteger(isVisible) &&
+                (([0, 1, 2, 3].includes(isVisible) && index === 3) ||
+                ([4, 5, 6].includes(isVisible) && index === 6))}
+                >
+                  <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-sm' />
                 </SlideToggleContent>
               )
+            }
+            {
+              <SlideToggleContent isVisible={Number.isInteger(isVisible) && isVisible === index}>
+                <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-md' />
+              </SlideToggleContent>
             }
           </>
         ))
       }
+      </div>
+    </>
+  )
+}
+
+const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
+  return (
+    <>
+      <div className={`${isVisible === id ? 'selected ' : ''}col-md-3 col-xs-12 advisoryImage paddingBottom2rem-xs`}>
+        <div
+          style={{
+            display: 'inline-block',
+            height: '100%',
+            position: 'relative'
+          }}
+          onClick={() => isVisible !== id ? setIsVisible(id) : setIsVisible(null)}
+        >
+          <img
+            src={img} className='width100-md width300px-xs width250px-xxs' style={{
+              height: '100%',
+              objectFit: 'cover'
+            }}
+          />
+          <div className='hover advisoryImageText'>
+            <div>
+              <h3
+                className='name'
+                style={{
+                  color: '#fff',
+                  margin: 0
+                }}
+              >
+                {title}
+              </h3>
+              <p
+                className='title'
+                style={{
+                  color: '#fff'
+                }}
+              >
+                {subtitle}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
@@ -308,48 +447,3 @@ const personsContent = [
 <br/>
   Major General Ryan graduated from the Royal Military College, Duntroon, in 1989, has a Bachelor's degree in Asian Studies from the University of New England and is a graduate of the Australian Defence Force School of Languages. He is a Distinguished Graduate of the United States Marine Corps Command and Staff College, and a graduate of the USMC School of Advanced Warfighting. In 2012, he graduated with distinction from the Johns Hopkins University, School of Advanced International Studies, earning a Masters in International Public Policy.</p>`
 ]
-
-const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
-  return (
-    <>
-      <div className='col-md-3 col-xs-12 advisoryImage paddingBottom2rem-xs'>
-        <div
-          style={{
-            display: 'inline-block',
-            height: '100%',
-            position: 'relative'
-          }}
-          onClick={() => setIsVisible(id)}
-        >
-          <img
-            src={img} className='width100-md width300px-xs' style={{
-              height: '100%',
-              objectFit: 'cover'
-            }}
-          />
-          <div className='hover advisoryImageText'>
-            <div>
-              <h3
-                className='name'
-                style={{
-                  color: '#fff',
-                  margin: 0
-                }}
-              >
-                {title}
-              </h3>
-              <p
-                className='title'
-                style={{
-                  color: '#fff'
-                }}
-              >
-                {subtitle}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
