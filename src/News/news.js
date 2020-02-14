@@ -24,7 +24,12 @@ import BlackBoxArrow from '../../img/black box arrow.png'
 import { relative } from 'path';
 
 const headings = [
+  'News',
+  'Events',
+  'Media',
+  'Podcasts'
 ]
+
 
 
 function getHeadingWidth(text) { 
@@ -168,7 +173,7 @@ const NewsArticle = (props) => (
 <p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px', bottom :"0"}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 
-<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline.substring(0,250) + "..."}</div>
+<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline.substring(0,200) + "..."}</div>
 </div>
 <div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
     </div>
@@ -532,7 +537,7 @@ class News extends Component {
       <>
       <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
       <div style={{fontFamily: 'Roboto, sans-serif'}}>
-        <div class="News">
+        <div id="News" class="News">
         <div class="News">
           <div class="container-fluid">
           <div class="row">
@@ -574,7 +579,7 @@ class News extends Component {
         }
       </div>
 
-      <div class="Events">
+      <div id="Events" class="Events">
         <div class="Events">
           <br />
           <br />
@@ -628,7 +633,7 @@ class News extends Component {
       </div>
         }
       </div>
-        <div class="Media">
+        <div id="Media" class="Media">
         <div class="Media">
           <div class="container-fluid">
           <div class="row">
@@ -715,7 +720,7 @@ class News extends Component {
       </div>
         }
       </div> */}
-      <div class="Podcasts">
+      <div id="Podcasts" class="Podcasts">
         <div class="Podcasts">
         <div class="row">
           <div class="col-xs-2"></div>
