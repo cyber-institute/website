@@ -21,6 +21,7 @@ import PeopleNotProblem from '../../img/people_not_problem.jpg'
 import SecurityStrategy from '../../img/security_strategy.jpg'
 import TechDivide from '../../img/tech_divide.jpg'
 import BlackBoxArrow from '../../img/black box arrow.png'
+import NatPodcast from '../../img/nationalsecuritypodcast.jpg'
 import { relative } from 'path';
 
 const headings = [
@@ -297,11 +298,11 @@ const podcasts = {
     id: '4',
     component: 'NewsArticle',
     props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/20',
-      imageSource: './img/ai1.jpg',
+      head: 'Techlosophy and the future of security',
+      byline: 'Getting to the bottom of how information and bio-technologies are reshaping societies and the human mind - and what this means for those with a stake in democracy and national security.',
+      author: 'Katherine Mansted and Dr Zac Rogers',
+      date: '6/11/2019',
+      imageSource: NatPodcast,
       sizeName: 'col-md-3 col-xs-12'
     }
   }]
