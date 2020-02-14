@@ -61,7 +61,8 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
         <div
           className='col-lg-4 col-md-5' style={{
             overflow: 'hidden',
-            'box-shadow': '5px 5px 10px grey'
+            'box-shadow': '5px 5px 10px grey',
+            padding: 0
           }}
         >
           <img

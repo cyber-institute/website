@@ -62,6 +62,7 @@ body {
 .advisoryImage {
   height: 400px;
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 .NewsArticle:hover {

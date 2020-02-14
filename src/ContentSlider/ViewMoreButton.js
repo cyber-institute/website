@@ -6,9 +6,6 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 export default ({ clickButton, isVisible, alignRight }) =>
   <div style={{
     marginTop: '2rem',
-    textAlign: `${alignRight ? 'right' : 'left'}`,
-    position: 'absolute',
-    right: '50%',
     zIndex: '1'
   }}
   >
