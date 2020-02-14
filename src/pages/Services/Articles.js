@@ -54,7 +54,8 @@ export default () => {
   return (
     <div
       className='container-fluid' style={{
-        margin: '4rem 0'
+        margin: '4rem 0',
+        fontFamily: 'Roboto'
       }}
     >
       <div className='row'>
