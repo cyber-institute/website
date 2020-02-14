@@ -103,18 +103,18 @@ export default ({ image1, image2 }) =>
             }}
           />
           <p>
-    The Cyber Mastery program can be taken as stand-alone modules as available, in the form of Executive Education. Once assessment is completed successfully, you will receive a micro-credential from the Australian National University. Successfully complete enough micro-credentials, including from mandatory modules, and you will earn a Graduate Diploma in Cyber. Successfully complete the assessment for the three capstone modules after that, including an individual project and scenario, and you will be awarded a Master of Cyber.
+    The Cyber Mastery program can be taken as stand-alone modules as available, in the form of Executive Education. Once assessment is completed successfully, you will receive a micro-credential from the Australian National University. Successfully complete enough micro-credentials, including from mandatory modules, and you will earn a <span style={{'font-weight':'700', color: '#523178'}}>Graduate Diploma in Cyber</span>. Successfully complete the assessment for the three capstone modules after that, including an individual project and scenario, and you will be awarded a <span style={{'font-weight':'700', color:'#523178'}}>Master of Cyber</span>.
           </p>
         </div>
         <div className='col-md-3 margin4RemAuto-sm'>
-          <Image img={image1} />
+          <Image img={image1} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
       </div>
       <div
         className='row positionRelative marginTop4rem-md'
       >
         <div className='col-md-3 margin4RemAuto-sm'>
-          <Image img={image2} />
+          <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
         <div
           className='col-md-8 rightAlign-md'
