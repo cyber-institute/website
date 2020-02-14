@@ -27,7 +27,7 @@ import { relative } from 'path'
 const headings = [
   'News',
   'Events',
-  'Media',
+  'Articles',
   'Podcasts'
 ]
 
@@ -628,10 +628,10 @@ class News extends Component {
 
               </div>}
           </div>
-          <div id='Media' class='Media'>
+          <div id='Articles' class='Media'>
             <div class='Media'>
               <div class='row positionRelative'>
-                <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Media</h2>
+                <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Articles</h2>
                   <div
                     className='dottedLineHorizontal' style={{
                       width: '91.666%',
@@ -640,10 +640,6 @@ class News extends Component {
                     }}
                   />
                 </div>
-              </div>
-              <div class='row'>
-                <div class='col-xs-2' />
-                <div class='col-xs-9'><h2 style={{ color: '#523178', fontSize: '40px', letterSpacing: '0.15px', marginLeft: '3%' }}>Articles</h2></div>
               </div>
               <div class='col-xs-13'>
                 <div class='row'>
@@ -672,7 +668,7 @@ class News extends Component {
                       </div>
                     </div>
                   </SlideToggleContent>
-                  <div class='col-xs-12'>
+                  <div class='col-xs-12 center-xs'>
                     <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
                   </div>
                 </div>
