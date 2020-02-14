@@ -177,7 +177,7 @@ export default () =>
             position: 'relative'
           }}
         >
-          <img src={people} className='width100' />
+          <img src={people} className='width100' style={{'box-shadow': '5px 5px 10px grey'}}/>
           <div
             className='dottedLineHorizontal' style={{
               position: 'absolute',
@@ -216,7 +216,7 @@ export default () =>
             zIndex: '-1'
           }}
           />
-          <img src={traffic} className='width100' />
+          <img src={traffic} className='width100' style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
       </div>
       <div className='row'>
@@ -236,7 +236,7 @@ export default () =>
         }}
       >
         <div className='col-md-6'>
-          <img src={aus} className='width100' />
+          <img src={aus} className='width100' style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
         <div
           className='col-md-5' style={{
