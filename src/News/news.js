@@ -594,8 +594,8 @@ class News extends Component {
               <div class='row'>
                 <div class='col-xs-12'>
                   {
-                    this.state.events.sections.map(({ component: EventComponent, props }) => (
-                      <div class='row'>
+                    this.state.events.sections.map(({ component: EventComponent, props }, index) => (
+                      <div class='row' key={index}>
                         <div class='col-xs-2' />
                         <EventComponent {...props} />
                         <div class='col-xs-2' />
@@ -617,8 +617,8 @@ class News extends Component {
                   <br />
                   <div class='col-xs-13'>
                     {
-                      this.state.events.sections.map(({ component: EventComponent, props }) => (
-                        <div class='row'>
+                      this.state.events.sections.map(({ component: EventComponent, props }, index) => (
+                        <div class='row' key={index}>
                           <div class='col-xs-2' />
                           <EventComponent {...props} />
                           <div class='col-xs-2' />
@@ -660,70 +660,30 @@ class News extends Component {
               </div>
             </div>
             {
-              media2 && <div
-                style={{
-                  margin: 'auto',
-                  position: 'relative'
-                }}
-                        >
-                <SlideToggleContent isVisible={this.state.isVisibleMedia}>
-                  <br />
-                  <br />
-                  <div class='col-xs-13'>
-                    <div class='row'>
-                      <div class='col-xs-2' />
-                      <DynamicPage page={this.state.media2} />
-                      <div class='col-xs-2' />
+              media2 &&
+                <div
+                  style={{
+                    margin: 'auto',
+                    position: 'relative'
+                  }}
+                >
+                  <SlideToggleContent isVisible={this.state.isVisibleMedia}>
+                    <br />
+                    <br />
+                    <div class='col-xs-13'>
+                      <div class='row'>
+                        <div class='col-xs-2' />
+                        <DynamicPage page={this.state.media2} />
+                        <div class='col-xs-2' />
+                      </div>
                     </div>
+                  </SlideToggleContent>
+                  <div class='col-xs-12'>
+                    <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
                   </div>
-                </SlideToggleContent>
-                <div class='col-xs-12'>
-                  <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
                 </div>
-                        </div>
             }
           </div>
-          {/* <div class="Blog">
-        <div class="Blog">
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-9" >
-            <br />
-            <br />
-            <h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%"}}>Blog</h2></div>
-          </div>
-          <div class="col-xs-13">
-            <div class="row">
-            <div class="col-xs-2"></div>
-              <DynamicPage page={this.state.blogs} />
-              <div class="col-xs-2"></div>
-          </div>
-          </div>
-        </div>
-        {
-        blogs2 && <div
-        style={{
-          margin: 'auto',
-          position: 'relative'
-        }}
-      >
-          <SlideToggleContent isVisible={this.state.isVisibleBlog}>
-          <br />
-        <br />
-          <div class="col-xs-13">
-          <div class="row">
-          <div class="col-xs-2"></div>
-            <DynamicPage page={this.state.news2} />
-          <div class="col-xs-2"></div>
-          </div>
-          </div>
-      </SlideToggleContent>
-      <div class="col-xs-12">
-      <ViewMoreButton isVisible={this.state.isVisibleBlog} clickButton={this.clickButtonBlog.bind(this)} alignRight />
-      </div>
-      </div>
-        }
-      </div> */}
           <div id='Podcasts' class='Podcasts'>
             <div class='Podcasts'>
               <div class='row positionRelative'>
@@ -747,27 +707,28 @@ class News extends Component {
               </div>
             </div>
             {
-              podcasts2 && <div
-                style={{
-                  margin: 'auto',
-                  position: 'relative'
-                }}
-                           >
-                <SlideToggleContent isVisible={this.state.isVisiblePodcast}>
-                  <br />
-                  <br />
-                  <div class='col-xs-13'>
-                    <div class='row'>
-                      <div class='col-xs-2' />
-                      <DynamicPage page={this.state.news2} />
-                      <div class='col-xs-2' />
+              podcasts2 &&
+                <div
+                  style={{
+                    margin: 'auto',
+                    position: 'relative'
+                  }}
+                >
+                  <SlideToggleContent isVisible={this.state.isVisiblePodcast}>
+                    <br />
+                    <br />
+                    <div class='col-xs-13'>
+                      <div class='row'>
+                        <div class='col-xs-2' />
+                        <DynamicPage page={this.state.news2} />
+                        <div class='col-xs-2' />
+                      </div>
                     </div>
+                  </SlideToggleContent>
+                  <div class='col-xs-12'>
+                    <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
                   </div>
-                </SlideToggleContent>
-                <div class='col-xs-12'>
-                  <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
                 </div>
-                           </div>
             }
           </div>
         </div>
