@@ -67,7 +67,7 @@ body {
 
 .NewsArticle:hover {
   background-color: lightgrey;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 @media only screen and (min-width: 62em) {
@@ -219,11 +219,6 @@ body {
   .displayNone-md {
     display: none;
   }
-}
-
-.NewsArticle:hover{
-  background-color: lightgrey;
-  opacity: 0.5;
 }
 
 
