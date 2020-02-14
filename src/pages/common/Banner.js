@@ -91,7 +91,7 @@ export default ({ banner, title, subTitle, headings }) =>
                 width: '0px',
                 left: 'calc(50% - 1px)',
                 borderLeft: '2px solid',
-                color: '#523178'
+                color: '#523178',
                 'padding-top':'15px',
                 'padding-bottom':'15px'
               }}
