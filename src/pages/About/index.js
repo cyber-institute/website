@@ -20,7 +20,7 @@ export default () =>
           position: 'relative',
           marginTop: '4rem'
         }}
-        className='row around-xs'
+        className='row around-xs middle-xs'
       >
         <div
           className='col-md-offset-1 col-md-4 col-xs-11'
