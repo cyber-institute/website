@@ -109,11 +109,13 @@ class Swirl extends Component {
 
   render () {   
     
-    if(!navigator.userAgent.includes("Android"))
-      if(!navigator.userAgent.includes("iPhone"))
-        {
-            window.requestAnimationFrame(main_loop) 
-        }
+    if(navigator.userAgent.includes("Android") || navigator.userAgent.includes("iPhone"))
+    {
+      var a = 1;
+    }
+    else{
+      window.requestAnimationFrame(main_loop) 
+    }
         
     return (
       <>
