@@ -64,7 +64,7 @@ export default () => {
               fontSize: '40px',
               letterSpacing: '5px',
               color: 'rgb(82, 49, 120)',
-              margin: '0 0 2rem'
+              margin: '0 0 2rem -2.9rem'
             }}
           >
       Reading List
