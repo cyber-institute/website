@@ -128,7 +128,7 @@ class People extends Component {
               </p>
               <div className='row around-xs' style={{ marginTop: '50px' }}>
                 <div className='col-xs-9 col-md-3' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle2} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Stehpanie' />
+                  <img src={Puzzle2} style={{ width: '100%'}} alt='Puzzle piece representing Stehpanie' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '25%', left: '-80%', width: '100%', zIndex: '-20' }} />
                 </div>
                 <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
@@ -155,7 +155,7 @@ class People extends Component {
                   </p>
                 </div>
                 <div className='col-xs-9 col-md-3 first-xs' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle1} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Stehpanie' />
+                  <img src={Puzzle1} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
                   <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: '100%', zIndex: '-20' }} />
                 </div>
               </div>
