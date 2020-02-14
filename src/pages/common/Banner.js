@@ -18,6 +18,7 @@ export default ({ banner, title, subTitle, headings }) =>
         zIndex: '0',
         height: '100%',
         clipPath: 'polygon(50% 100%, 100% 40%, 100% 0, 0 0, 0 40%)',
+        WebkitClipPath: 'polygon(50% 100%, 100% 40%, 100% 0, 0 0, 0 40%)',
         backgroundColor: '#000'
       }}
       >

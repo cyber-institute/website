@@ -139,7 +139,8 @@ export default () =>
               top: '-15rem',
               fontSize: '250px',
               margin: '0',
-              opacity: '5%'
+              color: '#f5f5f5',
+              zIndex: -1
             }}
           >
             humanity
