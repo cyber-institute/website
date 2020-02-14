@@ -71,7 +71,7 @@ export default () =>
             position: 'relative'
           }}
         >
-          <span
+          <p
             style={{
               position: 'relative',
               top: '3%',
@@ -80,12 +80,12 @@ export default () =>
               'font-weight': '900',                
               color: '#523178',
               'padding-bottom':'25px',
-              'padding-top':'35px',
+              'padding-top':'40px',
               'text-align':'left'
             }}
           >
             As a strategic initiative of the Australian National University,
-          </span>
+          </p>
           <p style={{
             position: 'relative',
             bottom: '0',
@@ -139,7 +139,8 @@ export default () =>
               top: '-15rem',
               fontSize: '250px',
               margin: '0',
-              opacity: '5%'
+              color: '#f5f5f5',
+              zIndex: -1
             }}
           >
             humanity

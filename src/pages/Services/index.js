@@ -40,28 +40,25 @@ export default () =>
     <div
       className='container-fluid'
     >
-      <div className='row'>
+      <div className='row positionRelative'>
         <div className='col-md-offset-1 col-md-5'>
           <Heading>
             Courses
           </Heading>
-        </div>
-        <div style={{
-          width: '100%',
-          position: 'relative',
-          marginBottom: '2rem'
-        }}
-        >
           <div
             className='dottedLineHorizontal' style={{
-              width: '85%',
+              width: '91.666%',
               position: 'absolute',
               right: '-1rem'
             }}
           />
         </div>
       </div>
-      <div className='row positionRelative'>
+      <div
+        className='row positionRelative' style={{
+          marginTop: '3rem'
+        }}
+      >
         <div style={{
           background: '0 0',
           overflow: 'hidden',
@@ -92,7 +89,9 @@ export default () =>
             }}
           />
         </div>
-        <div className='col-md-offset-1 col-md-5'>
+        <div
+          className='col-md-offset-1 col-md-5'
+        >
           <p>
         The challenges presented by cyber in the modern world require more than technology skills. Non-technologists need to appreciate how the technology affects their work, and how it may change the world in the future.<br /><br />
 
@@ -100,11 +99,11 @@ We’ve had this problem before: the world shifts, and managers, leaders and dec
 
 That’s why the Cyber Institute is offering a different way of learning, which includes updating and building the ideas, knowledge and experiences needed to tackle this new world.<br /><br />
 
-<span style={{'font-weight':'700', 'font-size':'25px'}}>We call it building your Cyber Mastery.</span>
+            <span style={{ 'font-weight': '700', 'font-size': '25px' }}>We call it building your Cyber Mastery.</span>
           </p>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
-          <Image img={services3} style={{'box-shadow': '5px 5px 10px grey'}} />
+          <Image img={services3} style={{ 'box-shadow': '5px 5px 10px grey' }} />
         </div>
       </div>
       <div className='container-fluid'>
@@ -119,7 +118,7 @@ That’s why the Cyber Institute is offering a different way of learning, which 
           </Slider>
         </div>
       </div>
-      <ExecutiveEducation image1={services6} image2={services7} />
+      <ExecutiveEducation image1={services6} image2={services7} style={{'margin-top':'50px','margin-bottom':'50px'}} />
     </div>
     <PartnerWithUs />
     <Operations image1={services8} image2={services9} image3={services10} />

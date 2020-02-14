@@ -39,6 +39,7 @@ class Home extends Component {
           buttonText='About Cyber Institute'
           img={laptop}
           transforms
+          link='/about'
         />
         <FirstBanner />
         <BodyMenuItemSwapped
@@ -48,6 +49,7 @@ class Home extends Component {
           buttonText='Find out more'
           img={team}
           transforms
+          link='/people'
         />
         <SecondBanner />
         <PurpleBodyMenuItem
@@ -57,6 +59,7 @@ class Home extends Component {
           buttonText='Find out more'
           img={whatWeOffer}
           transforms
+          link='/services'
         />
         <ThirdBanner />
       </>

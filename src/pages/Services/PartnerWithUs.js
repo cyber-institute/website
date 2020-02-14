@@ -88,7 +88,7 @@ export default () =>
         </h2>
         <p
           style={{
-            fontSize: '20px',
+            fontSize: '22px',
             color: '#fff'
           }}
         >
@@ -98,7 +98,7 @@ We are partnering with a diverse set of organisations and celebrate the diversit
         </p>
         <p
           style={{
-            fontSize: '16px',
+            fontSize: '18px',
             color: '#fff',
             marginBottom: '3rem'
           }}

@@ -31,7 +31,15 @@ body {
 .advisoryImageText > div {
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
   padding: 0 1rem 1rem;
+}
+
+.advisoryImageText h3 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .selected .hover:after {
@@ -71,7 +79,7 @@ body {
   bottom: 50%
 }
 
-@media only screen and (max-width: 23em) {
+@media only screen and (max-width: 24em) {
   .footerText p.fontSize16px-xs, .fontSize16px-xs {
     font-size: 16px;
   }
@@ -116,6 +124,12 @@ body {
   }
   .width100-md {
     width: 100%;
+  }
+  .marginLeftNegative-md {
+    margin-left: -3.5rem;
+  }
+  .marginRight-md {
+    margin-right: 3.5rem;
   }
 }
 

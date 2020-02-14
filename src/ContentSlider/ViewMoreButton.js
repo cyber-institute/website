@@ -8,7 +8,8 @@ export default ({ clickButton, isVisible, alignRight }) =>
     marginTop: '2rem',
     textAlign: `${alignRight ? 'right' : 'left'}`,
     position: 'absolute',
-    right: '50%'
+    right: '50%',
+    zIndex: '1'
   }}
   >
     <button
@@ -17,6 +18,8 @@ export default ({ clickButton, isVisible, alignRight }) =>
         color: '#000',
         backgroundColor: '#fff',
         fontSize: '18px',
+        'font-family': 'Roboto, sans-serif',
+        'font-weight': '300',
         letterSpacing: '0.25px',
         border: 'none'
       }}

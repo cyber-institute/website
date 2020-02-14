@@ -77,9 +77,9 @@ class People extends Component {
                 <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
                 <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
               </p>
-              <h3 style={{ 'margin-top': '30px' }}>CEO, Professor Lesley Seebeck</h3>
-              <p>Prof. Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018. Most recently, she was Chief Investment and Advisory Officer at the Digital Transformation Agency, arriving there from the Bureau of Meteorology where she served as Chief Information Officer from mid 2014 to late 2017. She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Naval Shipbuilding Advisory Board.</p>
-              <p>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia. She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
+              <h3 style={{ 'margin-top': '30px', 'margin-bottom': '15px' }}>CEO, Professor Lesley Seebeck</h3>
+              <p style={{ 'letter-spacing': '0' }}>Prof. Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018. Most recently, she was Chief Investment and Advisory Officer at the Digital Transformation Agency, arriving there from the Bureau of Meteorology where she served as Chief Information Officer from mid 2014 to late 2017. She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Naval Shipbuilding Advisory Board. <br /><br /></p>
+              <p style={{ 'letter-spacing': '0' }}>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia. She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
             </div>
           </div>
           <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem', overflow: 'hidden' }}>
@@ -101,7 +101,6 @@ class People extends Component {
             </div>
             <div className='col-xs-12 col-md-5' style={{ position: 'relative', right: '0' }}>
               <img src={Puzzle3} style={{ width: '100%' }} alt='Puzzle piece representing Ree Kent' />
-              <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: 'calc(100% - 2rem)', zIndex: '-20' }} />
             </div>
           </div>
 
@@ -126,10 +125,9 @@ class People extends Component {
           <div className='row' style={{ marginTop: '50px' }}>
             <div className='col-xs-12 col-md-3 col-md-offset-1' style={{ position: 'relative', right: '0' }}>
               <img src={Puzzle2} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
-              <hr className='greyLine' style={{ position: 'absolute', top: '25%', left: '-80%', width: '100%', zIndex: '-20' }} />
             </div>
             <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
-              <h4 style={{ 'padding-bottom': '15px' }}>Stephanie, Cyber Institute Research Fellow</h4>
+              <h4 style={{ 'padding-bottom': '15px', 'font-size': '22px', color: '#523178' }}>Stephanie, Cyber Institute Research Fellow</h4>
               <p>Meet Dr Stephanie Koorey who started with the Cyber Institute in January 2020. Dr Koorey was awarded her PhD
                   from the ANU’s Strategic and Defence Studies Centre in 2009, for a thesis on small arms control and violent
                   non-state armed groups. <br /><br />She subsequently spent eight years developing and delivering components of the curriculum
@@ -144,7 +142,7 @@ class People extends Component {
           </div>
           <div className='row' style={{ marginTop: '50px' }}>
             <div className='col-xs-12 col-md-7 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
-              <h4 style={{ 'padding-bottom': '15px' }}>Brendan, Cyber Institute Research Assistant</h4>
+              <h4 style={{ 'padding-bottom': '15px', 'font-size': '22px', color: '#523178' }}>Brendan, Cyber Institute Research Assistant</h4>
               <p>Meet Brendan who started with the Cyber Institute in January of 2019.
                   Brendan is currently helping with delivery of the Cyber Bootcamp Project which aims to improve international cyber
                   cooperation between Australia, ASEAN and the Pacific. Brendan is studying a Bachelor of Arts and a Bachelor of Science at
@@ -152,8 +150,7 @@ class People extends Component {
               </p>
             </div>
             <div className='col-xs-12 col-md-3' style={{ position: 'relative', right: '0' }}>
-              <img src={Puzzle1} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
-              <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: '100%', zIndex: '-20' }} />
+              <img src={Puzzle1} style={{ width: '100%', 'padding-bottom': '20px' }} alt='Puzzle piece representing Stehpanie' />
             </div>
           </div>
         </div>
@@ -217,7 +214,8 @@ const Careers = () => {
         zIndex: -1,
         height: '100%',
         backgroundColor: 'rgb(82, 49, 120)',
-        clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
+        clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)',
+        webkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)',
       }}
       >
         <picture
