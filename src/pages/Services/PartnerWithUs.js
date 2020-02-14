@@ -1,6 +1,6 @@
 import React from 'react'
 
-import backgroundArt from './backgroundArt.png'
+import backgroundArt from '../../../img/background1.png'
 
 export default () =>
   <div
