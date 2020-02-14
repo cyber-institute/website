@@ -163,12 +163,12 @@ const NewsArticle = (props) => (
     <br />
     <div style={{maxHeight: "285px", overflow: 'hidden'}}>
       <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
-<p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
+<p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px', bottom :"0"}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 
-<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline}</div>
+<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline.substring(0,250) + "..."}</div>
 </div>
-<div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
+<div style={{textAlign: 'right'}}><img style={{"max-width": "8%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
     </div>
   </div>
 );
