@@ -118,7 +118,7 @@ That’s why the Cyber Institute is offering a different way of learning, which 
           </Slider>
         </div>
       </div>
-      <ExecutiveEducation image1={services6} image2={services7} />
+      <ExecutiveEducation image1={services6} image2={services7} style={{'margin-top':'50px','margin-bottom':'50px'}} />
     </div>
     <PartnerWithUs />
     <Operations image1={services8} image2={services9} image3={services10} />
