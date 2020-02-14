@@ -5,6 +5,7 @@ import '../../flexboxgrid.css'
 
 import Banner from '../common/Banner'
 import SlideToggleContent from '../common/SlideToggleContent'
+import ViewMoreButton from '../common/ViewMoreButton'
 
 import background from '../../../img/background1.png'
 import banner from './banner.jpg'
@@ -156,90 +157,7 @@ class People extends Component {
             </div>
           </div>
         </div>
-        <div
-          className='container-fluid positionRelative careersContainer'
-        >
-          <div style={{
-            background: '0 0',
-            overflow: 'hidden',
-            position: 'absolute',
-            top: '0',
-            right: '0',
-            bottom: '0',
-            left: '0',
-            width: '100%',
-            zIndex: -1,
-            height: '100%',
-            backgroundColor: 'rgb(82, 49, 120)',
-            clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
-          }}
-          >
-            <picture
-              className='bannerImg'
-              style={{
-                height: '100%',
-                position: 'absolute',
-                display: 'block',
-                marginRight: 'auto',
-                width: '100%',
-                backgroundRepeat: 'repeat-y',
-                // backgroundSize: 'cover',
-                // backgroundPosition: '50% 0%',
-                backgroundImage: `url(${background})`,
-                opacity: 0.2
-              }}
-            />
-          </div>
-          <div
-            className='row around-xs' style={{
-              padding: '12rem 0'
-            }}
-          >
-            <div className='col-xs-12 col-md-5 first-md'>
-              <h1>Careers</h1>
-              <div
-                className='dottedLineHorizontalWhite' style={{
-                  width: '100%',
-                  position: 'absolute',
-                  left: 0,
-                  color: '#fff'
-                }}
-              />
-              <p style={{ paddingTop: '25px' }}><span className='bigEmphasis'>Imagine</span> a place where we think about cyber differently, where we bring together deep expertise
-                  in the technological with that of the social, where in tackling the issues of the day, we
-                  think about how we can build the future we want to live in, where we help people make the hard
-                  but informed decisions about systems and strategy, data and development, and culture and capability...
-              </p>
-              <p style={{ textAlign: 'center' }}>[Insert load more button here]</p>
-              <p>
-                    To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
-                  betterment of humanity,
-                <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
-                      we are seeking those willing to tackle a challenge, go beyond traditional
-                    boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
-                    our democracy.
-                  <br />
-                  <br />
-                </span>
-                  We are looking for people who are at ease with unconventionality, with finding and
-                  working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
-                  people who have scars from dealing with cyber and security issues firsthand, who have delved into the
-                  data and generated insights into the consequences for people, society and the nation, who have a vision
-                  for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
-                  who are curious, and who can help build a great team environment.&nbsp;
-                <br />
-                <br />
-                  We are passionate about placing people at the centre of our work, and are seeking to build a
-                  high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
-                  to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
-                  in becoming part of out team, we invite you to send your CV to <a href='mailto:cyber@anu.edu.au' style={{ color: '#D2AcF7' }}>cyber@anu.edu.au</a>.
-              </p>
-            </div>
-            <div className='col-xs-12 col-md-5 first-xs'>
-              <img src={Fourstudents} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))', paddingTop: '60px' }} alt='Four Cyber Institute employees standing in front of glass building' />
-            </div>
-          </div>
-        </div>
+        <Careers />
         <div
           className='container-fluid positionRelative'
         >
@@ -265,6 +183,99 @@ class People extends Component {
 }
 
 export default People
+
+const Careers = () => {
+  const [isVisible, setIsVisible] = useState(true)
+  return (
+    <div
+      className='container-fluid positionRelative careersContainer'
+    >
+      <div style={{
+        background: '0 0',
+        overflow: 'hidden',
+        position: 'absolute',
+        top: '0',
+        right: '0',
+        bottom: '0',
+        left: '0',
+        width: '100%',
+        zIndex: -1,
+        height: '100%',
+        backgroundColor: 'rgb(82, 49, 120)',
+        clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
+      }}
+      >
+        <picture
+          className='bannerImg'
+          style={{
+            height: '100%',
+            position: 'absolute',
+            display: 'block',
+            marginRight: 'auto',
+            width: '100%',
+            backgroundRepeat: 'repeat-y',
+            // backgroundSize: 'cover',
+            // backgroundPosition: '50% 0%',
+            backgroundImage: `url(${background})`,
+            opacity: 0.2
+          }}
+        />
+      </div>
+      <div
+        className='row around-xs' style={{
+          padding: '12rem 0'
+        }}
+      >
+        <div className='col-xs-12 col-md-5 first-md'>
+          <h1>Careers</h1>
+          <div
+            className='dottedLineHorizontalWhite' style={{
+              width: '100%',
+              position: 'absolute',
+              left: 0,
+              color: '#fff'
+            }}
+          />
+          <p style={{ paddingTop: '25px' }}><span className='bigEmphasis'>Imagine</span> a place where we think about cyber differently, where we bring together deep expertise
+            in the technological with that of the social, where in tackling the issues of the day, we
+            think about how we can build the future we want to live in, where we help people make the hard
+            but informed decisions about systems and strategy, data and development, and culture and capability...
+          </p>
+          <SlideToggleContent isVisible={isVisible}>
+            <p>
+              <br />
+              <br />
+              To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
+            betterment of humanity,
+              <span style={{ fontWeight: 'bold', fontSize: '24px' }}> we are seeking those willing to tackle a challenge, go beyond traditional
+              boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
+              our democracy.
+              <br />
+              <br />
+              </span>
+            We are looking for people who are at ease with unconventionality, with finding and
+            working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
+            people who have scars from dealing with cyber and security issues firsthand, who have delved into the
+            data and generated insights into the consequences for people, society and the nation, who have a vision
+            for ‘beyond cyber’ and are keen to work with other who can make it happen.&nbsp; We want people who care,
+            who are curious, and who can help build a great team environment.&nbsp;
+              <br />
+              <br />
+            We are passionate about placing people at the centre of our work, and are seeking to build a
+            high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
+            to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
+            in becoming part of out team, we invite you to send your CV to <a href='mailto:cyber@anu.edu.au' style={{ color: '#D2AcF7' }}>cyber@anu.edu.au</a>.
+            </p>
+          </SlideToggleContent>
+          <ViewMoreButton {...{ isVisible, setIsVisible }} />
+        </div>
+        <div className='col-xs-12 col-md-5 first-xs'>
+          <img src={Fourstudents} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))', paddingTop: '60px' }} alt='Four Cyber Institute employees standing in front of glass building' />
+        </div>
+      </div>
+    </div>
+  )
+}
 
 const PersonsGrid = () => {
   const [isVisible, setIsVisible] = useState(false)
