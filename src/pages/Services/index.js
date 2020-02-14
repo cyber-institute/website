@@ -100,7 +100,7 @@ We’ve had this problem before: the world shifts, and managers, leaders and dec
 
 That’s why the Cyber Institute is offering a different way of learning, which includes updating and building the ideas, knowledge and experiences needed to tackle this new world.<br /><br />
 
-We call it building your Cyber Mastery.
+<span style={{'font-weight':'700', 'font-size':'25px'}}>We call it building your Cyber Mastery.</span>
           </p>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
