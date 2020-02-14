@@ -95,16 +95,20 @@ const Image = (props) => (
 
 const DateBox = (props) => (
   <div className="Datebox-component" style={{margin : '1rem'}}>
+    <div class="row">
+    <div class="col-md-2 col-xs-12">
     <div style={{float: "left", width: "20%", height: "200px", marginRight: "3rem", border: "1px solid rgba(0, 0, 0, .2)", textAlign: "center", "text-transform": "uppercase"}}>
       <span style={{fontSize: "84px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.day}</span>
       <br />
       <span style={{fontSize: "52px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.month}</span>
     </div>
-    <div style={{overflow: 'hidden'}}>
+    </div>
+    <div class="col-md-10 col-xs-12" style={{overflow: 'hidden'}}>
     <span style={{fontSize: "35px", color: "#000", letterSpacing: '0px'}}><b>{props.title}</b></span>
       <p style={{fontSize: "15px"}}>{props.date} {props.time}</p>
       {props.description}<br />
       <span style={{fontSize: "18px", color: "#000", letterSpacing: '0px'}}>{props.signupText} <a href src={props.link}>{props.link}</a></span>
+    </div>
     </div>
   </div>
 );
@@ -139,7 +143,7 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'The January Cyber Bootcamp',
+      head: 'The Jauary Cyber Bootcamp',
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'DFAT',
       date: '29/01/20',
@@ -527,11 +531,12 @@ class News extends Component {
       <div style={{fontFamily: 'Roboto, sans-serif'}}>
         <div class="News">
         <div class="News">
+          <div class="container-fluid">
           <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>News</h1></div>
-          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
-            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="News" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>News</h2></div>
+          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
+          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           </div>
           <div class="col-xs-13">
@@ -570,10 +575,12 @@ class News extends Component {
         <div class="Events">
           <br />
           <br />
+          <div class="container-fluid">
           <div class="row">
-          <div class="col-xs-2"></div><div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Events</h1></div>
-          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
-            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="Events" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>Events</h2></div>
+          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
+          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           </div>
           <div class= 'row'>
@@ -620,11 +627,12 @@ class News extends Component {
       </div>
         <div class="Media">
         <div class="Media">
+          <div class="container-fluid">
           <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Media</h1></div>
-          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
-            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="Courses" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>Media</h2></div>
+          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
+          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           </div>
           <div class="row">
@@ -708,7 +716,7 @@ class News extends Component {
         <div class="Podcasts">
         <div class="row">
           <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%"}}>Podcasts</h2></div>
+          <div class="col-xs-9" ><h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%", marginTop: '6rem'}}>Podcasts</h2></div>
           <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
             <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
           </div>
