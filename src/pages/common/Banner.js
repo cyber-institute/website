@@ -86,14 +86,12 @@ export default ({ banner, title, subTitle, headings }) =>
           headings && headings.map((heading, index) =>
             <div className='col-xs-12' key={index}>
               <div style={{
-                margin: 'auto',
+                margin: `${index !== 0 ? '0.5rem auto' : '0 auto 0.5rem'}`,
                 height: '2em',
                 width: '0px',
                 left: 'calc(50% - 1px)',
                 borderLeft: '2px solid',
-                color: '#523178',
-                'padding-top':'15px',
-                'padding-bottom':'15px'
+                color: '#523178'
               }}
               />
               <a
@@ -120,7 +118,7 @@ export default ({ banner, title, subTitle, headings }) =>
           )
         }
         <div style={{
-          margin: 'auto',
+          margin: '0.5rem auto',
           height: '2em',
           width: '0px',
           left: 'calc(50% - 1px)',
