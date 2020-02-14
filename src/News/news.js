@@ -165,7 +165,7 @@ const NewsArticle = (props) => (
       <br />
       <div style={{ maxHeight: '285px', overflow: 'hidden' }}>
         <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{props.head}</b><br />
-        <p style={{ fontSize: '15px', textAlign: 'left', letterSpacing: '0px', bottom: '0' }}>by {props.author} <span style={{ fontSize: '15px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
+        <p style={{ fontSize: '13px', textAlign: 'left', letterSpacing: '0px', bottom: '0', "margin-top": '0.5rem' }}>by {props.author} <span style={{ fontSize: '13px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
         <br />
 
         <div style={{ fontSize: '18px', letterSpacing: '0px' }}> {props.byline.substring(0, 200) + '...'}</div>
@@ -184,7 +184,7 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'The Jauary Cyber Bootcamp',
+      head: 'The January Cyber Bootcamp',
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'DFAT',
       date: '29/01/20',
@@ -296,7 +296,8 @@ const podcasts = {
       author: 'Katherine Mansted and Dr Zac Rogers',
       date: '6/11/2019',
       imageSource: NatPodcast,
-      sizeName: 'col-md-3 col-xs-12'
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://crawford.anu.edu.au/news-events/news/15495/national-security-podcast-techlosophy-and-future-security'
     }
   }]
 }

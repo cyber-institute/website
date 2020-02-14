@@ -44,7 +44,6 @@ class Footer extends Component {
 
           <div className='purpleStrip fontSize16px-xs'>
             <p>
-    A STRATEGIC INITIATIVE OF THE AUSTRALIAN NATIONAL UNIVERSITY
             </p>
           </div>
         </div>

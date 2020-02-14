@@ -33,7 +33,7 @@ export default ({ banner, title, subTitle, headings }) =>
             backgroundSize: 'cover',
             backgroundPosition: '50% 0%',
             backgroundImage: `url(${banner})`,
-            opacity: 0.3
+            opacity: 0.5
           }}
         />
       </div>
