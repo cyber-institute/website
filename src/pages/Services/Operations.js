@@ -92,7 +92,7 @@ We have three broad areas we wish to address; within each there are a range of s
       </div>
       <div
         className='row columnReverse-sm' style={{
-          marginTop: '4rem'
+          marginTop: 'marginTop4rem-md'
         }}
       >
         <div className='col-md-offset-1 col-md-4 margin4RemAuto-sm'>
