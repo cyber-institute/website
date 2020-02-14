@@ -9,9 +9,9 @@ class Footer extends Component {
       <>
         <style />
 
-        <div className='footerContainer' style={{'margin-top':'500px'}} />
+        <div className='footerContainer' style={{'margin-top':'200px'}} />
 
-        <div className='textContainer'>
+        <div className='textContainer' style={{'margin-top':'200px'}}>
           <div className='footerText'>
             <p className='fontSize16px-xs'>
         +61 2 6125 7802

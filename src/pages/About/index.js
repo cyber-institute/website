@@ -4,9 +4,9 @@ import Banner from '../common/Banner'
 
 import banner from './bannerabout.jpg'
 import anu from './anu.png'
-import people from './Moving People.jpg'
-import traffic from './Traffic Long Exposure.jpg'
-import aus from './australia-satellite-imagery-map.jpg'
+import people from './about_people.jpg'
+import traffic from './about_lines.jpg'
+import aus from './about_australia.jpg'
 
 const headings = [
 ]
@@ -27,6 +27,7 @@ export default () =>
         >
           <img
             src={anu} className='width100'
+            style={{'box-shadow': '5px 5px 10px grey'}}
           />
           <div style={{
             position: 'relative',
@@ -176,7 +177,7 @@ export default () =>
             position: 'relative'
           }}
         >
-          <img src={people} className='width100' />
+          <img src={people} className='width100' style={{'box-shadow': '5px 5px 10px grey'}}/>
           <div
             className='dottedLineHorizontal' style={{
               position: 'absolute',
@@ -215,7 +216,7 @@ export default () =>
             zIndex: '-1'
           }}
           />
-          <img src={traffic} className='width100' />
+          <img src={traffic} className='width100' style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
       </div>
       <div className='row'>
@@ -235,7 +236,7 @@ export default () =>
         }}
       >
         <div className='col-md-6'>
-          <img src={aus} className='width100' />
+          <img src={aus} className='width100' style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
         <div
           className='col-md-5' style={{

@@ -18,15 +18,15 @@ import Services from './pages/Services'
 import People from './pages/People'
 import FourOFour from './404/404'
 import CITwhite from '../img/CITwhite.jpg'
+import Hamburger from './../img/Hamburger_icon.png'
 
 import ScrollUp from './pages/common/ScrollUp'
 
-import { Route, Link, BrowserRouter as Router, HashRouter } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './flexboxgrid.css'
 import './style.css'
-import { Switch } from '@material-ui/core'
 
 
 const useStyles = makeStyles(theme => ({
@@ -82,7 +82,7 @@ export default function FadeMenu() {
 
   return (
     <div className="mobile-only" style={{"width": "100%", float: "right"}}>
-      <img src="./../img/Hamburger_icon.png" style={{ width: '25px', float: 'right', paddingRight: '2rem'}} onClick={handleClick} aria-controls="fade-menu" aria-haspopup="true"/>
+      <img src={Hamburger} style={{ width: '25px', float: 'right', paddingRight: '2rem'}} onClick={handleClick} aria-controls="fade-menu" aria-haspopup="true"/>
       <Menu
         id="fade-menu"
         anchorEl={anchorEl}
@@ -128,12 +128,14 @@ class App extends Component {
         </AppBar>
       </ElevationScroll>
       <ScrollUp>
+        <Switch>
       <Route exact path="/news" component={News} />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/services" component={Services} />
       <Route exact path="/people" component={People} />
-      <Route path="/404" component={FourOFour} />
+      <Route component={FourOFour} />
+      </Switch>
       </ScrollUp>
       </Router>
     </div>
