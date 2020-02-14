@@ -31,7 +31,7 @@ export default ({ image1, image2, image3 }) =>
         className='row marginTop4rem-md'
       >
         <div className='col-md-5 margin4RemAuto-sm'>
-          <Image img={image1} />
+          <Image img={image1} style={{'box-shadow': '5px 5px 10px grey'}}/>
         </div>
         <div className='col-md-6'>
           <p>
@@ -87,7 +87,7 @@ We have three broad areas we wish to address; within each there are a range of s
           </p>
         </div>
         <div className='col-md-5 margin4RemAuto-sm'>
-          <Image img={image2} />
+          <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
       </div>
       <div
@@ -96,7 +96,7 @@ We have three broad areas we wish to address; within each there are a range of s
         }}
       >
         <div className='col-md-offset-1 col-md-4 margin4RemAuto-sm'>
-          <Image img={image3} />
+          <Image img={image3} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
         <div className='col-md-6'>
           <p style={{'margin-right':'3.5rem'}}>

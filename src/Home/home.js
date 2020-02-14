@@ -44,7 +44,7 @@ class Home extends Component {
         <BodyMenuItemSwapped
           top='02 Team'
           heading='Meet the Team'
-          text='Want a career at the Cyber Institute?'
+          text='Experience shows that cyber is deeply human. It is about our motives, skills, and capabilities; our intent and how we use, or are used by technology; the culture in which we are embedded; and the expectations of nations. People matter, and people are at the heart at the Cyber Institute.'
           buttonText='Find out more'
           img={team}
           transforms

@@ -4,10 +4,11 @@ import ReactDOM from 'react-dom'
 import SlideToggleContent from './../ContentSlider/SlideToggleContent'
 import ViewMoreButton from './../ContentSlider/ViewMoreButton'
 
-
+import Banner from '../common/Banner'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../style.css'
 
+import banner from './bannernewsandevents.jpg'
 import RaisinaDialogue from '../../img/raisina_dialogue.jpg'
 import SingaporeCyber from '../../img/singapore_cyber.jpg'
 import CyberBootcamp from '../../img/cyber_bootcamp.png'
@@ -22,10 +23,51 @@ import TechDivide from '../../img/tech_divide.jpg'
 import BlackBoxArrow from '../../img/black box arrow.png'
 import { relative } from 'path';
 
+const headings = [
+]
 
 
+function getHeadingWidth(text) { 
+  
+  text = document.createElement("span"); 
+  document.body.appendChild(text); 
 
+  text.style.font = "Roboto"; 
+  text.style.fontSize = 28 + "px"; 
+  text.style.height = 'auto'; 
+  text.style.width = 'auto'; 
+  text.style.position = 'absolute'; 
+  text.style.whiteSpace = 'no-wrap'; 
+  text.innerHTML = 'Hello World'; 
 
+  width = Math.ceil(text.clientWidth); 
+  formattedWidth = width + "px"; 
+
+  document.querySelector('.output').textContent 
+          = formattedWidth; 
+          return formattedWidth;
+} 
+
+function getBodyWidth(text) { 
+  
+  text = document.createElement("span"); 
+  document.body.appendChild(text); 
+
+  text.style.font = "Roboto"; 
+  text.style.fontSize = 18 + "px"; 
+  text.style.height = 'auto'; 
+  text.style.width = 'auto'; 
+  text.style.position = 'absolute'; 
+  text.style.whiteSpace = 'no-wrap'; 
+  text.innerHTML = 'Hello World'; 
+
+  width = Math.ceil(text.clientWidth); 
+  formattedWidth = width + "px"; 
+
+  document.querySelector('.output').textContent 
+          = formattedWidth; 
+          return formattedWidth;
+} 
 
 
 const CompLabel = (props) => (
@@ -95,16 +137,20 @@ const Image = (props) => (
 
 const DateBox = (props) => (
   <div className="Datebox-component" style={{margin : '1rem'}}>
-    <div style={{float: "left", width: "20%", height: "200px", marginRight: "3rem", border: "1px solid rgba(0, 0, 0, .2)", textAlign: "center", "text-transform": "uppercase"}}>
+    <div class="row">
+    <div class="col-md-2 col-xs-12">
+    <div style={{float: "left", width: "90%", height: "200px", marginLeft:'1rem',  border: "1px solid rgba(0, 0, 0, .2)", textAlign: "center", "text-transform": "uppercase"}}>
       <span style={{fontSize: "84px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.day}</span>
       <br />
       <span style={{fontSize: "52px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.month}</span>
     </div>
-    <div style={{overflow: 'hidden'}}>
+    </div>
+    <div class="col-md-9 col-xs-12" style={{overflow: 'hidden', marginLeft: '1rem', marginRight:'1rem'}}>
     <span style={{fontSize: "35px", color: "#000", letterSpacing: '0px'}}><b>{props.title}</b></span>
       <p style={{fontSize: "15px"}}>{props.date} {props.time}</p>
       {props.description}<br />
       <span style={{fontSize: "18px", color: "#000", letterSpacing: '0px'}}>{props.signupText} <a href src={props.link}>{props.link}</a></span>
+    </div>
     </div>
   </div>
 );
@@ -119,12 +165,12 @@ const NewsArticle = (props) => (
     <br />
     <div style={{maxHeight: "285px", overflow: 'hidden'}}>
       <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
-<p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px'}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
+<p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px', bottom :"0"}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
 <br />
 
-<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline}</div>
+<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline.substring(0,250) + "..."}</div>
 </div>
-<div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
+<div style={{textAlign: 'right'}}><img style={{"max-width": "8%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
     </div>
   </div>
 );
@@ -139,7 +185,7 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'The January Cyber Bootcamp',
+      head: 'The Jauary Cyber Bootcamp',
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'DFAT',
       date: '29/01/20',
@@ -386,6 +432,7 @@ const stock = {
 };
 
 
+
 class Section1 extends React.Component {
   
   get root() {
@@ -483,14 +530,16 @@ class News extends Component {
   render () {
     return (
       <>
+      <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
       <div style={{fontFamily: 'Roboto, sans-serif'}}>
         <div class="News">
         <div class="News">
+          <div class="container-fluid">
           <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>News</h1></div>
-          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
-            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="News" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>News</h2></div>
+          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
+          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           </div>
           <div class="col-xs-13">
@@ -529,10 +578,12 @@ class News extends Component {
         <div class="Events">
           <br />
           <br />
+          <div class="container-fluid">
           <div class="row">
-          <div class="col-xs-2"></div><div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Events</h1></div>
-          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
-            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="Events" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>Events</h2></div>
+          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
+          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           </div>
           <div class= 'row'>
@@ -579,11 +630,12 @@ class News extends Component {
       </div>
         <div class="Media">
         <div class="Media">
+          <div class="container-fluid">
           <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h1 style={{color:"#523178", fontSize: '60px', letterSpacing: '0.15px'}}>Media</h1></div>
-          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
-            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="Courses" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>Media</h2></div>
+          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
+          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          </div>
           </div>
           </div>
           <div class="row">
@@ -667,7 +719,7 @@ class News extends Component {
         <div class="Podcasts">
         <div class="row">
           <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%"}}>Podcasts</h2></div>
+          <div class="col-xs-9" ><h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%", marginTop: '6rem'}}>Podcasts</h2></div>
           <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
             <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
           </div>

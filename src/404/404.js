@@ -15,7 +15,7 @@ render(){
                 You seem a bit lost...</h1>
 
                 <p style={{'font-family': 'Roboto,Arial, Helvetica, sans-serif','font-size': '24px', color: '#000', 'font-weight': '300'}}>
-                ...and you might have stumbled accross one of our under-construction web pages. There's 
+                ...and you might have stumbled across one of our under-construction web pages. There's 
                 nothing much else to see here, but feel free to either go back to the home page or have a
                  poke around our construction site.
                 </p>

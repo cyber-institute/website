@@ -23,7 +23,7 @@ export default () =>
         className='row center-xs middle-xs'
       >
         <div
-          className='col-md-offset-1 col-md-4 col-xs-11'
+          className='col-md-4 col-xs-11'
         >
           <img
             src={anu} className='width100'
@@ -80,7 +80,8 @@ export default () =>
               'font-weight': '900',                
               color: '#523178',
               'padding-bottom':'25px',
-              'padding-top':'35px'
+              'padding-top':'35px',
+              'text-align':'left'
             }}
           >
             As a strategic initiative of the Australian National University,
@@ -88,7 +89,8 @@ export default () =>
           <p style={{
             position: 'relative',
             bottom: '0',
-            'padding-top':'25px'
+            'padding-top':'25px',
+            'text-align':'left'
           }}
           >
             the Cyber Institute brings a new approach to the challenges presented by cyber and cyber security to people, communities, industries and governments.

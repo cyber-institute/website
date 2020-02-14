@@ -49,10 +49,10 @@ for (let i = 0; i < NUM_LINES; i++) {
     lines[i][j] = 200 * Math.sin(j * 3 / 4 * Math.PI / (SIZE - 1) + i * Math.PI / NUM_LINES)
   }
 }
+let requestId = undefined;
 
 function main_loop () {
     canvas.style.display="initial";
-    var requestId = undefined;
         for (let k=0; k<CLOCKS; k++) {
           for (let i=0; i<NUM_LINES; i++) {
             let prev_point = lines[i][0];
@@ -95,22 +95,21 @@ function main_loop () {
         ctx.stroke();
         if(window.location.pathname == "/")
         {
-            requestId = requestAnimationFrame(main_loop);
+          requestId = requestAnimationFrame(main_loop);
         }
         else{
             window.cancelAnimationFrame(requestId);
             canvas.style.display="none";
-            //document.body.removeChild(canvas);
         }
     }
 
 class Swirl extends Component {
 
 
-  render () {   
+  render () {   window.requestAnimationFrame(main_loop) 
     return (
       <>
-       {window.requestAnimationFrame(main_loop)}
+       {}
       </>
     )
   }
