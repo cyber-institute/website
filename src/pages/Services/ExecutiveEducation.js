@@ -18,7 +18,7 @@ export default ({ image1, image2 }) =>
         Executive Education
         </h2>
         <p>
-      The pace of change in cyber is high. Business risks and organisational resilience are increasingly driven by, or are susceptible to, cyber threats or incidents. Technical and non-technical professionals rely on expert advice or knowledge gathered through running their businesses to inform their decision-making. The Cyber Institute delivers modules drawn from the <span style={{'font-weight':'700', color: '#523178'}}>Cyber Masters as Executive Education sessions</span>. These can be customised sessions to meet the needs of specific target groups.<br/>
+      The pace of change in cyber is high. Business risks and organisational resilience are increasingly driven by, or are susceptible to, cyber threats or incidents. Technical and non-technical professionals rely on expert advice or knowledge gathered through running their businesses to inform their decision-making. The Cyber Institute delivers modules drawn from the <span style={{'font-weight':'700', color: '#523178'}}>Cyber Masters as Executive Education sessions</span>. These can be customised sessions to meet the needs of specific target groups.<br/><br/>
       Here are some examples of our <span style={{'font-weight':'700', color:'#523178'}}>Executive Education Programs</span>:
         </p>
       </div>
