@@ -385,6 +385,47 @@ const stock = {
   DateBox
 };
 
+function getHeadingWidth(text) { 
+  
+  text = document.createElement("span"); 
+  document.body.appendChild(text); 
+
+  text.style.font = "times new roman"; 
+  text.style.fontSize = 16 + "px"; 
+  text.style.height = 'auto'; 
+  text.style.width = 'auto'; 
+  text.style.position = 'absolute'; 
+  text.style.whiteSpace = 'no-wrap'; 
+  text.innerHTML = 'Hello World'; 
+
+  width = Math.ceil(text.clientWidth); 
+  formattedWidth = width + "px"; 
+
+  document.querySelector('.output').textContent 
+          = formattedWidth; 
+          return formattedWidth;
+} 
+
+function getHeadingWidth(text) { 
+  
+  text = document.createElement("span"); 
+  document.body.appendChild(text); 
+
+  text.style.font = "times new roman"; 
+  text.style.fontSize = 16 + "px"; 
+  text.style.height = 'auto'; 
+  text.style.width = 'auto'; 
+  text.style.position = 'absolute'; 
+  text.style.whiteSpace = 'no-wrap'; 
+  text.innerHTML = 'Hello World'; 
+
+  width = Math.ceil(text.clientWidth); 
+  formattedWidth = width + "px"; 
+
+  document.querySelector('.output').textContent 
+          = formattedWidth; 
+          return formattedWidth;
+} 
 
 class Section1 extends React.Component {
   
