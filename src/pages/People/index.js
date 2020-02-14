@@ -23,6 +23,9 @@ import hamish from '../../../img/hamish_hawthorn.jpg'
 import deb from '../../../img/deborah_anton.jpg'
 
 const headings = [
+  'Meet the Team',
+  'Careers',
+  'Advisory Board'
 ]
 
 class People extends Component {
@@ -50,7 +53,7 @@ class People extends Component {
           className='container-fluid positionRelative'
         >
           <div className='mainBody'>
-            <h1>Meet the Team</h1>
+            <h1 id='Meet the Team'>Meet the Team</h1>
           </div>
           <div
             className='dottedLineHorizontal' style={{
@@ -161,21 +164,36 @@ class People extends Component {
         <div
           className='container-fluid positionRelative'
         >
-          <hr style={{ position: 'relative', top: '155px', marginRight: 0, borderTop: '2px dashed #523178', borderBottom: 'transparent', width: '85%' }} />
-          <div className='mainBody'>
-            <h1>Advisory Board</h1>
-          </div>
-          <div>
-            <p>The Cyber Institute is governed under the Australian National University Act 1991 and the Public Governance, Performance &amp; Accountability Act 2013.&nbsp;&nbsp;
-              <br /><br />
+          <div
+            className='row positionRelative'
+          >
+            <div className='col-md-offset-1 col-md-10'>
+              <div className='mainBody'>
+                <h1 id='Advisory Board'>Advisory Board</h1>
+              </div>
+              <div
+                className='dottedLineHorizontal' style={{
+                  width: '91.666%',
+                  position: 'absolute',
+                  right: '-1rem'
+                }}
+              />
+              <div style={{
+                padding: '3rem 0'
+              }}
+              >
+                <p>The Cyber Institute is governed under the Australian National University Act 1991 and the Public Governance, Performance &amp; Accountability Act 2013.&nbsp;&nbsp;
+                  <br /><br />
           Organisationally, the Institute is an entity within the ANU College of Engineering and Computer Science.&nbsp; It also has a partnership with the ANU National Security College.&nbsp;&nbsp;
-              <br /><br />
+                  <br /><br />
           The Institute’s Advisory Board provides high quality objective advice to the CEO regarding the strategic intent and direction of the Institute, as well as its business plan and associated investment strategy.&nbsp;&nbsp;&nbsp;
-              <br /><br />
+                  <br /><br />
           The Advisory Board is chaired by the Vice Chancellor, Nobel Laureate Professor Brian Schmidt.
-            </p>
-            <PersonsGrid />
+                </p>
+              </div>
+            </div>
           </div>
+          <PersonsGrid />
         </div>
       </>
     )
@@ -227,7 +245,7 @@ const Careers = () => {
         }}
       >
         <div className='col-xs-12 col-md-5 first-md'>
-          <h1>Careers</h1>
+          <h1 id='Careers'>Careers</h1>
           <div
             className='dottedLineHorizontalWhite' style={{
               width: '100%',
