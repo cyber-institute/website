@@ -27,6 +27,7 @@ export default () =>
         >
           <img
             src={anu} className='width100'
+            style={{'box-shadow': '5px 5px 10px grey'}}
           />
           <div style={{
             position: 'relative',
