@@ -18,7 +18,8 @@ export default ({ image1, image2 }) =>
         Executive Education
         </h2>
         <p>
-      The pace of change in cyber is high. Business risks and organisational resilience are increasingly driven by, or are susceptible to, cyber threats or incidents. Technical and non-technical professionals rely on expert advice or knowledge gathered through running their businesses to inform their decision-making. The Cyber Institute delivers modules drawn from the Cyber Masters as Executive Education sessions. These can be customised sessions to meet the needs of specific target groups.
+      The pace of change in cyber is high. Business risks and organisational resilience are increasingly driven by, or are susceptible to, cyber threats or incidents. Technical and non-technical professionals rely on expert advice or knowledge gathered through running their businesses to inform their decision-making. The Cyber Institute delivers modules drawn from the <span style={{'font-weight':'700', color: '#523178'}}>Cyber Masters as Executive Education sessions</span>. These can be customised sessions to meet the needs of specific target groups.<br/>
+      Here are some examples of our <span style={{'font-weight':'700', color:'#523178'}}>Executive Education Programs</span>:
         </p>
       </div>
     </div>
@@ -32,7 +33,7 @@ export default ({ image1, image2 }) =>
           <div className='row positionRelative'>
             <div className='col-md-offset-1 col-md-7'>
               <p>
-            A flagship activity of the Department of Foreign Affairs and Trade’s Cyber Cooperation Program, the Cyber Bootcamps Program is delivered by the Cyber Institute in partnership with the National Security College. The Bootcamps combine international best practice with first-hand expertise from Australia’s cyber policy and operational specialists across government, academia and the private sector.
+            A flagship activity of the Department of Foreign Affairs and Trade’s Cyber Cooperation Program, the <span style={{'font-weight':'700', color:'#523178'}}>Cyber Bootcamps Program is delivered by the Cyber Institute in partnership with the National Security College</span>. The Bootcamps combine international best practice with first-hand expertise from Australia’s cyber policy and operational specialists across government, academia and the private sector.
               </p>
               <br />
               <br />
