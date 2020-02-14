@@ -18,8 +18,7 @@ export default ({ banner, title, subTitle, headings }) =>
         zIndex: '0',
         height: '100%',
         clipPath: 'polygon(50% 100%, 100% 40%, 100% 0, 0 0, 0 40%)',
-        backgroundColor: '#000',
-        'box-shadow': '5px 5px 10px grey'
+        backgroundColor: '#000'
       }}
       >
         <picture
