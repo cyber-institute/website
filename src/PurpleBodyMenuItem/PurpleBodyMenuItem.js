@@ -3,9 +3,11 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight'
 
+import { Link } from 'react-router-dom'
+
 import background from '../Home/background1.png'
 
-export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms }) {
+export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms, link }) {
   return (
     <div
       style={{
@@ -76,19 +78,21 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
               {text}
             </div>
           </div>
-          <Button
-            variant='outlined' style={{
-              margin: '3rem 0',
-              color: '#fff',
-              borderColor: '#fff',
-              textTransform: 'none',
-              fontFamily: 'Helvetica Neue LT Std 65 Medium',
-              fontSize: '14px'
-            }}
-          >
-            {buttonText}
-            <ArrowRightIcon />
-          </Button>
+          <Link to={link}>
+            <Button
+              variant='outlined' style={{
+                margin: '3rem 0',
+                color: '#fff',
+                borderColor: '#fff',
+                textTransform: 'none',
+                fontFamily: 'Helvetica Neue LT Std 65 Medium',
+                fontSize: '14px'
+              }}
+            >
+              {buttonText}
+              <ArrowRightIcon />
+            </Button>
+          </Link>
         </div>
         <div className='col-lg-4 col-md-5' style={{ overflow: 'hidden' }}>
           <img

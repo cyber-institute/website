@@ -3,7 +3,9 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight'
 
-export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms }) {
+import { Link } from 'react-router-dom'
+
+export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms, link }) {
   return (
     <div
       className='container-fluid homeItemMarginTop'
@@ -50,19 +52,21 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
               {text}
             </div>
           </div>
-          <Button
-            variant='outlined' style={{
-              margin: '3rem 0',
-              color: '#523178',
-              borderColor: '#523178',
-              textTransform: 'none',
-              fontFamily: 'Helvetica Neue LT Std 65 Medium',
-              fontSize: '14px'
-            }}
-          >
-            {buttonText}
-            <ArrowRightIcon />
-          </Button>
+          <Link to={link}>
+            <Button
+              variant='outlined' style={{
+                margin: '3rem 0',
+                color: '#523178',
+                borderColor: '#523178',
+                textTransform: 'none',
+                fontFamily: 'Helvetica Neue LT Std 65 Medium',
+                fontSize: '14px'
+              }}
+            >
+              {buttonText}
+              <ArrowRightIcon />
+            </Button>
+          </Link>
         </div>
         <div className='col-lg-2 col-md-1' />
       </div>
