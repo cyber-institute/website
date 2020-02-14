@@ -107,14 +107,14 @@ export default ({ image1, image2 }) =>
           </p>
         </div>
         <div className='col-md-3 margin4RemAuto-sm'>
-          <Image img={image1} />
+          <Image img={image1} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
       </div>
       <div
         className='row positionRelative marginTop4rem-md'
       >
         <div className='col-md-3 margin4RemAuto-sm'>
-          <Image img={image2} />
+          <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
         <div
           className='col-md-8 rightAlign-md'
