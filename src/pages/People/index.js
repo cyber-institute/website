@@ -50,90 +50,87 @@ class People extends Component {
       <>
         <Banner {...{ banner, headings }} title='Our People' subTitle='Cyber is a team effort' />
         <div
-          className='container-fluid positionRelative'
+          className='container-fluid'
         >
-          <div className='mainBody'>
-            <h1 id='Meet the Team'>Meet the Team</h1>
-          </div>
-          <div
-            className='dottedLineHorizontal' style={{
-              width: 'calc(100% - 2rem)',
-              position: 'absolute',
-              right: 0
-            }}
-          />
-          <div style={{ width: '100%', position: 'relative', paddingTop: '3rem' }}>
-            <div className='mainBody'>
-              <h2 style={{ right: '0%', top: '-200px' }}>CEO</h2>
-              <div className='row around-xs' style={{ position: 'relative' }}>
-                <div className='col-xs-12 col-md-5' style={{ top: '200px' }}>
-                  <img src={Lesley} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
-                  <hr className='greyLine' style={{ position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: '-20' }} />
-                </div>
-                <div className='col-xs-12 col-md-5' style={{ paddingTop: '20px' }}>
-                  <p><span className='bigEmphasis' style={{ 'font-weight': '700' }}>"Rarely do you have the opportunity to shape a national endeavor.</span>
-                    <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
-                    <br /><br />Dealing with cyber intrusions reinforced my conviction that cyber is fundamentally about the human;&nbsp;that it currently represents an existential challenge to liberal, democratic societies, and that we need new, interdisciplinary approaches to tackling the problems cyber can create.&nbsp;
-                    <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
-                    <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
-                  </p>
-                  <h3 style={{'margin-top':'30px'}}>CEO, Professor Lesley Seebeck</h3>
-                  <p>Prof. Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.   Most recently, she was Chief Investment and Advisory Officer at the Digital Transformation Agency, arriving there from the Bureau of Meteorology where she served as Chief Information Officer from mid 2014 to late 2017.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Naval Shipbuilding Advisory Board.</p>
-                  <p>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia.   She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
-                </div>
-              </div>
+          <div className='mainBody row positionRelative'>
+            <div className='col-md-offset-1 col-md-10'>
+              <h1 id='Meet the Team'>Meet the Team</h1>
+              <div
+                className='dottedLineHorizontal' style={{
+                  width: '91.666%',
+                  position: 'absolute',
+                  right: '-1rem'
+                }}
+              />
             </div>
           </div>
-          <div style={{ width: '100%', position: 'relative', paddingTop: '200px' }}>
-            <div className='mainBody'>
-              <h2 style={{ left: '0%', top: '-200px' }}>COO</h2>
-              <div className='row around-xs' style={{ position: 'relative' }}>
-                <div className='col-xs-12 col-md-5 first-md' style={{ paddingTop: '20px', left: '0' }}>
-                  <h3>Cyber Institute COO, Ree Kent</h3>
-                  <p>
+          <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem' }}>
+            <h2 style={{ right: '0%', top: '-200px' }}>CEO</h2>
+            <div className='col-xs-12 col-md-5 col-md-offset-1' style={{ top: '200px' }}>
+              <img src={Lesley} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
+              <hr className='greyLine' style={{ position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: '-20' }} />
+            </div>
+            <div className='col-xs-12 col-md-5' style={{ paddingTop: '20px' }}>
+              <p><span className='bigEmphasis' style={{ 'font-weight': '700' }}>"Rarely do you have the opportunity to shape a national endeavor.</span>
+                <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
+                <br /><br />Dealing with cyber intrusions reinforced my conviction that cyber is fundamentally about the human;&nbsp;that it currently represents an existential challenge to liberal, democratic societies, and that we need new, interdisciplinary approaches to tackling the problems cyber can create.&nbsp;
+                <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
+                <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
+              </p>
+              <h3 style={{ 'margin-top': '30px' }}>CEO, Professor Lesley Seebeck</h3>
+              <p>Prof. Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018. Most recently, she was Chief Investment and Advisory Officer at the Digital Transformation Agency, arriving there from the Bureau of Meteorology where she served as Chief Information Officer from mid 2014 to late 2017. She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Naval Shipbuilding Advisory Board.</p>
+              <p>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia. She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
+            </div>
+          </div>
+          <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem' }}>
+            <h2 style={{ left: '0%', top: '-200px' }}>COO</h2>
+            <div className='col-xs-12 col-md-5 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
+              <h3>Cyber Institute COO, Ree Kent</h3>
+              <p>
                     Ree joined the Cyber Institute in late 2018 from the Bureau of Meteorology (BoM) where she held a
                   number of roles, including Head of the Office of the Chief Information Officer. Prior to the BoM,
                   Ree worked in business improvement and information technology transformation programs in state and
                   federal government agencies. Ree was also the Heritage Manager at Old Parliament House where she
                   led the successful nomination of the site for the National Heritage List.
-                    <br />
-                    <br />
+                <br />
+                <br />
                   Ree holds a Bachelor of Applied Science in Cultural Heritage Management from the University
                   of Canberra, and has a background in stakeholder engagement, business process improvement, workshop
                   facilitation, program delivery, governance and change management.  Ree is the Cyber Institute’s COO.
-                  </p>
-                </div>
-                <div className='col-xs-12 col-md-5 first-xs' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle3} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Ree Kent' />
-                  <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: 'calc(100% - 2rem)', zIndex: '-20' }} />
-                </div>
-              </div>
+              </p>
+            </div>
+            <div className='col-xs-12 col-md-5' style={{ position: 'relative', right: '0' }}>
+              <img src={Puzzle3} style={{ width: '100%' }} alt='Puzzle piece representing Ree Kent' />
+              <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: 'calc(100% - 2rem)', zIndex: '-20' }} />
             </div>
           </div>
-          <div className='mainBody'>
-            <h1 style={{ textAlign: 'right' }}>Staff Showcase</h1>
+
+          <div className='mainBody row positionRelative' style={{ paddingTop: '3rem' }}>
+            <div className='col-xs-12 col-md-11'>
+              <h1 style={{ textAlign: 'right' }}>Staff Showcase</h1>
+              <div
+                className='dottedLineHorizontal' style={{
+                  width: '91.666%',
+                  position: 'absolute',
+                  left: '-1rem'
+                }}
+              />
+            </div>
           </div>
-          <div
-            className='dottedLineHorizontal' style={{
-              width: 'calc(100% - 2rem)',
-              position: 'absolute',
-              left: 0
-            }}
-          />
-          <div style={{ width: '100%', position: 'relative', paddingTop: '3rem' }}>
-            <div className='mainBody'>
-              <p style={{ textAlign: 'center' }}><span className='bigEmphasis'>At the Cyber Institute, <span style={{ fontWeight: 'bolder', color: '#523178', fontSize: '50px' }}>people</span> are at the heart of what we do.</span></p>
-              <p><br />Here are some of our fantastic team members this month, who make the Cyber Institute, its research,
+          <div className='row around-xs mainBody col-md-10 col-md-offset-1' style={{ paddingTop: '3rem' }}>
+            <p style={{ textAlign: 'center' }}><span className='bigEmphasis'>At the Cyber Institute, <span style={{ fontWeight: 'bolder', color: '#523178', fontSize: '50px' }}>people</span> are at the heart of what we do.</span></p>
+            <p><br />Here are some of our fantastic team members this month, who make the Cyber Institute, its research,
               education, innovation and delivery programs happen:&nbsp;
-              </p>
-              <div className='row around-xs' style={{ marginTop: '50px' }}>
-                <div className='col-xs-9 col-md-3' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle2} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Stehpanie' />
-                  <hr className='greyLine' style={{ position: 'absolute', top: '25%', left: '-80%', width: '100%', zIndex: '-20' }} />
-                </div>
-                <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
-                  <h4 style={{'padding-bottom':'15px'}}>Stephanie, Cyber Institute Research Fellow</h4>
-                  <p>Meet Dr Stephanie Koorey who started with the Cyber Institute in January 2020. Dr Koorey was awarded her PhD
+            </p>
+          </div>
+          <div className='row around-xs' style={{ marginTop: '50px' }}>
+            <div className='col-xs-9 col-md-3' style={{ position: 'relative', right: '0' }}>
+              <img src={Puzzle2} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
+              <hr className='greyLine' style={{ position: 'absolute', top: '25%', left: '-80%', width: '100%', zIndex: '-20' }} />
+            </div>
+            <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
+              <h4 style={{ 'padding-bottom': '15px' }}>Stephanie, Cyber Institute Research Fellow</h4>
+              <p>Meet Dr Stephanie Koorey who started with the Cyber Institute in January 2020. Dr Koorey was awarded her PhD
                   from the ANU’s Strategic and Defence Studies Centre in 2009, for a thesis on small arms control and violent
                   non-state armed groups. <br /><br />She subsequently spent eight years developing and delivering components of the curriculum
                   for the senior course and short courses at the Centre for Defence and Strategic Studies, now the Australian War
@@ -142,23 +139,21 @@ class People extends Component {
                   leaderless resistance, future conflict, and emerging security challenges in the Indo-Pacific. Her current projects
                   with the Cyber Institute include the formation of the Menzies Cyber Law Executive Education module with the ANU
                   College of Law and the development of modules for the micro-credentialed Cyber Masters.&nbsp;
-                  </p>
-                </div>
-              </div>
-              <div className='row around-xs' style={{ marginTop: '50px' }}>
-                <div className='col-xs-12 col-md-7 first-md' style={{ paddingTop: '20px', left: '0' }}>
-                  <h4 style={{'padding-bottom':'15px'}}>Brendan, Cyber Institute Research Assistant</h4>
-                  <p>Meet Brendan who started with the Cyber Institute in January of 2019.
+              </p>
+            </div>
+          </div>
+          <div className='row around-xs' style={{ marginTop: '50px' }}>
+            <div className='col-xs-12 col-md-7 first-md' style={{ paddingTop: '20px', left: '0' }}>
+              <h4 style={{ 'padding-bottom': '15px' }}>Brendan, Cyber Institute Research Assistant</h4>
+              <p>Meet Brendan who started with the Cyber Institute in January of 2019.
                   Brendan is currently helping with delivery of the Cyber Bootcamp Project which aims to improve international cyber
                   cooperation between Australia, ASEAN and the Pacific. Brendan is studying a Bachelor of Arts and a Bachelor of Science at
                   the ANU, with a focus in human biology, Australian Indigenous studies and anthropology.
-                  </p>
-                </div>
-                <div className='col-xs-9 col-md-3 first-xs' style={{ position: 'relative', right: '0' }}>
-                  <img src={Puzzle1} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Puzzle piece representing Stehpanie' />
-                  <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: '100%', zIndex: '-20' }} />
-                </div>
-              </div>
+              </p>
+            </div>
+            <div className='col-xs-9 col-md-3 first-xs' style={{ position: 'relative', right: '0' }}>
+              <img src={Puzzle1} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
+              <hr className='greyLine' style={{ position: 'absolute', top: '50%', width: '100%', zIndex: '-20' }} />
             </div>
           </div>
         </div>
@@ -270,8 +265,8 @@ const Careers = () => {
               <span style={{ fontWeight: 'bold', fontSize: '24px' }}> we are seeking those willing to tackle a challenge, go beyond traditional
               boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
               our democracy.
-              <br />
-              <br />
+                <br />
+                <br />
               </span>
             We are looking for people who are at ease with unconventionality, with finding and
             working in the interesting places that lie between disciplines.&nbsp; We value practical experience,
