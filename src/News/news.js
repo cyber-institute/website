@@ -1,6 +1,6 @@
- import React, { Component } from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-//import Section from './ContentSlider/Section'
+// import Section from './ContentSlider/Section'
 import SlideToggleContent from './../ContentSlider/SlideToggleContent'
 import ViewMoreButton from './../ContentSlider/ViewMoreButton'
 
@@ -22,7 +22,7 @@ import SecurityStrategy from '../../img/security_strategy.jpg'
 import TechDivide from '../../img/tech_divide.jpg'
 import BlackBoxArrow from '../../img/black box arrow.png'
 import NatPodcast from '../../img/nationalsecuritypodcast.jpg'
-import { relative } from 'path';
+import { relative } from 'path'
 
 const headings = [
   'News',
@@ -31,159 +31,152 @@ const headings = [
   'Podcasts'
 ]
 
+function getHeadingWidth (text) {
+  text = document.createElement('span')
+  document.body.appendChild(text)
 
+  text.style.font = 'Roboto'
+  text.style.fontSize = 28 + 'px'
+  text.style.height = 'auto'
+  text.style.width = 'auto'
+  text.style.position = 'absolute'
+  text.style.whiteSpace = 'no-wrap'
+  text.innerHTML = 'Hello World'
 
-function getHeadingWidth(text) { 
-  
-  text = document.createElement("span"); 
-  document.body.appendChild(text); 
+  width = Math.ceil(text.clientWidth)
+  formattedWidth = width + 'px'
 
-  text.style.font = "Roboto"; 
-  text.style.fontSize = 28 + "px"; 
-  text.style.height = 'auto'; 
-  text.style.width = 'auto'; 
-  text.style.position = 'absolute'; 
-  text.style.whiteSpace = 'no-wrap'; 
-  text.innerHTML = 'Hello World'; 
+  document.querySelector('.output').textContent =
+          formattedWidth
+  return formattedWidth
+}
 
-  width = Math.ceil(text.clientWidth); 
-  formattedWidth = width + "px"; 
+function getBodyWidth (text) {
+  text = document.createElement('span')
+  document.body.appendChild(text)
 
-  document.querySelector('.output').textContent 
-          = formattedWidth; 
-          return formattedWidth;
-} 
+  text.style.font = 'Roboto'
+  text.style.fontSize = 18 + 'px'
+  text.style.height = 'auto'
+  text.style.width = 'auto'
+  text.style.position = 'absolute'
+  text.style.whiteSpace = 'no-wrap'
+  text.innerHTML = 'Hello World'
 
-function getBodyWidth(text) { 
-  
-  text = document.createElement("span"); 
-  document.body.appendChild(text); 
+  width = Math.ceil(text.clientWidth)
+  formattedWidth = width + 'px'
 
-  text.style.font = "Roboto"; 
-  text.style.fontSize = 18 + "px"; 
-  text.style.height = 'auto'; 
-  text.style.width = 'auto'; 
-  text.style.position = 'absolute'; 
-  text.style.whiteSpace = 'no-wrap'; 
-  text.innerHTML = 'Hello World'; 
-
-  width = Math.ceil(text.clientWidth); 
-  formattedWidth = width + "px"; 
-
-  document.querySelector('.output').textContent 
-          = formattedWidth; 
-          return formattedWidth;
-} 
-
+  document.querySelector('.output').textContent =
+          formattedWidth
+  return formattedWidth
+}
 
 const CompLabel = (props) => (
-  <div className="complabel-component">
+  <div className='complabel-component'>
     Component: <b>{props.label}</b>
   </div>
-);
+)
 
 const Cover = (props) => (
-  <div className="cover-component">
-    <CompLabel label="Cover" />
-    <h1 className="cover-head">
+  <div className='cover-component'>
+    <CompLabel label='Cover' />
+    <h1 className='cover-head'>
       {props.head}
     </h1>
-    <p className="cover-byline">
+    <p className='cover-byline'>
       {props.byline}
     </p>
   </div>
-);
+)
 
 const Copy = (props) => (
-  <div className="copy-component">
-    <CompLabel label="Copy" />
+  <div className='copy-component'>
+    <CompLabel label='Copy' />
     <div>{props.content}</div>
   </div>
-);
+)
 
 const Channels = (props) => (
-  <div className="channels-component">
-    <CompLabel label="Channels" />
+  <div className='channels-component'>
+    <CompLabel label='Channels' />
     <div>{props.children}</div>
   </div>
-);
+)
 
 const Twitter = (props) => (
-  <div className="twitter-component">
-    <CompLabel label="Twitter" />
+  <div className='twitter-component'>
+    <CompLabel label='Twitter' />
     <div>
       Twitter:&nbsp;
-      <a href={`https://twitter.com/${props.handle}`} target ="_blank" rel="noopener noreferrer">
+      <a href={`https://twitter.com/${props.handle}`} target='_blank' rel='noopener noreferrer'>
         @{props.handle}
       </a>
     </div>
   </div>
-);
+)
 
 const Link = (props) => (
-  <div className="newsletter-component">
-    <CompLabel label="Link" />
+  <div className='newsletter-component'>
+    <CompLabel label='Link' />
     <div>
       Google:&nbsp;
-      <a href={props.subscribeUrl} target="_blank" rel="noopener noreferrer">
+      <a href={props.subscribeUrl} target='_blank' rel='noopener noreferrer'>
         {props.subscribeUrl}
       </a>
     </div>
   </div>
-);
+)
 
 const Image = (props) => (
-  <div className="Image-component">
-    <CompLabel label="Image" />
+  <div className='Image-component'>
+    <CompLabel label='Image' />
     <div>
       <img src={props.src} />
     </div>
   </div>
-);
+)
 
 const DateBox = (props) => (
-  <div className="Datebox-component" style={{margin : '1rem'}}>
-    <div class="row">
-    <div class="col-md-2 col-xs-12">
-    <div style={{float: "left", width: "90%", height: "200px", marginLeft:'1rem',  border: "1px solid rgba(0, 0, 0, .2)", textAlign: "center", "text-transform": "uppercase"}}>
-      <span style={{fontSize: "84px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.day}</span>
-      <br />
-      <span style={{fontSize: "52px", color: "#4D4D4D", letterSpacing: '0px'}}>{props.month}</span>
-    </div>
-    </div>
-    <div class="col-md-9 col-xs-12" style={{overflow: 'hidden', marginLeft: '1rem', marginRight:'1rem'}}>
-    <span style={{fontSize: "35px", color: "#000", letterSpacing: '0px'}}><b>{props.title}</b></span>
-      <p style={{fontSize: "15px"}}>{props.date} {props.time}</p>
-      {props.description}<br />
-      <span style={{fontSize: "18px", color: "#000", letterSpacing: '0px'}}>{props.signupText} <a href src={props.link}>{props.link}</a></span>
-    </div>
+  <div className='Datebox-component' style={{ margin: '1rem' }}>
+    <div class='row'>
+      <div class='col-md-2 col-xs-12'>
+        <div style={{ float: 'left', width: '90%', height: '200px', marginLeft: '1rem', border: '1px solid rgba(0, 0, 0, .2)', textAlign: 'center', 'text-transform': 'uppercase' }}>
+          <span style={{ fontSize: '84px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.day}</span>
+          <br />
+          <span style={{ fontSize: '52px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.month}</span>
+        </div>
+      </div>
+      <div class='col-md-9 col-xs-12' style={{ overflow: 'hidden', marginLeft: '1rem', marginRight: '1rem' }}>
+        <span style={{ fontSize: '35px', color: '#000', letterSpacing: '0px' }}><b>{props.title}</b></span>
+        <p style={{ fontSize: '15px' }}>{props.date} {props.time}</p>
+        {props.description}<br />
+        <span style={{ fontSize: '18px', color: '#000', letterSpacing: '0px' }}>{props.signupText} <a href src={props.link}>{props.link}</a></span>
+      </div>
     </div>
   </div>
-);
-
+)
 
 const NewsArticle = (props) => (
-  <div style={{textAlign: "left"}}>
+  <div style={{ textAlign: 'left' }}>
     <div>
-      <img src={props.imageSource} style={{"position": "relative", "top": "20px", "right": "65px", "max-width": "70%", "box-shadow": "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", "margin": "0px 0px 0px 10%"}} />
+      <img src={props.imageSource} style={{ position: 'relative', top: '20px', right: '65px', 'max-width': '70%', 'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px 0px 0px 10%' }} />
     </div>
-    <div className="NewsArticle marginAuto-xs" style={{textAlign: "left", "border-style": "solid",padding: "1rem", borderColor: "black", borderWidth: "1px", width: "70%", height: '370px'}} onClick={() => props.link && window.open(props.link, '_blank')}>
-    <br />
-    <div style={{maxHeight: "285px", overflow: 'hidden'}}>
-      <b style={{fontSize: "28px", letterSpacing: '0px', color: '#000'}}>{props.head}</b><br />
-<p style={{fontSize: "15px", textAlign:"left", letterSpacing :'0px', bottom :"0"}}>by {props.author} <span style={{fontSize: "15px", letterSpacing :'0px', float:"right"}}> {props.date}</span></p>
-<br />
+    <div className='NewsArticle marginAuto-xs' style={{ textAlign: 'left', 'border-style': 'solid', padding: '1rem', borderColor: 'black', borderWidth: '1px', width: '70%', height: '370px' }} onClick={() => props.link && window.open(props.link, '_blank')}>
+      <br />
+      <div style={{ maxHeight: '285px', overflow: 'hidden' }}>
+        <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{props.head}</b><br />
+        <p style={{ fontSize: '15px', textAlign: 'left', letterSpacing: '0px', bottom: '0' }}>by {props.author} <span style={{ fontSize: '15px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
+        <br />
 
-<div style={{fontSize: "18px", letterSpacing :'0px'}}> {props.byline.substring(0,200) + "..."}</div>
-</div>
-<div style={{textAlign: 'right'}}><img style={{"max-width": "10%", margin: '1rem', left: '50%'}} src={BlackBoxArrow}/></div>
+        <div style={{ fontSize: '18px', letterSpacing: '0px' }}> {props.byline.substring(0, 200) + '...'}</div>
+      </div>
+      <div style={{ textAlign: 'right' }}><img style={{ 'max-width': '10%', margin: '1rem', left: '50%' }} src={BlackBoxArrow} /></div>
     </div>
   </div>
-);
+)
 const SpacerColumn = (props) => (
-  <div>
-    </div>
-); 
+  <div />
+)
 
 const news = {
   title: 'News',
@@ -197,7 +190,7 @@ const news = {
       date: '29/01/20',
       imageSource: CyberBootcamp,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx?fbclid=IwAR2mztupdFmWZC6kXPPvYKn57Oj9cXqDa9E9jzPw2qlmMa_KAUSAO1M2guE',
+      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx?fbclid=IwAR2mztupdFmWZC6kXPPvYKn57Oj9cXqDa9E9jzPw2qlmMa_KAUSAO1M2guE'
     }
   }, {
     id: '3',
@@ -209,9 +202,9 @@ const news = {
       date: '16/01/20',
       imageSource: RaisinaDialogue,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.orfonline.org/raisina-dialogue/programme/',
+      link: 'https://www.orfonline.org/raisina-dialogue/programme/'
     }
-  },{
+  }, {
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -221,11 +214,11 @@ const news = {
       date: '19/12/19',
       imageSource: SingaporeCyber,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://twitter.com/AnuCyber/status/1203838456499232769',
+      link: 'https://twitter.com/AnuCyber/status/1203838456499232769'
     }
   }]
-};
-const news2 = null;
+}
+const news2 = null
 
 const blogs = {
   title: 'Blogs',
@@ -250,9 +243,9 @@ const blogs = {
       date: '22/10/2020',
       imageSource: './img/ai1.jpg',
       sizeName: 'col-md-3 col-xs-12'
-      
+
     }
-  },{
+  }, {
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -264,9 +257,9 @@ const blogs = {
       sizeName: 'col-md-3 col-xs-12'
     }
   }]
-};
+}
 
-const blogs2 = null;
+const blogs2 = null
 
 const podcasts = {
   title: 'Podcasts',
@@ -280,7 +273,7 @@ const podcasts = {
       date: '18/06/19',
       imageSource: GovCyberPodcast,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358',
+      link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358'
     }
   }, {
     id: '3',
@@ -292,9 +285,9 @@ const podcasts = {
       date: '27/01/19',
       imageSource: DataPodcast,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/',
+      link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/'
     }
-  },{
+  }, {
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -306,9 +299,9 @@ const podcasts = {
       sizeName: 'col-md-3 col-xs-12'
     }
   }]
-};
+}
 
-const podcasts2 = null;
+const podcasts2 = null
 
 const media = {
   title: 'News',
@@ -322,7 +315,7 @@ const media = {
       date: '22/01/20',
       imageSource: Globe,
       sizeName: 'col-md-3 col-xs-12',
-      link: "https://www.aspistrategist.org.au/surviving-in-a-world-of-sharper-technological-competition/",
+      link: 'https://www.aspistrategist.org.au/surviving-in-a-world-of-sharper-technological-competition/'
     }
   }, {
     id: '3',
@@ -334,9 +327,9 @@ const media = {
       date: '11/12/19',
       imageSource: CyberHowDoing,
       sizeName: 'col-md-3 col-xs-12',
-      link: "https://www.aspistrategist.org.au/cybersecurity-how-are-we-doing/"
+      link: 'https://www.aspistrategist.org.au/cybersecurity-how-are-we-doing/'
     }
-  },{
+  }, {
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -346,10 +339,10 @@ const media = {
       date: '13/11/19',
       imageSource: FaceFuture,
       sizeName: 'col-md-3 col-xs-12',
-      link: "https://www.policyforum.net/repositioning-australia-to-face-its-future/",
+      link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/'
     }
   }]
-};
+}
 
 const media2 = {
   title: 'Media',
@@ -363,7 +356,7 @@ const media2 = {
       date: '4/11/19',
       imageSource: PeopleNotProblem,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/',
+      link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/'
     }
   }, {
     id: '3',
@@ -375,9 +368,9 @@ const media2 = {
       date: '1/11/19',
       imageSource: SecurityStrategy,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf',
+      link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf'
     }
-  },{
+  }, {
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -387,10 +380,10 @@ const media2 = {
       date: '7/11/19',
       imageSource: TechDivide,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/',
+      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/'
     }
   }]
-};
+}
 
 const events = {
   title: 'Events',
@@ -398,34 +391,34 @@ const events = {
     id: '2',
     component: DateBox,
     props: {
-      day : '20',
+      day: '20',
       month: 'Feb',
-      title : 'RSA Conference 2020',
-      date : '20/02/20',
+      title: 'RSA Conference 2020',
+      date: '20/02/20',
       time: '9:00am',
       description: 'The Cyber Institute will be proud to see our CEO, Professor Lesley Seebeck, speak at the prestigious 2020 RSA Conference in San Francisco, United States, on the ripple effects of end-to-end encryption.',
       signupText: 'Click the link for more information about her role in the event:',
-      link: 'https://www.rsaconference.com/experts/professor-lesley-seebeck',
+      link: 'https://www.rsaconference.com/experts/professor-lesley-seebeck'
     }
   }, {
     id: '3',
     component: DateBox,
     props: {
-      day : '20',
+      day: '20',
       month: 'Jan',
-      title : 'The Cyber Bootcamp',
-      date : '20/01/20',
+      title: 'The Cyber Bootcamp',
+      date: '20/01/20',
       time: '11:00am',
-      description: "The Department of Foreign Affairs and Trade launched the Cyber Bootcamp Project in November 2019, of which programs are delivered by ANU’s Cyber Institute and National Security College. It aims to help participants in ASEAN and Pacific countries pursue a cyber-resilience vision. Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. As part of the program participants will implement a project which responds to a cyber-challenge or opportunity relevant to their domestic roles that will contribute to a cyber-resilient Indo-Pacific.",
+      description: 'The Department of Foreign Affairs and Trade launched the Cyber Bootcamp Project in November 2019, of which programs are delivered by ANU’s Cyber Institute and National Security College. It aims to help participants in ASEAN and Pacific countries pursue a cyber-resilience vision. Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. As part of the program participants will implement a project which responds to a cyber-challenge or opportunity relevant to their domestic roles that will contribute to a cyber-resilient Indo-Pacific.',
       signupText: 'Find out more at:',
-      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx',
+      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'
     }
   }]
-    };
+}
 
-const events2 = null;
+const events2 = null
 
-const stock = { 
+const stock = {
   Channels,
   Copy,
   Cover,
@@ -435,67 +428,60 @@ const stock = {
   NewsArticle,
   SpacerColumn,
   DateBox
-};
-
-
+}
 
 class Section1 extends React.Component {
-  
-  get root() {
-    return this.props.root;
+  get root () {
+    return this.props.root
   }
-  
-  get rSection() {
-    return this.createElement(this.root);
+
+  get rSection () {
+    return this.createElement(this.root)
   }
-  
-    createElement = (def) => {
+
+  createElement (def) {
     return React.createElement(
-      stock[def.component], 
+      stock[def.component],
       def.props,
       ((def.props || {}).children || [])
         .map(c => this.createElement(c))
-    );
+    )
   };
-  
-  render() {
+
+  render () {
     return (
-     <div class={this.root.props.sizeName}>
-     {this.rSection}
+      <div class={this.root.props.sizeName}>
+        {this.rSection}
       </div>
-    );
+    )
   }
 }
-
 
 class DynamicPage extends React.Component {
-  
-  get sections() {
-    return this.props.page.sections;
+  get sections () {
+    return this.props.page.sections
   }
-  
-  get rSections() {
+
+  get rSections () {
     return this.sections.map(
       s => <Section1 key={s.id} root={s} />
-    );
+    )
   }
-  
-  render() {
+
+  render () {
     return (
 
-          <>
-          {this.rSections}
-          </>
-    );
+      <>
+        {this.rSections}
+      </>
+    )
   }
 }
-  
-  
+
 class News extends Component {
-  
-  constructor(...args) {
-    super(...args);
-    
+  constructor (...args) {
+    super(...args)
+
     this.state = {
       news: news,
       news2: news2,
@@ -505,182 +491,199 @@ class News extends Component {
       events: events,
       media2: media2
 
-    };
+    }
   }
 
   clickButton () {
     // this.getClientHeight()
-      this.setState((prevState) => ({ isVisible: !prevState.isVisible }))
+    this.setState((prevState) => ({ isVisible: !prevState.isVisible }))
   }
 
   clickButtonEvent () {
     // this.getClientHeight()
-      this.setState((prevState) => ({ isVisibleEvent: !prevState.isVisibleEvent }))
+    this.setState((prevState) => ({ isVisibleEvent: !prevState.isVisibleEvent }))
   }
 
   clickButtonMedia () {
     // this.getClientHeight()
-      this.setState((prevState) => ({ isVisibleMedia: !prevState.isVisibleMedia }))
+    this.setState((prevState) => ({ isVisibleMedia: !prevState.isVisibleMedia }))
   }
 
   clickButtonBlog () {
     // this.getClientHeight()
-      this.setState((prevState) => ({ isVisibleBlog: !prevState.isVisibleBlog }))
+    this.setState((prevState) => ({ isVisibleBlog: !prevState.isVisibleBlog }))
   }
 
   clickButtonPodcast () {
     // this.getClientHeight()
-      this.setState((prevState) => ({ isVisiblePodcast: !prevState.isVisiblePodcast }))
+    this.setState((prevState) => ({ isVisiblePodcast: !prevState.isVisiblePodcast }))
   }
 
   render () {
     return (
       <>
-      <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
-      <div style={{fontFamily: 'Roboto, sans-serif'}}>
-        <div id="News" class="News">
-        <div class="News">
-          <div class="container-fluid">
-          <div class="row">
-          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="News" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>News</h2></div>
-          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
-          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
-          </div>
-          </div>
-          </div>
-          <div class="col-xs-13">
-            <div class="row">
-            <div class="col-xs-2"></div>
-              <DynamicPage page={this.state.news} />
-              <div class="col-xs-2"></div>
-          </div>
-          </div>
-        </div>
-        {news2 && <div
-        style={{
-          margin: 'auto',
-          position: 'relative'
-        }}
-      >
-          <SlideToggleContent isVisible={this.state.isVisible}>
-          <br />
-        <br />
-          <div class="col-xs-13">
-          <div class="row">
-          <div class="col-xs-2"></div>
-            <DynamicPage page={this.state.news2} />
-          <div class="col-xs-2"></div>
-          </div>
-          </div>
-      </SlideToggleContent>
-      <div class="col-xs-12">
-      <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
-      </div>
-      </div>
-        }
-      </div>
-
-      <div id="Events" class="Events">
-        <div class="Events">
-          <br />
-          <br />
-          <div class="container-fluid">
-          <div class="row">
-          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="Events" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>Events</h2></div>
-          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
-          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
-          </div>
-          </div>
-          </div>
-          <div class= 'row'>
-          <div class="col-xs-12">
-            {
-              this.state.events.sections.map(({component: EventComponent, props}) => (
+        <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
+        <div style={{ fontFamily: 'Roboto, sans-serif' }}>
+          <div id='News' class='News'>
+            <div class='News'>
+              <div class='container-fluid'>
+                <div class='row positionRelative'>
+                  <div class='col-md-offset-1 col-md-5'>
+                    <h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='News' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>News</h2>
+                    <div
+                      className='dottedLineHorizontal' style={{
+                        width: '91.666%',
+                        position: 'absolute',
+                        right: '-1rem'
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class='col-xs-13'>
                 <div class='row'>
-                  <div class="col-xs-2"></div>
-                    <EventComponent {...props}/>
-                    <div class="col-xs-2"></div>
-                    </div>
-              ))
-            }
-        </div>
-        </div>
-        </div>
-        {events2 &&
-        <div
-        style={{
-          margin: 'auto',
-          position: 'relative'
-        }}
-      >
-        <SlideToggleContent isVisible={this.state.isVisibleEvent}>
-        <br />
-        <br />
-        <div class="col-xs-13">
+                  <div class='col-xs-2' />
+                  <DynamicPage page={this.state.news} />
+                  <div class='col-xs-2' />
+                </div>
+              </div>
+            </div>
             {
-              this.state.events.sections.map(({component: EventComponent, props}) => (
-                <div class='row'>
-                  <div class="col-xs-2"></div>
-                    <EventComponent {...props} />
-                    <div class="col-xs-2"></div>
+              news2 &&
+                <div
+                  style={{
+                    margin: 'auto',
+                    position: 'relative'
+                  }}
+                >
+                  <SlideToggleContent isVisible={this.state.isVisible}>
+                    <br />
+                    <br />
+                    <div class='col-xs-13'>
+                      <div class='row'>
+                        <div class='col-xs-2' />
+                        <DynamicPage page={this.state.news2} />
+                        <div class='col-xs-2' />
+                      </div>
                     </div>
-              ))
+                  </SlideToggleContent>
+                  <div class='col-xs-12'>
+                    <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
+                  </div>
+                </div>
             }
-        </div>
-      </SlideToggleContent>
+          </div>
 
-      <ViewMoreButton isVisible={this.state.isVisibleEvent} clickButton={this.clickButtonEvent.bind(this)} alignRight />
-          
-      </div>
-        }
-      </div>
-        <div id="Media" class="Media">
-        <div class="Media">
-          <div class="container-fluid">
-          <div class="row">
-          <div class="col-md-offset-1 col-md-5"><h2 class="Black HeadingFontSize-md HeadingFontSize-xs" id="Courses" style={{color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem'}}>Media</h2></div>
-          <div style={{width: '100%', position: 'relative', marginBottom: '2rem'}}>
-          <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
+          <div id='Events' class='Events'>
+            <div class='Events'>
+              <br />
+              <br />
+              <div class='container-fluid'>
+                <div class='row positionRelative'>
+                  <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Events' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Events</h2>
+                    <div
+                      className='dottedLineHorizontal' style={{
+                        width: '91.666%',
+                        position: 'absolute',
+                        right: '-1rem'
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-xs-12'>
+                  {
+                    this.state.events.sections.map(({ component: EventComponent, props }) => (
+                      <div class='row'>
+                        <div class='col-xs-2' />
+                        <EventComponent {...props} />
+                        <div class='col-xs-2' />
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+            {events2 &&
+              <div
+                style={{
+                  margin: 'auto',
+                  position: 'relative'
+                }}
+              >
+                <SlideToggleContent isVisible={this.state.isVisibleEvent}>
+                  <br />
+                  <br />
+                  <div class='col-xs-13'>
+                    {
+                      this.state.events.sections.map(({ component: EventComponent, props }) => (
+                        <div class='row'>
+                          <div class='col-xs-2' />
+                          <EventComponent {...props} />
+                          <div class='col-xs-2' />
+                        </div>
+                      ))
+                    }
+                  </div>
+                </SlideToggleContent>
+
+                <ViewMoreButton isVisible={this.state.isVisibleEvent} clickButton={this.clickButtonEvent.bind(this)} alignRight />
+
+              </div>}
           </div>
+          <div id='Media' class='Media'>
+            <div class='Media'>
+              <div class='container-fluid'>
+                <div class='row positionRelative'>
+                  <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Media</h2>
+                    <div
+                      className='dottedLineHorizontal' style={{
+                        width: '91.666%',
+                        position: 'absolute',
+                        right: '-1rem'
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='col-xs-2' />
+                <div class='col-xs-9'><h2 style={{ color: '#523178', fontSize: '40px', letterSpacing: '0.15px', marginLeft: '3%' }}>Articles</h2></div>
+              </div>
+              <div class='col-xs-13'>
+                <div class='row'>
+                  <div class='col-xs-2' />
+                  <DynamicPage page={this.state.media} />
+                  <div class='col-xs-2' />
+                </div>
+              </div>
+            </div>
+            {
+              media2 && <div
+                style={{
+                  margin: 'auto',
+                  position: 'relative'
+                }}
+                        >
+                <SlideToggleContent isVisible={this.state.isVisibleMedia}>
+                  <br />
+                  <br />
+                  <div class='col-xs-13'>
+                    <div class='row'>
+                      <div class='col-xs-2' />
+                      <DynamicPage page={this.state.media2} />
+                      <div class='col-xs-2' />
+                    </div>
+                  </div>
+                </SlideToggleContent>
+                <div class='col-xs-12'>
+                  <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
+                </div>
+                        </div>
+            }
           </div>
-          </div>
-          <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%"}}>Articles</h2></div>
-          </div>
-          <div class="col-xs-13">
-            <div class="row">
-            <div class="col-xs-2"></div>
-              <DynamicPage page={this.state.media} />
-              <div class="col-xs-2"></div>
-          </div>
-          </div>
-        </div>
-        {
-        media2 && <div
-        style={{
-          margin: 'auto',
-          position: 'relative'
-        }}
-      >
-          <SlideToggleContent isVisible={this.state.isVisibleMedia}>
-          <br />
-        <br />
-          <div class="col-xs-13">
-          <div class="row">
-          <div class="col-xs-2"></div>
-            <DynamicPage page={this.state.media2} />
-          <div class="col-xs-2"></div>
-          </div>
-          </div>
-      </SlideToggleContent>
-      <div class="col-xs-12">
-      <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
-      </div>
-      </div>
-        }
-      </div>
-      {/* <div class="Blog">
+          {/* <div class="Blog">
         <div class="Blog">
         <div class="row">
           <div class="col-xs-2"></div>
@@ -721,48 +724,53 @@ class News extends Component {
       </div>
         }
       </div> */}
-      <div id="Podcasts" class="Podcasts">
-        <div class="Podcasts">
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-9" ><h2 style={{color:"#523178", fontSize: '40px', letterSpacing: '0.15px', marginLeft:"3%", marginTop: '6rem'}}>Podcasts</h2></div>
-          <div style={{width: "100%", position: 'relative', marginBottom: '2rem'}}>
-            <div class="dottedLineHorizontal" style={{width: '85%', position: 'absolute', right: '-1rem'}}></div>
-          </div>
-          </div>
-          <div class="col-xs-13">
-            <div class="row">
-            <div class="col-xs-2"></div>
-              <DynamicPage page={this.state.podcasts} />
-              <div class="col-xs-2"></div>
-          </div>
+          <div id='Podcasts' class='Podcasts'>
+            <div class='Podcasts'>
+              <div class='row positionRelative'>
+                <div class='col-md-offset-1 col-md-5'>
+                  <h2 className='Black HeadingFontSize-md HeadingFontSize-xs' style={{ color: '#523178', margin: 0, marginTop: '6rem' }}>Podcasts</h2>
+                  <div
+                    className='dottedLineHorizontal' style={{
+                      width: '91.666%',
+                      position: 'absolute',
+                      right: '-1rem'
+                    }}
+                  />
+                </div>
+              </div>
+              <div class='col-xs-13'>
+                <div class='row'>
+                  <div class='col-xs-2' />
+                  <DynamicPage page={this.state.podcasts} />
+                  <div class='col-xs-2' />
+                </div>
+              </div>
+            </div>
+            {
+              podcasts2 && <div
+                style={{
+                  margin: 'auto',
+                  position: 'relative'
+                }}
+                           >
+                <SlideToggleContent isVisible={this.state.isVisiblePodcast}>
+                  <br />
+                  <br />
+                  <div class='col-xs-13'>
+                    <div class='row'>
+                      <div class='col-xs-2' />
+                      <DynamicPage page={this.state.news2} />
+                      <div class='col-xs-2' />
+                    </div>
+                  </div>
+                </SlideToggleContent>
+                <div class='col-xs-12'>
+                  <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
+                </div>
+                           </div>
+            }
           </div>
         </div>
-        {
-        podcasts2 && <div
-        style={{
-          margin: 'auto',
-          position: 'relative'
-        }}
-      >
-          <SlideToggleContent isVisible={this.state.isVisiblePodcast}>
-          <br />
-        <br />
-          <div class="col-xs-13">
-          <div class="row">
-          <div class="col-xs-2"></div>
-            <DynamicPage page={this.state.news2} />
-          <div class="col-xs-2"></div>
-          </div>
-          </div>
-      </SlideToggleContent>
-      <div class="col-xs-12">
-      <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
-      </div>
-      </div>
-        }
-      </div>
-      </div>
       </>
     )
   }
@@ -774,16 +782,16 @@ function Content ({ clickButton, isVisible, page }) {
   return (
     <div
       id='content'
-      /*className={`${isVisible ? 'col-xs-8 col-xs-offset-2 textAlignJustified' : 'col-xs-5 col-xs-offset-5 textAlignedRight'} fontWeight300`}*/
+      /* className={`${isVisible ? 'col-xs-8 col-xs-offset-2 textAlignJustified' : 'col-xs-5 col-xs-offset-5 textAlignedRight'} fontWeight300`} */
     >
       <SlideToggleContent isVisible={isVisible}>
-          <div class="col-xs-13">
-          <div class="row">
-          <div class="col-xs-2"></div>
+        <div class='col-xs-13'>
+          <div class='row'>
+            <div class='col-xs-2' />
             <DynamicPage page={page} />
-          <div class="col-xs-2"></div>
+            <div class='col-xs-2' />
           </div>
-          </div>
+        </div>
       </SlideToggleContent>
 
       <ViewMoreButton {...{ isVisible, clickButton }} alignRight />
