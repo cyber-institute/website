@@ -65,8 +65,8 @@ export default function Quote () {
                     <div className='col-md-8 Light' style={{ lineHeight: '1.87', 'font-size':'18px'}}>
             Prof. Lesley Seebeck, PhD<br /><br />
 
-Professor of Practice in Cyber Security
-Chief Executive Officer, Cyber Institute
+Professor of Practice in Cyber Security,<br />
+Chief Executive Officer, <br />Cyber Institute<br />
 Australian National University
                     </div>
                   </div>
