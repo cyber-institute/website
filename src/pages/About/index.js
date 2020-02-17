@@ -137,7 +137,7 @@ export default () =>
               position: 'absolute',
               right: '-1rem',
               top: '-15rem',
-              fontSize: '250px',
+              fontSize: '24.5vw',
               margin: '0',
               color: '#f5f5f5',
               zIndex: -1
