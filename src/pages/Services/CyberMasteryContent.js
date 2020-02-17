@@ -90,7 +90,7 @@ export default ({ image1, image2 }) =>
     </div>
     <div>
       <div
-        className='row bottom-xs positionRelative columnReverse-sm'
+        className='row middle-xs positionRelative columnReverse-sm paddingTop4rem-sm-md'
       >
         <div
           className='col-md-offset-1 col-md-8'
@@ -117,7 +117,7 @@ export default ({ image1, image2 }) =>
           <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
         </div>
         <div
-          className='col-md-8 rightAlign-md'
+          className='col-md-8'
         >
           <div
             className='dottedLineHorizontal displayNone-sm' style={{

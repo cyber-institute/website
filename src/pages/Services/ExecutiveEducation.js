@@ -141,7 +141,7 @@ export default ({ image1, image2 }) =>
                 Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. Participants will also implement a project which responds to a cyber challenge or opportunity relevant to their domestic roles that will contribute to shared goals of a cyber-resilient Indo-Pacific.
                 <br />
                 <br />
-More information can be found <a target='_blank' rel='noopener noreferrer' href='https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'>here</a>.
+More information can be found <a target='_blank' style={{ color: '#523178', 'font-weight':'700' }} rel='noopener noreferrer' href='https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'>here</a>.
               </p>
             </div>
           </div>
@@ -189,7 +189,7 @@ const LineListElement = ({ children }) =>
           position: 'relative',
           top: 'calc(0.5em - 2px)',
           border: '1px solid #333',
-          opacity: '0.3'
+          opacity: '0.4'
         }}
       />
     </div>

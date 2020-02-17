@@ -11,7 +11,7 @@ import partner23 from '../../../img/2.-Program-Partners_New-Intelligence.jpg'
 import partner24 from '../../../img/2.Cybermerc.jpg'
 import partner31 from '../../../img/3. Project Partners_OK RDY.png'
 
-const OverflowHidden = ({ children }) => <div style={{ overflow: 'hidden' }}>{children}</div>
+const OverflowHidden = ({ children, style }) => <div style={{ overflow: 'hidden', ...style }}>{children}</div>
 
 export default () =>
   <div
@@ -82,13 +82,14 @@ export default () =>
         </p>
       </div>
     </div>
-    <div className='row center-xs'>
+    <div className='row'>
       <div className='col-sm-4'>
         <h3
           className='Medium'
           style={{
             color: 'rgb(82, 49, 120)',
-            fontSize: '35px'
+            fontSize: '35px',
+            textAlign: 'center'
           }}
         >
           Foundation Partners
@@ -99,16 +100,22 @@ export default () =>
           <li>invest against a series of milestones, while making in-kind contributions; and</li>
           <li>are representative of entities in a collaborative supply chain that can together articulate problems, develop solutions and test application.</li>
         </ul>
-        <OverflowHidden><Image img={partner11} style={{ width: '268px' }} /></OverflowHidden>
-        <OverflowHidden><Image img={partner12} style={{ width: '425px' }} /></OverflowHidden>
-        <OverflowHidden><Image img={partner13} style={{ width: '397px' }} /></OverflowHidden>
+        <div style={{
+          textAlign: 'center'
+        }}
+        >
+          <OverflowHidden style={{ margin: '1rem 0' }}><Image img={partner11} style={{ width: '268px' }} /></OverflowHidden>
+          <OverflowHidden style={{ margin: '1rem 0' }}><Image img={partner12} style={{ width: '425px' }} /></OverflowHidden>
+          <OverflowHidden style={{ margin: '1rem 0' }}><Image img={partner13} style={{ width: '397px' }} /></OverflowHidden>
+        </div>
       </div>
       <div className='col-sm-4'>
         <h3
           className='Medium'
           style={{
             color: 'rgb(82, 49, 120)',
-            fontSize: '35px'
+            fontSize: '35px',
+            textAlign: 'center'
           }}
         >
         Program Partners
@@ -118,32 +125,38 @@ export default () =>
           <li>leverage investment against the achievement of specific program outputs, governed under a program agreement; and</li>
           <li>may be more diffuse in focus and draw from extensive expertise across the ANU.</li>
         </ul>
-        <OverflowHidden>
-          <Image
-            img={partner21}
-            style={{
-              width: '300px'
-            }}
-          />
-        </OverflowHidden>
-        <OverflowHidden><Image img={partner22} style={{ height: '73px', 'padding-bottom': '20px', 'padding-top': '20px' }} /></OverflowHidden>
-        <OverflowHidden>
-          <Image
-            img={partner23} style={{
-              transformOrigin: '50% 50%',
-              transform: 'scale(2)',
-              maxHeight: '100px'
-            }}
-          />
-        </OverflowHidden>
-        <OverflowHidden><Image img={partner24} style={{ width: '255px' }} /></OverflowHidden>
+        <div style={{
+          textAlign: 'center'
+        }}
+        >
+          <OverflowHidden style={{ margin: '1rem 0' }}>
+            <Image
+              img={partner21}
+              style={{
+                width: '300px'
+              }}
+            />
+          </OverflowHidden>
+          <OverflowHidden style={{ margin: '2rem 0' }}><Image img={partner22} style={{ height: '73px' }} /></OverflowHidden>
+          <OverflowHidden style={{ margin: '1rem 0' }}>
+            <Image
+              img={partner23} style={{
+                transformOrigin: '50% 50%',
+                transform: 'scale(2)',
+                maxHeight: '100px'
+              }}
+            />
+          </OverflowHidden>
+          <OverflowHidden style={{ margin: '1rem 0' }}><Image img={partner24} style={{ width: '255px' }} /></OverflowHidden>
+        </div>
       </div>
       <div className='col-sm-4'>
         <h3
           className='Medium'
           style={{
             color: 'rgb(82, 49, 120)',
-            fontSize: '35px'
+            fontSize: '35px',
+            textAlign: 'center'
           }}
         >
         Project Partners
@@ -151,7 +164,12 @@ export default () =>
         <ul>
           <li>transact on shorter-term projects for specific set outcomes.</li>
         </ul>
-        <OverflowHidden><Image img={partner31} /></OverflowHidden>
+        <div style={{
+          textAlign: 'center'
+        }}
+        >
+          <OverflowHidden style={{ margin: '1rem 0' }}><Image img={partner31} /></OverflowHidden>
+        </div>
       </div>
     </div>
   </div>
