@@ -6,8 +6,8 @@ export default () =>
   >
     <div
       className='row around-xs' style={{
-        marginTop: '150px',
-        marginBottom: '150px'
+        // marginTop: '150px',
+        // marginBottom: '150px'
       }}
     >
       <div

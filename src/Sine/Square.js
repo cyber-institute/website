@@ -64,7 +64,7 @@ export default class Canvas extends Component {
         style={{
           position: 'absolute',
           // bottom: '7rem'
-          top: '8rem'
+          top: '8vw'
         }} ref={this.canvasRef}
       />
     )

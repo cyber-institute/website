@@ -215,7 +215,7 @@ const Careers = () => {
         height: '100%',
         backgroundColor: 'rgb(82, 49, 120)',
         clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)',
-        webkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)',
+        webkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
       }}
       >
         <picture
@@ -378,7 +378,7 @@ const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
           onClick={() => isVisible !== id ? setIsVisible(id) : setIsVisible(null)}
         >
           <img
-            src={img} className='width100-md width300px-xs width250px-xxs' style={{
+            src={img} className='width100-md width300px-xs width250px-xxs imgShadow' style={{
               height: '100%',
               objectFit: 'cover'
             }}

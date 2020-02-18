@@ -6,9 +6,9 @@ export default function Quote () {
   return (
     <div
       style={{
-        marginTop: '26rem'
+        marginTop: '20vw'
       }}
-      className='container-fluid'
+      className='container-fluid homeItemMarginTop'
     >
       <div
         className='row'
@@ -51,18 +51,20 @@ export default function Quote () {
                     textAlign: 'center'
                   }}
                 >
-            "It gives me great pleasure to introduce the newly formed Cyber Institute to you. Creativity and curiosity encouraged, not just expected."
+            "Creativity and curiosity encouraged, not just expected."
                 </div>
                 <div
                   className='container-fluid'
                 >
                   <div className='row center-xs columnReverse-sm'>
-                    <div className='col-md-4' style={{
-                      overflow: 'hidden'
-                    }}>
-                      <img src={lesley} style={{ maxWidth: '100%' }} />
+                    <div
+                      className='col-md-4' style={{
+                        overflow: 'hidden'
+                      }}
+                    >
+                      <img src={lesley} style={{ maxWidth: '100%' }} className='imgShadow' />
                     </div>
-                    <div className='col-md-8 Light' style={{ lineHeight: '1.87', 'font-size':'18px'}}>
+                    <div className='col-md-8 Light' style={{ lineHeight: '1.87', 'font-size': '18px' }}>
             Prof. Lesley Seebeck, PhD<br /><br />
 
 Professor of Practice in Cyber Security,<br />
