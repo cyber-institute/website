@@ -7,7 +7,7 @@ class Footer extends Component {
   render () {
     return (
       <>
-        <div style={{ 'margin-top': '200px' }}>
+        <div style={{ 'margin-top': '21.2vh' }}>
           <div className='footerContainer' />
           <div className='textContainer row' style={{
             margin: 0

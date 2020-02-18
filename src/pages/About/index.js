@@ -18,7 +18,7 @@ export default () =>
       <div
         style={{
           position: 'relative',
-          marginTop: '4rem'
+          marginTop: '4vw'
         }}
         className='row center-xs middle-xs'
       >
@@ -103,8 +103,8 @@ export default () =>
       >
         <div
           className='row' style={{
-            marginTop: '8rem',
-            paddingTop: '4rem'
+            marginTop: '8vw',
+            paddingTop: '4vw'
           }}
         >
           <div style={{
@@ -124,7 +124,7 @@ export default () =>
       </div>
       <div
         className='row' style={{
-          marginTop: '12rem'
+          marginTop: '12vw'
         }}
       >
         <div style={{
@@ -137,7 +137,7 @@ export default () =>
               position: 'absolute',
               right: '-1rem',
               top: '-15rem',
-              fontSize: '24.5vw',
+              fontSize: '23.5vw',
               margin: '0',
               color: '#f5f5f5',
               zIndex: -1
@@ -167,7 +167,7 @@ export default () =>
       </div>
       <div
         className='row' style={{
-          marginTop: '12rem'
+          marginTop: '12vw'
         }}
       >
         <div className='col-md-offset-2 col-md-4'>
@@ -194,7 +194,7 @@ export default () =>
       </div>
       <div
         className='row' style={{
-          marginTop: '12rem',
+          marginTop: '12vw',
           position: 'relative'
         }}
       >
@@ -226,7 +226,7 @@ export default () =>
         <div className='col-md-offset-2 col-md-8'>
           <p
             className='centerAlign-lg' style={{
-              marginTop: '2rem'
+              marginTop: '2vw'
             }}
           >
             Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', 'font-weight': '700'}}>real-time security operations centre</span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
@@ -235,7 +235,7 @@ export default () =>
       </div>
       <div
         className='row' style={{
-          marginTop: '12rem'
+          marginTop: '12vw'
         }}
       >
         <div className='col-md-6'>
