@@ -70,6 +70,7 @@ class People extends Component {
               <img src={Lesley} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
               <hr className='greyLine' style={{ position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: '-20' }} />
             </div>
+            
             <div className='col-xs-12 col-md-5' style={{ paddingTop: '20px' }}>
               <p><span className='bigEmphasis' style={{ 'font-weight': '700' }}>"Rarely do you have the opportunity to shape a national endeavor.</span>
                 <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
@@ -77,9 +78,10 @@ class People extends Component {
                 <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
                 <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
               </p>
+              
               <h3 style={{ 'margin-top': '30px', 'margin-bottom': '15px' }}>CEO, Professor Lesley Seebeck</h3>
-              <p style={{ 'letter-spacing': '0' }}>Prof. Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018. Most recently, she was Chief Investment and Advisory Officer at the Digital Transformation Agency, arriving there from the Bureau of Meteorology where she served as Chief Information Officer from mid 2014 to late 2017. She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Naval Shipbuilding Advisory Board. <br /><br /></p>
-              <p style={{ 'letter-spacing': '0' }}>Prof. Seebeck has extensive experience in strategy, policy, management, budget, information technology and research roles in the Australian Public Service, industry and academia. She has worked in the Departments of Finance, Defence, and the Prime Minister and Cabinet, the Office of National Assessments, and as an IT and management consultant in private industry, and at two universities. Prof. Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
+              <p style={{ 'letter-spacing': '0' }}>Professor Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.  She has extensive experience in Federal Government, in a variety of senior roles in policy, technology and central agencies, as well as in the university sector and private industry.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Government’s Naval Shipbuilding Advisory Board.  <br /><br /></p>
+              <p style={{ 'letter-spacing': '0' }}>Professor Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
             </div>
           </div>
           <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem', overflow: 'hidden' }}>
