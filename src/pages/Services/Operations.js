@@ -75,7 +75,7 @@ Cyber Institute community members will join the best of the best, capable of con
           marginTop: '4rem'
         }}
       >
-        <div className='col-md-5 col-md-offset-2'>
+        <div className='col-md-5 col-md-offset-1'>
           <p className='marginLeftNegative'>
           Those problems at the intersection of the social and technological, between citizens and governments, and where ideas and systems interact are rich with research questions that need an interdisciplinary approach.
             <br />
