@@ -87,7 +87,7 @@ class People extends Component {
           <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem', overflow: 'hidden' }}>
             <h2 style={{ left: '0%', top: '-200px' }}>COO</h2>
             <div className='col-xs-12 col-md-5 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
-              <h3>Cyber Institute COO, Ree Kent</h3>
+              <h3>Cyber Institute COO, Ree</h3>
               <p>
                     Ree joined the Cyber Institute in late 2018 from the Bureau of Meteorology (BoM) where she held a
                   number of roles, including Head of the Office of the Chief Information Officer. Prior to the BoM,

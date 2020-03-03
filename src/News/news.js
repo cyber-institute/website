@@ -22,6 +22,9 @@ import SecurityStrategy from '../../img/security_strategy.jpg'
 import TechDivide from '../../img/tech_divide.jpg'
 import BlackBoxArrow from '../../img/black box arrow.png'
 import NatPodcast from '../../img/nationalsecuritypodcast.jpg'
+import Microchip from '../../img/microchip.png'
+import Defend from '../../img/defend.png'
+import Scaffold from '../../img/scaffold.jpg'
 import { relative } from 'path'
 
 const headings = [
@@ -263,14 +266,26 @@ const blogs2 = null
 
 const podcasts = {
   title: 'Podcasts',
-  sections: [{
+  sections: [ {
+    id: '4',
+    component: 'NewsArticle',
+    props: {
+      head: 'Techlosophy and the future of security',
+      byline: 'Getting to the bottom of how information and bio-technologies are reshaping societies and the human mind - and what this means for those with a stake in democracy and national security.',
+      author: 'Katherine Mansted and Dr Zac Rogers',
+      date: '6/11/19',
+      imageSource: NatPodcast,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://crawford.anu.edu.au/news-events/news/15495/national-security-podcast-techlosophy-and-future-security'
+    }
+  }, {
     id: '2',
     component: 'NewsArticle',
     props: {
       head: 'More details needed about potential changes to cyber powers',
       byline: "The Federal Government has been looking at whether the Australian Signals Directorate should have more of a role in fighting cybercrime across the country. It's a discussion that's been going on for more than a year now, but no decisions have been made. Home Affairs Minister Peter Dutton says he is to continue the conversation, and people in the cyber security sector want more details about what could change.",
       author: 'ABC AM',
-      date: '18/06/19',
+      date: '18/6/19',
       imageSource: GovCyberPodcast,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358'
@@ -282,24 +297,13 @@ const podcasts = {
       head: 'Data, Cyber, and the Social Context',
       byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
       author: 'Nat. Security Podcast',
-      date: '27/01/19',
+      date: '27/1/19',
       imageSource: DataPodcast,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/'
     }
-  }, {
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'Techlosophy and the future of security',
-      byline: 'Getting to the bottom of how information and bio-technologies are reshaping societies and the human mind - and what this means for those with a stake in democracy and national security.',
-      author: 'Katherine Mansted and Dr Zac Rogers',
-      date: '6/11/2019',
-      imageSource: NatPodcast,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://crawford.anu.edu.au/news-events/news/15495/national-security-podcast-techlosophy-and-future-security'
-    }
-  }]
+  }
+]
 }
 
 const podcasts2 = null
@@ -307,6 +311,30 @@ const podcasts2 = null
 const media = {
   title: 'News',
   sections: [{
+    id: '4',
+    component: 'NewsArticle',
+    props: {
+      head: 'Scaffolding of security',
+      byline: 'Often when we think of cyber, we feel vulnerable, afraid, and unsure. We feel tossed in a never-ending storm: few days pass without mention of data breach, concerns over fake news or a press release about attribution. A sense of exhaustion, of helplessness and despondency is not unexpected.',
+      author: 'Prof. Lesley Seebeck',
+      date: '27/2/20',
+      imageSource: Scaffold,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://reporter.anu.edu.au/scaffolding-security'
+    }
+  }, {
+    id: '2',
+    component: 'NewsArticle',
+    props: {
+      head: 'Students need better preparation for an uncertain future',
+      byline: "With cyber issues among the most complex facing society, educating young minds to tackle future problems has never been more important. Current approaches, however, are not good enough, Lesley Seebeck writes.",
+      author: 'Prof. Lesley Seebeck',
+      date: '24/2/20',
+      imageSource: Microchip,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.policyforum.net/education-for-the-cyber-age/'
+    }
+  },{
     id: '2',
     component: 'NewsArticle',
     props: {
@@ -318,7 +346,12 @@ const media = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.aspistrategist.org.au/surviving-in-a-world-of-sharper-technological-competition/'
     }
-  }, {
+  }]
+}
+
+const media2 = {
+  title: 'Media',
+  sections: [{
     id: '3',
     component: 'NewsArticle',
     props: {
@@ -342,11 +375,24 @@ const media = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/'
     }
-  }]
+  }, {
+    id: '4',
+    component: 'NewsArticle',
+    props: {
+      head: 'The new global technological divide',
+      byline: 'For the first time since the Cold War, technology is re-emerging as a strategic, and not merely a political, instrument. The difference this time is that it’s thoroughly civilian rather than military technologies and information that act both as enablers and sources of vulnerability. And there are key differences in how different Western political cultures understand the strategic significance of technology.',
+      author: 'Prof. Lesley Seebeck',
+      date: '7/11/19',
+      imageSource: TechDivide,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/'
+    }
+  }
+  ]
 }
 
-const media2 = {
-  title: 'Media',
+const media3 = {
+  title: 'News',
   sections: [{
     id: '2',
     component: 'NewsArticle',
@@ -375,13 +421,13 @@ const media2 = {
     id: '4',
     component: 'NewsArticle',
     props: {
-      head: 'The new global technological divide',
-      byline: 'For the first time since the Cold War, technology is re-emerging as a strategic, and not merely a political, instrument. The difference this time is that it’s thoroughly civilian rather than military technologies and information that act both as enablers and sources of vulnerability. And there are key differences in how different Western political cultures understand the strategic significance of technology.',
-      author: 'Prof. Lesley Seebeck',
-      date: '7/11/19',
-      imageSource: TechDivide,
+      head: 'Defending those we send to protect us',
+      byline: 'The impression has gained ground that some members of the Special Air Service Regiment (SASR) are an unregulated band of brigands, not adhering to civil laws, or to the laws of warfare. Nothing could be further from the truth.',
+      author: 'John Powers',
+      date: '27/9/19',
+      imageSource: Defend,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/'
+      link: 'https://www.aspistrategist.org.au/defending-those-we-send-to-protect-us/'
     }
   }]
 }
@@ -490,7 +536,8 @@ class News extends Component {
       media: media,
       // blogs: blogs,
       events: events,
-      media2: media2
+      media2: media2,
+      media3: media3
 
     }
   }
@@ -564,7 +611,8 @@ class News extends Component {
                         <DynamicPage page={this.state.news2} />
                         <div class='col-xs-2' />
                       </div>
-                    </div>
+                    </div>  
+                    
                   </SlideToggleContent>
                   <div class='col-xs-12'>
                     <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
@@ -667,6 +715,14 @@ class News extends Component {
                         <DynamicPage page={this.state.media2} />
                         <div class='col-xs-2' />
                       </div>
+                    </div>
+                    <div class='col-xs-13'>  
+                      <div class='row'>
+                        <div class='col-xs-2' />
+                        <DynamicPage page={this.state.media3} />
+                        <div class='col-xs-2' />
+                      </div>
+
                     </div>
                   </SlideToggleContent>
                   <div class='col-xs-12 center-xs'>
