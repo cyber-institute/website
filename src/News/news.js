@@ -25,6 +25,7 @@ import NatPodcast from '../../img/nationalsecuritypodcast.jpg'
 import Microchip from '../../img/microchip.png'
 import Defend from '../../img/defend.png'
 import Scaffold from '../../img/scaffold.jpg'
+import RSA from '../../img/RSA.png'
 import { relative } from 'path'
 
 const headings = [
@@ -267,6 +268,18 @@ const blogs2 = null
 const podcasts = {
   title: 'Podcasts',
   sections: [ {
+    id: '3',
+    component: 'NewsArticle',
+    props: {
+      head: 'Implications of the Global Push to Ban End-to-End Encryption',
+      byline: 'The majority of the world’s population currently live under governments that have already implemented, or are considering, bans on encryption. These encryption bans have significant implications for privacy and security as well as the global decline in democracy.',
+      author: 'RSA Conference',
+      date: '26/2/20',
+      imageSource: RSA,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.youtube.com/watch?v=cjIaKqUwzCQ&feature=youtu.be'
+    }
+  }, {
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -290,23 +303,26 @@ const podcasts = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358'
     }
-  }, {
-    id: '3',
-    component: 'NewsArticle',
-    props: {
-      head: 'Data, Cyber, and the Social Context',
-      byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
-      author: 'Nat. Security Podcast',
-      date: '27/1/19',
-      imageSource: DataPodcast,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/'
-    }
   }
 ]
 }
 
+// {
+//   id: '3',
+//   component: 'NewsArticle',
+//   props: {
+//     head: 'Data, Cyber, and the Social Context',
+//     byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
+//     author: 'Nat. Security Podcast',
+//     date: '27/1/19',
+//     imageSource: DataPodcast,
+//     sizeName: 'col-md-3 col-xs-12',
+//     link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/'
+//   }
+// }
+
 const podcasts2 = null
+
 
 const media = {
   title: 'News',
