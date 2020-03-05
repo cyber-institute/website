@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 const history = require('connect-history-api-fallback')
 // ^ middleware to redirect all URLs to index.html
 
