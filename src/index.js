@@ -18,6 +18,7 @@ import Services from './pages/Services'
 import People from './pages/People'
 import FourOFour from './404/404'
 import CITwhite from '../img/CITwhite.jpg'
+import ANULogo from '../img/ANU-LOGO-WHITE.jpg'
 import Hamburger from './../img/Hamburger_icon.png'
 
 import ScrollUp from './pages/common/ScrollUp'
@@ -113,7 +114,9 @@ class App extends Component {
          <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           
           <Toolbar>  
-          <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ width: '25px' }} /></Link>
+          <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={ANULogo} style={{ height: '80px' }} /></Link>
+          <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ height: '55px' }} /></Link>
+         
             <div>
             </div>
             <ul className="desktop-only" style={{ width: '100%' }}>

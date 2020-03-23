@@ -9,6 +9,7 @@ import News from './../News/news'
 import Home from './../Home/home'
 
 import CITwhite from '../../img/CITwhite.jpg'
+import ANULogo from '../../img/ANU-LOGO-White.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -57,6 +58,7 @@ export default function CyberAppBar () {
           <Toolbar>
           <Router>
             <img src={CITwhite} style={{ width: '25px' }} />
+            
             <div>
             </div>
             {/* <Typography variant='h6'>Scroll to Elevate App Bar</Typography> */}
