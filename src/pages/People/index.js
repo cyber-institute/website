@@ -143,11 +143,13 @@ class People extends Component {
           </div>
           <div className='row' style={{ marginTop: '50px' }}>
             <div className='col-xs-12 col-md-7 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
-              <h4 style={{ 'padding-bottom': '15px', 'font-size': '22px', color: '#523178' }}>Brendan, Cyber Institute Research Assistant</h4>
-              <p>Meet Brendan who started with the Cyber Institute in January of 2019.
-                  Brendan is currently helping with delivery of the Cyber Bootcamp Project which aims to improve international cyber
-                  cooperation between Australia, ASEAN and the Pacific. Brendan is studying a Bachelor of Arts and a Bachelor of Science at
-                  the ANU, with a focus in human biology, Australian Indigenous studies and anthropology.
+              <h4 style={{ 'padding-bottom': '15px', 'font-size': '22px', color: '#523178' }}>Jose, Visiting Fellow</h4>
+              <p>We are delighted to announce that our first Visiting Fellow is Mr Jose Sousa-Santos. Jose brings considerable experience and knowledge of 
+                the Pacific and Southeast Asia, particularly in the areas of cyber security, transnational organised crime, terrorism and cultural competency. <br /><br />
+                Already Jose has helped us deliver a one-day workshop at the ANU’s Australia Pacific Security College and a paper to the ANU College of Law’s 
+                Transnational Counter-Terrorism workshop. <br /><br /> Jose has served with the Australian Defence Force, lived and worked extensively across the region, 
+                manages the consultancy Strategika Asia-Pacific, and is a Senior Associate at the Centre for Lifelong Learning, Victoria University of Wellington. 
+                He is currently completing postgraduate studies at Massey University, Wellington. Welcome Jose!
               </p>
             </div>
             <div className='col-xs-12 col-md-3' style={{ position: 'relative', right: '0' }}>
