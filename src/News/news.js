@@ -26,6 +26,7 @@ import Microchip from '../../img/microchip.png'
 import Defend from '../../img/defend.png'
 import Scaffold from '../../img/scaffold.jpg'
 import RSA from '../../img/RSA.png'
+import Zoom from '../../img/zoom_trouble.jpg'
 import { relative } from 'path'
 
 const headings = [
@@ -330,6 +331,19 @@ const media = {
     id: '4',
     component: 'NewsArticle',
     props: {
+      head: 'The Trouble With Zoom',
+      byline: 'As working remotely from home or in smaller groups becomes the norm in these virus-hit times, Zoom has quickly seemed indispensable. But serious and unresolved issues around its security, privacy and data use may mean that the cost of using the platform could be higher than most realise.',
+      author: 'Patrick Doyle, James Mortenson, Damian Clifford',
+      date: '24/3/20',
+      imageSource: Zoom,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.afr.com/technology/zoom-is-the-next-privacy-challenge-20200324-p54dff'
+    }
+  },
+    {
+    id: '4',
+    component: 'NewsArticle',
+    props: {
       head: 'Scaffolding of security',
       byline: 'Often when we think of cyber, we feel vulnerable, afraid, and unsure. We feel tossed in a never-ending storm: few days pass without mention of data breach, concerns over fake news or a press release about attribution. A sense of exhaustion, of helplessness and despondency is not unexpected.',
       author: 'Prof. Lesley Seebeck',
@@ -350,24 +364,12 @@ const media = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.policyforum.net/education-for-the-cyber-age/'
     }
-  },{
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'Surviving in a world of sharper technological competition',
-      byline: 'Technology is understood as something external, ‘done’ or given to Australia by others. There’s no real sense of initiation or ownership. We’ve allowed ourselves to think of Australia essentially as a spectator rather than a participant in technological innovation.',
-      author: 'Prof. Lesley Seebeck',
-      date: '22/01/20',
-      imageSource: Globe,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/surviving-in-a-world-of-sharper-technological-competition/'
-    }
-  }]
+  },]
 }
 
 const media2 = {
   title: 'Media',
-  sections: [{
+  sections: [,{
     id: '3',
     component: 'NewsArticle',
     props: {
@@ -391,7 +393,13 @@ const media2 = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/'
     }
-  }, {
+  }, 
+  ]
+}
+
+const media3 = {
+  title: 'News',
+  sections: [{
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -403,13 +411,8 @@ const media2 = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/'
     }
-  }
-  ]
-}
-
-const media3 = {
-  title: 'News',
-  sections: [{
+  },
+    {
     id: '2',
     component: 'NewsArticle',
     props: {
@@ -433,19 +436,23 @@ const media3 = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf'
     }
-  }, {
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'Defending those we send to protect us',
-      byline: 'The impression has gained ground that some members of the Special Air Service Regiment (SASR) are an unregulated band of brigands, not adhering to civil laws, or to the laws of warfare. Nothing could be further from the truth.',
-      author: 'John Powers',
-      date: '27/9/19',
-      imageSource: Defend,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/defending-those-we-send-to-protect-us/'
-    }
-  }]
+  }, 
+  
+  
+  // {
+  //   id: '4',
+  //   component: 'NewsArticle',
+  //   props: {
+  //     head: 'Defending those we send to protect us',
+  //     byline: 'The impression has gained ground that some members of the Special Air Service Regiment (SASR) are an unregulated band of brigands, not adhering to civil laws, or to the laws of warfare. Nothing could be further from the truth.',
+  //     author: 'John Powers',
+  //     date: '27/9/19',
+  //     imageSource: Defend,
+  //     sizeName: 'col-md-3 col-xs-12',
+  //     link: 'https://www.aspistrategist.org.au/defending-those-we-send-to-protect-us/'
+  //   }
+  // }
+]
 }
 
 const events = {
