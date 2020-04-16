@@ -334,21 +334,15 @@ const PersonsGrid = () => {
                 title: 'Ms. Deborah Anton',
                 subtitle: 'Interim National Data Commissioner, Department of the Prime Minister and Cabinet',
                 id: 5
-              },
-              {
-                img: mick,
-                title: 'MAJGEN Mick Ryan',
-                subtitle: 'Major General at Australian Army',
-                id: 6
               }
             ].map((person, index) => (
               <>
                 <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
                 {
-                  (index === 3 || index === 6) && (
+                  (index === 3 || index === 5) && (
                     <SlideToggleContent isVisible={Number.isInteger(isVisible) &&
                 (([0, 1, 2, 3].includes(isVisible) && index === 3) ||
-                ([4, 5, 6].includes(isVisible) && index === 6))}
+                ([4, 5].includes(isVisible) && index === 5))}
                     >
                       <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-sm' />
                     </SlideToggleContent>
@@ -437,12 +431,5 @@ const personsContent = [
   `<p class=personsContent>Over the past two decades, Ms Anton has worked in the Australian Public Service with wide ranging experience in legislation, regulation, policy and program delivery, including the establishment of the Government's Computer Emergency Response Team (CERT), which is the primary point of contact for Australian businesses to prevent and respond to malicious activity.
   <br/>
   <br/>
-  Ms Anton holds a Bachelor of Science with Honours and Master of Management from the Australian National University (ANU). She has also completed the Company Directors Course from the Australian Institute of Company Directors from the National Security College's Executive Development Program.</p>`,
-  `<p class=personsContent>Major General Ryan was appointed Commander, Australian Defence College in January 2018. Over his 30 year career he has commanded at all levels and served in East Timor with the 6RAR Battalion Group in 2000, in Iraq as the Deputy J3 for the Multi-National Security Transition Command, and in Afghanistan where he commanded Australia's 1st Reconstruction Task Force in southern Afghanistan from August 2006 to April 2007, for which he was awarded the Order of Australia.
-  <br/>
-  <br/>
-  Major General Ryan has deep experience the fields of strategy, interagency and joint operations, and command and leadership as well as professional military education. He was founding President of the Defence Entrepreneurs Forum (Australia), an undertaking to nurture innovation in the ADF's junior leaders. He is a Member of the Military Writers Guild.
-  <br/>
-<br/>
-  Major General Ryan graduated from the Royal Military College, Duntroon, in 1989, has a Bachelor's degree in Asian Studies from the University of New England and is a graduate of the Australian Defence Force School of Languages. He is a Distinguished Graduate of the United States Marine Corps Command and Staff College, and a graduate of the USMC School of Advanced Warfighting. In 2012, he graduated with distinction from the Johns Hopkins University, School of Advanced International Studies, earning a Masters in International Public Policy.</p>`
+  Ms Anton holds a Bachelor of Science with Honours and Master of Management from the Australian National University (ANU). She has also completed the Company Directors Course from the Australian Institute of Company Directors from the National Security College's Executive Development Program.</p>`
 ]
