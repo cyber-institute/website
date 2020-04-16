@@ -331,6 +331,18 @@ const media = {
     id: '4',
     component: 'NewsArticle',
     props: {
+      head: 'Data interventions and the renegotiation of the social contract',
+      byline: 'What can be discerned is that there are different ways to conceive security, and the dangers arise when we overstep the mark into regime security.',
+      author: 'Stephanie Koorey',
+      date: '',
+      imageSource: Scaffold,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'http://visionofhumanity.org/economists-on-peace/data-interventions-and-the-renegotiation-of-the-social-contract/'
+    }
+  },{
+    id: '4',
+    component: 'NewsArticle',
+    props: {
       head: 'The Trouble With Zoom',
       byline: 'As working remotely from home or in smaller groups becomes the norm in these virus-hit times, Zoom has quickly seemed indispensable. But serious and unresolved issues around its security, privacy and data use may mean that the cost of using the platform could be higher than most realise.',
       author: 'Patrick Doyle, James Mortenson, Damian Clifford',
@@ -352,19 +364,7 @@ const media = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://reporter.anu.edu.au/scaffolding-security'
     }
-  }, {
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'Students need better preparation for an uncertain future',
-      byline: "With cyber issues among the most complex facing society, educating young minds to tackle future problems has never been more important. Current approaches, however, are not good enough, Lesley Seebeck writes.",
-      author: 'Prof. Lesley Seebeck',
-      date: '24/2/20',
-      imageSource: Microchip,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.policyforum.net/education-for-the-cyber-age/'
-    }
-  },]
+  }]
 }
 
 const media2 = {
@@ -393,7 +393,20 @@ const media2 = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/'
     }
-  }, 
+  },
+  {
+    id: '2',
+    component: 'NewsArticle',
+    props: {
+      head: 'Students need better preparation for an uncertain future',
+      byline: "With cyber issues among the most complex facing society, educating young minds to tackle future problems has never been more important. Current approaches, however, are not good enough, Lesley Seebeck writes.",
+      author: 'Prof. Lesley Seebeck',
+      date: '24/2/20',
+      imageSource: Microchip,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.policyforum.net/education-for-the-cyber-age/'
+    }
+  }
   ]
 }
 
