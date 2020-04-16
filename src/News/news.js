@@ -27,6 +27,7 @@ import Defend from '../../img/defend.png'
 import Scaffold from '../../img/scaffold.jpg'
 import RSA from '../../img/RSA.png'
 import Zoom from '../../img/zoom_trouble.jpg'
+import DataInterventionsStephanie from '../../img/datainterventions_stephanie.jpg'
 import { relative } from 'path'
 
 const headings = [
@@ -335,7 +336,7 @@ const media = {
       byline: 'What can be discerned is that there are different ways to conceive security, and the dangers arise when we overstep the mark into regime security.',
       author: 'Stephanie Koorey',
       date: '',
-      imageSource: Scaffold,
+      imageSource: DataInterventionsStephanie,
       sizeName: 'col-md-3 col-xs-12',
       link: 'http://visionofhumanity.org/economists-on-peace/data-interventions-and-the-renegotiation-of-the-social-contract/'
     }
