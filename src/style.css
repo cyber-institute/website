@@ -10,6 +10,14 @@ body {
   box-shadow: grey 5px 5px 10px;
 }
 
+.transcript__li {
+  padding: 0.5rem 0;
+}
+
+.transcript__h3 {
+  font-weight: 600;
+}
+
 .advisoryImageText {
   display: none;
   position: absolute;
