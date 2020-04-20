@@ -27,6 +27,7 @@ import Microchip from '../../img/microchip.png'
 import Defend from '../../img/defend.png'
 import Scaffold from '../../img/scaffold.jpg'
 import RSA from '../../img/RSA.png'
+import RSA2 from '../../img/RSA.jpg'
 import Zoom from '../../img/zoom_trouble.jpg'
 import DataInterventionsStephanie from '../../img/datainterventions_stephanie.jpg'
 import { relative } from 'path'
@@ -194,6 +195,19 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
+      head: 'Event: Implications of the Global Push to Ban End-to-End Encryption',
+      byline: "Let’s celebrate the HumanElement in cybersecurity by sharing our expertise. Click below for recorded audio and session slides from Prof. Lesley Seebeck’s RSA Conference 2020 session on Implications of the Global Push to Ban End-to-End Encryption.",
+      author: 'Professor Lesley Seebeck',
+      date: '',
+      imageSource: RSA2,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.rsaconference.com/usa/agenda/implications-of-the-global-push-to-ban-end-to-end-encryption'
+    }
+  },
+    {
+    id: '2',
+    component: 'NewsArticle',
+    props: {
       head: 'The January Cyber Bootcamp',
       byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
       author: 'DFAT',
@@ -214,7 +228,11 @@ const news = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.orfonline.org/raisina-dialogue/programme/'
     }
-  }, {
+  }]
+}
+const news2 =   {
+title: 'News',
+sections: [{
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -228,7 +246,6 @@ const news = {
     }
   }]
 }
-const news2 = null
 
 const blogs = {
   title: 'Blogs',
@@ -660,7 +677,7 @@ class News extends Component {
                     </div>  
                     
                   </SlideToggleContent>
-                  <div class='col-xs-12'>
+                  <div class='col-xs-12 center-xs'>
                     <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
                   </div>
                 </div>
