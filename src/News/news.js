@@ -195,13 +195,13 @@ const news = {
     id: '2',
     component: 'NewsArticle',
     props: {
-      head: 'Event: Implications of the Global Push to Ban End-to-End Encryption',
-      byline: "Let’s celebrate the HumanElement in cybersecurity by sharing our expertise. Click below for recorded audio and session slides from Prof. Lesley Seebeck’s RSA Conference 2020 session on Implications of the Global Push to Ban End-to-End Encryption.",
-      author: 'Professor Lesley Seebeck',
+      head: 'VC’s interview with Chief Information Security Officer',
+      byline: "Vice-Chancellor Brian Schmidt spoke to the Chief Information Security Officer, Suthagar Seevaratnum, who explains implications for the cybersecurity during the pandemic. Please check out the video.",
+      author: 'ANU',
       date: '',
       imageSource: RSA2,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.rsaconference.com/usa/agenda/implications-of-the-global-push-to-ban-end-to-end-encryption'
+      link: 'https://www.youtube.com/watch?v=OYzuoi_a1i0&feature=youtu.be'
     }
   },
     {
