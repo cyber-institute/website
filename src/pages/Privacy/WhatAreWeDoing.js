@@ -32,11 +32,8 @@ export default ({ image1, image2, image3 }) =>
         </div>
       </div>
       <div
-        className='row positionRelative marginTop4rem-md'
+        className='row positionRelative'
       >
-        <div className='col-md-12'>
-        
-        </div>
         <div className='row'>
           <p>
           <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
@@ -82,28 +79,39 @@ export default ({ image1, image2, image3 }) =>
     </div>
     <div
       className='container-fluid' style={{
-        marginTop: '2rem'
       }}
     >
+       <div className='row positionRelative'>
+        <div
+          className='col-md-11' style={{
+            textAlign: 'right',
+            marginBottom: "-1vw"
+          }}
+        >
+          <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+          Seperation can Help
+          </h2>
+          </div>
+          </div>
       <div className='row positionRelative'>
         <div
           className='col-md-offset-1 col-md-11'
         >
-          <Heading>
-          Seperation can Help
-          </Heading>
+                    
           <div
             className='dottedLineHorizontal' style={{
-              width: '91.666%',
+              width: '70%',
               position: 'absolute',
-              right: '-1rem'
+              right: '-1rem',
+              marginBottom: "2vw"
             }}
           />
+         
         </div>
       </div>
       <div
         className='row' style={{
-          marginTop: '4rem'
+          marginTop: '1rem'
         }}
       >
         <div className='col-md-5 col-md-offset-1'>
@@ -125,16 +133,31 @@ export default ({ image1, image2, image3 }) =>
         </div>
       </div>
       <div
+            className='dottedLineHorizontal' style={{
+              width: '70%',
+              position: 'absolute',
+              left: '-1rem',
+              marginBottom: "2vw",
+              marginTop: "4vw"
+            }}
+          />
+          <div className="row">
+          <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+            How can we help companies be more secure.
+          </h2>
+          </div>
+      <div
         className='row columnReverse-sm' style={{
           marginTop: 'marginTop4rem-md'
         }}
       >
         <div className='col-md-offset-1 col-md-4 margin4RemAuto-sm'>
-          <Image img={image3} style={{ 'box-shadow': '5px 5px 10px grey' }} />
+          <Image img={image3} style={{ 'box-shadow': '5px 5px 10px grey'}} />
         </div>
         <div className='col-md-6'>
+ 
           <p className='marginRight-md'>
-            <h1>How can we help companies be more secure.</h1>
+
           Its important that we dont think about privacy as being the sole responsibility of an individual 
           large amounts of personal data is most likley stored by Companies and Governments and with data breaches happening everyday 
           these organisations need to think about privacy differently to work with people to better protect peoples privacy.   
@@ -142,7 +165,6 @@ export default ({ image1, image2, image3 }) =>
           Privacy by design - This module will build upon the idea of privacy by design. Giving executives a practical way of approaching privacy issues. 
             <br />
             <br />
-            <span style={{ 'font-weight': '700', color: '#523178' }}>We want to find ways to overcome or offset the current arms race of attack-defend-attack-defend in cyber security</span>
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ import services4 from '../../../img/services4.jpg'
 import services5 from '../../../img/services5.jpg'
 import services6 from '../../../img/city.png'
 import services7 from '../../../img/services7.jpg'
-import services8 from '../../../img/services8.jpg'
+import safely from '../../../img/safely.png'
 import services9 from '../../../img/services9.jpg'
 import services10 from '../../../img/services10.jpg'
 
@@ -34,9 +34,8 @@ const Image = ({ img, style }) =>
 
 const headings = [
   "What is Privacy",
-  'How can I be more Private',
-  'What are my rights',
-  'What is the Cyber Institute doing'
+  "Take Back Your Privacy Onion",
+  'Privacy Scenarios'
 ]
 
 export default () =>
@@ -49,7 +48,7 @@ export default () =>
       <div className='row positionRelative' style={{marginTop: '2vw'}}>
         <div className='col-md-offset-1 col-md-8'>
           <Heading>
-          What is Privacy?
+          What is Privacy
           </Heading>
           <div
             className='dottedLineHorizontal' style={{
@@ -276,9 +275,10 @@ an individual by how they interact with a service regardless of the account they
         </div>
       </div>
       </div>
+      <div id="Take Back Your Privacy Onion"></div>
 <BeMorePrivate />
 
-<WhatAreWeDoing image1={services8} image2={services9} image3={services10} />
+<WhatAreWeDoing id="Privacy Scenarios" image1={services10} image2={safely} image3={services10} />
 
       </>
       
