@@ -16,6 +16,7 @@ import Home from './Home/home'
 import About from './pages/About/index'
 import Services from './pages/Services'
 import People from './pages/People'
+import Privacy from './pages/Privacy'
 import FourOFour from './404/404'
 import CITwhite from '../img/CITwhite.jpg'
 import ANULogo from '../img/ANU-LOGO-WHITE.jpg'
@@ -98,6 +99,8 @@ export default function FadeMenu() {
         <MenuItem onClick={handleClose}><Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light' to="/privacy" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Privacy</Link></MenuItem>
+
         
         </Menu>      
     </div>
@@ -120,6 +123,7 @@ class App extends Component {
             <div>
             </div>
             <ul className="desktop-only" style={{ width: '100%' }}>
+              <Link className='Light' to="/privacy" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Privacy</Link>
               <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link>
               <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link>
               <Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link>
@@ -132,6 +136,7 @@ class App extends Component {
       </ElevationScroll>
       <ScrollUp>
         <Switch>
+        <Route exact path="/privacy" component={Privacy} />
       <Route exact path="/news" component={News} />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
