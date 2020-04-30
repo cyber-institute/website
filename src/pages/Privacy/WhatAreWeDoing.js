@@ -34,17 +34,16 @@ export default ({ image1, image2, image3 }) =>
       <div
         className='row positionRelative marginTop4rem-md'
       >
-        <div className='col-md-6'>
-        <ReactPlayer
-        url="https://www.youtube.com/watch?v=ug50zmP9I7s" width="100%" style={{width:"100%"}}
-      /> 
+        <div className='col-md-12'>
+        
         </div>
-        <div className='col-md-4'>
+        <div className='row'>
           <p>
-            
-            <h1>Identifying Scams and making good choices</h1>
+          <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+            Identifying Scams and Making Good Choices
+            </h2>
             <p>
-            Have you ever downloaded an APP or signed up to a service only to regret it?
+            Have you ever downloaded an app or signed up to a service only to regret it?
             </p>
             <p>
             You quickly unsubscribe or delete the app but wished you throught about it more before giving away some of your personal data?
@@ -60,21 +59,26 @@ export default ({ image1, image2, image3 }) =>
                Give it a go and see if it works.
              </p>
              <Slider name="Tech Stuff">
-              As this is a pilot we havent created a cross platform solution. Unfortunately this will only work with the Java version of minecraft.
-              <br/><br/>
-              If you dont have the Java version of mincraft you can watch the run through below. 
-             <br/>
-             <br />So Start up your device, click on multiplayer and type in the following "Server name" add
-            <br /> add the Server name (anything you want) then the Server Address <span style={{ 'font-weight': '700', color: '#523178' }}>minetraining.australiaeast.cloudapp.azure.com</span>
-             <br />You can provide feedback by typing /comment in game and then typing your comment.
+              <p>As this is a pilot we havent created a cross platform solution. Unfortunately this will only work with the Java version of minecraft.</p>
+              
+              
+              <p>If you dont have the Java version of mincraft you can watch the run through below. </p>
+             <p>So Start up your device, click on multiplayer and type in the following "Server name" add
+            add the Server name (anything you want) then the Server Address <span style={{ 'font-weight': '700', color: '#523178' }}>minetraining.australiaeast.cloudapp.azure.com</span>
+            You can provide feedback by typing /comment in game and then typing your comment.</p>
              </Slider>
              <br />  
             If you dont have Minecraft or just couldnt be bothered watch the run through video. 
-           
+            
 
           </p>
         </div>
-      </div>
+        </div>
+         <div className='row center-xs middle-xs'>
+        <ReactPlayer
+        url="https://www.youtube.com/watch?v=ug50zmP9I7s" width="60%"/> 
+        </div>
+      
     </div>
     <div
       className='container-fluid' style={{
