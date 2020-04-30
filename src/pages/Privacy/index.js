@@ -23,7 +23,7 @@ import services4 from '../../../img/services4.jpg'
 import services5 from '../../../img/services5.jpg'
 import services6 from '../../../img/city.png'
 import services7 from '../../../img/services7.jpg'
-import safely from '../../../img/safely.png'
+import safely from '../../../img/Safely.png'
 import services9 from '../../../img/services9.jpg'
 import services10 from '../../../img/services10.jpg'
 
