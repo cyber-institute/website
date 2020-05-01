@@ -129,7 +129,7 @@ export default ({ image1, image2, image3 }) =>
           </p>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
-          <Image img={image2} style={{ 'box-shadow': '5px 5px 10px grey', width:"60%", marginLeft:"20%" }} />
+          <Image img={image2} style={{ 'box-shadow': '5px 5px 10px grey', width:"80%", marginLeft:"10%" }} />
         </div>
       </div>
       {/* <div
