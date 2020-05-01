@@ -30,6 +30,7 @@ import RSA from '../../img/RSA.png'
 import RSA2 from '../../img/RSA.jpg'
 import Zoom from '../../img/zoom_trouble.jpg'
 import DataInterventionsStephanie from '../../img/datainterventions_stephanie.jpg'
+import CoronaApp from "../../img/coronaApp.png"
 import { relative } from 'path'
 
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
@@ -353,6 +354,19 @@ const media = {
     id: '4',
     component: 'NewsArticle',
     props: {
+      head: 'App is no silver bullet for virus, yet a honey pot for the malign',
+      byline: 'Managing a pandemic’s no walk in the park. There’s little clear data initially, and big decisions to be made. Governing is driven by the spur of urgency, because lives are at stake. ',
+      author: 'Prof. Lesley Seebeck',
+      date: '29/4/20',
+      imageSource: CoronaApp,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.afr.com/policy/health-and-education/app-is-no-silver-bullet-for-virus-yet-a-honey-pot-for-the-malign-20200429-p54o5k'
+    }
+  },
+    {
+    id: '4',
+    component: 'NewsArticle',
+    props: {
       head: 'Data interventions and the renegotiation of the social contract',
       byline: 'What can be discerned is that there are different ways to conceive security, and the dangers arise when we overstep the mark into regime security.',
       author: 'Stephanie Koorey',
@@ -374,7 +388,12 @@ const media = {
       link: 'https://www.afr.com/technology/zoom-is-the-next-privacy-challenge-20200324-p54dff'
     }
   },
-    {
+    ]
+}
+
+const media2 = {
+  title: 'Media',
+  sections: [{
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -386,12 +405,7 @@ const media = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://reporter.anu.edu.au/scaffolding-security'
     }
-  }]
-}
-
-const media2 = {
-  title: 'Media',
-  sections: [,{
+  },{
     id: '3',
     component: 'NewsArticle',
     props: {
@@ -416,7 +430,14 @@ const media2 = {
       link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/'
     }
   },
-  {
+  
+  
+  ]
+}
+
+const media3 = {
+  title: 'News',
+  sections: [{
     id: '2',
     component: 'NewsArticle',
     props: {
@@ -427,14 +448,7 @@ const media2 = {
       imageSource: Microchip,
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.policyforum.net/education-for-the-cyber-age/'
-    }
-  }
-  ]
-}
-
-const media3 = {
-  title: 'News',
-  sections: [{
+    }},{
     id: '4',
     component: 'NewsArticle',
     props: {
@@ -459,21 +473,21 @@ const media3 = {
       sizeName: 'col-md-3 col-xs-12',
       link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/'
     }
-  }, {
-    id: '3',
-    component: 'NewsArticle',
-    props: {
-      head: 'Submission: 2020 Cyber Security Strategy',
-      byline: 'The number of questions in this paper illustrates the complex, contested, and changeable nature of cyber and cyber security... Given that cyber is a wicked problem, without a broader conceptual framework, the danger is that fragmented approach and point solutions are not likely to meet the challenge.',
-      author: 'Prof. Lesley Seebeck',
-      date: '1/11/19',
-      imageSource: SecurityStrategy,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf'
-    }
   }, 
+   
   
-  
+  // {
+  //   id: '3',
+  //   component: 'NewsArticle',
+  //   props: {
+  //     head: 'Submission: 2020 Cyber Security Strategy',
+  //     byline: 'The number of questions in this paper illustrates the complex, contested, and changeable nature of cyber and cyber security... Given that cyber is a wicked problem, without a broader conceptual framework, the danger is that fragmented approach and point solutions are not likely to meet the challenge.',
+  //     author: 'Prof. Lesley Seebeck',
+  //     date: '1/11/19',
+  //     imageSource: SecurityStrategy,
+  //     sizeName: 'col-md-3 col-xs-12',
+  //     link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf'
+  //   }
   // {
   //   id: '4',
   //   component: 'NewsArticle',
