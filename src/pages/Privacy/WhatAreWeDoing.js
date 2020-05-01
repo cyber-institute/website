@@ -39,36 +39,43 @@ export default ({ image1, image2, image3 }) =>
         </div>
         <div className='row'>
           <p>
-          <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+          <div className= 'col-md-10 col-md-offset-1'>
+            <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
             Identifying Scams and Making Good Choices
             </h2>
-            <p>
+            <p style={{lineHeight:"1.6"}}>
             Have you ever downloaded an app or signed up to a service only to regret it?
             </p>
-            <p>
-            You quickly unsubscribe or delete the app but wished you throught about it more before giving away some of your personal data?
+            <p style={{lineHeight:"1.6", paddingBottom:"8px"}} >
+            You quickly unsubscribe or delete the app, but wished you thought about it more before giving away some of your personal data?
             </p>
-            <p>
-            Well we can help. First step is Minecraft and Zombies.
+            <p style={{lineHeight:"1.6", }}>
+            Well, we can help. The first step is Minecraft and Zombies.
             </p>
-            <p>
-            You may be thinking how are zombies going to help me understand privacy? 
-            Well we arent 100% sure it will, but thats what we are running this pilot for.
+            <p style={{lineHeight:"1.6", paddingBottom:"16px"}}>
+            You may be thinking: how are zombies going to help me understand privacy? Well, we aren’t 100% sure it will, but that’s  what we are running this pilot for.
             </p>
-             <p>
+             <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>
                Give it a go and see if it works.
              </p>
-             <Slider name="Tech Stuff">
-              <p>As this is a pilot we havent created a cross platform solution. Unfortunately this will only work with the Java version of minecraft.</p>
-              
-              
-              <p>If you dont have the Java version of mincraft you can watch the run through below. </p>
-             <p>So Start up your device, click on multiplayer and type in the following "Server name" add
-            add the Server name (anything you want) then the Server Address <span style={{ 'font-weight': '700', color: '#523178' }}>minetraining.australiaeast.cloudapp.azure.com</span>
-            You can provide feedback by typing /comment in game and then typing your comment.</p>
+          </div>
+          <div style={{padding:"15px"}}>
+            <Slider name="Tech Stuff">
+             <div className= 'col-md-10 col-md-offset-1' style={{paddingLeft:"2px"}}>
+              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>As this is a pilot, we haven’t created a cross-platform solution. Unfortunately, this will only work with the Java version of Minecraft.</p>
+              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>If you dont have the Java version of mincraft you can watch the run through below. </p>
+             <p style={{lineHeight:"1.6", paddingBottom:"8px"}}> So start up your device… and type in the following: for “Server name”, add the Server name (anything you want), 
+             and then for the “Server Address” use: <span style={{ 'font-weight': '700', color: '#523178' }}>minetraining.australiaeast.cloudapp.azure.com</span>. 
+             You can provide feedback by typing “/comment” in-game, and then typing your comment.</p>
+            </div>
              </Slider>
-             <br />  
-            If you dont have Minecraft or just couldnt be bothered watch the run through video. 
+          </div>
+           
+             <div className= 'col-md-10 col-md-offset-1'>
+               <p style={{lineHeight:"1.6", marginBottom:"20px"}}>
+               If you don’t have Minecraft, or just couldn’t be bothered, watch the run-through video.               </p>
+             </div>
+             
             
 
           </p>
@@ -82,15 +89,15 @@ export default ({ image1, image2, image3 }) =>
     </div>
     <div
       className='container-fluid' style={{
-        marginTop: '2rem'
+        marginTop: '4rem'
       }}
     >
-      <div className='row positionRelative'>
+      <div className='row positionRelative' >
         <div
           className='col-md-offset-1 col-md-11'
         >
           <Heading>
-          Seperation can Help
+          Separation can help          
           </Heading>
           <div
             className='dottedLineHorizontal' style={{
@@ -107,16 +114,16 @@ export default ({ image1, image2, image3 }) =>
         }}
       >
         <div className='col-md-5 col-md-offset-1'>
-          <p className='marginLeftNegative'>
-          If you regularly download apps or have a lot of services that you use. You can be sharing your 
+          <p className='marginLeftNegative' style={{lineHeight:"1.6"}}>
+          If you regularly download apps or have a lot of services that you use, you could be sharing your 
           information with a lot of different people. Not all of them have your best interest at heart. 
 
+            <br /> 
+            For some accounts, you will want to be you. For example, your bank or some social media accounts, 
+            whilst for others, there is no reason you need to give away information to at all. 
+            It’s just so convenient to use the same account.
             <br />
-            Some accounts you will want to be you. For example your bank or some social media accounts.
-            Whilst others there is no reason you need to give away information to at all. 
-            Its just so convenient to use the same account. 
-            <br />
-            If you want something to make it easier then we have created a plugin for chrome that can make creating accounts with services anonymously much easier.
+            If you want something to make it easier then we have created a plugin for Chrome that can make creating accounts with services anonymously much easier.
             Introducing SafeLy. Add safely picture
           </p>
         </div>
@@ -130,19 +137,21 @@ export default ({ image1, image2, image3 }) =>
         }}
       >
         <div className='col-md-offset-1 col-md-4 margin4RemAuto-sm'>
-          <Image img={image3} style={{ 'box-shadow': '5px 5px 10px grey' }} />
+          <Image img={image3} style={{ 'box-shadow': '5px 5px 10px grey', marginTop:"25px" }} />
         </div>
         <div className='col-md-6'>
           <p className='marginRight-md'>
             <h1>How can we help companies be more secure.</h1>
-          Its important that we dont think about privacy as being the sole responsibility of an individual 
-          large amounts of personal data is most likley stored by Companies and Governments and with data breaches happening everyday 
-          these organisations need to think about privacy differently to work with people to better protect peoples privacy.   
-          The cyber institute is currently working on a training course to help executives make more informed decisions about privacy and security. 
-          Privacy by design - This module will build upon the idea of privacy by design. Giving executives a practical way of approaching privacy issues. 
+          <p style={{lineHeight:"1.6"}}>
+          It’s important that we don’t think about privacy as being the sole responsibility of an individual. Large amounts of personal data
+          is most likely stored by companies and governments, and with data breaches happening everyday, these organisations need to think about privacy differently: to work with people to better protect their privacy. 
+          The Cyber Institute is currently working on a training course to help executives make more informed decisions about privacy and security. 
+          < br /> < br />
+          <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>Privacy by design</span> - This module will build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues. 
+            </p>
             <br />
             <br />
-            <span style={{ 'font-weight': '700', color: '#523178' }}>We want to find ways to overcome or offset the current arms race of attack-defend-attack-defend in cyber security</span>
+            <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>We want to find ways to overcome or offset the current arms race of attack-defend-attack-defend in cyber security</span>
           </p>
         </div>
       </div>
