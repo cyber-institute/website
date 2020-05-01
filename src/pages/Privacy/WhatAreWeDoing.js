@@ -110,25 +110,27 @@ export default ({ image1, image2, image3 }) =>
       </div>
       <div
         className='row' style={{
-          marginTop: '4rem'
+          marginTop: '4rem',
+          marginBottom: "2rem"
+
         }}
       >
-        <div className='col-md-5 col-md-offset-1'>
-          <p className='marginLeftNegative' style={{lineHeight:"1.6"}}>
-          If you regularly download apps or have a lot of services that you use, you could be sharing your 
-          information with a lot of different people. Not all of them have your best interest at heart. 
-
+        <div className='col-md-6 col-md-offset-1'>
+          <p className='marginLeftNegative' style={{lineHeight:"1.6", height:"100%"}}>
+          <p >If you regularly download apps or have a lot of services that you use, you could be sharing your 
+          information with a lot of different people. Not all of them have your best interest at heart. </p>
+          
             <br /> 
-            For some accounts, you will want to be you. For example, your bank or some social media accounts, 
+            <p>For some accounts, you will want to be you. For example, your bank or some social media accounts, 
             whilst for others, there is no reason you need to give away information to at all. 
-            It’s just so convenient to use the same account.
+            It’s just so convenient to use the same account.</p>
             <br />
-            If you want something to make it easier then we have created a plugin for Chrome that can make creating accounts with services anonymously much easier.
-            Introducing SafeLy. Add safely picture
+            <p>If you want something to make it easier then we have created a plugin for Chrome that can make creating accounts with services anonymously much easier.
+            Introducing SafeLy.</p>
           </p>
         </div>
-        <div className='col-md-5 margin4RemAuto-sm'>
-          <Image img={image2} style={{ 'box-shadow': '5px 5px 10px grey' }} />
+        <div className='col-md-4 margin4RemAuto-sm'>
+          <Image img={image2} style={{ 'box-shadow': '5px 5px 10px grey', width:"60%", marginLeft:"20%" }} />
         </div>
       </div>
       <div

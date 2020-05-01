@@ -26,6 +26,7 @@ import services7 from '../../../img/services7.jpg'
 import services8 from '../../../img/services8.jpg'
 import services9 from '../../../img/services9.jpg'
 import services10 from '../../../img/companies.jpg'
+import safely from "./../../../img/safeLy.png"
 
 const Image = ({ img, style }) =>
   <img
@@ -289,7 +290,7 @@ psychological behaviours.
       
 <BeMorePrivate />
 
-<WhatAreWeDoing image1={services8} image2={services9} image3={services10} />
+<WhatAreWeDoing image1={services8} image2={safely} image3={services10} />
 </div>
       </>
       
