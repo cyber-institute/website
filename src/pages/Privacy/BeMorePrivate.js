@@ -99,7 +99,7 @@ export default () =>
           <br />It can seem impossible to do but the following tips and tricks should help.
           There are different levels of privacy. Not everyone will be right for you. The follow tips are broken into categories.
           
-          <ul>
+          <ul style={{listStylePosition: "outside"}}>
             
           <WhiteSlider name="Where is my tin foil hat. I dont even like my parents knowing my name.">
              <div style={{paddingLeft:"2px", lineHeight:"1.6"}}>

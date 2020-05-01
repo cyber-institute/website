@@ -166,9 +166,7 @@ export default ({ image1, image2, image3 }) =>
           <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>Privacy by design</span> - This module will build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues. 
             </p>
             <br />
-            <br />
-            <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>We want to find ways to overcome or offset the current arms race of attack-defend-attack-defend in cyber security</span>
-          </p>
+           </p>
         </div>
       </div>
     </div>

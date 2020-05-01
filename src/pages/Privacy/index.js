@@ -188,7 +188,7 @@ share online.
 Information that is <span style={{'font-weight': '700',color: '#523178'}}>about you</span> is information that describes you
 or is information that you used to confirm your identity online.  
 <br /><br />
-<ul>
+<ul style={{ listStylePosition: "outside"}}>
   <li>
     Email Address
   </li>
@@ -247,7 +247,7 @@ It may not be obvious but this information
 leaks through with every interaction you have with the internet 
 it is captured with every like, swipe or click you do. 
 <br /> <span style={{'font-weight': '700',color: '#523178'}}>This information is you.</span>  
-<ul>
+<ul style={{listStylePosition: "outside"}}>
   <li>
     Thought Processes
   </li>
