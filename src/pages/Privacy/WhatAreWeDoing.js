@@ -125,7 +125,16 @@ export default ({ image1, image2, image3 }) =>
             It’s just so convenient to use the same account.</p>
             <br />
             <p>If you want something to make it easier then we have created a plugin for Chrome that can make creating accounts with services anonymously much easier. <br />  <br />
-            Introducing SafeLy.</p>
+            Introducing SafeLy. </p>
+            <br />
+            <div style={{display:"flex", justifyContent:"center"}}>
+              <form>
+                <button  style={{backgroundColor:"#523178", border:"none", color:"white",
+            padding:"15px 25px", textAlign:"center", cursor:"pointer", borderRadius:"25px",
+            fontSize:"18px", fontWeight:"100"}} onclick="https://cyber.anu.edu.au/">Download SafeLy for Chrome</button>
+              </form>
+              
+            </div>
           </p>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
