@@ -106,7 +106,7 @@ export default () =>
           className='col-md-offset-3 col-md-6'
         >
           <p>Here at the <span style={{ 'font-weight': '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
-            	  <span style={{ 'font-weight': '700', color: '#523178' }}>control who they share their information with.</span> 
+            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control who they share their information with.</span> 
           </p>
           </div>
           </div> 
@@ -277,7 +277,7 @@ Most interactions that you do on the internet are logged. With enough logged inf
 patterns begin to emerge. Organisations then analyse these patterns against known 
 psychological behaviours. 
 <br />
-<br /> With enough information, an organisation is able… by how they interact with a service, regardless of the account they use. 
+<br /> With enough information, an organisation is able to predict how users will interact with a service, regardless of the account they use. 
 <br/>
 
           </p>
