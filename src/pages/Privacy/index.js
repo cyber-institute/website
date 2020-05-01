@@ -25,7 +25,8 @@ import services6 from '../../../img/city.png'
 import services7 from '../../../img/services7.jpg'
 import safely from '../../../img/Safely.png'
 import services9 from '../../../img/services9.jpg'
-import services10 from '../../../img/services10.jpg'
+import services10 from '../../../img/companies.jpg'
+import safely from "./../../../img/safeLy.png"
 
 const Image = ({ img, style }) =>
   <img
@@ -40,6 +41,8 @@ const headings = [
 
 export default () =>
   <>
+    <div style={{overflowX:"hidden"}}>
+
     <Banner {...{ banner, headings }} title='Privacy In the Modern World' subTitle='Thinking about your data in a different way' />
     <div
       className='container-fluid'
@@ -101,15 +104,22 @@ export default () =>
           <div
           className='col-md-offset-3 col-md-6'
         >
-          <p>Here at the <span style={{ 'font-weight': '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to <span style={{ 'font-weight': '700', color: '#523178' }}>control with who they share their information.</span> </p>
+          <p>Here at the <span style={{ 'font-weight': '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
+            	  <span style={{ 'font-weight': '700', color: '#523178' }}>control who they share their information with.</span> 
+          </p>
           </div>
           </div> 
           <br /><br />
           <div className="row">
+          <div className="col-md-10 col-md-offset-1">
+
+        <div className="row">
+
+        
           <div
-          className='col-md-offset-1 col-md-3'
+          className='col-md-4'
         >
-                    <p>
+                    <p style={{width:"90%", marginLeft:"0"}}>
                     <img style={{"object-fit":"cover", width: "100%"}} src={privacyOnion}/>
            <br /><br />
 
@@ -120,9 +130,9 @@ information about you, with the most intimate being at the centre.
         </div>
           
         <div
-          className='col-md-offset-1 col-md-3'
+          className=' col-md-4'
         >
-                    <p>
+                    <p style={{width:"90%", marginLeft:"5%"}}>
                     <img style={{"object-fit":"cover", width: "100%", 'box-shadow': '5px 5px 10px grey'}} src={privacyShare}/>
            <br /><br /> 
            
@@ -132,9 +142,10 @@ moderating information between strangers, friends and family.
 </p>
         </div>
         <div
-          className='col-md-offset-1 col-md-3'
+          className='col-md-4'
+          
         >
-                    <p>
+                    <p style={{width:"90%", marginLeft:"10%"}}>
                     <img style={{"object-fit":"cover", width: "100%"}} src={privacyLost}/>
            <br /><br />
 
@@ -142,6 +153,8 @@ The average individual has lost control over the information that they
 share online. 
 <br /><br />
 </p>
+        </div>
+        </div>
         </div>
         </div>
 </div>
@@ -167,7 +180,7 @@ share online.
 
 
           <div
-          className='col-md-4'
+          className='col-md-offset-1 col-md-3'
         >
           <p>
          <h3 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>About You</h3> 
@@ -199,7 +212,7 @@ or is information that you used to confirm your identity online.
 </ul>
 <br />
 <h4 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
-So whats the risk?
+So what's the risk?
 </h4>
 <br />
 
@@ -208,9 +221,7 @@ The problem is that often this information is the only way that
 a company can verify you on the internet. 
 <br />
 <br />
-If someone else has this information they would 
-be able to steal your identity. Causing you problems IRL as well as online. 
-
+If someone else has this information they would be able to steal your identity — causing you problems IRL as well as online
 
 
 
@@ -218,18 +229,19 @@ be able to steal your identity. Causing you problems IRL as well as online.
         </div>
         <div
           className='col-md-4'
+          
         >
            
-          <img style={{"object-fit":"cover", width: "100%"}} src={privacyAboutYou}/>   
+          <img style={{"object-fit":"cover", width: "100%", marginLeft:"auto", marginRight:"auto", display:"block"}} src={privacyAboutYou}/>   
         </div>
         <div
-          className='col-md-4'
+          className='col-md-3 '
         >
           <p>
           <h3 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>Is You</h3> 
       Information that <span style={{'font-weight': '700',color: '#523178'}}>is you</span> can be
-considered your ‘digital DNA’ its the how, where, when and what rather than the
-information that describes you. 
+considered your ‘digital DNA’: it’s the how, where, when and what…”
+		“…leaks through with every interaction you have with the internet. It is captured with every like…
 <br/>
 <br />
 It may not be obvious but this information 
@@ -241,7 +253,7 @@ it is captured with every like, swipe or click you do.
     Thought Processes
   </li>
   <li>
-    Personal preferences
+    Personal Preferences
   </li>
   <li>
     How you react to situations
@@ -260,12 +272,11 @@ So how do they collect this information?
 </h4>
 <br />
 
-Most interactions that you do on the internet are logged. With enough logged information
+Most interactions that you do on the internet are logged. With enough logged information,
 patterns begin to emerge. Organisations then analyse these patterns against known 
 psychological behaviours. 
 <br />
-<br /> With enough information an organisation is able to identify
-an individual by how they interact with a service regardless of the account they use. 
+<br /> With enough information, an organisation is able… by how they interact with a service, regardless of the account they use. 
 <br/>
 
           </p>
@@ -274,12 +285,21 @@ an individual by how they interact with a service regardless of the account they
         </div>
         </div>
       </div>
+<<<<<<< HEAD
       </div>
       <div id="Take Back Your Privacy Onion"></div>
 <BeMorePrivate />
 
 <WhatAreWeDoing id="Privacy Scenarios" image1={services10} image2={safely} image3={services10} />
 
+=======
+      </div> 
+      
+<BeMorePrivate />
+
+<WhatAreWeDoing image1={services8} image2={safely} image3={services10} />
+</div>
+>>>>>>> 1152231685cc04ed0e7c249eebfcead6fc7ebaf3
       </>
       
       
