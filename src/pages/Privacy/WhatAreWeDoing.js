@@ -124,7 +124,7 @@ export default ({ image1, image2, image3 }) =>
             whilst for others, there is no reason you need to give away information to at all. 
             It’s just so convenient to use the same account.</p>
             <br />
-            <p>If you want something to make it easier then we have created a plugin for Chrome that can make creating accounts with services anonymously much easier.
+            <p>If you want something to make it easier then we have created a plugin for Chrome that can make creating accounts with services anonymously much easier. <br />  <br />
             Introducing SafeLy.</p>
           </p>
         </div>
@@ -132,7 +132,7 @@ export default ({ image1, image2, image3 }) =>
           <Image img={image2} style={{ 'box-shadow': '5px 5px 10px grey', width:"60%", marginLeft:"20%" }} />
         </div>
       </div>
-      <div
+      {/* <div
             className='dottedLineHorizontal' style={{
               width: '70%',
               position: 'absolute',
@@ -145,7 +145,7 @@ export default ({ image1, image2, image3 }) =>
           <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
             How can we help companies be more secure.
           </h2>
-          </div>
+          </div> */}
       <div
         className='row columnReverse-sm' style={{
           marginTop: 'marginTop4rem-md'

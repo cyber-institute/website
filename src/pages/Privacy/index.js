@@ -23,10 +23,9 @@ import services4 from '../../../img/services4.jpg'
 import services5 from '../../../img/services5.jpg'
 import services6 from '../../../img/city.png'
 import services7 from '../../../img/services7.jpg'
-import safely from '../../../img/Safely.png'
 import services9 from '../../../img/services9.jpg'
 import services10 from '../../../img/companies.jpg'
-import safely from "./../../../img/safeLy.png"
+import safely from "./../../../img/Safely.png"
 
 const Image = ({ img, style }) =>
   <img
@@ -285,21 +284,15 @@ psychological behaviours.
         </div>
         </div>
       </div>
-<<<<<<< HEAD
       </div>
-      <div id="Take Back Your Privacy Onion"></div>
-<BeMorePrivate />
+      <div id="Take Back Your Privacy Onion">
+        <BeMorePrivate />
+
+      </div>
 
 <WhatAreWeDoing id="Privacy Scenarios" image1={services10} image2={safely} image3={services10} />
-
-=======
-      </div> 
-      
-<BeMorePrivate />
-
-<WhatAreWeDoing image1={services8} image2={safely} image3={services10} />
 </div>
->>>>>>> 1152231685cc04ed0e7c249eebfcead6fc7ebaf3
+
       </>
       
       
