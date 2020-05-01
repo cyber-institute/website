@@ -43,7 +43,7 @@ export default ({ image1, image2, image3 }) =>
             <p style={{lineHeight:"1.6"}}>
             Have you ever downloaded an app or signed up to a service only to regret it?
             </p>
-            <p style={{lineHeight:"1.6", paddingBottom:"8px"}} >
+            <p style={{lineHeight:"1.6", paddingBottom:"16px"}} >
             You quickly unsubscribe or delete the app, but wished you thought about it more before giving away some of your personal data?
             </p>
             <p style={{lineHeight:"1.6", }}>

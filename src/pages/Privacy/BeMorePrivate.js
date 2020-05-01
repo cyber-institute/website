@@ -116,7 +116,7 @@ export default () =>
             Change your search engine - Use a more private search engine such as Startpage or Duckduckgo.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Never send information to improve services - This information can give someone   
+            Never send information to improve services - This information can give organisations the ability to predict your behaviours.   
             </li>
             <li style={{paddingBottom:"10px"}}>
             Don't use a mobile phone - Mobile phones leak a lot of information. Do all you online activity through a computer you trust.
@@ -161,7 +161,7 @@ export default () =>
             </div>
              </WhiteSlider>
 
-             <WhiteSlider name="I dont care about my privacy. If its so important why cant someone do it for me.">
+             <WhiteSlider name="I don't care about my privacy. If its so important why can't someone do it for me.">
              <div style={{paddingLeft:"2px", lineHeight:"1.6"}}>
              <li style={{paddingBottom:"10px"}}>
              Do nothing - you may be happy with your current privacy.
