@@ -170,7 +170,7 @@ export default ({ image1, image2, image3 }) =>
           <p style={{lineHeight:"1.6"}}>
           It’s important that we don’t think about privacy as being the sole responsibility of an individual. Large amounts of personal data
           is most likely stored by companies and governments, and with data breaches happening everyday, these organisations need to think about privacy differently: to work with people to better protect their privacy. 
-          The Cyber Institute is currently working on a training course to help executives make more informed decisions about privacy and security. 
+          The Cyber Institute is currently working on a training course to give executives the tools to lead with confidence in an ever changing world.
           < br /> < br />
           <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>Privacy by design</span> - This module will build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues. 
             </p>
