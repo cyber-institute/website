@@ -242,8 +242,7 @@ If someone else has this information they would be able to steal your identity �
           <p>
           <h3 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>Is You</h3> 
       Information that <span style={{'font-weight': '700',color: '#523178'}}>is you</span> can be
-considered your ‘digital DNA’: it’s the how, where, when and what…”
-		“…leaks through with every interaction you have with the internet. It is captured with every like…
+considered your ‘digital DNA’: it’s the how, where, when and what.
 <br/>
 <br />
 It may not be obvious but this information 
