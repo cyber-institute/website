@@ -158,7 +158,7 @@ share online.
         </div>
 </div>
 
-<div className="row center-xs middle-xs" style={{marginBottom : '2vw'}}>
+<div className="row middle-xs" style={{marginBottom : '2vw'}}>
 <div className='col-md-12'
         >
                   <div
@@ -170,9 +170,11 @@ share online.
             }}
           />
           </div>
+          <div className="col-md-12 center-xs">
           <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
           Personal information can be split in two
           </h2>
+          </div>
 
 <div className="row">
 
