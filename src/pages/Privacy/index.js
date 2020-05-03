@@ -25,7 +25,7 @@ import services6 from '../../../img/city.png'
 import services7 from '../../../img/services7.jpg'
 import services9 from '../../../img/services9.jpg'
 import services10 from '../../../img/companies.jpg'
-import safely from "./../../../img/Safely.png"
+import safely from "./../../../img/safe.png"
 
 const Image = ({ img, style }) =>
   <img
