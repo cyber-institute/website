@@ -1,5 +1,6 @@
 import React from 'react'
 
+import './style.css'
 import CyberMasteryContent from './CyberMasteryContent'
 import CourseInformationBlurb from './CourseInformationBlurb'
 import Products from './Products'
@@ -99,7 +100,7 @@ export default () =>
         <div
           className='col-md-12'
         >
-          <div className="row">
+          <div className="row" style={{paddingLeft: '0'}}>
           <div
           className='col-md-offset-3 col-md-6'
         >
@@ -119,7 +120,7 @@ export default () =>
           className='col-md-4'
         >
                     <p style={{width:"90%", marginLeft:"0"}}>
-                    <img style={{"object-fit":"cover", width: "100%"}} src={privacyOnion}/>
+                    <img style={{"object-fit":"cover", width: "95%"}} src={privacyOnion}/>
            <br /><br />
 
 This is the “privacy onion”. The layers of the onion represent increasingly important
