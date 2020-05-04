@@ -36,7 +36,8 @@ const Image = ({ img, style }) =>
 const headings = [
   "What is Privacy",
   "Take Back Your Privacy Onion",
-  'Privacy Scenarios'
+  'Privacy Scenarios',
+  'Want to be Involved'
 ]
 
 export default () =>
@@ -105,7 +106,7 @@ export default () =>
           className='col-md-offset-3 col-md-6'
         >
           <p>Here at the <span style={{ 'font-weight': '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
-            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control who they share their information with.</span> 
+            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control with whom they share their information.</span> 
           </p>
           </div>
           </div> 
@@ -114,21 +115,6 @@ export default () =>
           <div className="col-md-10 col-md-offset-1">
 
         <div className="row">
-
-        
-          <div
-          className='col-md-4'
-        >
-                    <p style={{width:"90%", marginLeft:"0"}}>
-                    <img style={{"object-fit":"cover", width: "95%"}} src={privacyOnion}/>
-           <br /><br />
-
-This is the “privacy onion”. The layers of the onion represent increasingly important
-information about you, with the most intimate being at the centre.
-<br /><br />
-</p>
-        </div>
-          
         <div
           className=' col-md-4'
         >
@@ -136,7 +122,7 @@ information about you, with the most intimate being at the centre.
                     <img style={{"object-fit":"cover", width: "100%", 'box-shadow': '5px 5px 10px grey'}} src={privacyShare}/>
            <br /><br /> 
            
-In the pre-digital age, people could control their own privacy more easily. limiting how much information is shared with others: 
+In the pre-digital age, people could control their own privacy more easily: limiting how much information is shared with others: 
 moderating information between strangers, friends and family.
 <br /><br />
 </p>
@@ -149,11 +135,25 @@ moderating information between strangers, friends and family.
                     <img style={{"object-fit":"cover", width: "100%"}} src={privacyLost}/>
            <br /><br />
 
-The average individual has lost control over the information that they
+Now, there is more information about people, and the average individual has lost control over the information that they
 share online. 
 <br /><br />
 </p>
         </div>
+        
+          <div
+          className='col-md-4'
+        >
+                    <p style={{width:"90%", marginLeft:"0"}}>
+                    <img style={{"object-fit":"cover", width: "95%"}} src={privacyOnion}/>
+           <br /><br />
+           The 'privacy onion' is a useful way to think about your information.  At the centre is your most intimate and sensitive information: you may choose to share that with your closest friends and family.  
+
+<br /><br />
+</p>
+        </div>
+          
+       
         </div>
         </div>
         </div>
@@ -173,7 +173,7 @@ share online.
           </div>
           <div className="col-md-12 center-xs">
           <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
-          Personal information can be split in two
+          We can think about personal information as having two aspects.
           </h2>
           </div>
 
@@ -189,7 +189,7 @@ share online.
  
 
 Information that is <span style={{'font-weight': '700',color: '#523178'}}>about you</span> is information that describes you
-or is information that you used to confirm your identity online.  
+or is information that you use to confirm your identity online.  
 <br /><br />
 <ul style={{ listStylePosition: "outside"}}>
   <li>
@@ -223,7 +223,7 @@ The problem is that often this information is the only way that
 a company can verify you on the internet. 
 <br />
 <br />
-If someone else has this information they would be able to steal your identity — causing you problems IRL as well as online
+If someone else has this information they would be able to steal your identity — causing you problems IRL (in real life) as well as online.
 
 
 
@@ -241,14 +241,14 @@ If someone else has this information they would be able to steal your identity �
         >
           <p>
           <h3 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>Is You</h3> 
-      Information that <span style={{'font-weight': '700',color: '#523178'}}>is you</span> can be
-considered your ‘digital DNA’: it’s the how, where, when and what.
+      Information that <span style={{'font-weight': '700',color: '#523178'}}>is you</span> may be
+considered your ‘digital DNA’: it’s the how, where, when and what.It's your behaviour, activity and circumstances.
 <br/>
 <br />
 It may not be obvious but this information 
-leaks through with every interaction you have with the internet 
-it is captured with every like, swipe or click you do. 
-<br /> <span style={{'font-weight': '700',color: '#523178'}}>This information is you.</span>  
+leaks through with every interaction you have with the internet. 
+It is captured with every "like", swipe or click you make. 
+<br /> <br/><span style={{'font-weight': '700',color: '#523178'}}>This information is you.</span>  
 <ul style={{listStylePosition: "outside"}}>
   <li>
     Thought Processes
@@ -269,11 +269,11 @@ it is captured with every like, swipe or click you do.
 </ul>
 <br />
 <h4 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
-So how do they collect this information?
+So how is this information collected?
 </h4>
 <br />
 
-Most interactions that you do on the internet are logged. With enough logged information,
+Most interactions on the internet are logged. With enough logged information,
 patterns begin to emerge. Organisations then analyse these patterns against known 
 psychological behaviours. 
 <br />
@@ -293,6 +293,49 @@ psychological behaviours.
       </div>
 
 <WhatAreWeDoing id="Privacy Scenarios" image1={services10} image2={safely} image3={services10} />
+
+  <div
+      className='container-fluid positionRelative' style={{
+        marginTop: '2rem'
+      }}
+    >
+      <div className='row positionRelative' id="Want to be Involved">
+        <div
+          className='col-md-11' style={{
+            textAlign: 'right'
+          }}
+        >
+          <Heading>
+      Want to be Involved?
+          </Heading>
+          <div
+            className='dottedLineHorizontal' style={{
+              width: '91.666%',
+              position: 'absolute',
+              left: '-1rem'
+            }}
+          />
+        </div>
+      </div>
+      <div className='col-md-offset-3 col-md-6'>
+      <br/><br />
+      <p style={{lineHeight:"1.6"}}>
+            This is just the beginning. We will be expanding our training, products and ideas.
+            <ul>
+              <li>
+              Give us some feedback, this is our first attempt we want it to be bigger and better.
+              </li>
+              <li>
+              Get your hands dirty and help us out, we are keen to collaborate or work with partners. 
+              </li>
+              <li>
+              Register your interest for privacy training, executive training or both.
+              </li>
+            </ul>
+            Our contact details are below we look forward to hearing from you. 
+            </p>
+            </div>
+</div>
 </div>
 
       </>

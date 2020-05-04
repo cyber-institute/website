@@ -95,44 +95,49 @@ export default () =>
             fontWeight: "200"
           }}
         >
-          The Internet has allowed untrusted people to peel away the layers of your privacy onion without getting to know you first.
-          <br />It can seem impossible to do but the following tips and tricks should help.
-          There are different levels of privacy. Not everyone will be right for you. The follow tips are broken into categories.
+          The Internet has allowed untrusted people to peel away the layers of your privacy onion without your knowledge or agreement.
+          <br />It may seem impossible to protect your privacy but the following suggestions should help.
+          There are different levels of privacy. Not everyone will be right for you. The following tips are broken into categories.
+
+          <br></br><br></br>
+          Before you start applying some of these suggestions, a useful way of determining what category you fit in is to map your 
+          <span style={{'font-weight': '700'}}> is you</span> and <span style={{'font-weight': '700'}}>about you</span> data onto a privacy onion. 
+          This can help you determine the privacy level you are most comfortable with.  
           
-          <ul style={{listStylePosition: "outside"}}>
+                    <ul style={{listStylePosition: "outside"}}>
             
-          <WhiteSlider name="Where is my tin foil hat. I dont even like my parents knowing my name.">
+          <WhiteSlider name="Where is my tin foil hat? I don't even like my parents knowing my name.">
              <div style={{paddingLeft:"2px", lineHeight:"1.6"}}>
              <li style={{paddingBottom:"10px"}}>
-            Don't use social media - Feel free to browse anonymously but try and use a VPN or an anonymous proxy.
+            Don't use social media - You can browse anonymously but when you do, try to use a Virtual Private Network (VPN) or an anonymous proxy.
             </li>
             <li style={{paddingBottom:"10px"}}> 
-            Use a secure messaging app - Use an app that has true end to end encryption. Signal is a good example of this. 
+            Use a secure messaging app - These are apps that has true end to end encryption. Signal and Wikr are good examples. 
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Read the terms and conditions - Choose only providers that don't sell or share your information. This includes Internet Providers and telephone providers. 
+            Read the terms and conditions - of any service you're thinking of signing on to, including Internet providers and telephone providers.  Choose only providers that don't sell or share your information.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Change your search engine - Use a more private search engine such as Startpage or Duckduckgo.
+            Change your search engine - Use a more private search engine such as Startpage, Duckduckgo or Brave.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Never send information to improve services - This information can give organisations the ability to predict your behaviours.   
+            Never send information to improve services - Never send information to improve services.  Such information can help others predict your behaviours.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Don't use a mobile phone - Mobile phones leak a lot of information. Do all you online activity through a computer you trust.
+            If you really want to avoid any data leakage, don't use a mobile phone - Mobile phones broadcast a lot of information. Do all you online activity through a computer you trust.
             </li>
             </div>
              </WhiteSlider>
              <WhiteSlider name="I hate that companies have my data and I want to minimise how much they have.">
              <div style={{paddingLeft:"2px", lineHeight:"1.6"}}>
              <li style={{paddingBottom:"10px"}}>
-             Separate accounts - If you have a large number of accounts and apps that you regularly use, it can be a good idea to sign up to different services with different email addresses.  
+             Use Separate accounts - If you have a large number of accounts and apps that you regularly use, it may be a good idea to use different email addresses for different services.  
             </li>
             <li style={{paddingBottom:"10px"}}> 
-            Minimise your apps and services - Delete all non-essential apps and accounts.
+            Minimise the number of apps and services that you do use - Delete all non-essential apps and accounts.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Use anonymous and secure email - Change your main email account to dedicated secure mail such as ProtonMail, or use anonymous email services.
+            Use anonymous and secure email - Change your main email account to a dedicated secure mail such as ProtonMail, or use anonymous email services.
             </li>
             
             </div>
@@ -141,22 +146,22 @@ export default () =>
              <WhiteSlider name="Ok, I know it’s hard to protect my privacy and still live online, but I do have to trust someone.">
              <div style={{paddingLeft:"2px", lineHeight:"1.6"}}>
              <li style={{paddingBottom:"10px"}}>
-             Put all your eggs in one basket - Find a few companies that you accept will have acess to your data and try to use only their services rather than signing up for different accounts.
+             Put all your eggs in one or two baskets - Find a few companies that you accept will have access to your data and try to use only their services rather than signing up for a variety of different accounts.
             </li>
             <li style={{paddingBottom:"10px"}}> 
-            Read the terms and conditions - This can be very boring but can give you an idea of what you are signing up for. 
+            Read the terms and conditions - This can be tedious but it's better to know what you are agreeing to.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Learn more about Privacy and Security - Take some training or read some tips and tricks articles to improve your privacy IQ.
+            Learn more about privacy and security - Great idea! Take some training or read about to improve your privacy IQ.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Be selective - Justify to yourself why you really need an app or service. If there are no or few good reasons, then try and use a service or app you already have.
+            Be selective - Do you really need that app or service?  If there's no good reason, stick with what you have already.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Privacy settings - for the apps and services that you do use, apply the privacy settings. 
+            Privacy settings - Some apps and services have privacy settings that you can apply. Also most web browsers have anonymous browsing via private or incognito mode. 
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Coming soon - We will be providing some more information and tools to help you do this. 
+            We will soon have more information and tools to help you. 
             </li>
             </div>
              </WhiteSlider>
@@ -164,10 +169,10 @@ export default () =>
              <WhiteSlider name="I don't care about my privacy. If its so important why can't someone do it for me.">
              <div style={{paddingLeft:"2px", lineHeight:"1.6"}}>
              <li style={{paddingBottom:"10px"}}>
-             Do nothing - you may be happy with your current privacy.
+             Do nothing - you may be happy with your current level of privacy.
             </li>
             <li style={{paddingBottom:"10px"}}> 
-            Coming soon - We will be creating tools to take care of privacy for you.
+            <span style={{'font-weight': '900'}}>But now that you mention it, we are building some tools to help you, too.</span>
             </li>
            
             </div>

@@ -50,7 +50,7 @@ export default ({ image1, image2, image3 }) =>
             Well, we can help. The first step is Minecraft and Zombies.
             </p>
             <p style={{lineHeight:"1.6", paddingBottom:"16px"}}>
-            You may be thinking: how are zombies going to help me understand privacy? Well, we aren’t 100% sure it will, but that’s  what we are running this pilot for.
+            You may be thinking: how are zombies going to help me understand privacy? Well, we aren’t 100 per cent sure it will, but that’s why we are running this pilot.
             </p>
              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>
                Give it a go and see if it works.
@@ -120,12 +120,12 @@ export default ({ image1, image2, image3 }) =>
           information with a lot of different people. Not all of them have your best interest at heart. </p>
           
             <br /> 
-            <p>For some accounts, you will want to be you. For example, your bank or some social media accounts, 
-            whilst for others, there is no reason you need to give away information to at all. 
-            It’s just so convenient to use the same account.</p>
+            <p>For some accounts, you will want to be you for example, your bank or some social media accounts, 
+            for others, there is no reason to give away information by sharing across platforms or apps. 
+            Yet it’s just so convenient to use the same account.</p>
             <br />
-            <p>If you want something to make it easier then we have created a plugin for Chrome that can make creating accounts with services anonymously much easier. <br />  <br />
-            Introducing SafeLy. </p>
+            <p>Introducing SafeLy. SafeLy lets you use different identities for different accounts, protecting your privacy and your security online.
+            </p>
             <br />
             <div style={{display:"flex", justifyContent:"center"}}>
               <form>
@@ -169,14 +169,15 @@ export default ({ image1, image2, image3 }) =>
             <h1>How can we help companies be more secure.</h1>
           <p style={{lineHeight:"1.6"}}>
           It’s important that we don’t think about privacy as being the sole responsibility of an individual. Large amounts of personal data
-          is most likely stored by companies and governments, and with data breaches happening everyday, these organisations need to think about privacy differently: to work with people to better protect their privacy. 
-          The Cyber Institute is currently working on a training course to give executives the tools to lead with confidence in an ever changing world.
-          < br /> < br />
-          <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>Privacy by design</span> - This module will build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues. 
+          is stored by companies and governments. With data breaches happening everyday, organisations need to think about privacy differently: and work with people to better protect their privacy. 
+          The Cyber Institute is currently working on a training course to give executives the tools to lead with confidence in an ever changing world. This course includes:
+          < br />
+          <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>Privacy by design</span> - A module specifically designed to build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues and how they intersect with security. 
             </p>
             <br />
            </p>
         </div>
       </div>
+    
     </div>
   </>
