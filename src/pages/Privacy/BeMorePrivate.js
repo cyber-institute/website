@@ -96,7 +96,7 @@ export default () =>
           }}
         >
           The Internet has allowed untrusted people to peel away the layers of your privacy onion without your knowledge or agreement.
-          <br />It may seem impossible to protect your privacy but the following suggestions should help.
+          <br /><br />It may seem impossible to protect your privacy but the following suggestions should help.
           There are different levels of privacy. Not everyone will be right for you. The following tips are broken into categories.
 
           <br></br><br></br>
@@ -104,7 +104,7 @@ export default () =>
           <span style={{'font-weight': '700'}}> is you</span> and <span style={{'font-weight': '700'}}>about you</span> data onto a privacy onion. 
           This can help you determine the privacy level you are most comfortable with.  
           
-                    <ul style={{listStylePosition: "outside"}}>
+                    <ul style={{listStylePosition: "outside", listStyleType:"none"}}>
             
           <WhiteSlider name="Where is my tin foil hat? I don't even like my parents knowing my name.">
              <div style={{paddingLeft:"2px", lineHeight:"1.6"}}>
@@ -124,7 +124,7 @@ export default () =>
             Never send information to improve services - Never send information to improve services.  Such information can help others predict your behaviours.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            If you really want to avoid any data leakage, don't use a mobile phone - Mobile phones broadcast a lot of information. Do all you online activity through a computer you trust.
+            If you really want to avoid any data leakage, don't use a mobile phone - Mobile phones broadcast a lot of information. Do all your online activity through a computer you trust.
             </li>
             </div>
              </WhiteSlider>

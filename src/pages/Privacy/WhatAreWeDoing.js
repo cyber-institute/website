@@ -4,7 +4,7 @@ import { Image, Heading } from './index'
 import ReactPlayer from "react-player" 
 import Slider from '../common/Slider'
 
-const video = "dQw4w9WgXcQ";
+const video = "2q2DKr6lxu0"; 
 
 export default ({ image1, image2, image3 }) =>
   <>
@@ -60,7 +60,7 @@ export default ({ image1, image2, image3 }) =>
             <Slider name="Tech Stuff">
              <div className= 'col-md-10 col-md-offset-1' style={{paddingLeft:"2px"}}>
               <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>As this is a pilot, we haven’t created a cross-platform solution. Unfortunately, this will only work with the Java version of Minecraft.</p>
-              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>If you dont have the Java version of mincraft you can watch the run through below. </p>
+              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>If you don't have the Java version of Minecraft you can watch the run through below. </p>
              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}> So start up your device… and type in the following: for “Server name”, add the Server name (anything you want), 
              and then for the “Server Address” use: <span style={{ 'font-weight': '700', color: '#523178' }}>minetraining.australiaeast.cloudapp.azure.com</span>. 
              You can provide feedback by typing “/comment” in-game, and then typing your comment.</p>
@@ -70,7 +70,7 @@ export default ({ image1, image2, image3 }) =>
            
              <div className= 'col-md-10 col-md-offset-1'>
                <p style={{lineHeight:"1.6", marginBottom:"20px"}}>
-               If you don’t have Minecraft, or just couldn’t be bothered, watch the run-through video.               </p>
+               If you don’t have Minecraft, or just couldn’t be bothered, watch our entirely 'NoT ScRiPtEd' run-through video.               </p>
              </div>
              
             
@@ -80,7 +80,7 @@ export default ({ image1, image2, image3 }) =>
         </div>
          <div className='row center-xs middle-xs'>
         <ReactPlayer
-        url="https://www.youtube.com/watch?v=ug50zmP9I7s" width="60%"/> 
+        url="https://www.youtube.com/watch?v=2q2DKr6lxu0" width="60%" controls="true"/>  
         </div>
       
     </div>
@@ -166,12 +166,12 @@ export default ({ image1, image2, image3 }) =>
         <div className='col-md-6'>
  
           <p className='marginRight-md'>
-            <h1>How can we help companies be more secure.</h1>
+            <h1>We can help companies be more secure.</h1>
           <p style={{lineHeight:"1.6"}}>
           It’s important that we don’t think about privacy as being the sole responsibility of an individual. Large amounts of personal data
           is stored by companies and governments. With data breaches happening everyday, organisations need to think about privacy differently: and work with people to better protect their privacy. 
           The Cyber Institute is currently working on a training course to give executives the tools to lead with confidence in an ever changing world. This course includes:
-          < br />
+          < br />< br />
           <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>Privacy by design</span> - A module specifically designed to build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues and how they intersect with security. 
             </p>
             <br />

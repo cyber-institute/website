@@ -106,7 +106,8 @@ export default () =>
           className='col-md-offset-3 col-md-6'
         >
           <p>Here at the <span style={{ 'font-weight': '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
-            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control with whom they share their information.</span> 
+            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control with whom they share their information.</span>  
+                We also believe that privacy and security go hand-in-hand. The more that we all understand privacy, the better society will become at protecting it. 
           </p>
           </div>
           </div> 
@@ -242,12 +243,12 @@ If someone else has this information they would be able to steal your identity �
           <p>
           <h3 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>Is You</h3> 
       Information that <span style={{'font-weight': '700',color: '#523178'}}>is you</span> may be
-considered your ‘digital DNA’: it’s the how, where, when and what.It's your behaviour, activity and circumstances.
+considered your ‘digital DNA’: it’s the how, where, when and what. It's your behaviour, activity and circumstances.
 <br/>
 <br />
 It may not be obvious but this information 
 leaks through with every interaction you have with the internet. 
-It is captured with every "like", swipe or click you make. 
+It is captured with every 'like', swipe or click you make. 
 <br /> <br/><span style={{'font-weight': '700',color: '#523178'}}>This information is you.</span>  
 <ul style={{listStylePosition: "outside"}}>
   <li>
