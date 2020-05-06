@@ -121,7 +121,7 @@ export default () =>
             Change your search engine - Use a more private search engine such as Startpage, Duckduckgo or Brave.
             </li>
             <li style={{paddingBottom:"10px"}}>
-            Never send information to improve services - Never send information to improve services.  Such information can help others predict your behaviours.
+            Never send information to improve services - Such information can help others predict your behaviours.
             </li>
             <li style={{paddingBottom:"10px"}}>
             If you really want to avoid any data leakage, don't use a mobile phone - Mobile phones broadcast a lot of information. Do all your online activity through a computer you trust.

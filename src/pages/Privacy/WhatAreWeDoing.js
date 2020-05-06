@@ -133,7 +133,7 @@ export default ({ image1, image2, image3 }) =>
             for others, there is no reason to give away information by sharing across platforms or apps. 
             Yet it’s just so convenient to use the same account.</p>
             <br />
-            <p>Introducing SafeLy. SafeLy lets you use different identities for different accounts, protecting your privacy and your security online.
+            <p>Introducing SafeLy. This plugin lets you use different identities for different accounts, protecting your privacy and your security online.
             </p>
             <br />
             <div style={{display:"flex", justifyContent:"center"}}>

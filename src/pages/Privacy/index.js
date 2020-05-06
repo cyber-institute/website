@@ -106,8 +106,7 @@ export default () =>
           className='col-md-offset-3 col-md-6'
         >
           <p>Here at the <span style={{ 'font-weight': '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
-            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control with whom they share their information.</span>  
-                We also believe that privacy and security go hand-in-hand. The more that we all understand privacy, the better society will become at protecting it. 
+            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control with whom they share their information.</span> We also believe that privacy and security go hand-in-hand. The more that we all understand privacy, the better society will become at protecting it. 
           </p>
           </div>
           </div> 
@@ -123,7 +122,7 @@ export default () =>
                     <img style={{"object-fit":"cover", width: "100%", 'box-shadow': '5px 5px 10px grey'}} src={privacyShare}/>
            <br /><br /> 
            
-In the pre-digital age, people could control their own privacy more easily: limiting how much information is shared with others: 
+In the pre-digital age, people could control their own privacy more easily: limiting how much information is shared with others; 
 moderating information between strangers, friends and family.
 <br /><br />
 </p>
@@ -324,7 +323,7 @@ psychological behaviours.
             This is just the beginning. We will be expanding our training, products and ideas.
             <ul>
               <li>
-              Give us some feedback, this is our first attempt we want it to be bigger and better.
+              Give us some feedback, this is our first attempt and we want it to be bigger and better.
               </li>
               <li>
               Get your hands dirty and help us out, we are keen to collaborate or work with partners. 
@@ -333,7 +332,7 @@ psychological behaviours.
               Register your interest for privacy training, executive training or both.
               </li>
             </ul>
-            Our contact details are below we look forward to hearing from you. 
+            Our contact details are below. We look forward to hearing from you. 
             </p>
             </div>
 </div>
