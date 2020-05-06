@@ -38,7 +38,7 @@ export default ({ image1, image2, image3 }) =>
       }}
     >
       <div
-        className='row positionRelative'
+        className='positionRelative'
       >
         <div className='row'>
           <div className= 'col-md-10 col-md-offset-1'>
@@ -61,29 +61,32 @@ export default ({ image1, image2, image3 }) =>
                Give it a go and see if it works.
              </p>
           </div>
+          <div className='col-md-1'/>
           </div>
-          <div className="row">
-          <div className= 'col-md-10 col-md-offset-1'>
-          <div className="techStuff">
+          <div className="row" style={{
+            padding: '1rem 0'
+          }}>
             <Slider name="Tech Stuff">
-            
+            <div className= 'col-md-10 col-md-offset-1'>
+            <div className="techStuff">
               <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>As this is a pilot, we haven’t created a cross-platform solution. Unfortunately, this will only work with the Java version of Minecraft.</p>
               <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>If you don't have the Java version of Minecraft you can watch the run through below. </p>
              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}> So start up your device… and type in the following: for “Server name”, add the Server name (anything you want), 
              and then for the “Server Address” use: <span style={{ 'font-weight': '700', color: '#523178', 'overflow-wrap': 'anywhere'}}>minetraining.australiaeast.cloudapp.azure.com</span>. 
              You can provide feedback by typing “/comment” in-game, and then typing your comment.</p>
-
+             </div>
+             </div>
              </Slider>
-          </div>
-           </div>
+             </div>
+             <div className='row'>
              <div className= 'col-md-10 col-md-offset-1'>
                <p style={{lineHeight:"1.6", marginBottom:"20px"}}>
                If you don’t have Minecraft, or just couldn’t be bothered, watch our entirely 'NoT ScRiPtEd' run-through video.               </p>
              </div>
+             </div>
              
             
 
-        </div>
 
         <div className="youTube" style={{width:'100%'}}>
          <div className='row center-xs middle-xs'>
