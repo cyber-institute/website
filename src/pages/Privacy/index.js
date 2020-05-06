@@ -118,45 +118,56 @@ export default () =>
         <div
           className=' col-md-4'
         >
-                    <p style={{width:"90%", marginLeft:"5%"}}>
+                    <p style={{width:"90%", marginLeft:"5%", marginTop:'20%', marginBottom: '6%'}}>
                     <img style={{"object-fit":"cover", width: "100%", 'box-shadow': '5px 5px 10px grey'}} src={privacyShare}/>
-           <br /><br /> 
+                    </p>
+                    <p style={{width:"90%", marginLeft:"5%"}}>
+ 
            
-In the pre-digital age, people could control their own privacy more easily: limiting how much information is shared with others; 
-moderating information between strangers, friends and family.
-<br /><br />
+ In the pre-digital age, people could control their own privacy more easily: limiting how much information is shared with others; 
+ moderating information between strangers, friends and family.
+ <br /><br />
+
 </p>
         </div>
         <div
           className='col-md-4'
           
         >
-                    <p style={{width:"90%", marginLeft:"10%"}}>
-                    <img style={{"object-fit":"cover", width: "100%"}} src={privacyLost}/>
-           <br /><br />
+                    <p style={{width:"90%", marginLeft:"20%", marginTop:'18%',marginBottom: '5%'}}>
+                    <img style={{"object-fit":"cover", width: "69%"}} src={privacyLost}/>
+                    </p>
+                    <p style={{width:"90%", marginLeft:"5%"}}>
+
 
 Now, there is more information about people, and the average individual has lost control over the information that they
 share online. 
 <br /><br />
 </p>
+
+
         </div>
         
           <div
           className='col-md-4'
         >
-                    <p style={{width:"90%", marginLeft:"0"}}>
-                    <img style={{"object-fit":"cover", width: "95%"}} src={privacyOnion}/>
-           <br /><br />
-           The 'privacy onion' is a useful way to think about your information.  At the centre is your most intimate and sensitive information: you may choose to share that with your closest friends and family.  
+                    <p style={{width:"90%", marginLeft:"0", marginTop:'15%'}}>
+                    <img style={{"object-fit":"cover", width: "90%"}} src={privacyOnion}/>
+                    </p>
+                    <p style={{width:"90%", marginLeft:"5%"}}>
+
+The 'privacy onion' is a useful way to think about your information.  At the centre is your most intimate and sensitive information: you may choose to share that with your closest friends and family.  
 
 <br /><br />
 </p>
+
         </div>
           
        
         </div>
         </div>
         </div>
+       
 </div>
 
 <div className="row middle-xs" style={{marginBottom : '2vw'}}>
