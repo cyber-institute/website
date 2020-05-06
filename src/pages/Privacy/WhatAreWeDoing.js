@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './style.css'
+
 import { Image, Heading } from './index'
 import ReactPlayer from "react-player" 
 import Slider from '../common/Slider'
@@ -13,7 +15,6 @@ export default ({ image1, image2, image3 }) =>
         marginTop: '2rem'
       }}
     >
-      <div className='row positionRelative'>
         <div
           className='col-md-11' style={{
             textAlign: 'right'
@@ -32,10 +33,14 @@ export default ({ image1, image2, image3 }) =>
         </div>
       </div>
       <div
+      className='container-fluid' style={{
+        marginTop: '4rem'
+      }}
+    >
+      <div
         className='row positionRelative'
       >
         <div className='row'>
-          <p>
           <div className= 'col-md-10 col-md-offset-1'>
             <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
             Identifying Scams and Making Good Choices
@@ -56,18 +61,21 @@ export default ({ image1, image2, image3 }) =>
                Give it a go and see if it works.
              </p>
           </div>
-          <div style={{padding:"15px"}}>
+          </div>
+          <div className="row">
+          <div className= 'col-md-10 col-md-offset-1'>
+          <div className="techStuff">
             <Slider name="Tech Stuff">
-             <div className= 'col-md-10 col-md-offset-1' style={{paddingLeft:"2px"}}>
+            
               <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>As this is a pilot, we haven’t created a cross-platform solution. Unfortunately, this will only work with the Java version of Minecraft.</p>
               <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>If you don't have the Java version of Minecraft you can watch the run through below. </p>
              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}> So start up your device… and type in the following: for “Server name”, add the Server name (anything you want), 
-             and then for the “Server Address” use: <span style={{ 'font-weight': '700', color: '#523178' }}>minetraining.australiaeast.cloudapp.azure.com</span>. 
+             and then for the “Server Address” use: <span style={{ 'font-weight': '700', color: '#523178', 'overflow-wrap': 'anywhere'}}>minetraining.australiaeast.cloudapp.azure.com</span>. 
              You can provide feedback by typing “/comment” in-game, and then typing your comment.</p>
-            </div>
+
              </Slider>
           </div>
-           
+           </div>
              <div className= 'col-md-10 col-md-offset-1'>
                <p style={{lineHeight:"1.6", marginBottom:"20px"}}>
                If you don’t have Minecraft, or just couldn’t be bothered, watch our entirely 'NoT ScRiPtEd' run-through video.               </p>
@@ -75,14 +83,15 @@ export default ({ image1, image2, image3 }) =>
              
             
 
-          </p>
         </div>
-        </div>
+
+        <div className="youTube" style={{width:'100%'}}>
          <div className='row center-xs middle-xs'>
         <ReactPlayer
-        url="https://www.youtube.com/watch?v=2q2DKr6lxu0" width="60%" controls="true"/>  
+        url="https://www.youtube.com/watch?v=2q2DKr6lxu0" controls="true"/>  
         </div>
-      
+        </div>
+      </div>
     </div>
     <div
       className='container-fluid' style={{
