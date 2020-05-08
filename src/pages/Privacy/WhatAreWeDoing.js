@@ -6,7 +6,7 @@ import { Image, Heading } from './index'
 import ReactPlayer from "react-player" 
 import Slider from '../common/Slider'
 
-const video = "2q2DKr6lxu0"; 
+const video = "RmWC30KSo9Q"; 
 
 export default ({ image1, image2, image3 }) =>
   <>
@@ -91,7 +91,7 @@ export default ({ image1, image2, image3 }) =>
         <div className="youTube" style={{width:'100%'}}>
          <div className='row center-xs middle-xs'>
         <ReactPlayer
-        url="https://www.youtube.com/watch?v=2q2DKr6lxu0" controls="true"/>  
+        url="https://www.youtube.com/watch?v=RmWC30KSo9Q" controls="true"/>  
         </div>
         </div>
       </div>
@@ -139,7 +139,7 @@ export default ({ image1, image2, image3 }) =>
             <p>Introducing SafeLy. This plugin lets you use different identities for different accounts, protecting your privacy and your security online.
             </p>
             <br />
-            <p style={{color:"#523178", fontWeight:"700"}}> SafeLy is currently pending approval from the Chrome web store. Watch this space for when it is released!</p>
+            <p style={{color:"#523178", fontWeight:"700"}}> SafeLy is currently pending approval from the Chrome web store. Watch this space for when it's impending release!</p>
             <br />
             <div style={{display:"flex", justifyContent:"center"}}>
               <form>
