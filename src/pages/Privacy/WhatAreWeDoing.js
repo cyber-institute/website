@@ -139,9 +139,11 @@ export default ({ image1, image2, image3 }) =>
             <p>Introducing SafeLy. This plugin lets you use different identities for different accounts, protecting your privacy and your security online.
             </p>
             <br />
+            <p style={{color:"#523178", fontWeight:"700"}}> SafeLy is currently pending approval from the Chrome web store. Watch this space for when it is released!</p>
+            <br />
             <div style={{display:"flex", justifyContent:"center"}}>
               <form>
-                <button  style={{backgroundColor:"#523178", border:"none", color:"white",
+                <button  style={{backgroundColor:"#DDDDDD", border:"none", color:"white",
             padding:"15px 25px", textAlign:"center", cursor:"pointer", borderRadius:"25px",
             fontSize:"18px", fontWeight:"100"}} onclick="https://cyber.anu.edu.au/">Download SafeLy for Chrome</button>
               </form>
