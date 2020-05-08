@@ -139,7 +139,7 @@ export default ({ image1, image2, image3 }) =>
             <p>Introducing SafeLy. This plugin lets you use different identities for different accounts, protecting your privacy and your security online.
             </p>
             <br />
-            <p style={{color:"#523178", fontWeight:"700"}}> SafeLy is currently pending approval from the Chrome web store. Watch this space for when it's impending release!</p>
+            <p style={{color:"#523178", fontWeight:"700"}}> SafeLy is currently pending approval from the Chrome web store. Watch this space for it's impending release!</p>
             <br />
             <div style={{display:"flex", justifyContent:"center"}}>
               <form>
