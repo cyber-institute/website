@@ -143,10 +143,14 @@ export default ({ image1, image2, image3 }) =>
             <br />
             <div style={{display:"flex", justifyContent:"center"}}>
               <form>
-              <a target="_blank" href='https://chrome.google.com/webstore/detail/safely/epbbhpoagmgdnfnckmjdhlaknncohibd'>
+            
                 <button  style={{backgroundColor:"#523178", border:"none", color:"white",
             padding:"15px 25px", textAlign:"center", cursor:"pointer", borderRadius:"25px",
-            fontSize:"18px", fontWeight:"100"}} >Download SafeLy for Chrome</button></a>
+            fontSize:"18px", fontWeight:"100"}} >
+              <a target="_blank" href='https://chrome.google.com/webstore/detail/safely/epbbhpoagmgdnfnckmjdhlaknncohibd'>
+              Download SafeLy for Chrome
+              </a>
+              </button>
               </form>
               
             </div>
