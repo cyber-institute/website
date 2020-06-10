@@ -18,6 +18,7 @@ import Services from './pages/Services'
 import People from './pages/People'
 import Privacy from './pages/Privacy'
 import FourOFour from './404/404'
+import SnackMenu from './Body/SnackMenu'
 import CITwhite from '../img/CITwhite.jpg'
 import ANULogo from '../img/ANU-LOGO-WHITE.jpg'
 import Hamburger from './../img/Hamburger_icon.png'
@@ -147,6 +148,7 @@ class App extends Component {
       </ScrollUp>
       </Router>
     </div>
+    <SnackMenu />
     <Footer />
       </>
     )
