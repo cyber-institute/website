@@ -133,9 +133,9 @@ h6 {
     color: #ffffff;
     padding: 1px;
     text-align: left;
-    font-size: 22px;
+    font-size: 18px;
     padding-top:15px;
-    padding-bottom:15px;
+    padding-bottom:0px;
   }
   
   a {
@@ -182,3 +182,43 @@ h6 {
     top: 150px;
     height: 200px;
   }
+
+   .mailchimp_form button{
+    background-color: rgb(82, 49, 120);
+    border: medium none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 430px) {
+    .footerText {
+        margin-top: -5vh;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+  .footerText p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300px;
+    color: #ffffff;
+    padding: 1px;
+    text-align: left;
+    font-size: 14px;
+    padding-top:15px;
+    padding-bottom:0px;
+  }
+}
+
+  .mailchimp_form input{
+    padding-right: 0px;
+    font-size: 14px;
+  }
+
+  .margin{
+    margin-top: -2vh;
+}

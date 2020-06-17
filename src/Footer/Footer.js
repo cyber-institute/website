@@ -23,7 +23,7 @@ class Footer extends Component {
                 }}/>
               </div>
             </div>
-            <div className='col-xs-6'>
+            <div className='col-xs-6' >
               <div className='footerText'>
                 <p className='fontSize16px-xs' style={{
                   paddingTop: 0
@@ -32,17 +32,29 @@ class Footer extends Component {
                 </p>
                 <p>
                   <a className='fontSize16px-xs' href='mailto:cyber@anu.edu.au' style={{ color: '#D2ACF7', 'text-decoration': 'underline' }}>cyber@anu.edu.au</a>
-                  <Mailchimp
+                  <p>Subscribe to our Mailing List!<br/>
+                  <Mailchimp className='mailchimp_form'
                   action='https://anu.us18.list-manage.com/subscribe/post?u=5431269039904fced7aafc923&amp;id=85748197e5'
                   fields={[
                     {
                       name: 'EMAIL',
-                      placeholder: 'Email',
+                      placeholder: 'Email address',
                       type: 'email',
                       required: true
                     }
                   ]}
+                  messages = {
+                    {
+                      sending: "Sending...",
+                      success: "You are now subscribed!",
+                      error: "An error has occured please try again later.",
+                      empty: "Please enter a valid email address.",
+                      duplicate: "Multiple subscribe attempts for this email address",
+                      button: "Subscribe"
+                    }
+                  }
                   />
+                  </p>
                 </p>
                 <p className='fontSize16px-xs'>
         Level 2, 115 North Rd, Acton  ACT 2601
@@ -52,13 +64,13 @@ class Footer extends Component {
                 </p>
               </div>
             </div>
+            </div>
           </div>
 
           <div className='purpleStrip fontSize16px-xs'>
             <p>
             </p>
           </div>
-        </div>
       </>
     )
   }
