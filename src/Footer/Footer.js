@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Mailchimp from 'react-mailchimp-form'
 
 import './style.css'
 import logo from '../../img/logo.png'
@@ -31,6 +32,17 @@ class Footer extends Component {
                 </p>
                 <p>
                   <a className='fontSize16px-xs' href='mailto:cyber@anu.edu.au' style={{ color: '#D2ACF7', 'text-decoration': 'underline' }}>cyber@anu.edu.au</a>
+                  <Mailchimp
+                  action='https://anu.us18.list-manage.com/subscribe/post?u=5431269039904fced7aafc923&amp;id=85748197e5'
+                  fields={[
+                    {
+                      name: 'EMAIL',
+                      placeholder: 'Email',
+                      type: 'email',
+                      required: true
+                    }
+                  ]}
+                  />
                 </p>
                 <p className='fontSize16px-xs'>
         Level 2, 115 North Rd, Acton  ACT 2601
