@@ -9,28 +9,16 @@ import Banner from './../pages/common/Banner'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../style.css'
 
+import {news_array} from './items/news_items'
+import {blogs_array} from './items/blogs_items'
+import {podcasts_array} from './items/podcasts_items'
+import {articles_array} from './items/articles_items'
+import {events_array} from './items/events_items'
+
 import banner from './bannernewsandevents.jpg'
-import RaisinaDialogue from '../../img/raisina_dialogue.jpg'
-import SingaporeCyber from '../../img/singapore_cyber.jpg'
-import CyberBootcamp from '../../img/cyber_bootcamp.png'
-import DataPodcast from '../../img/data_podcast.jpg'
-import GovCyberPodcast from '../../img/gov_cyber_podcast.jpg'
-import Globe from '../../img/globe.jpg'
-import FaceFuture from '../../img/face_future.jpg'
-import CyberHowDoing from '../../img/cyber_how_doing.jpg'
-import PeopleNotProblem from '../../img/people_not_problem.jpg'
-import SecurityStrategy from '../../img/security_strategy.jpg'
-import TechDivide from '../../img/tech_divide.jpg'
+
 import BlackBoxArrow from '../../img/black box arrow.png'
-import NatPodcast from '../../img/nationalsecuritypodcast.jpg'
-import Microchip from '../../img/microchip.png'
-import Defend from '../../img/defend.png'
-import Scaffold from '../../img/scaffold.jpg'
-import RSA from '../../img/RSA.png'
-import RSA2 from '../../img/RSA.jpg'
-import Zoom from '../../img/zoom_trouble.jpg'
-import DataInterventionsStephanie from '../../img/datainterventions_stephanie.jpg'
-import CoronaApp from "../../img/coronaApp.png"
+
 import { relative } from 'path'
 
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
@@ -190,352 +178,52 @@ const SpacerColumn = (props) => (
   <div />
 )
 
+//News article formatting
 const news = {
   title: 'News',
-  sections: [{
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'VC’s interview with Chief Information Security Officer',
-      byline: "Vice-Chancellor Brian Schmidt spoke to the Chief Information Security Officer, Suthagar Seevaratnum, who explains implications for the cybersecurity during the pandemic. Please check out the video.",
-      author: 'ANU',
-      date: '',
-      imageSource: RSA2,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.youtube.com/watch?v=OYzuoi_a1i0&feature=youtu.be'
-    }
-  },
-    {
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'The January Cyber Bootcamp',
-      byline: "We're so excited to be working with DFAT on the Cyber Bootcamp which was launched in November, and looking forward to building this cyber capacity-building venture with our Indo-Pacific neighbours!",
-      author: 'DFAT',
-      date: '29/01/20',
-      imageSource: CyberBootcamp,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx?fbclid=IwAR2mztupdFmWZC6kXPPvYKn57Oj9cXqDa9E9jzPw2qlmMa_KAUSAO1M2guE'
-    }
-  }, {
-    id: '3',
-    component: 'NewsArticle',
-    props: {
-      head: 'Digital Binaries: 5G and the new tech wars',
-      byline: 'The Raisina Dialogue is a multilateral conference where global leaders in policy, business, media and civil society are hosted in New Delhi, India, to discuss cooperation on a wide range of pertinent international policy matters. Our CEO, Professor Lesley Seebeck,  came back from sharing some insight through the "Digital Binaries: 5G and the new tech wars" panel on the final day of this conference.',
-      author: 'ORF',
-      date: '16/01/20',
-      imageSource: RaisinaDialogue,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.orfonline.org/raisina-dialogue/programme/'
-    }
-  }]
-}
-const news2 =   {
-title: 'News',
-sections: [{
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'To Singapore and Malaysia for Cyber Security',
-      byline: "A visit to Singapore and Malaysia for our Program Manager Liz West didn't just include great conversations and delicious food, but attending some cyber-security ventures. Both Republic Polytechnic-RSA Joint Security Operations Centre and Sunway University's Cyber Security Intelligence Laboratory were fantastic to visit, and the Cyber Institute was proud to send over one of our own.",
-      author: 'Liz West',
-      date: '19/12/19',
-      imageSource: SingaporeCyber,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://twitter.com/AnuCyber/status/1203838456499232769'
-    }
-  }]
-}
+  sections: [news_array[0], news_array[1], news_array[2]]
+};
+const news2 = {
+  title: 'News',
+  sections: [news_array[3], news_array[4], news_array[5]]
+};
 
 const blogs = {
   title: 'Blogs',
-  sections: [{
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'Generic Heading 1',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-md-3 col-xs-12'
-    }
-  }, {
-    id: '3',
-    component: 'NewsArticle',
-    props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-md-3 col-xs-12'
-
-    }
-  }, {
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'Generic Heading 2',
-      byline: 'Start of the article',
-      author: 'Graham',
-      date: '22/10/2020',
-      imageSource: './img/ai1.jpg',
-      sizeName: 'col-md-3 col-xs-12'
-    }
-  }]
+  sections: [blogs_array[0], blogs_array[1], blogs_array[2]]
 }
-
-const blogs2 = null
+const blogs2 = {
+  title: 'Blogs',
+  sections: [blogs_array[3], blogs_array[4], blogs_array[5]]
+}
 
 const podcasts = {
   title: 'Podcasts',
-  sections: [ {
-    id: '3',
-    component: 'NewsArticle',
-    props: {
-      head: 'Implications of the Global Push to Ban End-to-End Encryption',
-      byline: 'The majority of the world’s population currently live under governments that have already implemented, or are considering, bans on encryption. These encryption bans have significant implications for privacy and security as well as the global decline in democracy.',
-      author: 'RSA Conference',
-      date: '26/2/20',
-      imageSource: RSA,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.youtube.com/watch?v=cjIaKqUwzCQ&feature=youtu.be'
-    }
-  }, {
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'Techlosophy and the future of security',
-      byline: 'Getting to the bottom of how information and bio-technologies are reshaping societies and the human mind - and what this means for those with a stake in democracy and national security.',
-      author: 'Katherine Mansted and Dr Zac Rogers',
-      date: '6/11/19',
-      imageSource: NatPodcast,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://crawford.anu.edu.au/news-events/news/15495/national-security-podcast-techlosophy-and-future-security'
-    }
-  }, {
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'More details needed about potential changes to cyber powers',
-      byline: "The Federal Government has been looking at whether the Australian Signals Directorate should have more of a role in fighting cybercrime across the country. It's a discussion that's been going on for more than a year now, but no decisions have been made. Home Affairs Minister Peter Dutton says he is to continue the conversation, and people in the cyber security sector want more details about what could change.",
-      author: 'ABC AM',
-      date: '18/6/19',
-      imageSource: GovCyberPodcast,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358'
-    }
-  }
-]
+  sections: [podcasts_array[0], podcasts_array[1], podcasts_array[2]]
 }
-
-// {
-//   id: '3',
-//   component: 'NewsArticle',
-//   props: {
-//     head: 'Data, Cyber, and the Social Context',
-//     byline: 'Is the growing collection and aggregation of data likely to empower the individual and strengthen democracy? Or is it more likely to benefit manipulative corporations and encourage authoritarian governance? How should society frame the problem of privacy and information control, and where does regulation give way to personal responsibility?',
-//     author: 'Nat. Security Podcast',
-//     date: '27/1/19',
-//     imageSource: DataPodcast,
-//     sizeName: 'col-md-3 col-xs-12',
-//     link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/'
-//   }
-// }
-
-const podcasts2 = null
-
+const podcasts2 = {
+  title: 'Podcasts',
+  sections: [podcasts_array[3], podcasts_array[4], podcasts_array[5]]
+}
 
 const media = {
   title: 'News',
-  sections: [{
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'App is no silver bullet for virus, yet a honey pot for the malign',
-      byline: 'Managing a pandemic’s no walk in the park. There’s little clear data initially, and big decisions to be made. Governing is driven by the spur of urgency, because lives are at stake. ',
-      author: 'Prof. Lesley Seebeck',
-      date: '29/4/20',
-      imageSource: CoronaApp,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.afr.com/policy/health-and-education/app-is-no-silver-bullet-for-virus-yet-a-honey-pot-for-the-malign-20200429-p54o5k'
-    }
-  },
-    {
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'Data interventions and the renegotiation of the social contract',
-      byline: 'What can be discerned is that there are different ways to conceive security, and the dangers arise when we overstep the mark into regime security.',
-      author: 'Stephanie Koorey',
-      date: '',
-      imageSource: DataInterventionsStephanie,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'http://visionofhumanity.org/economists-on-peace/data-interventions-and-the-renegotiation-of-the-social-contract/'
-    }
-  },{
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'The Trouble With Zoom',
-      byline: 'As working remotely from home or in smaller groups becomes the norm in these virus-hit times, Zoom has quickly seemed indispensable. But serious and unresolved issues around its security, privacy and data use may mean that the cost of using the platform could be higher than most realise.',
-      author: 'Patrick Doyle, James Mortenson, Damian Clifford',
-      date: '24/3/20',
-      imageSource: Zoom,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.afr.com/technology/zoom-is-the-next-privacy-challenge-20200324-p54dff'
-    }
-  },
-    ]
+  sections: [articles_array[0], articles_array[1], articles_array[2]]
 }
-
 const media2 = {
-  title: 'Media',
-  sections: [{
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'Scaffolding of security',
-      byline: 'Often when we think of cyber, we feel vulnerable, afraid, and unsure. We feel tossed in a never-ending storm: few days pass without mention of data breach, concerns over fake news or a press release about attribution. A sense of exhaustion, of helplessness and despondency is not unexpected.',
-      author: 'Prof. Lesley Seebeck',
-      date: '27/2/20',
-      imageSource: Scaffold,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://reporter.anu.edu.au/scaffolding-security'
-    }
-  },{
-    id: '3',
-    component: 'NewsArticle',
-    props: {
-      head: 'Cybersecurity: how are we doing?',
-      byline: 'Asking ourselves whether we’re doing things right merely asks us to measure our progress down a prescribed path. Judgements about whether we’re doing the right things are harder to make. It’s entirely possible we’re not even on the right path, regardless of how far along it we’ve come. A word of warning: this is a fairly dense and difficult topic.',
-      author: 'Prof. Lesley Seebeck',
-      date: '11/12/19',
-      imageSource: CyberHowDoing,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/cybersecurity-how-are-we-doing/'
-    }
-  }, {
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'Repositioning Australia to face its future',
-      byline: 'Good things come to those who are prepared to wait, invest, and appreciate the ‘adjacent possible’. Policymakers need to stop being drawn to the myth of the ‘quick fix’ and focus on long-term and sustained development of research and development as an ecosystem if they really want to solve those wicked problems.',
-      author: 'Prof. Lesley Seebeck',
-      date: '13/11/19',
-      imageSource: FaceFuture,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/'
-    }
-  },
-  
-  
-  ]
+  title: 'News',
+  sections: [articles_array[3], articles_array[4], articles_array[5]]
 }
-
 const media3 = {
   title: 'News',
-  sections: [{
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'Students need better preparation for an uncertain future',
-      byline: "With cyber issues among the most complex facing society, educating young minds to tackle future problems has never been more important. Current approaches, however, are not good enough, Lesley Seebeck writes.",
-      author: 'Prof. Lesley Seebeck',
-      date: '24/2/20',
-      imageSource: Microchip,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.policyforum.net/education-for-the-cyber-age/'
-    }},{
-    id: '4',
-    component: 'NewsArticle',
-    props: {
-      head: 'The new global technological divide',
-      byline: 'For the first time since the Cold War, technology is re-emerging as a strategic, and not merely a political, instrument. The difference this time is that it’s thoroughly civilian rather than military technologies and information that act both as enablers and sources of vulnerability. And there are key differences in how different Western political cultures understand the strategic significance of technology.',
-      author: 'Prof. Lesley Seebeck',
-      date: '7/11/19',
-      imageSource: TechDivide,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/'
-    }
-  },
-    {
-    id: '2',
-    component: 'NewsArticle',
-    props: {
-      head: 'Cybersecurity: people are not the problem',
-      byline: "A lot of thinking and commentary around cybersecurity put forward the idea that ‘people are the problem’. After all, most intrusions and attacks start with people being persuaded or misled into going onto disguised or infected sites, to handover details or otherwise compromise their own systems... If only people—users, clients, members of the community—didn’t do what people naturally do, we’d all have much more secure and efficient systems. That's muddled thinking.",
-      author: 'Prof. Lesley Seebeck',
-      date: '4/11/19',
-      imageSource: PeopleNotProblem,
-      sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/'
-    }
-  }, 
-   
-  
-  // {
-  //   id: '3',
-  //   component: 'NewsArticle',
-  //   props: {
-  //     head: 'Submission: 2020 Cyber Security Strategy',
-  //     byline: 'The number of questions in this paper illustrates the complex, contested, and changeable nature of cyber and cyber security... Given that cyber is a wicked problem, without a broader conceptual framework, the danger is that fragmented approach and point solutions are not likely to meet the challenge.',
-  //     author: 'Prof. Lesley Seebeck',
-  //     date: '1/11/19',
-  //     imageSource: SecurityStrategy,
-  //     sizeName: 'col-md-3 col-xs-12',
-  //     link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf'
-  //   }
-  // {
-  //   id: '4',
-  //   component: 'NewsArticle',
-  //   props: {
-  //     head: 'Defending those we send to protect us',
-  //     byline: 'The impression has gained ground that some members of the Special Air Service Regiment (SASR) are an unregulated band of brigands, not adhering to civil laws, or to the laws of warfare. Nothing could be further from the truth.',
-  //     author: 'John Powers',
-  //     date: '27/9/19',
-  //     imageSource: Defend,
-  //     sizeName: 'col-md-3 col-xs-12',
-  //     link: 'https://www.aspistrategist.org.au/defending-those-we-send-to-protect-us/'
-  //   }
-  // }
-]
+  sections: [articles_array[6], articles_array[7], articles_array[8]]
 }
-
+   
 const events = {
   title: 'Events',
-  sections: [{
-    id: '2',
-    component: DateBox,
-    props: {
-      day: '20',
-      month: 'Feb',
-      title: 'RSA Conference 2020',
-      date: '20/02/20',
-      time: '9:00am',
-      description: 'The Cyber Institute will be proud to see our CEO, Professor Lesley Seebeck, speak at the prestigious 2020 RSA Conference in San Francisco, United States, on the ripple effects of end-to-end encryption.',
-      signupText: 'Click the link for more information about her role in the event:',
-      link: 'https://www.rsaconference.com/experts/professor-lesley-seebeck'
-    }
-  }, {
-    id: '3',
-    component: DateBox,
-    props: {
-      day: '20',
-      month: 'Jan',
-      title: 'The Cyber Bootcamp',
-      date: '20/01/20',
-      time: '11:00am',
-      description: 'The Department of Foreign Affairs and Trade launched the Cyber Bootcamp Project in November 2019, of which programs are delivered by ANU’s Cyber Institute and National Security College. It aims to help participants in ASEAN and Pacific countries pursue a cyber-resilience vision. Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. As part of the program participants will implement a project which responds to a cyber-challenge or opportunity relevant to their domestic roles that will contribute to a cyber-resilient Indo-Pacific.',
-      signupText: 'Find out more at:',
-      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'
-    }
-  }]
+  sections: [events_array[0], events_array[1], events_array[2]]
 }
-
-const events2 = null
+const events2 = null;
 
 const stock = {
   Channels,
