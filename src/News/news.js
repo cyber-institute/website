@@ -136,7 +136,7 @@ const Image = (props) => (
   </div>
 )
 
-const DateBox = (props) => (
+export const DateBox = (props) => (
   <div className='Datebox-component' style={{ margin: '1rem' }}>
     <div class='row'>
       <div class='col-md-2 col-xs-12'>
@@ -185,17 +185,14 @@ const news = {
 };
 const news2 = {
   title: 'News',
-  sections: [news_array[3], news_array[4], news_array[5]]
+  sections: [news_array[3]]
 };
 
 const blogs = {
   title: 'Blogs',
   sections: [blogs_array[0], blogs_array[1], blogs_array[2]]
 }
-const blogs2 = {
-  title: 'Blogs',
-  sections: [blogs_array[3], blogs_array[4], blogs_array[5]]
-}
+const blogs2 = null
 
 const podcasts = {
   title: 'Podcasts',
@@ -203,7 +200,7 @@ const podcasts = {
 }
 const podcasts2 = {
   title: 'Podcasts',
-  sections: [podcasts_array[3], podcasts_array[4], podcasts_array[5]]
+  sections: [podcasts_array[3]]
 }
 
 const media = {
@@ -221,7 +218,18 @@ const media3 = {
    
 const events = {
   title: 'Events',
-  sections: [events_array[0], events_array[1], events_array[2]]
+  sections: [{
+    id: '2',
+    component: DateBox,
+    props: events_array[0]
+  }, 
+  {
+    id: '3',
+    component: DateBox,
+    props: events_array[1]
+  }
+]
+
 }
 const events2 = null;
 

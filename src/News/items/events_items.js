@@ -1,8 +1,6 @@
+
 export const events_array = [
     {
-      id: '2',
-      component: DateBox,
-      props: {
         day: '20',
         month: 'Feb',
         title: 'RSA Conference 2020',
@@ -12,10 +10,7 @@ export const events_array = [
         signupText: 'Click the link for more information about her role in the event:',
         link: 'https://www.rsaconference.com/experts/professor-lesley-seebeck'
       }
-    }, {
-      id: '3',
-      component: DateBox,
-      props: {
+    , {
         day: '20',
         month: 'Jan',
         title: 'The Cyber Bootcamp',
@@ -25,6 +20,8 @@ export const events_array = [
         signupText: 'Find out more at:',
         link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'
       }
-    }]
+    ]
+
+    
 
 export const events_2 = null
