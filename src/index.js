@@ -17,6 +17,7 @@ import About from './pages/About/index'
 import Services from './pages/Services'
 import People from './pages/People'
 import Privacy from './pages/Privacy'
+import Courses from './pages/Courses'
 import FourOFour from './404/404'
 import SnackMenu from './Body/SnackMenu'
 import CITwhite from '../img/CITwhite.jpg'
@@ -97,6 +98,7 @@ export default function FadeMenu() {
         <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ width: '25px' }} /></Link>
         <MenuItem onClick={handleClose}><Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light' to="/about" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About Us</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light' to="/courses" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Courses</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link></MenuItem>
@@ -128,6 +130,7 @@ class App extends Component {
               <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link>
               <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link>
               <Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link>
+              <Link className='Light' to="/courses" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Courses</Link>
               <Link className='Light' to="/about" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About Us</Link>
               <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link>
             </ul>
@@ -139,6 +142,7 @@ class App extends Component {
         <Switch>
         <Route exact path="/privacy" component={Privacy} />
       <Route exact path="/news" component={News} />
+      <Route exact path="/courses" component={Courses} />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/services" component={Services} />
