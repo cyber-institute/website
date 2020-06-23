@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from '../common/Banner'
 import CyberMasteryContent from './CyberMasteryContent'
 import CourseInformationBlurb from './CourseInformationBlurb'
-import CyberLaw from './Courses'
+import ShortCourses from './Courses'
 
 import './style.css'
 import banner from './banner.jpg'
@@ -49,7 +49,7 @@ As with the Masters, it will run full-time, end-to-end from 2021. In the meantim
 
 const headings = [
   "Education Program",
-  "Master Of Cyber",
+  "Master of Cyber",
   'Graduate Diploma of Cyber',
   'Courses'
 ]
@@ -149,7 +149,7 @@ export default () =>
 
             <div className='container-fluid'>
                 <div className='row marginTop2rem-md'>
-                        <CyberLaw />                    
+                        <ShortCourses />                    
                 </div>
             </div>
 

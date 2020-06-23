@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import BlackSlider from './BlackSlider'
 class ShortCourseInfo extends Component {
     createDate(date) {
         return (
@@ -69,8 +70,8 @@ class ShortCourseInfo extends Component {
         }
 
         return (
+            <BlackSlider name={this.props.title}>
             <div className="col-md-offset-1 col-md-10">
-                <h2 class="Bold" style={{verticalAlign: 'middle', fontSize: '40px',   marginTop: '1rem'}}>{this.props.title}</h2>        
                 <div className="col-md-offset-1 col-md-10">
                     <p style={{fontWeight: '700'}}>Upcoming Dates</p>
                     <br/>
@@ -81,11 +82,12 @@ class ShortCourseInfo extends Component {
                     <p>
                         {body}
                     </p>
+                    <p style={{fontWeight: '700'}}>Topics covered:</p>
                     <ul>
                         {topics}
                     </ul>
                     <br/>
-                    <p>
+                    <p style={{fontWeight: '700'}}>
                         Upon successful completion, participants will have the skills and knowledge to:
                     </p>
                     <br/>
@@ -96,6 +98,7 @@ class ShortCourseInfo extends Component {
 
                 </div>
             </div>
+            </BlackSlider>
         )
     }
 
