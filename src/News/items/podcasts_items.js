@@ -3,7 +3,7 @@ import GovCyberPodcast from './../../../img/gov_cyber_podcast.jpg'
 import RSA from './../../../img/RSA.png'
 import NatPodcast from './../../../img/nationalsecuritypodcast.jpg'
 
-export const podcasts_array = [
+export default [
   {
     id: '3',
     component: 'NewsArticle',

@@ -13,7 +13,7 @@ import Microchip from './../../../img/microchip.png'
 import Defend from './../../../img/defend.png'
 import SecurityStrategy from './../../../img/security_strategy.jpg'
 
-export const articles_array = [{
+export default [{
   id: '10',
   component: 'NewsArticle',
   props: {

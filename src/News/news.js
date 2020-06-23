@@ -7,11 +7,11 @@ import Banner from './../pages/common/Banner'
 import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './../style.css'
 
-import { news_array } from './items/news_items'
-import { blogs_array } from './items/blogs_items'
-import { podcasts_array } from './items/podcasts_items'
-import { articles_array } from './items/articles_items'
-import { events_array } from './items/events_items'
+import newsItems from './items/news_items'
+import blogItems from './items/blogs_items'
+import podcastItems from './items/podcasts_items'
+import articleItems from './items/articles_items'
+import eventItems from './items/events_items'
 
 import banner from './bannernewsandevents.jpg'
 
@@ -109,24 +109,27 @@ export const DateBox = (props) => (
   </div>
 )
 
-const NewsArticle = (props) => (
-  <div style={{ textAlign: 'left', cursor: 'pointer' }}>
-    <div>
-      <img src={props.imageSource} style={{ position: 'relative', top: '20px', right: '65px', 'max-width': '70%', 'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px 0px 0px 10%' }} />
-    </div>
-    <div className='NewsArticle marginAuto-xs' style={{ textAlign: 'left', 'border-style': 'solid', padding: '1rem', borderColor: 'black', borderWidth: '1px', width: '70%', height: '370px' }} onClick={() => props.link && window.open(props.link, '_blank')}>
-      <br />
-      <div style={{ maxHeight: '285px', overflow: 'hidden' }}>
-        <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{props.head}</b><br />
-        <p style={{ fontSize: '13px', textAlign: 'left', letterSpacing: '0px', bottom: '0', 'margin-top': '0.5rem' }}>by {props.author} <span style={{ fontSize: '13px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
-        <br />
-
-        <div style={{ fontSize: '18px', letterSpacing: '0px' }}> {props.byline.substring(0, 200) + '...'}</div>
+const NewsArticle = (props) => {
+  return (
+    <div style={{ textAlign: 'left', cursor: 'pointer' }}>
+      <div>
+        <img src={props.imageSource} style={{ position: 'relative', top: '20px', right: '65px', 'max-width': '70%', 'box-shadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px 0px 0px 10%' }} />
       </div>
-      <div style={{ textAlign: 'right' }}><img style={{ 'max-width': '10%', margin: '1rem', left: '50%' }} src={BlackBoxArrow} /></div>
+      <div className='NewsArticle marginAuto-xs' style={{ textAlign: 'left', 'border-style': 'solid', padding: '1rem', borderColor: 'black', borderWidth: '1px', width: '70%', height: '370px' }} onClick={() => props.link && window.open(props.link, '_blank')}>
+        <br />
+        <div style={{ maxHeight: '285px', overflow: 'hidden' }}>
+          <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{props.head}</b><br />
+          <p style={{ fontSize: '13px', textAlign: 'left', letterSpacing: '0px', bottom: '0', 'margin-top': '0.5rem' }}>by {props.author} <span style={{ fontSize: '13px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
+          <br />
+
+          <div style={{ fontSize: '18px', letterSpacing: '0px' }}> {props.byline.substring(0, 200) + '...'}</div>
+        </div>
+        <div style={{ textAlign: 'right' }}><img style={{ 'max-width': '10%', margin: '1rem', left: '50%' }} src={BlackBoxArrow} /></div>
+      </div>
     </div>
-  </div>
-)
+  )
+}
+
 const SpacerColumn = (props) => (
   <div />
 )
@@ -134,38 +137,38 @@ const SpacerColumn = (props) => (
 // News article formatting
 const news = {
   title: 'News',
-  sections: [news_array[0], news_array[1], news_array[2]]
+  sections: [newsItems[0], newsItems[1], newsItems[2]]
 }
 const news2 = {
   title: 'News',
-  sections: [news_array[3]]
+  sections: [newsItems[3]]
 }
 
 const blogs = {
   title: 'Blogs',
-  sections: [blogs_array[0], blogs_array[1], blogs_array[2]]
+  sections: [blogItems[0], blogItems[1], blogItems[2]]
 }
 
 const podcasts = {
   title: 'Podcasts',
-  sections: [podcasts_array[0], podcasts_array[1], podcasts_array[2]]
+  sections: [podcastItems[0], podcastItems[1], podcastItems[2]]
 }
 const podcasts2 = {
   title: 'Podcasts',
-  sections: [podcasts_array[3]]
+  sections: [podcastItems[3]]
 }
 
 const media = {
   title: 'News',
-  sections: [articles_array[0], articles_array[1], articles_array[2]]
+  sections: [articleItems[0], articleItems[1], articleItems[2]]
 }
 const media2 = {
   title: 'News',
-  sections: [articles_array[3], articles_array[4], articles_array[5]]
+  sections: [articleItems[3], articleItems[4], articleItems[5]]
 }
 const media3 = {
   title: 'News',
-  sections: [articles_array[6], articles_array[7], articles_array[8]]
+  sections: [articleItems[6], articleItems[7], articleItems[8]]
 }
 
 const events = {
@@ -173,12 +176,12 @@ const events = {
   sections: [{
     id: '2',
     component: DateBox,
-    props: events_array[0]
+    props: eventItems[0]
   },
   {
     id: '3',
     component: DateBox,
-    props: events_array[1]
+    props: eventItems[1]
   }
   ]
 }
@@ -243,6 +246,16 @@ class DynamicPage extends React.Component {
       </>
     )
   }
+}
+
+const MediaItems = ({ items }) => {
+  return (
+    <>
+      {
+        items.map(({ props }, i) => <NewsArticle key={i} {...props} />)
+      }
+    </>
+  )
 }
 
 class News extends Component {
@@ -311,6 +324,7 @@ class News extends Component {
                   />
                 </div>
               </div>
+              <MediaItems items={newsItems} />
               <div class='col-xs-13'>
                 <div class='row'>
                   <div class='col-xs-2' />
@@ -482,7 +496,7 @@ class News extends Component {
                       textAlign: 'center'
                     }}
                     >
-                The Packet - Security Bytes - Ep.1: Secure Working from Home
+                      The Packet - Security Bytes - Ep.1: Secure Working from Home
                     </h2>
                     <div dangerouslySetInnerHTML={{ __html: '<iframe title="The Packet - Security Bytes - Ep.1: Secure Working from Home" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/t2tkg-d93c69?from=yiiadmin&download=1&version=1&skin=11&btn-skin=101&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1" width="100%" height="122"></iframe>' }} />
                     <div style={{

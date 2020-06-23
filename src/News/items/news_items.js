@@ -3,7 +3,7 @@ import CyberBootcamp from './../../../img/cyber_bootcamp.png'
 import RaisinaDialogue from './../../../img/raisina_dialogue.jpg'
 import SingaporeCyber from './../../../img/singapore_cyber.jpg'
 
-export const news_array = [
+export default [
   {
     id: '3',
     component: 'NewsArticle',

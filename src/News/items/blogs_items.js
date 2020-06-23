@@ -1,4 +1,4 @@
-export const blogs_array = [
+export default [
   {
     id: '2',
     component: 'NewsArticle',
