@@ -6,7 +6,6 @@ import Banner from './../pages/common/Banner'
 import PodcastEp1 from './PodcastEp1'
 
 import newsItems from './items/news_items'
-import blogItems from './items/blogs_items'
 import podcastItems from './items/podcasts_items'
 import articleItems from './items/articles_items'
 import eventItems from './items/events_items'
@@ -23,72 +22,7 @@ const headings = [
   'Podcasts'
 ]
 
-const CompLabel = (props) => (
-  <div className='complabel-component'>
-    Component: <b>{props.label}</b>
-  </div>
-)
-
-const Cover = (props) => (
-  <div className='cover-component'>
-    <CompLabel label='Cover' />
-    <h1 className='cover-head'>
-      {props.head}
-    </h1>
-    <p className='cover-byline'>
-      {props.byline}
-    </p>
-  </div>
-)
-
-const Copy = (props) => (
-  <div className='copy-component'>
-    <CompLabel label='Copy' />
-    <div>{props.content}</div>
-  </div>
-)
-
-const Channels = (props) => (
-  <div className='channels-component'>
-    <CompLabel label='Channels' />
-    <div>{props.children}</div>
-  </div>
-)
-
-const Twitter = (props) => (
-  <div className='twitter-component'>
-    <CompLabel label='Twitter' />
-    <div>
-      Twitter:&nbsp;
-      <a href={`https://twitter.com/${props.handle}`} target='_blank' rel='noopener noreferrer'>
-        @{props.handle}
-      </a>
-    </div>
-  </div>
-)
-
-const Link = (props) => (
-  <div className='newsletter-component'>
-    <CompLabel label='Link' />
-    <div>
-      Google:&nbsp;
-      <a href={props.subscribeUrl} target='_blank' rel='noopener noreferrer'>
-        {props.subscribeUrl}
-      </a>
-    </div>
-  </div>
-)
-
-const Image = (props) => (
-  <div className='Image-component'>
-    <CompLabel label='Image' />
-    <div>
-      <img src={props.src} />
-    </div>
-  </div>
-)
-
-export const DateBox = (props) => (
+const DateBox = (props) => (
   <div className='Datebox-component' style={{ margin: '1rem' }}>
     <div className='row'>
       <div className='col-md-2 col-xs-12'>
@@ -127,124 +61,6 @@ const NewsArticle = (props) => {
       </div>
     </div>
   )
-}
-
-const SpacerColumn = (props) => (
-  <div />
-)
-
-// News article formatting
-const news = {
-  title: 'News',
-  sections: [newsItems[0], newsItems[1], newsItems[2]]
-}
-const news2 = {
-  title: 'News',
-  sections: [newsItems[3]]
-}
-
-const blogs = {
-  title: 'Blogs',
-  sections: [blogItems[0], blogItems[1], blogItems[2]]
-}
-
-const podcasts = {
-  title: 'Podcasts',
-  sections: [podcastItems[0], podcastItems[1], podcastItems[2]]
-}
-const podcasts2 = {
-  title: 'Podcasts',
-  sections: [podcastItems[3]]
-}
-
-const media = {
-  title: 'News',
-  sections: [articleItems[0], articleItems[1], articleItems[2]]
-}
-const media2 = {
-  title: 'News',
-  sections: [articleItems[3], articleItems[4], articleItems[5]]
-}
-const media3 = {
-  title: 'News',
-  sections: [articleItems[6], articleItems[7], articleItems[8]]
-}
-
-const events = {
-  title: 'Events',
-  sections: [{
-    id: '2',
-    component: DateBox,
-    props: eventItems[0]
-  },
-  {
-    id: '3',
-    component: DateBox,
-    props: eventItems[1]
-  }
-  ]
-}
-
-const events2 = null
-
-const stock = {
-  Channels,
-  Copy,
-  Cover,
-  Link,
-  Twitter,
-  Image,
-  NewsArticle,
-  SpacerColumn,
-  DateBox
-}
-
-class Section1 extends React.Component {
-  get root () {
-    return this.props.root
-  }
-
-  get rSection () {
-    return this.createElement(this.root)
-  }
-
-  createElement (def) {
-    return React.createElement(
-      stock[def.component],
-      def.props,
-      ((def.props || {}).children || [])
-        .map(c => this.createElement(c))
-    )
-  };
-
-  render () {
-    return (
-      <div className={this.root.props.sizeName}>
-        {this.rSection}
-      </div>
-    )
-  }
-}
-
-class DynamicPage extends React.Component {
-  get sections () {
-    return this.props.page.sections
-  }
-
-  get rSections () {
-    return this.sections.map(
-      s => <Section1 key={s.id} root={s} />
-    )
-  }
-
-  render () {
-    return (
-
-      <>
-        {this.rSections}
-      </>
-    )
-  }
 }
 
 const MediaItems = ({ items }) => {
@@ -300,53 +116,23 @@ const MediaItems = ({ items }) => {
   )
 }
 
+const events = {
+  title: 'Events',
+  sections: [{
+    id: '2',
+    component: DateBox,
+    props: eventItems[0]
+  },
+  {
+    id: '3',
+    component: DateBox,
+    props: eventItems[1]
+  }
+  ]
+}
+const events2 = null
+
 class News extends Component {
-  constructor (...args) {
-    super(...args)
-
-    this.state = {
-      news: news,
-      news2: news2,
-      podcasts: podcasts,
-      media: media,
-      // blogs: blogs,
-      events: events,
-      media2: media2,
-      media3: media3
-
-    }
-  }
-
-  clickButton () {
-    // this.getClientHeight()
-    this.setState((prevState) => ({ isVisible: !prevState.isVisible }))
-  }
-
-  clickButtonEvent () {
-    // this.getClientHeight()
-    this.setState((prevState) => ({ isVisibleEvent: !prevState.isVisibleEvent }))
-  }
-
-  clickButtonMedia () {
-    // this.getClientHeight()
-    this.setState((prevState) => ({ isVisibleMedia: !prevState.isVisibleMedia }))
-  }
-
-  clickButtonTranscript () {
-    // this.getClientHeight()
-    this.setState((prevState) => ({ isVisibleTranscript: !prevState.isVisibleTranscript }))
-  }
-
-  clickButtonBlog () {
-    // this.getClientHeight()
-    this.setState((prevState) => ({ isVisibleBlog: !prevState.isVisibleBlog }))
-  }
-
-  clickButtonPodcast () {
-    // this.getClientHeight()
-    this.setState((prevState) => ({ isVisiblePodcast: !prevState.isVisiblePodcast }))
-  }
-
   render () {
     return (
       <>
@@ -392,7 +178,7 @@ class News extends Component {
               >
                 <div className='col-xs-12'>
                   {
-                    this.state.events.sections.map(({ component: EventComponent, props }, index) => (
+                    events.sections.map(({ component: EventComponent, props }, index) => (
                       <EventComponent {...props} key={index} />
                     ))
                   }
@@ -466,4 +252,3 @@ class News extends Component {
   }
 }
 export default News
-export { DynamicPage }
