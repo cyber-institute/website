@@ -254,7 +254,7 @@ const MediaItems = ({ items }) => {
     <>
       <div className='row'>
         <div className='col-md-2' />
-        <div className='row col-xs-12 col-md-11'>
+        <div className='row col-xs-12 col-md-9'>
           {
             items.map(({ props }, i) =>
               i < 3 && (
@@ -271,7 +271,7 @@ const MediaItems = ({ items }) => {
           <>
             <div className='row'>
               <div className='col-md-2' />
-              <div className='row col-xs-12 col-md-11'>
+              <div className='row col-xs-12 col-md-9'>
                 <SlideToggleContent isVisible={isVisible}>
                   <div className='row'>
                     {
@@ -516,37 +516,9 @@ class News extends Component {
                   </div>
                   <div className='col-xs-2' />
                 </div>
-                <div className='row'>
-                  <div className='col-xs-2' />
-                  <DynamicPage page={this.state.podcasts} />
-                  <div className='col-xs-2' />
-                </div>
               </div>
+              <MediaItems items={podcastItems} />
             </div>
-            {
-              podcasts2 &&
-                <div
-                  style={{
-                    margin: 'auto',
-                    position: 'relative'
-                  }}
-                >
-                  <SlideToggleContent isVisible={this.state.isVisiblePodcast}>
-                    <br />
-                    <br />
-                    <div className='col-xs-13'>
-                      <div className='row'>
-                        <div className='col-xs-2' />
-                        <DynamicPage page={this.state.news2} />
-                        <div className='col-xs-2' />
-                      </div>
-                    </div>
-                  </SlideToggleContent>
-                  <div className='col-xs-12'>
-                    <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
-                  </div>
-                </div>
-            }
           </div>
         </div>
       </>
