@@ -253,12 +253,12 @@ const MediaItems = ({ items }) => {
   return (
     <>
       <div className='row'>
-        <div className='col-xs-2' />
-        <div className='row col-xs-9'>
+        <div className='col-md-2' />
+        <div className='row col-xs-12 col-md-11'>
           {
             items.map(({ props }, i) =>
               i < 3 && (
-                <div className='col-md-4' key={i}>
+                <div className='col-md-4 col-xs-12' key={i}>
                   <NewsArticle {...props} />
                 </div>
               )
@@ -270,18 +270,20 @@ const MediaItems = ({ items }) => {
         items.length >= 3 &&
           <>
             <div className='row'>
-              <div className='col-xs-2' />
-              <div className='row col-xs-9'>
+              <div className='col-md-2' />
+              <div className='row col-xs-12 col-md-11'>
                 <SlideToggleContent isVisible={isVisible}>
-                  {
-                    items.slice(3).map(({ props }, i) =>
-                      (
-                        <div className='col-md-4' key={i}>
-                          <NewsArticle {...props} />
-                        </div>
+                  <div className='row'>
+                    {
+                      items.slice(3).map(({ props }, i) =>
+                        (
+                          <div className='col-md-4 col-xs-12' key={i}>
+                            <NewsArticle {...props} />
+                          </div>
+                        )
                       )
-                    )
-                  }
+                    }
+                  </div>
                 </SlideToggleContent>
               </div>
             </div>
