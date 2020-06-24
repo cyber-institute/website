@@ -15,7 +15,8 @@ const productionConfig = merge([
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/index.html',
-        filename: './index.html'
+        filename: './index.html',
+        favicon: './img/CITclearicon.png'
       })
     ]
   },
@@ -37,7 +38,8 @@ const developmentConfig = merge([
       new ErrorOverlayPlugin(),
       new HtmlWebpackPlugin({
         template: './src/index.html',
-        filename: './index.html'
+        filename: './index.html',
+        favicon: './img/CITclearicon.png'
       })
     ]
   },
