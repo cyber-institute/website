@@ -108,10 +108,8 @@ export default () =>
                     left: '-1rem'}}/>
             </div>
 
-            <div className='container-fluid'>
-                <div className='row marginTop2rem-md'>
-                    <CyberMasteryContent image1={services4} image2={services5} />
-                </div>
+            <div className='container-fluid' style={{marginTop:'2rem'}}>            
+                    <CyberMasteryContent image1={services4} image2={services5} />             
             </div>
 
 
