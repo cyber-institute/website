@@ -5,7 +5,7 @@ import CourseInformationBlurb from './CourseInformationBlurb'
 import ShortCourses from './Courses'
 
 import './style.css'
-import banner from './2.jpg'
+import banner from './banner.jpg'
 import services3 from './../../../img/services3.jpg'
 import services4 from './../../../img/services4.jpg'
 import services5 from './../../../img/services5.jpg'
