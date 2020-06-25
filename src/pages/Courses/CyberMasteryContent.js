@@ -37,7 +37,7 @@ export default ({ image1, image2 }) =>
     <div className='row'>
       <div className='col-md-offset-1 col-md-10'>
         <CourseInformationBlurb
-          courseLength='1 year full-time study'
+          courseLength='2 years full-time study'
           enrolment='Enrolment information coming in near future'
           commencingCohort='2021'
           includes='Micro modules & Capstone projects'
