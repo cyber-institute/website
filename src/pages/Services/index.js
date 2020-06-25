@@ -12,6 +12,7 @@ import Slider from '../common/Slider'
 import banner from './banner.jpg'
 import services2 from '../../../img/services2.png'
 import services3 from '../../../img/services3.jpg'
+import services4 from './../../../img/services4.jpg'
 import services6 from '../../../img/city.png'
 import services7 from '../../../img/services7.jpg'
 import services8 from '../../../img/services8.jpg'
@@ -95,7 +96,7 @@ export default () =>
           </p>
         </div>
         <div className='col-md-4 margin2RemAuto-sm'>
-          <Image img={services3} style={{ 'box-shadow': '5px 5px 10px grey' }} />
+          <Image img={services4} style={{ 'box-shadow': '5px 5px 10px grey' }} />
         </div>
       </div>
       

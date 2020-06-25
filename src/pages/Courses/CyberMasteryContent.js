@@ -39,7 +39,7 @@ export default ({ image1, image2 }) =>
         <CourseInformationBlurb
           courseLength='1 year full-time study'
           enrolment='Enrolment information coming in near future'
-          commencingCohort='2021 (with some modules available from mid-2020)'
+          commencingCohort='2021'
           includes='Micro modules & Capstone projects'
         />
         <div style={{

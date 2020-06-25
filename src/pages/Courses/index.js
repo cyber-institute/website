@@ -32,7 +32,7 @@ const GraduateDiploma = () =>
       <CourseInformationBlurb
         courseLength='1 year full-time study'
         enrolment='Enrolment information coming in near future'
-        commencingCohort='2021 (with some modules available from mid-2020)'
+        commencingCohort='2021'
         includes='Micro modules'
       />
       <div style={{
@@ -41,7 +41,7 @@ const GraduateDiploma = () =>
       >
         <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
           <br /><br />
-            As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
+            As with the Masters, it will run full-time, end-to-end from 2021. Information about enrolment will be available in the near future.
         </p>
       </div>
     </div>
