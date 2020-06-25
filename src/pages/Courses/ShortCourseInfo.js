@@ -1,30 +1,63 @@
 import React, { Component } from 'react'
 import BlackSlider from './BlackSlider'
 class ShortCourseInfo extends Component {
-    createDate(date) {
+    createOffering(offering, title) {
+        
         return (
             <>
             <div className="row">
                 <div className="col-md-6" style={{padding: '0', margin: '0'}}>
-                    <p style ={{marginTop:"12px"}}>{date}</p>
+                    <p style ={{marginTop:"12px"}}>{offering.date}</p>
                 </div>
                 <div className="col-md-6" style={{padding: '0', margin: '0'}}>
-                    <div style={{height: '50px',
-                                width: '125px',
-                                backgroundColor: 'rgb(82, 49, 120)',
-                                borderRadius: '9px',
-                                display: 'flex',
-                                justifyContent: 'center'
-                                }}>
-                        <p style={{color: 'white',
-                                    marginTop: '12px'}}>Enrol Now</p>
-                    </div>
+                    {this.enrolButton(offering, title)}
                 </div>
                         
             </div>
             <br/>
             </>
         )
+    }
+    enrolButton(offering, title) {
+        if (offering.availability) {
+            return (
+                <a style={{height: '50px',
+                                width: '160px',
+                                backgroundColor: 'rgb(82, 49, 120)',
+                                borderRadius: '9px',
+                                display: 'flex',
+                                justifyContent: 'center'
+                                }}
+                                href={offering.link}
+                                target="_blank">
+                    <a style={{color: 'white',
+                                        marginTop: '13px',
+                                        fontFamily: 'Roboto, Arial, sans-serif',
+                                        fontSize: '18px'}}>
+                                        
+                        Enrol Now
+                    </a>
+                </a>
+            )
+        } else {
+            return (
+                <a style={{height: '50px',
+                                width: '160px',
+                                backgroundColor: 'rgb(82, 49, 120)',
+                                borderRadius: '9px',
+                                display: 'flex',
+                                justifyContent: 'center'
+                                }}
+                                href={"mailto:cyber@anu.edu.au?subject="+ title}                                >
+                    <a style={{color: 'white',
+                                marginTop: '13px',
+                                fontFamily: 'Roboto, Arial, sans-serif',
+                                fontSize: '18px'}}>
+                        Register Interest
+                    </a> 
+                </a>   
+            )
+        }
     }
 
     createTopic(topic) {
@@ -52,9 +85,9 @@ class ShortCourseInfo extends Component {
     }
 
     render() {
-        const dates = []
-        for(let i = 0; i < this.props.dates.length; i++) {
-            dates.push(this.createDate(this.props.dates[i]))
+        const offerings = []
+        for(let i = 0; i < this.props.offerings.length; i++) {
+            offerings.push(this.createOffering(this.props.offerings[i], this.props.title))
         }
         const topics = []
         for(let i = 0; i < this.props.topics.length; i++) {
@@ -76,7 +109,7 @@ class ShortCourseInfo extends Component {
                     <p style={{fontWeight: '700'}}>Upcoming Dates</p>
                     <br/>
                     <>
-                    {dates}
+                    {offerings}
                     </>
                     <br/>
                     <p>

@@ -5,7 +5,7 @@ import CourseInformationBlurb from './CourseInformationBlurb'
 import ShortCourses from './Courses'
 
 import './style.css'
-import banner from './banner.jpg'
+import banner from './2.jpg'
 import services3 from './../../../img/services3.jpg'
 import services4 from './../../../img/services4.jpg'
 import services5 from './../../../img/services5.jpg'
@@ -41,7 +41,7 @@ const GraduateDiploma = () =>
       >
         <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
           <br /><br />
-As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
+            As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
         </p>
       </div>
     </div>

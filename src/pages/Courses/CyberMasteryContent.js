@@ -91,27 +91,7 @@ export default ({ image1, image2 }) =>
       </div>
     </div>
     <div>
-      <div
-        className='row middle-xs positionRelative columnReverse-sm paddingTop4rem-sm-md'
-      >
-        <div
-          className='col-md-offset-1 col-md-8'
-        >
-          <div
-            className='dottedLineHorizontal displayNone-sm' style={{
-              width: '5%',
-              position: 'absolute',
-              left: '-2rem'
-            }}
-          />
-          <p>
-    The Cyber Mastery program can be taken as stand-alone modules as available, in the form of Executive Education. Once assessment is completed successfully, you will receive a micro-credential from the Australian National University. Successfully complete enough micro-credentials, including from mandatory modules, and you will earn a <span style={{'font-weight':'700', color: '#523178'}}>Graduate Diploma in Cyber</span>. Successfully complete the assessment for the three capstone modules after that, including an individual project and scenario, and you will be awarded a <span style={{'font-weight':'700', color:'#523178'}}>Master of Cyber</span>.
-          </p>
-        </div>
-        <div className='col-md-3 margin4RemAuto-sm'>
-          <Image img={image1} style={{'box-shadow': '5px 5px 10px grey'}} />
-        </div>
-      </div>
+    <div className="col-md-offset-1 col-md-11" >
       <div
         className='row positionRelative marginTop4rem-md'
       >
@@ -129,15 +109,13 @@ export default ({ image1, image2 }) =>
             }}
           />
           <p>
-As an ANU Master of Cyber, you will have demonstrated the understanding of the technology, the social and ethical ethos, and the strategic nous, to become an influential leader. A leader better able to comprehend the changes in our world now, and to help shape the future.
-            <br /><br />
+          As an ANU Master of Cyber, you will have demonstrated the understanding of the technology, the social and ethical ethos, and the strategic nous, to become an influential leader. A leader better able to comprehend the changes in our world now, and to help shape the future.            <br /><br />
 
-Because we are also building and applying new ways of designing, developing and delivering this program, modules will be offered as they are developed.  Please keep an eye on our website to see how we are going, and what’s becoming available.  Once a full suite of courses is available, we expect you will be able to undertake the full suite for a Masters, in intensive mode, in a calendar year.
-            <br /><br />
+          Because we are also building and applying new ways of designing, developing and delivering this program, modules will be offered as they are developed. Please keep an eye on our website to see how we are going, and what’s becoming available. Once a full suite of courses is available, we expect you will be able to undertake the full suite for a Masters, in intensive mode, in a calendar year.<br /><br />
 
-The full-time Cyber Masters will run across a year end-to-end, commencing in 2021. In the meantime, some modules within the Masters will be available from mid-2020. Information about enrolment will be available in the near future.
           </p>
         </div>
+      </div>
       </div>
     </div>
   </>
