@@ -39,10 +39,7 @@ const GraduateDiploma = () =>
         marginTop: '2rem'
       }}
       >
-        <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
-          <br /><br />
-            As with the Masters, it will run full-time, end-to-end from 2021. Information about enrolment will be available in the near future.
-        </p>
+        <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.</p>
       </div>
     </div>
   </div>

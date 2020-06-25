@@ -42,14 +42,42 @@ export default ({ image1, image2 }) =>
           commencingCohort='2021'
           includes='Micro modules & Capstone projects'
         />
-        <div style={{
+        
+       
+      </div>
+    </div>
+    <div className="col-md-offset-1 col-md-11" >
+      <div
+        className='row positionRelative marginTop4rem-md'
+      >
+        <div className='col-md-3 margin4RemAuto-sm'>
+          <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
+        </div>
+        <div
+          className='col-md-8'
+        >
+          <div
+            className='dottedLineHorizontal displayNone-sm' style={{
+              width: '5%',
+              position: 'absolute',
+              right: '-2rem'
+            }}
+          />
+          <p>
+          As an ANU Master of Cyber, you will have demonstrated the understanding of the technology, the social and ethical ethos, and the strategic nous, to become an influential leader. A leader better able to comprehend the changes in our world now, and to help shape the future.            <br /><br />
+
+          Because we are also building and applying new ways of designing, developing and delivering this program, modules will be offered as they are developed. Please keep an eye on our website to see how we are going, and what’s becoming available. Once a full suite of courses is available, we expect you will be able to undertake the full suite for a Masters, in intensive mode, in a calendar year.<br /><br />
+
+          </p>
+        </div>
+      </div>
+      </div>
+      <div className= "col-md-offset-1 col-md-10" style={{
           marginTop: '2rem'
         }}
         >
           <p>Here are the core principles of our Cyber Mastery:</p>
         </div>
-      </div>
-    </div>
     <div className='row positionRelative'>
       <div className='col-md-offset-1 col-md-5'>
         <CorePrinciple isLeft heading='1. Interdisiplinarity' paragraph='The problems presented by cyber are difficult precisely because they do not fit neatly into traditional ways of thinking or managing problems, solutions, opportunities and risks;' />
@@ -90,32 +118,5 @@ export default ({ image1, image2 }) =>
         />
       </div>
     </div>
-    <div>
-    <div className="col-md-offset-1 col-md-11" >
-      <div
-        className='row positionRelative marginTop4rem-md'
-      >
-        <div className='col-md-3 margin4RemAuto-sm'>
-          <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
-        </div>
-        <div
-          className='col-md-8'
-        >
-          <div
-            className='dottedLineHorizontal displayNone-sm' style={{
-              width: '5%',
-              position: 'absolute',
-              right: '-2rem'
-            }}
-          />
-          <p>
-          As an ANU Master of Cyber, you will have demonstrated the understanding of the technology, the social and ethical ethos, and the strategic nous, to become an influential leader. A leader better able to comprehend the changes in our world now, and to help shape the future.            <br /><br />
-
-          Because we are also building and applying new ways of designing, developing and delivering this program, modules will be offered as they are developed. Please keep an eye on our website to see how we are going, and what’s becoming available. Once a full suite of courses is available, we expect you will be able to undertake the full suite for a Masters, in intensive mode, in a calendar year.<br /><br />
-
-          </p>
-        </div>
-      </div>
-      </div>
-    </div>
+    
   </>
