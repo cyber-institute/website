@@ -20,7 +20,7 @@ export default () => {
           >
         The Packet - Security Bytes - Ep.2: Privacy Primer
           </h2>
-          <div dangerouslySetInnerHTML={{ __html: '<iframe title="The Packet - Security Bytes - Ep 2: Privacy Primer" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/mini?media=https%3A%2F%2Fmcdn.podbean.com%2Fmf%2Fweb%2Fc403vi%2FFINAL-Security_Bytes-Episode-2-Privacy_01_64nml.mp3&amp;skin=11&amp;p=pbblog8081844&amp;e=pb14602708&amp;t=1593059235&amp;s=480e860f244888f71b0a7e53fe6fb744" height="122" width="100%"></iframe>' }} />
+          <div dangerouslySetInnerHTML={{ __html: '<iframe title="The Packet - Security Bytes - Ep 2: Privacy Primer" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/bkntq-ded1d4?from=yiiadmin&download=1&version=1&skin=11&btn-skin=101&auto=0&share=1&fonts=Helvetica&download=1&rtl=0&pbad=1" width="100%" height="122"></iframe>' }} />
           <div style={{
             paddingTop: '1rem'
             // textAlign: 'center'
