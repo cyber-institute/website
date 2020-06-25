@@ -3,7 +3,8 @@ import React, { Component, useState } from 'react'
 import SlideToggleContent from './../ContentSlider/SlideToggleContent'
 import ViewMoreButton from './../ContentSlider/ViewMoreButton'
 import Banner from './../pages/common/Banner'
-import PodcastEp1 from './PodcastEp1'
+import PodcastEp1 from './items/PodcastEp1'
+import PodcastEp2 from './items/PodcastEp2'
 
 import newsItems from './items/news_items'
 import podcastItems from './items/podcasts_items'
@@ -242,6 +243,7 @@ class News extends Component {
                   />
                 </div>
               </div>
+              <PodcastEp2/>
               <PodcastEp1 />
               <MediaItems items={podcastItems} />
             </div>

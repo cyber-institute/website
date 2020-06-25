@@ -1,5 +1,15 @@
 export default [
   {
+    day: '16',
+    month: 'Jul',
+    title: 'Public Sector: The Cybersecurity Imperative',
+    date: '16/07/20',
+    time: '1:00pm',
+    description: 'Information super- trends have been accelerated by the COVID-19 health and economic crisis, increasing cyber risk in the process. How should the public sector respond? Taking place on Thursday, 16 July 2020 at 1pm (AEST) this webinar will broker a discussion between cyber thought leaders and industry participants to discuss how the rapid digitisation of government services, the mass global shift to work-from-home processes, the adoption of robotic process automation, and the evolution of digital work practices has profound implications for cybersecurity.',
+    signupText: 'Click the link for more information the event:',
+    link: 'https://www.innovationaus.com/cyberark-webinar/?utm_source=IAsite&utm_medium=story&utm_campaign=CyberarkEditorial'
+  },
+  {
     day: '20',
     month: 'Feb',
     title: 'RSA Conference 2020',

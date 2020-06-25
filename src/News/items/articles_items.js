@@ -1,3 +1,5 @@
+import CyberAttack from './../../../img/cyberAttack.jpg'
+
 import Zoom from './../../../img/zoom_trouble.jpg'
 import DataInterventionsStephanie from './../../../img/datainterventions_stephanie.jpg'
 import CoronaApp from './../../../img/coronaApp.png'
@@ -13,7 +15,20 @@ import Microchip from './../../../img/microchip.png'
 import Defend from './../../../img/defend.png'
 import SecurityStrategy from './../../../img/security_strategy.jpg'
 
+
 export default [{
+  id: '11',
+  component: 'NewsArticle',
+  props: {
+    head: 'Grey zone strike means cyber war',
+    byline: 'On June 19, Prime Minister Scott Morrison said Australian organisations were "being targeted by a sophisticated state-based cyber actor". The accompanying advisory notice from the Australian Cyber Security Centre set out an attack that seemed to follow fairly standard approaches: web-based exploitation, spear-fishing, and seeking entry into organisations through the front door, hoping – softly, softly – to be lost in the noise.',  
+    author: 'Prof. Lesley Seebeck',
+    date: '24/6/20',
+    imageSource: CyberAttack,
+    sizeName: 'col-md-3 col-xs-12',
+    link: 'https://www.afr.com/policy/foreign-affairs/grey-zone-strike-means-cyber-war-20200623-p5556b'
+  }
+},{
   id: '10',
   component: 'NewsArticle',
   props: {
