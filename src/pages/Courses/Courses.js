@@ -21,12 +21,12 @@ const courses = [
                 "This course is designed for commercial legal practitioners and covers essential topics in a world increasingly reliant on digital technology. Harnessing the experience and expertise of high-level presenters and experienced facilitators in a tailor-made, blended learning format, you will have access to live and recorded videoconference lectures, interactive Q&A sessions with subject matter experts, real-world hypothetical discussions with mentors in breakout groups, and a moot trial overseen by prominent members of the academic and legal communities." 
             ],
         topics: [
-            'Introduction to cyber and cyber security;',
-            'Proposed changes to privacy legislation in Australia;',
-            'The transboundary effect of different data privacy laws and comparative insights;',
-            'E-commerce and contract law;',
-            'Cloud computing; and, ',
-            'Employee monitoring and public surveillance.'
+            'Introduction to cyber and cyber security',
+            'Proposed changes to privacy legislation in Australia',
+            'The transboundary effect of different data privacy laws and comparative insights',
+            'E-commerce and contract law',
+            'Cloud computing',
+            'Employee monitoring and public surveillance'
         ],
         outcomes: [
             'Approach the assessment of the legal consequences of practical vulnerabilities critically, access the appropriate responses and the complexity of the issues at the intersection between the law and technology.',
@@ -52,11 +52,11 @@ const courses = [
                 "The Cyber Leadership Course is designed for decision-makers and those who inform decision-makers at the EL2 level and above and covers essential topics in a world increasingly reliant of digital technology.  Drawing on the experience of high-level presenters in a blended format of self-led and facilitated sessions, participants have access to live and recorded video presentations, Masterclasses and interactive Q&A sessions with subject matter experts, and real world and simulated scenarios. This course will provide participants with cyber strategies and solutions which can be applied immediately to the workplace.",
             ],
         topics: [
-            'Introduction to Cyber;',
-            'Decision-making in Uncertainty;',
-            'Cyber Ethics;',
-            'Cyber Risk; and,',
-            'Cyber Resilience.',
+            'Introduction to Cyber',
+            'Decision-making in Uncertainty',
+            'Cyber Ethics',
+            'Cyber Risk',
+            'Cyber Resilience',
 
         ],
         outcomes: [
