@@ -42,7 +42,7 @@ export default ({ image1, image2, image3 }) =>
       >
         <div className='row'>
           <div className= 'col-md-10 col-md-offset-1'>
-            <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+            <h2 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
             Identifying Scams and Making Good Choices
             </h2>
             <p style={{lineHeight:"1.6"}}>
@@ -72,7 +72,7 @@ export default ({ image1, image2, image3 }) =>
               <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>As this is a pilot, we haven’t created a cross-platform solution. Unfortunately, this will only work with the Java version of Minecraft.</p>
               <p style={{lineHeight:"1.6", paddingBottom:"8px"}}>If you don't have the Java version of Minecraft you can watch the run through below. </p>
              <p style={{lineHeight:"1.6", paddingBottom:"8px"}}> So start up your device… and type in the following: for “Server name”, add the Server name (anything you want), 
-             and then for the “Server Address” use: <span style={{ 'font-weight': '700', color: '#523178', 'overflow-wrap': 'anywhere'}}>minetraining.australiaeast.cloudapp.azure.com</span>. 
+             and then for the “Server Address” use: <span style={{ fontWeight: '700', color: '#523178', 'overflow-wrap': 'anywhere'}}>minetraining.australiaeast.cloudapp.azure.com</span>. 
              You can provide feedback by typing “/comment” in-game, and then typing your comment.</p>
              </div>
              </div>
@@ -159,7 +159,7 @@ export default ({ image1, image2, image3 }) =>
           </p>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
-          <Image img={image2} style={{ 'box-shadow': '5px 5px 10px grey', width:"80%", marginLeft:"10%" }} />
+          <Image img={image2} style={{ boxShadow: '5px 5px 10px grey', width:"80%", marginLeft:"10%" }} />
         </div>
       </div>
       {/* <div
@@ -172,7 +172,7 @@ export default ({ image1, image2, image3 }) =>
             }}
           />
           <div className="row">
-          <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+          <h2 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
             How can we help companies be more secure.
           </h2>
           </div> */}
@@ -182,7 +182,7 @@ export default ({ image1, image2, image3 }) =>
         }}
       >
         <div className='col-md-offset-1 col-md-4 margin4RemAuto-sm'>
-          <Image img={image3} style={{ 'box-shadow': '5px 5px 10px grey', marginTop:"25px" }} />
+          <Image img={image3} style={{ boxShadow: '5px 5px 10px grey', marginTop:"25px" }} />
         </div>
         <div className='col-md-6'>
  
@@ -193,7 +193,7 @@ export default ({ image1, image2, image3 }) =>
           is stored by companies and governments. With data breaches happening everyday, organisations need to think about privacy differently: and work with people to better protect their privacy. 
           The Cyber Institute is currently working on a training course to give executives the tools to lead with confidence in an ever changing world. This course includes:
           < br />< br />
-          <span style={{lineHeight:"1.6", 'font-weight': '700', color: '#523178' }}>Privacy by design</span> - A module specifically designed to build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues and how they intersect with security. 
+          <span style={{lineHeight:"1.6", fontWeight: '700', color: '#523178' }}>Privacy by design</span> - A module specifically designed to build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues and how they intersect with security. 
             </p>
             <br />
            </p>

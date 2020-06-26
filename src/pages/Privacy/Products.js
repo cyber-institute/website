@@ -19,8 +19,8 @@ export default ({ image1, image2 }) =>
         Executive Education
         </h2>
         <p>
-      The pace of change in cyber is high. Business risks and organisational resilience are increasingly driven by, or are susceptible to, cyber threats or incidents. Technical and non-technical professionals rely on expert advice or knowledge gathered through running their businesses to inform their decision-making. The Cyber Institute delivers modules drawn from the <span style={{'font-weight':'700', color: '#523178'}}>Cyber Masters as Executive Education sessions</span>. These can be customised sessions to meet the needs of specific target groups.<br/><br/>
-      Here are some examples of our <span style={{'font-weight':'700', color:'#523178'}}>Executive Education Programs</span>:
+      The pace of change in cyber is high. Business risks and organisational resilience are increasingly driven by, or are susceptible to, cyber threats or incidents. Technical and non-technical professionals rely on expert advice or knowledge gathered through running their businesses to inform their decision-making. The Cyber Institute delivers modules drawn from the <span style={{fontWeight:'700', color: '#523178'}}>Cyber Masters as Executive Education sessions</span>. These can be customised sessions to meet the needs of specific target groups.<br/><br/>
+      Here are some examples of our <span style={{fontWeight:'700', color:'#523178'}}>Executive Education Programs</span>:
         </p>
       </div>
     </div>
@@ -35,7 +35,7 @@ export default ({ image1, image2 }) =>
           <div className='row positionRelative'>
             <div className='col-md-offset-1 col-md-7'>
               <p>
-            A flagship activity of the Department of Foreign Affairs and Trade’s Cyber Cooperation Program, the <span style={{'font-weight':'700', color:'#523178'}}>Cyber Bootcamps Program is delivered by the Cyber Institute in partnership with the National Security College</span>. The Bootcamps combine international best practice with first-hand expertise from Australia’s cyber policy and operational specialists across government, academia and the private sector.
+            A flagship activity of the Department of Foreign Affairs and Trade’s Cyber Cooperation Program, the <span style={{fontWeight:'700', color:'#523178'}}>Cyber Bootcamps Program is delivered by the Cyber Institute in partnership with the National Security College</span>. The Bootcamps combine international best practice with first-hand expertise from Australia’s cyber policy and operational specialists across government, academia and the private sector.
               </p>
               <br />
               <br />
@@ -141,7 +141,7 @@ export default ({ image1, image2 }) =>
                 Each Cyber Bootcamp includes a two-week intensive program in Australia, where participants engage in interactive workshops, exercise scenarios, industry site visits, and dialogues with Australian government agencies. Participants will also implement a project which responds to a cyber challenge or opportunity relevant to their domestic roles that will contribute to shared goals of a cyber-resilient Indo-Pacific.
                 <br />
                 <br />
-More information can be found <a target='_blank' style={{ color: '#523178', 'font-weight':'700' }} rel='noopener noreferrer' href='https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'>here</a>.
+More information can be found <a target='_blank' style={{ color: '#523178', fontWeight:'700' }} rel='noopener noreferrer' href='https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx'>here</a>.
               </p>
             </div>
           </div>
@@ -150,7 +150,7 @@ More information can be found <a target='_blank' style={{ color: '#523178', 'fon
           <div className='row'>
             <div className='col-md-offset-1 col-md-7'>
               <p>
-            In partnership with the <span style={{'font-weight':'700'}}>Sir Robert Menzies Memorial Foundation</span>, the <span style={{'font-weight':'700', color:'#523178'}}>ANU Ninian Stephen Cyber Law Program</span>, delivered by the <span style={{'font-weight':'700', color:'#523178'}}>Cyber Institute</span> and the <span style={{'font-weight':'700'}}>ANU College of Law</span>, will provide a professional development program for, but not limited to, legal practitioners which delivers cutting edge, immersive training based on real-time, problem-centred cyber security legal challenges set in a global context.
+            In partnership with the <span style={{fontWeight:'700'}}>Sir Robert Menzies Memorial Foundation</span>, the <span style={{fontWeight:'700', color:'#523178'}}>ANU Ninian Stephen Cyber Law Program</span>, delivered by the <span style={{fontWeight:'700', color:'#523178'}}>Cyber Institute</span> and the <span style={{fontWeight:'700'}}>ANU College of Law</span>, will provide a professional development program for, but not limited to, legal practitioners which delivers cutting edge, immersive training based on real-time, problem-centred cyber security legal challenges set in a global context.
               </p>
               <br />
               <br />
@@ -164,7 +164,7 @@ An associated Thought Leadership and Oration Series will encourage discourse acr
               </p>
             </div>
             <div className='col-md-3 margin4RemAuto-sm'>
-              <Image img={image2} style={{'box-shadow': '5px 5px 10px grey'}} />
+              <Image img={image2} style={{boxShadow: '5px 5px 10px grey'}} />
             </div>
           </div>
         </Slider>
