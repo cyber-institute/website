@@ -37,30 +37,12 @@ export default ({ name,byline, children }) => {
           {children}
         </div>
       </SlideToggleContent>
-      <Content {...{isVisible, byline}}/>
       
     </div>
   )
 }
 
-const Content = ({isVisible, byline}) => 
-  isVisible
-  ? (
-    <></>
-  )
-  : (
-    <div style={{
-      margin: '1rem 0'
-    }}
-    >
-      <div className="col-md-offset-1 col-md-10">
-      <div className="col-md-offset-1 col-md-10">
-         <p>{byline}</p>
-         </div>
-      </div>
-     
-    </div>
-  )
+
 
 const Icons = ({ isVisible }) =>
   isVisible
