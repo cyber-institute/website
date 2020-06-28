@@ -131,7 +131,6 @@ const events = {
   }
   ]
 }
-const events2 = null
 
 class News extends Component {
   render () {
