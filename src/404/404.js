@@ -9,8 +9,8 @@ render(){
 
         <div style={{"margin-left": "auto", "margin-right":"auto", "width": "80%", "margin-bottom":"0", "margin-top":"0","position": "relative"}}>
     
-            <div class='row around-xs'>
-                <div class="col-xs-12 col-md-8">
+            <div className='row around-xs'>
+                <div className="col-xs-12 col-md-8">
                 <h1 style={{'font-family': 'Roboto, Arial, Helvetica, sans-serif', 'font-size': '70px', color: '#523178','font-weight': '900', margin:'0'}}>
                 You seem a bit lost...</h1>
 
