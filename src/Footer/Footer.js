@@ -28,36 +28,35 @@ class Footer extends Component {
                 <p className='fontSize16px-xs' style={{
                   paddingTop: 0
                 }}>
-        +61 2 6125 7802
+                  +61 2 6125 7802
                 </p>
                 <p>
                   <a className='fontSize16px-xs' href='mailto:cyber@anu.edu.au' style={{ color: '#D2ACF7', textDecoration: 'underline' }}>cyber@anu.edu.au</a>
-                  <p>Subscribe to our Mailing List!<br/>
-                  <Mailchimp className='mailchimp_form'
-                  action='https://anu.us18.list-manage.com/subscribe/post?u=5431269039904fced7aafc923&amp;id=85748197e5'
-                  fields={[
-                    {
-                      name: 'EMAIL',
-                      placeholder: 'Email address',
-                      type: 'email',
-                      required: true
-                    }
-                  ]}
-                  messages = {
-                    {
-                      sending: "Sending...",
-                      success: "You are now subscribed!",
-                      error: "An error has occured please try again later.",
-                      empty: "Please enter a valid email address.",
-                      duplicate: "Multiple subscribe attempts for this email address",
-                      button: "Subscribe"
-                    }
-                  }
-                  />
-                  </p>
+                  <p>Subscribe to our Mailing List!</p><br/>
                 </p>
+                <Mailchimp className='mailchimp_form'
+                action='https://anu.us18.list-manage.com/subscribe/post?u=5431269039904fced7aafc923&amp;id=85748197e5'
+                fields={[
+                  {
+                    name: 'EMAIL',
+                    placeholder: 'Email address',
+                    type: 'email',
+                    required: true
+                  }
+                ]}
+                messages = {
+                  {
+                    sending: "Sending...",
+                    success: "You are now subscribed!",
+                    error: "An error has occured please try again later.",
+                    empty: "Please enter a valid email address.",
+                    duplicate: "Multiple subscribe attempts for this email address",
+                    button: "Subscribe"
+                  }
+                }
+                />
                 <p className='fontSize16px-xs'>
-        Level 2, 115 North Rd, Acton  ACT 2601
+                  Level 2, 115 North Rd, Acton  ACT 2601
                 </p>
                 <p>
                   <a className='fontSize16px-xs' href='https://twitter.com/anucyber?lang=en' style={{ color: '#D2ACF7', textDecoration: 'underline' }}>twitter@AnuCyber</a>

@@ -173,11 +173,7 @@ An associated Thought Leadership and Oration Series will encourage discourse acr
   </>
 
 const LineListElement = ({ children }) =>
-  <p
-    className='Bold' style={{
-      margin: '1rem 0 1rem 4rem'
-    }}
-  >
+  <>
     <div
       className='LineListElement-md LineListElement-xs'style={{
         position: 'absolute',
@@ -193,5 +189,11 @@ const LineListElement = ({ children }) =>
         }}
       />
     </div>
-    {children}
-  </p>
+    <p
+    className='Bold' style={{
+      margin: '1rem 0 1rem 4rem'
+    }}
+    >
+      {children}
+    </p>
+  </>

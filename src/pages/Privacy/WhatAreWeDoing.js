@@ -127,7 +127,7 @@ export default ({ image1, image2, image3 }) =>
         }}
       >
         <div className='col-md-6 col-md-offset-1'>
-          <p className='marginLeftNegative' style={{lineHeight:"1.6", height:"100%"}}>
+          <span className='marginLeftNegative' style={{lineHeight:"1.6", height:"100%"}}>
           <p >If you regularly download apps or have a lot of services that you use, you could be sharing your 
           information with a lot of different people. Not all of them have your best interest at heart. </p>
           
@@ -156,7 +156,7 @@ export default ({ image1, image2, image3 }) =>
               </form>
               
             </div>
-          </p>
+          </span>
         </div>
         <div className='col-md-4 margin4RemAuto-sm'>
           <Image img={image2} style={{ boxShadow: '5px 5px 10px grey', width:"80%", marginLeft:"10%" }} />
@@ -186,8 +186,10 @@ export default ({ image1, image2, image3 }) =>
         </div>
         <div className='col-md-6'>
  
-          <p className='marginRight-md'>
-            <h1>We can help companies be more secure.</h1>
+          <div className='marginRight-md'>
+            <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+              We can help companies be more secure.
+            </h2>
           <p style={{lineHeight:"1.6"}}>
           It’s important that we don’t think about privacy as being the sole responsibility of an individual. Large amounts of personal data
           is stored by companies and governments. With data breaches happening everyday, organisations need to think about privacy differently: and work with people to better protect their privacy. 
@@ -196,7 +198,7 @@ export default ({ image1, image2, image3 }) =>
           <span style={{lineHeight:"1.6", fontWeight: '700', color: '#523178' }}>Privacy by design</span> - A module specifically designed to build upon the idea of privacy by design, giving executives a practical way of approaching privacy issues and how they intersect with security. 
             </p>
             <br />
-           </p>
+           </div>
         </div>
       </div>
     
