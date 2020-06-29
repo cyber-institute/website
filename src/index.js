@@ -15,6 +15,7 @@ import News from './News/news'
 import Home from './Home/home'
 import About from './pages/About/index'
 import Services from './pages/Services'
+import Article from './News/article'
 import People from './pages/People'
 import Privacy from './pages/Privacy'
 import FourOFour from './404/404'
@@ -25,7 +26,7 @@ import Hamburger from './../img/Hamburger_icon.png'
 
 import ScrollUp from './pages/common/ScrollUp'
 
-import { Route, useParams, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './flexboxgrid.css'
@@ -109,12 +110,6 @@ export default function FadeMenu() {
 }
 
 
-function Article() {
-  let {head} = useParams();
-  return (
-      <h3>{head}</h3>
-  )
-}
 class App extends Component {
   render () {
     return (
@@ -147,7 +142,7 @@ class App extends Component {
       <ScrollUp>
       <Switch>
         <Route exact path="/privacy" component={Privacy} />
-        <Route path="/news/:head" ><Article/> </Route>
+        <Route exact path="/news/:type/:head" ><Article/></Route>
         <Route exact path="/news" component={News} />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />

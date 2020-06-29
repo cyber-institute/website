@@ -26,7 +26,8 @@ export default [{
     date: '24/6/20',
     imageSource: CyberAttack,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.afr.com/policy/foreign-affairs/grey-zone-strike-means-cyber-war-20200623-p5556b'
+    link: 'https://www.afr.com/policy/foreign-affairs/grey-zone-strike-means-cyber-war-20200623-p5556b',
+    type: 'article'
   }
 },{
   id: '10',
@@ -38,7 +39,8 @@ export default [{
     date: '29/4/20',
     imageSource: CoronaApp,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.afr.com/policy/health-and-education/app-is-no-silver-bullet-for-virus-yet-a-honey-pot-for-the-malign-20200429-p54o5k'
+    link: 'https://www.afr.com/policy/health-and-education/app-is-no-silver-bullet-for-virus-yet-a-honey-pot-for-the-malign-20200429-p54o5k',
+    type: 'article'
   }
 },
 {
@@ -51,7 +53,8 @@ export default [{
     date: '',
     imageSource: DataInterventionsStephanie,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'http://visionofhumanity.org/economists-on-peace/data-interventions-and-the-renegotiation-of-the-social-contract/'
+    link: 'http://visionofhumanity.org/economists-on-peace/data-interventions-and-the-renegotiation-of-the-social-contract/',
+    type: 'article'
   }
 }, {
   id: '8',
@@ -63,7 +66,8 @@ export default [{
     date: '24/3/20',
     imageSource: Zoom,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.afr.com/technology/zoom-is-the-next-privacy-challenge-20200324-p54dff'
+    link: 'https://www.afr.com/technology/zoom-is-the-next-privacy-challenge-20200324-p54dff',
+    type: 'article'
   }
 },
 {
@@ -76,7 +80,8 @@ export default [{
     date: '27/2/20',
     imageSource: Scaffold,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://reporter.anu.edu.au/scaffolding-security'
+    link: 'https://reporter.anu.edu.au/scaffolding-security',
+    type: 'article'
   }
 }, {
   id: '6',
@@ -88,7 +93,8 @@ export default [{
     date: '11/12/19',
     imageSource: CyberHowDoing,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.aspistrategist.org.au/cybersecurity-how-are-we-doing/'
+    link: 'https://www.aspistrategist.org.au/cybersecurity-how-are-we-doing/',
+    type: 'article'
   }
 }, {
   id: '5',
@@ -100,7 +106,8 @@ export default [{
     date: '13/11/19',
     imageSource: FaceFuture,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/'
+    link: 'https://www.policyforum.net/repositioning-australia-to-face-its-future/',
+    type: 'article'
   }
 },
 {
@@ -113,7 +120,8 @@ export default [{
     date: '24/2/20',
     imageSource: Microchip,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.policyforum.net/education-for-the-cyber-age/'
+    link: 'https://www.policyforum.net/education-for-the-cyber-age/',
+    type: 'article'
   }
 }, {
   id: '3',
@@ -125,7 +133,8 @@ export default [{
     date: '7/11/19',
     imageSource: TechDivide,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/'
+    link: 'https://www.aspistrategist.org.au/the-new-global-technological-divide/',
+    type: 'article'
   }
 },
 {
@@ -138,7 +147,8 @@ export default [{
     date: '4/11/19',
     imageSource: PeopleNotProblem,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/'
+    link: 'https://www.aspistrategist.org.au/cybersecurity-people-are-not-the-problem/',
+    type: 'article'
   }
 },
 {
@@ -151,7 +161,8 @@ export default [{
     date: '1/11/19',
     imageSource: SecurityStrategy,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf'
+    link: 'https://www.homeaffairs.gov.au/reports-and-pubs/files/cyber-strategy-2020/submission-157.pdf',
+    type: 'article'
   }
 },
 {
@@ -164,7 +175,8 @@ export default [{
     date: '27/9/19',
     imageSource: Defend,
     sizeName: 'col-md-3 col-xs-12',
-    link: 'https://www.aspistrategist.org.au/defending-those-we-send-to-protect-us/'
+    link: 'https://www.aspistrategist.org.au/defending-those-we-send-to-protect-us/',
+    type: 'article'
   }
 }
 

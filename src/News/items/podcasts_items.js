@@ -14,7 +14,8 @@ export default [
       date: '26/2/20',
       imageSource: RSA,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.youtube.com/watch?v=cjIaKqUwzCQ&feature=youtu.be'
+      link: 'https://www.youtube.com/watch?v=cjIaKqUwzCQ&feature=youtu.be',
+      type: 'podcast'
     }
   }, {
     id: '2',
@@ -26,7 +27,8 @@ export default [
       date: '6/11/19',
       imageSource: NatPodcast,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://crawford.anu.edu.au/news-events/news/15495/national-security-podcast-techlosophy-and-future-security'
+      link: 'https://crawford.anu.edu.au/news-events/news/15495/national-security-podcast-techlosophy-and-future-security',
+      type: 'podcast'
     }
   }, {
     id: '1',
@@ -38,7 +40,8 @@ export default [
       date: '18/6/19',
       imageSource: GovCyberPodcast,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358'
+      link: 'https://www.abc.net.au/radio/programs/am/more-details-needed-about-potential-changes-to-cyber-powers/11219358',
+      type: 'podcast'
     }
   },
   {
@@ -51,7 +54,8 @@ export default [
       date: '27/1/19',
       imageSource: DataPodcast,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/'
+      link: 'https://www.policyforum.net/national-security-podcast-data-cyber-and-the-social-contract/',
+      type: 'podcast'
     }
   }
 ]
