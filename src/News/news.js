@@ -53,16 +53,17 @@ const NewsArticle = (props) => {
         <img src={props.imageSource} style={{ position: 'relative', top: '20px', right: '65px', 'maxWidth': '70%', 'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px 0px 0px 10%' }} />
       </div>
       <div className='NewsArticle marginAuto-xs' style={{ textAlign: 'left', 'border-style': 'solid', padding: '1rem', borderColor: 'black', borderWidth: '1px', width: '70%', height: '370px' }} onClick={() => props.link && window.open(props.link, '_blank')}>
+        <RouteLink to={`/news/${props.head}`}>
         <br />
         <div style={{ maxHeight: '285px', overflow: 'hidden' }}>
           <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{props.head}</b><br />
           <p style={{ fontSize: '13px', textAlign: 'left', letterSpacing: '0px', bottom: '0', 'margin-top': '0.5rem' }}>by {props.author} <span style={{ fontSize: '13px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
           <br />
-
           <div style={{ fontSize: '18px', letterSpacing: '0px' }}> {props.byline.substring(0, 200) + '...'}</div>
         </div>
         <div style={{ textAlign: 'right' }}><img style={{ 'max-width': '10%', margin: '1rem', left: '50%' }} src={BlackBoxArrow} /></div>
-      </div>
+        </RouteLink>
+      </div>  
     </div>
   )
 }
