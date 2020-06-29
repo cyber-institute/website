@@ -25,7 +25,7 @@ import Hamburger from './../img/Hamburger_icon.png'
 
 import ScrollUp from './pages/common/ScrollUp'
 
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
+import { Route, useParams, Link, BrowserRouter as Router, Switch } from 'react-router-dom'
 
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './flexboxgrid.css'
@@ -108,6 +108,13 @@ export default function FadeMenu() {
   );
 }
 
+
+function Article() {
+  let {head} = useParams();
+  return (
+      <h3>{head}</h3>
+  )
+}
 class App extends Component {
   render () {
     return (
@@ -138,14 +145,15 @@ class App extends Component {
         </AppBar>
       </ElevationScroll>
       <ScrollUp>
-        <Switch>
+      <Switch>
         <Route exact path="/privacy" component={Privacy} />
-      <Route exact path="/news" component={News} />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/services" component={Services} />
-      <Route exact path="/people" component={People} />
-      <Route component={FourOFour} />
+        <Route path="/news/:head" ><Article/> </Route>
+        <Route exact path="/news" component={News} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/services" component={Services} />
+        <Route exact path="/people" component={People} />
+        <Route component={FourOFour} />
       </Switch>
       </ScrollUp>
       </Router>
