@@ -142,7 +142,7 @@ class App extends Component {
       <ScrollUp>
       <Switch>
         <Route exact path="/privacy" component={Privacy} />
-        <Route exact path="/news/:type/:head" ><Article/></Route>
+        <Route exact path="/news/:type/:head" component={Article}></Route>
         <Route exact path="/news" component={News} />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
