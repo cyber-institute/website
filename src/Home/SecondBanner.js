@@ -24,8 +24,8 @@ export default () =>
             fontWeight: '900',
             textAlign: 'center',
             letterSpacing: '2px',
-            'padding-top': '30px',
-            'padding-bottom': '30px'
+            paddingTop: '30px',
+            paddingBottom: '30px',
           }}
         >
         We strive to change the cyber conversation to centre on the human values we prize – freedom,

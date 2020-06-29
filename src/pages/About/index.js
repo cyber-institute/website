@@ -14,7 +14,7 @@ const headings = [
 export default () =>
   <>
     <Banner {...{ banner, headings }} title='About us' subTitle='Transforming cyber for the betterment of humanity' />
-    <div className='container-fluid' style={{'font-family':'Roboto, sans-serif'}}>
+    <div className='container-fluid' style={{fontFamily:'Roboto, sans-serif'}}>
       <div
         style={{
           position: 'relative',
@@ -27,7 +27,7 @@ export default () =>
         >
           <img
             src={anu} className='width100'
-            style={{'box-shadow': '5px 5px 10px grey'}}
+            style={{boxShadow: '5px 5px 10px grey'}}
           />
           <div style={{
             position: 'relative',
@@ -76,12 +76,12 @@ export default () =>
               position: 'relative',
               top: '3%',
               fontSize: '40px',
-              'font-family': 'Roboto, sans-serif',
-              'font-weight': '900',                
+              fontFamily: 'Roboto, sans-serif',
+              fontWeight: '900',                
               color: '#523178',
-              'padding-bottom':'25px',
-              'padding-top':'40px',
-              'text-align':'left'
+              paddingBottom:'25px',
+              paddingTop:'40px',
+              textAlign:'left'
             }}
           >
             As a strategic initiative of the Australian National University,
@@ -89,8 +89,8 @@ export default () =>
           <p style={{
             position: 'relative',
             bottom: '0',
-            'padding-top':'25px',
-            'text-align':'left'
+            paddingTop:'25px',
+            textAlign:'left'
           }}
           >
             the Cyber Institute brings a new approach to the challenges presented by cyber and cyber security to people, communities, industries and governments.
@@ -117,7 +117,7 @@ export default () =>
           />
           <div className='col-md-offset-2 col-md-5'>
             <p>
-            We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where <span style={{color:'#523178','font-weight':'700'}}>ideas and systems interact</span>.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
+            We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where <span style={{color:'#523178',fontWeight:'700'}}>ideas and systems interact</span>.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
             </p>
           </div>
         </div>
@@ -172,7 +172,7 @@ export default () =>
       >
         <div className='col-md-offset-2 col-md-4'>
           <p>
-           <span style={{'font-weight':'900', 'font-size':'30px', color:'#523178','letter-spacing':'1px'}}>People</span><span style={{'font-weight': '900', 'font-size': '30px','letter-spacing':'1px'}}> are core to what we do</span>.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
+           <span style={{fontWeight:'900', fontSize:'30px', color:'#523178',letterSpacing:'1px'}}>People</span><span style={{fontWeight: '900', fontSize: '30px',letterSpacing:'1px'}}> are core to what we do</span>.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
           </p>
         </div>
         <div
@@ -180,7 +180,7 @@ export default () =>
             position: 'relative'
           }}
         >
-          <img src={people} className='width100' style={{'box-shadow': '5px 5px 10px grey'}}/>
+          <img src={people} className='width100' style={{boxShadow: '5px 5px 10px grey'}}/>
           <div
             className='dottedLineHorizontal' style={{
               position: 'absolute',
@@ -219,7 +219,7 @@ export default () =>
             zIndex: '-1'
           }}
           />
-          <img src={traffic} className='width100' style={{'box-shadow': '5px 5px 10px grey'}} />
+          <img src={traffic} className='width100' style={{boxShadow: '5px 5px 10px grey'}} />
         </div>
       </div>
       <div className='row'>
@@ -229,7 +229,7 @@ export default () =>
               marginTop: '2vw'
             }}
           >
-            Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', 'font-weight': '700'}}>real-time security operations centre</span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
+            Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', fontWeight: '700'}}>real-time security operations centre</span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
           </p>
         </div>
       </div>
@@ -239,7 +239,7 @@ export default () =>
         }}
       >
         <div className='col-md-6'>
-          <img src={aus} className='width100' style={{'box-shadow': '5px 5px 10px grey'}} />
+          <img src={aus} className='width100' style={{boxShadow: '5px 5px 10px grey'}} />
         </div>
         <div
           className='col-md-5' style={{

@@ -34,7 +34,7 @@ export default () =>
           // backgroundSize: 'cover',
           // backgroundPosition: '50% 0%',
           backgroundImage: `url(${background})`,
-          'background-size': 'cover',
+          backgroundSize: 'cover',
           opacity: 0.8
         }}
       />
