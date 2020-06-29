@@ -14,7 +14,8 @@ export default [
       date: '',
       imageSource: RSA2,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.youtube.com/watch?v=OYzuoi_a1i0&feature=youtu.be'
+      link: 'https://www.youtube.com/watch?v=OYzuoi_a1i0&feature=youtu.be',
+      type: 'announcement'
     }
   },
   {
@@ -27,7 +28,8 @@ export default [
       date: '29/01/20',
       imageSource: CyberBootcamp,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx?fbclid=IwAR2mztupdFmWZC6kXPPvYKn57Oj9cXqDa9E9jzPw2qlmMa_KAUSAO1M2guE'
+      link: 'https://dfat.gov.au/international-relations/themes/cyber-affairs/cyber-cooperation-program/Pages/cyber-bootcamp-project.aspx?fbclid=IwAR2mztupdFmWZC6kXPPvYKn57Oj9cXqDa9E9jzPw2qlmMa_KAUSAO1M2guE',
+      type: 'announcement'
     }
   }, {
     id: '1',
@@ -39,7 +41,8 @@ export default [
       date: '16/01/20',
       imageSource: RaisinaDialogue,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.orfonline.org/raisina-dialogue/programme/'
+      link: 'https://www.orfonline.org/raisina-dialogue/programme/',
+      type: 'announcement'
     }
   },
   {
@@ -52,7 +55,8 @@ export default [
       date: '19/12/19',
       imageSource: SingaporeCyber,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://twitter.com/AnuCyber/status/1203838456499232769'
+      link: 'https://twitter.com/AnuCyber/status/1203838456499232769',
+      type: 'announcement'
     }
   }
 ]
