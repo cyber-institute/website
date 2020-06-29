@@ -101,7 +101,7 @@ export default () =>
 
           <br></br><br></br>
           Before you start applying some of these suggestions, a useful way of determining what category you fit in is to map your 
-          <span style={{'font-weight': '700'}}> is you</span> and <span style={{'font-weight': '700'}}>about you</span> data onto a privacy onion. 
+          <span style={{fontWeight: '700'}}> is you</span> and <span style={{fontWeight: '700'}}>about you</span> data onto a privacy onion. 
           This can help you determine the privacy level you are most comfortable with.  
           
                     <ul style={{listStylePosition: "outside", listStyleType:"none"}}>
@@ -172,7 +172,7 @@ export default () =>
              Do nothing - you may be happy with your current level of privacy.
             </li>
             <li style={{paddingBottom:"10px"}}> 
-            <span style={{'font-weight': '900'}}>But now that you mention it, we are building some tools to help you, too.</span>
+            <span style={{fontWeight: '900'}}>But now that you mention it, we are building some tools to help you, too.</span>
             </li>
            
             </div>

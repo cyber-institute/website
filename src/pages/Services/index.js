@@ -99,11 +99,11 @@ We’ve had this problem before: the world shifts, and managers, leaders and dec
 
 That’s why the Cyber Institute is offering a different way of learning, which includes updating and building the ideas, knowledge and experiences needed to tackle this new world.<br /><br />
 
-            <span style={{ 'font-weight': '700', 'font-size': '25px' }}>We call it building your Cyber Mastery.</span>
+            <span style={{ fontWeight: '700', fontSize: '25px' }}>We call it building your Cyber Mastery.</span>
           </p>
         </div>
         <div className='col-md-4 margin2RemAuto-sm'>
-          <Image img={services3} style={{ 'box-shadow': '5px 5px 10px grey' }} />
+          <Image img={services3} style={{ boxShadow: '5px 5px 10px grey' }} />
         </div>
       </div>
       <div className='container-fluid'>
@@ -118,7 +118,7 @@ That’s why the Cyber Institute is offering a different way of learning, which 
           </Slider>
         </div>
       </div>
-      <ExecutiveEducation image1={services6} image2={services7} style={{'margin-top':'50px','margin-bottom':'50px'}} />
+      <ExecutiveEducation image1={services6} image2={services7} style={{marginTop:'50px',marginBottom:'50px'}} />
     </div>
     <PartnerWithUs />
     <Operations image1={services8} image2={services9} image3={services10} />

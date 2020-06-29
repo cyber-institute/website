@@ -64,7 +64,7 @@ export default function Quote () {
                     >
                       <img src={lesley} style={{ maxWidth: '100%' }} className='imgShadow' />
                     </div>
-                    <div className='col-md-8 Light' style={{ lineHeight: '1.87', 'font-size': '18px' }}>
+                    <div className='col-md-8 Light' style={{ lineHeight: '1.87', fontSize: '18px' }}>
             Prof. Lesley Seebeck, PhD<br /><br />
 
 Professor of Practice in Cyber Security,<br />
