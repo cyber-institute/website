@@ -150,15 +150,15 @@ const Image = (props) => (
 
 const DateBox = (props) => (
   <div className='Datebox-component' style={{ margin: '1rem' }}>
-    <div class='row'>
-      <div class='col-md-2 col-xs-12'>
+    <div className='row'>
+      <div className='col-md-2 col-xs-12'>
         <div style={{ float: 'left', width: '90%', height: '200px', marginLeft: '1rem', border: '1px solid rgba(0, 0, 0, .2)', textAlign: 'center', textTransform: 'uppercase' }}>
           <span style={{ fontSize: '84px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.day}</span>
           <br />
           <span style={{ fontSize: '52px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.month}</span>
         </div>
       </div>
-      <div class='col-md-9 col-xs-12' style={{ overflow: 'hidden', marginLeft: '1rem', marginRight: '1rem' }}>
+      <div className='col-md-9 col-xs-12' style={{ overflow: 'hidden', marginLeft: '1rem', marginRight: '1rem' }}>
         <span style={{ fontSize: '35px', color: '#000', letterSpacing: '0px' }}><b>{props.title}</b></span>
         <p style={{ fontSize: '15px', margin: '0.5rem 0' }}>{props.date} {props.time}</p>
         <p style={{ fontSize: '18px' }}>{props.description}</p><br />
@@ -569,7 +569,7 @@ class Section1 extends React.Component {
 
   render () {
     return (
-      <div class={this.root.props.sizeName}>
+      <div className={this.root.props.sizeName}>
         {this.rSection}
       </div>
     )
@@ -649,11 +649,11 @@ class News extends Component {
       <>
         <Banner {...{ banner, headings }} title='News & Events' subTitle='What we&#39;re doing and other things you might like' />
         <div style={{ fontFamily: 'Roboto, sans-serif' }} className='container-fluid'>
-          <div id='News' class='News'>
-            <div class='News'>
-              <div class='row positionRelative'>
-                <div class='col-md-offset-1 col-md-5'>
-                  <h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='News' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>News</h2>
+          <div id='News' className='News'>
+            <div className='News'>
+              <div className='row positionRelative'>
+                <div className='col-md-offset-1 col-md-5'>
+                  <h2 className='Black HeadingFontSize-md HeadingFontSize-xs' id='News' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>News</h2>
                   <div
                     className='dottedLineHorizontal' style={{
                       width: '91.666%',
@@ -663,11 +663,11 @@ class News extends Component {
                   />
                 </div>
               </div>
-              <div class='col-xs-13'>
-                <div class='row'>
-                  <div class='col-xs-2' />
+              <div className='col-xs-13'>
+                <div className='row'>
+                  <div className='col-xs-2' />
                   <DynamicPage page={this.state.news} />
-                  <div class='col-xs-2' />
+                  <div className='col-xs-2' />
                 </div>
               </div>
             </div>
@@ -682,28 +682,28 @@ class News extends Component {
                   <SlideToggleContent isVisible={this.state.isVisible}>
                     <br />
                     <br />
-                    <div class='col-xs-13'>
-                      <div class='row'>
-                        <div class='col-xs-2' />
+                    <div className='col-xs-13'>
+                      <div className='row'>
+                        <div className='col-xs-2' />
                         <DynamicPage page={this.state.news2} />
-                        <div class='col-xs-2' />
+                        <div className='col-xs-2' />
                       </div>
                     </div>  
                     
                   </SlideToggleContent>
-                  <div class='col-xs-12 center-xs'>
+                  <div className='col-xs-12 center-xs'>
                     <ViewMoreButton isVisible={this.state.isVisible} clickButton={this.clickButton.bind(this)} alignRight />
                   </div>
                 </div>
             }
           </div>
 
-          <div id='Events' class='Events'>
-            <div class='Events'>
+          <div id='Events' className='Events'>
+            <div className='Events'>
               <br />
               <br />
-              <div class='row positionRelative'>
-                <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Events' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Events</h2>
+              <div className='row positionRelative'>
+                <div className='col-md-offset-1 col-md-5'><h2 className='Black HeadingFontSize-md HeadingFontSize-xs' id='Events' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Events</h2>
                   <div
                     className='dottedLineHorizontal' style={{
                       width: '91.666%',
@@ -714,11 +714,11 @@ class News extends Component {
                 </div>
               </div>
               <div
-                class='row' style={{
+                className='row' style={{
                   marginTop: '2rem'
                 }}
               >
-                <div class='col-xs-12'>
+                <div className='col-xs-12'>
                   {
                     this.state.events.sections.map(({ component: EventComponent, props }, index) => (
                       <EventComponent {...props} key={index} />
@@ -737,13 +737,13 @@ class News extends Component {
                 <SlideToggleContent isVisible={this.state.isVisibleEvent}>
                   <br />
                   <br />
-                  <div class='col-xs-13'>
+                  <div className='col-xs-13'>
                     {
                       this.state.events.sections.map(({ component: EventComponent, props }, index) => (
-                        <div class='row' key={index}>
-                          <div class='col-xs-2' />
+                        <div className='row' key={index}>
+                          <div className='col-xs-2' />
                           <EventComponent {...props} />
-                          <div class='col-xs-2' />
+                          <div className='col-xs-2' />
                         </div>
                       ))
                     }
@@ -754,10 +754,10 @@ class News extends Component {
 
               </div>}
           </div>
-          <div id='Articles' class='Media'>
-            <div class='Media'>
-              <div class='row positionRelative'>
-                <div class='col-md-offset-1 col-md-5'><h2 class='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Articles</h2>
+          <div id='Articles' className='Media'>
+            <div className='Media'>
+              <div className='row positionRelative'>
+                <div className='col-md-offset-1 col-md-5'><h2 className='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Articles</h2>
                   <div
                     className='dottedLineHorizontal' style={{
                       width: '91.666%',
@@ -767,11 +767,11 @@ class News extends Component {
                   />
                 </div>
               </div>
-              <div class='col-xs-13'>
-                <div class='row'>
-                  <div class='col-xs-2' />
+              <div className='col-xs-13'>
+                <div className='row'>
+                  <div className='col-xs-2' />
                   <DynamicPage page={this.state.media} />
-                  <div class='col-xs-2' />
+                  <div className='col-xs-2' />
                 </div>
               </div>
             </div>
@@ -786,32 +786,32 @@ class News extends Component {
                   <SlideToggleContent isVisible={this.state.isVisibleMedia}>
                     <br />
                     <br />
-                    <div class='col-xs-13'>
-                      <div class='row'>
-                        <div class='col-xs-2' />
+                    <div className='col-xs-13'>
+                      <div className='row'>
+                        <div className='col-xs-2' />
                         <DynamicPage page={this.state.media2} />
-                        <div class='col-xs-2' />
+                        <div className='col-xs-2' />
                       </div>
                     </div>
-                    <div class='col-xs-13'>  
-                      <div class='row'>
-                        <div class='col-xs-2' />
+                    <div className='col-xs-13'>  
+                      <div className='row'>
+                        <div className='col-xs-2' />
                         <DynamicPage page={this.state.media3} />
-                        <div class='col-xs-2' />
+                        <div className='col-xs-2' />
                       </div>
 
                     </div>
                   </SlideToggleContent>
-                  <div class='col-xs-12 center-xs'>
+                  <div className='col-xs-12 center-xs'>
                     <ViewMoreButton isVisible={this.state.isVisibleMedia} clickButton={this.clickButtonMedia.bind(this)} alignRight />
                   </div>
                 </div>
             }
           </div>
-          <div id='Podcasts' class='Podcasts'>
-            <div class='Podcasts'>
-              <div class='row positionRelative'>
-                <div class='col-md-offset-1 col-md-5'>
+          <div id='Podcasts' className='Podcasts'>
+            <div className='Podcasts'>
+              <div className='row positionRelative'>
+                <div className='col-md-offset-1 col-md-5'>
                   <h2 className='Black HeadingFontSize-md HeadingFontSize-xs' style={{ color: '#523178', margin: 0, marginTop: '6rem' }}>Podcasts</h2>
                   <div
                     className='dottedLineHorizontal' style={{
@@ -822,10 +822,10 @@ class News extends Component {
                   />
                 </div>
               </div>
-              <div class='col-xs-13'>
-              <div class='row'>
-              <div class='col-xs-2' />
-              <div class='col-xs-8' style={{
+              <div className='col-xs-13'>
+              <div className='row'>
+              <div className='col-xs-2' />
+              <div className='col-xs-8' style={{
                 padding: '2rem 0'
               }}>
                 <h2 style={{
@@ -869,17 +869,17 @@ class News extends Component {
     </li>
     <h3 className='transcript__h3'>Outro</h3> <li className='transcript__li'>By taking these four fundamental steps we have covered – passwords, securing your home network, securing devices and securing yourself – will greatly improve your online safety as you work from home. </li><li className='transcript__li'>Until we meet again: from all of us here at the ANU Cyber Institute, take care during these trying times – and stay safe at home, and stay safe online. </li>
                 </SlideToggleContent>
-                <div class='col-xs-12 center-xs'>
+                <div className='col-xs-12 center-xs'>
                  <ViewMoreTranscriptButton isVisible={this.state.isVisibleTranscript} clickButton={this.clickButtonTranscript.bind(this)}/>
                 </div>
                 </div>
                 </div>
-                <div class='col-xs-2' />
+                <div className='col-xs-2' />
                 </div>
-                <div class='row'>
-                  <div class='col-xs-2' />
+                <div className='row'>
+                  <div className='col-xs-2' />
                   <DynamicPage page={this.state.podcasts} />
-                  <div class='col-xs-2' />
+                  <div className='col-xs-2' />
                 </div>
               </div>
             </div>
@@ -894,15 +894,15 @@ class News extends Component {
                   <SlideToggleContent isVisible={this.state.isVisiblePodcast}>
                     <br />
                     <br />
-                    <div class='col-xs-13'>
-                      <div class='row'>
-                        <div class='col-xs-2' />
+                    <div className='col-xs-13'>
+                      <div className='row'>
+                        <div className='col-xs-2' />
                         <DynamicPage page={this.state.news2} />
-                        <div class='col-xs-2' />
+                        <div className='col-xs-2' />
                       </div>
                     </div>
                   </SlideToggleContent>
-                  <div class='col-xs-12'>
+                  <div className='col-xs-12'>
                     <ViewMoreButton isVisible={this.state.isVisiblePodcast} clickButton={this.clickButtonPodcast.bind(this)} alignRight />
                   </div>
                 </div>
@@ -923,11 +923,11 @@ function Content ({ clickButton, isVisible, page }) {
       /* className={`${isVisible ? 'col-xs-8 col-xs-offset-2 textAlignJustified' : 'col-xs-5 col-xs-offset-5 textAlignedRight'} fontWeight300`} */
     >
       <SlideToggleContent isVisible={isVisible}>
-        <div class='col-xs-13'>
-          <div class='row'>
-            <div class='col-xs-2' />
+        <div className='col-xs-13'>
+          <div className='row'>
+            <div className='col-xs-2' />
             <DynamicPage page={page} />
-            <div class='col-xs-2' />
+            <div className='col-xs-2' />
           </div>
         </div>
       </SlideToggleContent>

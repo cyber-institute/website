@@ -124,8 +124,8 @@ class App extends Component {
             <div>
             </div>
             <ul className="desktop-only" style={{ width: '100%' }}>
-              <a className='Light' href="mailto:cyber@anu.edu.au" style={{ float: 'right', paddingRight: '1rem', marginTop: '-5px', fontSize: '20px' }}><i class="fas fa-envelope-square"></i></a>
-              <a className='Light' href="https://twitter.com/anucyber" style={{ float: 'right', paddingRight: '1rem', marginTop: '-5px', fontSize: '20px' }}><i class="fab fa-twitter-square"></i></a>
+              <a className='Light' href="mailto:cyber@anu.edu.au" style={{ float: 'right', paddingRight: '1rem', marginTop: '-5px', fontSize: '20px' }}><i className="fas fa-envelope-square"></i></a>
+              <a className='Light' href="https://twitter.com/anucyber" style={{ float: 'right', paddingRight: '1rem', marginTop: '-5px', fontSize: '20px' }}><i className="fab fa-twitter-square"></i></a>
               <Link className='Light' to="/privacy" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Privacy</Link>
               <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link>
               <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link>

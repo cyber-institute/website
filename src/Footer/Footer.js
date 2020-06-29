@@ -30,10 +30,10 @@ class Footer extends Component {
                 }}>
                   +61 2 6125 7802
                 </p>
-                <p>
-                  <a className='fontSize16px-xs' href='mailto:cyber@anu.edu.au' style={{ color: '#D2ACF7', textDecoration: 'underline' }}>cyber@anu.edu.au</a>
+                <div>
+                  <a className='fontSize16px-xs' href='mailto:cyber@anu.edu.au' style={{ color: '#D2ACF7', textDecoration: 'underline', fontFamily: 'Roboto' }}>cyber@anu.edu.au</a>
                   <p>Subscribe to our Mailing List!</p><br/>
-                </p>
+                </div>
                 <Mailchimp className='mailchimp_form'
                 action='https://anu.us18.list-manage.com/subscribe/post?u=5431269039904fced7aafc923&amp;id=85748197e5'
                 fields={[
