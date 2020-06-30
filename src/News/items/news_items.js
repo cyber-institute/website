@@ -15,7 +15,8 @@ export default [
       date: '29/6/2020',
       imageSource: CyberMerc,
       sizeName: 'col-md-3 col-xs-12',
-      link: 'https://www.linkedin.com/feed/update/urn:li:activity:6683161160679878656'
+      link: 'https://www.linkedin.com/feed/update/urn:li:activity:6683161160679878656',
+      type: 'announcement'
     }
   },
   {
