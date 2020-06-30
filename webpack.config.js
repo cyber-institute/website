@@ -26,7 +26,8 @@ const productionConfig = merge([
   {
     output: {
       filename: 'project-name.min.js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '/'
     }
   },
   parts.productionParts()
@@ -42,6 +43,11 @@ const developmentConfig = merge([
         favicon: './img/CITclearicon.png'
       })
     ]
+  },
+  {
+    output: {
+      publicPath: '/'
+    }
   },
   parts.devParts({
     host: process.env.HOST,
