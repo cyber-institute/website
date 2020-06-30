@@ -5,7 +5,6 @@ import articles from './items/articles_items'
 import podcasts from './items/podcasts_items'
 
 
-
 export default () => {
     let {head} = useParams();
     let {type} = useParams();
