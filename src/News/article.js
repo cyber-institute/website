@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import {useParams} from 'react-router-dom'
 import announcements from './items/news_items'
 import articles from './items/articles_items'
@@ -14,7 +13,7 @@ export default () => {
     let target = null;
     if (type == "announcement") search = announcements;
     else if (type == "article") search = articles;
-    else if (type == "podcast") serach = podcasts;
+    else if (type == "podcast") search = podcasts;
 
     for(let i = 0; i < search.length; i ++) {
         if (search[i].props.head == head) target = search[i]
@@ -25,7 +24,7 @@ export default () => {
         
         
         <div className="col-md-offset-1 col-md-2">
-            <img src={target.props.imageSource} style={{ position: 'relative', top: '20px', right: '65px', 'maxWidth': '70%', 'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px 0px 0px 10%' }} />
+            <img src={target.props.imageSource} style={{ boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px', maxWidth: '100%' }} />
         </div>
         <div className="col-md-6" style={{ maxHeight: '285px', overflow: 'hidden' }}>
           <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{target.props.head}</b><br />
