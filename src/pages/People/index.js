@@ -218,7 +218,7 @@ const Careers = () => {
         height: '100%',
         backgroundColor: 'rgb(82, 49, 120)',
         clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)',
-        webkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
+        WebkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
       }}
       >
         <picture
