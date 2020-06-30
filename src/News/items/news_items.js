@@ -3,8 +3,23 @@ import CyberBootcamp from './../../../img/cyber_bootcamp.png'
 import RaisinaDialogue from './../../../img/raisina_dialogue.jpg'
 import SingaporeCyber from './../../../img/singapore_cyber.jpg'
 import CyberMerc from './../../../img/CyberMerc_square.jpg'
+import Lesley from './../../../img/lesley_square.jpg'
 
 export default [
+  {
+    id: '5',
+    component: 'NewsArticle',
+    props: {
+      head: 'Massive investment in cyber policy a welcome move, says ANU',
+      byline: "One of Australia's leading cyber experts, Professor Lesley Seebeck, has welcomed the Government's largest ever investment in cyber security. The Government has today announced $1.35 billion over the next decade as part of the Cyber Enhanced Situational Awareness and Response Package, or CESAR. Professor Seebeck, CEO of the Cyber Institute at The Australian National University (ANU) says the funding will enhance the nation's cyber security capabilities. ",
+      author: 'ANU',
+      date: '1/7/2020',
+      imageSource: Lesley,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.anu.edu.au/news/all-news/massive-investment-in-cyber-policy-a-welcome-move-says-anu',
+      type: 'announcement'
+    }
+  },
   {
     id: '4',
     component: 'NewsArticle',
