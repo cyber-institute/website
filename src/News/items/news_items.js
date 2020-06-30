@@ -2,8 +2,22 @@ import RSA2 from './../../../img/RSA.jpg'
 import CyberBootcamp from './../../../img/cyber_bootcamp.png'
 import RaisinaDialogue from './../../../img/raisina_dialogue.jpg'
 import SingaporeCyber from './../../../img/singapore_cyber.jpg'
+import CyberMerc from './../../../img/CyberMerc_square.jpg'
 
 export default [
+  {
+    id: '4',
+    component: 'NewsArticle',
+    props: {
+      head: 'World-First Threat Sharing Platform to Defend Australian Networks',
+      byline: "The Cyber Institute is pleased to collaborate with Cybermerc's national threat sharing platform which will enable Australian businesses to collaborate in defending their networks, supported by AustCyber - The Australian Cyber Security Growth Network Ltd!",
+      author: 'ANU Cyber Institute',
+      date: '29/6/2020',
+      imageSource: CyberMerc,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://www.linkedin.com/feed/update/urn:li:activity:6683161160679878656'
+    }
+  },
   {
     id: '3',
     component: 'NewsArticle',
