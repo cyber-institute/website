@@ -97,13 +97,13 @@ export default  () =>
                 body={courses[0].body}
                 topics = {courses[0].topics}
                 outcomes= {courses[0].outcomes}
-                id = {0}/>
+                id = {"CyberLaw"}/>
         <ShortCourseInfo title={courses[1].title}
                         offerings={courses[1].offerings}
                         body={courses[1].body}
                         topics = {courses[1].topics}
                         outcomes= {courses[1].outcomes}
-                        id = {1}/>
+                        id = {"CyberLeadership"}/>
         <h2 className="col-md-offset-1"
             style={{fontFamily:'Roboto, Arial, sans-serif',
                 fontSize:'30px',
