@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-import { DynamicPage } from '../../News/news'
+import DynamicPage from '../common/DynamicPage'
 import SlideToggleContent from '../../ContentSlider/SlideToggleContent'
 import ViewMoreButton from '../../ContentSlider/ViewMoreButton'
 
 import SecurityControls from './../../../img/LaptoplockRAND.jpg'
 import Rethinking from './../../../img/realtimecyberattacks.PNG'
-import Broken from'./../../../img/menonboat.jpg.png'
+import Broken from './../../../img/menonboat.jpg.png'
 
 const ReadingList = {
   title: 'ReadingList',
@@ -82,8 +82,7 @@ export default () => {
           margin: 'auto',
           position: 'relative'
         }}
-      >
-      </div>
+      />
     </div>
   )
 }

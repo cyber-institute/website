@@ -38,7 +38,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
             {heading}
           </div>
           <div className='Light row'>
-            <div className='col-xs-9 Light' style={{ lineHeight: '1.87', 'font-size': '18px' }}>
+            <div className='col-xs-9 Light' style={{ lineHeight: '1.87', fontSize: '18px' }}>
               {text}
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
         <div
           className='col-lg-4 col-md-5' style={{
             overflow: 'hidden',
-            'box-shadow': '5px 5px 10px grey',
+            boxShadow: '5px 5px 10px grey',
             padding: 0
           }}
         >

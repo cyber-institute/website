@@ -88,22 +88,27 @@ export default () =>
           </div>
           Take back your privacy onion
         </h2>
-        <p
+        <span
           style={{
             fontSize: '22px',
             color: '#fff',
             fontWeight: "200"
           }}
         >
+          <p style={{
+            fontSize: '22px',
+            color: '#fff',
+            fontWeight: "200"
+          }}>
           The Internet has allowed untrusted people to peel away the layers of your privacy onion without your knowledge or agreement.
           <br /><br />It may seem impossible to protect your privacy but the following suggestions should help.
           There are different levels of privacy. Not everyone will be right for you. The following tips are broken into categories.
 
           <br></br><br></br>
           Before you start applying some of these suggestions, a useful way of determining what category you fit in is to map your 
-          <span style={{'font-weight': '700'}}> is you</span> and <span style={{'font-weight': '700'}}>about you</span> data onto a privacy onion. 
+          <span style={{fontWeight: '700'}}> is you</span> and <span style={{fontWeight: '700'}}>about you</span> data onto a privacy onion. 
           This can help you determine the privacy level you are most comfortable with.  
-          
+          </p>
                     <ul style={{listStylePosition: "outside", listStyleType:"none"}}>
             
           <WhiteSlider name="Where is my tin foil hat? I don't even like my parents knowing my name.">
@@ -172,7 +177,7 @@ export default () =>
              Do nothing - you may be happy with your current level of privacy.
             </li>
             <li style={{paddingBottom:"10px"}}> 
-            <span style={{'font-weight': '900'}}>But now that you mention it, we are building some tools to help you, too.</span>
+            <span style={{fontWeight: '900'}}>But now that you mention it, we are building some tools to help you, too.</span>
             </li>
            
             </div>
@@ -182,7 +187,7 @@ export default () =>
 <br /> 
 <br />
 
-        </p>
+        </span>
       </div>
     </div>
   </div>

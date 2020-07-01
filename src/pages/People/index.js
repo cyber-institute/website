@@ -67,21 +67,21 @@ class People extends Component {
           <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem' }}>
             <h2 style={{ right: '0%', top: '-200px' }}>CEO</h2>
             <div className='col-xs-12 col-md-5 col-md-offset-1' style={{ top: '200px' }}>
-              <img src={Lesley} style={{ width: '100%', 'box-shadow': '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
+              <img src={Lesley} style={{ width: '100%', boxShadow: '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
               <hr className='greyLine' style={{ position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: '-20' }} />
             </div>
             
             <div className='col-xs-12 col-md-5' style={{ paddingTop: '20px' }}>
-              <p><span className='bigEmphasis' style={{ 'font-weight': '700' }}>"Rarely do you have the opportunity to shape a national endeavour.</span>
+              <p><span className='bigEmphasis' style={{ fontWeight: '700' }}>"Rarely do you have the opportunity to shape a national endeavour.</span>
                 <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
                 <br /><br />Dealing with cyber intrusions reinforced my conviction that cyber is fundamentally about the human;&nbsp;that it currently represents an existential challenge to liberal, democratic societies, and that we need new, interdisciplinary approaches to tackling the problems cyber can create.&nbsp;
                 <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
                 <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
               </p>
               
-              <h3 style={{ 'margin-top': '30px', 'margin-bottom': '15px' }}>CEO, Professor Lesley Seebeck</h3>
-              <p style={{ 'letter-spacing': '0' }}>Professor Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.  She has extensive experience in Federal Government, in a variety of senior roles in policy, technology and central agencies, as well as in the university sector and private industry.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Government’s Naval Shipbuilding Advisory Board.  <br /><br /></p>
-              <p style={{ 'letter-spacing': '0' }}>Professor Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
+              <h3 style={{ marginTop: '30px', marginBottom: '15px' }}>CEO, Professor Lesley Seebeck</h3>
+              <p style={{ letterSpacing: '0' }}>Professor Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.  She has extensive experience in Federal Government, in a variety of senior roles in policy, technology and central agencies, as well as in the university sector and private industry.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Government’s Naval Shipbuilding Advisory Board.  <br /><br /></p>
+              <p style={{ letterSpacing: '0' }}>Professor Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
             </div>
           </div>
           <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem', overflow: 'hidden' }}>
@@ -129,7 +129,7 @@ class People extends Component {
               <img src={Puzzle2} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
             </div>
             <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
-              <h4 style={{ 'padding-bottom': '15px', 'font-size': '22px', color: '#523178' }}>Stephanie, Cyber Institute Research Fellow</h4>
+              <h4 style={{ paddingBottom: '15px', fontSize: '22px', color: '#523178' }}>Stephanie, Cyber Institute Research Fellow</h4>
               <p>Meet Steph who started with the Cyber Institute in January 2020. Steph was awarded her PhD from the ANU’s Strategic 
                   and Defence Studies Centre in 2009, for a thesis on small arms control and violent non-state armed groups. <br /><br />
                   She subsequently spent eight years developing and delivering components of the curriculum for the senior course and short 
@@ -143,7 +143,7 @@ class People extends Component {
           </div>
           <div className='row' style={{ marginTop: '50px' }}>
             <div className='col-xs-12 col-md-7 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
-              <h4 style={{ 'padding-bottom': '15px', 'font-size': '22px', color: '#523178' }}>Jose, Visiting Fellow</h4>
+              <h4 style={{ paddingBottom: '15px', fontSize: '22px', color: '#523178' }}>Jose, Visiting Fellow</h4>
               <p>We are delighted to announce that our first Visiting Fellow is Mr Jose Sousa-Santos. Jose brings considerable experience and knowledge of 
                 the Pacific and Southeast Asia, particularly in the areas of cyber security, transnational organised crime, terrorism and cultural competency. <br /><br />
                 Already Jose has helped us deliver a one-day workshop at the ANU’s Australia Pacific Security College and a paper to the ANU College of Law’s 
@@ -153,7 +153,7 @@ class People extends Component {
               </p>
             </div>
             <div className='col-xs-12 col-md-3' style={{ position: 'relative', right: '0' }}>
-              <img src={Puzzle1} style={{ width: '100%', 'padding-bottom': '20px' }} alt='Puzzle piece representing Stehpanie' />
+              <img src={Puzzle1} style={{ width: '100%', paddingBottom: '20px' }} alt='Puzzle piece representing Stehpanie' />
             </div>
           </div>
         </div>
@@ -408,7 +408,7 @@ const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
 }
 
 const personsContent = [
-  `<p class='personsContent'>
+  `<p className='personsContent'>
   Professor Brian P. Schmidt was appointed Vice-Chancellor and President of The Australian National University (ANU) in January 2016.
 <br/>
 <br/>
@@ -416,19 +416,19 @@ const personsContent = [
 <br/>
 <br/>
   Professor Schmidt received undergraduate degrees in Astronomy and Physics from the University of Arizona in 1989, and completed his Astronomy Master's degree (1992) and PhD (1993) from Harvard University. Under his leadership, in 1998, the High-Z Supernova Search team made the startling discovery that the expansion rate of the Universe is accelerating. Fellow of the Australian Academy of Science, The United States Academy of Science, and the Royal Society, he was made a Companion of the Order of Australia in 2013.</p>`,
-  `<p class=personsContent>Professor Elanor Huntington is the first female Dean of Engineering and Computer Science at the Australian National University. Professor Huntington was previously the Head of School for the School of Engineering and Information Technology at UNSW Canberra. Additionally she has served as Chief Investigator on several Australian Research Council projects, Program Manager for the ARC Centre for Excellence in Quantum Computational Communication Technologies and is an Honorary Fellow for The Institution of Engineers Australia. Professor Huntington has a long history of council and board contributions including previous service on the ACT Accreditation and Registration Council as well as currently serving on the Board of Significant Capital Ventures.
+  `<p className=personsContent>Professor Elanor Huntington is the first female Dean of Engineering and Computer Science at the Australian National University. Professor Huntington was previously the Head of School for the School of Engineering and Information Technology at UNSW Canberra. Additionally she has served as Chief Investigator on several Australian Research Council projects, Program Manager for the ARC Centre for Excellence in Quantum Computational Communication Technologies and is an Honorary Fellow for The Institution of Engineers Australia. Professor Huntington has a long history of council and board contributions including previous service on the ACT Accreditation and Registration Council as well as currently serving on the Board of Significant Capital Ventures.
   <br/>
   <br/>
   Professor Huntington holds a PhD (2000) in experimental quantum optics from the ANU. Her current research includes the control of quantum systems, with a particular interest in the interface between theory and applications.
   
   </p>`,
-  '<p class=personsContent>Rory Medcalf is a Professor and the Head of the National Security College (NSC) at the Australian National University. His career spans diplomacy, intelligence analysis, journalism, think tanks and academia. Under his leadership, the NSC has extended its work beyond executive education, academic teaching and research into a think-tank oriented capacity for futures analysis and engagement with the national policy debate. He was founding director of the international security program at the Lowy Institute and a member of the independent expert panel on the 2016 Australian Defence White Paper. He was an early proponent of the Indo-Pacific concept of Australia\'s strategic environment, which remains one of his principal research interests.</p>',
-  `<p class=personsContent>Marie Johnson is the Managing Director of the Centre for Digital Business. Marie is an accessibility advocate, and a recognized global speaker and commentator on artificial intelligence; technology; digital services; ehealth; identity; and innovation. Her extensive experience covers the public and private sectors in Australia and internationally, in roles including large scale government service delivery operations; leading Microsoft's worldwide public services and egovernment business in Seattle; Chief Information Officer; Chief Technology Architect; Technology Authority; and board director. Marie is now leading R&D on the “Digital Human Cardiac Coach”.
+  '<p className=personsContent>Rory Medcalf is a Professor and the Head of the National Security College (NSC) at the Australian National University. His career spans diplomacy, intelligence analysis, journalism, think tanks and academia. Under his leadership, the NSC has extended its work beyond executive education, academic teaching and research into a think-tank oriented capacity for futures analysis and engagement with the national policy debate. He was founding director of the international security program at the Lowy Institute and a member of the independent expert panel on the 2016 Australian Defence White Paper. He was an early proponent of the Indo-Pacific concept of Australia\'s strategic environment, which remains one of his principal research interests.</p>',
+  `<p className=personsContent>Marie Johnson is the Managing Director of the Centre for Digital Business. Marie is an accessibility advocate, and a recognized global speaker and commentator on artificial intelligence; technology; digital services; ehealth; identity; and innovation. Her extensive experience covers the public and private sectors in Australia and internationally, in roles including large scale government service delivery operations; leading Microsoft's worldwide public services and egovernment business in Seattle; Chief Information Officer; Chief Technology Architect; Technology Authority; and board director. Marie is now leading R&D on the “Digital Human Cardiac Coach”.
   <br/>
   <br/>
   Her achievements have been recognised globally: UN Public Services Award; Australian PM's Award for Excellence in Public Sector Management; Innovative CIO of the Year – Australia; 100 Women of Influence; named as one of Singularity University Exponential Medicine Global XMed Digital Vanguard; and recently joined the MIT Technology Review Global Insights Panel.</p>`,
-  '<p class=personsContent>Hamish Hawthorn is UpGuard\'s Chief Operating Officer, driving operations and corporate development activities, and overseeing partnerships with the cyber insurance sector. Hamish has been involved in the commercialisation of new technologies for over twenty 20 years, and his experience spans the software, biotechnology and advanced manufacturing sectors. UpGuard is the world\'s first cyber resilience platform, designed to proactively assess cyber risk for every organization. UpGuard monitors the digital footprints of millions of organizations, automates assessment questionnaires, and synthesizes those factors into the most accurate cyber risk score.</p>',
-  `<p class=personsContent>Over the past two decades, Ms Anton has worked in the Australian Public Service with wide ranging experience in legislation, regulation, policy and program delivery, including the establishment of the Government's Computer Emergency Response Team (CERT), which is the primary point of contact for Australian businesses to prevent and respond to malicious activity.
+  '<p className=personsContent>Hamish Hawthorn is UpGuard\'s Chief Operating Officer, driving operations and corporate development activities, and overseeing partnerships with the cyber insurance sector. Hamish has been involved in the commercialisation of new technologies for over twenty 20 years, and his experience spans the software, biotechnology and advanced manufacturing sectors. UpGuard is the world\'s first cyber resilience platform, designed to proactively assess cyber risk for every organization. UpGuard monitors the digital footprints of millions of organizations, automates assessment questionnaires, and synthesizes those factors into the most accurate cyber risk score.</p>',
+  `<p className=personsContent>Over the past two decades, Ms Anton has worked in the Australian Public Service with wide ranging experience in legislation, regulation, policy and program delivery, including the establishment of the Government's Computer Emergency Response Team (CERT), which is the primary point of contact for Australian businesses to prevent and respond to malicious activity.
   <br/>
   <br/>
   Ms Anton holds a Bachelor of Science with Honours and Master of Management from the Australian National University (ANU). She has also completed the Company Directors Course from the Australian Institute of Company Directors from the National Security College's Executive Development Program.</p>`

@@ -15,7 +15,8 @@ const productionConfig = merge([
     plugins: [
       new HtmlWebpackPlugin({
         template: './src/index.html',
-        filename: './index.html'
+        filename: './index.html',
+        favicon: './img/CITclearicon.png'
       })
     ]
   },
@@ -25,7 +26,8 @@ const productionConfig = merge([
   {
     output: {
       filename: 'project-name.min.js',
-      path: path.resolve(__dirname, 'dist')
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '/'
     }
   },
   parts.productionParts()
@@ -37,9 +39,15 @@ const developmentConfig = merge([
       new ErrorOverlayPlugin(),
       new HtmlWebpackPlugin({
         template: './src/index.html',
-        filename: './index.html'
+        filename: './index.html',
+        favicon: './img/CITclearicon.png'
       })
     ]
+  },
+  {
+    output: {
+      publicPath: '/'
+    }
   },
   parts.devParts({
     host: process.env.HOST,

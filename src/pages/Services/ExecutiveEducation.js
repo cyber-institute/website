@@ -193,5 +193,7 @@ const LineListElement = ({ children }) =>
     className='Bold' style={{
       margin: '1rem 0 1rem 4rem'
     }}
-    >{children}</p>
+    >
+      {children}
+    </p>
   </>

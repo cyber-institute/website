@@ -105,8 +105,8 @@ export default () =>
           <div
           className='col-md-offset-3 col-md-6'
         >
-          <p>Here at the <span style={{ 'font-weight': '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
-            	  <span style={{ 'font-weight': '700', color: '#523178' }}> control with whom they share their information.</span> We also believe that privacy and security go hand-in-hand. The more that we all understand privacy, the better society will become at protecting it. 
+          <p>Here at the <span style={{ fontWeight: '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
+            	  <span style={{ fontWeight: '700', color: '#523178' }}> control with whom they share their information.</span> We also believe that privacy and security go hand-in-hand. The more that we all understand privacy, the better society will become at protecting it. 
           </p>
           </div>
           </div> 
@@ -119,7 +119,7 @@ export default () =>
           className=' col-md-4'
         >
                     <p style={{width:"90%", marginLeft:"5%", marginTop:'20%', marginBottom: '6%'}}>
-                    <img style={{"object-fit":"cover", width: "100%", 'box-shadow': '5px 5px 10px grey'}} src={privacyShare}/>
+                    <img style={{objectFit:"cover", width: "100%", boxShadow: '5px 5px 10px grey'}} src={privacyShare}/>
                     </p>
                     <p style={{width:"90%", marginLeft:"5%"}}>
  
@@ -135,7 +135,7 @@ export default () =>
           
         >
                     <p style={{width:"90%", marginLeft:"20%", marginTop:'18%',marginBottom: '5%'}}>
-                    <img style={{"object-fit":"cover", width: "69%"}} src={privacyLost}/>
+                    <img style={{objectFit:"cover", width: "69%"}} src={privacyLost}/>
                     </p>
                     <p style={{width:"90%", marginLeft:"5%"}}>
 
@@ -152,7 +152,7 @@ share online.
           className='col-md-4'
         >
                     <p style={{width:"90%", marginLeft:"0", marginTop:'15%'}}>
-                    <img style={{"object-fit":"cover", width: "90%"}} src={privacyOnion}/>
+                    <img style={{objectFit:"cover", width: "90%"}} src={privacyOnion}/>
                     </p>
                     <p style={{width:"90%", marginLeft:"5%"}}>
 
@@ -183,7 +183,7 @@ The 'privacy onion' is a useful way to think about your information.  At the cen
           />
           </div>
           <div className="col-md-12 center-xs">
-          <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+          <h2 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
           We can think about personal information as having two aspects.
           </h2>
           </div>
@@ -195,12 +195,13 @@ The 'privacy onion' is a useful way to think about your information.  At the cen
           <div
           className='col-md-offset-1 col-md-3'
         >
-          <p>
-         <h3 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>About You</h3> 
- 
+          
+         <h3 style={{ 'font-weight': '700', color: '#523178', 'fontFamily': 'Roboto, sans-serif' }}>About You</h3> 
 
-Information that is <span style={{'font-weight': '700',color: '#523178'}}>about you</span> is information that describes you
-or is information that you use to confirm your identity online.  
+         
+
+<p>Information that is <span style={{'fontWeight': '700',color: '#523178'}}>about you</span> is information that describes you
+or is information that you use to confirm your identity online.  </p>
 <br /><br />
 <ul style={{ listStylePosition: "outside"}}>
   <li>
@@ -224,42 +225,39 @@ or is information that you use to confirm your identity online.
 
 </ul>
 <br />
-<h4 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+<h4 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
 So what's the risk?
 </h4>
 <br />
 
-This information is given away everyday and collected by almost every service you use online. 
+<p>This information is given away everyday and collected by almost every service you use online. 
 The problem is that often this information is the only way that
-a company can verify you on the internet. 
+a company can verify you on the internet. </p>
 <br />
 <br />
-If someone else has this information they would be able to steal your identity — causing you problems IRL (in real life) as well as online.
+<p>If someone else has this information they would be able to steal your identity — causing you problems IRL (in real life) as well as online.</p>
 
-
-
-          </p>
         </div>
         <div
           className='col-md-4'
           
         >
            
-          <img style={{"object-fit":"cover", width: "100%", marginLeft:"auto", marginRight:"auto", display:"block"}} src={privacyAboutYou}/>   
+          <img style={{objectFit:"cover", width: "100%", marginLeft:"auto", marginRight:"auto", display:"block"}} src={privacyAboutYou}/>   
         </div>
         <div
           className='col-md-3 '
         >
-          <p>
-          <h3 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>Is You</h3> 
-      Information that <span style={{'font-weight': '700',color: '#523178'}}>is you</span> may be
-considered your ‘digital DNA’: it’s the how, where, when and what. It's your behaviour, activity and circumstances.
+          
+          <h3 style={{ 'fontWeight': '700', color: '#523178', 'fontFamily': 'Roboto, sans-serif' }}>Is You</h3> 
+          <p>Information that <span style={{'fontWeight': '700',color: '#523178'}}>is you</span> may be
+considered your ‘digital DNA’: it’s the how, where, when and what. It's your behaviour, activity and circumstances.</p>
 <br/>
 <br />
-It may not be obvious but this information 
+<p>It may not be obvious but this information 
 leaks through with every interaction you have with the internet. 
 It is captured with every 'like', swipe or click you make. 
-<br /> <br/><span style={{'font-weight': '700',color: '#523178'}}>This information is you.</span>  
+<br /> <br/><span style={{'fontWeight': '700',color: '#523178'}}>This information is you.</span>  </p>
 <ul style={{listStylePosition: "outside"}}>
   <li>
     Thought Processes
@@ -279,19 +277,19 @@ It is captured with every 'like', swipe or click you make.
 
 </ul>
 <br />
-<h4 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+<h4 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
 So how is this information collected?
 </h4>
 <br />
 
-Most interactions on the internet are logged. With enough logged information,
+<p> Most interactions on the internet are logged. With enough logged information,
 patterns begin to emerge. Organisations then analyse these patterns against known 
 psychological behaviours. 
 <br />
 <br /> With enough information, an organisation is able to predict how users will interact with a service, regardless of the account they use. 
 <br/>
+</p>
 
-          </p>
         </div>
 
         </div>
@@ -330,8 +328,8 @@ psychological behaviours.
       </div>
       <div className='col-md-offset-3 col-md-6'>
       <br/><br />
-      <p style={{lineHeight:"1.6"}}>
-            This is just the beginning. We will be expanding our training, products and ideas.
+      <span style={{lineHeight:"1.6"}}>
+            <p>This is just the beginning. We will be expanding our training, products and ideas.</p>
             <ul>
               <li>
               Give us some feedback, this is our first attempt and we want it to be bigger and better.
@@ -343,8 +341,8 @@ psychological behaviours.
               Register your interest for privacy training, executive training or both.
               </li>
             </ul>
-            Our contact details are below. We look forward to hearing from you. 
-            </p>
+            <p>Our contact details are below. We look forward to hearing from you. </p>
+            </span>
             </div>
 </div>
 </div>

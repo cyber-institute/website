@@ -15,8 +15,8 @@ export default ({ clickButton, isVisible }) =>
         color: '#000',
         backgroundColor: '#fff',
         fontSize: '18px',
-        'font-family': 'Roboto, sans-serif',
-        'font-weight': '300',
+        fontFamily: 'Roboto, sans-serif',
+        fontWeight: '300',
         letterSpacing: '0.25px',
         border: 'none',
         cursor: 'pointer'

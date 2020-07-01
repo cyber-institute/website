@@ -95,7 +95,7 @@ export default ({ banner, title, subTitle, headings }) =>
                 color: '#523178'
               }}
               />
-              <a
+              <span
                 className='Bold'
               >
                 <Link
@@ -114,7 +114,7 @@ export default ({ banner, title, subTitle, headings }) =>
                 >
                   {heading}
                 </Link>
-              </a>
+              </span>
             </div>
           )
         }

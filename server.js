@@ -17,5 +17,5 @@ app.get('/', function (req, res) {
 })
 
 app.listen(port, function () {
-  console.log('Express serving on 5000!')
+  console.log(`Express serving on ${port}`)
 })
