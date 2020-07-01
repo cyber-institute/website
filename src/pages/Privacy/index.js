@@ -196,7 +196,7 @@ The 'privacy onion' is a useful way to think about your information.  At the cen
           className='col-md-offset-1 col-md-3'
         >
           
-         <h3 style={{ 'font-weight': '700', color: '#523178', 'fontFamily': 'Roboto, sans-serif' }}>About You</h3> 
+         <h3 style={{ fontWeight: '700', color: '#523178', 'fontFamily': 'Roboto, sans-serif' }}>About You</h3> 
 
          
 

@@ -218,7 +218,7 @@ const Careers = () => {
         height: '100%',
         backgroundColor: 'rgb(82, 49, 120)',
         clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)',
-        webkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
+        WebkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
       }}
       >
         <picture
@@ -336,7 +336,7 @@ const PersonsGrid = () => {
                 id: 5
               }
             ].map((person, index) => (
-              <>
+              <div style={{display:'contents'}} key={index}>
                 <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
                 {
                   (index === 3 || index === 5) && (
@@ -353,7 +353,7 @@ const PersonsGrid = () => {
                     <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-md' />
                   </SlideToggleContent>
                 }
-              </>
+              </div>
             ))
           }
         </div>

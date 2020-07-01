@@ -91,7 +91,7 @@ export default ({ image1, image2, image3 }) =>
         <div className="youTube" style={{width:'100%'}}>
          <div className='row center-xs middle-xs'>
         <ReactPlayer
-        url="https://www.youtube.com/watch?v=RmWC30KSo9Q" controls="true"/>  
+        url="https://www.youtube.com/watch?v=RmWC30KSo9Q" controls={true}/>  
         </div>
         </div>
       </div>
@@ -187,7 +187,7 @@ export default ({ image1, image2, image3 }) =>
         <div className='col-md-6'>
  
           <div className='marginRight-md'>
-            <h2 style={{ 'font-weight': '700', color: '#523178', 'font-family': 'Roboto, sans-serif' }}>
+            <h2 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
               We can help companies be more secure.
             </h2>
           <p style={{lineHeight:"1.6"}}>
