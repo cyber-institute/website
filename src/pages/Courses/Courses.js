@@ -33,7 +33,8 @@ const courses = [
             'Provide appropriate advice regarding cyber affairs in relation to their clients and but also their own business practices.',
             'Understand the legal issues stemming from vulnerabilities.',
             'Identify areas requiring the insights of other experts.'
-        ]
+        ],
+        id: "CyberLaw"
     },
     {
         title: 'Cyber Leadership & Decision Making',
@@ -66,7 +67,8 @@ const courses = [
             'Design and implement effective risk management strategies to mitigate known and emerging cyber risks.',
             'Design and create cyber resilient organisations though effective risk management and cyber preparedness.',
             'Create and build multidiscipline teams as an effective means of managing and mitigating cyber risks.'
-        ]
+        ],
+        id: "CyberLeadership"
     }
 ]
 
@@ -97,13 +99,13 @@ export default  () =>
                 body={courses[0].body}
                 topics = {courses[0].topics}
                 outcomes= {courses[0].outcomes}
-                id = {"CyberLaw"}/>
+                id = {courses[0].id}/>
         <ShortCourseInfo title={courses[1].title}
                         offerings={courses[1].offerings}
                         body={courses[1].body}
                         topics = {courses[1].topics}
                         outcomes= {courses[1].outcomes}
-                        id = {"CyberLeadership"}/>
+                        id = {courses[1].id}/>
         <h2 className="col-md-offset-1"
             style={{fontFamily:'Roboto, Arial, sans-serif',
                 fontSize:'30px',
