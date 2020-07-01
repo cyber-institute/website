@@ -30,7 +30,7 @@ const DateBox = (props) => (
   <div className='Datebox-component' style={{ margin: '1rem' }}>
     <div className='row'>
       <div className='col-md-2 col-xs-12'>
-        <div style={{ float: 'left', width: '90%', height: '200px', marginLeft: '1rem', border: '1px solid rgba(0, 0, 0, .2)', textAlign: 'center', 'text-transform': 'uppercase' }}>
+        <div style={{ float: 'left', width: '90%', height: '200px', marginLeft: '1rem', border: '1px solid rgba(0, 0, 0, .2)', textAlign: 'center', 'textTransform': 'uppercase' }}>
           <span style={{ fontSize: '84px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.day}</span>
           <br />
           <span style={{ fontSize: '52px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.month}</span>
@@ -57,7 +57,7 @@ const NewsArticle = (props) => {
         <br />
         <div style={{ maxHeight: '285px', overflow: 'hidden' }}>
           <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{props.head}</b><br />
-          <p style={{ fontSize: '13px', textAlign: 'left', letterSpacing: '0px', bottom: '0', 'margin-top': '0.5rem' }}>by {props.author} <span style={{ fontSize: '13px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
+          <p style={{ fontSize: '13px', textAlign: 'left', letterSpacing: '0px', bottom: '0', 'marginTop': '0.5rem' }}>by {props.author} <span style={{ fontSize: '13px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
           <br />
           <div style={{ fontSize: '18px', letterSpacing: '0px' }}> {props.byline.substring(0, 200) + '...'}</div>
         </div>
