@@ -131,8 +131,6 @@ class App extends Component {
             <Link className='Light' to="/" style={{  paddingRight: '1rem', fontSize: '13px' }}><img src={ANULogo} style={{ height: '80px' }} /></Link>
             <Link className='Light' to="/" style={{ paddingRight: '2rem', fontSize: '13px' }}><img src={CITfull} style={{ height: '55px',marginBottom: '12.5px' }} /></Link>
               <ul style={{display:'inline'}}>
-                <a className='Light' href="mailto:cyber@anu.edu.au" style={{ float: 'right', paddingRight: '1rem', marginTop: '28px', fontSize: '20px' }}><i className="fas fa-envelope-square"></i></a>
-                <a className='Light' href="https://twitter.com/anucyber" style={{ float: 'right', paddingRight: '1rem', marginTop: '28px', fontSize: '20px' }}><i className="fab fa-twitter-square"></i></a>
                 <Link className='Light' to="/privacy" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px'}}>Privacy</Link>
                 <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px' }}>News and Events</Link>
                 <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px' }}>Services</Link>

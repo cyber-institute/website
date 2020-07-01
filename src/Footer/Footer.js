@@ -59,7 +59,10 @@ class Footer extends Component {
                   Level 2, 115 North Rd, Acton  ACT 2601
                 </p>
                 <p>
-                  <a className='fontSize16px-xs' href='https://twitter.com/anucyber?lang=en' style={{ color: '#D2ACF7', textDecoration: 'underline' }}>twitter@AnuCyber</a>
+                  <a className='Light' href="https://www.facebook.com/anucyberinstitute" style={{  paddingRight: '1rem',  fontSize: '20px' }}><i className="fab fa-facebook-square" style={{color:'white'}}></i></a>
+                  <a className='Light' href="https://twitter.com/anucyber" style={{ paddingRight: '1rem',  fontSize: '20px' }}><i className="fab fa-twitter-square" style={{color:'white'}}></i></a>
+                  <a className='Light' href="https://au.linkedin.com/company/anu-cyber-institute" style={{  paddingRight: '1rem',  fontSize: '20px' }}><i className="fab fa-linkedin" style={{color:'white'}}></i></a>
+                  <a className='Light' href="mailto:cyber@anu.edu.au" style={{ paddingRight: '1rem', fontSize: '20px' }}><i className="fas fa-envelope-square" style={{color:'white'}}></i></a>
                 </p>
               </div>
             </div>
