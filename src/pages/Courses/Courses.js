@@ -39,7 +39,7 @@ const courses = [
     {
         title: 'Cyber Leadership & Decision Making',
         offerings: [{
-                date: 'August 3rd-14th, 2020',
+                date: 'August 10th-21st, 2020',
                 availability: true,
                 link: "https://github.com/"
             },{
@@ -49,8 +49,9 @@ const courses = [
             }
         ],
         
-        body: ["This two-week (3 hour session daily) intensive executive education course assists participants to recognise and prepare for the challenges of leading in a digitally connected world.  This course details the unique challenges that today’s leaders face, introducing key concepts and structures of cyber, exploring how to manage cyber risks and understanding the role of ethics for effective decision-making in an ever-changing environment.",
-                "The Cyber Leadership Course is designed for decision-makers and those who inform decision-makers at the EL2 level and above and covers essential topics in a world increasingly reliant of digital technology.  Drawing on the experience of high-level presenters in a blended format of self-led and facilitated sessions, participants have access to live and recorded video presentations, Masterclasses and interactive Q&A sessions with subject matter experts, and real world and simulated scenarios. This course will provide participants with cyber strategies and solutions which can be applied immediately to the workplace.",
+        body: ["This two-week (3 hour session daily) intensive executive education course assists participants to recognise and prepare for the challenges of leading in a digitally connected world.  The course details the challenges faced by leaders through the modern technological environment, introducing key concepts and structures of cyber, exploring how to manage cyber risks and understanding the role of ethics in effective decision-making in changeable circumstances. ",
+                "The Cyber Leadership Course is designed for decision-makers and those who inform decision-makers and covers essential topics in a world increasingly reliant of digital technology.  We expect participants would have around 15 to 20 years' experience, have lead teams in diverse situations, whether in technology, policy, corporate, operations, headquarters or business areas, and be ready to make the leap to the senior executive ranks or C-suite.",
+                "Drawing on the experience of high-level presenters in a blended format of self-led and facilitated sessions, participants have access to live and recorded video presentations, Masterclasses and interactive Q&A sessions with subject matter experts, reading materials and real world and simulated scenarios. This course will provide participants with strategies, ways of thinking and solutions which can be applied immediately to the workplace.",
             ],
         topics: [
             'Introduction to Cyber',
@@ -62,11 +63,11 @@ const courses = [
         ],
         outcomes: [
             'Understand key concepts of development and application of cyber.',
-            'Apply systems thinking to achieve efficient and robust decision-making in a complex and evolving operating environment. ',
+            'Be able to apply systems thinking to achieve efficient and robust decision-making in a complex and evolving operating environment.',
             'Understand and identify modern cyber risks in business operating environments. ',
-            'Design and implement effective risk management strategies to mitigate known and emerging cyber risks.',
-            'Design and create cyber resilient organisations though effective risk management and cyber preparedness.',
-            'Create and build multidiscipline teams as an effective means of managing and mitigating cyber risks.'
+            'Understand the means to design and implement effective risk management strategies to mitigate known and emerging cyber risks.',
+            'Know how to design and create cyber resilient organisations though effective risk management and cyber preparedness.',
+            'Appreciate the value of and how to build multidisciplinary teams as an effective means of managing and mitigating cyber risks.'
         ],
         id: "CyberLeadership"
     }

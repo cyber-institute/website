@@ -9,10 +9,11 @@ class ShortCourseInfo extends Component {
                 <div className="col-md-6" style={{padding: '0', margin: '0'}}>
                     <p style ={{marginTop:"12px"}}>{offering.date}</p>
                 </div>
+                
                 <div className="col-md-6" style={{padding: '0', margin: '0'}}>
                     {this.enrolButton(offering, title)}
                 </div>
-                        
+                   
             </div>
             <br/>
             </>
@@ -26,10 +27,12 @@ class ShortCourseInfo extends Component {
                                 backgroundColor: 'rgb(82, 49, 120)',
                                 borderRadius: '9px',
                                 display: 'flex',
-                                justifyContent: 'center'
+                                justifyContent: 'center',
                                 }}
                                 href={offering.link}
-                                target="_blank">
+                                target="_blank"
+                                title="Clicking Enrol Now will redirect you to a secure Australian National University payment portal.">
+                                    
                     <a style={{color: 'white',
                                         marginTop: '13px',
                                         fontFamily: 'Roboto, Arial, sans-serif',
