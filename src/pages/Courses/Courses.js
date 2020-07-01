@@ -87,21 +87,23 @@ const DevelopingCourse = ({title}) =>
 
 export default  () => 
     <>
-        <h2 className="col-md-offset-1"
+       <h2 className="col-md-offset-1"
             style={{fontFamily:'Roboto, Arial, sans-serif',
                 fontSize:'30px',
                 color:'#523178'}}>Available 2020</h2>
+            
         <ShortCourseInfo title={courses[0].title}
-                        offerings={courses[0].offerings}
-                        body={courses[0].body}
-                        topics = {courses[0].topics}
-                        outcomes= {courses[0].outcomes}/>
-        
+                offerings={courses[0].offerings}
+                body={courses[0].body}
+                topics = {courses[0].topics}
+                outcomes= {courses[0].outcomes}
+                id = {0}/>
         <ShortCourseInfo title={courses[1].title}
                         offerings={courses[1].offerings}
                         body={courses[1].body}
                         topics = {courses[1].topics}
-                        outcomes= {courses[1].outcomes}/>
+                        outcomes= {courses[1].outcomes}
+                        id = {1}/>
         <h2 className="col-md-offset-1"
             style={{fontFamily:'Roboto, Arial, sans-serif',
                 fontSize:'30px',

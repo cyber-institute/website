@@ -103,7 +103,9 @@ class ShortCourseInfo extends Component {
         }
 
         return (
-            <BlackSlider name={this.props.title} byline={this.props.body[0]}>
+            
+            <BlackSlider name={this.props.title} id={this.props.id} byline={this.props.body[0]}>
+            
             <div className="col-md-offset-1 col-md-10">
                 <div className="col-md-offset-1 col-md-10">
                     <p style={{fontWeight: '700'}}>Upcoming Dates</p>

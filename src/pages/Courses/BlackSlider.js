@@ -5,14 +5,16 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 import SlideToggleContent from './../common/SlideToggleContent'
 
-export default ({ name,byline, children }) => {
+export default ({ name, children,id }) => {
   const [isVisible, setIsVisible] = useState(false)
   return (
     <div style={{
       marginBottom: '1rem',
-      width: '100%'
+      width: '100%',
+      position:'relative'
     }}
-    >
+    
+    ><a id={id} style={{position:"absolute", top:"-80px"}}></a>
       <div className='row'>
         <div className='col-md-offset-1 col-md-11'>
           <button
@@ -26,6 +28,7 @@ export default ({ name,byline, children }) => {
           >
             <Name {...{ name }} />
             <Icons {...{ isVisible }} />
+
           </button>
         </div>
       </div>
