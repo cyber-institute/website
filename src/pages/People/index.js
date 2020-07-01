@@ -336,7 +336,7 @@ const PersonsGrid = () => {
                 id: 5
               }
             ].map((person, index) => (
-              <>
+              <div style={{display:'contents'}} key={index}>
                 <Person {...person} {...{ setIsVisible, isVisible }} key={index} />
                 {
                   (index === 3 || index === 5) && (
@@ -353,7 +353,7 @@ const PersonsGrid = () => {
                     <div dangerouslySetInnerHTML={{ __html: personsContent[isVisible] }} className='displayNone-md' />
                   </SlideToggleContent>
                 }
-              </>
+              </div>
             ))
           }
         </div>
