@@ -43,7 +43,7 @@ const courses = [
                 availability: true,
                 link: "https://github.com/"
             },{
-                date: 'October 5th-16th, 2020',
+                date: 'October 12th-19th, 2020',
                 availability: false,
                 link: 'https://github.com/'
             }
