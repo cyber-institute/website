@@ -6,7 +6,7 @@ const courses = [
     {
         title: 'ANU Ninian Stephen Cyber Law Program',
         offerings: [{
-            date: 'August 3rd-14th, 2020',
+            date: 'August 10th-21st, 2020',
             availability: true,
             link: "https://github.com/",
         },{
@@ -39,7 +39,7 @@ const courses = [
     {
         title: 'Cyber Leadership & Decision Making',
         offerings: [{
-                date: 'August 10th-21st, 2020',
+                date: 'August 3rd-14th, 2020',
                 availability: true,
                 link: "https://github.com/"
             },{
