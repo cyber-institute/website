@@ -1,0 +1,16 @@
+.view-more__button {
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.25px;
+    border: none;
+    cursor: pointer;
+}
+
+.view-more__span {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+

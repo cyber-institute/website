@@ -3,6 +3,8 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight'
 
+import './../BodyMenuItem/style.css'
+
 import { Link } from 'react-router-dom'
 
 export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms, link }) {
@@ -13,8 +15,9 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
       <div className='row'>
         <div
           className='col-lg-offset-2 col-lg-4
-                     col-md-offset-1 col-md-5'
-          style={{ overflow: 'hidden', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))' }}
+                     col-md-offset-1 col-md-5
+                     Menu-Item__container--swapped'
+          
         >
           <img
             src={img} style={{
@@ -27,28 +30,16 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
         <div
           className='col-lg-4 col-md-5 rightAlign-md marginTop-sm'
         >
-          <div
-            style={{
-              marginBottom: '1em',
-              color: 'rgb(50, 50, 50)',
-              letterSpacing: '.05em',
-              fontSize: '.72rem'
-            }}
-            className='Medium'
-          >
+          <div className='Medium Menu-Item__top'>
             {top}
           </div>
           <div
-            className='HomeHeadingFontSize Bold' style={{
-              paddingTop: '0.4em',
-              borderTop: '1px solid currentColor',
-              marginBottom: '2.1rem'
-            }}
+            className='HomeHeadingFontSize Bold Menu-Item__heading' 
           >
             {heading}
           </div>
-          <div className='Light row'>
-            <div className='col-md-offset-3 col-xs-9 Light' style={{ lineHeight: '1.87' }}>
+          <div className='Light row Menu-Item__text'>
+            <div className='col-md-offset-3 col-xs-9 Light' >
               {text}
             </div>
           </div>

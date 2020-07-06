@@ -232,3 +232,20 @@ src: local('Helvetica Neue LT Std 77 Bold Condensed'), url('fonts/HelveticaNeueL
     font-family: 'Roboto', 'sans-serif';
     font-weight: 700;
 }
+
+.heading {
+    margin: 25vh auto 35vh auto;
+    text-align: center;
+}
+
+.heading__body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin: 0;
+    color: #523178;
+}
+
+.heading__sub-heading {
+    margin: 0;
+    text-align: center;
+}

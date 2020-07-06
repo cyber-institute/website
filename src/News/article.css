@@ -1,0 +1,41 @@
+.article {
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+
+.article__image {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-top: 0px;
+    max-width: 100%;
+}
+
+.article__text {
+    max-height: 285px;
+    overflow: hidden;
+}
+
+.article__title {
+    font-size: 28px;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.article__byline--author {
+    text-align: left;
+    bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.article__byline--date {
+    float: right;
+}
+
+.article__byline {
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.article__byline--link {
+    color: #523178;
+    text-decoration: underline;
+}
