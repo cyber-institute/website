@@ -2,8 +2,23 @@ import DataPodcast from './../../../img/data_podcast.jpg'
 import GovCyberPodcast from './../../../img/gov_cyber_podcast.jpg'
 import RSA from './../../../img/RSA.png'
 import NatPodcast from './../../../img/nationalsecuritypodcast.jpg'
+import Reimagine from './../../../img/reimagineSTEM.jpg'
 
 export default [
+  {
+    id: '4',
+    component: 'NewsArticle',
+    props: {
+      head: 'Don’t forget to brush your (computer’s) teeth - Lesley Seebeck',
+      byline: 'Ever caught a phish? Try upping your cyber-hygiene, says Lesley Seebeck, CEO of the ANU Cyber Institute. Human behaviour, not technology, is key, and calls for a public-health style approach to community cyber security. Educating professionals is important too - using immersive experiences, micro-credentials, small-group learning and by teaching emotional literacy, she hopes to ‘do for cyber what the MBA did for business’ in the new ANU cybermastery course.',
+      author: 'Reimagine STEM',
+      date: '2/7/20',
+      imageSource: Reimagine,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://podcasts.google.com/feed/aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvMjY0ZDk1MDYtODNlNC00ZTc1LWI3NDgtYWJhNzAwNGY0ZTY0LzFjNzBlMjcyLTFiNjItNDYzMC04ODJhLWFiYWMwMDhmZDZjZi8zMmU2YjBiNC0xOThiLTQ1ZmQtYjBmZC1hYmFjMDA5MTdlNTAvcG9kY2FzdC5yc3M/episode/MTdjNGViMmYtYjRhMS00MTE3LTlkYWEtYWJlYzAwYTc2NDQy?ved=2ahUKEwiVt8edy7DqAhWngGMGHQfjAM8QkfYCegQIARAF',
+      type: 'podcast'
+    }
+  },
   {
     id: '3',
     component: 'NewsArticle',

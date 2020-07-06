@@ -4,8 +4,23 @@ import RaisinaDialogue from './../../../img/raisina_dialogue.jpg'
 import SingaporeCyber from './../../../img/singapore_cyber.jpg'
 import CyberMerc from './../../../img/CyberMerc_square.jpg'
 import Lesley from './../../../img/lesley_square.jpg'
+import DigDemocracy from './../../../img/DigDemocracy.jpg'
 
 export default [
+  {
+    id: '6',
+    component: 'NewsArticle',
+    props: {
+      head: 'The splintering of digital democracy',
+      byline: "As younger generations enter the digital world, they are gravitating less to the “traditional” platforms — such as Facebook — and moving to a wider selection of digital spaces hosted by communities focused on niche activities like online gaming. This splintering of the digital demos sees new standards for online behaviour emerging and the opening up of opportunities for those looking to radicalise, subvert or carry out espionage.",
+      author: 'James Mortenson',
+      date: '6/7/2020',
+      imageSource: DigDemocracy,
+      sizeName: 'col-md-3 col-xs-12',
+      link: 'https://poweredbypeople.anu.edu.au/the-splintering-of-digital-democracy/',
+      type: 'announcement'
+    }
+  },
   {
     id: '5',
     component: 'NewsArticle',
