@@ -4,6 +4,8 @@ import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
 
+import './style.css'
+
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
@@ -35,8 +37,8 @@ export default function CustomizedSnackbars() {
   return (
     <div className={classes.root}>
       <Snackbar open={open} autoHideDuration={6000} >
-        <Alert onClose={handleClose} style={{"background":"#523178"}}>
-        <a href="https://www.anu.edu.au/giving/support-us/advancing-our-nation/the-cyber-institute-general-fund" style={{"color":"white"}}> Want to support the Cyber Institute? You can by giving us a gift!
+        <Alert onClose={handleClose} style={{background: '#523178'}}>
+        <a href="https://www.anu.edu.au/giving/support-us/advancing-our-nation/the-cyber-institute-general-fund" className="snackbar__link"> Want to support the Cyber Institute? You can by giving us a gift!
         </a>
         </Alert>
         

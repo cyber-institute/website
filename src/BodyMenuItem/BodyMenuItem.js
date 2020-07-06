@@ -18,13 +18,8 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
                      col-md-offset-1 col-md-5'
         >
           <div
-            style={{
-              marginBottom: '1em',
-              color: 'rgb(50, 50, 50)',
-              letterSpacing: '.05em',
-              fontSize: '.72rem'
-            }}
-            className='Medium'
+            
+            className='Medium Menu-Item__top'
           >
             {top}
           </div>

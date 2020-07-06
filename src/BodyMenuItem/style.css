@@ -5,3 +5,11 @@
 .cyberButton.MuiButton-root {
     background-color: #523178;
 }
+
+.Menu-Item__top {
+    margin-bottom: 1em;
+    color: rgb(50,50,50);
+    letter-spacing: 0.05em;
+    font-size: 0.72rem;
+}
+

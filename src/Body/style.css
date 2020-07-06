@@ -21,3 +21,11 @@
     line-height: 1.94444rem;
     color: #523178;
 }
+
+.Body {
+    margin: 10rem auto 0;
+}
+
+.snackbar__link {
+    color: white;
+}
