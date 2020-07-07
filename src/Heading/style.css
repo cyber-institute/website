@@ -233,7 +233,7 @@ src: local('Helvetica Neue LT Std 77 Bold Condensed'), url('fonts/HelveticaNeueL
     font-weight: 700;
 }
 
-.heading {
+.main-heading {
     margin: 25vh auto 35vh auto;
     text-align: center;
 }

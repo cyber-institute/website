@@ -2,75 +2,28 @@ import React from 'react'
 
 import { Link } from 'react-scroll'
 
+import './Banner.css'
+
 export default ({ banner, title, subTitle, headings }) =>
   <>
-    <div style={{
-      marginTop: '64px',
-      position: 'relative',
-      height: 'calc(100vh - 64px)'
-    }}
-    >
-      <div style={{
-        background: '0 0',
-        overflow: 'hidden',
-        position: 'relative',
-        width: '100%',
-        zIndex: '0',
-        height: '100%',
-        clipPath: 'polygon(50% 100%, 100% 40%, 100% 0, 0 0, 0 40%)',
-        WebkitClipPath: 'polygon(50% 100%, 100% 40%, 100% 0, 0 0, 0 40%)',
-        backgroundColor: '#000'
-      }}
-      >
+    <div className='banner'>
+      <div className='banner__shape'>
         <picture
-          className='bannerImg'
+          className='bannerImg banner__img'
           style={{
-            height: '100%',
-            position: 'relative',
-            display: 'block',
-            marginRight: 'auto',
-            width: '100%',
-            backgroundSize: 'cover',
-            backgroundPosition: '50% 0%',
             backgroundImage: `url(${banner})`,
-            opacity: 0.5
           }}
         />
       </div>
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        width: '100%',
-        height: '100%'
-      }}
-      >
+      <div className='banner__container--top'>
         <div
-          className='BannerBottom-xs bottom50' style={{
-            position: 'absolute',
-            left: '0px',
-            right: '0px',
-            margin: 'auto',
-            maxWidth: '800px',
-            textAlign: 'center'
-          }}
-        >
+          className='BannerBottom-xs bottom50 banner__text'>
           <h2
-            className='Black HeadingFontSize-md HeadingFontSize-xs'
-            style={{
-              margin: 0,
-              paddingBottom: '1rem',
-              color: '#fff'
-            }}
-          >
+            className='Black HeadingFontSize-md HeadingFontSize-xs banner__title banner__title--head'>
             {title}
           </h2>
           <h2
-            className='Bold BannerSubtitleFontSize-md BannerSubtitleFontSize-xs'
-            style={{
-              margin: 0,
-              color: '#fff'
-            }}
-          >
+            className='Bold BannerSubtitleFontSize-md BannerSubtitleFontSize-xs banner__title'>
             {subTitle}
           </h2>
         </div>
@@ -79,20 +32,14 @@ export default ({ banner, title, subTitle, headings }) =>
     <div
       className='container-fluid' style={{
         position: 'relative'
-      // height: '8rem'
       }}
     >
       <div className='row center-xs'>
         {
           headings && headings.map((heading, index) =>
             <div className='col-xs-12' key={index}>
-              <div style={{
+              <div className='headings' style={{
                 margin: `${index !== 0 ? '0.5rem auto' : '0 auto 0.5rem'}`,
-                height: '2em',
-                width: '0px',
-                left: 'calc(50% - 1px)',
-                borderLeft: '2px solid',
-                color: '#523178'
               }}
               />
               <span
@@ -118,15 +65,7 @@ export default ({ banner, title, subTitle, headings }) =>
             </div>
           )
         }
-        <div style={{
-          margin: '0.5rem auto',
-          height: '2em',
-          width: '0px',
-          left: 'calc(50% - 1px)',
-          borderLeft: '2px solid',
-          color: '#523178'
-        }}
-        />
+        <div className='headings__bottom'/>
       </div>
     </div>
   </>

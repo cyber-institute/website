@@ -5,6 +5,8 @@ import { animateScroll as scroll, scrollSpy } from 'react-scroll'
 
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 
+import './ScrollUp.css'
+
 class ScrollUp extends Component {
   componentDidMount () {
     scrollSpy.update()
@@ -25,19 +27,7 @@ class ScrollUp extends Component {
       <>
         <button
           title='Back to top'
-          style={{
-            opacity: '0.8',
-            backgroundColor: 'rgb(82, 49, 120)',
-            width: '40px',
-            height: '40px',
-            position: 'fixed',
-            bottom: '10px',
-            right: '10px',
-            borderRadius: '5px',
-            border: 'none',
-            zIndex: '1',
-            cursor: 'pointer'
-          }}
+          className='scroll__button'
           onClick={this.handleScrollToTop}
         >
           <ExpandLessIcon style={{

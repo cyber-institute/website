@@ -6,7 +6,7 @@ import './style.css'
 
 export default () =>
   <>
-    <div className='heading'>
+    <div className='main-heading'>
       <h1 className='Bold HomeHeadingFontSize heading__body'>
         Are you ready<br />to transform cyber?
       </h1>

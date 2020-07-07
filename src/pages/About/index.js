@@ -8,113 +8,40 @@ import people from './about_people.jpg'
 import traffic from './about_lines.jpg'
 import aus from './about_australia.jpg'
 
+import './about.css'
+
 const headings = [
 ]
 
 export default () =>
   <>
     <Banner {...{ banner, headings }} title='About us' subTitle='Transforming cyber for the betterment of humanity' />
-    <div className='container-fluid' style={{fontFamily:'Roboto, sans-serif'}}>
-      <div
-        style={{
-          position: 'relative',
-          marginTop: '4vw'
-        }}
-        className='row center-xs middle-xs'
-      >
-        <div
-          className='col-md-4 col-xs-11'
-        >
+    <div className='container-fluid' className='about'>
+      <div className='row center-xs middle-xs about__block'>
+        <div className='col-md-4 col-xs-11'>
           <img
-            src={anu} className='width100'
-            style={{boxShadow: '5px 5px 10px grey'}}
-          />
-          <div style={{
-            position: 'relative',
-            left: '-4rem',
-            top: 'calc(-100% + 4rem)',
-            width: '100%',
-            height: '100%',
-            zIndex: '-1'
-          }}
-          >
-            <div
-              className='dottedLineHorizontal' style={{
-                position: 'absolute',
-                width: '100%'
-              }}
-            />
-            <div
-              className='dottedLineHorizontal' style={{
-                position: 'absolute',
-                top: '100%',
-                width: '100%'
-              }}
-            />
-            <div
-              className='dottedLineVertical' style={{
-                position: 'absolute',
-                height: '100%'
-              }}
-            />
-            <div
-              className='dottedLineVertical' style={{
-                position: 'absolute',
-                left: '100%',
-                height: '100%'
-              }}
-            />
+            src={anu} className='width100 about__img'/>
+          <div className='about__container'>
+            <div className='dottedLineHorizontal about__hLine'/>
+            <div className='dottedLineHorizontal about__hLine about__hLine--top' />
+            <div className='dottedLineVertical about__vLine' />
+            <div className='dottedLineVertical about__vLine about__vLine--left'/>
           </div>
         </div>
         <div
-          className='col-md-4 col-xs-11' style={{
-            position: 'relative'
-          }}
-        >
-          <p
-            style={{
-              position: 'relative',
-              top: '3%',
-              fontSize: '40px',
-              fontFamily: 'Roboto, sans-serif',
-              fontWeight: '900',                
-              color: '#523178',
-              paddingBottom:'25px',
-              paddingTop:'40px',
-              textAlign:'left'
-            }}
-          >
+          className='col-md-4 col-xs-11 about__block about__block--text' >
+          <p className='block__text--purple'>
             As a strategic initiative of the Australian National University,
           </p>
-          <p style={{
-            position: 'relative',
-            bottom: '0',
-            paddingTop:'25px',
-            textAlign:'left'
-          }}
-          >
+          <p className='block__text--body'>
             the Cyber Institute brings a new approach to the challenges presented by cyber and cyber security to people, communities, industries and governments.
           </p>
         </div>
       </div>
-      <div style={{
-        position: 'relative'
-      }}
-      >
+      <div className='about__block about__block--text'>
         <div
-          className='row' style={{
-            marginTop: '8vw',
-            paddingTop: '4vw'
-          }}
-        >
-          <div style={{
-            position: 'absolute',
-            left: '40%',
-            width: 'calc(60% - 2px + 2rem)',
-            top: '0',
-            border: '1px solid #523178'
-          }}
-          />
+          className='row' className='block__top'>
+          <div className='block__text'/>
           <div className='col-md-offset-2 col-md-5'>
             <p>
             We’re focused on the problems at the intersection of the social and technological, between citizens and governments, and where <span style={{color:'#523178',fontWeight:'700'}}>ideas and systems interact</span>.  We aim to build a new system of knowledge to describe and shape the nature of the cyber world.  That means thinking long-term while understanding practice, behaviours and consequence in the here and now.
@@ -122,27 +49,10 @@ export default () =>
           </div>
         </div>
       </div>
-      <div
-        className='row' style={{
-          marginTop: '12vw'
-        }}
-      >
-        <div style={{
-          width: '100%',
-          position: 'relative'
-        }}
-        >
+      <div className='row humanity__wrapper'>
+        <div className='humanity__container'>
           <h2
-            className='Bold' style={{
-              position: 'absolute',
-              right: '-1rem',
-              top: '-15rem',
-              fontSize: '23.5vw',
-              margin: '0',
-              color: '#f5f5f5',
-              zIndex: -1
-            }}
-          >
+            className='Bold humanity__text'>
             humanity
           </h2>
         </div>
@@ -152,117 +62,46 @@ export default () =>
           </p>
         </div>
       </div>
-      <div style={{
-        position: 'relative'
-      }}
-      >
-        <div style={{
-          marginTop: '4rem',
-          position: 'absolute',
-          left: '-2rem',
-          width: '25%',
-          border: '1px solid #523178'
-        }}
-        />
+      <div className='about__block about__block--text'>
+        <div className='about__line'/>
       </div>
-      <div
-        className='row' style={{
-          marginTop: '12vw'
-        }}
-      >
+      <div className='row humanity__wrapper'>
         <div className='col-md-offset-2 col-md-4'>
           <p>
-           <span style={{fontWeight:'900', fontSize:'30px', color:'#523178',letterSpacing:'1px'}}>People</span><span style={{fontWeight: '900', fontSize: '30px',letterSpacing:'1px'}}> are core to what we do</span>.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
+           <span className='about__text--purple about__text--emphasis'>People</span><span className='about__text--emphasis'> are core to what we do</span>.  Just as we consider that addressing the challenges of cyber needs a new way of thinking, we also are building a new way of learning how to address those challenges, and helping people develop their own capability in this area.  Our new education program offers its participants a new, responsive university experience—one that will equip them to shape a place for themselves, their organisation and their communities in the dynamic, unpredictable environment of the 21st century.
           </p>
         </div>
-        <div
-          className='col-md-5 col-md-offset-1 marginTop2rem-xs' style={{
-            position: 'relative'
-          }}
-        >
+        <div className='col-md-5 col-md-offset-1 marginTop2rem-xs about__block about__block--text'>
           <img src={people} className='width100' style={{boxShadow: '5px 5px 10px grey'}}/>
           <div
-            className='dottedLineHorizontal' style={{
-              position: 'absolute',
-              width: '100%',
-              bottom: '10%',
-              zIndex: '-1',
-              left: '-50%'
-            }}
-          />
+            className='dottedLineHorizontal about__line--dotted' />
         </div>
       </div>
       <div
-        className='row' style={{
-          marginTop: '12vw',
-          position: 'relative'
-        }}
-      >
+        className='row' className='about__block about__block--text humanity__wrapper'>
         <div className='col-md-offset-2 col-md-8'>
-          <div style={{
-            position: 'absolute',
-            width: '50%',
-            top: '5%',
-            left: 'calc(0% - 1rem)',
-            border: '1px solid',
-            color: 'rgb(82, 49, 120)',
-            zIndex: '-1'
-          }}
-          />
-          <div style={{
-            position: 'absolute',
-            width: '50%',
-            bottom: '5%',
-            right: 'calc(0% - 1rem)',
-            border: '1px solid',
-            color: 'rgb(82, 49, 120)',
-            zIndex: '-1'
-          }}
-          />
+          <div className='line__solid line__solid--left'/>
+          <div className='line__solid line__solid--right'/>
           <img src={traffic} className='width100' style={{boxShadow: '5px 5px 10px grey'}} />
         </div>
       </div>
       <div className='row'>
         <div className='col-md-offset-2 col-md-8'>
-          <p
-            className='centerAlign-lg' style={{
-              marginTop: '2vw'
-            }}
-          >
+          <p className='centerAlign-lg block__container'>
             Cyber is fast moving, with real-time practical application.  So, we aim to offer a first-of-its-kind integration with a <span style={{color:'#523178', fontWeight: '700'}}>real-time security operations centre</span>. Known as the Cyber Edge, it will be the nexus of research and learning, partnerships and community, in a physical and online space.  That, and our innovation program, starting with AI Edge, will generate interdisciplinary research, development and application, that in turn will drive new ideas and insights.
           </p>
         </div>
       </div>
       <div
-        className='row' style={{
-          marginTop: '12vw'
-        }}
-      >
+        className='row humanity__wrapper'>
         <div className='col-md-6'>
-          <img src={aus} className='width100' style={{boxShadow: '5px 5px 10px grey'}} />
+          <img src={aus} className='width100 about__img' />
         </div>
-        <div
-          className='col-md-5' style={{
-            position: 'relative',
-            right: '8.333%',
-            zIndex: '-1'
-          }}
-        >
+        <div className='col-md-5 about__line--bent'>
           <div
-            className='dottedLineHorizontal' style={{
-              position: 'absolute',
-              top: '50%',
-              width: '50%'
-            }}
-          />
+            className='dottedLineHorizontal about__line--h' />
           <div
-            className='dottedLineVertical' style={{
-              position: 'absolute',
-              top: '50%',
-              left: 'calc(50% + 1rem)',
-              height: 'calc(50% + 3rem)'
-            }}
-          />
+            className='dottedLineVertical about__line--v'/>
         </div>
       </div>
       <div className='row'>

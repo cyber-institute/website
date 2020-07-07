@@ -12,6 +12,7 @@ import articleItems from './items/articles_items'
 import eventItems from './items/events_items'
 
 import './../style.css'
+import './news.css'
 
 import { Route, Link as RouteLink, BrowserRouter as Router, Switch, useRouteMatch as match, useParams } from 'react-router-dom'
 
@@ -30,17 +31,17 @@ const DateBox = (props) => (
   <div className='Datebox-component' style={{ margin: '1rem' }}>
     <div className='row'>
       <div className='col-md-2 col-xs-12'>
-        <div style={{ float: 'left', width: '90%', height: '200px', marginLeft: '1rem', border: '1px solid rgba(0, 0, 0, .2)', textAlign: 'center', 'text-transform': 'uppercase' }}>
-          <span style={{ fontSize: '84px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.day}</span>
+        <div className='datebox__date'>
+          <span className='datebox__day'>{props.day}</span>
           <br />
-          <span style={{ fontSize: '52px', color: '#4D4D4D', letterSpacing: '0px' }}>{props.month}</span>
+          <span className='datebox__month'>{props.month}</span>
         </div>
       </div>
-      <div className='col-md-9 col-xs-12' style={{ overflow: 'hidden', marginLeft: '1rem', marginRight: '1rem' }}>
-        <span style={{ fontSize: '35px', color: '#000', letterSpacing: '0px' }}><b>{props.title}</b></span>
-        <p style={{ fontSize: '15px', margin: '0.5rem 0' }}>{props.date} {props.time}</p>
-        <p style={{ fontSize: '18px' }}>{props.description}</p><br />
-        <span style={{ fontSize: '18px', color: '#000', letterSpacing: '0px' }}>{props.signupText} <a href={props.link} style={{ color: '#523178' }}>{props.link}</a></span>
+      <div className='col-md-9 col-xs-12 datebox__event'>
+        <span className='datebox__title'><b>{props.title}</b></span>
+        <p className='datebox__details'>{props.date} {props.time}</p>
+        <p className='datebox__description'>{props.description}</p><br />
+        <span className='datebox__signup'>{props.signupText} <a href={props.link} className='datebox__signup--link'>{props.link}</a></span>
       </div>
     </div>
   </div>
@@ -48,20 +49,20 @@ const DateBox = (props) => (
 
 const NewsArticle = (props) => {
   return (
-    <div style={{ textAlign: 'left', cursor: 'pointer' }}>
+    <div className='news-article'>
       <div>
-        <img src={props.imageSource} style={{ position: 'relative', top: '20px', right: '65px', 'maxWidth': '70%', 'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)', margin: '0px 0px 0px 10%' }} />
+        <img src={props.imageSource} className='news-article__image'/>
       </div>
-      <div className='NewsArticle marginAuto-xs' style={{ textAlign: 'left', 'borderStyle': 'solid', padding: '1rem', borderColor: 'black', borderWidth: '1px', width: '70%', height: '370px' }}>
+      <div className='NewsArticle marginAuto-xs' className='news-article__body'>
         <RouteLink to={`/news/${props.type}/${props.head}`}>
         <br />
-        <div style={{ maxHeight: '285px', overflow: 'hidden' }}>
-          <b style={{ fontSize: '28px', letterSpacing: '0px', color: '#000' }}>{props.head}</b><br />
-          <p style={{ fontSize: '13px', textAlign: 'left', letterSpacing: '0px', bottom: '0', 'margin-top': '0.5rem' }}>by {props.author} <span style={{ fontSize: '13px', letterSpacing: '0px', float: 'right' }}> {props.date}</span></p>
+        <div className='news-article__text'>
+          <b className='news-article__title'>{props.head}</b><br />
+          <p className='news-article__author'>by {props.author} <span className='news-article__author--date'> {props.date}</span></p>
           <br />
-          <div style={{ fontSize: '18px', letterSpacing: '0px' }}> {props.byline.substring(0, 200) + '...'}</div>
+          <div className='news-article__byline'> {props.byline.substring(0, 200) + '...'}</div>
         </div>
-        <div style={{ textAlign: 'right' }}><img style={{ 'maxWidth': '10%', margin: '1rem', left: '50%' }} src={BlackBoxArrow} /></div>
+        <div className='news-article__arrow'><img className='news-article__arrow--img' src={BlackBoxArrow} /></div>
         </RouteLink>
       </div>  
     </div>
@@ -107,12 +108,7 @@ const MediaItems = ({ items }) => {
                 </SlideToggleContent>
               </div>
             </div>
-            <div
-              className='col-xs-12 center-xs' style={{
-                margin: 'auto',
-                position: 'relative'
-              }}
-            >
+            <div className='col-xs-12 center-xs media__view-more' >
               <ViewMoreButton isVisible={isVisible} clickButton={() => setIsVisible(!isVisible)} alignRight />
             </div>
           </>
@@ -147,14 +143,9 @@ class News extends Component {
             <div className='News'>
               <div className='row positionRelative'>
                 <div className='col-md-offset-1 col-md-5'>
-                  <h2 className='Black HeadingFontSize-md HeadingFontSize-xs' id='News' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>News</h2>
+                  <h2 className='Black HeadingFontSize-md HeadingFontSize-xs section__heading' id='News' >News</h2>
                   <div
-                    className='dottedLineHorizontal' style={{
-                      width: '91.666%',
-                      position: 'absolute',
-                      right: '-1rem'
-                    }}
-                  />
+                    className='dottedLineHorizontal section__underline'/>
                 </div>
               </div>
               <MediaItems items={newsItems} />
@@ -166,21 +157,12 @@ class News extends Component {
               <br />
               <br />
               <div className='row positionRelative'>
-                <div className='col-md-offset-1 col-md-5'><h2 className='Black HeadingFontSize-md HeadingFontSize-xs' id='Events' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Events</h2>
-                  <div
-                    className='dottedLineHorizontal' style={{
-                      width: '91.666%',
-                      position: 'absolute',
-                      right: '-1rem'
-                    }}
-                  />
+                <div className='col-md-offset-1 col-md-5'><h2 className='Black HeadingFontSize-md HeadingFontSize-xs section__heading' id='Events'>Events</h2>
+                  <div className='dottedLineHorizontal section__underline'/>
                 </div>
               </div>
               <div
-                className='row' style={{
-                  marginTop: '2rem'
-                }}
-              >
+                className='row events'>
                 <div className='col-xs-12'>
                   {
                     events.sections.map(({ component: EventComponent, props }, index) => (
@@ -191,12 +173,7 @@ class News extends Component {
               </div>
             </div>
             {events2 &&
-              <div
-                style={{
-                  margin: 'auto',
-                  position: 'relative'
-                }}
-              >
+              <div className="media_view-more">
                 <SlideToggleContent isVisible={this.state.isVisibleEvent}>
                   <br />
                   <br />
@@ -220,14 +197,8 @@ class News extends Component {
           <div id='Articles' className='Media'>
             <div className='Media'>
               <div className='row positionRelative'>
-                <div className='col-md-offset-1 col-md-5'><h2 className='Black HeadingFontSize-md HeadingFontSize-xs' id='Courses' style={{ color: 'rgb(82, 49, 120)', margin: '0px', position: 'relative', marginTop: '2rem' }}>Articles</h2>
-                  <div
-                    className='dottedLineHorizontal' style={{
-                      width: '91.666%',
-                      position: 'absolute',
-                      right: '-1rem'
-                    }}
-                  />
+                <div className='col-md-offset-1 col-md-5'><h2 className='Black HeadingFontSize-md HeadingFontSize-xs section__heading' id='Courses' >Articles</h2>
+                  <div className='dottedLineHorizontal section__underline'/>
                 </div>
               </div>
               <MediaItems items={articleItems} />
@@ -237,14 +208,9 @@ class News extends Component {
             <div className='Podcasts'>
               <div className='row positionRelative'>
                 <div className='col-md-offset-1 col-md-5'>
-                  <h2 className='Black HeadingFontSize-md HeadingFontSize-xs' style={{ color: '#523178', margin: 0, marginTop: '6rem' }}>Podcasts</h2>
+                  <h2 className='Black HeadingFontSize-md HeadingFontSize-xs section__heading'>Podcasts</h2>
                   <div
-                    className='dottedLineHorizontal' style={{
-                      width: '91.666%',
-                      position: 'absolute',
-                      right: '-1rem'
-                    }}
-                  />
+                    className='dottedLineHorizontal section__underline'/>
                 </div>
               </div>
               <PodcastEp2/>

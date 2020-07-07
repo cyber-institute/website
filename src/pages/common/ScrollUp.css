@@ -1,0 +1,13 @@
+.scroll__button {
+    opacity: 0.8;
+    background-color: #523178;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    border: none;
+    z-index: 1;
+    cursor: pointer;
+}
