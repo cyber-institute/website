@@ -1,0 +1,75 @@
+.team__underline--right {
+    right: -1rem;
+}
+
+.team__underline--left {
+    left:-1rem;
+}
+
+.team__underline {
+    width: 91.666%;
+    position: absolute;
+}
+
+.person {
+    position: relative;
+    padding-top: 3rem;
+}
+
+.person__position--right {
+    right: 0%;
+}
+
+.person__position--left {
+    left: 0%;
+}
+
+.person__position {
+    top: -200px;
+}
+
+.person__pic {
+    top: 200px;
+}
+
+.person__img--lesley {
+    box-shadow:  grey 5px 5px 10px;
+}
+
+.person__img {
+    width: 100%;
+}
+
+.person__line {
+    position: absolute;
+    top: 30%;
+    left: -50%;
+    width: 100%;
+    z-index: -20;
+}
+
+.person__body {
+    padding-top: 20px;
+}
+
+.person__emphasis {
+    font-weight: 700;
+}
+
+.person__title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.person__description {
+    letter-spacing: 0px;
+}
+
+.person__jigsaw {
+    position: relative;
+    right: 0;
+}
+
+.person__right {
+    text-align: right;
+}

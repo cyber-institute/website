@@ -2,6 +2,7 @@ import React, { useState, Component } from 'react'
 
 import './style.css'
 import '../../flexboxgrid.css'
+import './People.css'
 
 import Banner from '../common/Banner'
 import SlideToggleContent from '../common/SlideToggleContent'
@@ -55,38 +56,31 @@ class People extends Component {
           <div className='mainBody row positionRelative'>
             <div className='col-md-offset-1 col-md-10'>
               <h1 id='Meet the Team'>Meet the Team</h1>
-              <div
-                className='dottedLineHorizontal' style={{
-                  width: '91.666%',
-                  position: 'absolute',
-                  right: '-1rem'
-                }}
-              />
-            </div>
+              <div className='dottedLineHorizontal team__underline team__underline--right'/></div>
           </div>
-          <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem' }}>
-            <h2 style={{ right: '0%', top: '-200px' }}>CEO</h2>
-            <div className='col-xs-12 col-md-5 col-md-offset-1' style={{ top: '200px' }}>
-              <img src={Lesley} style={{ width: '100%', boxShadow: '5px 5px 10px grey' }} alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
-              <hr className='greyLine' style={{ position: 'absolute', top: '30%', left: '-50%', width: '100%', zIndex: '-20' }} />
+          <div className='row mainBody person' >
+            <h2 className='person__position person__position--right'>CEO</h2>
+            <div className='col-xs-12 col-md-5 col-md-offset-1 person__pic'>
+              <img src={Lesley} className='person__img person__img--lesley' alt='Professor Lesley Seebeck, CEO of the Cyber Institute, smiling and sitting' />
+              <hr className='greyLine person__line' />
             </div>
             
-            <div className='col-xs-12 col-md-5' style={{ paddingTop: '20px' }}>
-              <p><span className='bigEmphasis' style={{ fontWeight: '700' }}>"Rarely do you have the opportunity to shape a national endeavour.</span>
+            <div className='col-xs-12 col-md-5 person__body'>
+              <p><span className='bigEmphasis person__emphasis'>"Rarely do you have the opportunity to shape a national endeavour.</span>
                 <br /><br />I find intersections and boundaries fascinating—and&nbsp;especially the intersection&nbsp;between strategy, organization and technology.
                 <br /><br />Dealing with cyber intrusions reinforced my conviction that cyber is fundamentally about the human;&nbsp;that it currently represents an existential challenge to liberal, democratic societies, and that we need new, interdisciplinary approaches to tackling the problems cyber can create.&nbsp;
                 <br /><br />I am deeply invested in building knowledge, capability, tools,&nbsp;and insights that help ensure a better future&nbsp;where&nbsp;cyber enables opportunity, agency, freedom and prosperity.
                 <br /><br />At&nbsp;the Cyber Institute I can do all that, with a fantastic, equally&nbsp;committed group of people.&quot;
               </p>
               
-              <h3 style={{ marginTop: '30px', marginBottom: '15px' }}>CEO, Professor Lesley Seebeck</h3>
-              <p style={{ letterSpacing: '0' }}>Professor Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.  She has extensive experience in Federal Government, in a variety of senior roles in policy, technology and central agencies, as well as in the university sector and private industry.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Government’s Naval Shipbuilding Advisory Board.  <br /><br /></p>
-              <p style={{ letterSpacing: '0' }}>Professor Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
+              <h3 className='person__title'>CEO, Professor Lesley Seebeck</h3>
+              <p className='person__description'>Professor Lesley Seebeck started as the CEO of the Cyber Institute, Australian National University, on 30 July 2018.  She has extensive experience in Federal Government, in a variety of senior roles in policy, technology and central agencies, as well as in the university sector and private industry.  She was recognised as Federal Government CIO of the Year in 2017 and in February 2019 she was appointed to the Government’s Naval Shipbuilding Advisory Board.  <br /><br /></p>
+              <p className='person__description'>Professor Seebeck has a PhD in information technology, an MBA, a Masters in Defence Studies and a Bachelor's degree in Applied Science (Physics). </p>
             </div>
           </div>
-          <div className='row mainBody' style={{ position: 'relative', paddingTop: '3rem', overflow: 'hidden' }}>
-            <h2 style={{ left: '0%', top: '-200px' }}>COO</h2>
-            <div className='col-xs-12 col-md-5 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
+          <div className='row mainBody person' >
+            <h2 className='person__position person__position--left'>COO</h2>
+            <div className='col-xs-12 col-md-5 col-md-offset-1 person__body' >
               <h3>Cyber Institute COO, Ree</h3>
               <p>
                     Ree joined the Cyber Institute in late 2018 from the Bureau of Meteorology (BoM) where she held a
@@ -101,24 +95,19 @@ class People extends Component {
                   facilitation, program delivery, governance and change management.  Ree is the Cyber Institute’s COO.
               </p>
             </div>
-            <div className='col-xs-12 col-md-5' style={{ position: 'relative', right: '0' }}>
-              <img src={Puzzle3} style={{ width: '100%' }} alt='Puzzle piece representing Ree Kent' />
+            <div className='col-xs-12 col-md-5 person__jigsaw'>
+              <img src={Puzzle3} className='person__img' alt='Puzzle piece representing Ree Kent' />
             </div>
           </div>
 
-          <div className='mainBody row positionRelative' style={{ paddingTop: '3rem' }}>
+          <div className='mainBody row positionRelative person' >
             <div className='col-xs-12 col-md-11'>
-              <h1 style={{ textAlign: 'right' }}>Staff Showcase</h1>
+              <h1 className='person__right'>Staff Showcase</h1>
               <div
-                className='dottedLineHorizontal' style={{
-                  width: '91.666%',
-                  position: 'absolute',
-                  left: '-1rem'
-                }}
-              />
+                className='dottedLineHorizontal team__underline team__underline--left' />
             </div>
           </div>
-          <div className='row around-xs mainBody col-md-10 col-md-offset-1' style={{ paddingTop: '3rem' }}>
+          <div className='row around-xs mainBody col-md-10 col-md-offset-1 person' >
             <p style={{ textAlign: 'center' }}><span className='bigEmphasis'>At the Cyber Institute, <span style={{ fontWeight: 'bolder', color: '#523178', fontSize: '50px' }}>people</span> are at the heart of what we do.</span></p>
             <p><br />Here are some of our fantastic team members this month, who make the Cyber Institute, its research,
               education, innovation and delivery programs happen:&nbsp;
