@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 import DynamicPage from '../common/DynamicPage'
-import SlideToggleContent from '../../ContentSlider/SlideToggleContent'
-import ViewMoreButton from '../../ContentSlider/ViewMoreButton'
 
 import SecurityControls from './../../../img/LaptoplockRAND.jpg'
 import Rethinking from './../../../img/realtimecyberattacks.PNG'
 import Broken from './../../../img/menonboat.jpg.png'
+
+import './Articles.css'
 
 const ReadingList = {
   title: 'ReadingList',
@@ -53,21 +53,11 @@ export default () => {
   const [isVisible, setIsVisible] = useState(false)
   return (
     <div
-      className='container-fluid' style={{
-        margin: '4rem 0',
-        fontFamily: 'Roboto'
-      }}
-    >
+      className='container-fluid list' >
       <div className='row'>
         <div className='col-md-offset-2'>
           <h2
-            className='Medium' style={{
-              fontSize: '40px',
-              letterSpacing: '5px',
-              color: 'rgb(82, 49, 120)',
-              margin: '0 0 2rem'
-            }}
-          >
+            className='Medium list__heading' >
       Reading List
           </h2>
         </div>
@@ -78,10 +68,7 @@ export default () => {
         <div className='col-md-2' />
       </div>
       <div
-        style={{
-          margin: 'auto',
-          position: 'relative'
-        }}
+        
       />
     </div>
   )

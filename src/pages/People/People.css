@@ -6,6 +6,10 @@
     left:-1rem;
 }
 
+.team__underline--white {
+    color: #fff;
+}
+
 .team__underline {
     width: 91.666%;
     position: absolute;
@@ -72,4 +76,111 @@
 
 .person__right {
     text-align: right;
+}
+
+.showcase__subtitle {
+    text-align: center;
+}
+
+.showcase__subtitle--emphasis {
+    font-weight: 900;
+    color: #523178;
+    font-size: 50px;
+}
+
+.showcase__person {
+    margin-top: 50px;
+}
+
+.showcase__picture {
+    position: relative;
+    right: 0;
+}
+
+.showcase__img {
+    width: 100%;
+}
+
+.showcase__text {
+    padding-top: 20px;
+    left: 0;
+}
+
+.showcase__name {
+    padding-bottom: 15px;
+    font-size: 22px;
+    color: #523178;
+}
+
+.showcase__img--bottom {
+    padding-bottom: 20px;
+}
+
+.careers {
+    background: 0 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-color: #523178;
+    clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0) ;
+    -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0);
+}
+
+.careers__background {
+    height: 100%;
+    position: absolute;
+    display: block;
+    margin-right: auto;
+    width: 100%;
+    background-repeat: repeat-y;
+    opacity: 0.2;
+}
+
+.careers__content {
+    padding: 12rem 0;
+}
+
+.careers__paragraph {
+    padding-top: 25px;
+}
+
+.careers__text--emphasis {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.careers__text--link {
+    color: #D2ACF7;
+}
+
+.careers__image {
+    width: 100%;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    padding-top: 60px;
+}
+
+.board-member {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.board-member__img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.board-member__name {
+    color: #fff;
+    margin: 0;
+}
+
+.board-member__subtitle {
+    color: #fff;
 }

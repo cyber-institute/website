@@ -108,17 +108,17 @@ class People extends Component {
             </div>
           </div>
           <div className='row around-xs mainBody col-md-10 col-md-offset-1 person' >
-            <p style={{ textAlign: 'center' }}><span className='bigEmphasis'>At the Cyber Institute, <span style={{ fontWeight: 'bolder', color: '#523178', fontSize: '50px' }}>people</span> are at the heart of what we do.</span></p>
+            <p className='showcase__subtitle'><span className='bigEmphasis'>At the Cyber Institute, <span className='showcase__subtitle--emphasis'>people</span> are at the heart of what we do.</span></p>
             <p><br />Here are some of our fantastic team members this month, who make the Cyber Institute, its research,
               education, innovation and delivery programs happen:&nbsp;
             </p>
           </div>
-          <div className='row' style={{ marginTop: '50px' }}>
-            <div className='col-xs-12 col-md-3 col-md-offset-1' style={{ position: 'relative', right: '0' }}>
-              <img src={Puzzle2} style={{ width: '100%' }} alt='Puzzle piece representing Stehpanie' />
+          <div className='row showcase__person' >
+            <div className='col-xs-12 col-md-3 col-md-offset-1 person__jigsaw' >
+              <img src={Puzzle2} className='person__img' alt='Puzzle piece representing Stehpanie' />
             </div>
-            <div className='col-xs-12 col-md-7' style={{ paddingTop: '20px', left: '0' }}>
-              <h4 style={{ paddingBottom: '15px', fontSize: '22px', color: '#523178' }}>Stephanie, Cyber Institute Research Fellow</h4>
+            <div className='col-xs-12 col-md-7 showcase__text' >
+              <h4 className='showcase__name'>Stephanie, Cyber Institute Research Fellow</h4>
               <p>Meet Steph who started with the Cyber Institute in January 2020. Steph was awarded her PhD from the ANU’s Strategic 
                   and Defence Studies Centre in 2009, for a thesis on small arms control and violent non-state armed groups. <br /><br />
                   She subsequently spent eight years developing and delivering components of the curriculum for the senior course and short 
@@ -130,9 +130,9 @@ class People extends Component {
               </p>
             </div>
           </div>
-          <div className='row' style={{ marginTop: '50px' }}>
-            <div className='col-xs-12 col-md-7 col-md-offset-1' style={{ paddingTop: '20px', left: '0' }}>
-              <h4 style={{ paddingBottom: '15px', fontSize: '22px', color: '#523178' }}>Jose, Visiting Fellow</h4>
+          <div className='row showcase__person' >
+            <div className='col-xs-12 col-md-7 col-md-offset-1 showcase__text' >
+              <h4 className='showcase__name'>Jose, Visiting Fellow</h4>
               <p>We are delighted to announce that our first Visiting Fellow is Mr Jose Sousa-Santos. Jose brings considerable experience and knowledge of 
                 the Pacific and Southeast Asia, particularly in the areas of cyber security, transnational organised crime, terrorism and cultural competency. <br /><br />
                 Already Jose has helped us deliver a one-day workshop at the ANU’s Australia Pacific Security College and a paper to the ANU College of Law’s 
@@ -141,8 +141,8 @@ class People extends Component {
                 He is currently completing postgraduate studies at Massey University, Wellington. Welcome Jose!
               </p>
             </div>
-            <div className='col-xs-12 col-md-3' style={{ position: 'relative', right: '0' }}>
-              <img src={Puzzle1} style={{ width: '100%', paddingBottom: '20px' }} alt='Puzzle piece representing Stehpanie' />
+            <div className='col-xs-12 col-md-3 person__jigsaw' >
+              <img src={Puzzle1} className='showcase__img showcase__img--bottom' alt='Puzzle piece representing José' />
             </div>
           </div>
         </div>
@@ -194,54 +194,20 @@ const Careers = () => {
     <div
       className='container-fluid positionRelative careersContainer'
     >
-      <div style={{
-        background: '0 0',
-        overflow: 'hidden',
-        position: 'absolute',
-        top: '0',
-        right: '0',
-        bottom: '0',
-        left: '0',
-        width: '100%',
-        zIndex: -1,
-        height: '100%',
-        backgroundColor: 'rgb(82, 49, 120)',
-        clipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)',
-        WebkitClipPath: 'polygon(50% 10%, 100% 0, 100% 90%, 50% 100%, 0% 90%, 0 0)'
-      }}
-      >
+      <div className='careers'>
         <picture
-          className='bannerImg'
+          className='bannerImg careers__background'
           style={{
-            height: '100%',
-            position: 'absolute',
-            display: 'block',
-            marginRight: 'auto',
-            width: '100%',
-            backgroundRepeat: 'repeat-y',
-            // backgroundSize: 'cover',
-            // backgroundPosition: '50% 0%',
             backgroundImage: `url(${background})`,
-            opacity: 0.2
-          }}
-        />
+          }}/>
       </div>
       <div
-        className='row positionRelative' style={{
-          padding: '12rem 0'
-        }}
-      >
+        className='row positionRelative careers__content'>
         <div className='col-xs-12 col-md-5 col-md-offset-1'>
           <h1 id='Careers'>Careers</h1>
           <div
-            className='dottedLineHorizontalWhite' style={{
-              width: '91.666%',
-              position: 'absolute',
-              right: '-1rem',
-              color: '#fff'
-            }}
-          />
-          <p style={{ paddingTop: '25px' }}><span className='bigEmphasis'>Imagine</span> a place where we think about cyber differently, where we bring together deep expertise
+            className='dottedLineHorizontalWhite team__underline team__underline--right team__underline--white' />
+          <p className='careers__paragraph'><span className='bigEmphasis'>Imagine</span> a place where we think about cyber differently, where we bring together deep expertise
             in the technological with that of the social, where in tackling the issues of the day, we
             think about how we can build the future we want to live in, where we help people make the hard
             but informed decisions about systems and strategy, data and development, and culture and capability...
@@ -252,7 +218,7 @@ const Careers = () => {
               <br />
               To be part of, and help guide, our journey and mission to ensure the challenge of cyber is met to the
             betterment of humanity,
-              <span style={{ fontWeight: 'bold', fontSize: '24px' }}> we are seeking those willing to tackle a challenge, go beyond traditional
+              <span className='careers__text--emphasis'> we are seeking those willing to tackle a challenge, go beyond traditional
               boundaries and forge new paths, and who are passionate about building a cyber response that strengthens
               our democracy.
                 <br />
@@ -269,13 +235,13 @@ const Careers = () => {
             We are passionate about placing people at the centre of our work, and are seeking to build a
             high-performing team that can change the world.&nbsp;Let us know where and how you are best placed
             to be involved. And join us to bring trust, freedom and opportunity to cyber. If you are interested
-            in becoming part of out team, we invite you to send your CV to <a href='mailto:cyber@anu.edu.au' style={{ color: '#D2AcF7' }}>cyber@anu.edu.au</a>.
+            in becoming part of out team, we invite you to send your CV to <a href='mailto:cyber@anu.edu.au' className='.careers__text--link'>cyber@anu.edu.au</a>.
             </p>
           </SlideToggleContent>
           <ViewMoreButton {...{ isVisible, setIsVisible }} />
         </div>
         <div className='col-xs-12 col-md-5'>
-          <img src={Fourstudents} style={{ width: '100%', filter: 'drop-shadow(5px 5px 5px rgba(0,0,0,0.3))', paddingTop: '60px' }} alt='Four Cyber Institute employees standing in front of glass building' />
+          <img src={Fourstudents} className='careers__image' alt='Four Cyber Institute employees standing in front of glass building' />
         </div>
       </div>
     </div>
@@ -356,36 +322,21 @@ const Person = ({ img, title, subtitle, id, isVisible, setIsVisible }) => {
     <>
       <div className={`${isVisible === id ? 'selected ' : ''}col-md-3 col-xs-12 advisoryImage paddingBottom2rem-xs`}>
         <div
-          style={{
-            display: 'inline-block',
-            height: '100%',
-            position: 'relative'
-          }}
+          className='board-member'
           onClick={() => isVisible !== id ? setIsVisible(id) : setIsVisible(null)}
         >
           <img
-            src={img} className='width100-md width300px-xs width250px-xxs imgShadow' style={{
-              height: '100%',
-              objectFit: 'cover'
-            }}
-          />
+            src={img} className='width100-md width300px-xs width250px-xxs imgShadow board-member__img' />
           <div className='hover advisoryImageText'>
             <div>
               <h3
-                className='name'
-                style={{
-                  color: '#fff',
-                  margin: 0
-                }}
-              >
+                className='name board-member__name'
+                >
                 {title}
               </h3>
               <p
-                className='title'
-                style={{
-                  color: '#fff'
-                }}
-              >
+                className='title board-member__subtitle'
+                >
                 {subtitle}
               </p>
             </div>
