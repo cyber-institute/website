@@ -1,0 +1,40 @@
+.quote {
+    margin-top: 20vw;
+}
+
+.quote__line--1 {
+    padding: 2rem 0;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    position: relative;
+}
+
+.quote__line--2 {
+    position: absolute;
+    bottom: -2rem;
+    width: 100%;
+    border-top: 2px solid rgb(238,238,238);
+}
+
+.quote__creativity {
+    padding-top: 0.4em;
+    margin-bottom: 2.1rem;
+    font-size: 35px;
+    color: #323232;
+    line-height: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.quote__picture {
+    overflow: hidden;
+}
+
+.quote__img {
+    max-width: 100%;
+}
+
+.quote__lesley {
+    line-height: 1.87;
+    font-size: 18px;
+}
