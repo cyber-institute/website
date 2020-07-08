@@ -1,0 +1,10 @@
+.mastery__text--emphasis {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.service__heading {
+    color: #523178;
+    margin: 0;
+    position: relative;
+}

@@ -1,40 +1,17 @@
 import React from 'react'
 
+import './PartnerWithUs.css'
+
 import backgroundArt from './background1.png'
 
 export default () =>
   <div
-    className='container-fluid' style={{
-      position: 'relative'
-    }}
-  >
-    <div style={{
-      background: '0 0',
-      overflow: 'hidden',
-      position: 'absolute',
-      top: '0',
-      right: '0',
-      bottom: '0',
-      left: '0',
-      width: '100%',
-      zIndex: -1,
-      height: '100%',
-      backgroundColor: 'rgb(82, 49, 120)'
-    }}
-    >
+    className='container-fluid positionRelative' >
+    <div className='partner__picture'>
       <picture
-        className='bannerImg'
+        className='bannerImg partner__img'
         style={{
-          height: '100%',
-          position: 'absolute',
-          display: 'block',
-          marginRight: 'auto',
-          width: '100%',
-          backgroundRepeat: 'repeat-y',
-          // backgroundSize: 'cover',
-          // backgroundPosition: '50% 0%',
           backgroundImage: `url(${backgroundArt})`,
-          opacity: 0.2
         }}
       />
     </div>
@@ -45,64 +22,23 @@ export default () =>
         }}
       >
         <h2
-          className='Light' style={{
-            fontSize: '49px',
-            letterSpacing: '6px',
-            color: '#fff',
-            margin: '3rem 0 3rem'
-          }}
-        >
+          className='Light partner__heading' >
           <div
-            className='displayNone-sm' style={{
-              position: 'absolute',
-              left: 0,
-              width: '30%'
-            }}
-          >
-            <div
-              style={{
-                position: 'relative',
-                top: '1em',
-                border: '1px solid #fff',
-                opacity: '0.5'
-              }}
-            />
+            className='displayNone-sm partner-line__wrapper partner-line__wrapper--left'>
+            <div className='partner__line'/>
           </div>
           <div
-            className='displayNone-sm' style={{
-              position: 'absolute',
-              right: 0,
-              width: '30%'
-            }}
-          >
-            <div
-              style={{
-                position: 'relative',
-                top: '1em',
-                border: '1px solid #fff',
-                opacity: '0.5'
-              }}
-            />
+            className='displayNone-sm partner-line__wrapper partner-line__wrapper--right' >
+            <div className='partner__line'/>
           </div>
           Why not partner<br /> with us?
         </h2>
-        <p
-          style={{
-            fontSize: '22px',
-            color: '#fff'
-          }}
-        >
+        <p className='partner__text--big'>
           If your organisation wants to be involved, contact us.  There are many opportunities to both contribute to, as well as benefit from, our education program.
           <br />
 We are partnering with a diverse set of organisations and celebrate the diversity of our people and skills. We believe the best outcomes arise from collaboration between researchers and practitioners with a range of experiences, skills and insights.
         </p>
-        <p
-          style={{
-            fontSize: '18px',
-            color: '#fff',
-            marginBottom: '3rem'
-          }}
-        >
+        <p className='partner__text--small'>
           <br />
           <br />
 There are also opportunities to collaborate on content design. That gives the experience we offer immediacy and relevance

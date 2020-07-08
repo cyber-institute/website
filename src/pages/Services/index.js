@@ -22,6 +22,9 @@ import services8 from '../../../img/services8.jpg'
 import services9 from '../../../img/services9.jpg'
 import services10 from '../../../img/services10.jpg'
 
+import './../Privacy/style.css'
+import './index.css'
+
 const Image = ({ img, style }) =>
   <img
     src={img} className='maxWidth100' style={style}
@@ -46,12 +49,7 @@ export default () =>
             Courses
           </Heading>
           <div
-            className='dottedLineHorizontal' style={{
-              width: '91.666%',
-              position: 'absolute',
-              right: '-1rem'
-            }}
-          />
+            className='dottedLineHorizontal privacy__line privacy__line--right'/>
         </div>
       </div>
       <div
@@ -59,33 +57,11 @@ export default () =>
           marginTop: '3rem'
         }}
       >
-        <div style={{
-          background: '0 0',
-          overflow: 'hidden',
-          position: 'absolute',
-          top: '100%',
-          right: '0px',
-          bottom: '0px',
-          margin: 'auto',
-          left: '30%',
-          width: '50%',
-          zIndex: -2,
-          height: '100%',
-          backgroundColor: '#fff'
-        }}
-        >
+        <div className='what__picture'>
           <picture
-            className='bannerImg'
+            className='bannerImg what__img'
             style={{
-              height: '100%',
-              position: 'absolute',
-              display: 'block',
-              marginRight: 'auto',
-              width: '100%',
-              backgroundRepeat: 'repeat-y',
-              backgroundSize: 'cover',
               backgroundImage: `url(${services2})`,
-              opacity: 1.0
             }}
           />
         </div>
@@ -99,7 +75,7 @@ We’ve had this problem before: the world shifts, and managers, leaders and dec
 
 That’s why the Cyber Institute is offering a different way of learning, which includes updating and building the ideas, knowledge and experiences needed to tackle this new world.<br /><br />
 
-            <span style={{ fontWeight: '700', fontSize: '25px' }}>We call it building your Cyber Mastery.</span>
+            <span className='mastery__text--emphasis'>We call it building your Cyber Mastery.</span>
           </p>
         </div>
         <div className='col-md-4 margin2RemAuto-sm'>
@@ -135,10 +111,7 @@ const GraduateDiploma = () =>
         commencingCohort='2021 (with some modules available from mid-2020)'
         includes='Micro modules'
       />
-      <div style={{
-        marginTop: '2rem'
-      }}
-      >
+      <div className='involved'>
         <p>Based on the Cyber Masters, a Graduate Diploma can be achieved through the completion of modules to the required number of academic credits.
           <br /><br />
 As with the Masters, it will run full-time, end-to-end from 2021. In the meantime, some modules will be available from mid-2020. Information about enrolment will be available in the near future.
@@ -149,11 +122,7 @@ As with the Masters, it will run full-time, end-to-end from 2021. In the meantim
 
 const Heading = ({ children }) =>
   <h2
-    className='Black HeadingFontSize-md HeadingFontSize-xs' style={{
-      color: 'rgb(82, 49, 120)',
-      margin: 0,
-      position: 'relative'
-    }}
+    className='Black HeadingFontSize-md HeadingFontSize-xs service__heading'
     id={children}
   >
     {children}

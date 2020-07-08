@@ -1,13 +1,9 @@
 import React from 'react'
 
 import './style.css'
-import CyberMasteryContent from './CyberMasteryContent'
-import CourseInformationBlurb from './CourseInformationBlurb'
-import Products from './Products'
+
 import BeMorePrivate from './BeMorePrivate'
 import WhatAreWeDoing from './WhatAreWeDoing'
-import Articles from './Articles'
-import Partnerships from './Partnerships'
 
 import Banner from '../common/Banner'
 

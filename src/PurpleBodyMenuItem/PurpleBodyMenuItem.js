@@ -7,44 +7,19 @@ import { Link } from 'react-router-dom'
 
 import background from '../Home/background1.png'
 
+import './PurpleBodyMenuItem.css'
+
 export default function BodyMenuItem ({ top, heading, text, buttonText, img, transforms, link }) {
   return (
     <div
-      style={{
-        paddingTop: '5rem',
-        paddingBottom: '5rem'
-      }}
-      className='container-fluid homeItemMarginTop positionRelative'
+      className='container-fluid homeItemMarginTop positionRelative menu-item'
     >
-      <div style={{
-        background: '0 0',
-        overflow: 'hidden',
-        position: 'absolute',
-        top: '0',
-        right: '0',
-        bottom: '0',
-        left: '0',
-        width: '100%',
-        zIndex: -1,
-        height: '100%',
-        backgroundColor: 'rgb(82, 49, 120)'
-      }}
-      >
+      <div className='menu-item__picture'>
         <picture
-          className='bannerImg'
+          className='bannerImg menu-item__img'
           style={{
-            height: '100%',
-            position: 'absolute',
-            display: 'block',
-            marginRight: 'auto',
-            width: '100%',
-            backgroundRepeat: 'repeat-y',
-            // backgroundSize: 'cover',
-            // backgroundPosition: '50% 0%',
             backgroundImage: `url(${background})`,
-            backgroundSize: 'cover',
-            opacity: 0.8
-          }}
+            }}
         />
       </div>
       <div className='row'>
@@ -53,28 +28,15 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
                      col-md-offset-1 col-md-5'
         >
           <div
-            style={{
-              marginBottom: '1em',
-              color: '#fff',
-              letterSpacing: '.05em',
-              fontSize: '.72rem'
-            }}
-            className='Medium'
-          >
+            className='Medium menu-item__top'>
             {top}
           </div>
           <div
-            className='HomeHeadingFontSize Bold' style={{
-              paddingTop: '0.4em',
-              borderTop: '1px solid #fff',
-              marginBottom: '2.1rem',
-              color: 'rgba(241, 241, 241, 1)'
-            }}
-          >
+            className='HomeHeadingFontSize Bold menu-item__heading'>
             {heading}
           </div>
           <div className='Light row'>
-            <div className='col-xs-9 Light' style={{ lineHeight: '1.87', color: '#fff' }}>
+            <div className='col-xs-9 Light menu-item__text' >
               {text}
             </div>
           </div>

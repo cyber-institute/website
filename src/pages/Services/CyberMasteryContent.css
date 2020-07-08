@@ -1,0 +1,25 @@
+.principle__heading {
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+.principle__paragraph {
+    margin-top: 1rem;
+}
+
+.principles {
+    margin-top: 2rem;
+}
+
+.line__short {
+    width: 5%;
+    position: absolute;
+}
+
+.line__short--left {
+    left: -2rem;
+}
+
+.line__short--right {
+    right: -2rem;
+}

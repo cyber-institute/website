@@ -8,6 +8,8 @@ import SecurityControls from './../../../img/LaptoplockRAND.jpg'
 import Rethinking from './../../../img/realtimecyberattacks.PNG'
 import Broken from './../../../img/menonboat.jpg.png'
 
+import './Articles.css'
+
 const ReadingList = {
   title: 'ReadingList',
   sections: [{
@@ -53,21 +55,11 @@ export default () => {
   const [isVisible, setIsVisible] = useState(false)
   return (
     <div
-      className='container-fluid' style={{
-        margin: '4rem 0',
-        fontFamily: 'Roboto'
-      }}
-    >
+      className='container-fluid article-list' >
       <div className='row'>
         <div className='col-md-offset-2'>
           <h2
-            className='Medium' style={{
-              fontSize: '40px',
-              letterSpacing: '5px',
-              color: 'rgb(82, 49, 120)',
-              margin: '0 0 2rem'
-            }}
-          >
+            className='Medium article-list__heading' >
       Reading List
           </h2>
         </div>

@@ -1,8 +1,8 @@
-.list {
+.article-list {
     margin: 4rem 0;
 }
 
-.list__heading {
+.article-list__heading {
     font-size: 40px;
     letter-spacing: 5px;
     color: #523178;

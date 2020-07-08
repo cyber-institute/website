@@ -119,6 +119,10 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+.info__heading--anywhere {
+  overflow-wrap: anywhere;
+}
+
 .info__list {
   list-style-position: outside;
 }
@@ -141,4 +145,56 @@
 
 .involved__text {
   line-height: 1.6;
+}
+
+.involved__text--padded16px {
+  padding-bottom: 16px;
+}
+
+.involved__text--padded8px {
+  padding-bottom: 8px;
+}
+
+.doing {
+  margin-top: 4rem;
+}
+
+.video {
+  width: 100%;
+}
+
+.safely {
+  height: 100%;
+}
+
+.safely__container {
+  display: flex;
+  justify-content: center;
+}
+
+.safely__button {
+  background-color: #523178;
+  border: none;
+  color: #fff;
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.list-element {
+  position: absolute;
+  left: -2rem;
+}
+
+.list-element__line {
+  position: relative;
+  top: calc(0.5em - 2px);
+  border: 1px solid #333;
+}
+
+.list-element__children {
+  margin: 1rem 0 1rem 4rem;
 }

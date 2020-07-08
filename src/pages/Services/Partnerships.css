@@ -1,0 +1,32 @@
+.partnerships {
+    margin-top: 2rem;
+}
+
+.partnerships__heading {
+    text-align: right;
+}
+
+.partnerships__line {
+    width: 91.666%;
+    position: absolute;
+}
+
+.partnerships__line--left {
+    left: -1rem;
+}
+
+.partnerships__subheading {
+    text-align: right;
+    font-size: 24px;
+    color: rgb(82, 49, 120);
+}
+
+.partnerships__partners {
+    color: #523178;
+    font-size: 35px;
+    text-align: center;
+}
+
+.partnerships__heading--centre {
+    text-align: center;
+}

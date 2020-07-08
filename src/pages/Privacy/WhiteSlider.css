@@ -1,0 +1,26 @@
+.w-slider {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.w-slider__button {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.w-slider__display {
+    display: flex;
+}
+
+.w-slider__children {
+    margin: 1rem 0;
+}
+
+.w-slider__name {
+    vertical-align: middle;
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
