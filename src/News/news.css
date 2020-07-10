@@ -1,0 +1,141 @@
+.datebox {
+    margin: 1rem;
+}
+
+.datebox__date {
+    float: left;
+    width: 90%;
+    height: 200px;
+    margin-left: 1rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.datebox__day {
+    font-size: 84px;
+    color: #4D4D4D;
+    letter-spacing: 0px;
+}
+
+.datebox__month {
+    font-size: 52px;
+    color: #4D4D4D;
+    letter-spacing: 0px;
+}
+
+.datebox__event {
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.datebox__title {
+    font-size: 35px;
+    color: #000;
+    letter-spacing: 0px;
+}
+
+.datebox__details {
+    font-size: 15px;
+    margin: 0.5rem 0;
+}
+
+.datebox__description {
+    font-size: 18px;
+}
+
+.datebox__signup {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 0px;
+}
+
+.datebox__signup--link {
+    color: #523178;
+}
+
+.news-article {
+    text-align: left;
+    cursor: pointer;
+}
+
+.news-article__image {
+    position: relative;
+    top: 20px;
+    right: 65px;
+    max-width: 70%;
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.2), 0 6px 20px 0px rgba(0,0,0,0.19);
+    margin: 0px 0px 0px 10%;
+
+}
+
+.news-article__body {
+    text-align: left;
+    border-style: solid;
+    padding: 1rem;
+    border-color: black;
+    border-width: 1px;
+    width: 70%;
+    height: 370px;
+}
+
+.news-article__text {
+    max-height: 285px;
+    overflow: hidden;
+}
+
+.news-article__title {
+    font-size: 28px;
+    letter-spacing: 0px;
+    color: #000;
+}
+
+.news-article__author {
+    font-size: 13px;
+    text-align: left;
+    letter-spacing: 0px;
+    bottom: 0;
+    margin-top: 0.5rem;
+}
+
+.news-article__author--date {
+    float: right;
+}
+
+.news-article__byline {
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.news-article__arrow {
+    text-align: right;
+}
+
+.news-article__arrow--img {
+    max-width: 10%;
+    margin: 1rem;
+    left: 50%;
+}
+
+.section__heading {
+    color: rgb(82, 49,120);
+    margin: 0px;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.section__underline {
+    width: 91.666%;
+    position: absolute;
+    right: -1rem;
+}
+
+.media__view-more {
+    margin: auto;
+    position: relative;
+}
+
+.events {
+    margin-top: 2rem;
+}

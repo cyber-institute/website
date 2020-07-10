@@ -1,13 +1,9 @@
 import React from 'react'
 
 import './style.css'
-import CyberMasteryContent from './CyberMasteryContent'
-import CourseInformationBlurb from './CourseInformationBlurb'
-import Products from './Products'
+
 import BeMorePrivate from './BeMorePrivate'
 import WhatAreWeDoing from './WhatAreWeDoing'
-import Articles from './Articles'
-import Partnerships from './Partnerships'
 
 import Banner from '../common/Banner'
 
@@ -42,7 +38,7 @@ const headings = [
 
 export default () =>
   <>
-    <div style={{overflowX:"hidden"}}>
+    <div className='privacy'>
 
     <Banner {...{ banner, headings }} title='Privacy In the Modern World' subTitle='Thinking about your data in a different way' />
     <div
@@ -55,46 +51,16 @@ export default () =>
           What is Privacy
           </Heading>
           <div
-            className='dottedLineHorizontal' style={{
-              width: '91.666%',
-              position: 'absolute',
-              right: '-1rem'
-            }}
-          />
+            className='dottedLineHorizontal privacy__line privacy__line--right' />
         </div>
       </div>
       <div
-        className='row positionRelative' style={{
-          marginTop: '3rem'
-        }}
-      >
-        <div style={{
-          background: '0 0',
-          overflow: 'hidden',
-          position: 'absolute',
-          top: '100%',
-          right: '0px',
-          bottom: '0px',
-          margin: 'auto',
-          left: '30%',
-          width: '50%',
-          zIndex: -2,
-          height: '100%',
-          backgroundColor: '#fff'
-        }}
-        >
+        className='row positionRelative what'>
+        <div className='what__picture'>
           <picture
-            className='bannerImg'
+            className='bannerImg what__img'
             style={{
-              height: '100%',
-              position: 'absolute',
-              display: 'block',
-              marginRight: 'auto',
-              width: '100%',
-              backgroundRepeat: 'repeat-y',
-              backgroundSize: 'cover',
               backgroundImage: `url(${services2})`,
-              opacity: 1.0
             }}
           />
         </div>
@@ -105,8 +71,8 @@ export default () =>
           <div
           className='col-md-offset-3 col-md-6'
         >
-          <p>Here at the <span style={{ fontWeight: '700', color: '#523178' }}>Cyber Institute</span> we believe that people should be able to 
-            	  <span style={{ fontWeight: '700', color: '#523178' }}> control with whom they share their information.</span> We also believe that privacy and security go hand-in-hand. The more that we all understand privacy, the better society will become at protecting it. 
+          <p>Here at the <span className='what__text--emphasis'>Cyber Institute</span> we believe that people should be able to 
+            	  <span className='what__text--emphasis'> control with whom they share their information.</span> We also believe that privacy and security go hand-in-hand. The more that we all understand privacy, the better society will become at protecting it. 
           </p>
           </div>
           </div> 
@@ -118,10 +84,10 @@ export default () =>
         <div
           className=' col-md-4'
         >
-                    <p style={{width:"90%", marginLeft:"5%", marginTop:'20%', marginBottom: '6%'}}>
-                    <img style={{objectFit:"cover", width: "100%", boxShadow: '5px 5px 10px grey'}} src={privacyShare}/>
+                    <p className='topic__wrapper'>
+                    <img className='topic__img' src={privacyShare}/>
                     </p>
-                    <p style={{width:"90%", marginLeft:"5%"}}>
+                    <p className='topic__text'>
  
            
  In the pre-digital age, people could control their own privacy more easily: limiting how much information is shared with others; 
@@ -134,10 +100,10 @@ export default () =>
           className='col-md-4'
           
         >
-                    <p style={{width:"90%", marginLeft:"20%", marginTop:'18%',marginBottom: '5%'}}>
-                    <img style={{objectFit:"cover", width: "69%"}} src={privacyLost}/>
+                    <p className='topic__wrapper topic__wrapper--middle'>
+                    <img className='topic__img topic__img--lost' src={privacyLost}/>
                     </p>
-                    <p style={{width:"90%", marginLeft:"5%"}}>
+                    <p className='topic__text'>
 
 
 Now, there is more information about people, and the average individual has lost control over the information that they
@@ -151,10 +117,10 @@ share online.
           <div
           className='col-md-4'
         >
-                    <p style={{width:"90%", marginLeft:"0", marginTop:'15%'}}>
-                    <img style={{objectFit:"cover", width: "90%"}} src={privacyOnion}/>
+                    <p className='topic__wrapper topic__wrapper--onion'>
+                    <img className='topic__img topic__img--onion' src={privacyOnion}/>
                     </p>
-                    <p style={{width:"90%", marginLeft:"5%"}}>
+                    <p className='topic__text'>
 
 The 'privacy onion' is a useful way to think about your information.  At the centre is your most intimate and sensitive information: you may choose to share that with your closest friends and family.  
 
@@ -174,16 +140,10 @@ The 'privacy onion' is a useful way to think about your information.  At the cen
 <div className='col-md-12'
         >
                   <div
-            className='dottedLineHorizontal' style={{
-              position: 'relative',
-              right: 'calc(50% + 1rem)',
-              marginTop: '6vw',
-              marginBottom: '2vw'
-            }}
-          />
+            className='dottedLineHorizontal info__line' />
           </div>
           <div className="col-md-12 center-xs">
-          <h2 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
+          <h2 className='info__heading'>
           We can think about personal information as having two aspects.
           </h2>
           </div>
@@ -196,14 +156,14 @@ The 'privacy onion' is a useful way to think about your information.  At the cen
           className='col-md-offset-1 col-md-3'
         >
           
-         <h3 style={{ fontWeight: '700', color: '#523178', 'fontFamily': 'Roboto, sans-serif' }}>About You</h3> 
+         <h3 className='info__heading'>About You</h3> 
 
          
 
-<p>Information that is <span style={{'fontWeight': '700',color: '#523178'}}>about you</span> is information that describes you
+<p>Information that is <span className='info__heading'>about you</span> is information that describes you
 or is information that you use to confirm your identity online.  </p>
 <br /><br />
-<ul style={{ listStylePosition: "outside"}}>
+<ul className='info__list'>
   <li>
     Email Address
   </li>
@@ -225,7 +185,7 @@ or is information that you use to confirm your identity online.  </p>
 
 </ul>
 <br />
-<h4 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
+<h4 className='info__heading'>
 So what's the risk?
 </h4>
 <br />
@@ -243,22 +203,22 @@ a company can verify you on the internet. </p>
           
         >
            
-          <img style={{objectFit:"cover", width: "100%", marginLeft:"auto", marginRight:"auto", display:"block"}} src={privacyAboutYou}/>   
+          <img className='info__img' src={privacyAboutYou}/>   
         </div>
         <div
           className='col-md-3 '
         >
           
-          <h3 style={{ 'fontWeight': '700', color: '#523178', 'fontFamily': 'Roboto, sans-serif' }}>Is You</h3> 
-          <p>Information that <span style={{'fontWeight': '700',color: '#523178'}}>is you</span> may be
+          <h3 className='info__heading'>Is You</h3> 
+          <p>Information that <span className='info__heading'>is you</span> may be
 considered your ‘digital DNA’: it’s the how, where, when and what. It's your behaviour, activity and circumstances.</p>
 <br/>
 <br />
 <p>It may not be obvious but this information 
 leaks through with every interaction you have with the internet. 
 It is captured with every 'like', swipe or click you make. 
-<br /> <br/><span style={{'fontWeight': '700',color: '#523178'}}>This information is you.</span>  </p>
-<ul style={{listStylePosition: "outside"}}>
+<br /> <br/><span className='info__heading'>This information is you.</span>  </p>
+<ul className='info__list'>
   <li>
     Thought Processes
   </li>
@@ -277,7 +237,7 @@ It is captured with every 'like', swipe or click you make.
 
 </ul>
 <br />
-<h4 style={{ fontWeight: '700', color: '#523178', fontFamily: 'Roboto, sans-serif' }}>
+<h4 className='info__heading'>
 So how is this information collected?
 </h4>
 <br />
@@ -304,31 +264,20 @@ psychological behaviours.
 <WhatAreWeDoing id="Privacy Scenarios" image1={services10} image2={safely} image3={services10} />
 
   <div
-      className='container-fluid positionRelative' style={{
-        marginTop: '2rem'
-      }}
-    >
+      className='container-fluid positionRelative involved' >
       <div className='row positionRelative' id="Want to be Involved">
         <div
-          className='col-md-11' style={{
-            textAlign: 'right'
-          }}
-        >
+          className='col-md-11 involved__layer' >
           <Heading>
       Want to be Involved?
           </Heading>
           <div
-            className='dottedLineHorizontal' style={{
-              width: '91.666%',
-              position: 'absolute',
-              left: '-1rem'
-            }}
-          />
+            className='dottedLineHorizontal privacy__line privacy__line--left' />
         </div>
       </div>
       <div className='col-md-offset-3 col-md-6'>
       <br/><br />
-      <span style={{lineHeight:"1.6"}}>
+      <span className='involved__text'>
             <p>This is just the beginning. We will be expanding our training, products and ideas.</p>
             <ul>
               <li>

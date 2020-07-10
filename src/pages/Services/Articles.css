@@ -1,0 +1,10 @@
+.article-list {
+    margin: 4rem 0;
+}
+
+.article-list__heading {
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: #523178;
+    margin: 0 0 2rem;
+}

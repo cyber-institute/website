@@ -3,6 +3,8 @@ import React from 'react'
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
+import './ViewMoreButton.css'
+
 export default ({ setIsVisible, isVisible, alignRight }) =>
   <div style={{
     marginTop: '2rem',
@@ -11,25 +13,10 @@ export default ({ setIsVisible, isVisible, alignRight }) =>
   >
     <button
       type='button'
-      style={{
-        color: '#fff',
-        padding: '1rem 2rem',
-        fontFamily: 'Roboto',
-        textAlign: 'center',
-        textDecoration: 'none',
-        display: 'inline-block',
-        border: '1px solid #fff',
-        fontWeight: '100',
-        backgroundColor: 'transparent',
-        fontSize: '16px'
-      }}
+      className='view-more__button'
       onClick={() => setIsVisible(!isVisible)}
     >
-      <span style={{
-        verticalAlign: 'middle',
-        paddingRight: '5px'
-      }}
-      >
+      <span className='view-more__icon'>
         {isVisible ? 'View Less' : 'View More'}
       </span>
       {

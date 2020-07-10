@@ -222,3 +222,13 @@ h6 {
   .margin{
     margin-top: -2vh;
 }
+
+.footer__social-icon {
+    padding-right: 1rem;
+    font-size: 20px;
+}
+
+.footer__logo {
+    width: 100%;
+    max-width: 400px;
+}

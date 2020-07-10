@@ -1,14 +1,13 @@
 import React from 'react'
 
+import './Quote.css'
+
 import lesley from '../../img/dr_lesley_seebeck_03.jpg'
 
 export default function Quote () {
   return (
     <div
-      style={{
-        marginTop: '20vw'
-      }}
-      className='container-fluid homeItemMarginTop'
+      className='container-fluid homeItemMarginTop quote'
     >
       <div
         className='row'
@@ -18,39 +17,12 @@ export default function Quote () {
             className='container-fluid'
           >
             <div
-              className='row' style={{
-                padding: '2rem 0',
-                borderTop: '2px solid #eee',
-                borderBottom: '2px solid #eee',
-                position: 'relative'
-              }}
-            >
-              <div style={{
-                position: 'absolute',
-                top: '-2rem',
-                width: '100%',
-                borderTop: '2px solid rgb(238, 238, 238)'
-              }}
-              />
-              <div style={{
-                position: 'absolute',
-                bottom: '-2rem',
-                width: '100%',
-                borderTop: '2px solid rgb(238, 238, 238)'
-              }}
-              />
+              className='row quote__line--1' >
+              <div className='quote__line--2'/>
+              <div className='quote__line--2'/>
               <div className='col-md-offset-2 col-md-8'>
                 <div
-                  className='Light' style={{
-                    paddingTop: '0.4em',
-                    marginBottom: '2.1rem',
-                    fontSize: '35px',
-                    color: '#323232',
-                    lineHeight: '42px',
-                    fontWeight: 'bold',
-                    textAlign: 'center'
-                  }}
-                >
+                  className='Light quote__creativity' >
             "Creativity and curiosity encouraged, not just expected."
                 </div>
                 <div
@@ -58,13 +30,10 @@ export default function Quote () {
                 >
                   <div className='row center-xs columnReverse-sm'>
                     <div
-                      className='col-md-4' style={{
-                        overflow: 'hidden'
-                      }}
-                    >
-                      <img src={lesley} style={{ maxWidth: '100%' }} className='imgShadow' />
+                      className='col-md-4 quote__picture' >
+                      <img src={lesley} className='imgShadow quote__img' />
                     </div>
-                    <div className='col-md-8 Light' style={{ lineHeight: '1.87', fontSize: '18px' }}>
+                    <div className='col-md-8 Light quote__lesley' >
             Prof. Lesley Seebeck, PhD<br /><br />
 
 Professor of Practice in Cyber Security,<br />

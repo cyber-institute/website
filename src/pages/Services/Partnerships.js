@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Partnerships.css'
+
 import { Heading, Image } from './index'
 
 import partner11 from '../../../img/1. Foundation Partners_Indiana Uni.png'
@@ -15,46 +17,27 @@ const OverflowHidden = ({ children, style }) => <div style={{ overflow: 'hidden'
 
 export default () =>
   <div
-    className='container-fluid' style={{
-      marginTop: '2rem'
-    }}
-  >
+    className='container-fluid partnerships' >
     <div className='row positionRelative'>
       <div
-        className='col-md-11' style={{
-          textAlign: 'right'
-        }}
-      >
+        className='col-md-11 artnerships__heading' >
         <Heading>
           Partnerships
         </Heading>
         <div
-          className='dottedLineHorizontal' style={{
-            width: '91.666%',
-            position: 'absolute',
-            left: '-1rem'
-          }}
-        />
+          className='dottedLineHorizontal partnerships__line partnerships__line--left' />
       </div>
       <div
         className='col-md-8 col-md-offset-3'
       >
         <h3
-          className='Light' style={{
-            textAlign: 'right',
-            fontSize: '24px',
-            color: 'rgb(82, 49, 120)'
-          }}
-        >
+          className='Light partnerships__subheading' >
         Cyber is an ecosystem with many participants.  While we expect that the Cyber Institute will be important in shaping the future for Australia, we are realistic—we are but one player.
         </h3>
       </div>
     </div>
     <div
-      className='row' style={{
-        marginTop: '2rem'
-      }}
-    >
+      className='row partnerships' >
       <div className='col-md-5 col-md-offset-1'>
         <p>
         Partnerships are key to proactively addressing issues of issues of cyber trust, design, risk and resilience and so building a better future for people, organisation, the nation and humanity more generally.  That’s evident from the valuable analysis undertaken by the Australian Cyber Security Growth Network; it’s reflected, too, in the Australian Government’s domestic and international cyber strategies.
@@ -67,10 +50,7 @@ export default () =>
       </div>
     </div>
     <div
-      className='row' style={{
-        marginTop: '2rem'
-      }}
-    >
+      className='row partnerships' >
       <div className='col-md-5 col-md-offset-1'>
         <p>
         Our view is that cyber is a team sport.  Interaction, partnership and collaboration is embedded within the Cyber Institute’s DNA.   If you—or your organisation—are willing to engage, build capacity, mitigate risks and further take advantage of opportunities presented in the digital revolution, we are keen to talk further.
@@ -85,13 +65,7 @@ export default () =>
     <div className='row'>
       <div className='col-sm-4'>
         <h3
-          className='Medium'
-          style={{
-            color: 'rgb(82, 49, 120)',
-            fontSize: '35px',
-            textAlign: 'center'
-          }}
-        >
+          className='Medium partnerships__partners'>
           Foundation Partners
         </h3>
         <ul>
@@ -111,13 +85,7 @@ export default () =>
       </div>
       <div className='col-sm-4'>
         <h3
-          className='Medium'
-          style={{
-            color: 'rgb(82, 49, 120)',
-            fontSize: '35px',
-            textAlign: 'center'
-          }}
-        >
+          className='Medium partnerships__partners'>
         Program Partners
         </h3>
         <ul>
@@ -125,10 +93,7 @@ export default () =>
           <li>leverage investment against the achievement of specific program outputs, governed under a program agreement; and</li>
           <li>may be more diffuse in focus and draw from extensive expertise across the ANU.</li>
         </ul>
-        <div style={{
-          textAlign: 'center'
-        }}
-        >
+        <div className='partnerships__heading--centre'>
           <OverflowHidden style={{ margin: '1rem 0' }}>
             <Image
               img={partner21}
@@ -152,22 +117,14 @@ export default () =>
       </div>
       <div className='col-sm-4'>
         <h3
-          className='Medium'
-          style={{
-            color: 'rgb(82, 49, 120)',
-            fontSize: '35px',
-            textAlign: 'center'
-          }}
-        >
+          className='Medium partnerships__partners' 
+          >
         Project Partners
         </h3>
         <ul>
           <li>transact on shorter-term projects for specific set outcomes.</li>
         </ul>
-        <div style={{
-          textAlign: 'center'
-        }}
-        >
+        <div className='partnerships__heading--centre'>
           <OverflowHidden style={{ margin: '1rem 0' }}><Image img={partner31} /></OverflowHidden>
         </div>
       </div>

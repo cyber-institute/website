@@ -17,28 +17,15 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
           className='col-lg-offset-2 col-lg-4
                      col-md-offset-1 col-md-5'
         >
-          <div
-            style={{
-              marginBottom: '1em',
-              color: 'rgb(50, 50, 50)',
-              letterSpacing: '.05em',
-              fontSize: '.72rem'
-            }}
-            className='Medium'
+          <div className='Medium Menu-Item__top'
           >
             {top}
           </div>
-          <div
-            className='HomeHeadingFontSize Bold' style={{
-              paddingTop: '0.4em',
-              borderTop: '1px solid currentColor',
-              marginBottom: '2.1rem'
-            }}
-          >
+          <div className='HomeHeadingFontSize Bold Menu-Item__heading' >
             {heading}
           </div>
           <div className='Light row'>
-            <div className='col-xs-9 Light' style={{ lineHeight: '1.87', fontSize: '18px' }}>
+            <div className='col-xs-9 Light Menu-Item__text'>
               {text}
             </div>
           </div>
@@ -59,12 +46,7 @@ export default function BodyMenuItem ({ top, heading, text, buttonText, img, tra
           </Link>
         </div>
         <div
-          className='col-lg-4 col-md-5' style={{
-            overflow: 'hidden',
-            boxShadow: '5px 5px 10px grey',
-            padding: 0
-          }}
-        >
+          className='col-lg-4 col-md-5 Menu-Item__container' >
           <img
             src={img} style={{
               maxWidth: '100%',

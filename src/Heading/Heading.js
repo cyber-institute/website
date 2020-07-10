@@ -6,30 +6,12 @@ import './style.css'
 
 export default () =>
   <>
-    <div
-      style={{
-        margin: '25vh auto 35vh auto',
-        textAlign: 'center'
-      }}
-    >
-      <h1
-        className='Bold HomeHeadingFontSize' style={{
-          fontFamily: 'Roboto, sans-serif', 
-          fontWeight: '900',
-          // fontSize: '80px',
-          margin: 0,
-          color: '#523178'
-        }}
-      >
+    <div className='main-heading'>
+      <h1 className='Bold HomeHeadingFontSize heading__body'>
         Are you ready<br />to transform cyber?
       </h1>
     </div>
-    <div
-      style={{
-        margin: '0 auto',
-        textAlign: 'center'
-      }}
-    >
+    <div className='heading__sub-heading'>
       <p className='Light'>Explore Cyber Institute</p>
       <ArrowDownwardIcon style={{ color: '#523178', paddingTop: '20px'}} />
     </div>

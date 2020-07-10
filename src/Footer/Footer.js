@@ -17,10 +17,7 @@ class Footer extends Component {
               textAlign: 'right'
             }}>
               <div>
-                <img src={logo} className='logo' alt="The Cyber Institute's Logo in White" style={{
-                  width: '100%',
-                  maxWidth: '400px',
-                }}/>
+                <img src={logo} className='footer__logo' alt="The Cyber Institute's Logo in White"/>
               </div>
             </div>
             <div className='col-xs-6' >
@@ -59,10 +56,10 @@ class Footer extends Component {
                   Level 2, 115 North Rd, Acton  ACT 2601
                 </p>
                 <p>
-                  <a className='Light' href="https://www.facebook.com/anucyberinstitute" style={{  paddingRight: '1rem',  fontSize: '20px' }}><i className="fab fa-facebook-square" style={{color:'white'}}></i></a>
-                  <a className='Light' href="https://twitter.com/anucyber" style={{ paddingRight: '1rem',  fontSize: '20px' }}><i className="fab fa-twitter-square" style={{color:'white'}}></i></a>
-                  <a className='Light' href="https://au.linkedin.com/company/anu-cyber-institute" style={{  paddingRight: '1rem',  fontSize: '20px' }}><i className="fab fa-linkedin" style={{color:'white'}}></i></a>
-                  <a className='Light' href="mailto:cyber@anu.edu.au" style={{ paddingRight: '1rem', fontSize: '20px' }}><i className="fas fa-envelope-square" style={{color:'white'}}></i></a>
+                  <a className='Light' href="https://www.facebook.com/anucyberinstitute" target="__blank" className='footer__social-icon'><i className="fab fa-facebook-square" style={{color:'white'}}></i></a>
+                  <a className='Light' href="https://twitter.com/anucyber"  target="__blank" className='footer__social-icon'><i className="fab fa-twitter-square" style={{color:'white'}}></i></a>
+                  <a className='Light' href="https://au.linkedin.com/company/anu-cyber-institute" target="__blank" className='footer__social-icon'><i className="fab fa-linkedin" style={{color:'white'}}></i></a>
+                  <a className='Light' href="mailto:cyber@anu.edu.au"  target="__blank" className='footer__social-icon'><i className="fas fa-envelope-square" style={{color:'white'}}></i></a>
                 </p>
               </div>
             </div>

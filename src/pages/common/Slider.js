@@ -5,23 +5,17 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 import SlideToggleContent from './SlideToggleContent'
 
+import './Slider.css'
+
 export default ({ name, children }) => {
   const [isVisible, setIsVisible] = useState(false)
   return (
-    <div style={{
-      marginBottom: '1rem',
-      width: '100%'
-    }}
-    >
+    <div className='slider'>
       <div className='row'>
         <div className='col-md-offset-1 col-md-11'>
           <button
             type='button'
-            style={{
-              border: 'none',
-              padding: 0,
-              backgroundColor: 'transparent'
-            }}
+            className='slider__button'
             onClick={() => setIsVisible(!isVisible)}
           >
             <Name {...{ name }} />
@@ -30,10 +24,7 @@ export default ({ name, children }) => {
         </div>
       </div>
       <SlideToggleContent {...{ isVisible }}>
-        <div style={{
-          margin: '1rem 0'
-        }}
-        >
+        <div className='slider__child'>
           {children}
         </div>
       </SlideToggleContent>
@@ -66,12 +57,6 @@ const Icons = ({ isVisible }) =>
 
 const Name = ({ name }) =>
   <span
-    className='Bold' style={{
-      verticalAlign: 'middle',
-      fontSize: '40px',
-      letterSpacing: '6px',
-      color: 'rgb(82, 49, 120)'
-    }}
-  >
+    className='Bold slider__name' >
     {name}
   </span>

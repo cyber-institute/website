@@ -32,6 +32,7 @@ import { Route, useParams, Link, BrowserRouter as Router, Switch } from 'react-r
 // import 'flexboxgrid/dist/flexboxgrid.min.css'
 import './flexboxgrid.css'
 import './style.css'
+import './index.css'
 
 
 const useStyles = makeStyles(theme => ({
@@ -87,8 +88,8 @@ export default function FadeMenu() {
 
   return (
     <div className="mobile-only" style={{"width": "100%", height: '80px'}}>
-      <Link className='Light' to="/" style={{  paddingRight: '2rem', fontSize: '13px' }}><img src={ANULogo} style={{ height: '80px' }} /></Link>
-      <Link className='Light' to="/" style={{ paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ height: '55px',marginBottom: '12.5px' }} /></Link>
+      <Link className='Light toolbar__link' to="/" ><img src={ANULogo} className='toolbar__ANU' /></Link>
+      <Link className='Light toolbar__link' to="/" ><img src={CITwhite} className='toolbar__CIT'/></Link>
       <div  style={{ float: "right"}}>
       <img src={Hamburger} style={{ width: '25px',marginTop: '27.5px', float: 'right', paddingRight: '2rem'}} onClick={handleClick} aria-controls="fade-menu" aria-haspopup="true"/>
       <Menu
@@ -99,13 +100,13 @@ export default function FadeMenu() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}><img src={CITwhite} style={{ width: '25px' }} /></Link>
-        <MenuItem onClick={handleClose}><Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link className='Light' to="/about" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>About Us</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>People</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Services</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>News and Events</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link className='Light' to="/privacy" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px' }}>Privacy</Link></MenuItem>
+        <Link className='Light hamburger__link' to="/" ><img src={CITwhite} className='toolbar__CIT--small' /></Link>
+        <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/" >Home</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/about" >About Us</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/people" >People</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/services" >Services</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/news" >News and Events</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/privacy" >Privacy</Link></MenuItem>
 
         
         </Menu>      
@@ -128,15 +129,15 @@ class App extends Component {
           <Toolbar>  
             
             <div className="desktop-only" style={{ width: '100%', height: '80px'  }}>
-            <Link className='Light' to="/" style={{  paddingRight: '1rem', fontSize: '13px' }}><img src={ANULogo} style={{ height: '80px' }} /></Link>
-            <Link className='Light' to="/" style={{ paddingRight: '2rem', fontSize: '13px' }}><img src={CITfull} style={{ height: '55px',marginBottom: '12.5px' }} /></Link>
+            <Link className='Light toolbar__link' to="/"><img src={ANULogo} className='toolbar__ANU' /></Link>
+            <Link className='Light toolbar__link' to="/"><img src={CITfull} className='toolbar__CIT' /></Link>
               <ul style={{display:'inline'}}>
-                <Link className='Light' to="/privacy" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px'}}>Privacy</Link>
-                <Link className='Light' to="/news" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px' }}>News and Events</Link>
-                <Link className='Light' to="/services" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px' }}>Services</Link>
-                <Link className='Light' to="/people" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px' }}>People</Link>
-                <Link className='Light' to="/about" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px' }}>About Us</Link>
-                <Link className='Light' to="/" style={{ float: 'right', paddingRight: '2rem', fontSize: '13px', marginTop:'32px' }}>Home</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/privacy" >Privacy</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/news" >News and Events</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/services">Services</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/people" >People</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/about">About Us</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/">Home</Link>
               </ul>
             </div>
             

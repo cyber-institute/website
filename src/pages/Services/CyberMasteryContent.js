@@ -2,16 +2,12 @@ import React from 'react'
 
 import { Image } from './index'
 import CourseInformationBlurb from './CourseInformationBlurb'
+import './CyberMasteryContent.css'
 
 const CorePrinciple = ({ heading, paragraph, isLeft }) =>
   <>
     <h3
-      className='Light'
-      style={{
-        fontSize: '38px',
-        marginBottom: 0
-      }}
-    >
+      className='Light principle__heading'>
       {heading}
     </h3>
     <div
@@ -22,10 +18,7 @@ const CorePrinciple = ({ heading, paragraph, isLeft }) =>
         right: `${!isLeft && '-2rem'}`
       }}
     />
-    <p style={{
-      marginTop: '1rem'
-    }}
-    >
+    <p className='principle__paragraph'>
       {paragraph}
     </p>
   </>
@@ -40,10 +33,7 @@ export default ({ image1, image2 }) =>
           commencingCohort='2021 (with some modules available from mid-2020)'
           includes='Micro modules & Capstone projects'
         />
-        <div style={{
-          marginTop: '2rem'
-        }}
-        >
+        <div className='principles'>
           <p>Here are the core principles of our Cyber Mastery:</p>
         </div>
       </div>
@@ -96,12 +86,7 @@ export default ({ image1, image2 }) =>
           className='col-md-offset-1 col-md-8'
         >
           <div
-            className='dottedLineHorizontal displayNone-sm' style={{
-              width: '5%',
-              position: 'absolute',
-              left: '-2rem'
-            }}
-          />
+            className='dottedLineHorizontal displayNone-sm line__short line__short--left'/>
           <p>
     The Cyber Mastery program can be taken as stand-alone modules as available, in the form of Executive Education. Once assessment is completed successfully, you will receive a micro-credential from the Australian National University. Successfully complete enough micro-credentials, including from mandatory modules, and you will earn a <span style={{fontWeight:'700', color: '#523178'}}>Graduate Diploma in Cyber</span>. Successfully complete the assessment for the three capstone modules after that, including an individual project and scenario, and you will be awarded a <span style={{fontWeight:'700', color:'#523178'}}>Master of Cyber</span>.
           </p>
@@ -120,12 +105,7 @@ export default ({ image1, image2 }) =>
           className='col-md-8'
         >
           <div
-            className='dottedLineHorizontal displayNone-sm' style={{
-              width: '5%',
-              position: 'absolute',
-              right: '-2rem'
-            }}
-          />
+            className='dottedLineHorizontal displayNone-sm line__short line__short--right' />
           <p>
 As an ANU Master of Cyber, you will have demonstrated the understanding of the technology, the social and ethical ethos, and the strategic nous, to become an influential leader. A leader better able to comprehend the changes in our world now, and to help shape the future.
             <br /><br />

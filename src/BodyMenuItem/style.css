@@ -5,3 +5,35 @@
 .cyberButton.MuiButton-root {
     background-color: #523178;
 }
+
+.Menu-Item__top {
+    margin-bottom: 1em;
+    color: rgb(50,50,50);
+    letter-spacing: 0.05em;
+    font-size: 0.72rem;
+}
+
+.Menu-Item__heading {
+    padding-top: 0.4em;
+    border-top: 1px solid currentColor;
+    margin-bottom: 2.1rem;
+}
+
+.Menu-Item__text {
+    line-height: 1.87;
+    font-size: 18px;
+}
+
+.Menu-Item__container {
+    overflow: hidden;
+    box-shadow: 5px 5px 10px grey;
+    padding: 0;
+}
+
+.Menu-Item__container--swapped {
+    overflow: hidden;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+
+

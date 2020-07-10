@@ -1,0 +1,27 @@
+.operations {
+    margin-top: 2rem;
+}
+
+.operations__heading {
+    text-align: right;
+}
+
+.operations__line {
+    width: 91.666%;
+    position: absolute;
+}
+
+.operations__line--left {
+    left: -1rem;
+}
+
+.operations__line--right {
+    right: -1rem;
+}
+
+.operations__text--emphasis {
+    font-weight: 700;
+}
+.operations__text--purple {
+    color: #523178;
+}
