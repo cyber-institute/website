@@ -84,7 +84,7 @@ export default () =>
         }}
       >
         <Slider name='Cyber Bootcamp Program'>
-          <div className='row positionRelative'>
+          <div className='row positionRelative' style ={{marginTop: '1rem'}}>
             <div className='col-md-offset-1 col-md-7'>
               <p>
             A flagship activity of the Department of Foreign Affairs and Trade’s Cyber Cooperation Program, the <span style={{'font-weight':'700', color:'#523178'}}>Cyber Bootcamps Program is delivered by the Cyber Institute in partnership with the National Security College</span>. The Bootcamps combine international best practice with first-hand expertise from Australia’s cyber policy and operational specialists across government, academia and the private sector.
@@ -199,7 +199,7 @@ More information can be found <a target='_blank' style={{ color: '#523178', 'fon
           </div>
         </Slider>
         <Slider name='ANU Ninian Stephen Cyber Law Program'>
-          <div className='row'>
+          <div className='row' style={{marginTop: '1rem' }}>
             <div className='col-md-offset-1 col-md-7'>
               <p>
             In partnership with the <span style={{'font-weight':'700'}}>Sir Robert Menzies Memorial Foundation</span>, the <span style={{'font-weight':'700', color:'#523178'}}>ANU Ninian Stephen Cyber Law Program</span>, delivered by the <span style={{'font-weight':'700', color:'#523178'}}>Cyber Institute</span> and the <span style={{'font-weight':'700'}}>ANU College of Law</span>, will provide a professional development program for, but not limited to, legal practitioners which delivers cutting edge, immersive training based on real-time, problem-centred cyber security legal challenges set in a global context.

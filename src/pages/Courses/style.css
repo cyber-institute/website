@@ -16,3 +16,11 @@
         color: #523178;
     }
 
+  .principle__heading {
+    font-size: 38px;
+    margin-bottom: 0px;
+  }
+
+  .principle__paragraph {
+    margin-top: 1rem;
+  }

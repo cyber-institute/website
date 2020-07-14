@@ -66,7 +66,7 @@ We have three broad areas we wish to address; within each there are a range of s
           </p>
         </div>
         <div className='col-md-5 margin4RemAuto-sm'>
-          <Image img={image2} style={{ boxShadow: '5px 5px 10px grey' }} />
+          <Image img={image2} style={{ boxShadow: '5px 5px 10px grey', marginBottom: '1rem' }}  />
         </div>
       </div>
       <div
