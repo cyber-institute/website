@@ -12,7 +12,7 @@ export default () =>
     >
       <div className='col-xs-12 col-md-8 banner__border'>
         <p
-          className='HomeBannerFontSize banner__text banner__text--purple' >
+          className='HomeBannerFontSize banner__text--purple' >
         We strive to change the cyber conversation to centre on the human values we prize – freedom,
         democracy, privacy and safety.
         </p>

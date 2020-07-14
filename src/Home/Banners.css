@@ -39,11 +39,17 @@
     letter-spacing: 2px;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-weight: 900;
+    text-align: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .banner__text--third {
     color: #523178;
     letter-spacing: 3px;
+    font-weight: 900;
+    text-align: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .banner__border {
