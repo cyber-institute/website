@@ -18,6 +18,7 @@ import Services from './pages/Services'
 import Article from './News/article'
 import People from './pages/People'
 import Privacy from './pages/Privacy'
+import Courses from './pages/Courses'
 import FourOFour from './404/404'
 import SnackMenu from './Body/SnackMenu'
 import CITwhite from '../img/CITwhite.jpg'
@@ -103,11 +104,11 @@ export default function FadeMenu() {
         <Link className='Light hamburger__link' to="/" ><img src={CITwhite} className='toolbar__CIT--small' /></Link>
         <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/" >Home</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/about" >About Us</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/courses" >Courses</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/people" >People</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/services" >Services</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/news" >News and Events</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link className='Light hamburger__link' to="/privacy" >Privacy</Link></MenuItem>
-
         
         </Menu>      
       </div>
@@ -132,12 +133,13 @@ class App extends Component {
             <Link className='Light toolbar__link' to="/"><img src={ANULogo} className='toolbar__ANU' /></Link>
             <Link className='Light toolbar__link' to="/"><img src={CITfull} className='toolbar__CIT' /></Link>
               <ul style={{display:'inline'}}>
-                <Link className='Light toolbar__link toolbar__link--right' to="/privacy" >Privacy</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/privacy">Privacy</Link>
                 <Link className='Light toolbar__link toolbar__link--right' to="/news" >News and Events</Link>
-                <Link className='Light toolbar__link toolbar__link--right' to="/services">Services</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/services" >Services</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/courses" >Courses</Link>
                 <Link className='Light toolbar__link toolbar__link--right' to="/people" >People</Link>
-                <Link className='Light toolbar__link toolbar__link--right' to="/about">About Us</Link>
-                <Link className='Light toolbar__link toolbar__link--right' to="/">Home</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/about" >About Us</Link>
+                <Link className='Light toolbar__link toolbar__link--right' to="/" >Home</Link>
               </ul>
             </div>
             
@@ -150,6 +152,7 @@ class App extends Component {
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/news/:type/:head" component={Article}></Route>
         <Route exact path="/news" component={News} />
+        <Route exact path="/courses" component={Courses} />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/services" component={Services} />
