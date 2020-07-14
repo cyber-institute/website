@@ -8,11 +8,11 @@ const courses = [
         offerings: [{
             date: 'August 10th-21st, 2020',
             availability: true,
-            link: "https://github.com/",
+            link: "https://anu.onestopsecure.com/OneStopWeb/ANSCLP2",
         },{
-            date: 'October 19th-30th, 2020',
+            date: 'October 5th-16th, 2020',
             availability: true,
-            link: 'https://github.com/'
+            link: 'https://anu.onestopsecure.com/OneStopWeb/ANSCLP3'
         }
         ],
         
@@ -37,28 +37,28 @@ const courses = [
         id: "CyberLaw"
     },
     {
-        title: 'Cyber Leadership & Decision Making',
+        title: 'Cyber for Decision Makers',
         offerings: [{
-                date: 'August 3rd-14th, 2020',
-                availability: true,
+                date: 'August 10th-19th, 2020',
+                availability: false,
                 link: "https://github.com/"
             },{
-                date: 'October 12th-23rd, 2020',
+                date: 'October 5th-14th, 2020',
                 availability: false,
                 link: 'https://github.com/'
             }
         ],
         
-        body: ["This two-week (3 hour session daily) intensive executive education course assists participants to recognise and prepare for the challenges of leading in a digitally connected world.  The course details the challenges faced by leaders through the modern technological environment, introducing key concepts and structures of cyber, exploring how to manage cyber risks and understanding the role of ethics in effective decision-making in changeable circumstances. ",
-                "The Cyber Leadership Course is designed for decision-makers and those who inform decision-makers and covers essential topics in a world increasingly reliant of digital technology.  We expect participants would have around 15 to 20 years' experience, have lead teams in diverse situations, whether in technology, policy, corporate, operations, headquarters or business areas, and be ready to make the leap to the senior executive ranks or C-suite.",
-                "Drawing on the experience of high-level presenters in a blended format of self-led and facilitated sessions, participants have access to live and recorded video presentations, Masterclasses and interactive Q&A sessions with subject matter experts, reading materials and real world and simulated scenarios. This course will provide participants with strategies, ways of thinking and solutions which can be applied immediately to the workplace.",
+        body: ["Leading is difficult at the best of times – leading in cyber can seem virtually impossible to the uninitiated and the unprepared. In a post-COVID world where digital integration is being rapidly embraced across economies and the world, the expectations that leaders can effectively operate in cyber environments continues to increase.​",
+                "nlike other management disciplines, cyber continues to evolve at an alarming rate, where the only constant appears to be the sustained rate of change. The efficacy of leadership groups mitigating cyber related business risks through the application of tried and true management approaches is sub-optimal at best. In our rush to reap the benefits of a digitally connected world, we have yet to build an effective way to manage the attendant risks.​",
+                "Decision making is central to effective leadership, but how does a leader make an informed decision in an environment where the operating environment is constantly in flux and timely access to reliable information is compromised? ​",
+                "Cyber for Decision Makers, from the ANU Cyber Institute, will provide participants with the knowledge and tools to better understand cyber risks and to make informed decisions in a cyber connected environment.",
             ],
         topics: [
-            'Introduction to Cyber',
-            'Decision-making in Uncertainty',
-            'Cyber Ethics',
-            'Cyber Risk',
-            'Cyber Resilience',
+            'Systemic approaches to conceptualising and understanding cyber and associated risks.',
+            'Understanding the role of ethics in decision making and the management of cyber risks.​',
+            'Preparedness modelling and planning to identify and prepare for a range of cyber risks and threat actors.',
+            'Preparedness planning to develop the people, process and technology solutions needed to create resilient organisations.​',
 
         ],
         outcomes: [
@@ -107,14 +107,16 @@ export default  () =>
                         topics = {courses[1].topics}
                         outcomes= {courses[1].outcomes}
                         id = {courses[1].id}/>
+        <DevelopingCourse title='<R>evolutions of Cyber'/>
         <h2 className="col-md-offset-1"
             style={{fontFamily:'Roboto, Arial, sans-serif',
                 fontSize:'30px',
                 color:'#523178'}}>Available 2021</h2>
-        <DevelopingCourse title="Cyber Literacy"/>
-        <DevelopingCourse title="Emotional Literacy and Social Cybernetics"/>
+        <DevelopingCourse title="Social Cybernetics"/>
         <DevelopingCourse title="Resourcing Cyber"/>
-        <DevelopingCourse title="Information Systems Security"/>
+        <DevelopingCourse title="Cyber Computing Concepts"/>
+        <DevelopingCourse title="Rights & Responsibilities in Cyberspace"/>
+
     </>
     
     
