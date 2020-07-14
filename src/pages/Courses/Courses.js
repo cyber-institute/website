@@ -69,13 +69,13 @@ const courses = [
             'Know how to design and create cyber resilient organisations though effective risk management and cyber preparedness.',
             'Appreciate the value of and how to build multidisciplinary teams as an effective means of managing and mitigating cyber risks.'
         ],
-        id: "CyberLeadership"
+        id: "CyberforDecisionMakers"
     }
 ]
 
-const DevelopingCourse = ({title}) => 
+const DevelopingCourse = ({title, id}) => 
     <>
-         <BlackSlider name = {title}>
+         <BlackSlider name = {title} id={id}>
              <div className="col-md-offset-1 col-md-10">
                 <div className="col-md-offset-1 col-md-10">
                     <p>Currently in development. Please email <a href={"mailto:cyber@anu.edu.au?subject="+ title} 
@@ -112,10 +112,10 @@ export default  () =>
             style={{fontFamily:'Roboto, Arial, sans-serif',
                 fontSize:'30px',
                 color:'#523178'}}>Available 2021</h2>
-        <DevelopingCourse title="Social Cybernetics"/>
-        <DevelopingCourse title="Resourcing Cyber"/>
-        <DevelopingCourse title="Cyber Computing Concepts"/>
-        <DevelopingCourse title="Rights & Responsibilities in Cyberspace"/>
+        <DevelopingCourse title="Social Cybernetics" id="SocialCybernetics"/>
+        <DevelopingCourse title="Resourcing Cyber" id="ResourcingCyber"/>
+        <DevelopingCourse title="Cyber Computing Concepts" id="CyberComputing"/>
+        <DevelopingCourse title="Rights & Responsibilities in Cyberspace" id="CyberRightsResponsibilities"/>
 
     </>
     
