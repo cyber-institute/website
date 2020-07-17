@@ -101,12 +101,7 @@ export default  () =>
                 topics = {courses[0].topics}
                 outcomes= {courses[0].outcomes}
                 id = {courses[0].id}/>
-        <ShortCourseInfo title={courses[1].title}
-                        offerings={courses[1].offerings}
-                        body={courses[1].body}
-                        topics = {courses[1].topics}
-                        outcomes= {courses[1].outcomes}
-                        id = {courses[1].id}/>
+        <DevelopingCourse title="Cyber for Decision Makers" id="CyberforDecisionMakers"/>
         <DevelopingCourse title='<R>evolutions of Cyber' id="CyberRevolutions"/>
         <h2 className="col-md-offset-1"
             style={{fontFamily:'Roboto, Arial, sans-serif',
