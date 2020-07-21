@@ -73,6 +73,7 @@ ElevationScroll.propTypes = {
   window: PropTypes.func
 }
 
+//FadeMenu component contains the code for the toolbar when the website is in mobile mode.
 export default function FadeMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -89,10 +90,12 @@ export default function FadeMenu() {
 
   return (
     <div className="mobile-only" style={{"width": "100%", height: '80px'}}>
+      {/* Images on left of toolbar */}
       <Link className='Light toolbar__link' to="/" ><img src={ANULogo} className='toolbar__ANU' /></Link>
       <Link className='Light toolbar__link' to="/" ><img src={CITwhite} className='toolbar__CIT'/></Link>
       <div  style={{ float: "right"}}>
       <img src={Hamburger} style={{ width: '25px',marginTop: '27.5px', float: 'right', paddingRight: '2rem'}} onClick={handleClick} aria-controls="fade-menu" aria-haspopup="true"/>
+      {/* Hamburger menu items */}
       <Menu
         id="fade-menu"
         anchorEl={anchorEl}
@@ -125,6 +128,7 @@ class App extends Component {
   <div className={useStyles.root}>
   <Router history={history}>
        <ElevationScroll>
+          {/* Desktop version of  */}
          <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           
           <Toolbar>  

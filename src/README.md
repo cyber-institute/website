@@ -46,5 +46,4 @@ Structured similar to the Home & Courses pages. File names correspond to named s
 
 ## News and Events Page
 In the News directory.  
-Main file is news.js. To add items to a particular section go to the coreesponding file in the items directory i.e. to add a new article go to News/items/articles_items.js.  
-Then add a new object to the top of the array containing all relevant information. This article will then appear as the first article when visiting the website.
+Main file is news.js. To add items to a particular section go to the coreesponding file in the items directory i.e. to add a new article go to News/items/articles_items.js. Then, add a new object to the top of the array containing all relevant information. This article will then appear as the first article in the section when visiting the website.
