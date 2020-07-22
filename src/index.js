@@ -120,7 +120,7 @@ export default function FadeMenu() {
   );
 }
 
-
+// App level component
 class App extends Component {
   render () {
     return (
@@ -128,7 +128,7 @@ class App extends Component {
   <div className={useStyles.root}>
   <Router history={history}>
        <ElevationScroll>
-          {/* Desktop version of  */}
+          {/* Desktop version of toolbar menu  */}
          <AppBar style={{ backgroundColor: '#fff', color: '#323232' }}>
           
           <Toolbar>  
@@ -152,6 +152,7 @@ class App extends Component {
         </AppBar>
       </ElevationScroll>
       <ScrollUp>
+      {/* Routes - add more to create new pages */}
       <Switch>
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/news/:type/:head" component={Article}></Route>

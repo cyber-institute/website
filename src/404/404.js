@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ErrorCrane from './errorcrane.jpg'
 import './404.css'
 
+// 404 page not found component
 class FourOfour extends Component {
 render(){
   return (
