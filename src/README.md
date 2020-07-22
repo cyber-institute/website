@@ -1,11 +1,11 @@
 # src repository breakdown
 
 Structure of the website codebase - this should tell you where you need to go to fix things on the website.  
-The structure of this document is that each subsection corresponds to a page or element of the website to be changed. The subsection will point you to the relevant directory containing the component code and the action of each file within the repository.  
+The structure of this document is that each subsection corresponds to a page or element of the website to be changed. The subsection will point you to the relevant directory containing the component code and describe the action of each file within the repository.  
 Note - CSS files with the same names as JavaScript files simply provide style for the component.
 
 ## Menu Bar (top of every page)
-The code for this is contained in index.js.  To change the mobile (hamburger) menu, edit the component FadeMenu. Otherwise edit the Toolbar section of the App component.
+The code for this is contained in *index.js*.  To change the mobile (hamburger) menu, edit the component FadeMenu. Otherwise edit the Toolbar section of the App component.
 
 ## Footer
 Contained in the Footer directory. Pretty self explanatory.
@@ -47,3 +47,6 @@ Structured similar to the Home & Courses pages. File names correspond to named s
 ## News and Events Page
 In the News directory.  
 Main file is news.js. To add items to a particular section go to the coreesponding file in the items directory i.e. to add a new article go to News/items/articles_items.js. Then, add a new object to the top of the array containing all relevant information. This article will then appear as the first article in the section when visiting the website.
+
+## 404 Page
+In the 404 directory. Main file is *404.js*.
