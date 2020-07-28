@@ -6,10 +6,6 @@ const courses = [
     {
         title: 'ANU Ninian Stephen Cyber Law Program',
         offerings: [{
-            date: 'August 10th-21st, 2020',
-            availability: true,
-            link: "https://anu.onestopsecure.com/OneStopWeb/ANSCLP2",
-        },{
             date: 'October 5th-16th, 2020',
             availability: true,
             link: 'https://anu.onestopsecure.com/OneStopWeb/ANSCLP3'
