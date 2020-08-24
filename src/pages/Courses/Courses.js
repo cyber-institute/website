@@ -6,7 +6,7 @@ const courses = [
     {
         title: 'ANU Ninian Stephen Cyber Law Program',
         offerings: [{
-            date: 'October 5th-16th, 2020',
+            date: 'October 6th-16th, 2020',
             availability: true,
             link: 'https://anu.onestopsecure.com/OneStopWeb/ANSCLP3'
         }
@@ -31,41 +31,6 @@ const courses = [
             'Identify areas requiring the insights of other experts.'
         ],
         id: "CyberLaw"
-    },
-    {
-        title: 'Cyber for Decision Makers',
-        offerings: [{
-                date: 'August 10th-19th, 2020',
-                availability: false,
-                link: "https://github.com/"
-            },{
-                date: 'October 5th-14th, 2020',
-                availability: false,
-                link: 'https://github.com/'
-            }
-        ],
-        
-        body: ["Leading is difficult at the best of times – leading in cyber can seem virtually impossible to the uninitiated and the unprepared. In a post-COVID world where digital integration is being rapidly embraced across economies and the world, the expectations that leaders can effectively operate in cyber environments continues to increase.​",
-                "Unlike other management disciplines, cyber continues to evolve at an alarming rate, where the only constant appears to be the sustained rate of change. The efficacy of leadership groups mitigating cyber related business risks through the application of tried and true management approaches is sub-optimal at best. In our rush to reap the benefits of a digitally connected world, we have yet to build an effective way to manage the attendant risks.​",
-                "Decision making is central to effective leadership, but how does a leader make an informed decision in an environment where the operating environment is constantly in flux and timely access to reliable information is compromised? ​",
-                "Cyber for Decision Makers, from the ANU Cyber Institute, will provide participants with the knowledge and tools to better understand cyber risks and to make informed decisions in a cyber connected environment.",
-            ],
-        topics: [
-            'Systemic approaches to conceptualising and understanding cyber and associated risks.',
-            'Understanding the role of ethics in decision making and the management of cyber risks.​',
-            'Preparedness modelling and planning to identify and prepare for a range of cyber risks and threat actors.',
-            'Preparedness planning to develop the people, process and technology solutions needed to create resilient organisations.​',
-
-        ],
-        outcomes: [
-            'Understand key concepts of development and application of cyber.',
-            'Be able to apply systems thinking to achieve efficient and robust decision-making in a complex and evolving operating environment.',
-            'Understand and identify modern cyber risks in business operating environments. ',
-            'Understand the means to design and implement effective risk management strategies to mitigate known and emerging cyber risks.',
-            'Know how to design and create cyber resilient organisations though effective risk management and cyber preparedness.',
-            'Appreciate the value of and how to build multidisciplinary teams as an effective means of managing and mitigating cyber risks.'
-        ],
-        id: "CyberforDecisionMakers"
     }
 ]
 
@@ -97,17 +62,6 @@ export default  () =>
                 topics = {courses[0].topics}
                 outcomes= {courses[0].outcomes}
                 id = {courses[0].id}/>
-        <DevelopingCourse title="Cyber for Decision Makers" id="CyberforDecisionMakers"/>
-        <DevelopingCourse title='<R>evolutions of Cyber' id="CyberRevolutions"/>
-        <h2 className="col-md-offset-1"
-            style={{fontFamily:'Roboto, Arial, sans-serif',
-                fontSize:'30px',
-                color:'#523178'}}>Available 2021</h2>
-        <DevelopingCourse title="Social Cybernetics" id="SocialCybernetics"/>
-        <DevelopingCourse title="Resourcing Cyber" id="ResourcingCyber"/>
-        <DevelopingCourse title="Cyber Computing Concepts" id="CyberComputing"/>
-        <DevelopingCourse title="Rights & Responsibilities in Cyberspace" id="CyberRightsResponsibilities"/>
-
     </>
     
     
