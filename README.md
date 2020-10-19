@@ -27,7 +27,8 @@ Contains the code powering swirly lines on the home page.  Shouldn't need to be 
 Contains code for the project. See src README.md for full breakdown of the codebase
 
 ## Server Information
-- Server is hosted by ANU
+- Server is hosted by ANU (in the CECS student VM area) it should be moved in the future to ensure it is managed adequately by CECS IT.
+- Bob Edwards is a good person to talk to about this.
 - The website is fronted by a proxy server. This maps the server port 3000 to port 443. It also contains the ssl certificate for the site.
 - www.cyber.anu.edu.au does not currently resolve as DNS needs to be updated
 
